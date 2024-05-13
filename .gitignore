@@ -6,9 +6,15 @@ Thumbs.db
 .obsidian/
 .trash/
 
+smart-chats/
+templates/
+
 # Temporary files
 *.lock
 *.log
 *.cache
 *.tmp
 *.swp
+favicon-32x32.png
+publish.js
+publish.css
