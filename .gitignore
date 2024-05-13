@@ -18,3 +18,9 @@ templates/
 favicon-32x32.png
 publish.js
 publish.css
+
+
+
+
+# Ignore Smart Connections folder
+.smart-connections
