@@ -1,0 +1,14 @@
+# System specific
+.DS_Store
+Thumbs.db
+
+# Obsidian cache and system files
+.obsidian/
+.trash/
+
+# Temporary files
+*.lock
+*.log
+*.cache
+*.tmp
+*.swp
