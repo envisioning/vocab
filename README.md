@@ -17,6 +17,11 @@ Welcome to *Envisioning AI*, a study guide for learning the terms and concepts w
 
 The entire index has been co-created with different AI tools in order to create a comprehensive overview of the field with accurate and useful definitions. If you spot a mistake or want to suggest missing concepts, email us on hello@envisioning.io.
 
+#### Access Envisioning AI:
+- http://github.com/envisioning/vocab
+- https://envisioning.io/vocab
+- https://envisioning.ai
+
 ---
 
 ## How is the data fact checked?
