@@ -2,9 +2,6 @@
 title: End-to-End Learning
 summary: ML approach where a system is trained to directly map input data to the desired output, minimizing the need for manual feature engineering.
 ---
-## ML approach where a system is trained to directly map input data to the desired output, minimizing the need for manual feature engineering.
-
-Detailed Explanation:
 In end-to-end learning, a model is designed to handle all aspects of a problem, from raw input processing to final output generation, without human-crafted intermediary steps. This methodology leverages deep learning architectures, particularly neural networks, to learn the most effective representations for solving specific tasks, often surpassing the performance of systems relying on manually designed features. The approach is particularly advantageous in complex domains where the relationship between input data and output is intricate and difficult for humans to specify, such as in speech recognition, natural language processing, and autonomous driving.
 
 Historical Overview:

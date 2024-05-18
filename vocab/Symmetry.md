@@ -2,9 +2,6 @@
 title: Symmetry
 summary: Invariances in data or models where certain transformations do not affect the outcomes or predictions.
 ---
-## Invariances in data or models where certain transformations do not affect the outcomes or predictions.
-
-Detailed Explanation:
 Symmetries in AI are critical for developing robust machine learning models that recognize patterns or features in data irrespective of changes in perspective, scale, or other transformational variables. This concept is rooted in the broader mathematical principle of symmetry, which pertains to preserving structure under transformations such as rotations, reflections, or translations. In AI, symmetry considerations lead to the design of algorithms that can generalize better and perform consistently across varied inputs. For instance, convolutional neural networks (CNNs) exploit translational symmetry by using convolutional filters that detect features regardless of their position in an input image, thereby enhancing the network's ability to recognize objects in visual data from different angles or positions.
 
 Historical Overview:

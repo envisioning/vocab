@@ -2,9 +2,6 @@
 title: Log-Likelihood
 summary: Measure used in statistical models to quantify how well a model predicts a given set of observations, expressed as the logarithm of the likelihood function.
 ---
-## Measure used in statistical models to quantify how well a model predicts a given set of observations, expressed as the logarithm of the likelihood function.
-
-Detailed Explanation:
 In statistical modeling and machine learning, the log-likelihood function is crucial for parameter estimation and model evaluation. It transforms the product of probabilities (which can be very small and numerically unstable) into a sum, making computations more tractable. Maximizing the log-likelihood helps find the parameter values that make the observed data most probable, which is a foundational method in Maximum Likelihood Estimation (MLE). This concept is widely used in various fields, including econometrics, bioinformatics, and natural language processing, due to its robustness and efficiency in handling large datasets.
 
 Historical Overview:

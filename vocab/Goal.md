@@ -2,9 +2,6 @@
 title: Goal
 summary: Desired outcome or objective that an AI system is programmed to achieve.
 ---
-## Desired outcome or objective that an AI system is programmed to achieve.
-
-Detailed Explanation:
 In artificial intelligence, a goal is an essential component that guides decision-making processes within AI systems. Goals can vary widely, from simple tasks like sorting a list of numbers to complex objectives such as driving a car autonomously or managing a stock portfolio. These goals are typically defined in the system’s programming and influence the algorithms used, shaping the AI's behavior and response patterns. For example, in reinforcement learning, an AI agent learns to make a sequence of decisions to maximize a reward signal that aligns with achieving its goal. In goal-based planning systems, the AI uses predefined goals to evaluate possible actions and predict their outcomes, choosing the path that most likely leads to the goal.
 
 Historical Overview:

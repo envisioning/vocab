@@ -2,9 +2,6 @@
 title: Discontinuous Jump
 summary: Sudden, significant leap in the performance or capability of an AI system, deviating sharply from its previous trajectory of incremental improvements.
 ---
-## Sudden, significant leap in the performance or capability of an AI system, deviating sharply from its previous trajectory of incremental improvements.
-
-Detailed Explanation:
 In the context of AI, a discontinuous jump is a marked and abrupt enhancement in an AI system's performance, often resulting from a breakthrough in technology, algorithms, or computational power. Unlike continuous improvements that follow a predictable, gradual trend, a discontinuous jump represents a step change, drastically shifting the system's abilities. This can occur due to novel approaches in machine learning, such as the introduction of transformers in natural language processing, which dramatically improved language understanding and generation. Discontinuous jumps are significant because they can rapidly alter the landscape of AI capabilities, leading to unforeseen applications and potentially transformative impacts on society and industry.
 
 Historical Overview:

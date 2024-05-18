@@ -2,9 +2,6 @@
 title: Neural Network
 summary: Computing system designed to simulate the way human brains analyze and process information, using a network of interconnected nodes that work together to solve specific problems.
 ---
-## Computing system designed to simulate the way human brains analyze and process information, using a network of interconnected nodes that work together to solve specific problems.
-
-Detailed explanation:
 Neural networks form the backbone of artificial intelligence, particularly in the field of deep learning. They are composed of layers of nodes, or "neurons," each of which connects to several other nodes in the subsequent layer, forming a web-like structure. The connections between these neurons are weighted by previous learning tasks and are adjusted as new data flows through the network, a process known as "training." Neural networks are adept at recognizing patterns and making predictions based on complex data inputs, making them highly valuable for tasks ranging from voice recognition and image classification to more complex decision-making tasks in autonomous vehicles and financial modeling.
 
 Historical overview:

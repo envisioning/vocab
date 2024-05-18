@@ -2,7 +2,6 @@
 title: Inverse Problems
 summary: Determining the underlying causes or parameters from observed data, essentially reversing the usual process of predicting effects from known causes.
 ---
-Detailed Explanation:
 Inverse problems are crucial in AI and machine learning because they focus on deducing the parameters or structures that produce observed data. These problems are often ill-posed, meaning that they do not have a unique solution or their solutions are not stable under small perturbations of the data. AI techniques, especially those involving optimization and probabilistic methods, are employed to solve inverse problems by formulating them as inference tasks. For example, in medical imaging, inverse problems are solved to reconstruct images of the inside of a body from X-ray data. AI approaches can include regularization methods to handle ill-posedness and Bayesian frameworks to incorporate prior knowledge and quantify uncertainties.
 
 Historical Overview:

@@ -2,9 +2,6 @@
 title: Contrastive Divergence
 summary: Algorithm used to approximate the gradient of the log-likelihood for training probabilistic models.
 ---
-## Algorithm used to approximate the gradient of the log-likelihood for training probabilistic models.
-
-Detailed Explanation:
 Contrastive Divergence is a method designed to efficiently train energy-based models like RBMs (Restricted Boltzmann Machines) by approximating the gradient of the log-likelihood of the data. Traditional maximum likelihood estimation for these models is computationally expensive due to the intractability of the partition function. CD circumvents this by performing a limited number of Gibbs sampling steps to approximate the true gradient. In the context of RBMs, CD typically starts with a data sample, performs a forward pass to obtain hidden activations, then reconstructs the visible layer from these hidden activations, and finally updates the model parameters based on the difference between the original and reconstructed data. This method, although not yielding exact maximum likelihood estimates, has been shown to be effective and computationally feasible, making it a popular choice for training deep learning models that include RBM layers.
 
 Historical Overview:

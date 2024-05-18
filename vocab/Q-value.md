@@ -2,9 +2,6 @@
 title: Q-value
 summary: Measure used in RL to represent the expected future rewards that an agent can obtain, starting from a given state and choosing a particular action.
 ---
-## Measure used in RL to represent the expected future rewards that an agent can obtain, starting from a given state and choosing a particular action.
-
-Detailed explanation:
 In reinforcement learning, the Q-value, or action-value, quantifies the expected utility of taking a specific action in a given state, under a particular policy. This measure is crucial for agents to make decisions that maximize cumulative rewards. Q-values are updated iteratively through learning processes such as Q-learning or Deep Q-Networks (DQN), using the Bellman equation. This equation recursively adjusts Q-values based on the reward received for an action plus the highest Q-value for the next state, discounted by a factor that represents the importance of future rewards.
 
 Historical overview:

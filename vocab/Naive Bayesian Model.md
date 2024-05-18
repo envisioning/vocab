@@ -2,10 +2,6 @@
 title: Naive Bayesian Model
 summary: Probabilistic classifier that assumes strong (naive) independence between the features of a dataset.
 ---
-## Probabilistic classifier that assumes strong (naive) independence between the features of a dataset.
-
-Detailed explanation:
-
 The Naive Bayesian model is based on Bayes' theorem, which describes the probability of an event based on prior knowledge of conditions that might be related to the event. In the context of machine learning, this model is used to predict the probability that a given instance belongs to a particular class, based on the conditional probabilities of the input features. The assumption of feature independence dramatically simplifies the computation, allowing the model to perform well with a small amount of data and making it particularly effective for applications such as spam filtering and document classification.
 Historical overview:
 

@@ -2,9 +2,6 @@
 title: "SIMA (Scalable Instructable Multiworld Agent)"
 summary: "AI agent designed to operate across multiple 3D virtual environments, following natural language instructions to accomplish varied tasks."
 ---
-
-## AI agent designed to operate across multiple 3D virtual environments, following natural language instructions to accomplish varied tasks.
-
 It represents a significant stride in creating adaptable, instruction-following agents that can generalize their understanding and actions across different contexts without specific programming for each environment.
 
 Developed by DeepMind, SIMA leverages a blend of recent advancements in natural language processing and reinforcement learning, enabling it to comprehend and act on instructions with a level of generality and adaptability previously unseen. This makes it a powerful tool for exploring the potential for AI to interact in complex, dynamic settings similar to the real world.

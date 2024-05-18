@@ -2,9 +2,6 @@
 title: "Scalar"
 summary: "Single numerical value, typically representing a quantity or magnitude in mathematical or computational models."
 ---
-
-## Single numerical value, typically representing a quantity or magnitude in mathematical or computational models.
-
 In the context of AI, scalars play a fundamental role in various algorithms and models, especially in machine learning and neural networks. They are used to represent simple numerical values, such as weights, biases, and learning rates in neural networks, or as individual data points in datasets. Scalars are contrasted with more complex structures like vectors, matrices, and tensors, which are arrays of numbers organized in higher dimensions. Scalars are critical for performing mathematical operations and transformations within AI models, serving as the simplest form of data used for calculations.
 
 The concept of scalars in mathematics and computational models has been around since the inception of these fields, but their application within AI and machine learning has become particularly prominent with the development of more complex algorithms and the increasing computational power available. The term "scalar" itself has been used in mathematics long before the emergence of AI, dating back to the 18th century, but its adoption in AI coincides with the field's development, particularly in the latter half of the 20th century.

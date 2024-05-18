@@ -2,7 +2,6 @@
 title: Self-Supervised Pretraining
 summary: ML approach where a model learns to predict parts of the input data from other parts without requiring labeled data, which is then fine-tuned on downstream tasks.
 ---
-Detailed Explanation:
 Self-supervised pretraining leverages the inherent structure within the data to generate pseudo-labels, allowing the model to learn useful representations from vast amounts of unlabeled data. This approach involves tasks like predicting the next word in a sentence, filling in masked parts of an image, or reconstructing corrupted data. Once pretrained, these models capture rich and generalizable features that can be fine-tuned with a smaller set of labeled examples for specific tasks such as classification, detection, or translation. This technique has been particularly impactful in natural language processing (NLP) with models like BERT and GPT, and in computer vision with models like SimCLR and BYOL.
 
 Historical Overview:

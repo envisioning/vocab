@@ -2,9 +2,6 @@
 title: Graph Machine Learning
 summary: AI field that applies ML techniques to graph-structured data, enabling the analysis and prediction of relationships and behaviors among interconnected nodes.
 ---
-## AI field that applies ML techniques to graph-structured data, enabling the analysis and prediction of relationships and behaviors among interconnected nodes.
-
-Detailed Explanation:
 Graph machine learning integrates concepts from graph theory and machine learning to analyze data represented in graph form, such as social networks, biological networks, or any system where relationships between entities are crucial. The primary challenge in this field is how to effectively incorporate the information about the structure and connections of the graph into machine learning models. Techniques in this area include node embedding, which represents nodes in a continuous vector space, and graph neural networks (GNNs), which apply deep learning methods directly to graphs. These approaches allow for more nuanced understanding and prediction of complex relational patterns and dynamics than traditional machine learning, which typically assumes data points are independent.
 
 Historical Overview:

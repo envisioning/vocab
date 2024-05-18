@@ -2,9 +2,6 @@
 title: ReAct (Reason+Act)
 summary: AI framework for integrating reasoning and acting capabilities, enabling models to make decisions based on both logic and learned actions.
 ---
-## AI framework for integrating reasoning and acting capabilities, enabling models to make decisions based on both logic and learned actions.
-
-Detailed Explanation:
 ReAct, short for "Reason+Act," is a framework designed to enhance AI systems by combining logical reasoning with action-taking capabilities. This approach allows AI models to not only process and interpret information but also to make decisions and take appropriate actions based on that reasoning. It integrates symbolic reasoning, which involves logic and rule-based processing, with the ability to learn from data and adapt actions accordingly. This hybrid method aims to improve the efficiency and effectiveness of AI in complex environments where both understanding and action are crucial. ReAct is particularly significant in applications such as robotics, autonomous systems, and complex problem-solving tasks where dynamic and adaptive decision-making is essential.
 
 Historical Overview:

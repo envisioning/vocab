@@ -2,8 +2,6 @@
 title: Capsule Network
 summary: Type of artificial neural network that aims to more accurately model hierarchical relationships and spatial information in visual data by using groups of neurons called capsules.
 ---
-## Type of artificial neural network that aims to more accurately model hierarchical relationships and spatial information in visual data by using groups of neurons called capsules.
-
 Expert-Level Explanation:
 Capsule Networks, introduced by Geoffrey Hinton and his colleagues, address some limitations of traditional convolutional neural networks (CNNs), such as their inability to effectively handle spatial hierarchies and pose variations. Capsules are groups of neurons that encapsulate the parameters of an entity's specific properties, such as its pose, texture, deformation, velocity, albedo, hue, and so on. These capsules use dynamic routing algorithms to ensure that the output of one layer is sent to the appropriate capsule in the next layer, thus preserving the spatial hierarchies. This enables Capsule Networks to recognize the same object even when it appears in different orientations or perspectives, making them particularly powerful for tasks involving complex spatial relationships and detailed object recognition.
 

@@ -2,9 +2,6 @@
 title: Random Forest
 summary: Robust ML algorithm that combines multiple decision trees to improve prediction accuracy and prevent overfitting.
 ---
-## Robust ML algorithm that combines multiple decision trees to improve prediction accuracy and prevent overfitting.
-
-Detailed Explanation:
 Random Forest operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. It enhances the decision tree method by adding randomness in two ways: each tree is built from a random sample of the data, and at each split in the tree, a random subset of the features is considered. This randomness helps to make the model more robust against overfitting, and the ensemble nature of Random Forest generally leads to better performance than individual decision trees in many scenarios. Random Forests also provide useful insights into feature importance, which can be instrumental in understanding input variables' predictive power.
 
 Historical Overview:

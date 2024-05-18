@@ -2,9 +2,6 @@
 title: Instrumentation
 summary: Techniques and tools used to monitor, measure, and analyze the performance and behavior of AI systems.
 ---
-## Techniques and tools used to monitor, measure, and analyze the performance and behavior of AI systems.
-
-Detailed explanation:
 Instrumentation in AI involves deploying various diagnostic and monitoring tools to ensure that AI models operate as intended, especially in production environments. This can include logging systems that record data about model decisions, performance metrics that assess accuracy and efficiency, and observability frameworks that provide insights into the model's internal state and outputs. Effective instrumentation is crucial for debugging, optimizing model performance, understanding model behavior in complex environments, and ensuring compliance with regulatory and ethical standards. It often integrates with machine learning operations (MLOps) to streamline model lifecycle management and enhance the reliability and scalability of AI deployments.
 
 Historical overview:

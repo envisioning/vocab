@@ -2,9 +2,6 @@
 title: Phase Transition
 summary: Critical point where a small change in a parameter or condition causes a significant shift in the system's behavior or performance.
 ---
-## Critical point where a small change in a parameter or condition causes a significant shift in the system's behavior or performance.
-
-Detailed Explanation:
 In the context of artificial intelligence, phase transitions often describe abrupt changes in the computational complexity or performance of algorithms as certain parameters cross a critical threshold. For example, in constraint satisfaction problems (CSPs), there is typically a phase transition point where the problem shifts from being mostly solvable to mostly unsolvable as the constraint density increases. This phenomenon is analogous to phase transitions in physical systems, like water freezing into ice. Understanding these transitions is crucial for optimizing algorithms and predicting their behavior under different conditions. In machine learning, phase transitions can occur in training dynamics, where slight changes in hyperparameters can lead to a dramatic change in model performance, often seen in neural networks' learning curves.
 
 Historical Overview:

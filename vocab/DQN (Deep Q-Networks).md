@@ -2,9 +2,6 @@
 title: DQN (Deep Q-Networks)
 summary: RL technique that combines Q-learning with deep neural networks to enable agents to learn how to make optimal decisions from high-dimensional sensory inputs.
 ---
-## RL technique that combines Q-learning with deep neural networks to enable agents to learn how to make optimal decisions from high-dimensional sensory inputs.
-
-Detailed Explanation:
 Deep Q-Networks (DQN) are pivotal in bridging traditional reinforcement learning with deep learning's power to handle complex, high-dimensional environments. This approach utilizes a deep neural network to approximate the Q-value function, which traditionally estimates the utility of taking a given action in a particular state. DQNs help overcome the challenges of direct Q-learning in environments with vast state and action spaces, as the neural network efficiently generalizes across similar states. This capability allows DQNs to operate effectively in scenarios such as video games or robotic control, where sensory inputs like images form the state space. DQNs use techniques like experience replay and target networks to stabilize learning and prevent the rapid forgetting of earlier learned states.
 
 Historical Overview:

@@ -2,9 +2,6 @@
 title: Bias-Variance Dilemma
 summary: Fundamental problem in supervised ML that involves a trade-off between a model’s ability to minimize error due to bias and error due to variance.
 ---
-## Fundamental problem in supervised ML that involves a trade-off between a model’s ability to minimize error due to bias and error due to variance.
-
-Detailed explanation:
 In machine learning, the bias-variance dilemma highlights the challenges in achieving a model that simultaneously minimizes both bias and variance, crucial for optimal performance. Bias refers to errors introduced by approximating complex real-world problems with simpler models; it manifests when the model is too simplistic to capture the underlying data patterns. Variance, on the other hand, refers to the model's sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting). Ideally, one seeks to balance these two types of errors to minimize the total expected error of the model, but improving one typically worsens the other.
 
 Historical overview:

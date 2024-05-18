@@ -2,9 +2,6 @@
 title: Policy Gradient
 summary: Class of algorithms in RL that optimizes the parameters of a policy directly through gradient ascent on expected future rewards.
 ---
-## Class of algorithms in RL that optimizes the parameters of a policy directly through gradient ascent on expected future rewards.
-
-Detailed Explanation:
 Policy gradient methods are crucial in reinforcement learning (RL) for solving problems where the action space is continuous or the policy cannot easily be expressed as a value function. Unlike value-based methods that first estimate the value of taking an action in a given state and derive a policy based on these values, policy gradient methods directly adjust the policy's parameters by computing gradients that are expected to increase the total reward. These methods are especially useful because they can inherently learn stochastic policies, allowing for exploration of the action space. Common implementations of policy gradient include REINFORCE and Actor-Critic algorithms, where the latter uses additional value function approximations to reduce the variance of the gradient estimates.
 
 Historical Overview:

@@ -2,9 +2,6 @@
 title: Intention
 summary: Planned or desired outcome that an agent aims to achieve through its actions.
 ---
-## Planned or desired outcome that an agent aims to achieve through its actions.
-
-Detailed explanation:
 In the context of artificial intelligence, intention is crucial in defining how intelligent agents interact with their environment to achieve specific goals. It involves the processes that guide decision-making, planning, and execution of actions based on the agent's goals and the constraints of the environment. In AI models, especially those involved in robotics or interactive systems, programming intentions involves creating algorithms that can interpret and prioritize objectives, plan sequences of actions, and adjust strategies dynamically based on feedback from the environment.
 
 Historical overview:

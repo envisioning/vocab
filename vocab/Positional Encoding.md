@@ -2,9 +2,6 @@
 title: Positional Encoding
 summary: Technique used in neural network models, especially in transformers, to inject information about the order of tokens in the input sequence.
 ---
-## Technique used in neural network models, especially in transformers, to inject information about the order of tokens in the input sequence.
-
-Detailed Explanation:
 Positional encoding plays a crucial role in models like the transformer, where it compensates for the absence of recurrent structure by providing additional input that signifies token position within the sequence. This information is essential because the transformer processes input tokens simultaneously, lacking an inherent mechanism to account for the sequence order. Positional encodings can be either fixed, using sinusoidal functions of different frequencies, or learned during training, similar to other model parameters. These encodings are added to the input embeddings to preserve the notion of token order, thereby enabling the model to consider the position of tokens when processing language or other sequential data.
 
 Historical Overview:

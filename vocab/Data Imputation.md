@@ -2,7 +2,6 @@
 title: Data Imputation
 summary: Process of replacing missing or incomplete data within a dataset with substituted values to maintain the dataset's integrity and usability.
 ---
-Detailed Explanation:
 Data imputation is a critical technique in data preprocessing, aimed at addressing the challenge of missing data in datasets. Various imputation methods range from simple strategies, like mean, median, or mode substitution, to more sophisticated techniques such as regression imputation, multiple imputation, and machine learning-based imputation. These methods help maintain the statistical properties of the data, improve the performance of machine learning models, and enable more accurate analyses. Effective imputation preserves the underlying structure and relationships within the data, mitigating biases and maintaining the validity of inferences drawn from the dataset.
 
 Historical Overview:

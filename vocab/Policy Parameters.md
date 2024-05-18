@@ -2,9 +2,6 @@
 title: Policy Parameters
 summary: Variables in a ML model, particularly in RL, that define the behavior of the policy by determining the actions an agent takes in different states.
 ---
-## Variables in a ML model, particularly in RL, that define the behavior of the policy by determining the actions an agent takes in different states.
-
-Detailed explanation:
 In reinforcement learning, a policy is a strategy used by an agent to decide the next action based on the current state. Policy parameters are the weights or factors within the policy that are adjusted during training to optimize the agent's performance. These parameters can be part of a neural network (in deep reinforcement learning) or other function approximators. The goal is to find the optimal set of parameters that maximize cumulative rewards over time. Policy parameters are crucial in both model-free and model-based reinforcement learning, influencing how the policy generalizes across different states and learns from interactions with the environment.
 
 Historical overview:

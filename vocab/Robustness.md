@@ -2,9 +2,6 @@
 title: Robustness
 summary: Ability of an algorithm or model to deliver consistent and accurate results under varying operating conditions and input perturbations.
 ---
-## Ability of an algorithm or model to deliver consistent and accurate results under varying operating conditions and input perturbations.
-
-Detailed Explanation:
 In the context of artificial intelligence, robustness primarily concerns an AI system's capacity to handle errors, uncertainties, and changes in its environment or input data without significant degradation in performance. This characteristic is crucial as AI systems are increasingly deployed in diverse and unpredictable real-world scenarios. Robust AI models are designed to resist adversarial attacks (where inputs are deliberately modified to trick the model), generalize well from training data to unseen data, and operate reliably under hardware constraints or environmental changes. Methods to improve robustness include rigorous validation techniques, designing with redundancy, adversarial training, and incorporating uncertainty directly into the model through approaches like Bayesian networks.
 
 Historical Overview:

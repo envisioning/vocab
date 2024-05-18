@@ -2,9 +2,6 @@
 title: Equivariance
 summary: Property of a function whereby the function commutes with the actions of a group, meaning that transformations applied to the input result in proportional transformations in the output.
 ---
-## Property of a function whereby the function commutes with the actions of a group, meaning that transformations applied to the input result in proportional transformations in the output.
-
-Detailed explanation:
 Equivariance in the context of artificial intelligence, particularly in machine learning models like neural networks, refers to the capability of an algorithm to maintain the structure of its input data through transformations. For instance, in image processing, an equivariant convolutional neural network (CNN) can recognize objects in an image regardless of the object’s orientation or position because its filters are designed to respond identically to the same features under different transformations, such as rotations or translations. This property is crucial for developing robust models that generalize well over varied datasets without the need for extensive data augmentation.
 
 Historical overview:

@@ -2,9 +2,6 @@
 title: Double Descent
 summary: Phenomenon in ML where the prediction error on test data initially decreases, increases, and then decreases again as model complexity grows.
 ---
-## Phenomenon in ML where the prediction error on test data initially decreases, increases, and then decreases again as model complexity grows.
-
-Detailed Explanation:
 Double descent describes a counterintuitive pattern observed in the performance of machine learning models, particularly deep learning models, as their complexity increases. Traditionally, it was believed that increasing a model's complexity (e.g., adding more parameters) beyond a certain point would lead to overfitting, where the model learns the noise in the training data rather than the underlying distribution, thus performing poorly on new, unseen data. However, the double descent curve reveals a different trend: after reaching a peak of high error (the overfitting point), the error decreases again as complexity continues to increase. This suggests that very large models enter a new regime where they generalize better, even though they have enough capacity to fit all training data. The phenomenon is closely linked to the interplay between model capacity, dataset size, and the training methodology.
 
 Historical Overview:

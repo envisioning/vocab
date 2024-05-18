@@ -2,7 +2,6 @@
 title: AutoGPT
 summary: Autonomous AI agent that uses GPT-4 to generate prompts for itself, enabling it to complete tasks with minimal human intervention.
 ---
-Detailed Explanation:
 AutoGPT is designed to operate as an autonomous system by iteratively creating its own prompts to achieve a given goal. Leveraging the capabilities of GPT-4, it can handle complex tasks by breaking them down into smaller, manageable subtasks, and executing them step-by-step. This self-prompting mechanism allows AutoGPT to simulate human-like reasoning and problem-solving processes, making it suitable for applications such as automated research, content creation, and customer service. The key innovation lies in its ability to generate and refine its own instructions, thereby reducing the need for constant human guidance and enabling more sophisticated, multi-step operations.
 
 Historical Overview: 
