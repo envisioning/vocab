@@ -1,6 +1,6 @@
 ---
-title: "Meta Prompt"
-summary: "AI technique that emphasizes the structural and syntactical framework of prompts to guide models in problem-solving and task execution, prioritizing the "how" of information presentation over the "what.""
+title: Meta Prompt
+summary: AI technique that emphasizes the structural and syntactical framework of prompts to guide models in problem-solving and task execution, prioritizing the 'how' of information presentation over the 'what'.
 ---
 Expert-level Explanation: At its core, meta prompting represents an advanced prompting strategy that transcends conventional prompt engineering by adopting a high-level, abstract approach. This method encourages AI models to generalize across different tasks by understanding the underlying structure of prompts, thus enabling a more versatile and adaptive response mechanism. The technique is rooted in meta-learning concepts, where models are trained not just on specific tasks but on learning how to learn or adapt to new tasks efficiently. Meta prompting leverages this by employing a hierarchical model structure, where a primary "Meta Model" orchestrates the integration of insights from domain-specific models or experts, effectively synthesizing a collective response to complex queries or tasks. This orchestration mirrors the functionality of an ensemble approach, capitalizing on the diversity and specialization of individual models to produce a comprehensive and accurate output​[](https://github.com/meta-prompting/meta-prompting)​​[](https://flowgpt.gitbook.io/prompt-engineering-guide/group-8/advanced-topics-in-prompt-engineering/meta-learning-and-meta-prompts)​​[](https://ar5iv.org/abs/2401.12954)​.
 
