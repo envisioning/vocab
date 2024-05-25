@@ -7,4 +7,3 @@ Imitation Learning, also known as Learning from Demonstration, is pivotal in sce
 Historical overview: The concept of Imitation Learning has been around since the 1990s, with its popularity surging in the 2000s alongside advances in machine learning and the availability of large datasets of human behavior.
 
 Key contributors: While it is challenging to pinpoint a single contributor to the development of Imitation Learning, the field has seen significant contributions from researchers in robotics and machine learning, including Andrew Ng and Stefano Nolfi, among others, who have explored various approaches and applications of this learning paradigm.
-
