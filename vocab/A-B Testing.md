@@ -1,5 +1,5 @@
 ---
-title: A/B Testing
+title: A-B Testing
 summary: Method used to compare two versions of a variable to determine which one performs better in achieving a specific outcome.
 ---
 A/B testing, also known as split testing, is an experimental approach commonly used in digital marketing, product development, and user experience research. It involves randomly assigning participants into two groups: one group (A) is exposed to the control version of a variable, while the other group (B) is exposed to a modified version. By analyzing the performance metrics of each group, researchers can determine which version yields better results in terms of predefined criteria, such as click-through rates, conversion rates, or user engagement. A/B testing is critical for data-driven decision-making as it provides empirical evidence about the effectiveness of changes to products, websites, or marketing strategies.
