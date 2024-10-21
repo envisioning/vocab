@@ -1,0 +1,9934 @@
+[
+  {
+    "id": 1,
+    "name": "Internal Representation",
+    "children": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "id": 19,
+    "name": "AutoGPT",
+    "children": [
+      20,
+      21
+    ]
+  },
+  {
+    "id": 22,
+    "name": "ChatGPT",
+    "children": [
+      23,
+      20,
+      24,
+      25
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Autonomous Learning",
+    "children": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      3,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ]
+  },
+  {
+    "id": 53,
+    "name": "LLE (Locally Linear Embedding)",
+    "children": [
+      54,
+      55,
+      56
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Agent",
+    "children": [
+      26,
+      28,
+      57,
+      58,
+      34,
+      36,
+      38,
+      40,
+      59,
+      60,
+      61,
+      62,
+      44,
+      63,
+      47,
+      50,
+      51,
+      64,
+      65,
+      66
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Collaborative Intelligence",
+    "children": [
+      35,
+      68,
+      69,
+      70
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Adaptive Dual-Scale Denoising",
+    "children": [
+      72,
+      73,
+      74,
+      75,
+      76
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Invariance",
+    "children": [
+      2,
+      78,
+      3,
+      79,
+      9,
+      10,
+      80,
+      13
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Misuse",
+    "children": [
+      82,
+      83,
+      84,
+      85,
+      86,
+      69,
+      46,
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Autonomous Agents",
+    "children": [
+      26,
+      27,
+      57,
+      58,
+      32,
+      34,
+      59,
+      90,
+      60,
+      61,
+      62,
+      47,
+      50,
+      64,
+      91,
+      65
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Ontology",
+    "children": [
+      37,
+      93,
+      94,
+      95,
+      96,
+      14,
+      97,
+      17,
+      98
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Evolutionary Algorithm",
+    "children": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Weight Decay",
+    "children": [
+      107,
+      5,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Noise",
+    "children": [
+      116,
+      107,
+      3,
+      117,
+      118,
+      5,
+      119,
+      120,
+      121,
+      122,
+      111,
+      123,
+      124,
+      74,
+      112,
+      125,
+      126,
+      95,
+      127,
+      76,
+      96,
+      113,
+      128,
+      15
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Autoregressive",
+    "children": [
+      130
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Generalization",
+    "children": [
+      115,
+      107,
+      131,
+      132,
+      5,
+      119,
+      133,
+      134,
+      135,
+      120,
+      121,
+      136,
+      122,
+      124,
+      112,
+      137,
+      127,
+      113,
+      138,
+      139,
+      140,
+      128,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Capsule Network",
+    "children": [
+      142
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Sampling",
+    "children": [
+      144,
+      145,
+      146
+    ]
+  },
+  {
+    "id": 147,
+    "name": "LSTM (Long Short-Term Memory)",
+    "children": [
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ]
+  },
+  {
+    "id": 156,
+    "name": "ITM (Image-Text Matching)",
+    "children": [
+      157,
+      158,
+      10,
+      159,
+      160,
+      16
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Contextual Retrieval",
+    "children": [
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      16,
+      170
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Log-Likelihood",
+    "children": [
+      172,
+      173,
+      174
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Universal Learning Algorithms",
+    "children": [
+      26,
+      32,
+      3,
+      34,
+      132,
+      175,
+      176,
+      177,
+      178,
+      35,
+      5,
+      179,
+      180,
+      119,
+      181,
+      182,
+      150,
+      37,
+      38,
+      122,
+      183,
+      41,
+      111,
+      159,
+      101,
+      43,
+      11,
+      47,
+      95,
+      184,
+      48,
+      185,
+      186,
+      50,
+      51,
+      15,
+      16,
+      187,
+      66
+    ]
+  },
+  {
+    "id": 30,
+    "name": "ML (Machine Learning)",
+    "children": [
+      26,
+      3,
+      132,
+      5,
+      121,
+      122,
+      188,
+      189,
+      137,
+      52,
+      16,
+      190
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Bayesian Optimization",
+    "children": [
+      192,
+      193
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Self-Awareness",
+    "children": [
+      42,
+      195
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Joint Embedding Architecture",
+    "children": [
+      156,
+      3,
+      55,
+      196,
+      160
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Silent Collapse",
+    "children": [
+      198
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hierarchy of Generalizations",
+    "children": [
+      1,
+      77,
+      78,
+      107,
+      142,
+      199,
+      3,
+      4,
+      200,
+      79,
+      132,
+      201,
+      5,
+      202,
+      119,
+      203,
+      109,
+      204,
+      121,
+      122,
+      205,
+      206,
+      7,
+      9,
+      111,
+      10,
+      207,
+      125,
+      208,
+      209,
+      80,
+      126,
+      210,
+      95,
+      137,
+      211,
+      212,
+      213,
+      113,
+      13,
+      114,
+      214,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Intention",
+    "children": [
+      27,
+      28,
+      58,
+      215,
+      34,
+      38,
+      60,
+      43,
+      61,
+      50,
+      51,
+      65
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Motor Learning",
+    "children": [
+      26,
+      132,
+      65
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Counterfactual Fairness",
+    "children": [
+      217,
+      218
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Transformer",
+    "children": [
+      20,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      130,
+      229,
+      209,
+      230,
+      231,
+      232,
+      233,
+      154,
+      234,
+      235,
+      155,
+      25,
+      236
+    ]
+  },
+  {
+    "id": 237,
+    "name": "CoT (Chain of Thought)",
+    "children": [
+      32,
+      238,
+      90,
+      239,
+      128
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Scalable MatMul-free Language Modeling",
+    "children": [
+      241
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Task Environment",
+    "children": [
+      27,
+      28,
+      57,
+      242,
+      34,
+      175,
+      35,
+      38,
+      243,
+      183,
+      40,
+      244,
+      59,
+      41,
+      60,
+      101,
+      43,
+      61,
+      245,
+      62,
+      246,
+      44,
+      247,
+      47,
+      248,
+      48,
+      49,
+      50,
+      51,
+      15,
+      91,
+      65,
+      66
+    ]
+  },
+  {
+    "id": 249,
+    "name": "GAIL (Generative Adversarial Imitation Learning)",
+    "children": [
+      250,
+      251,
+      39,
+      252
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Fourier Features",
+    "children": [
+      254
+    ]
+  },
+  {
+    "id": 255,
+    "name": "Speculative Edits",
+    "children": [
+      256
+    ]
+  },
+  {
+    "id": 257,
+    "name": "Fabless",
+    "children": [
+      258
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Cross entropy loss",
+    "children": [
+      5,
+      111,
+      260,
+      113
+    ]
+  },
+  {
+    "id": 261,
+    "name": "FSDP (Fully Sharded Data Parallel)",
+    "children": [
+      5,
+      122
+    ]
+  },
+  {
+    "id": 262,
+    "name": "Predictive Analytics",
+    "children": [
+      263
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Equivariance",
+    "children": [
+      77,
+      2,
+      3,
+      9,
+      80
+    ]
+  },
+  {
+    "id": 264,
+    "name": "GMM (Gaussian Mixture Models)",
+    "children": [
+      265,
+      266,
+      267
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Confusion Matrix",
+    "children": [
+      5,
+      221,
+      269,
+      241,
+      188,
+      270
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Validation Data",
+    "children": [
+      106,
+      115,
+      116,
+      2,
+      199,
+      3,
+      271,
+      4,
+      272,
+      273,
+      117,
+      274,
+      118,
+      132,
+      175,
+      5,
+      119,
+      133,
+      109,
+      134,
+      135,
+      120,
+      121,
+      136,
+      122,
+      111,
+      123,
+      275,
+      198,
+      112,
+      126,
+      137,
+      127,
+      276,
+      277,
+      278,
+      213,
+      113,
+      139,
+      140,
+      279,
+      128,
+      114,
+      15,
+      280,
+      17,
+      281
+    ]
+  },
+  {
+    "id": 282,
+    "name": "Replaced Token Detection",
+    "children": [
+      283,
+      284,
+      285,
+      286,
+      287,
+      234,
+      288
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Autonomous Reasoning",
+    "children": [
+      26,
+      28,
+      29,
+      237,
+      3,
+      289,
+      242,
+      34,
+      35,
+      180,
+      181,
+      238,
+      182,
+      290,
+      6,
+      37,
+      183,
+      244,
+      41,
+      90,
+      69,
+      239,
+      291,
+      95,
+      50,
+      128,
+      14,
+      16,
+      187
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Capsule Networks",
+    "children": [
+      141,
+      2,
+      9,
+      208,
+      292
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Inference",
+    "children": [
+      2,
+      107,
+      3,
+      175,
+      5,
+      119,
+      133,
+      135,
+      121,
+      136,
+      122,
+      293,
+      294,
+      111,
+      10,
+      295,
+      137,
+      277,
+      278,
+      48,
+      128,
+      114,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 296,
+    "name": "LVLMs (Large Vision Language Models)",
+    "children": [
+      297,
+      298
+    ]
+  },
+  {
+    "id": 299,
+    "name": "Moloch",
+    "children": [
+      300
+    ]
+  },
+  {
+    "id": 3,
+    "name": "DL (Deep Learning)",
+    "children": [
+      1,
+      26,
+      77,
+      115,
+      29,
+      30,
+      157,
+      2,
+      78,
+      107,
+      32,
+      199,
+      4,
+      301,
+      289,
+      200,
+      117,
+      118,
+      79,
+      132,
+      302,
+      175,
+      303,
+      201,
+      5,
+      202,
+      119,
+      304,
+      305,
+      203,
+      109,
+      150,
+      37,
+      135,
+      204,
+      121,
+      122,
+      206,
+      7,
+      9,
+      111,
+      10,
+      159,
+      123,
+      101,
+      188,
+      166,
+      43,
+      74,
+      11,
+      12,
+      125,
+      160,
+      306,
+      307,
+      208,
+      247,
+      45,
+      209,
+      126,
+      189,
+      210,
+      95,
+      137,
+      308,
+      211,
+      230,
+      212,
+      277,
+      278,
+      213,
+      113,
+      139,
+      140,
+      186,
+      13,
+      128,
+      309,
+      233,
+      24,
+      174,
+      114,
+      214,
+      51,
+      15,
+      52,
+      16,
+      310,
+      190,
+      17,
+      311,
+      25,
+      312,
+      66,
+      313,
+      314,
+      315,
+      316
+    ]
+  },
+  {
+    "id": 317,
+    "name": "Algorithmic Probability",
+    "children": [
+      318,
+      319,
+      320
+    ]
+  },
+  {
+    "id": 321,
+    "name": "Logits",
+    "children": [
+      304,
+      111,
+      113
+    ]
+  },
+  {
+    "id": 271,
+    "name": "Cross Validation",
+    "children": [
+      107,
+      117,
+      5,
+      121,
+      112,
+      15
+    ]
+  },
+  {
+    "id": 322,
+    "name": "Catastrophic Forgetting",
+    "children": [
+      323,
+      324
+    ]
+  },
+  {
+    "id": 325,
+    "name": "Fast Takeoff",
+    "children": [
+      326,
+      327,
+      35,
+      328,
+      300,
+      329,
+      69,
+      330,
+      331,
+      332
+    ]
+  },
+  {
+    "id": 333,
+    "name": "Gorilla Program",
+    "children": [
+      327
+    ]
+  },
+  {
+    "id": 334,
+    "name": "Object Detection",
+    "children": [
+      335,
+      9,
+      10
+    ]
+  },
+  {
+    "id": 326,
+    "name": "ASI (Artificial Super Intelligence)",
+    "children": [
+      325,
+      327,
+      336,
+      35,
+      84,
+      328,
+      181,
+      337,
+      69,
+      330,
+      46,
+      331,
+      338,
+      339
+    ]
+  },
+  {
+    "id": 340,
+    "name": "Parametric Memory",
+    "children": [
+      5,
+      119,
+      305,
+      150,
+      122,
+      341,
+      153,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 342,
+    "name": "Instruction Following Model",
+    "children": [
+      343,
+      164,
+      243,
+      344,
+      345,
+      159,
+      346,
+      347,
+      348,
+      16,
+      25,
+      349
+    ]
+  },
+  {
+    "id": 350,
+    "name": "EBM (Energy-Based Model)",
+    "children": [
+      351
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Parameter Size",
+    "children": [
+      1,
+      2,
+      107,
+      3,
+      343,
+      352,
+      5,
+      119,
+      121,
+      122,
+      353,
+      10,
+      123,
+      112,
+      126,
+      276,
+      113,
+      139,
+      128,
+      15,
+      280,
+      17
+    ]
+  },
+  {
+    "id": 327,
+    "name": "Control Problem",
+    "children": [
+      325,
+      333,
+      326,
+      336,
+      35,
+      84,
+      328,
+      181,
+      300,
+      329,
+      86,
+      337,
+      60,
+      69,
+      330,
+      46,
+      47,
+      87,
+      88,
+      331,
+      89,
+      339
+    ]
+  },
+  {
+    "id": 354,
+    "name": "DPO (Direct Preference Optimization)",
+    "children": [
+      33,
+      355
+    ]
+  },
+  {
+    "id": 356,
+    "name": "VQA (Visual Question Answering)",
+    "children": [
+      10
+    ]
+  },
+  {
+    "id": 357,
+    "name": "Model Management",
+    "children": [
+      295,
+      358,
+      279
+    ]
+  },
+  {
+    "id": 272,
+    "name": "Model Drift",
+    "children": [
+      107,
+      5,
+      121,
+      122,
+      295,
+      279,
+      15,
+      359
+    ]
+  },
+  {
+    "id": 360,
+    "name": "Red Teaming",
+    "children": [
+      84,
+      86,
+      88
+    ]
+  },
+  {
+    "id": 361,
+    "name": "FSL (Few-Shot Learning)",
+    "children": [
+      175,
+      178,
+      362,
+      363,
+      364,
+      190
+    ]
+  },
+  {
+    "id": 365,
+    "name": "Data Blending",
+    "children": [
+      366
+    ]
+  },
+  {
+    "id": 367,
+    "name": "Saturating Non-Linearities",
+    "children": [
+      309
+    ]
+  },
+  {
+    "id": 343,
+    "name": "Foundation Model",
+    "children": [
+      342,
+      4,
+      23,
+      20,
+      175,
+      82,
+      223,
+      368,
+      369,
+      136,
+      12,
+      160,
+      307,
+      370,
+      347,
+      371,
+      372,
+      278,
+      48,
+      186,
+      323,
+      373,
+      374,
+      375,
+      25,
+      236
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Fab",
+    "children": [
+      257
+    ]
+  },
+  {
+    "id": 301,
+    "name": "Natural Language",
+    "children": [
+      3,
+      376,
+      377,
+      303,
+      164,
+      37,
+      225,
+      344,
+      283,
+      159,
+      166,
+      285,
+      378,
+      379,
+      380,
+      24,
+      16,
+      98,
+      25
+    ]
+  },
+  {
+    "id": 381,
+    "name": "TRL (Transfer Reinforcement Learning)",
+    "children": [
+      175,
+      51
+    ]
+  },
+  {
+    "id": 382,
+    "name": "Data Imputation",
+    "children": [
+      96
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Generative",
+    "children": [
+      22,
+      343,
+      20,
+      250,
+      383,
+      384,
+      223,
+      368,
+      369,
+      385,
+      386,
+      387,
+      130,
+      275,
+      252,
+      198,
+      160,
+      76,
+      373,
+      24,
+      25
+    ]
+  },
+  {
+    "id": 388,
+    "name": "Actor-Critic Models",
+    "children": [
+      389,
+      390,
+      247,
+      51,
+      391,
+      392
+    ]
+  },
+  {
+    "id": 393,
+    "name": "Control Logic",
+    "children": [
+      394,
+      395,
+      396,
+      397
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Mixture Map",
+    "children": [
+      264,
+      266,
+      267,
+      398
+    ]
+  },
+  {
+    "id": 399,
+    "name": "Random Forest",
+    "children": [
+      400,
+      401,
+      402,
+      403,
+      404,
+      405
+    ]
+  },
+  {
+    "id": 406,
+    "name": "HMI (Human-Machine Interface)",
+    "children": [
+      346,
+      47
+    ]
+  },
+  {
+    "id": 407,
+    "name": "Recommendation Systems",
+    "children": [
+      355
+    ]
+  },
+  {
+    "id": 394,
+    "name": "MPC (Model-Predictive Control)",
+    "children": [
+      393
+    ]
+  },
+  {
+    "id": 408,
+    "name": "A-Life (Artificial Life)",
+    "children": [
+      409
+    ]
+  },
+  {
+    "id": 410,
+    "name": "Symbolic Regression",
+    "children": [
+      182,
+      411,
+      18
+    ]
+  },
+  {
+    "id": 352,
+    "name": "Parameter Space",
+    "children": [
+      4,
+      5,
+      119,
+      109,
+      412,
+      122,
+      353,
+      111,
+      101,
+      102,
+      103,
+      276,
+      113,
+      114,
+      15,
+      280,
+      17
+    ]
+  },
+  {
+    "id": 413,
+    "name": "Feature Design",
+    "children": [
+      400,
+      125
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Implicit Reasoning",
+    "children": [
+      32,
+      3,
+      238,
+      223,
+      90,
+      166,
+      95,
+      128,
+      25
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Neural Network",
+    "children": [
+      2,
+      3,
+      414,
+      5,
+      415,
+      119,
+      304,
+      203,
+      109,
+      135,
+      204,
+      7,
+      416,
+      9,
+      10,
+      11,
+      210,
+      137,
+      213,
+      113,
+      13,
+      114,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 148,
+    "name": "xLSTM",
+    "children": [
+      147,
+      149,
+      150,
+      153,
+      154
+    ]
+  },
+  {
+    "id": 33,
+    "name": "RLHF (Reinforcement Learning from Human Feedback)",
+    "children": [
+      26,
+      354,
+      417,
+      39,
+      418,
+      43,
+      51,
+      70
+    ]
+  },
+  {
+    "id": 419,
+    "name": "Differentiable Parametric Curves",
+    "children": [
+      17
+    ]
+  },
+  {
+    "id": 420,
+    "name": "Wavelet",
+    "children": [
+      254
+    ]
+  },
+  {
+    "id": 273,
+    "name": "Hyperparameter Tuning",
+    "children": [
+      107,
+      5,
+      122,
+      276,
+      278,
+      15,
+      280
+    ]
+  },
+  {
+    "id": 421,
+    "name": "Prompt Injection",
+    "children": [
+      368,
+      21,
+      373
+    ]
+  },
+  {
+    "id": 336,
+    "name": "Sovereign AI",
+    "children": [
+      326,
+      327,
+      35,
+      84,
+      328,
+      181,
+      337,
+      69,
+      330,
+      46,
+      195,
+      89,
+      339,
+      332
+    ]
+  },
+  {
+    "id": 422,
+    "name": "Initialization",
+    "children": [
+      5,
+      122,
+      214
+    ]
+  },
+  {
+    "id": 131,
+    "name": "SVM (Support Vector Machine)",
+    "children": [
+      116,
+      132,
+      5,
+      134,
+      135,
+      124,
+      188,
+      423
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Orchestration",
+    "children": [
+      58,
+      32,
+      60,
+      63,
+      16
+    ]
+  },
+  {
+    "id": 424,
+    "name": "Cognitive Flexibility",
+    "children": [
+      215,
+      183,
+      425
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Dataset",
+    "children": [
+      115,
+      107,
+      3,
+      271,
+      132,
+      175,
+      5,
+      121,
+      122,
+      426,
+      111,
+      10,
+      123,
+      101,
+      160,
+      278,
+      113,
+      15,
+      281
+    ]
+  },
+  {
+    "id": 427,
+    "name": "Emergence",
+    "children": [
+      49
+    ]
+  },
+  {
+    "id": 428,
+    "name": "Empathic AI",
+    "children": [
+      429
+    ]
+  },
+  {
+    "id": 430,
+    "name": "Sparsity",
+    "children": [
+      431,
+      432
+    ]
+  },
+  {
+    "id": 433,
+    "name": "PPO (Proximal Policy Optimization)",
+    "children": [
+      434,
+      389,
+      390,
+      391,
+      392
+    ]
+  },
+  {
+    "id": 215,
+    "name": "ToM (Theory of Mind)",
+    "children": [
+      57,
+      424,
+      183,
+      16
+    ]
+  },
+  {
+    "id": 435,
+    "name": "JEST (Multimodal Contrastive Learning with Joint Example Selection)",
+    "children": [
+      206,
+      436,
+      160,
+      437
+    ]
+  },
+  {
+    "id": 438,
+    "name": "Unverifyability",
+    "children": [
+      439
+    ]
+  },
+  {
+    "id": 274,
+    "name": "TTT (Test-Time Training)",
+    "children": [
+      107,
+      133
+    ]
+  },
+  {
+    "id": 440,
+    "name": "RAG (Retrieval-Augmented Generation)",
+    "children": [
+      168
+    ]
+  },
+  {
+    "id": 441,
+    "name": "PQ (Product Quantization)",
+    "children": [
+      442,
+      443,
+      444,
+      445,
+      446
+    ]
+  },
+  {
+    "id": 297,
+    "name": "EMT (Extended Mind Transformer)",
+    "children": [
+      296,
+      447
+    ]
+  },
+  {
+    "id": 448,
+    "name": "Tensor",
+    "children": [
+      449,
+      450,
+      316
+    ]
+  },
+  {
+    "id": 20,
+    "name": "GPT (Generative Pre-Trained Transformer)",
+    "children": [
+      19,
+      22,
+      219,
+      343,
+      23,
+      451,
+      452,
+      130,
+      160,
+      230,
+      186,
+      373,
+      24,
+      25,
+      236,
+      288
+    ]
+  },
+  {
+    "id": 414,
+    "name": "SNN (Spiking Neural Network)",
+    "children": [
+      200,
+      453
+    ]
+  },
+  {
+    "id": 454,
+    "name": "Residual Connections",
+    "children": [
+      455
+    ]
+  },
+  {
+    "id": 456,
+    "name": "Guardrails",
+    "children": [
+      83,
+      84,
+      86,
+      457,
+      69,
+      46,
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "id": 366,
+    "name": "Information Integration",
+    "children": [
+      365,
+      96,
+      458
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Data Wall",
+    "children": [
+      115,
+      107,
+      3,
+      5,
+      119,
+      121,
+      122,
+      459,
+      123,
+      275,
+      295,
+      112,
+      95,
+      127,
+      96,
+      140,
+      458,
+      128,
+      15
+    ]
+  },
+  {
+    "id": 266,
+    "name": "EM (Expectation-Maximization)",
+    "children": [
+      264,
+      265,
+      119,
+      172,
+      267
+    ]
+  },
+  {
+    "id": 34,
+    "name": "World Model",
+    "children": [
+      26,
+      27,
+      28,
+      29,
+      57,
+      58,
+      32,
+      37,
+      460,
+      183,
+      40,
+      90,
+      69,
+      43,
+      461,
+      370,
+      291,
+      88,
+      48,
+      50,
+      51,
+      15,
+      187,
+      91,
+      65,
+      98
+    ]
+  },
+  {
+    "id": 395,
+    "name": "SSM (State-Space Model)",
+    "children": [
+      393,
+      462,
+      463,
+      464
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Reranking",
+    "children": [
+      161,
+      169
+    ]
+  },
+  {
+    "id": 431,
+    "name": "Sparsability",
+    "children": [
+      430,
+      432
+    ]
+  },
+  {
+    "id": 376,
+    "name": "Speech Processing",
+    "children": [
+      301,
+      465,
+      466,
+      159,
+      16
+    ]
+  },
+  {
+    "id": 467,
+    "name": "CUDA (Compute Unified Device Architecture)",
+    "children": [
+      468,
+      469,
+      470,
+      294,
+      314
+    ]
+  },
+  {
+    "id": 377,
+    "name": "NLU (Natural Language Understanding)",
+    "children": [
+      301,
+      303,
+      37,
+      344,
+      283,
+      159,
+      16,
+      98
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Max Pooling",
+    "children": [
+      77,
+      2,
+      3,
+      5,
+      202,
+      119,
+      203,
+      109,
+      110,
+      9,
+      208,
+      13,
+      471,
+      114,
+      15,
+      313
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Supervision",
+    "children": [
+      116,
+      29,
+      30,
+      2,
+      31,
+      107,
+      3,
+      131,
+      117,
+      175,
+      5,
+      119,
+      304,
+      109,
+      451,
+      134,
+      135,
+      204,
+      121,
+      136,
+      122,
+      472,
+      7,
+      9,
+      111,
+      10,
+      159,
+      123,
+      269,
+      42,
+      101,
+      124,
+      188,
+      11,
+      295,
+      112,
+      306,
+      126,
+      189,
+      473,
+      95,
+      137,
+      127,
+      212,
+      278,
+      113,
+      140,
+      128,
+      114,
+      51,
+      15,
+      270,
+      52,
+      16,
+      423,
+      190,
+      17,
+      311,
+      312
+    ]
+  },
+  {
+    "id": 417,
+    "name": "RLHF++",
+    "children": [
+      33,
+      43,
+      70
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Query Flock",
+    "children": [
+      161,
+      474,
+      167
+    ]
+  },
+  {
+    "id": 475,
+    "name": "Robustness",
+    "children": [
+      5,
+      476,
+      295,
+      477,
+      478
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Geometric Deep Learning",
+    "children": [
+      3,
+      479,
+      480,
+      481
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Transfer Learning",
+    "children": [
+      29,
+      58,
+      107,
+      199,
+      3,
+      361,
+      343,
+      381,
+      117,
+      132,
+      482,
+      5,
+      119,
+      133,
+      121,
+      136,
+      122,
+      111,
+      123,
+      12,
+      307,
+      126,
+      372,
+      277,
+      278,
+      113,
+      323,
+      128,
+      15,
+      375,
+      190,
+      17
+    ]
+  },
+  {
+    "id": 303,
+    "name": "Natural Language Problem",
+    "children": [
+      3,
+      301,
+      377,
+      164,
+      37,
+      225,
+      283,
+      159,
+      166,
+      285,
+      379,
+      24,
+      16,
+      98,
+      25
+    ]
+  },
+  {
+    "id": 176,
+    "name": "NHI (Non-Human Intelligence)",
+    "children": [
+      29,
+      35,
+      181
+    ]
+  },
+  {
+    "id": 462,
+    "name": "Byte-Level State Space",
+    "children": [
+      395,
+      483
+    ]
+  },
+  {
+    "id": 484,
+    "name": "Teacher Committee",
+    "children": [
+      5,
+      485,
+      486,
+      487,
+      146,
+      17
+    ]
+  },
+  {
+    "id": 263,
+    "name": "Data Mining",
+    "children": [
+      262,
+      488,
+      489
+    ]
+  },
+  {
+    "id": 482,
+    "name": "MTL (Multi-Task Learning)",
+    "children": [
+      175
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Autoencoder",
+    "children": [
+      2,
+      3,
+      54,
+      5,
+      109,
+      8,
+      9,
+      111,
+      74,
+      432,
+      113,
+      114,
+      52,
+      490,
+      491
+    ]
+  },
+  {
+    "id": 492,
+    "name": "Active Inference",
+    "children": [
+      493,
+      494,
+      351
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Cross-Domain Competency",
+    "children": [
+      29,
+      35,
+      179,
+      181,
+      37
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Meta-Learning",
+    "children": [
+      29,
+      361,
+      495,
+      190,
+      496,
+      497
+    ]
+  },
+  {
+    "id": 362,
+    "name": "Few Shot",
+    "children": [
+      361,
+      363,
+      364
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Dimensionality Reduction",
+    "children": [
+      53,
+      201,
+      412,
+      8,
+      125,
+      52,
+      56
+    ]
+  },
+  {
+    "id": 335,
+    "name": "Polymorphism",
+    "children": [
+      334,
+      498
+    ]
+  },
+  {
+    "id": 429,
+    "name": "Affective Computation",
+    "children": [
+      428
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Human-Level AI",
+    "children": [
+      26,
+      67,
+      29,
+      58,
+      32,
+      325,
+      326,
+      327,
+      336,
+      176,
+      177,
+      179,
+      180,
+      84,
+      328,
+      181,
+      37,
+      183,
+      337,
+      499,
+      159,
+      69,
+      500,
+      330,
+      47,
+      501,
+      95,
+      184,
+      502,
+      185,
+      186,
+      50,
+      339,
+      15,
+      70
+    ]
+  },
+  {
+    "id": 453,
+    "name": "BNNs (Biological Neural Networks)",
+    "children": [
+      414,
+      416,
+      493,
+      11
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Training",
+    "children": [
+      1,
+      106,
+      115,
+      116,
+      29,
+      30,
+      2,
+      259,
+      261,
+      268,
+      107,
+      199,
+      3,
+      271,
+      340,
+      4,
+      272,
+      352,
+      200,
+      273,
+      422,
+      131,
+      117,
+      118,
+      79,
+      132,
+      475,
+      175,
+      484,
+      201,
+      119,
+      304,
+      133,
+      203,
+      221,
+      503,
+      109,
+      504,
+      505,
+      506,
+      134,
+      37,
+      474,
+      486,
+      135,
+      204,
+      368,
+      120,
+      121,
+      136,
+      122,
+      390,
+      206,
+      472,
+      226,
+      7,
+      227,
+      192,
+      293,
+      353,
+      507,
+      459,
+      9,
+      508,
+      111,
+      10,
+      509,
+      123,
+      269,
+      42,
+      101,
+      510,
+      124,
+      188,
+      275,
+      43,
+      285,
+      461,
+      198,
+      11,
+      12,
+      295,
+      112,
+      125,
+      102,
+      306,
+      247,
+      126,
+      189,
+      210,
+      473,
+      95,
+      137,
+      371,
+      127,
+      511,
+      211,
+      402,
+      230,
+      212,
+      276,
+      364,
+      512,
+      277,
+      487,
+      278,
+      213,
+      113,
+      139,
+      140,
+      279,
+      13,
+      323,
+      128,
+      233,
+      477,
+      174,
+      114,
+      214,
+      51,
+      15,
+      513,
+      280,
+      52,
+      490,
+      16,
+      404,
+      190,
+      17,
+      311,
+      66,
+      281,
+      315,
+      316
+    ]
+  },
+  {
+    "id": 514,
+    "name": "Heuristic Search Techniques",
+    "children": [
+      102,
+      246,
+      103,
+      248,
+      515
+    ]
+  },
+  {
+    "id": 516,
+    "name": "Flash Attention",
+    "children": [
+      227,
+      209,
+      230,
+      233,
+      236
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Narrow AI",
+    "children": [
+      29,
+      177,
+      35,
+      181,
+      37,
+      344,
+      184,
+      50
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Polymathic AI",
+    "children": [
+      29,
+      32,
+      35,
+      181,
+      47,
+      48,
+      50,
+      187
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Cooperativity",
+    "children": [
+      26,
+      27,
+      59,
+      60,
+      61,
+      62,
+      64
+    ]
+  },
+  {
+    "id": 202,
+    "name": "AlexNet",
+    "children": [
+      2,
+      3,
+      79,
+      517,
+      10,
+      208,
+      313
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Discriminator",
+    "children": [
+      249,
+      23,
+      251,
+      383,
+      223,
+      385,
+      275,
+      252,
+      198,
+      518
+    ]
+  },
+  {
+    "id": 415,
+    "name": "MLP (Multilayer Perceptron)",
+    "children": [
+      200,
+      203,
+      109,
+      204,
+      210,
+      137,
+      213,
+      113,
+      13,
+      114,
+      311
+    ]
+  },
+  {
+    "id": 519,
+    "name": "Logistic Regression",
+    "children": [
+      304,
+      472,
+      411,
+      188,
+      512
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Parameterized",
+    "children": [
+      115,
+      116,
+      29,
+      2,
+      107,
+      199,
+      3,
+      340,
+      4,
+      352,
+      200,
+      118,
+      266,
+      79,
+      132,
+      175,
+      5,
+      304,
+      133,
+      203,
+      221,
+      109,
+      505,
+      37,
+      474,
+      135,
+      204,
+      368,
+      120,
+      121,
+      136,
+      122,
+      341,
+      390,
+      227,
+      192,
+      293,
+      353,
+      9,
+      111,
+      10,
+      101,
+      124,
+      43,
+      461,
+      11,
+      245,
+      295,
+      112,
+      306,
+      209,
+      126,
+      210,
+      95,
+      137,
+      127,
+      211,
+      230,
+      212,
+      276,
+      173,
+      512,
+      278,
+      213,
+      48,
+      113,
+      139,
+      140,
+      128,
+      233,
+      174,
+      114,
+      51,
+      15,
+      280,
+      16,
+      17,
+      311,
+      66,
+      315,
+      316
+    ]
+  },
+  {
+    "id": 304,
+    "name": "SoftMax",
+    "children": [
+      3,
+      321,
+      200,
+      132,
+      5,
+      519,
+      119,
+      203,
+      109,
+      135,
+      122,
+      472,
+      353,
+      9,
+      111,
+      269,
+      188,
+      520,
+      306,
+      210,
+      137,
+      113,
+      114,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 465,
+    "name": "ASR (Automatic Speech Recognition)",
+    "children": [
+      376,
+      466
+    ]
+  },
+  {
+    "id": 521,
+    "name": "Compute Efficiency",
+    "children": [
+      469,
+      504,
+      470,
+      522,
+      294,
+      312,
+      314
+    ]
+  },
+  {
+    "id": 523,
+    "name": "Brute Force",
+    "children": [
+      102
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Fourier Analysis",
+    "children": [
+      253,
+      420
+    ]
+  },
+  {
+    "id": 524,
+    "name": "Panel-of-Experts",
+    "children": [
+      402,
+      398,
+      495,
+      403,
+      404
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Regularization",
+    "children": [
+      106,
+      112
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Dual Use Foundational Model",
+    "children": [
+      81,
+      343,
+      85,
+      369,
+      86,
+      46,
+      87,
+      88,
+      48,
+      186,
+      89
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Policy-Guided Diffusion",
+    "children": [
+      71,
+      73,
+      389,
+      390,
+      525,
+      75,
+      76,
+      391,
+      392
+    ]
+  },
+  {
+    "id": 468,
+    "name": "GPU-Poor",
+    "children": [
+      467,
+      469,
+      470,
+      314
+    ]
+  },
+  {
+    "id": 83,
+    "name": "AI Watchdog",
+    "children": [
+      81,
+      456,
+      84,
+      85,
+      86,
+      457,
+      69,
+      87,
+      88,
+      89,
+      339
+    ]
+  },
+  {
+    "id": 133,
+    "name": "TTFT (Test Time Fine-Tuning)",
+    "children": [
+      116,
+      107,
+      199,
+      274,
+      175,
+      5,
+      119,
+      121,
+      278,
+      128,
+      15
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Attention Block",
+    "children": [
+      219,
+      221,
+      222,
+      224,
+      226,
+      227,
+      229,
+      209,
+      230,
+      232,
+      233,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 526,
+    "name": "FSA (Finite State Automata)",
+    "children": [
+      245
+    ]
+  },
+  {
+    "id": 318,
+    "name": "Conditional Probability",
+    "children": [
+      317,
+      509,
+      173,
+      527
+    ]
+  },
+  {
+    "id": 305,
+    "name": "DNC (Differential Neural Computer)",
+    "children": [
+      3,
+      340,
+      150,
+      153
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Hidden Layer",
+    "children": [
+      2,
+      3,
+      200,
+      79,
+      5,
+      415,
+      119,
+      304,
+      109,
+      204,
+      122,
+      528,
+      7,
+      9,
+      111,
+      11,
+      152,
+      529,
+      208,
+      432,
+      210,
+      137,
+      372,
+      213,
+      113,
+      13,
+      174,
+      114,
+      214,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 221,
+    "name": "Attention Matrix",
+    "children": [
+      219,
+      268,
+      5,
+      119,
+      220,
+      222,
+      224,
+      341,
+      226,
+      227,
+      241,
+      229,
+      530,
+      209,
+      230,
+      232,
+      233,
+      15,
+      270,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Alignment Platform",
+    "children": [
+      81,
+      326,
+      327,
+      360,
+      336,
+      456,
+      35,
+      83,
+      328,
+      531,
+      300,
+      329,
+      85,
+      86,
+      337,
+      457,
+      60,
+      69,
+      532,
+      46,
+      47,
+      87,
+      88,
+      331,
+      89,
+      339,
+      187,
+      533,
+      332,
+      70
+    ]
+  },
+  {
+    "id": 503,
+    "name": "Vanishing Gradient",
+    "children": [
+      5,
+      109,
+      149,
+      213,
+      114,
+      214
+    ]
+  },
+  {
+    "id": 534,
+    "name": "TF-IDF (Term Frequency-Inverse Document Frequency)",
+    "children": [
+      165,
+      168
+    ]
+  },
+  {
+    "id": 498,
+    "name": "Instantiation",
+    "children": [
+      335
+    ]
+  },
+  {
+    "id": 535,
+    "name": "NLD (Neural Lie Detectors)",
+    "children": [
+      531
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Adversarial Debiasing",
+    "children": [
+      249,
+      250,
+      476,
+      223,
+      275,
+      252,
+      198,
+      536,
+      478
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Backpropagation",
+    "children": [
+      106,
+      2,
+      107,
+      3,
+      352,
+      200,
+      79,
+      132,
+      201,
+      5,
+      415,
+      119,
+      304,
+      203,
+      503,
+      100,
+      135,
+      204,
+      122,
+      110,
+      7,
+      537,
+      416,
+      353,
+      9,
+      111,
+      10,
+      101,
+      11,
+      538,
+      126,
+      539,
+      210,
+      137,
+      212,
+      213,
+      113,
+      13,
+      174,
+      114,
+      214,
+      15,
+      311,
+      66
+    ]
+  },
+  {
+    "id": 383,
+    "name": "Generative Workflow",
+    "children": [
+      23,
+      250,
+      384,
+      223,
+      385,
+      386,
+      387,
+      275,
+      252,
+      198,
+      76,
+      491
+    ]
+  },
+  {
+    "id": 540,
+    "name": "FCN (Fully Convolutional Networks)",
+    "children": [
+      10,
+      208,
+      541,
+      13
+    ]
+  },
+  {
+    "id": 542,
+    "name": "Deterministic Quoting",
+    "children": [
+      245
+    ]
+  },
+  {
+    "id": 543,
+    "name": "Discount Factor",
+    "children": [
+      51,
+      544,
+      545
+    ]
+  },
+  {
+    "id": 328,
+    "name": "Superintelligence",
+    "children": [
+      325,
+      326,
+      327,
+      336,
+      35,
+      84,
+      181,
+      329,
+      337,
+      69,
+      330,
+      46,
+      195,
+      331,
+      339,
+      332
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Neuroevolution",
+    "children": [
+      99,
+      109,
+      104,
+      114
+    ]
+  },
+  {
+    "id": 451,
+    "name": "Self-Supervised Pretraining",
+    "children": [
+      20,
+      132,
+      225,
+      285,
+      12,
+      209,
+      189,
+      473,
+      25,
+      236
+    ]
+  },
+  {
+    "id": 164,
+    "name": "QA (Question-Answer)",
+    "children": [
+      161,
+      342,
+      301,
+      303,
+      546,
+      344,
+      345,
+      159,
+      168,
+      547,
+      16,
+      25
+    ]
+  },
+  {
+    "id": 158,
+    "name": "CLIP (Contrastive Language\u2013Image Pre-training)",
+    "children": [
+      156,
+      160
+    ]
+  },
+  {
+    "id": 548,
+    "name": "DAG (Directed Acyclic Graphs)",
+    "children": [
+      549,
+      479,
+      481
+    ]
+  },
+  {
+    "id": 550,
+    "name": "Rightsizing",
+    "children": [
+      469
+    ]
+  },
+  {
+    "id": 181,
+    "name": "AGI (Artificial General Intelligence)",
+    "children": [
+      29,
+      32,
+      326,
+      327,
+      336,
+      176,
+      177,
+      35,
+      179,
+      180,
+      328,
+      37,
+      337,
+      69,
+      330,
+      184,
+      331,
+      185,
+      186,
+      50,
+      339
+    ]
+  },
+  {
+    "id": 531,
+    "name": "XAI (Explainable AI)",
+    "children": [
+      84,
+      535,
+      238,
+      217,
+      460,
+      69,
+      551,
+      461,
+      46,
+      87,
+      88,
+      50,
+      89,
+      339,
+      187,
+      70
+    ]
+  },
+  {
+    "id": 552,
+    "name": "DoLa (Decoding by Contrasting Layers)",
+    "children": [
+      256
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Reasoning Path",
+    "children": [
+      237,
+      32,
+      289,
+      531,
+      182,
+      290,
+      217,
+      460,
+      90,
+      551,
+      461,
+      128,
+      553,
+      187
+    ]
+  },
+  {
+    "id": 469,
+    "name": "Compute",
+    "children": [
+      467,
+      521,
+      468,
+      550,
+      470,
+      294,
+      554,
+      312,
+      314
+    ]
+  },
+  {
+    "id": 434,
+    "name": "TRPO (Trust Region Policy Optimization)",
+    "children": [
+      433,
+      389,
+      390,
+      391,
+      392
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Sequence Masking",
+    "children": [
+      219,
+      220,
+      221,
+      224,
+      227,
+      228,
+      229,
+      530,
+      209,
+      230,
+      233,
+      234,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Feature Importance",
+    "children": [
+      399,
+      413,
+      125,
+      15
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Neurosymbolic AI",
+    "children": [
+      29,
+      32,
+      410,
+      238,
+      6,
+      150,
+      90,
+      539,
+      95,
+      14,
+      187,
+      18
+    ]
+  },
+  {
+    "id": 504,
+    "name": "Training Cost",
+    "children": [
+      5,
+      521
+    ]
+  },
+  {
+    "id": 396,
+    "name": "Cybernetics",
+    "children": [
+      393,
+      41,
+      43,
+      49
+    ]
+  },
+  {
+    "id": 555,
+    "name": "Hypernetwork",
+    "children": [
+      114
+    ]
+  },
+  {
+    "id": 485,
+    "name": "Distillation",
+    "children": [
+      484,
+      486,
+      556,
+      487
+    ]
+  },
+  {
+    "id": 505,
+    "name": "Inductive Prior",
+    "children": [
+      5,
+      119,
+      122,
+      557,
+      112,
+      527,
+      15
+    ]
+  },
+  {
+    "id": 476,
+    "name": "Adversarial Instructions",
+    "children": [
+      475,
+      251,
+      536,
+      478
+    ]
+  },
+  {
+    "id": 412,
+    "name": "Dimension",
+    "children": [
+      352,
+      54,
+      134,
+      55,
+      8,
+      443,
+      196,
+      558,
+      125,
+      559,
+      560,
+      449,
+      423,
+      561,
+      562
+    ]
+  },
+  {
+    "id": 300,
+    "name": "P(Doom)",
+    "children": [
+      299,
+      325,
+      327,
+      84,
+      329,
+      86,
+      337,
+      69,
+      46,
+      339,
+      533,
+      332
+    ]
+  },
+  {
+    "id": 455,
+    "name": "ResNet (Residual Network)",
+    "children": [
+      454
+    ]
+  },
+  {
+    "id": 329,
+    "name": "Instrumental Convergence",
+    "children": [
+      325,
+      327,
+      84,
+      328,
+      300,
+      337,
+      69,
+      46,
+      331
+    ]
+  },
+  {
+    "id": 563,
+    "name": "Algorithmic Bias",
+    "children": [
+      510,
+      564,
+      565,
+      218
+    ]
+  },
+  {
+    "id": 566,
+    "name": "MMLU (Massive Multitask Language Understanding)",
+    "children": [
+      281
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Abductive Reasoning",
+    "children": [
+      32,
+      238,
+      557
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Symbolic AI",
+    "children": [
+      1,
+      32,
+      182,
+      567,
+      183,
+      248,
+      14,
+      553,
+      187,
+      18
+    ]
+  },
+  {
+    "id": 165,
+    "name": "IR (Information Retrieval)",
+    "children": [
+      161,
+      534,
+      167,
+      168,
+      169
+    ]
+  },
+  {
+    "id": 506,
+    "name": "Chinchilla Scaling",
+    "children": [
+      5,
+      568,
+      371
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Gating Mechanism",
+    "children": [
+      147,
+      148,
+      503,
+      150,
+      151,
+      569,
+      152,
+      153,
+      230,
+      233,
+      154,
+      155
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Dual Use",
+    "children": [
+      81,
+      82,
+      83,
+      84,
+      86,
+      46,
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Memory Systems",
+    "children": [
+      147,
+      29,
+      3,
+      340,
+      148,
+      305,
+      182,
+      149,
+      183,
+      153,
+      95,
+      15,
+      154
+    ]
+  },
+  {
+    "id": 134,
+    "name": "VC Dimension (Vapnik-Chervonenkis)",
+    "children": [
+      116,
+      107,
+      131,
+      132,
+      5,
+      412,
+      135,
+      121,
+      122,
+      269,
+      124,
+      112,
+      127,
+      113,
+      138,
+      140,
+      15,
+      423
+    ]
+  },
+  {
+    "id": 463,
+    "name": "State Space Model",
+    "children": [
+      395,
+      544
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Diffusion Forcing",
+    "children": [
+      71,
+      72,
+      525,
+      75,
+      76
+    ]
+  },
+  {
+    "id": 447,
+    "name": "Active Externalism",
+    "children": [
+      297,
+      183,
+      570
+    ]
+  },
+  {
+    "id": 571,
+    "name": "LoRA (Low-Rank Adaptation)",
+    "children": [
+      278
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Machine Understanding",
+    "children": [
+      26,
+      92,
+      29,
+      32,
+      3,
+      301,
+      34,
+      377,
+      303,
+      177,
+      35,
+      5,
+      179,
+      119,
+      181,
+      38,
+      183,
+      10,
+      159,
+      69,
+      47,
+      95,
+      308,
+      364,
+      50,
+      128,
+      14,
+      15,
+      16,
+      98,
+      70
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Goal",
+    "children": [
+      26,
+      27,
+      29,
+      57,
+      58,
+      37,
+      69,
+      43,
+      47,
+      248,
+      50,
+      51
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Imitation Learning",
+    "children": [
+      26,
+      249,
+      33,
+      418,
+      44,
+      51
+    ]
+  },
+  {
+    "id": 474,
+    "name": "Router",
+    "children": [
+      163,
+      5,
+      119,
+      226,
+      128,
+      24,
+      15
+    ]
+  },
+  {
+    "id": 486,
+    "name": "Model Distillation",
+    "children": [
+      484,
+      5,
+      485,
+      556,
+      487,
+      146
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Supervised Classifier",
+    "children": [
+      116,
+      107,
+      199,
+      3,
+      200,
+      131,
+      132,
+      5,
+      119,
+      304,
+      109,
+      134,
+      121,
+      122,
+      472,
+      111,
+      269,
+      101,
+      124,
+      188,
+      189,
+      210,
+      473,
+      137,
+      512,
+      113,
+      140,
+      128,
+      114,
+      495,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 204,
+    "name": "ANN (Artificial Neural Networks)",
+    "children": [
+      2,
+      3,
+      200,
+      132,
+      5,
+      415,
+      119,
+      203,
+      109,
+      7,
+      111,
+      11,
+      210,
+      137,
+      213,
+      113,
+      13,
+      114,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 384,
+    "name": "Hallucination",
+    "children": [
+      23,
+      383,
+      223,
+      368,
+      385,
+      130,
+      275,
+      198
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Co-Pilot",
+    "children": [
+      67
+    ]
+  },
+  {
+    "id": 470,
+    "name": "Accelerator",
+    "children": [
+      467,
+      521,
+      468,
+      469,
+      572,
+      294,
+      554,
+      314
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Generative AI",
+    "children": [
+      219,
+      343,
+      23,
+      289,
+      250,
+      251,
+      383,
+      384,
+      368,
+      385,
+      386,
+      8,
+      387,
+      130,
+      275,
+      252,
+      198,
+      160,
+      76,
+      373,
+      573,
+      490,
+      491,
+      25
+    ]
+  },
+  {
+    "id": 397,
+    "name": "SIL (Simulator in the Loop)",
+    "children": [
+      393,
+      291
+    ]
+  },
+  {
+    "id": 389,
+    "name": "Policy Learning",
+    "children": [
+      388,
+      433,
+      72,
+      434,
+      574,
+      390,
+      247,
+      51,
+      544,
+      193,
+      391,
+      545,
+      392
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Counterfactual Explanations",
+    "children": [
+      216,
+      531,
+      238,
+      460
+    ]
+  },
+  {
+    "id": 368,
+    "name": "Prompt",
+    "children": [
+      343,
+      23,
+      421,
+      5,
+      119,
+      384,
+      223,
+      369,
+      136,
+      130,
+      21,
+      575,
+      346,
+      576,
+      278,
+      373,
+      24,
+      374,
+      15,
+      25
+    ]
+  },
+  {
+    "id": 517,
+    "name": "Dropout",
+    "children": [
+      202
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Sampling Algorithm",
+    "children": [
+      143,
+      291,
+      145,
+      146
+    ]
+  },
+  {
+    "id": 574,
+    "name": "MDPO (Mirror Descent Policy Optimization)",
+    "children": [
+      389,
+      390,
+      353,
+      391
+    ]
+  },
+  {
+    "id": 369,
+    "name": "Stochastic Parrot",
+    "children": [
+      343,
+      23,
+      82,
+      368,
+      457,
+      69,
+      160,
+      89,
+      24,
+      25,
+      66
+    ]
+  },
+  {
+    "id": 120,
+    "name": "MDL (Minimum Description Length)",
+    "children": [
+      115,
+      116,
+      107,
+      5,
+      119,
+      121,
+      122,
+      124,
+      112,
+      371,
+      127,
+      113,
+      15,
+      320
+    ]
+  },
+  {
+    "id": 385,
+    "name": "Image Synthesis",
+    "children": [
+      23,
+      250,
+      383,
+      384,
+      223,
+      386,
+      387,
+      130,
+      10,
+      275,
+      252,
+      198,
+      160,
+      76,
+      491
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Training Data",
+    "children": [
+      115,
+      116,
+      30,
+      2,
+      107,
+      199,
+      3,
+      271,
+      4,
+      272,
+      117,
+      118,
+      132,
+      175,
+      5,
+      119,
+      133,
+      134,
+      135,
+      120,
+      136,
+      122,
+      459,
+      111,
+      123,
+      188,
+      275,
+      295,
+      112,
+      126,
+      137,
+      127,
+      364,
+      277,
+      278,
+      96,
+      48,
+      113,
+      138,
+      139,
+      140,
+      323,
+      128,
+      477,
+      114,
+      15,
+      280,
+      52,
+      190,
+      17,
+      66
+    ]
+  },
+  {
+    "id": 546,
+    "name": "Chatbot",
+    "children": [
+      164
+    ]
+  },
+  {
+    "id": 136,
+    "name": "In-Context Learning",
+    "children": [
+      116,
+      107,
+      199,
+      343,
+      132,
+      175,
+      5,
+      119,
+      368,
+      121,
+      122,
+      21,
+      168,
+      347,
+      576,
+      230,
+      277,
+      278,
+      48,
+      323,
+      128,
+      373,
+      15,
+      17,
+      25,
+      562
+    ]
+  },
+  {
+    "id": 577,
+    "name": "Contextual BM25",
+    "children": [
+      558
+    ]
+  },
+  {
+    "id": 460,
+    "name": "Explainability",
+    "children": [
+      34,
+      531,
+      238,
+      217,
+      457,
+      69,
+      551,
+      461,
+      87,
+      50,
+      89,
+      15,
+      187
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Triple",
+    "children": [
+      92,
+      94
+    ]
+  },
+  {
+    "id": 578,
+    "name": "Salience",
+    "children": [
+      10,
+      230
+    ]
+  },
+  {
+    "id": 488,
+    "name": "Interestingness",
+    "children": [
+      263
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Point-wise Feedforward Network",
+    "children": [
+      219,
+      220,
+      221,
+      222,
+      226,
+      227,
+      228,
+      229,
+      209,
+      230,
+      232,
+      233,
+      236
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Parameter",
+    "children": [
+      115,
+      116,
+      29,
+      30,
+      2,
+      261,
+      107,
+      199,
+      3,
+      340,
+      4,
+      272,
+      352,
+      273,
+      422,
+      117,
+      118,
+      132,
+      175,
+      5,
+      119,
+      304,
+      203,
+      109,
+      505,
+      134,
+      135,
+      120,
+      121,
+      136,
+      341,
+      390,
+      472,
+      192,
+      293,
+      353,
+      9,
+      111,
+      123,
+      101,
+      124,
+      43,
+      11,
+      295,
+      112,
+      306,
+      126,
+      95,
+      137,
+      127,
+      211,
+      276,
+      173,
+      364,
+      277,
+      278,
+      113,
+      139,
+      140,
+      128,
+      114,
+      15,
+      280,
+      52,
+      16,
+      17,
+      66,
+      315,
+      316
+    ]
+  },
+  {
+    "id": 205,
+    "name": "MRL (Matryoshka Representation Learning)",
+    "children": [
+      2,
+      207,
+      561
+    ]
+  },
+  {
+    "id": 439,
+    "name": "Output Verifier",
+    "children": [
+      438
+    ]
+  },
+  {
+    "id": 341,
+    "name": "Matrix Models",
+    "children": [
+      340,
+      119,
+      221,
+      122,
+      241,
+      579,
+      449,
+      270,
+      17
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Safety Net",
+    "children": [
+      81,
+      327,
+      360,
+      456,
+      82,
+      83,
+      84,
+      300,
+      85,
+      337,
+      457,
+      69,
+      46,
+      87,
+      88,
+      89,
+      339,
+      533
+    ]
+  },
+  {
+    "id": 572,
+    "name": "FPGA (Field-Programmable Gate Array)",
+    "children": [
+      470
+    ]
+  },
+  {
+    "id": 580,
+    "name": "Kaleidoscope Hypothesis",
+    "children": [
+      371,
+      281
+    ]
+  },
+  {
+    "id": 319,
+    "name": "Solomonoff Induction",
+    "children": [
+      317,
+      320
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Local Weight Sharing",
+    "children": [
+      106,
+      79,
+      109,
+      581,
+      9,
+      10,
+      208,
+      114,
+      313
+    ]
+  },
+  {
+    "id": 390,
+    "name": "Policy Parameters",
+    "children": [
+      388,
+      433,
+      5,
+      119,
+      72,
+      434,
+      389,
+      574,
+      122,
+      247,
+      276,
+      51,
+      544,
+      193,
+      391,
+      545,
+      392
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Contrastive Learning",
+    "children": [
+      2,
+      3,
+      435,
+      5,
+      111,
+      436,
+      113,
+      174
+    ]
+  },
+  {
+    "id": 452,
+    "name": "Streaming",
+    "children": [
+      20,
+      582,
+      284,
+      288
+    ]
+  },
+  {
+    "id": 243,
+    "name": "SIMA (Scalable Instructable Multiworld Agent)",
+    "children": [
+      58,
+      342,
+      344,
+      48
+    ]
+  },
+  {
+    "id": 522,
+    "name": "Neuromorphic Chips",
+    "children": [
+      521
+    ]
+  },
+  {
+    "id": 151,
+    "name": "RNN (Recurrent Neural Network)",
+    "children": [
+      147,
+      149,
+      152,
+      154,
+      155
+    ]
+  },
+  {
+    "id": 528,
+    "name": "Layer Normalization",
+    "children": [
+      203,
+      13
+    ]
+  },
+  {
+    "id": 569,
+    "name": "GLU (Gated Linear Unit)",
+    "children": [
+      149
+    ]
+  },
+  {
+    "id": 583,
+    "name": "Grounding",
+    "children": [
+      91
+    ]
+  },
+  {
+    "id": 225,
+    "name": "BERT (Bidirectional Encoder Representations from Transformers)",
+    "children": [
+      219,
+      301,
+      303,
+      451,
+      159,
+      285,
+      558,
+      24,
+      16,
+      25,
+      562,
+      236
+    ]
+  },
+  {
+    "id": 472,
+    "name": "Discriminative AI",
+    "children": [
+      132,
+      5,
+      519,
+      304,
+      135,
+      122,
+      269,
+      188,
+      137,
+      15,
+      423
+    ]
+  },
+  {
+    "id": 442,
+    "name": "Cosine Similarity",
+    "children": [
+      441,
+      55,
+      443,
+      196,
+      444,
+      168,
+      445
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Multi-headed Attention",
+    "children": [
+      219,
+      5,
+      220,
+      221,
+      474,
+      224,
+      227,
+      228,
+      229,
+      209,
+      230,
+      232,
+      233,
+      15,
+      234,
+      236
+    ]
+  },
+  {
+    "id": 567,
+    "name": "GOFAI (Good Old-Fashioned AI)",
+    "children": [
+      6,
+      18
+    ]
+  },
+  {
+    "id": 386,
+    "name": "Conditional Generation",
+    "children": [
+      23,
+      383,
+      223,
+      385,
+      130,
+      275,
+      252,
+      198
+    ]
+  },
+  {
+    "id": 7,
+    "name": "DNN (Deep Neural Networks)",
+    "children": [
+      1,
+      2,
+      3,
+      200,
+      132,
+      5,
+      203,
+      109,
+      204,
+      111,
+      10,
+      11,
+      213,
+      13,
+      114,
+      15,
+      16
+    ]
+  },
+  {
+    "id": 584,
+    "name": "Turing Complete",
+    "children": [
+      585,
+      502,
+      185,
+      586,
+      587
+    ]
+  },
+  {
+    "id": 466,
+    "name": "TTS (Text-to-Speech)",
+    "children": [
+      376,
+      465,
+      283,
+      345
+    ]
+  },
+  {
+    "id": 588,
+    "name": "Stacking",
+    "children": [
+      307,
+      402,
+      495,
+      497
+    ]
+  },
+  {
+    "id": 537,
+    "name": "Straight-Through Estimator",
+    "children": [
+      109,
+      213
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Cognitive Architecture",
+    "children": [
+      29,
+      58,
+      32,
+      424,
+      215,
+      34,
+      35,
+      6,
+      150,
+      447,
+      37,
+      493,
+      425,
+      248,
+      65
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Log Likelihood",
+    "children": [
+      171,
+      266,
+      173,
+      174
+    ]
+  },
+  {
+    "id": 589,
+    "name": "Transposed Convolutional Layer",
+    "children": [
+      9
+    ]
+  },
+  {
+    "id": 363,
+    "name": "One-Shot Learning",
+    "children": [
+      361,
+      362,
+      364
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Attention Pattern",
+    "children": [
+      219,
+      5,
+      516,
+      119,
+      220,
+      221,
+      222,
+      224,
+      226,
+      229,
+      530,
+      209,
+      230,
+      232,
+      233,
+      15,
+      154,
+      234,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Embedding Space",
+    "children": [
+      53,
+      157,
+      412,
+      442,
+      8,
+      443,
+      196,
+      558,
+      559,
+      560,
+      423,
+      561
+    ]
+  },
+  {
+    "id": 40,
+    "name": "EDL (Experimentation Driven Learning)",
+    "children": [
+      26,
+      27,
+      58,
+      34,
+      42,
+      43,
+      61,
+      51,
+      65
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Frame Problem",
+    "children": [
+      58,
+      32,
+      90
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Objective Function",
+    "children": [
+      191,
+      5,
+      119,
+      122,
+      111,
+      101,
+      520,
+      102,
+      306,
+      103,
+      113,
+      15,
+      193
+    ]
+  },
+  {
+    "id": 293,
+    "name": "Static Inference",
+    "children": [
+      199,
+      5,
+      119,
+      122,
+      294,
+      128
+    ]
+  },
+  {
+    "id": 59,
+    "name": "ACI (Agent-Computer Interface)",
+    "children": [
+      27,
+      28,
+      58,
+      36,
+      60,
+      61,
+      62,
+      47,
+      64
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Adaptive Problem Solving",
+    "children": [
+      26,
+      29,
+      58,
+      32,
+      396,
+      43,
+      248,
+      49,
+      128
+    ]
+  },
+  {
+    "id": 416,
+    "name": "Hebbian Learning",
+    "children": [
+      200,
+      453,
+      109,
+      11,
+      213,
+      114
+    ]
+  },
+  {
+    "id": 426,
+    "name": "Benchmark",
+    "children": [
+      117
+    ]
+  },
+  {
+    "id": 337,
+    "name": "God in a Box",
+    "children": [
+      326,
+      327,
+      336,
+      35,
+      84,
+      328,
+      181,
+      300,
+      329,
+      86,
+      69,
+      330,
+      46,
+      87,
+      331,
+      339,
+      332
+    ]
+  },
+  {
+    "id": 525,
+    "name": "ControlNet",
+    "children": [
+      72,
+      73,
+      75,
+      76
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Latent Space",
+    "children": [
+      1,
+      201,
+      54,
+      412,
+      223,
+      55,
+      196,
+      432,
+      490,
+      491
+    ]
+  },
+  {
+    "id": 590,
+    "name": "PPML (Privacy-Preserving Machine Learning)",
+    "children": [
+      511,
+      591,
+      592,
+      593
+    ]
+  },
+  {
+    "id": 594,
+    "name": "SAM (Segment Anything Model)",
+    "children": [
+      541
+    ]
+  },
+  {
+    "id": 353,
+    "name": "Gradient Descent",
+    "children": [
+      4,
+      352,
+      5,
+      119,
+      304,
+      109,
+      574,
+      122,
+      508,
+      111,
+      101,
+      102,
+      306,
+      137,
+      113,
+      114,
+      15,
+      391,
+      392,
+      66
+    ]
+  },
+  {
+    "id": 344,
+    "name": "Instruction-Following",
+    "children": [
+      342,
+      301,
+      377,
+      179,
+      164,
+      243,
+      345,
+      159,
+      346,
+      347,
+      348,
+      16,
+      349
+    ]
+  },
+  {
+    "id": 90,
+    "name": "ReAct (Reason+Act)",
+    "children": [
+      28,
+      237,
+      32,
+      289,
+      34,
+      238,
+      182,
+      244,
+      239,
+      50,
+      128,
+      187
+    ]
+  },
+  {
+    "id": 387,
+    "name": "PFGM (Poisson Flow Generative Model)",
+    "children": [
+      23,
+      383,
+      223,
+      385,
+      275,
+      198,
+      490,
+      491
+    ]
+  },
+  {
+    "id": 294,
+    "name": "Inference Acceleration",
+    "children": [
+      199,
+      467,
+      521,
+      469,
+      470,
+      293,
+      554,
+      128,
+      314
+    ]
+  },
+  {
+    "id": 581,
+    "name": "Siamese Network",
+    "children": [
+      110
+    ]
+  },
+  {
+    "id": 507,
+    "name": "Overhang",
+    "children": [
+      5
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Positional Encoding",
+    "children": [
+      219,
+      222,
+      224,
+      226,
+      284,
+      209,
+      232,
+      233,
+      234,
+      236
+    ]
+  },
+  {
+    "id": 582,
+    "name": "Machine Time",
+    "children": [
+      452
+    ]
+  },
+  {
+    "id": 595,
+    "name": "Clustering",
+    "children": [
+      52
+    ]
+  },
+  {
+    "id": 457,
+    "name": "Uncensored AI",
+    "children": [
+      456,
+      83,
+      84,
+      369,
+      460,
+      86,
+      69,
+      87,
+      88,
+      89
+    ]
+  },
+  {
+    "id": 459,
+    "name": "GIGO (Garbage In, Garbage Out)",
+    "children": [
+      118,
+      5,
+      121,
+      96
+    ]
+  },
+  {
+    "id": 283,
+    "name": "Token",
+    "children": [
+      282,
+      301,
+      377,
+      303,
+      466,
+      345,
+      159,
+      285,
+      596,
+      286,
+      379,
+      380,
+      287,
+      234,
+      16,
+      562,
+      288
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Multi-Token Prediction",
+    "children": [
+      282,
+      452,
+      228,
+      130,
+      234,
+      288
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Autoregressive Generation",
+    "children": [
+      129,
+      219,
+      23,
+      20,
+      384,
+      223,
+      368,
+      385,
+      386,
+      284,
+      12,
+      24,
+      234,
+      16,
+      155,
+      25,
+      288
+    ]
+  },
+  {
+    "id": 345,
+    "name": "Text to Action",
+    "children": [
+      342,
+      164,
+      466,
+      344,
+      283,
+      16,
+      349
+    ]
+  },
+  {
+    "id": 597,
+    "name": "Regime",
+    "children": [
+      128,
+      15
+    ]
+  },
+  {
+    "id": 499,
+    "name": "AI Effect",
+    "children": [
+      35,
+      330,
+      502
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Convolution",
+    "children": [
+      1,
+      77,
+      2,
+      78,
+      142,
+      3,
+      334,
+      200,
+      79,
+      132,
+      201,
+      5,
+      119,
+      304,
+      203,
+      109,
+      122,
+      110,
+      589,
+      111,
+      10,
+      101,
+      11,
+      306,
+      208,
+      126,
+      113,
+      471,
+      114,
+      15,
+      17,
+      313,
+      292
+    ]
+  },
+  {
+    "id": 508,
+    "name": "Convergence",
+    "children": [
+      5,
+      353,
+      111,
+      101,
+      126
+    ]
+  },
+  {
+    "id": 598,
+    "name": "Composability",
+    "children": [
+      47
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Loss Optimization",
+    "children": [
+      106,
+      115,
+      29,
+      2,
+      259,
+      107,
+      199,
+      3,
+      321,
+      352,
+      117,
+      132,
+      175,
+      201,
+      5,
+      119,
+      304,
+      203,
+      109,
+      135,
+      204,
+      121,
+      122,
+      206,
+      7,
+      192,
+      353,
+      9,
+      508,
+      10,
+      42,
+      101,
+      43,
+      11,
+      112,
+      102,
+      306,
+      126,
+      210,
+      137,
+      277,
+      278,
+      113,
+      128,
+      114,
+      15,
+      280,
+      16,
+      17,
+      311,
+      66,
+      316
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Image Recognition",
+    "children": [
+      1,
+      77,
+      156,
+      2,
+      199,
+      3,
+      334,
+      4,
+      356,
+      200,
+      117,
+      132,
+      5,
+      202,
+      119,
+      109,
+      540,
+      37,
+      385,
+      578,
+      110,
+      7,
+      9,
+      111,
+      188,
+      12,
+      125,
+      160,
+      307,
+      208,
+      80,
+      126,
+      137,
+      308,
+      541,
+      15,
+      16,
+      235,
+      310,
+      17
+    ]
+  },
+  {
+    "id": 159,
+    "name": "NLP (Natural Language Processing)",
+    "children": [
+      156,
+      29,
+      3,
+      342,
+      301,
+      376,
+      377,
+      132,
+      303,
+      35,
+      164,
+      37,
+      225,
+      344,
+      283,
+      166,
+      285,
+      378,
+      160,
+      47,
+      379,
+      380,
+      24,
+      15,
+      16,
+      98,
+      25,
+      562,
+      312
+    ]
+  },
+  {
+    "id": 599,
+    "name": "WBE (Whole Brain Emulation)",
+    "children": [
+      493
+    ]
+  },
+  {
+    "id": 509,
+    "name": "Naive Bayesian Model",
+    "children": [
+      5,
+      318,
+      549,
+      512,
+      527,
+      15
+    ]
+  },
+  {
+    "id": 418,
+    "name": "Reward Model Ensemble",
+    "children": [
+      33,
+      39,
+      44,
+      247,
+      45,
+      402,
+      51,
+      403,
+      404
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Data Augmentation",
+    "children": [
+      115,
+      107,
+      3,
+      4,
+      117,
+      118,
+      132,
+      175,
+      5,
+      121,
+      122,
+      275,
+      112,
+      278,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Group-Based Alignment",
+    "children": [
+      27,
+      28,
+      57,
+      58,
+      327,
+      242,
+      36,
+      84,
+      59,
+      69,
+      61,
+      62,
+      600,
+      63,
+      46,
+      339,
+      64
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Classifier",
+    "children": [
+      268,
+      132,
+      5,
+      304,
+      134,
+      135,
+      472,
+      188,
+      210,
+      137,
+      512,
+      113,
+      114,
+      15,
+      423
+    ]
+  },
+  {
+    "id": 549,
+    "name": "Bayesian Network",
+    "children": [
+      548,
+      509,
+      479,
+      481,
+      527,
+      351,
+      601
+    ]
+  },
+  {
+    "id": 411,
+    "name": "Regression",
+    "children": [
+      410,
+      519
+    ]
+  },
+  {
+    "id": 570,
+    "name": "Exocortex",
+    "children": [
+      447,
+      493
+    ]
+  },
+  {
+    "id": 241,
+    "name": "MatMul (Matrix Multiplication)",
+    "children": [
+      240,
+      268,
+      221,
+      341,
+      229,
+      579,
+      449,
+      270
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Self-Correction",
+    "children": [
+      26,
+      194,
+      132,
+      5,
+      40,
+      111
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Optimization Problem",
+    "children": [
+      99,
+      29,
+      58,
+      3,
+      352,
+      117,
+      132,
+      5,
+      119,
+      109,
+      135,
+      122,
+      192,
+      353,
+      9,
+      508,
+      111,
+      102,
+      103,
+      95,
+      137,
+      113,
+      114,
+      15,
+      280,
+      105,
+      16,
+      193,
+      17,
+      66,
+      316
+    ]
+  },
+  {
+    "id": 510,
+    "name": "Bias-Variance Dilemma",
+    "children": [
+      5,
+      563,
+      112,
+      564,
+      127,
+      214
+    ]
+  },
+  {
+    "id": 443,
+    "name": "Vector Database",
+    "children": [
+      441,
+      412,
+      442,
+      55,
+      196,
+      167,
+      444,
+      168,
+      445,
+      602,
+      559,
+      603
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Alignment",
+    "children": [
+      67,
+      81,
+      32,
+      325,
+      326,
+      327,
+      336,
+      456,
+      34,
+      35,
+      83,
+      84,
+      328,
+      181,
+      531,
+      300,
+      329,
+      37,
+      38,
+      369,
+      460,
+      86,
+      337,
+      457,
+      60,
+      43,
+      330,
+      532,
+      46,
+      47,
+      195,
+      87,
+      88,
+      331,
+      604,
+      50,
+      89,
+      339,
+      187,
+      332,
+      70
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Occam's Razor",
+    "children": [
+      115,
+      116,
+      131,
+      132,
+      5,
+      119,
+      134,
+      135,
+      120,
+      122,
+      112,
+      127,
+      140,
+      15
+    ]
+  },
+  {
+    "id": 605,
+    "name": "Jagged Frontier",
+    "children": [
+      186
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Classification",
+    "children": [
+      30,
+      268,
+      3,
+      131,
+      132,
+      5,
+      519,
+      304,
+      135,
+      121,
+      472,
+      10,
+      269,
+      137,
+      512,
+      113,
+      15,
+      423,
+      17
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Embedding",
+    "children": [
+      157,
+      412,
+      442,
+      55,
+      8,
+      443,
+      558,
+      559,
+      560,
+      561,
+      562
+    ]
+  },
+  {
+    "id": 275,
+    "name": "Synthetic Data Generation",
+    "children": [
+      107,
+      23,
+      118,
+      5,
+      250,
+      251,
+      383,
+      384,
+      223,
+      385,
+      121,
+      386,
+      387,
+      123,
+      252,
+      198
+    ]
+  },
+  {
+    "id": 252,
+    "name": "GAN (Generative Adversarial Network)",
+    "children": [
+      249,
+      23,
+      250,
+      251,
+      383,
+      223,
+      385,
+      386,
+      275,
+      198,
+      518
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Flexible Semantics",
+    "children": [
+      161,
+      3,
+      301,
+      289,
+      303,
+      159,
+      285,
+      16,
+      98,
+      25
+    ]
+  },
+  {
+    "id": 520,
+    "name": "Function Approximation",
+    "children": [
+      304,
+      192,
+      306,
+      113
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Negative Feedback",
+    "children": [
+      26,
+      29,
+      57,
+      58,
+      3,
+      33,
+      34,
+      417,
+      5,
+      119,
+      396,
+      38,
+      122,
+      40,
+      41,
+      111,
+      69,
+      245,
+      306,
+      47,
+      49,
+      113,
+      50,
+      51,
+      65,
+      66
+    ]
+  },
+  {
+    "id": 285,
+    "name": "MLM (Masked-Language Modeling)",
+    "children": [
+      282,
+      301,
+      303,
+      5,
+      451,
+      225,
+      283,
+      159,
+      166,
+      558,
+      596,
+      380,
+      24,
+      234,
+      16,
+      25,
+      562,
+      236
+    ]
+  },
+  {
+    "id": 551,
+    "name": "Interpretability",
+    "children": [
+      531,
+      238,
+      460,
+      461,
+      606,
+      15,
+      187
+    ]
+  },
+  {
+    "id": 493,
+    "name": "Brainoware",
+    "children": [
+      492,
+      453,
+      183,
+      599,
+      570,
+      11
+    ]
+  },
+  {
+    "id": 267,
+    "name": "Mixture Model",
+    "children": [
+      264,
+      265,
+      266,
+      398
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Denoising",
+    "children": [
+      71,
+      115,
+      3,
+      201,
+      76
+    ]
+  },
+  {
+    "id": 461,
+    "name": "Black Box",
+    "children": [
+      34,
+      5,
+      119,
+      531,
+      238,
+      460,
+      551,
+      604,
+      15
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Model Collapse",
+    "children": [
+      197,
+      107,
+      23,
+      5,
+      250,
+      251,
+      383,
+      384,
+      223,
+      385,
+      386,
+      387,
+      275,
+      252,
+      127,
+      15,
+      518
+    ]
+  },
+  {
+    "id": 298,
+    "name": "VLM (Visual Language Model)",
+    "children": [
+      296
+    ]
+  },
+  {
+    "id": 557,
+    "name": "Inductive Reasoning",
+    "children": [
+      505,
+      290
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Connectionist AI",
+    "children": [
+      1,
+      29,
+      3,
+      200,
+      132,
+      453,
+      5,
+      119,
+      203,
+      109,
+      204,
+      122,
+      7,
+      416,
+      9,
+      111,
+      493,
+      539,
+      213,
+      114,
+      15,
+      16,
+      18
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Agent-to-Agent Interaction",
+    "children": [
+      27,
+      28,
+      57,
+      58,
+      36,
+      40,
+      59,
+      60,
+      62,
+      600,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Deterministic",
+    "children": [
+      58,
+      119,
+      526,
+      542,
+      43,
+      126,
+      513,
+      312,
+      66
+    ]
+  },
+  {
+    "id": 558,
+    "name": "Contextual Embedding",
+    "children": [
+      412,
+      577,
+      225,
+      55,
+      196,
+      285,
+      559,
+      560,
+      561,
+      562
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Hierarchical Planning",
+    "children": [
+      2,
+      205
+    ]
+  },
+  {
+    "id": 607,
+    "name": "Lost-in-the-Middle",
+    "children": [
+      230,
+      233,
+      24,
+      154
+    ]
+  },
+  {
+    "id": 436,
+    "name": "Non-Contrastive",
+    "children": [
+      435,
+      206
+    ]
+  },
+  {
+    "id": 425,
+    "name": "Cognitive Computing",
+    "children": [
+      424,
+      183
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pretrained Model",
+    "children": [
+      1,
+      3,
+      343,
+      175,
+      5,
+      451,
+      130,
+      10,
+      160,
+      307,
+      278,
+      128,
+      16,
+      17,
+      25
+    ]
+  },
+  {
+    "id": 295,
+    "name": "Performance Degradation",
+    "children": [
+      199,
+      357,
+      272,
+      118,
+      132,
+      475,
+      5,
+      119,
+      121,
+      122,
+      112,
+      126,
+      95,
+      358,
+      48,
+      279,
+      128,
+      15,
+      359,
+      281
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Full-Sequence Diffusion",
+    "children": [
+      71,
+      72,
+      73,
+      525,
+      76
+    ]
+  },
+  {
+    "id": 500,
+    "name": "Computational Creativity",
+    "children": [
+      35
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Overfitting",
+    "children": [
+      106,
+      115,
+      116,
+      107,
+      271,
+      4,
+      118,
+      132,
+      5,
+      119,
+      108,
+      505,
+      134,
+      120,
+      121,
+      122,
+      111,
+      123,
+      510,
+      124,
+      295,
+      126,
+      137,
+      127,
+      276,
+      278,
+      113,
+      139,
+      140,
+      128,
+      15,
+      280,
+      17
+    ]
+  },
+  {
+    "id": 62,
+    "name": "MAS (Multi-Agent Systems)",
+    "children": [
+      27,
+      28,
+      58,
+      36,
+      59,
+      60,
+      61,
+      64
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Expressive Hidden States",
+    "children": [
+      147,
+      203,
+      149,
+      151,
+      432,
+      154,
+      155
+    ]
+  },
+  {
+    "id": 330,
+    "name": "Intelligence Explosion",
+    "children": [
+      325,
+      326,
+      327,
+      336,
+      35,
+      328,
+      181,
+      337,
+      499,
+      69,
+      195,
+      502,
+      339,
+      332
+    ]
+  },
+  {
+    "id": 378,
+    "name": "Syntactic Templates",
+    "children": [
+      301,
+      159,
+      16
+    ]
+  },
+  {
+    "id": 600,
+    "name": "Shared Awareness",
+    "children": [
+      60,
+      61
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Memory Extender",
+    "children": [
+      147,
+      340,
+      148,
+      305,
+      149,
+      150,
+      154,
+      155
+    ]
+  },
+  {
+    "id": 529,
+    "name": "RBMs (Restricted Boltzmann Machines)",
+    "children": [
+      203,
+      212,
+      174
+    ]
+  },
+  {
+    "id": 489,
+    "name": "Association Rule",
+    "children": [
+      263
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Attention Projection Matrix",
+    "children": [
+      219,
+      220,
+      221,
+      222,
+      224,
+      226,
+      227,
+      241,
+      209,
+      230,
+      232,
+      233,
+      270,
+      236
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Query",
+    "children": [
+      161,
+      163,
+      165,
+      443,
+      168,
+      602,
+      603
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Feature Extraction",
+    "children": [
+      115,
+      2,
+      3,
+      413,
+      54,
+      5,
+      400,
+      412,
+      10,
+      15,
+      52,
+      310
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Prompt Chaining",
+    "children": [
+      19,
+      421,
+      368,
+      136,
+      575,
+      346,
+      576,
+      373
+    ]
+  },
+  {
+    "id": 530,
+    "name": "Similarity Masking",
+    "children": [
+      221,
+      222,
+      227,
+      209,
+      445,
+      230,
+      233,
+      234,
+      236
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Search Optimization",
+    "children": [
+      99,
+      352,
+      5,
+      514,
+      523,
+      192,
+      353,
+      111,
+      101,
+      103,
+      113,
+      105
+    ]
+  },
+  {
+    "id": 160,
+    "name": "MLLMs (Multimodal Large Language Models)",
+    "children": [
+      156,
+      157,
+      3,
+      343,
+      23,
+      117,
+      435,
+      20,
+      158,
+      223,
+      369,
+      385,
+      10,
+      159,
+      12,
+      48,
+      24,
+      16,
+      437,
+      25
+    ]
+  },
+  {
+    "id": 596,
+    "name": "BoW (Bag-of-Words)",
+    "children": [
+      283,
+      285,
+      380,
+      562
+    ]
+  },
+  {
+    "id": 306,
+    "name": "Function Approximator",
+    "children": [
+      3,
+      132,
+      5,
+      119,
+      304,
+      122,
+      192,
+      353,
+      9,
+      111,
+      520,
+      43,
+      247,
+      137,
+      113,
+      15
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Proliferation Problem",
+    "children": [
+      58,
+      514,
+      103,
+      248,
+      515
+    ]
+  },
+  {
+    "id": 307,
+    "name": "Base Model",
+    "children": [
+      3,
+      343,
+      175,
+      588,
+      10,
+      12,
+      370,
+      278,
+      323,
+      128,
+      375,
+      25
+    ]
+  },
+  {
+    "id": 575,
+    "name": "Prompt Caching",
+    "children": [
+      368,
+      21,
+      346,
+      373
+    ]
+  },
+  {
+    "id": 44,
+    "name": "IRL (Inverse Reinforcement Learning)",
+    "children": [
+      26,
+      27,
+      58,
+      39,
+      418,
+      45,
+      51
+    ]
+  },
+  {
+    "id": 564,
+    "name": "Bias",
+    "children": [
+      563,
+      510,
+      218
+    ]
+  },
+  {
+    "id": 208,
+    "name": "CNN (Convolutional Neural Network)",
+    "children": [
+      2,
+      142,
+      3,
+      79,
+      202,
+      203,
+      540,
+      110,
+      9,
+      10,
+      13,
+      471,
+      313
+    ]
+  },
+  {
+    "id": 444,
+    "name": "Dot Product Similarity",
+    "children": [
+      441,
+      442,
+      443,
+      168,
+      445
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Q-Learning",
+    "children": [
+      58,
+      3,
+      388,
+      5,
+      389,
+      390,
+      418,
+      306,
+      45,
+      51,
+      544,
+      391,
+      545,
+      392,
+      608
+    ]
+  },
+  {
+    "id": 532,
+    "name": "Transformative AI",
+    "children": [
+      84,
+      69,
+      46,
+      89,
+      339
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Retrieval-Based (Model)",
+    "children": [
+      161,
+      440,
+      534,
+      164,
+      165,
+      136,
+      442,
+      443,
+      167,
+      444,
+      445
+    ]
+  },
+  {
+    "id": 45,
+    "name": "DRL (Deep Reinforcement Learning)",
+    "children": [
+      26,
+      3,
+      418,
+      44,
+      247,
+      51,
+      608
+    ]
+  },
+  {
+    "id": 538,
+    "name": "Fast Weights",
+    "children": [
+      109,
+      114,
+      155
+    ]
+  },
+  {
+    "id": 609,
+    "name": "Autopoiesis",
+    "children": [
+      409
+    ]
+  },
+  {
+    "id": 464,
+    "name": "Markov Chain",
+    "children": [
+      395,
+      66
+    ]
+  },
+  {
+    "id": 547,
+    "name": "QA (Question Answering)",
+    "children": [
+      164
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Attention Network",
+    "children": [
+      2,
+      219,
+      3,
+      516,
+      119,
+      220,
+      221,
+      451,
+      222,
+      224,
+      226,
+      227,
+      228,
+      229,
+      530,
+      610,
+      230,
+      398,
+      231,
+      232,
+      233,
+      15,
+      154,
+      234,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Symmetry",
+    "children": [
+      77,
+      2,
+      78,
+      10
+    ]
+  },
+  {
+    "id": 286,
+    "name": "Thought Token",
+    "children": [
+      282,
+      283,
+      287,
+      234,
+      288
+    ]
+  },
+  {
+    "id": 260,
+    "name": "Semantic Entropy",
+    "children": [
+      259,
+      97
+    ]
+  },
+  {
+    "id": 346,
+    "name": "System Prompt",
+    "children": [
+      342,
+      406,
+      368,
+      344,
+      21,
+      575,
+      373,
+      611,
+      349
+    ]
+  },
+  {
+    "id": 63,
+    "name": "1-N Systems",
+    "children": [
+      27,
+      242,
+      60,
+      370
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Capability Control",
+    "children": [
+      26,
+      81,
+      326,
+      327,
+      336,
+      456,
+      82,
+      84,
+      328,
+      531,
+      300,
+      329,
+      85,
+      86,
+      337,
+      60,
+      69,
+      532,
+      47,
+      87,
+      88,
+      50,
+      89,
+      339,
+      533,
+      332
+    ]
+  },
+  {
+    "id": 585,
+    "name": "Algorithm",
+    "children": [
+      584,
+      185,
+      586
+    ]
+  },
+  {
+    "id": 432,
+    "name": "Sparse Autoencoder",
+    "children": [
+      430,
+      431,
+      201,
+      203,
+      8,
+      152,
+      491
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Solution Space",
+    "children": [
+      99,
+      352,
+      514,
+      192,
+      101,
+      102,
+      246,
+      544,
+      105,
+      612
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Directed Evolution",
+    "children": [
+      99,
+      100
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Compositional Reasoning",
+    "children": [
+      237,
+      32,
+      90
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Convergent Learning",
+    "children": [
+      115,
+      2,
+      107,
+      3,
+      4,
+      132,
+      175,
+      5,
+      119,
+      109,
+      121,
+      122,
+      9,
+      508,
+      111,
+      10,
+      245,
+      295,
+      112,
+      137,
+      113,
+      140,
+      128,
+      114,
+      15,
+      16,
+      17,
+      66,
+      315
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Speculative Decoding",
+    "children": [
+      255,
+      552,
+      613
+    ]
+  },
+  {
+    "id": 47,
+    "name": "GCC (General Computer Control)",
+    "children": [
+      26,
+      27,
+      28,
+      29,
+      58,
+      327,
+      406,
+      35,
+      180,
+      84,
+      37,
+      38,
+      59,
+      598,
+      159,
+      69,
+      43,
+      46,
+      48,
+      49,
+      185,
+      186,
+      50,
+      24,
+      16
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Knowledge Graph",
+    "children": [
+      92,
+      93,
+      479,
+      481,
+      14,
+      17
+    ]
+  },
+  {
+    "id": 370,
+    "name": "RFM (Robotics Foundational Model)",
+    "children": [
+      343,
+      34,
+      307,
+      63,
+      15
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Recursive Self-Improvement",
+    "children": [
+      194,
+      336,
+      328,
+      69,
+      330,
+      338,
+      332
+    ]
+  },
+  {
+    "id": 189,
+    "name": "SSL (Self-Supervised Learning)",
+    "children": [
+      30,
+      3,
+      132,
+      5,
+      451,
+      135,
+      473,
+      137,
+      52
+    ]
+  },
+  {
+    "id": 539,
+    "name": "Subsymbolic AI",
+    "children": [
+      109,
+      182,
+      11,
+      18
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Constitutional AI",
+    "children": [
+      81,
+      327,
+      456,
+      82,
+      83,
+      84,
+      531,
+      85,
+      460,
+      86,
+      337,
+      457,
+      69,
+      46,
+      88,
+      604,
+      89,
+      339
+    ]
+  },
+  {
+    "id": 445,
+    "name": "Similarity Search",
+    "children": [
+      441,
+      442,
+      443,
+      530,
+      444,
+      168
+    ]
+  },
+  {
+    "id": 291,
+    "name": "Simulation",
+    "children": [
+      32,
+      34,
+      397,
+      144,
+      48,
+      128,
+      312
+    ]
+  },
+  {
+    "id": 614,
+    "name": "OOMs (Orders of Magnitude)",
+    "children": [
+      312
+    ]
+  },
+  {
+    "id": 401,
+    "name": "Random Walk",
+    "children": [
+      399,
+      66
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Perceptron",
+    "children": [
+      2,
+      3,
+      200,
+      5,
+      415,
+      119,
+      304,
+      203,
+      109,
+      135,
+      204,
+      111,
+      269,
+      137,
+      113,
+      13,
+      114,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 602,
+    "name": "Structured Search",
+    "children": [
+      443,
+      167,
+      615,
+      458,
+      603
+    ]
+  },
+  {
+    "id": 473,
+    "name": "Semi-Supervised Learning",
+    "children": [
+      132,
+      5,
+      451,
+      135,
+      189,
+      137,
+      52
+    ]
+  },
+  {
+    "id": 501,
+    "name": "Silicon-Based Intelligence",
+    "children": [
+      35
+    ]
+  },
+  {
+    "id": 613,
+    "name": "Greedy Decoding",
+    "children": [
+      256,
+      231,
+      155
+    ]
+  },
+  {
+    "id": 556,
+    "name": "Model Compression",
+    "children": [
+      485,
+      486,
+      487,
+      446,
+      616
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Grokking",
+    "children": [
+      92,
+      115,
+      29,
+      2,
+      32,
+      3,
+      289,
+      118,
+      132,
+      35,
+      5,
+      119,
+      182,
+      150,
+      37,
+      122,
+      101,
+      295,
+      96,
+      50,
+      128,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Supervised Learning",
+    "children": [
+      116,
+      30,
+      2,
+      107,
+      199,
+      3,
+      200,
+      132,
+      5,
+      415,
+      119,
+      304,
+      203,
+      109,
+      135,
+      204,
+      121,
+      122,
+      472,
+      353,
+      111,
+      10,
+      269,
+      101,
+      188,
+      112,
+      306,
+      126,
+      189,
+      210,
+      473,
+      127,
+      211,
+      278,
+      213,
+      113,
+      128,
+      174,
+      114,
+      51,
+      15,
+      52,
+      17,
+      311
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Capability Ladder",
+    "children": [
+      29,
+      35,
+      179,
+      181
+    ]
+  },
+  {
+    "id": 568,
+    "name": "Scaling Laws",
+    "children": [
+      506,
+      371
+    ]
+  },
+  {
+    "id": 308,
+    "name": "Perceptual Domain",
+    "children": [
+      3,
+      37,
+      10,
+      16
+    ]
+  },
+  {
+    "id": 617,
+    "name": "Private Cloud Compute",
+    "children": [
+      618
+    ]
+  },
+  {
+    "id": 347,
+    "name": "Instruction Tuning",
+    "children": [
+      342,
+      343,
+      136,
+      344,
+      278,
+      348,
+      374
+    ]
+  },
+  {
+    "id": 610,
+    "name": "Seq2Seq (Sequence to Sequence)",
+    "children": [
+      209,
+      230,
+      231,
+      233,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 479,
+    "name": "Graph Theory",
+    "children": [
+      302,
+      548,
+      549,
+      94,
+      619,
+      480,
+      620,
+      481
+    ]
+  },
+  {
+    "id": 576,
+    "name": "Super Prompting",
+    "children": [
+      368,
+      136,
+      21,
+      373,
+      374,
+      496
+    ]
+  },
+  {
+    "id": 371,
+    "name": "Scaling Hypothesis",
+    "children": [
+      343,
+      5,
+      506,
+      120,
+      580,
+      568,
+      15,
+      25
+    ]
+  },
+  {
+    "id": 379,
+    "name": "Ngram",
+    "children": [
+      301,
+      303,
+      283,
+      159,
+      380,
+      16
+    ]
+  },
+  {
+    "id": 358,
+    "name": "Instrumentation",
+    "children": [
+      357,
+      295,
+      604,
+      15
+    ]
+  },
+  {
+    "id": 559,
+    "name": "Word Vector",
+    "children": [
+      412,
+      55,
+      443,
+      196,
+      558,
+      374,
+      562
+    ]
+  },
+  {
+    "id": 606,
+    "name": "Mechanistic Interpretability",
+    "children": [
+      551
+    ]
+  },
+  {
+    "id": 619,
+    "name": "GAT (Graph Attention Network)",
+    "children": [
+      479,
+      480,
+      620,
+      481
+    ]
+  },
+  {
+    "id": 502,
+    "name": "Turing Test",
+    "children": [
+      35,
+      584,
+      499,
+      330,
+      185,
+      586,
+      621
+    ]
+  },
+  {
+    "id": 565,
+    "name": "De-Biasing",
+    "children": [
+      563
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Ethical AI",
+    "children": [
+      81,
+      327,
+      360,
+      456,
+      34,
+      82,
+      83,
+      84,
+      531,
+      85,
+      86,
+      457,
+      69,
+      46,
+      87,
+      89,
+      339
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Underfitting",
+    "children": [
+      115,
+      116,
+      107,
+      118,
+      132,
+      5,
+      119,
+      134,
+      120,
+      121,
+      122,
+      510,
+      124,
+      198,
+      112,
+      137,
+      278,
+      113,
+      138,
+      140,
+      128,
+      15
+    ]
+  },
+  {
+    "id": 579,
+    "name": "Linear Algebra",
+    "children": [
+      341,
+      241,
+      270,
+      316
+    ]
+  },
+  {
+    "id": 511,
+    "name": "Machine Unlearning",
+    "children": [
+      5,
+      590,
+      591
+    ]
+  },
+  {
+    "id": 248,
+    "name": "GPS (General Problem Solver)",
+    "children": [
+      58,
+      514,
+      6,
+      38,
+      183,
+      41,
+      246
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Diffusion",
+    "children": [
+      71,
+      115,
+      23,
+      72,
+      383,
+      73,
+      223,
+      385,
+      525,
+      74,
+      75,
+      491
+    ]
+  },
+  {
+    "id": 591,
+    "name": "Differential Privacy",
+    "children": [
+      590,
+      511,
+      592
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Steerability",
+    "children": [
+      2,
+      3,
+      5,
+      119,
+      122,
+      137,
+      374,
+      114,
+      15
+    ]
+  },
+  {
+    "id": 331,
+    "name": "Paperclip Maximizer",
+    "children": [
+      325,
+      326,
+      327,
+      84,
+      328,
+      181,
+      329,
+      337,
+      69,
+      339
+    ]
+  },
+  {
+    "id": 402,
+    "name": "Ensemble Learning",
+    "children": [
+      399,
+      5,
+      524,
+      588,
+      418,
+      495,
+      15,
+      403,
+      622,
+      404,
+      497
+    ]
+  },
+  {
+    "id": 536,
+    "name": "Targeted Adversarial Examples",
+    "children": [
+      251,
+      476,
+      478
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Top-K",
+    "children": [
+      161,
+      162,
+      165
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Attention",
+    "children": [
+      219,
+      3,
+      20,
+      5,
+      516,
+      119,
+      220,
+      221,
+      222,
+      149,
+      136,
+      578,
+      224,
+      226,
+      227,
+      607,
+      229,
+      530,
+      209,
+      610,
+      113,
+      232,
+      233,
+      15,
+      154,
+      234,
+      235,
+      155,
+      25,
+      236
+    ]
+  },
+  {
+    "id": 480,
+    "name": "GNN (Graph Neural Networks)",
+    "children": [
+      302,
+      479,
+      619,
+      620,
+      481
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Boltzmann Machine",
+    "children": [
+      2,
+      3,
+      132,
+      5,
+      119,
+      109,
+      529,
+      174,
+      114,
+      15,
+      66
+    ]
+  },
+  {
+    "id": 372,
+    "name": "Adapter Layer",
+    "children": [
+      343,
+      175,
+      203,
+      278,
+      13,
+      323,
+      375
+    ]
+  },
+  {
+    "id": 276,
+    "name": "Tunable Parameters",
+    "children": [
+      107,
+      4,
+      352,
+      273,
+      5,
+      119,
+      122,
+      390,
+      112,
+      113,
+      114,
+      15,
+      280,
+      17
+    ]
+  },
+  {
+    "id": 338,
+    "name": "Singularity",
+    "children": [
+      326,
+      195
+    ]
+  },
+  {
+    "id": 620,
+    "name": "GCN (Graph Convolutional Networks)",
+    "children": [
+      479,
+      619,
+      480,
+      481
+    ]
+  },
+  {
+    "id": 173,
+    "name": "MLE (Maximum Likelihood Estimation)",
+    "children": [
+      171,
+      119,
+      318,
+      122,
+      172
+    ]
+  },
+  {
+    "id": 398,
+    "name": "MoE (Mixture of Experts)",
+    "children": [
+      265,
+      524,
+      267,
+      209
+    ]
+  },
+  {
+    "id": 364,
+    "name": "ZSL (Zero-Shot Learning)",
+    "children": [
+      361,
+      362,
+      5,
+      37,
+      121,
+      122,
+      363
+    ]
+  },
+  {
+    "id": 512,
+    "name": "Model-Based Classifier",
+    "children": [
+      5,
+      519,
+      119,
+      135,
+      509,
+      269,
+      188,
+      527,
+      15
+    ]
+  },
+  {
+    "id": 355,
+    "name": "Preference Model",
+    "children": [
+      354,
+      407
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Fairness-Aware Machine Learning",
+    "children": [
+      216,
+      563,
+      564
+    ]
+  },
+  {
+    "id": 277,
+    "name": "Post-Training",
+    "children": [
+      107,
+      199,
+      3,
+      175,
+      5,
+      121,
+      136,
+      122,
+      111,
+      128,
+      15,
+      446,
+      616
+    ]
+  },
+  {
+    "id": 487,
+    "name": "Teacher Model",
+    "children": [
+      484,
+      5,
+      485,
+      486,
+      556,
+      278,
+      146,
+      17
+    ]
+  },
+  {
+    "id": 560,
+    "name": "SAE (Structural Adaptive Embeddings)",
+    "children": [
+      412,
+      55,
+      196,
+      558,
+      561
+    ]
+  },
+  {
+    "id": 615,
+    "name": "Structured Generation",
+    "children": [
+      602,
+      603
+    ]
+  },
+  {
+    "id": 278,
+    "name": "Fine Tuning",
+    "children": [
+      107,
+      199,
+      3,
+      343,
+      273,
+      117,
+      132,
+      175,
+      5,
+      119,
+      133,
+      571,
+      368,
+      121,
+      136,
+      122,
+      111,
+      123,
+      12,
+      112,
+      307,
+      137,
+      347,
+      127,
+      372,
+      487,
+      48,
+      113,
+      323,
+      128,
+      374,
+      15,
+      146,
+      280,
+      375,
+      17
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Activation Data",
+    "children": [
+      2,
+      107,
+      3,
+      200,
+      5,
+      415,
+      119,
+      203,
+      503,
+      109,
+      204,
+      7,
+      537,
+      416,
+      11,
+      137,
+      113,
+      13,
+      309,
+      114,
+      214,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Encoder-Decoder Models",
+    "children": [
+      219,
+      209,
+      613,
+      610,
+      232,
+      25,
+      236
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Information Gap",
+    "children": [
+      92,
+      115,
+      382,
+      366,
+      118,
+      121,
+      459,
+      95,
+      458,
+      15
+    ]
+  },
+  {
+    "id": 604,
+    "name": "Observability",
+    "children": [
+      69,
+      461,
+      87,
+      358,
+      89
+    ]
+  },
+  {
+    "id": 592,
+    "name": "Federated Learning",
+    "children": [
+      590,
+      591,
+      593
+    ]
+  },
+  {
+    "id": 48,
+    "name": "General World Model",
+    "children": [
+      26,
+      29,
+      58,
+      199,
+      343,
+      34,
+      180,
+      119,
+      82,
+      121,
+      136,
+      243,
+      295,
+      160,
+      47,
+      291,
+      278,
+      49,
+      186,
+      128,
+      51,
+      15,
+      187,
+      98
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Complex Interaction",
+    "children": [
+      26,
+      58,
+      427,
+      396,
+      41,
+      43,
+      47,
+      48
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Loss Function",
+    "children": [
+      106,
+      115,
+      116,
+      2,
+      259,
+      107,
+      3,
+      321,
+      4,
+      352,
+      200,
+      117,
+      132,
+      175,
+      201,
+      5,
+      415,
+      119,
+      304,
+      203,
+      109,
+      134,
+      135,
+      204,
+      120,
+      121,
+      122,
+      206,
+      192,
+      353,
+      9,
+      111,
+      269,
+      101,
+      188,
+      520,
+      43,
+      112,
+      102,
+      306,
+      126,
+      210,
+      137,
+      127,
+      230,
+      276,
+      278,
+      213,
+      140,
+      13,
+      128,
+      114,
+      15,
+      280,
+      17,
+      311,
+      66,
+      315
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Learnability",
+    "children": [
+      116,
+      134,
+      121,
+      127
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Universality",
+    "children": [
+      29,
+      35,
+      181,
+      584,
+      585,
+      47,
+      502,
+      586,
+      587
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Overparameterized",
+    "children": [
+      116,
+      107,
+      3,
+      4,
+      5,
+      119,
+      121,
+      122,
+      112,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Saturation Effect",
+    "children": [
+      116,
+      107,
+      3,
+      118,
+      132,
+      5,
+      119,
+      134,
+      135,
+      121,
+      122,
+      124,
+      112,
+      126,
+      127,
+      113,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Frontier Models",
+    "children": [
+      29,
+      3,
+      343,
+      20,
+      35,
+      82,
+      181,
+      605,
+      47,
+      48,
+      24,
+      15,
+      25
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Criteria Drift",
+    "children": [
+      107,
+      357,
+      272,
+      5,
+      295,
+      15,
+      359,
+      281
+    ]
+  },
+  {
+    "id": 481,
+    "name": "Graph Machine Learning",
+    "children": [
+      302,
+      548,
+      549,
+      94,
+      479,
+      619,
+      480,
+      620
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Agentic AI Systems",
+    "children": [
+      26,
+      27,
+      28,
+      29,
+      57,
+      58,
+      32,
+      34,
+      35,
+      179,
+      180,
+      181,
+      531,
+      37,
+      38,
+      460,
+      90,
+      69,
+      43,
+      46,
+      47,
+      95,
+      15
+    ]
+  },
+  {
+    "id": 458,
+    "name": "Unstructured Data",
+    "children": [
+      366,
+      118,
+      602,
+      96,
+      603
+    ]
+  },
+  {
+    "id": 541,
+    "name": "Semantic Segmentation",
+    "children": [
+      540,
+      594,
+      10
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Model Layer",
+    "children": [
+      1,
+      77,
+      2,
+      3,
+      200,
+      79,
+      5,
+      415,
+      203,
+      109,
+      540,
+      204,
+      528,
+      7,
+      208,
+      210,
+      372,
+      213,
+      113,
+      114,
+      214,
+      15,
+      311
+    ]
+  },
+  {
+    "id": 380,
+    "name": "Perplexity",
+    "children": [
+      301,
+      283,
+      159,
+      285,
+      596,
+      379,
+      16
+    ]
+  },
+  {
+    "id": 323,
+    "name": "Continual Pre-Training",
+    "children": [
+      322,
+      343,
+      175,
+      5,
+      121,
+      136,
+      307,
+      372,
+      278,
+      128,
+      324
+    ]
+  },
+  {
+    "id": 449,
+    "name": "Dimension Returns",
+    "children": [
+      448,
+      412,
+      341,
+      241,
+      270
+    ]
+  },
+  {
+    "id": 554,
+    "name": "TPU (Tensor Processing Units)",
+    "children": [
+      469,
+      470,
+      294
+    ]
+  },
+  {
+    "id": 348,
+    "name": "IFEval (Instruction-Following Eval)",
+    "children": [
+      342,
+      344,
+      347,
+      16,
+      611,
+      281
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Inference-Time Reasoning",
+    "children": [
+      115,
+      116,
+      237,
+      107,
+      32,
+      199,
+      3,
+      4,
+      289,
+      118,
+      132,
+      175,
+      5,
+      119,
+      133,
+      238,
+      37,
+      474,
+      135,
+      121,
+      136,
+      122,
+      293,
+      41,
+      90,
+      294,
+      597,
+      111,
+      12,
+      295,
+      112,
+      307,
+      126,
+      291,
+      95,
+      137,
+      127,
+      277,
+      278,
+      48,
+      113,
+      323,
+      114,
+      15,
+      187,
+      17,
+      66,
+      281
+    ]
+  },
+  {
+    "id": 527,
+    "name": "Bayesian Inference",
+    "children": [
+      318,
+      505,
+      509,
+      549,
+      512,
+      351
+    ]
+  },
+  {
+    "id": 373,
+    "name": "Prompt Engineering",
+    "children": [
+      343,
+      23,
+      421,
+      20,
+      223,
+      368,
+      136,
+      21,
+      575,
+      346,
+      576,
+      24,
+      374,
+      15,
+      496,
+      25
+    ]
+  },
+  {
+    "id": 483,
+    "name": "bGPT (Byte-Level Transformer)",
+    "children": [
+      462,
+      15
+    ]
+  },
+  {
+    "id": 309,
+    "name": "ReLU (Rectified Linear Unit)",
+    "children": [
+      3,
+      367,
+      213,
+      214
+    ]
+  },
+  {
+    "id": 450,
+    "name": "TensorFlow",
+    "children": [
+      448
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Cross-Attention",
+    "children": [
+      219,
+      220,
+      221,
+      224,
+      226,
+      227,
+      228,
+      229,
+      209,
+      230,
+      231,
+      233,
+      15,
+      236
+    ]
+  },
+  {
+    "id": 233,
+    "name": "Attention Mechanisms",
+    "children": [
+      219,
+      3,
+      5,
+      516,
+      119,
+      220,
+      221,
+      222,
+      149,
+      224,
+      226,
+      227,
+      228,
+      607,
+      229,
+      530,
+      209,
+      610,
+      230,
+      232,
+      15,
+      154,
+      234,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 586,
+    "name": "UTM (Universal Turing Machine)",
+    "children": [
+      584,
+      585,
+      502,
+      185,
+      587
+    ]
+  },
+  {
+    "id": 477,
+    "name": "Out of Distribution",
+    "children": [
+      475,
+      5,
+      121
+    ]
+  },
+  {
+    "id": 324,
+    "name": "Continuous Learning",
+    "children": [
+      322,
+      323
+    ]
+  },
+  {
+    "id": 471,
+    "name": "Stride Length",
+    "children": [
+      79,
+      9,
+      208
+    ]
+  },
+  {
+    "id": 89,
+    "name": "AI Governance",
+    "children": [
+      81,
+      327,
+      336,
+      456,
+      82,
+      83,
+      84,
+      531,
+      85,
+      369,
+      460,
+      86,
+      457,
+      69,
+      532,
+      46,
+      87,
+      88,
+      604,
+      339,
+      70
+    ]
+  },
+  {
+    "id": 24,
+    "name": "LLM (Large Language Model)",
+    "children": [
+      22,
+      3,
+      301,
+      23,
+      20,
+      303,
+      474,
+      368,
+      369,
+      225,
+      130,
+      159,
+      285,
+      607,
+      160,
+      47,
+      186,
+      373,
+      623,
+      16,
+      624,
+      98,
+      25
+    ]
+  },
+  {
+    "id": 625,
+    "name": "Word Salad",
+    "children": [
+      562
+    ]
+  },
+  {
+    "id": 174,
+    "name": "CD (Contrastive Divergence)",
+    "children": [
+      171,
+      3,
+      5,
+      119,
+      203,
+      109,
+      206,
+      172,
+      529,
+      137,
+      212
+    ]
+  },
+  {
+    "id": 374,
+    "name": "Control Vector",
+    "children": [
+      343,
+      368,
+      347,
+      576,
+      559,
+      211,
+      278,
+      373
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Knowledge Representation",
+    "children": [
+      1,
+      92,
+      32,
+      182,
+      6,
+      37,
+      94,
+      187,
+      17,
+      98,
+      18
+    ]
+  },
+  {
+    "id": 409,
+    "name": "Artefactual Autopoiesis",
+    "children": [
+      408,
+      609
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Weight",
+    "children": [
+      106,
+      2,
+      107,
+      199,
+      3,
+      352,
+      200,
+      79,
+      132,
+      201,
+      5,
+      415,
+      119,
+      304,
+      203,
+      503,
+      109,
+      100,
+      555,
+      135,
+      204,
+      121,
+      122,
+      110,
+      7,
+      416,
+      353,
+      9,
+      111,
+      269,
+      101,
+      11,
+      538,
+      126,
+      210,
+      137,
+      211,
+      212,
+      276,
+      213,
+      113,
+      13,
+      128,
+      214,
+      15,
+      280,
+      17,
+      311
+    ]
+  },
+  {
+    "id": 495,
+    "name": "Meta-Classifier",
+    "children": [
+      178,
+      524,
+      135,
+      588,
+      402,
+      403,
+      622,
+      404,
+      496,
+      497
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Xavier's Initialization",
+    "children": [
+      2,
+      3,
+      422,
+      5,
+      203,
+      503,
+      109,
+      510,
+      213,
+      13,
+      309,
+      114,
+      311
+    ]
+  },
+  {
+    "id": 339,
+    "name": "Super Alignment",
+    "children": [
+      326,
+      327,
+      336,
+      35,
+      83,
+      84,
+      328,
+      181,
+      531,
+      300,
+      86,
+      337,
+      60,
+      69,
+      330,
+      532,
+      46,
+      87,
+      88,
+      331,
+      89,
+      332,
+      70
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Rejection Sampling",
+    "children": [
+      143,
+      144,
+      146
+    ]
+  },
+  {
+    "id": 623,
+    "name": "Slop",
+    "children": [
+      24
+    ]
+  },
+  {
+    "id": 51,
+    "name": "RL (Reinforcement Learning)",
+    "children": [
+      26,
+      27,
+      29,
+      57,
+      58,
+      3,
+      381,
+      388,
+      33,
+      34,
+      132,
+      5,
+      119,
+      543,
+      38,
+      39,
+      389,
+      390,
+      40,
+      418,
+      43,
+      44,
+      247,
+      45,
+      137,
+      48,
+      15,
+      544,
+      391,
+      545,
+      392,
+      65,
+      626
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Model Level",
+    "children": [
+      1,
+      115,
+      116,
+      29,
+      2,
+      58,
+      107,
+      199,
+      3,
+      271,
+      340,
+      4,
+      272,
+      352,
+      200,
+      273,
+      117,
+      118,
+      34,
+      79,
+      132,
+      175,
+      35,
+      5,
+      119,
+      304,
+      133,
+      203,
+      221,
+      109,
+      400,
+      505,
+      150,
+      134,
+      37,
+      474,
+      135,
+      204,
+      368,
+      120,
+      121,
+      136,
+      460,
+      122,
+      472,
+      226,
+      7,
+      227,
+      192,
+      353,
+      597,
+      9,
+      111,
+      10,
+      159,
+      509,
+      123,
+      269,
+      101,
+      124,
+      188,
+      551,
+      461,
+      198,
+      11,
+      295,
+      112,
+      125,
+      306,
+      209,
+      126,
+      370,
+      210,
+      95,
+      137,
+      371,
+      358,
+      127,
+      211,
+      402,
+      230,
+      212,
+      276,
+      512,
+      277,
+      278,
+      213,
+      96,
+      48,
+      113,
+      139,
+      140,
+      186,
+      279,
+      50,
+      13,
+      128,
+      373,
+      483,
+      232,
+      233,
+      114,
+      51,
+      154,
+      280,
+      16,
+      310,
+      17,
+      616,
+      311,
+      25,
+      312,
+      359,
+      66,
+      236,
+      281,
+      315,
+      316
+    ]
+  },
+  {
+    "id": 544,
+    "name": "Bellman Equation",
+    "children": [
+      543,
+      463,
+      389,
+      390,
+      247,
+      103,
+      51,
+      391,
+      545,
+      392,
+      627
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Teacher-Guided Rejection Sampling",
+    "children": [
+      143,
+      484,
+      486,
+      144,
+      487,
+      278,
+      145,
+      404
+    ]
+  },
+  {
+    "id": 628,
+    "name": "BQL (Binary Quantization Learning)",
+    "children": [
+      446
+    ]
+  },
+  {
+    "id": 513,
+    "name": "Temperature",
+    "children": [
+      5,
+      245,
+      66
+    ]
+  },
+  {
+    "id": 270,
+    "name": "Value Matrix",
+    "children": [
+      268,
+      132,
+      221,
+      341,
+      241,
+      229,
+      579,
+      449,
+      316
+    ]
+  },
+  {
+    "id": 494,
+    "name": "Epistemic Foraging",
+    "children": [
+      492
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Long-Context Modeling",
+    "children": [
+      147,
+      219,
+      148,
+      149,
+      150,
+      151,
+      227,
+      607,
+      152,
+      153,
+      209,
+      230,
+      233,
+      15,
+      629,
+      155,
+      236
+    ]
+  },
+  {
+    "id": 280,
+    "name": "Hyperparameter",
+    "children": [
+      107,
+      4,
+      352,
+      273,
+      5,
+      119,
+      121,
+      122,
+      111,
+      101,
+      112,
+      276,
+      278,
+      113,
+      114,
+      15,
+      17
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Self-Reasoning Token",
+    "children": [
+      282,
+      283,
+      286
+    ]
+  },
+  {
+    "id": 573,
+    "name": "GFlowNet (Generative Flow Networks)",
+    "children": [
+      223
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Metaheuristic",
+    "children": [
+      99,
+      101,
+      102,
+      103,
+      630,
+      631
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Unsupervised Learning",
+    "children": [
+      26,
+      30,
+      3,
+      132,
+      201,
+      54,
+      5,
+      121,
+      122,
+      595,
+      125,
+      189,
+      473,
+      137
+    ]
+  },
+  {
+    "id": 490,
+    "name": "VAE (Variable AutoEncoder)",
+    "children": [
+      201,
+      5,
+      223,
+      8,
+      387,
+      491
+    ]
+  },
+  {
+    "id": 351,
+    "name": "Thermodynamic Bayesian Inference",
+    "children": [
+      350,
+      492,
+      549,
+      527
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Masking",
+    "children": [
+      219,
+      282,
+      222,
+      226,
+      227,
+      228,
+      283,
+      284,
+      130,
+      285,
+      530,
+      209,
+      286,
+      230,
+      233,
+      155,
+      236,
+      288
+    ]
+  },
+  {
+    "id": 320,
+    "name": "AIT (Algorithmic Information Theory)",
+    "children": [
+      317,
+      120,
+      319
+    ]
+  },
+  {
+    "id": 16,
+    "name": "NLP (Neuro-Linguistic Programming)",
+    "children": [
+      1,
+      156,
+      161,
+      29,
+      30,
+      32,
+      3,
+      342,
+      301,
+      242,
+      215,
+      376,
+      377,
+      132,
+      303,
+      5,
+      119,
+      164,
+      37,
+      122,
+      225,
+      7,
+      344,
+      283,
+      130,
+      345,
+      111,
+      10,
+      159,
+      123,
+      101,
+      166,
+      285,
+      11,
+      12,
+      378,
+      160,
+      126,
+      47,
+      95,
+      308,
+      379,
+      380,
+      348,
+      24,
+      15,
+      310,
+      17,
+      98,
+      25,
+      562,
+      312
+    ]
+  },
+  {
+    "id": 193,
+    "name": "Surrogate Objective",
+    "children": [
+      191,
+      389,
+      390,
+      192,
+      101,
+      391
+    ]
+  },
+  {
+    "id": 235,
+    "name": "ViTs (Vision Transformers)",
+    "children": [
+      219,
+      10,
+      230,
+      236
+    ]
+  },
+  {
+    "id": 587,
+    "name": "Decidability",
+    "children": [
+      584,
+      185,
+      586
+    ]
+  },
+  {
+    "id": 391,
+    "name": "Policy Gradient Algorithm",
+    "children": [
+      388,
+      433,
+      72,
+      434,
+      389,
+      574,
+      390,
+      353,
+      247,
+      51,
+      544,
+      193,
+      392
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Semantic Indexing",
+    "children": [
+      92,
+      260
+    ]
+  },
+  {
+    "id": 553,
+    "name": "Expert System",
+    "children": [
+      238,
+      6
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Multiagent",
+    "children": [
+      27,
+      28,
+      36,
+      59,
+      60,
+      61,
+      62
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Hybrid AI",
+    "children": [
+      29,
+      32,
+      34,
+      180,
+      84,
+      531,
+      238,
+      182,
+      6,
+      460,
+      90,
+      69,
+      551,
+      48,
+      128,
+      14,
+      98,
+      18
+    ]
+  },
+  {
+    "id": 446,
+    "name": "Quantization",
+    "children": [
+      441,
+      556,
+      277,
+      628,
+      616,
+      632
+    ]
+  },
+  {
+    "id": 593,
+    "name": "Federated Training",
+    "children": [
+      590,
+      592
+    ]
+  },
+  {
+    "id": 491,
+    "name": "VAE (Variational Autoencoders)",
+    "children": [
+      201,
+      383,
+      223,
+      385,
+      8,
+      387,
+      432,
+      76,
+      490
+    ]
+  },
+  {
+    "id": 545,
+    "name": "Q-Value",
+    "children": [
+      543,
+      389,
+      390,
+      247,
+      51,
+      544,
+      392
+    ]
+  },
+  {
+    "id": 403,
+    "name": "Ensamble Algorithm",
+    "children": [
+      399,
+      524,
+      418,
+      402,
+      495,
+      622,
+      404,
+      497
+    ]
+  },
+  {
+    "id": 533,
+    "name": "ASL (AI Safety Level)",
+    "children": [
+      84,
+      300,
+      86,
+      46
+    ]
+  },
+  {
+    "id": 375,
+    "name": "Adapter",
+    "children": [
+      343,
+      175,
+      307,
+      372,
+      278
+    ]
+  },
+  {
+    "id": 618,
+    "name": "Confidential Computing",
+    "children": [
+      617
+    ]
+  },
+  {
+    "id": 392,
+    "name": "Policy Gradient",
+    "children": [
+      388,
+      433,
+      72,
+      434,
+      389,
+      390,
+      353,
+      247,
+      51,
+      544,
+      391,
+      545
+    ]
+  },
+  {
+    "id": 630,
+    "name": "Swarm Intelligence",
+    "children": [
+      105,
+      631
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Rank Fusion",
+    "children": [
+      161
+    ]
+  },
+  {
+    "id": 622,
+    "name": "Boosting",
+    "children": [
+      402,
+      495,
+      403
+    ]
+  },
+  {
+    "id": 629,
+    "name": "LTPA (Long-Term Planning Agent)",
+    "children": [
+      154
+    ]
+  },
+  {
+    "id": 423,
+    "name": "Hyperplane",
+    "children": [
+      131,
+      132,
+      412,
+      134,
+      472,
+      55,
+      269,
+      188
+    ]
+  },
+  {
+    "id": 631,
+    "name": "ACO (Ant Colony Optimization)",
+    "children": [
+      105,
+      630
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Numerical Processing",
+    "children": [
+      3,
+      10,
+      125,
+      15,
+      16,
+      312,
+      316
+    ]
+  },
+  {
+    "id": 612,
+    "name": "CSPs (Constraint Satisfaction Problems)",
+    "children": [
+      103
+    ]
+  },
+  {
+    "id": 332,
+    "name": "Foom",
+    "children": [
+      325,
+      336,
+      84,
+      328,
+      300,
+      337,
+      69,
+      330,
+      46,
+      195,
+      339
+    ]
+  },
+  {
+    "id": 561,
+    "name": "Matryoshka Embedding",
+    "children": [
+      412,
+      205,
+      55,
+      196,
+      558,
+      560
+    ]
+  },
+  {
+    "id": 404,
+    "name": "Bagging",
+    "children": [
+      399,
+      5,
+      524,
+      418,
+      402,
+      495,
+      146,
+      403,
+      497
+    ]
+  },
+  {
+    "id": 624,
+    "name": "Activation Beacon",
+    "children": [
+      24
+    ]
+  },
+  {
+    "id": 190,
+    "name": "Sample Efficiency",
+    "children": [
+      30,
+      3,
+      361,
+      132,
+      175,
+      178,
+      5,
+      121
+    ]
+  },
+  {
+    "id": 437,
+    "name": "Multimodal",
+    "children": [
+      435,
+      160
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Embodied AI",
+    "children": [
+      28,
+      58,
+      34,
+      583,
+      65
+    ]
+  },
+  {
+    "id": 601,
+    "name": "Probabilistic Programming",
+    "children": [
+      549
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Sequence Model",
+    "children": [
+      147,
+      219,
+      220,
+      221,
+      222,
+      149,
+      151,
+      227,
+      130,
+      152,
+      153,
+      538,
+      209,
+      613,
+      610,
+      230,
+      233,
+      154,
+      234,
+      25,
+      236
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Parametric Knowledge",
+    "children": [
+      1,
+      92,
+      116,
+      2,
+      107,
+      199,
+      3,
+      340,
+      4,
+      352,
+      419,
+      132,
+      175,
+      484,
+      5,
+      119,
+      135,
+      121,
+      136,
+      122,
+      341,
+      9,
+      111,
+      10,
+      123,
+      101,
+      188,
+      12,
+      112,
+      126,
+      94,
+      95,
+      137,
+      276,
+      487,
+      278,
+      113,
+      139,
+      140,
+      128,
+      14,
+      114,
+      15,
+      280,
+      16
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Embodied Intelligence",
+    "children": [
+      27,
+      28,
+      57,
+      31,
+      58,
+      34,
+      183,
+      40,
+      43,
+      61,
+      51,
+      91
+    ]
+  },
+  {
+    "id": 616,
+    "name": "LAQ (Locally-Adaptive Quantization)",
+    "children": [
+      556,
+      277,
+      15,
+      446,
+      632
+    ]
+  },
+  {
+    "id": 603,
+    "name": "Structured Data",
+    "children": [
+      443,
+      167,
+      602,
+      615,
+      458
+    ]
+  },
+  {
+    "id": 496,
+    "name": "Meta Prompt",
+    "children": [
+      178,
+      576,
+      373,
+      495,
+      497
+    ]
+  },
+  {
+    "id": 311,
+    "name": "Forward Propagation",
+    "children": [
+      3,
+      200,
+      132,
+      5,
+      415,
+      119,
+      304,
+      203,
+      109,
+      204,
+      111,
+      210,
+      137,
+      213,
+      113,
+      13,
+      114,
+      214,
+      15
+    ]
+  },
+  {
+    "id": 611,
+    "name": "Custom Instructions",
+    "children": [
+      346,
+      348
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Manifold Learning",
+    "children": [
+      53,
+      54
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Groundedness",
+    "children": [
+      92,
+      301,
+      34,
+      377,
+      303,
+      37,
+      159,
+      166,
+      48,
+      24,
+      14,
+      16,
+      187,
+      25
+    ]
+  },
+  {
+    "id": 25,
+    "name": "DLMs (Deep Language Models)",
+    "children": [
+      22,
+      219,
+      3,
+      342,
+      343,
+      301,
+      23,
+      289,
+      20,
+      303,
+      451,
+      164,
+      223,
+      368,
+      369,
+      136,
+      225,
+      130,
+      159,
+      166,
+      285,
+      12,
+      160,
+      307,
+      371,
+      230,
+      231,
+      186,
+      373,
+      24,
+      15,
+      16,
+      155,
+      98,
+      562,
+      236,
+      288
+    ]
+  },
+  {
+    "id": 626,
+    "name": "Horizon",
+    "children": [
+      51
+    ]
+  },
+  {
+    "id": 515,
+    "name": "Branching Factor",
+    "children": [
+      514,
+      246
+    ]
+  },
+  {
+    "id": 405,
+    "name": "Decision Tree",
+    "children": [
+      399
+    ]
+  },
+  {
+    "id": 562,
+    "name": "Context Window",
+    "children": [
+      412,
+      136,
+      225,
+      283,
+      159,
+      196,
+      285,
+      558,
+      596,
+      559,
+      625,
+      16,
+      25
+    ]
+  },
+  {
+    "id": 312,
+    "name": "Scientific Computing",
+    "children": [
+      3,
+      132,
+      521,
+      469,
+      159,
+      245,
+      291,
+      614,
+      15,
+      16,
+      310
+    ]
+  },
+  {
+    "id": 621,
+    "name": "Lovelace Test",
+    "children": [
+      502
+    ]
+  },
+  {
+    "id": 608,
+    "name": "DQN (Deep Q-Networks)",
+    "children": [
+      247,
+      45
+    ]
+  },
+  {
+    "id": 359,
+    "name": "Model Drift Minimization",
+    "children": [
+      272,
+      295,
+      279,
+      15
+    ]
+  },
+  {
+    "id": 627,
+    "name": "DP (Dynamic Programming)",
+    "children": [
+      544
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Stochastic",
+    "children": [
+      27,
+      29,
+      58,
+      3,
+      5,
+      119,
+      109,
+      369,
+      121,
+      122,
+      353,
+      111,
+      101,
+      43,
+      245,
+      464,
+      126,
+      401,
+      212,
+      113,
+      128,
+      15,
+      513,
+      316
+    ]
+  },
+  {
+    "id": 236,
+    "name": "Self-Attention",
+    "children": [
+      219,
+      343,
+      20,
+      516,
+      220,
+      221,
+      451,
+      222,
+      224,
+      225,
+      226,
+      227,
+      228,
+      285,
+      229,
+      530,
+      209,
+      610,
+      230,
+      231,
+      232,
+      233,
+      15,
+      154,
+      234,
+      235,
+      155,
+      25
+    ]
+  },
+  {
+    "id": 632,
+    "name": "Low-Bit Palletization",
+    "children": [
+      446,
+      616
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Dualism",
+    "children": [
+      1,
+      410,
+      182,
+      6,
+      567,
+      11,
+      539,
+      14,
+      187
+    ]
+  },
+  {
+    "id": 281,
+    "name": "Eval (Evaluation)",
+    "children": [
+      107,
+      117,
+      5,
+      566,
+      580,
+      295,
+      279,
+      348,
+      128,
+      15
+    ]
+  },
+  {
+    "id": 288,
+    "name": "Token Speculation Techniques",
+    "children": [
+      282,
+      20,
+      452,
+      283,
+      284,
+      130,
+      286,
+      234,
+      25
+    ]
+  },
+  {
+    "id": 70,
+    "name": "HITL (Human-in-the-Loop)",
+    "children": [
+      67,
+      33,
+      417,
+      35,
+      84,
+      531,
+      37,
+      69,
+      89,
+      339
+    ]
+  },
+  {
+    "id": 313,
+    "name": "Local Pooling",
+    "children": [
+      3,
+      79,
+      202,
+      110,
+      9,
+      208
+    ]
+  },
+  {
+    "id": 518,
+    "name": "Mode Collapse",
+    "children": [
+      250,
+      252,
+      198
+    ]
+  },
+  {
+    "id": 292,
+    "name": "Spatial Intelligence",
+    "children": [
+      142,
+      9
+    ]
+  },
+  {
+    "id": 314,
+    "name": "GPU (Graphics Processing Unit)",
+    "children": [
+      3,
+      467,
+      521,
+      468,
+      469,
+      470,
+      294
+    ]
+  },
+  {
+    "id": 315,
+    "name": "Ablation",
+    "children": [
+      3,
+      5,
+      119,
+      122,
+      126,
+      113,
+      15
+    ]
+  },
+  {
+    "id": 349,
+    "name": "Assistant",
+    "children": [
+      342,
+      344,
+      345,
+      346
+    ]
+  },
+  {
+    "id": 478,
+    "name": "Adversarial Attacks",
+    "children": [
+      475,
+      251,
+      476,
+      536
+    ]
+  },
+  {
+    "id": 497,
+    "name": "Meta-Regressor",
+    "children": [
+      178,
+      588,
+      402,
+      495,
+      403,
+      404,
+      496
+    ]
+  },
+  {
+    "id": 316,
+    "name": "Scalar",
+    "children": [
+      3,
+      448,
+      5,
+      119,
+      122,
+      111,
+      101,
+      579,
+      15,
+      270,
+      310,
+      66
+    ]
+  }
+]

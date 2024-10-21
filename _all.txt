@@ -1,0 +1,748 @@
+1-N Systems.md
+A-B Testing.md
+A-Life (Artificial Life).md
+ACI (Agent-Computer Interface).md
+ACO (Ant Colony Optimization).md
+ADAM (Adaptive Moment Estimation).md
+AEO (Answer Engine Optimization).md
+AGI (Artificial General Intelligence).md
+AI Effect.md
+AI Governance.md
+AI Watchdog.md
+AI Winter.md
+AIT (Algorithmic Information Theory).md
+ANN (Artificial Neural Networks).md
+AR (Autoregressive).md
+ASI (Artificial Super Intelligence).md
+ASL (AI Safety Level).md
+ASR (Automatic Speech Recognition).md
+AV (Autonomous Vehicles).md
+Abductive Reasoning.md
+Ablation.md
+Abliteration.md
+Accelerator.md
+Activation Beacon.md
+Activation Data.md
+Active Externalism.md
+Active Inference.md
+Actor-Critic Models.md
+Adapter Layer.md
+Adapter.md
+Adaptive Dual-Scale Denoising.md
+Adaptive Problem Solving.md
+Adversarial Attacks.md
+Adversarial Debiasing.md
+Adversarial Instructions.md
+Affective Computation.md
+Agent-to-Agent Interaction.md
+Agent.md
+Agentic AI Systems.md
+AlexNet.md
+Algorithm.md
+Algorithmic Bias.md
+Algorithmic Probability.md
+Alignment Platform.md
+Alignment.md
+AmI (Ambient Intelligence).md
+Anomaly Detection.md
+Artefactual Autopoiesis.md
+Assistant.md
+Association Rule.md
+Attention Block.md
+Attention Matrix.md
+Attention Mechanisms.md
+Attention Network.md
+Attention Pattern.md
+Attention Projection Matrix.md
+Attention.md
+Attestation.md
+AutoGPT.md
+AutoML (Automated Machine Learning).md
+Autocomplete.md
+Autoencoder.md
+Autoformalization.md
+Autograd.md
+Autonomous Agents.md
+Autonomous Learning.md
+Autonomous Reasoning.md
+Autopoiesis.md
+Autoregressive Generation.md
+BCI (Brain Computer Interface).md
+BERT (Bidirectional Encoder Representations from Transformers).md
+BNN (Bispectral Neural Networks).md
+BNNs (Biological Neural Networks).md
+BQL (Binary Quantization Learning).md
+Backpropagation.md
+Bagging.md
+Base Model.md
+Bayesian Inference.md
+Bayesian Network.md
+Bayesian Optimization.md
+Bellman Equation.md
+Benchmark.md
+Bias-Variance Dilemma.md
+Bias.md
+Biocomputer.md
+Black Box.md
+Blind Alley.md
+BoW (Bag-of-Words).md
+Boltzmann Machine.md
+Boosting.md
+Brain Organoid Reservoir Computing.md
+Brainoware.md
+Branching Factor.md
+Brute Force.md
+Byte-Level State Space.md
+C2PA (Coalition for Content Provenance and Authenticity).md
+CD (Contrastive Divergence).md
+CLI (Command Line Interface).md
+CLIP (Contrastive Language–Image Pre-training).md
+CNN (Convolutional Neural Network).md
+CSPs (Constraint Satisfaction Problems).md
+CUDA (Compute Unified Device Architecture).md
+Capability Control.md
+Capability Ladder.md
+Capsule Network.md
+Capsule Networks.md
+Catastrophic Forgetting.md
+Categorical Deep Learning.md
+Causal Inference.md
+Centaur.md
+ChatGPT.md
+Chatbot.md
+Cherry Picking.md
+Chinchilla Scaling.md
+Chinese Room.md
+Chunking Strategy.md
+Classification.md
+Classifier.md
+Clustering.md
+Co-Pilot.md
+CoT (Chain of Thought).md
+Cognitive Architecture.md
+Cognitive Computing.md
+Cognitive Flexibility.md
+Collaborative Intelligence.md
+Comparative Advantage.md
+Complex Interaction.md
+Composability.md
+Compositional Reasoning.md
+Computational Creativity.md
+Compute Efficiency.md
+Compute.md
+Conditional Generation.md
+Conditional Probability.md
+Confidential Computing.md
+Confusion Matrix.md
+Connectionist AI.md
+Constitutional AI.md
+Context Window.md
+Contextual BM25.md
+Contextual Embedding.md
+Contextual Retrieval.md
+Continual Pre-Training.md
+Continuous Learning.md
+Contrastive Learning.md
+Control Logic.md
+Control Problem.md
+Control Vector.md
+ControlNet.md
+Convergence.md
+Convergent Learning.md
+Convolution.md
+Cooperativity.md
+Cosine Similarity.md
+Counterfactual Explanations.md
+Counterfactual Fairness.md
+Covariance.md
+Criteria Drift.md
+Cross Validation.md
+Cross entropy loss.md
+Cross-Attention.md
+Cross-Domain Competency.md
+Custom Instructions.md
+Cybernetics.md
+DAG (Directed Acyclic Graphs).md
+DL (Deep Learning).md
+DLMs (Deep Language Models).md
+DNC (Differential Neural Computer).md
+DNN (Deep Neural Networks).md
+DP (Dynamic Programming).md
+DPO (Direct Preference Optimization).md
+DQN (Deep Q-Networks).md
+DRL (Deep Reinforcement Learning).md
+DTW (Dynamic Time Warping).md
+Data Augmentation.md
+Data Blending.md
+Data Imputation.md
+Data Mining.md
+Data Wall.md
+Dataset.md
+De-Biasing.md
+Decidability.md
+Decision Tree.md
+Decomposition.md
+Denoising.md
+Deterministic Quoting.md
+Deterministic.md
+Differentiable Parametric Curves.md
+Differential Privacy.md
+Diffusion Forcing.md
+Diffusion.md
+Dimension Returns.md
+Dimension.md
+Dimensionality Reduction.md
+Directed Evolution.md
+Discontinuous Jump.md
+Discount Factor.md
+Discriminative AI.md
+Discriminator.md
+Distillation.md
+DoLa (Decoding by Contrasting Layers).md
+Dot Product Similarity.md
+Double Descent.md
+Dropout.md
+Dual Use Foundational Model.md
+Dual Use.md
+Dualism.md
+EBM (Energy-Based Model).md
+EDA (Exploratory Data Analysis).md
+EDL (Experimentation Driven Learning).md
+EM (Expectation-Maximization).md
+EMT (Extended Mind Transformer).md
+Effective Accelerationism.md
+Embedding Space.md
+Embedding.md
+Embodied AI.md
+Embodied Intelligence.md
+Emergence.md
+Empathic AI.md
+Encoder-Decoder Models.md
+End-to-End Learning.md
+Ensamble Algorithm.md
+Ensemble Learning.md
+Epistemic Foraging.md
+Equivariance.md
+Ethical AI.md
+Eval (Evaluation).md
+Evolutionary Algorithm.md
+Exascale.md
+Exocortex.md
+Expert System.md
+Explainability.md
+Exponential Slope Blindness.md
+Expressive Hidden States.md
+FCN (Fully Convolutional Networks).md
+FHE (Fully Homomorphic Encryption).md
+FPGA (Field-Programmable Gate Array).md
+FSA (Finite State Automata).md
+FSDP (Fully Sharded Data Parallel).md
+FSL (Few-Shot Learning).md
+Fab.md
+Fabless.md
+Fairness-Aware Machine Learning.md
+Fast Takeoff.md
+Fast Weights.md
+Feature Design.md
+Feature Extraction.md
+Feature Importance.md
+Federated Learning.md
+Federated Training.md
+Few Shot.md
+Find+Replace Transformers.md
+Fine Tuning.md
+Flash Attention.md
+Flexible Semantics.md
+Flow Engineering.md
+Foom.md
+Forward Propagation.md
+Foundation Model.md
+Fourier Analysis.md
+Fourier Features.md
+Frame Problem.md
+Frontier Models.md
+Full-Sequence Diffusion.md
+Function Approximation.md
+Function Approximator.md
+GAIL (Generative Adversarial Imitation Learning).md
+GAN (Generative Adversarial Network).md
+GAT (Graph Attention Network).md
+GCC (General Computer Control).md
+GCN (Graph Convolutional Networks).md
+GFlowNet (Generative Flow Networks).md
+GIGO (Garbage In, Garbage Out).md
+GLU (Gated Linear Unit).md
+GMM (Gaussian Mixture Models).md
+GNN (Graph Neural Networks).md
+GOFAI (Good Old-Fashioned AI).md
+GPS (General Problem Solver).md
+GPT (Generative Pre-Trained Transformer).md
+GPU (Graphics Processing Unit).md
+GPU-Poor.md
+GQN (Generative Query Network).md
+Gabor Function.md
+Gating Mechanism.md
+General World Model.md
+Generalization.md
+Generative AI.md
+Generative Workflow.md
+Generative.md
+Geometric Deep Learning.md
+Goal.md
+God in a Box.md
+Gorilla Program.md
+Gradient Descent.md
+Graph Machine Learning.md
+Graph Theory.md
+Greedy Decoding.md
+Grokking.md
+Groundedness.md
+Grounding.md
+Group-Based Alignment.md
+Guardrails.md
+Gödel Code.md
+HITL (Human-in-the-Loop).md
+HMI (Human-Machine Interface).md
+HPOC (Human Point of Contact).md
+Hallucination.md
+Hash Table.md
+Hebbian Learning.md
+Hessian Matrix.md
+Heuristic Search Techniques.md
+Hidden Layer.md
+Hierarchical Planning.md
+Hierarchy of Generalizations.md
+Horizon.md
+Human-Level AI.md
+Hybrid AI.md
+Hypernetwork.md
+Hyperparameter Tuning.md
+Hyperparameter.md
+Hyperplane.md
+IFEval (Instruction-Following Eval).md
+IO (Influence Operations).md
+IR (Information Retrieval).md
+IRL (Inverse Reinforcement Learning).md
+ITM (Image-Text Matching).md
+Image Recognition.md
+Image Synthesis.md
+Imitation Learning.md
+Implicit Reasoning.md
+In-Context Learning.md
+Incidental Polysemanticity.md
+Inductive Prior.md
+Inductive Reasoning.md
+Inference Acceleration.md
+Inference-Time Reasoning.md
+Inference.md
+Information Gap.md
+Information Integration.md
+Initialization.md
+Instantiation.md
+Instruction Following Model.md
+Instruction Tuning.md
+Instruction-Following.md
+Instrumental Convergence.md
+Instrumentation.md
+Intelligence Explosion.md
+Intention.md
+Interestingness.md
+Internal Representation.md
+Internet Scale.md
+Interpretability.md
+Invariance.md
+Inverse Problems.md
+JEST (Multimodal Contrastive Learning with Joint Example Selection).md
+Jagged Frontier.md
+Jailbreaking.md
+Joint Embedding Architecture.md
+KL (Kullback–Leibler) Divergence.md
+KV (Key-Value).md
+Kaggle Effect.md
+Kaleidoscope Hypothesis.md
+Knowledge Graph.md
+Knowledge Representation.md
+LAM (Large Action Model).md
+LAQ (Locally-Adaptive Quantization).md
+LLE (Locally Linear Embedding).md
+LLM (Large Language Model).md
+LMN (Large Nature Model).md
+LNN (Liquid Neural Network).md
+LSTM (Long Short-Term Memory).md
+LTPA (Long-Term Planning Agent).md
+LVLMs (Large Vision Language Models).md
+Latent Space.md
+Layer Normalization.md
+Learnability.md
+Linear Algebra.md
+Linear Complexity.md
+LoRA (Low-Rank Adaptation).md
+Local Pooling.md
+Local Weight Sharing.md
+Log Likelihood.md
+Log-Likelihood.md
+Logistic Regression.md
+Logits.md
+Long-Context Modeling.md
+Loss Function.md
+Loss Optimization.md
+Lost-in-the-Middle.md
+Lovelace Test.md
+Low-Bit Palletization.md
+MAS (Multi-Agent Systems).md
+MDL (Minimum Description Length).md
+MDO (Multidomain Operations).md
+MDPO (Mirror Descent Policy Optimization).md
+MIMS (Multiple Instance Learning for Missing Annotations).md
+ML (Machine Learning).md
+MLE (Maximum Likelihood Estimation).md
+MLLMs (Multimodal Large Language Models).md
+MLM (Masked-Language Modeling).md
+MLP (Multilayer Perceptron).md
+MMLU (Massive Multitask Language Understanding).md
+MPC (Model-Predictive Control).md
+MRL (Matryoshka Representation Learning).md
+MTL (Multi-Task Learning).md
+Machine Time.md
+Machine Understanding.md
+Machine Unlearning.md
+Manifold Learning.md
+Markov Chain.md
+Masking.md
+MatMul (Matrix Multiplication).md
+Matrix Models.md
+Matryoshka Embedding.md
+Max Pooling.md
+Mechanistic Interpretability.md
+Memory Extender.md
+Memory Systems.md
+Meta Prompt.md
+Meta-Classifier.md
+Meta-Learning.md
+Meta-Regressor.md
+Metaheuristic.md
+Misuse.md
+Mixture Map.md
+Mixture Model.md
+MoE (Mixture of Experts).md
+Mode Collapse.md
+Model Collapse.md
+Model Compression.md
+Model Distillation.md
+Model Drift Minimization.md
+Model Drift.md
+Model Garden.md
+Model Layer.md
+Model Level.md
+Model Management.md
+Model-Based Classifier.md
+Moloch.md
+Mortal Computation.md
+Motor Learning.md
+Move 37.md
+Multi-Token Prediction.md
+Multi-headed Attention.md
+Multiagent.md
+Multimodal.md
+NAS (Neural Architecture Search).md
+NHI (Non-Human Intelligence).md
+NIAN (Needle in a Needlestack).md
+NLD (Neural Lie Detectors).md
+NLP (Natural Language Processing).md
+NLP (Neuro-Linguistic Programming).md
+NLU (Natural Language Understanding).md
+NPC (Non-Player Character).md
+Naive Bayesian Model.md
+Narrow AI.md
+Nationalization.md
+Natural Language Problem.md
+Natural Language.md
+NeRF (Neural Radiance Fields).md
+Negative Feedback.md
+Negative Utilitarianism.md
+Neural Network.md
+Neuroevolution.md
+Neurogenesis.md
+Neuromorphic Chips.md
+Neurosymbolic AI.md
+Ngram.md
+Noise.md
+Non-Contrastive.md
+Numerical Processing.md
+OOMs (Orders of Magnitude).md
+Object Detection.md
+Objective Function.md
+Observability.md
+Occam's Razor.md
+On-the-fly Program Synthesis.md
+One-Shot Learning.md
+Ontology.md
+Open-Ended AI.md
+Optimization Problem.md
+Orchestration.md
+Out of Distribution.md
+Output Verifier.md
+Overfitting.md
+Overhang.md
+Overparameterized.md
+P(Doom).md
+P-hacking.md
+PDS (Psychological Depth Scale).md
+PFGM (Poisson Flow Generative Model).md
+PPML (Privacy-Preserving Machine Learning).md
+PPO (Proximal Policy Optimization).md
+PQ (Product Quantization).md
+Panel-of-Experts.md
+Paperclip Maximizer.md
+Parallelism.md
+Parameter Size.md
+Parameter Space.md
+Parameter.md
+Parameterized.md
+Parametric Knowledge.md
+Parametric Memory.md
+Path Integration.md
+Perceptron.md
+Perceptual Domain.md
+Perceptual Hash Algorithm.md
+Performance Degradation.md
+Permutation.md
+Perplexity.md
+Persuasive System.md
+Phase Transition.md
+Point-wise Feedforward Network.md
+Policy Gradient Algorithm.md
+Policy Gradient.md
+Policy Learning.md
+Policy Parameters.md
+Policy-Guided Diffusion.md
+Polymathic AI.md
+Polymorphism.md
+Positional Encoding.md
+Post-Training.md
+Predictive Analytics.md
+Preference Model.md
+Pretrained Model.md
+Private Cloud Compute.md
+Privileged Instructions.md
+Probabilistic Programming.md
+Proliferation Problem.md
+Prompt Caching.md
+Prompt Chaining.md
+Prompt Engineering.md
+Prompt Injection.md
+Prompt.md
+Promptocracy.md
+Q-Learning.md
+Q-Value.md
+QA (Question Answering).md
+QA (Question-Answer).md
+Quantization.md
+Query Flock.md
+Query.md
+RAG (Retrieval-Augmented Generation).md
+RBMs (Restricted Boltzmann Machines).md
+RFM (Robotics Foundational Model).md
+RL (Reinforcement Learning).md
+RLHF (Reinforcement Learning from Human Feedback).md
+RLHF++.md
+RNN (Recurrent Neural Network).md
+Random Forest.md
+Random Walk.md
+Rank Fusion.md
+ReAct (Reason+Act).md
+ReLU (Rectified Linear Unit).md
+Reasoning Path.md
+Recommendation Systems.md
+Recursive Self-Improvement.md
+Red Queen Effect.md
+Red Teaming.md
+Reflective Programming.md
+Regime.md
+Regression.md
+Regularization.md
+Rejection Sampling.md
+Replaced Token Detection.md
+Reranking.md
+ResNet (Residual Network).md
+Residual Connections.md
+Retrieval-Based (Model).md
+Reward Model Ensemble.md
+Rightsizing.md
+Robustness.md
+Roko's Basilisk.md
+Router.md
+SAE (Structural Adaptive Embeddings).md
+SAIF (Secure AI Framework).md
+SAM (Segment Anything Model).md
+SIL (Simulator in the Loop).md
+SIMA (Scalable Instructable Multiworld Agent).md
+SLAPA (Self-Learning Agent for Performing APIs).md
+SNN (Spiking Neural Network).md
+SSF (Stochastic Similarity Filter).md
+SSL (Self-Supervised Learning).md
+SSM (State-Space Model).md
+SVM (Support Vector Machine).md
+Safety Net.md
+Salience.md
+Sample Efficiency.md
+Sampling Algorithm.md
+Sampling.md
+Saturating Non-Linearities.md
+Saturation Effect.md
+Scaffolding.md
+Scalable MatMul-free Language Modeling.md
+Scalar.md
+Scale Separation.md
+Scaling Hypothesis.md
+Scaling Laws.md
+Scientific Computing.md
+Search Optimization.md
+Secure Enclave.md
+Self-Attention.md
+Self-Awareness.md
+Self-Correction.md
+Self-Reasoning Token.md
+Self-Supervised Pretraining.md
+Semantic Entropy.md
+Semantic Indexing.md
+Semantic Segmentation.md
+Semi-Supervised Learning.md
+Seq2Seq (Sequence to Sequence).md
+Sequence Masking.md
+Sequence Model.md
+Shared Awareness.md
+Siamese Network.md
+Silent Collapse.md
+Silicon-Based Intelligence.md
+Similarity Masking.md
+Similarity Search.md
+Simulation.md
+Singularity.md
+Situational Models.md
+Skill Differential.md
+Slop.md
+Socratic Model.md
+SoftMax.md
+Solomonoff Induction.md
+Solution Space.md
+SotA (State of the Art).md
+Sovereign AI.md
+Spacetime Patches.md
+Sparsability.md
+Sparse Autoencoder.md
+Sparsity.md
+Spatial Intelligence.md
+Speculative Decoding.md
+Speculative Edits.md
+Speech Processing.md
+Speed of Light Issues.md
+Spillover.md
+Stacking.md
+State Space Model.md
+Stateful.md
+Static Inference.md
+Steerability.md
+Stochastic Parrot.md
+Stochastic.md
+Straight-Through Estimator.md
+Streaming.md
+Stride Length.md
+Structured Data.md
+Structured Generation.md
+Structured Search.md
+Subsymbolic AI.md
+Super Alignment.md
+Super Prompting.md
+Superintelligence.md
+Supervised Classifier.md
+Supervised Learning.md
+Supervision.md
+Surrogate Objective.md
+Swarm Intelligence.md
+Symbolic AI.md
+Symbolic Regression.md
+Symmetry.md
+Syntactic Templates.md
+Synthetic Data Generation.md
+System 1 & System 2.md
+System Prompt.md
+TCN (Temporal Convolutional Networks).md
+TEM (Trusted Execution Monitor).md
+TESCREAL.md
+TF-IDF (Term Frequency-Inverse Document Frequency).md
+TPU (Tensor Processing Units).md
+TRL (Transfer Reinforcement Learning).md
+TRPO (Trust Region Policy Optimization).md
+TTFT (Test Time Fine-Tuning).md
+TTS (Text-to-Speech).md
+TTT (Test-Time Training).md
+Targeted Adversarial Examples.md
+Task Environment.md
+Teacher Committee.md
+Teacher Model.md
+Teacher-Guided Rejection Sampling.md
+Temperature.md
+Tensor.md
+TensorFlow.md
+Text to Action.md
+Thermodynamic Bayesian Inference.md
+Thought Token.md
+Three Laws of Robotics.md
+ToM (Theory of Mind).md
+Token Speculation Techniques.md
+Token.md
+Top-K.md
+Toy Program.md
+Traceability.md
+Training Cost.md
+Training Data.md
+Training.md
+Trajectory Generation.md
+Transfer Learning.md
+Transformative AI.md
+Transformer.md
+Translational.md
+Transposed Convolutional Layer.md
+Triple.md
+Tunable Parameters.md
+Turing Complete.md
+Turing Test.md
+UTM (Universal Turing Machine).md
+Uncensored AI.md
+Underfitting.md
+Unhobbling.md
+Universal Learning Algorithms.md
+Universality.md
+Unstructured Data.md
+Unsupervised Learning.md
+Unverifyability.md
+VAE (Variable AutoEncoder).md
+VAE (Variational Autoencoders).md
+VC Dimension (Vapnik-Chervonenkis).md
+VLM (Visual Language Model).md
+VQA (Visual Question Answering).md
+Validation Data.md
+Value Matrix.md
+Vanishing Gradient.md
+Vector Database.md
+Vectorization.md
+Verifier Theory.md
+ViTs (Vision Transformers).md
+Volumetric AI.md
+WBE (Whole Brain Emulation).md
+Wait Calculation.md
+Wavelet.md
+Weight Decay.md
+Weight.md
+Word Salad.md
+Word Vector.md
+World Model.md
+XAI (Explainable AI).md
+Xavier's Initialization.md
+ZSL (Zero-Shot Learning).md
+_.txt
+bGPT (Byte-Level Transformer).md
+k-NN (k-Nearest Neighbors).md
+xLSTM.md
+xRx.md
