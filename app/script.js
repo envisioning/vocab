@@ -3,6 +3,17 @@ d3.json("ai_terms_hierarchy.json").then(data => {
     const width = window.innerWidth;
     const height = window.innerHeight;
 
+    // Add search input
+    const searchInput = d3.select("#graph")
+        .insert("input", ":first-child")
+        .attr("type", "text")
+        .attr("placeholder", "Search nodes...")
+        .style("position", "absolute")
+        .style("top", "10px")
+        .style("left", "10px")
+        .style("z-index", "1000")
+        .style("padding", "5px");
+
     // Create the SVG element
     const svg = d3.select("#graph")
         .append("svg")
@@ -37,7 +48,19 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         .force("charge", d3.forceManyBody().strength(-500))
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + 20))
+        .force("attract", attractTowardCenter(0.1))
         .stop(); // Stop the simulation immediately
+
+    // Add this function after the simulation definition
+    function attractTowardCenter(strength) {
+        return function(alpha) {
+            for (let i = 0, n = nodes.length, node, k = alpha * strength; i < n; ++i) {
+                node = nodes[i];
+                node.vx -= (node.x - width / 2) * k;
+                node.vy -= (node.y - height / 2) * k;
+            }
+        };
+    }
 
     // Create the links
     const link = g.selectAll("line")
@@ -84,6 +107,28 @@ d3.json("ai_terms_hierarchy.json").then(data => {
     );
 
     Promise.all(summaryPromises).then(() => {
+        // Add search functionality
+        searchInput.on("input", function() {
+            const searchTerm = this.value.toLowerCase();
+            const matchingNodes = nodes.filter(n => n.name.toLowerCase().includes(searchTerm));
+            
+            node.attr("fill", d => matchingNodes.includes(d) ? "#ff9900" : (d.name === "ML (Machine Learning)" ? "#ff0000" : "#1f77b4"))
+                .attr("r", d => matchingNodes.includes(d) ? nodeRadius(d) * 1.5 : nodeRadius(d));
+            
+            label.attr("font-weight", d => matchingNodes.includes(d) ? "bold" : "normal")
+                .attr("font-size", d => matchingNodes.includes(d) ? 12 : 10);
+            
+            if (matchingNodes.length > 0) {
+                const matchingNode = matchingNodes[0];
+                const scale = 2;
+                const translate = [width / 2 - matchingNode.x * scale, height / 2 - matchingNode.y * scale];
+                svg.transition().duration(750).call(
+                    zoom.transform,
+                    d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+                );
+            }
+        });
+
         // Create the nodes
         const node = g.selectAll("circle")
             .data(nodes)

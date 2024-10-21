@@ -57,13 +57,30 @@ def calculate_similarity(terms):
 
 def create_graph(terms, similarity_matrix, threshold=0.3):
     G = nx.Graph()
-    for i, term in enumerate(terms):
+    term_list = list(terms.keys())
+    for term in term_list:
         G.add_node(term)
     
+    # Add edges based on similarity threshold
     for i in range(len(terms)):
         for j in range(i+1, len(terms)):
             if similarity_matrix[i][j] > threshold:
-                G.add_edge(list(terms.keys())[i], list(terms.keys())[j])
+                G.add_edge(term_list[i], term_list[j])
+    
+    # Connect isolated nodes to their nearest neighbor
+    isolated_nodes = list(nx.isolates(G))
+    for node in isolated_nodes:
+        i = term_list.index(node)
+        nearest_neighbor = max(range(len(terms)), key=lambda j: similarity_matrix[i][j] if i != j else 0)
+        G.add_edge(node, term_list[nearest_neighbor])
+    
+    # Ensure the graph is fully connected
+    if not nx.is_connected(G):
+        components = list(nx.connected_components(G))
+        for i in range(len(components) - 1):
+            node1 = next(iter(components[i]))
+            node2 = next(iter(components[i+1]))
+            G.add_edge(node1, node2)
     
     return G
 
