@@ -24,3 +24,5 @@ publish.css
 
 # Ignore Smart Connections folder
 .smart-connections
+
+app/config.py
