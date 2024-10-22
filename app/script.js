@@ -44,7 +44,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
 
     // Create the force simulation
     const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(links).id(d => d.id).distance(150))
+        .force("link", d3.forceLink(links).id(d => d.id).distance(200)) // Increased from 150 to 200
         .force("charge", d3.forceManyBody().strength(-500))
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + 20))
@@ -68,7 +68,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         .enter()
         .append("line")
         .attr("stroke", "#ccc")
-        .attr("stroke-opacity", 0.4)
+        .attr("stroke-opacity", 0) // Initially hide the links
         .attr("stroke-width", 1);
 
     // Create a tooltip div
@@ -149,6 +149,17 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             .attr("dy", d => nodeRadius(d) + 15)
             .style("cursor", "pointer");
 
+        // Add hover event handlers to show tooltip
+        node.on("mouseover", function(event, d) {
+            tooltip.transition().duration(200).style("opacity", .9);
+            tooltip.html(`<strong>${d.title}</strong><br>${d.summary}`)
+                .style("left", (event.pageX + 5) + "px")
+                .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.transition().duration(500).style("opacity", 0);
+        });
+
         // Run the simulation
         for (let i = 0; i < 300; ++i) simulation.tick();
 
@@ -168,44 +179,16 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             .attr("y", d => d.y);
 
         let highlightedNode = null;
-        let hoverEnabled = true;
 
-        // Add interactivity
-        node.on("mouseover", handleMouseOver)
-            .on("mouseout", handleMouseOut)
-            .on("click", toggleHighlight);
-
-        label.on("mouseover", handleMouseOver)
-            .on("mouseout", handleMouseOut)
-            .on("click", toggleHighlight);
+        // Remove hover event handlers and only use click for interactivity
+        node.on("click", toggleHighlight);
+        label.on("click", toggleHighlight);
 
         svg.on("click", (event) => {
             if (event.target === svg.node()) {
                 unhighlightAll();
-                enableHover();
             }
         });
-
-        function handleMouseOver(event, d) {
-            if (hoverEnabled) {
-                highlight(event, d);
-                tooltip.transition()
-                    .duration(200)
-                    .style("opacity", .9);
-                tooltip.html(`<strong>${d.title}</strong><br/><br/>${d.summary}`)
-                    .style("left", (event.pageX + 10) + "px")
-                    .style("top", (event.pageY - 28) + "px");
-            }
-        }
-
-        function handleMouseOut(event, d) {
-            if (hoverEnabled) {
-                unhighlight();
-                tooltip.transition()
-                    .duration(500)
-                    .style("opacity", 0);
-            }
-        }
 
         function toggleHighlight(event, d) {
             if (event.defaultPrevented) return; // ignore drag
@@ -213,12 +196,10 @@ d3.json("ai_terms_hierarchy.json").then(data => {
 
             if (highlightedNode === d) {
                 unhighlightAll();
-                enableHover();
             } else {
                 unhighlightAll();
                 highlight(event, d);
                 highlightedNode = d;
-                disableHover();
             }
         }
 
@@ -233,32 +214,18 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             // Highlight connected nodes and links
             node.attr("opacity", n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.1);
             link.attr("stroke", l => (l.source.id === d.id || l.target.id === d.id) ? "#ff9900" : "#ccc")
-                .attr("stroke-opacity", l => (l.source.id === d.id || l.target.id === d.id) ? 1 : 0.1)
+                .attr("stroke-opacity", l => (l.source.id === d.id || l.target.id === d.id) ? 1 : 0) // Show only connected links
                 .attr("stroke-width", l => (l.source.id === d.id || l.target.id === d.id) ? 2 : 1);
             label.attr("opacity", n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.1);
-        }
-
-        function unhighlight() {
-            if (!highlightedNode) {
-                unhighlightAll();
-            }
         }
 
         function unhighlightAll() {
             highlightedNode = null;
             node.attr("opacity", 1);
             link.attr("stroke", "#ccc")
-                .attr("stroke-opacity", 0.4)
+                .attr("stroke-opacity", 0) // Hide all links again
                 .attr("stroke-width", 1);
             label.attr("opacity", 1);
-        }
-
-        function disableHover() {
-            hoverEnabled = false;
-        }
-
-        function enableHover() {
-            hoverEnabled = true;
         }
     });
 });
