@@ -112,7 +112,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             const searchTerm = this.value.toLowerCase();
             const matchingNodes = nodes.filter(n => n.name.toLowerCase().includes(searchTerm));
             
-            node.attr("fill", d => matchingNodes.includes(d) ? "#ff9900" : (d.name === "ML (Machine Learning)" ? "#ff0000" : "#1f77b4"))
+            node.attr("fill", d => matchingNodes.includes(d) ? "#ff9900" : "#1f77b4")
                 .attr("r", d => matchingNodes.includes(d) ? nodeRadius(d) * 1.5 : nodeRadius(d));
             
             label.attr("font-weight", d => matchingNodes.includes(d) ? "bold" : "normal")
@@ -135,7 +135,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             .enter()
             .append("circle")
             .attr("r", nodeRadius)
-            .attr("fill", d => d.name === "ML (Machine Learning)" ? "#ff0000" : "#1f77b4")
+            .attr("fill", "#1f77b4")
             .style("cursor", "pointer");
 
         // Add labels to the nodes
