@@ -1,5 +1,3 @@
-Early Exit Loss
-
 ---
 title: "Early Exit Loss"
 summary: "An optimization technique in AI models that balances overall accuracy and computational efficiency."
