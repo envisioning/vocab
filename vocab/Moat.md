@@ -1,7 +1,5 @@
-Moat
-
 ---
-title: "Moat (AI)"
+title: "Moat"
 summary: "A concept of competitive advantage that AI companies gain by developing proprietary data, algorithms, and models."
 ---
 

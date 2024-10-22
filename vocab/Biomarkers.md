@@ -1,5 +1,3 @@
-Biomarkers
-
 ---
 title: "Biomarkers"
 summary: "Identifiable biological indicators that offer valuable insights into the health or disease status of an individual in the context of AI."

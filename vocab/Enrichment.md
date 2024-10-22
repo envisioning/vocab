@@ -1,5 +1,3 @@
-Enrichment
-
 ---
 title: "Enrichment"
 summary: "Process of improving raw data quality with supplemental information to enable more accurate and insightful AI models."

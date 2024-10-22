@@ -1,5 +1,3 @@
-Deepfakes
-
 ---
 title: "Deepfakes"
 summary: "Synthetic media produced by AI technologies that superimpose existing images or videos onto source images or videos to create realistic likenesses."

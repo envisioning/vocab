@@ -1,5 +1,3 @@
-Hyperscalers
-
 ---
 title: "Hyperscalers"
 summary: "Large tech organizations that design and manage infrastructure to support the massive scale of big data, AI and cloud computing."

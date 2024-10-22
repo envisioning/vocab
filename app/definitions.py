@@ -1,11 +1,9 @@
 import requests
+import argparse
 from config import API_KEY
 
 # Example configuration for CustomGPT API
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
-
-# List of terms you want definitions for
-terms = ["Persistency", "Segmentation", "Ground Truth", "Edge Model", "Random Forest", "Hypothesis Testing"]  # Add more terms here
 
 # Function to get definition from CustomGPT API
 def get_definition_from_gpt(term):
@@ -29,7 +27,7 @@ def get_definition_from_gpt(term):
             {"role": "user", "content": "Write for an AI expert audience, and always assume the term is related to AI."},
             {"role": "user", "content": "Acronyms should be like this: 'ML (Machine Learning)' "},
             {"role": "user", "content": "Always call Artificial Intelligence as AI and Machine Learning as ML."},
-            {"role": "user", "content": "You will return the following mardkdown format with the title and summary inside of FrontMatter and rest in body. Make sure the summary does not include the term in the beginning. Follow exactly this structure (starting with ---):"},
+            {"role": "user", "content": "You will return the following markdown format with the title and summary inside of FrontMatter and rest in body. Make sure the summary does not include the term in the beginning. Follow exactly this structure (starting with ---):"},
             {"role": "user", "content": "---"},
             {"role": "user", "content": "title: \"ML (Machine Learning)\""},
             {"role": "user", "content": "summary: \"Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.\""},
@@ -48,8 +46,12 @@ def get_definition_from_gpt(term):
         print(f"Error fetching definition for {term}: {e}")
         return None
 
-# Loop through each term, get the definition, and save to a markdown file in the /terms/ directory
-for term in terms:
+def main():
+    parser = argparse.ArgumentParser(description='Fetch AI term definitions from CustomGPT.')
+    parser.add_argument('term', type=str, help='The AI term to define')
+    args = parser.parse_args()
+
+    term = args.term
     definition = get_definition_from_gpt(term)  # Get the definition from CustomGPT
     if definition:  # Only proceed if a definition was successfully fetched
         filename = f"terms/{term}.md"  # Create a filename based on the term with .md extension
@@ -58,3 +60,6 @@ for term in terms:
         print(f"Definition for {term} saved to {filename}")
     else:
         print(f"Skipping {term}, no definition found.")
+
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,6 @@
-Wake Sleep
-
 ---
 title: "Wake Sleep"
-summary: "A biologically inspired algorithm used within unsupervised learning to train deep belief networks." 
+summary: "Biologically inspired algorithm used within unsupervised learning to train deep belief networks."
 ---
 
 The Wake-Sleep algorithm is a method used within unsupervised learning, specifically for training generative models such as deep belief networks. It works by simulating two stages: a 'wake' phase, where the system propagates in the forward direction and adjusts the recognition weights, and a 'sleep' phase, where the system propagates in the reverse direction adjusting the generative weights. It is particularly significant within AI because it provides a potential solution for adapting the weights in multilayer neural networks, a problem that is central to deep learning. The algorithm can be used in a variety of AI applications, such as speech recognition, image recognition, and natural language processing.
