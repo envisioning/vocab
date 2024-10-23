@@ -1,9 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: mdo
-summary: Strategic and tactical integration of capabilities across multiple domains—such
-  as land, sea, air, space, and cyberspace—enabled and enhanced by artificial intelligence
-  and advanced technologies.
+summary: Strategic and tactical integration of capabilities across multiple domains—such as land, sea, air, space, and cyberspace—enabled and enhanced by artificial intelligence and advanced technologies.
 title: MDO (Multidomain Operations)
 ---
 

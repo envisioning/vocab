@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: fsdp
-summary: Distributed training method in deep learning that divides both model parameters
-  and optimizer states across multiple devices to improve efficiency and scalability.
+summary: Distributed training method in deep learning that divides both model parameters and optimizer states across multiple devices to improve efficiency and scalability.
 title: FSDP (Fully Sharded Data Parallel)
 ---
 

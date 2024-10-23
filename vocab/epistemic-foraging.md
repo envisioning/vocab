@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: epistemic-foraging
-summary: Process of actively seeking out new information to reduce uncertainty in
-  an agent's understanding of the world, often driven by curiosity or the need to
-  update beliefs about the environment.
+summary: Process of actively seeking out new information to reduce uncertainty in an agent's understanding of the world, often driven by curiosity or the need to update beliefs about the environment.
 title: Epistemic Foraging
 ---
 

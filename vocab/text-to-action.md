@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: text-to-action
-summary: Process of interpreting and converting written or spoken language into executable
-  actions by a system or application.
+summary: Process of interpreting and converting written or spoken language into executable actions by a system or application.
 title: Text to Action
 ---
 

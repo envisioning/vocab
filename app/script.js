@@ -50,49 +50,31 @@ d3.json("ai_terms_hierarchy.json").then(data => {
     const nodes = [];
     const links = [];
 
-    // Helper function to traverse the hierarchical data
-    function traverse(nodeId, parent = null) {
-        const nodeDetails = nodeDetailsMap.get(nodeId);
-        
-        // Skip if we've already processed this node or if it doesn't exist
-        if (!nodeDetails || nodes.some(n => n.id === nodeId)) {
-            return;
-        }
-
+    // First pass: collect all nodes
+    data.forEach(node => {
         nodes.push({
-            id: nodeId,
-            name: nodeDetails.name,
-            outbound: nodeDetails.children ? nodeDetails.children.length : 0,
+            id: node.id,
+            name: node.name,
+            outbound: node.children ? node.children.length : 0,
             inbound: 0,
-            summary: nodeDetails.summary
+            summary: node.summary
         });
 
-        if (parent) {
-            const childInfo = parent.children.find(child => child.id === nodeId);
-            links.push({
-                source: parent.id,
-                target: nodeId,
-                similarity: childInfo ? childInfo.similarity : 0
+        // Add all child relationships to links
+        if (node.children) {
+            node.children.forEach(child => {
+                links.push({
+                    source: node.id,
+                    target: child.id,
+                    similarity: child.similarity
+                });
             });
         }
-
-        // Process children
-        if (nodeDetails.children && nodeDetails.children.length > 0) {
-            nodeDetails.children.forEach(child => {
-                traverse(child.id, nodeDetails);
-            });
-        }
-    }
-
-    // Start traversal from the root nodes
-    data.forEach(rootNode => traverse(rootNode.id));
-
-    // Create a Map for quick node lookup
-    const nodeMap = new Map(nodes.map(node => [node.id, node]));
+    });
 
     // Count inbound connections
     links.forEach(link => {
-        const targetNode = nodeMap.get(link.target);
+        const targetNode = nodes.find(n => n.id === link.target);
         if (targetNode) {
             targetNode.inbound++;
         }
@@ -150,9 +132,9 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         .data(links)
         .enter()
         .append("line")
-        .attr("stroke", "#ccc")  // Keep light gray color
-        .attr("stroke-opacity", 0.3)  // Reduced opacity from 0.7 to 0.3
-        .attr("stroke-width", d => strokeWidthScale(d.similarity));
+        .attr("stroke", "#ccc")
+        .attr("stroke-opacity", 0.15)  // Reduced opacity from 0.3 to 0.15
+        .attr("stroke-width", d => Math.min(1, strokeWidthScale(d.similarity))); // Ensure maximum width is 1px
 
     // Create a tooltip div
     const tooltip = d3.select("body").append("div")
@@ -167,22 +149,29 @@ d3.json("ai_terms_hierarchy.json").then(data => {
 
     // Add this after the nodeDetailsMap initialization and before creating nodes
     const categoryColors = d3.scaleOrdinal()
-        .domain(['CORE', 'ARCH', 'IMPL', 'DATA', 'MATH', 'BIO'])
-        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b']);
+        .domain(['CORE', 'ARCH', 'IMPL', 'DATA', 'MATH', 'BIO', 'GOV'])
+        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#bcbd22']);
 
-    // Modify the node creation to use category colors
+    // Modify the node creation to use category colors and add secondary category outline
     const node = g.selectAll("circle")
         .data(nodes)
         .enter()
         .append("circle")
         .attr("r", nodeRadius)
         .attr("fill", d => {
-            // If node has multiple categories, use the first one
-            const category = nodeDetailsMap.get(d.id).categories[0];
-            return categoryColors(category);
+            // Use first category for fill
+            const primaryCategory = nodeDetailsMap.get(d.id).categories[0];
+            return categoryColors(primaryCategory);
         })
-        .attr("stroke", "none")
-        .attr("stroke-width", "2px")
+        .attr("stroke", d => {
+            // Use second category for stroke if it exists
+            const categories = nodeDetailsMap.get(d.id).categories;
+            return categories.length > 1 ? categoryColors(categories[1]) : "none";
+        })
+        .attr("stroke-width", d => {
+            // Only show stroke if there's a secondary category
+            return nodeDetailsMap.get(d.id).categories.length > 1 ? "3px" : "0px";
+        })
         .style("cursor", "pointer");
 
     // Add labels to the nodes
@@ -238,9 +227,11 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         });
 
         // Add outline to connected nodes
-        node.attr("stroke", n => 
-            connectedNodes.has(n.id) ? "#ff9900" : "none"
-        );
+        node.attr("stroke", n => {
+            if (connectedNodes.has(n.id)) return "#ff9900";
+            const categories = nodeDetailsMap.get(n.id).categories;
+            return categories.length > 1 ? categoryColors(categories[1]) : "none";
+        });
 
         // Show connections with proportional thickness and colors
         link
@@ -258,7 +249,10 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         tooltip.transition().duration(500).style("opacity", 0);
         
         // Remove outlines
-        node.attr("stroke", "none");
+        node.attr("stroke", n => {
+            const categories = nodeDetailsMap.get(n.id).categories;
+            return categories.length > 1 ? categoryColors(categories[1]) : "none";
+        });
         
         // Reset connections to light gray
         link
@@ -427,16 +421,10 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         node.attr("opacity", n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.1);
 
         link
-            .attr("stroke", l => {
-                if (l.source.id === d.id) return "#4CAF50";
-                if (l.target.id === d.id) return "#FFA500";
-                return "#ccc";
-            })
+            .attr("stroke", l => l.source.id === d.id ? "#4CAF50" : "#ccc")
             .attr("stroke-opacity", l => {
-                if (l.source.id === d.id || l.target.id === d.id) {
-                    return 0.7;
-                }
-                return 0.3;  // Lower opacity for non-highlighted links
+                if (l.source.id === d.id) return 0.7; // Only show outgoing connections
+                return 0.15; // Keep other lines at default low opacity
             });
 
         // Update label visibility
@@ -460,14 +448,28 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             .attr("y", d => d.y);
     });
 
-    // Add this after creating the SVG
+    // Define category descriptions (move this before the legend creation)
+    const categoryDescriptions = {
+        "CORE": "Core AI Concepts",
+        "ARCH": "Architecture & Models",
+        "IMPL": "Implementation & Tools",
+        "DATA": "Data Processing",
+        "MATH": "Mathematical Foundations",
+        "BIO": "Biological & Neural",
+        "GOV": "Governance & Ethics"
+    };
+
     // Create a legend with adjusted positioning
     const legend = svg.append("g")
         .attr("class", "legend")
-        .attr("transform", `translate(20, ${height - 180})`);  // Moved down from the top
+        .attr("transform", `translate(20, ${height - 180})`);
 
-    const categories = ['CORE', 'ARCH', 'IMPL', 'DATA', 'MATH', 'BIO'];
+    const categories = ['CORE', 'ARCH', 'IMPL', 'DATA', 'MATH', 'BIO', 'GOV'];
 
+    // Add a state to track the active filter
+    let activeFilter = null;
+
+    // Create legend items with click event listeners
     legend.selectAll("circle")
         .data(categories)
         .enter()
@@ -475,16 +477,68 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         .attr("cx", 10)
         .attr("cy", (d, i) => i * 25)
         .attr("r", 7)
-        .attr("fill", d => categoryColors(d));
+        .attr("fill", d => categoryColors(d))
+        .style("cursor", "pointer")  // Change cursor to pointer on hover
+        .on("click", function(event, category) {
+            if (activeFilter === category) {
+                activeFilter = null;  // Reset filter if the same category is clicked
+            } else {
+                activeFilter = category;  // Set new filter
+            }
+            applyFilter();
+            updateLegendVisuals();
+        });
 
+    // Add labels to the legend items with expanded titles
     legend.selectAll("text")
         .data(categories)
         .enter()
         .append("text")
         .attr("x", 25)
         .attr("y", (d, i) => i * 25)
-        .attr("dy", "0.3em")
-        .text(d => d)
+        .attr("dy", "0.35em")  // Vertical alignment
+        .text(d => categoryDescriptions[d])
         .attr("font-size", "12px")
-        .attr("fill", "black");
+        .attr("fill", "black")
+        .style("cursor", "pointer")  // Change cursor to pointer on hover
+        .on("click", function(event, category) {
+            // Trigger click on the corresponding circle
+            legend.selectAll("circle").filter(c => c === category).dispatch("click");
+        });
+
+    // Function to apply the active filter to nodes and links
+    function applyFilter() {
+        if (activeFilter) {
+            // Show nodes that include the active category
+            node.style("display", d => nodeDetailsMap.get(d.id).categories.includes(activeFilter) ? null : "none");
+            
+            // Show labels corresponding to visible nodes
+            label.style("display", d => nodeDetailsMap.get(d.id).categories.includes(activeFilter) ? null : "none");
+            
+            // Show links where either source or target has the active category
+            link.style("display", l => 
+                nodeDetailsMap.get(l.source.id).categories.includes(activeFilter) || 
+                nodeDetailsMap.get(l.target.id).categories.includes(activeFilter) ? null : "none"
+            );
+        } else {
+            // Reset display if no filter is active
+            node.style("display", null);
+            label.style("display", null);
+            link.style("display", null);
+        }
+    }
+
+    // Function to update the visual state of the legend
+    function updateLegendVisuals() {
+        legend.selectAll("circle")
+            .attr("stroke", d => d === activeFilter ? "#000" : "none")
+            .attr("stroke-width", d => d === activeFilter ? 2 : 0);
+        
+        legend.selectAll("text")
+            .attr("font-weight", d => d === activeFilter ? "bold" : "normal");
+    }
+
+    // Initial call to set the correct visuals
+    applyFilter();
+    updateLegendVisuals();
 });

@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: perplexity
-summary: Measure used in language modeling to evaluate how well a model predicts a
-  sample of text, quantifying the model's uncertainty in its predictions.
+summary: Measure used in language modeling to evaluate how well a model predicts a sample of text, quantifying the model's uncertainty in its predictions.
 title: Perplexity
 ---
 

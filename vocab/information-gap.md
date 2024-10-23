@@ -1,8 +1,7 @@
 ---
 category: GOV, DATA
 slug: information-gap
-summary: Discrepancy between the information needed to solve a problem or make a decision
-  and the information that is actually available.
+summary: Discrepancy between the information needed to solve a problem or make a decision and the information that is actually available.
 title: Information Gap
 ---
 

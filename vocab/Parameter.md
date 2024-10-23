@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: parameter
-summary: Variable that is internal to the model and whose value is estimated from
-  the training data.
+summary: Variable that is internal to the model and whose value is estimated from the training data.
 title: Parameter
 ---
 

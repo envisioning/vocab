@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: classification
-summary: Supervised learning task in ML where the goal is to assign input data to
-  one of several predefined categories.
+summary: Supervised learning task in ML where the goal is to assign input data to one of several predefined categories.
 title: Classification
 ---
 

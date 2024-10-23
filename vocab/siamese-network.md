@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: siamese-network
-summary: Type of neural network architecture that involves two or more identical subnetworks
-  sharing the same parameters and weights, typically used for tasks like similarity
-  learning and verification.
+summary: Type of neural network architecture that involves two or more identical subnetworks sharing the same parameters and weights, typically used for tasks like similarity learning and verification.
 title: Siamese Network
 ---
 

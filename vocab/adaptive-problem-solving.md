@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: adaptive-problem-solving
-summary: The capacity of AI systems to modify their approaches to problem-solving
-  based on new data, feedback, or changing environments, enhancing their efficiency
-  and effectiveness over time.
+summary: The capacity of AI systems to modify their approaches to problem-solving based on new data, feedback, or changing environments, enhancing their efficiency and effectiveness over time.
 title: Adaptive Problem Solving
 ---
 

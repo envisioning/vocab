@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: lnn
-summary: Type of artificial neural network designed to process data that changes over
-  time, such as time series data, by simulating a more dynamic and fluid-like behavior.
+summary: Type of artificial neural network designed to process data that changes over time, such as time series data, by simulating a more dynamic and fluid-like behavior.
 title: LNN (Liquid Neural Network)
 ---
 

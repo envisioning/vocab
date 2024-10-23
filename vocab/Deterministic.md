@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: deterministic
-summary: System or process is one that, given a particular initial state, will always
-  produce the same output or result, with no randomness or unpredictability involved.
+summary: System or process is one that, given a particular initial state, will always produce the same output or result, with no randomness or unpredictability involved.
 title: Deterministic
 ---
 

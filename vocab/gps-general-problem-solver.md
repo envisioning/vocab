@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: gps
-summary: Early AI program designed to simulate human problem-solving processes through
-  a heuristic-based approach.
+summary: Early AI program designed to simulate human problem-solving processes through a heuristic-based approach.
 title: GPS (General Problem Solver)
 ---
 

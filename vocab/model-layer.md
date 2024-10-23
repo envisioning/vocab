@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: model-layer
-summary: Discrete level in a neural network where specific computations or transformations
-  are applied to the input data, progressively abstracting and refining the information
-  as it moves through the network.
+summary: Discrete level in a neural network where specific computations or transformations are applied to the input data, progressively abstracting and refining the information as it moves through the network.
 title: Model Layer
 ---
 

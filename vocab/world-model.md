@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: world-model
-summary: Internal representation that an AI system uses to simulate the environment
-  it operates in, enabling prediction and decision-making based on those simulations.
+summary: Internal representation that an AI system uses to simulate the environment it operates in, enabling prediction and decision-making based on those simulations.
 title: World Model
 ---
 

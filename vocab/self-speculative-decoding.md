@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: self-speculative-decoding
-summary: Mechanism that predicts subsequent symbols in a sequence, enhancing prediction
-  accuracy.
+summary: Mechanism that predicts subsequent symbols in a sequence, enhancing prediction accuracy.
 title: Self-Speculative Decoding
 ---
 

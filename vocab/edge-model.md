@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: edge-model
-summary: A type of AI model designed to process data directly on the device it was
-  collected from, limiting the need for data transfer.
+summary: A type of AI model designed to process data directly on the device it was collected from, limiting the need for data transfer.
 title: Edge Model
 ---
 

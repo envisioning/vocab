@@ -1,9 +1,7 @@
 ---
 category: CORE, IMPL
 slug: prompt-chaining
-summary: Technique in AI and ML where multiple prompts or tasks are sequentially connected,
-  allowing the output of one step to become the input for the next, effectively enabling
-  more complex and nuanced operations.
+summary: Technique in AI and ML where multiple prompts or tasks are sequentially connected, allowing the output of one step to become the input for the next, effectively enabling more complex and nuanced operations.
 title: Prompt Chaining
 ---
 

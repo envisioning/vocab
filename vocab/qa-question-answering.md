@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: qa
-summary: Field of natural language processing focused on building systems that automatically
-  answer questions posed by humans in a natural language.
+summary: Field of natural language processing focused on building systems that automatically answer questions posed by humans in a natural language.
 title: QA (Question Answering)
 ---
 

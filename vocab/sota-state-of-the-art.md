@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: sota
-summary: The highest level of performance achieved in a specific field, particularly
-  in AI, where it denotes the most advanced model or algorithm.
+summary: The highest level of performance achieved in a specific field, particularly in AI, where it denotes the most advanced model or algorithm.
 title: SotA (State of the Art)
 ---
 

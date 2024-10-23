@@ -1,9 +1,7 @@
 ---
 category: CORE, IMPL
 slug: temperature
-summary: Hyperparameter that controls the randomness of predictions by adjusting the
-  probability distribution of the output classes to make the model's predictions more
-  or less deterministic.
+summary: Hyperparameter that controls the randomness of predictions by adjusting the probability distribution of the output classes to make the model's predictions more or less deterministic.
 title: Temperature
 ---
 

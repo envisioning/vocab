@@ -1,8 +1,7 @@
 ---
 category: ARCH, DATA
 slug: sam
-summary: AI model designed for high-precision image segmentation, capable of identifying
-  and delineating every object within an image.
+summary: AI model designed for high-precision image segmentation, capable of identifying and delineating every object within an image.
 title: SAM (Segment Anything Model)
 ---
 

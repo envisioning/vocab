@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: linear-algebra
-summary: Branch of mathematics focusing on vector spaces and linear mappings between
-  these spaces, which is essential for many machine learning algorithms.
+summary: Branch of mathematics focusing on vector spaces and linear mappings between these spaces, which is essential for many machine learning algorithms.
 title: Linear Algebra
 ---
 

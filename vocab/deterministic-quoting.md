@@ -1,8 +1,7 @@
 ---
 category: IMPL, CORE
 slug: deterministic-quoting
-summary: Method ensuring that AI-generated quotations from source materials are verbatim
-  and not subject to AI-induced hallucinations.
+summary: Method ensuring that AI-generated quotations from source materials are verbatim and not subject to AI-induced hallucinations.
 title: Deterministic Quoting
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: ai-winter
-summary: Periods of reduced funding and interest in AI research and development, often
-  due to unmet expectations and lack of significant progress.
+summary: Periods of reduced funding and interest in AI research and development, often due to unmet expectations and lack of significant progress.
 title: AI Winter
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: edl
-summary: AI approach where learning algorithms improve their performance through systematic
-  experimentation and feedback from the environment.
+summary: AI approach where learning algorithms improve their performance through systematic experimentation and feedback from the environment.
 title: EDL (Experimentation Driven Learning)
 ---
 

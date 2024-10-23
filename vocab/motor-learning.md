@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: motor-learning
-summary: Process by which robots or AI systems acquire, refine, and optimize motor
-  skills through experience and practice.
+summary: Process by which robots or AI systems acquire, refine, and optimize motor skills through experience and practice.
 title: Motor Learning
 ---
 

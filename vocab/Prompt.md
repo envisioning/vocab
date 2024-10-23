@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: prompt
-summary: User-generated input or question designed to elicit a specific response or
-  output from the model.
+summary: User-generated input or question designed to elicit a specific response or output from the model.
 title: Prompt
 ---
 

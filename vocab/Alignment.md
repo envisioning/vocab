@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: alignment
-summary: Process of ensuring that an AI system's goals and behaviors are consistent
-  with human values and ethics.
+summary: Process of ensuring that an AI system's goals and behaviors are consistent with human values and ethics.
 title: Alignment
 ---
 

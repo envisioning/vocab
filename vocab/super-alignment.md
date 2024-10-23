@@ -1,8 +1,7 @@
 ---
 category: CORE, GOV
 slug: super-alignment
-summary: Theoretical concept in AI, primarily focusing on ensuring that advanced AI
-  systems or AGI align closely with human values and ethics to prevent negative outcomes.
+summary: Theoretical concept in AI, primarily focusing on ensuring that advanced AI systems or AGI align closely with human values and ethics to prevent negative outcomes.
 title: Super Alignment
 ---
 

@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: decision-tree
-summary: Flowchart-like tree structure where each internal node represents a "test"
-  on an attribute, each branch represents the outcome of the test, and each leaf node
-  represents a class label (decision taken after computing all attributes).
+summary: Flowchart-like tree structure where each internal node represents a "test" on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
 title: Decision Tree
 ---
 

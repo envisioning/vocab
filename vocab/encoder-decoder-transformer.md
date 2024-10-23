@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: encoder-decoder-transformer
-summary: A structure used in NLP for understanding and generating language by encoding
-  input and decoding the output.
+summary: A structure used in NLP for understanding and generating language by encoding input and decoding the output.
 title: Encoder-Decoder Transformer
 ---
 

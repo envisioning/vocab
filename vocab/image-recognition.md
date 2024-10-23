@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: image-recognition
-summary: Ability of AI to identify objects, places, people, writing, and actions in
-  images.
+summary: Ability of AI to identify objects, places, people, writing, and actions in images.
 title: Image Recognition
 ---
 

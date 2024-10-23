@@ -1,8 +1,7 @@
 ---
 category: MATH, DATA
 slug: fourier-features
-summary: Technique used in ML to transform input data into a higher-dimensional space
-  using sine and cosine functions, which can help models learn more complex patterns.
+summary: Technique used in ML to transform input data into a higher-dimensional space using sine and cosine functions, which can help models learn more complex patterns.
 title: Fourier Features
 ---
 

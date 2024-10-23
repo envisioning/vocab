@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: rlhf
-summary: Technique that combines reinforcement learning (RL) with human feedback to
-  guide the learning process towards desired outcomes.
+summary: Technique that combines reinforcement learning (RL) with human feedback to guide the learning process towards desired outcomes.
 title: RLHF (Reinforcement Learning from Human Feedback)
 ---
 

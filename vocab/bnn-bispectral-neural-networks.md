@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: bnn
-summary: Utilize higher-order spectral features for improved signal processing and
-  pattern recognition tasks, enhancing traditional neural network capabilities.
+summary: Utilize higher-order spectral features for improved signal processing and pattern recognition tasks, enhancing traditional neural network capabilities.
 title: BNN (Bispectral Neural Networks)
 ---
 

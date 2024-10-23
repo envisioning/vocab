@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: dss
-summary: A computerized program used to support determinations, judgments, and courses
-  of action in an organization or a business.
+summary: A computerized program used to support determinations, judgments, and courses of action in an organization or a business.
 title: DSS (Decision Support System)
 ---
 

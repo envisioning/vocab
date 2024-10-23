@@ -1,9 +1,7 @@
 ---
 category: CORE, IMPL
 slug: probabilistic-programming
-summary: Programming paradigm designed to handle uncertainty and probabilistic models,
-  allowing for the creation of programs that can make inferences about data by incorporating
-  statistical methods directly into the code.
+summary: Programming paradigm designed to handle uncertainty and probabilistic models, allowing for the creation of programs that can make inferences about data by incorporating statistical methods directly into the code.
 title: Probabilistic Programming
 ---
 

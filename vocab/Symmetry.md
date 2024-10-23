@@ -1,8 +1,7 @@
 ---
 category: MATH, DATA
 slug: symmetry
-summary: Invariances in data or models where certain transformations do not affect
-  the outcomes or predictions.
+summary: Invariances in data or models where certain transformations do not affect the outcomes or predictions.
 title: Symmetry
 ---
 

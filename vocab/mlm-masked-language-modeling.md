@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: mlm
-summary: Training technique where random words in a sentence are replaced with a special
-  token, and the model learns to predict these masked words based on their context.
+summary: Training technique where random words in a sentence are replaced with a special token, and the model learns to predict these masked words based on their context.
 title: MLM (Masked-Language Modeling)
 ---
 

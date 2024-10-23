@@ -1,8 +1,7 @@
 ---
 category: GOV, ARCH
 slug: uncensored-ai
-summary: AI systems that operate without restrictions on the content they generate
-  or the decisions they make.
+summary: AI systems that operate without restrictions on the content they generate or the decisions they make.
 title: Uncensored AI
 ---
 

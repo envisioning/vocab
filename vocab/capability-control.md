@@ -1,9 +1,7 @@
 ---
 category: GOV, ARCH
 slug: capability-control
-summary: Strategies and mechanisms implemented to ensure that AI systems act within
-  desired limits, preventing them from performing actions that are undesired or harmful
-  to humans.
+summary: Strategies and mechanisms implemented to ensure that AI systems act within desired limits, preventing them from performing actions that are undesired or harmful to humans.
 title: Capability Control
 ---
 

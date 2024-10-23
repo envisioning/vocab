@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: fourier-analysis
-summary: Mathematical method for decomposing functions or signals into their constituent
-  frequencies.
+summary: Mathematical method for decomposing functions or signals into their constituent frequencies.
 title: Fourier Analysis
 ---
 

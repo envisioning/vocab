@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: saturating-non-linearities
-summary: Activation functions in neural networks that reach a point where their output
-  changes very little, or not at all, in response to large input values.
+summary: Activation functions in neural networks that reach a point where their output changes very little, or not at all, in response to large input values.
 title: Saturating Non-Linearities
 ---
 

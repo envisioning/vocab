@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: function-approximation
-summary: Method used in AI to estimate complex functions using simpler, computationally
-  efficient models.
+summary: Method used in AI to estimate complex functions using simpler, computationally efficient models.
 title: Function Approximation
 ---
 

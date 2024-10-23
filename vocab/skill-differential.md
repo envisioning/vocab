@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: skill-differential
-summary: Variation in performance levels between individuals or groups due to differences
-  in skills, experience, or knowledge, particularly within the same task or profession.
+summary: Variation in performance levels between individuals or groups due to differences in skills, experience, or knowledge, particularly within the same task or profession.
 title: Skill Differential
 ---
 

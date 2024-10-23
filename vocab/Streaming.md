@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: streaming
-summary: Continuous generation and delivery of text in real-time as the model processes
-  input sequentially.
+summary: Continuous generation and delivery of text in real-time as the model processes input sequentially.
 title: Streaming
 ---
 

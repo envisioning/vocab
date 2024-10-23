@@ -1,8 +1,7 @@
 ---
 category: BIO, CORE
 slug: a-life
-summary: Studies the simulation of life processes within computers or synthetic systems
-  to gain insights into biological phenomena.
+summary: Studies the simulation of life processes within computers or synthetic systems to gain insights into biological phenomena.
 title: A-Life (Artificial Life)
 ---
 

@@ -1,9 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: rag
-summary: Combines the retrieval of informative documents from a large corpus with
-  the generative capabilities of neural models to enhance language model responses
-  with real-world knowledge.
+summary: Combines the retrieval of informative documents from a large corpus with the generative capabilities of neural models to enhance language model responses with real-world knowledge.
 title: RAG (Retrieval-Augmented Generation)
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: object-detection
-summary: Computer vision technique that identifies and locates objects within an image
-  or video frame.
+summary: Computer vision technique that identifies and locates objects within an image or video frame.
 title: Object Detection
 ---
 

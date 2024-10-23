@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: meta-classifier
-summary: Algorithm that combines multiple ML models to improve prediction accuracy
-  over individual models.
+summary: Algorithm that combines multiple ML models to improve prediction accuracy over individual models.
 title: Meta-Classifier
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: GOV, IMPL
 slug: de-biasing
-summary: Methods and practices used to reduce or eliminate biases in AI systems, aiming
-  to make the systems more fair, equitable, and representative of diverse populations.
+summary: Methods and practices used to reduce or eliminate biases in AI systems, aiming to make the systems more fair, equitable, and representative of diverse populations.
 title: De-Biasing
 ---
 

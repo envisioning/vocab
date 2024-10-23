@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: sequential-models
-summary: Type of data models in AI where the arrangement of data points or events
-  adhere to a specific order for predictive analysis and pattern recognition.
+summary: Type of data models in AI where the arrangement of data points or events adhere to a specific order for predictive analysis and pattern recognition.
 title: Sequential Models
 ---
 

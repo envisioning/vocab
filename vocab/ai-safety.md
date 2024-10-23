@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: ai-safety
-summary: Field of research aimed at ensuring AI technologies are beneficial and do
-  not pose harm to humanity.
+summary: Field of research aimed at ensuring AI technologies are beneficial and do not pose harm to humanity.
 title: AI Safety
 ---
 

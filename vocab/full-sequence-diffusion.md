@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: full-sequence-diffusion
-summary: Approach in diffusion models where the entire sequence of data undergoes
-  the diffusion process simultaneously rather than segment by segment.
+summary: Approach in diffusion models where the entire sequence of data undergoes the diffusion process simultaneously rather than segment by segment.
 title: Full-Sequence Diffusion
 ---
 

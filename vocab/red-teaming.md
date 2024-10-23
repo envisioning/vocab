@@ -1,9 +1,7 @@
 ---
 category: GOV, IMPL
 slug: red-teaming
-summary: Practice where a team independently challenges a system, project, or policy
-  to identify vulnerabilities, improve security, and test the effectiveness of defenses,
-  often applied in cybersecurity and, increasingly, in AI safety and ethics.
+summary: Practice where a team independently challenges a system, project, or policy to identify vulnerabilities, improve security, and test the effectiveness of defenses, often applied in cybersecurity and, increasingly, in AI safety and ethics.
 title: Red Teaming
 ---
 

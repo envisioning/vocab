@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: hyperspherical-representation-learning
-summary: Technique of learning representations within a multidimensional sphere to
-  leverage inherent geometric properties.
+summary: Technique of learning representations within a multidimensional sphere to leverage inherent geometric properties.
 title: Hyperspherical Representation Learning
 ---
 

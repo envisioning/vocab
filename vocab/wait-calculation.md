@@ -1,8 +1,7 @@
 ---
 category: GOV, IMPL
 slug: wait-calculation
-summary: Assessing whether to proceed with projects immediately or wait for future
-  advancements in AI that could offer significant benefits.
+summary: Assessing whether to proceed with projects immediately or wait for future advancements in AI that could offer significant benefits.
 title: Wait Calculation
 ---
 

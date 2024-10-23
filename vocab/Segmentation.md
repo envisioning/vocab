@@ -1,8 +1,7 @@
 ---
 category: DATA, CORE
 slug: segmentation
-summary: Process in AI that subdivides an image or dataset into multiple parts to
-  simplify and/or change the perspective of comprehension.
+summary: Process in AI that subdivides an image or dataset into multiple parts to simplify and/or change the perspective of comprehension.
 title: Segmentation
 ---
 

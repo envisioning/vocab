@@ -1,8 +1,7 @@
 ---
 category: GOV, ARCH
 slug: safety-net
-summary: Measures, policies, and technologies designed to prevent, detect, and mitigate
-  adverse outcomes or ethical issues stemming from AI systems' operation.
+summary: Measures, policies, and technologies designed to prevent, detect, and mitigate adverse outcomes or ethical issues stemming from AI systems' operation.
 title: Safety Net
 ---
 

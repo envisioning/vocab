@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: mlp
-summary: Type of artificial neural network comprised of multiple layers of neurons,
-  with each layer fully connected to the next, commonly used for tasks involving classification
-  and regression.
+summary: Type of artificial neural network comprised of multiple layers of neurons, with each layer fully connected to the next, commonly used for tasks involving classification and regression.
 title: MLP (Multilayer Perceptron)
 ---
 

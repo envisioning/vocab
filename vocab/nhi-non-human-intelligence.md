@@ -1,9 +1,7 @@
 ---
 category: CORE, BIO
 slug: nhi
-summary: Intelligence systems that operate independently of human intelligence, encompassing
-  a broad range of entities and origins, emphasizing capabilities that may surpass
-  human cognitive processes.
+summary: Intelligence systems that operate independently of human intelligence, encompassing a broad range of entities and origins, emphasizing capabilities that may surpass human cognitive processes.
 title: NHI (Non-Human Intelligence)
 ---
 

@@ -1,10 +1,7 @@
 ---
 category: GOV, CORE
 slug: tescreal
-summary: 'Seven ideologies: Transhumanism, Extropianism, Singularitarianism, Cosmism,
-  Rationalism, Effective Altruism, and Longtermism. They all focus on using technology
-  to improve people’s lives and they are deeply influential among people working on
-  AGI.'
+summary: 'Seven ideologies: Transhumanism, Extropianism, Singularitarianism, Cosmism, Rationalism, Effective Altruism, and Longtermism. They all focus on using technology to improve people’s lives and they are deeply influential among people working on AGI.'
 title: TESCREAL
 ---
 

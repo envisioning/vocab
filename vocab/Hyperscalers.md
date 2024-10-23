@@ -1,8 +1,7 @@
 ---
 category: IMPL, ARCH
 slug: hyperscalers
-summary: Large tech organizations that design and manage infrastructure to support
-  the massive scale of big data, AI and cloud computing.
+summary: Large tech organizations that design and manage infrastructure to support the massive scale of big data, AI and cloud computing.
 title: Hyperscalers
 ---
 

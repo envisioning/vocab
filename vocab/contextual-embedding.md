@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: contextual-embedding
-summary: Vector representations of words or tokens in a sentence that capture their
-  meanings based on the surrounding context, enabling dynamic and context-sensitive
-  understanding of language.
+summary: Vector representations of words or tokens in a sentence that capture their meanings based on the surrounding context, enabling dynamic and context-sensitive understanding of language.
 title: Contextual Embedding
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: token
-summary: Basic unit of data processed in NLP tasks, representing words, characters,
-  or subwords.
+summary: Basic unit of data processed in NLP tasks, representing words, characters, or subwords.
 title: Token
 ---
 

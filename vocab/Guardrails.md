@@ -1,8 +1,7 @@
 ---
 category: GOV, ARCH
 slug: guardrails
-summary: Principles, policies, and technical measures implemented to ensure AI systems
-  operate safely, ethically, and within regulatory and societal norms.
+summary: Principles, policies, and technical measures implemented to ensure AI systems operate safely, ethically, and within regulatory and societal norms.
 title: Guardrails
 ---
 

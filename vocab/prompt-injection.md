@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: prompt-injection
-summary: Technique used to manipulate or influence the behavior of AI models by inserting
-  specific commands or cues into the input prompt.
+summary: Technique used to manipulate or influence the behavior of AI models by inserting specific commands or cues into the input prompt.
 title: Prompt Injection
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: IMPL, ARCH
 slug: compute-efficiency
-summary: Effective use of computational resources to maximize performance and minimize
-  waste.
+summary: Effective use of computational resources to maximize performance and minimize waste.
 title: Compute Efficiency
 ---
 

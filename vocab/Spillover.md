@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: spillover
-summary: Unintended consequences or effects that AI systems can have outside of their
-  designed operational contexts.
+summary: Unintended consequences or effects that AI systems can have outside of their designed operational contexts.
 title: Spillover
 ---
 

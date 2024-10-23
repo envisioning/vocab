@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: nlp
-summary: Techniques and methodologies for understanding and generating human language
-  by computers.
+summary: Techniques and methodologies for understanding and generating human language by computers.
 title: NLP (Neuro-Linguistic Programming)
 ---
 

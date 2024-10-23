@@ -1,8 +1,7 @@
 ---
 category: IMPL, DATA
 slug: machine-unlearning
-summary: Process by which an ML model is systematically modified to forget specific
-  data, ensuring that the data no longer influences the model's behavior or decisions.
+summary: Process by which an ML model is systematically modified to forget specific data, ensuring that the data no longer influences the model's behavior or decisions.
 title: Machine Unlearning
 ---
 

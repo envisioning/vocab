@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: agent-to-agent-interaction
-summary: Communication and cooperation between autonomous agents within a multi-agent
-  system to achieve individual or collective goals.
+summary: Communication and cooperation between autonomous agents within a multi-agent system to achieve individual or collective goals.
 title: Agent-to-Agent Interaction
 ---
 

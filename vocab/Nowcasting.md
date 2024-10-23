@@ -1,8 +1,7 @@
 ---
 category: DATA, ARCH
 slug: nowcasting
-summary: Immediate forecast of economic or environmental conditions based on real-time
-  data evolution using AI models.
+summary: Immediate forecast of economic or environmental conditions based on real-time data evolution using AI models.
 title: Nowcasting
 ---
 

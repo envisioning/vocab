@@ -1,8 +1,7 @@
 ---
 category: ARCH, BIO
 slug: cognitive-architecture
-summary: A theory or model that outlines the underlying structure and mechanisms of
-  the human mind or AI systems, guiding the integration of various cognitive processes.
+summary: A theory or model that outlines the underlying structure and mechanisms of the human mind or AI systems, guiding the integration of various cognitive processes.
 title: Cognitive Architecture
 ---
 

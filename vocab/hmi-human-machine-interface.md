@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: hmi
-summary: Hardware or software through which humans interact with machines, facilitating
-  clear and effective communication between humans and computer systems.
+summary: Hardware or software through which humans interact with machines, facilitating clear and effective communication between humans and computer systems.
 title: HMI (Human-Machine Interface)
 ---
 

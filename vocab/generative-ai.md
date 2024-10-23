@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: generative-ai
-summary: Subset of AI technologies that can generate new content, ranging from text
-  and images to music and code, based on learned patterns and data.
+summary: Subset of AI technologies that can generate new content, ranging from text and images to music and code, based on learned patterns and data.
 title: Generative AI
 ---
 

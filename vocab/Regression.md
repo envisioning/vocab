@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: regression
-summary: Statistical method used in ML to predict a continuous outcome variable based
-  on one or more predictor variables.
+summary: Statistical method used in ML to predict a continuous outcome variable based on one or more predictor variables.
 title: Regression
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: GOV, BIO
 slug: three-laws-of-robotics
-summary: Set of ethical guidelines designed to govern the behavior of robots and ensure
-  their safe interaction with humans, proposed by science fiction writer Isaac Asimov.
+summary: Set of ethical guidelines designed to govern the behavior of robots and ensure their safe interaction with humans, proposed by science fiction writer Isaac Asimov.
 title: Three Laws of Robotics
 ---
 

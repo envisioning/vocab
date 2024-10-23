@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: loss-optimization
-summary: Process of adjusting a model's parameters to minimize the difference between
-  the predicted outputs and the actual outputs, measured by a loss function.
+summary: Process of adjusting a model's parameters to minimize the difference between the predicted outputs and the actual outputs, measured by a loss function.
 title: Loss Optimization
 ---
 

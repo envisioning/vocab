@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: fhe
-summary: Type of encryption that allows computation on ciphertexts, producing an encrypted
-  result that, when decrypted, matches the result of operations performed on the plaintext.
+summary: Type of encryption that allows computation on ciphertexts, producing an encrypted result that, when decrypted, matches the result of operations performed on the plaintext.
 title: FHE (Fully Homomorphic Encryption)
 ---
 

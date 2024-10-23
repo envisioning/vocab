@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: inference
-summary: Process by which a trained neural network applies learned patterns to new,
-  unseen data to make predictions or decisions.
+summary: Process by which a trained neural network applies learned patterns to new, unseen data to make predictions or decisions.
 title: Inference
 ---
 

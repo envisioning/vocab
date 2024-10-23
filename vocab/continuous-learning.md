@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: continuous-learning
-summary: Systems and models that learn incrementally from a stream of data, updating
-  their knowledge without forgetting previous information.
+summary: Systems and models that learn incrementally from a stream of data, updating their knowledge without forgetting previous information.
 title: Continuous Learning
 ---
 

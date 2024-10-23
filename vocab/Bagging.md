@@ -1,9 +1,7 @@
 ---
 category: CORE, IMPL
 slug: bagging
-summary: ML ensemble technique that improves the stability and accuracy of machine
-  learning algorithms by combining multiple models trained on different subsets of
-  the same data set.
+summary: ML ensemble technique that improves the stability and accuracy of machine learning algorithms by combining multiple models trained on different subsets of the same data set.
 title: Bagging
 ---
 

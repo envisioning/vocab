@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: occam-s-razor
-summary: Principle that, among competing models with similar predictive power, the
-  simplest one should be chosen.
+summary: Principle that, among competing models with similar predictive power, the simplest one should be chosen.
 title: Occam's Razor
 ---
 

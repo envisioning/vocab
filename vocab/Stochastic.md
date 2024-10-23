@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: stochastic
-summary: Systems or processes that are inherently random, involving variables that
-  are subject to chance.
+summary: Systems or processes that are inherently random, involving variables that are subject to chance.
 title: Stochastic
 ---
 

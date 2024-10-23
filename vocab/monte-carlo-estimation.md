@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: monte-carlo-estimation
-summary: A technique used within AI to approximate the probability of an event by
-  running several simulations and observations.
+summary: A technique used within AI to approximate the probability of an event by running several simulations and observations.
 title: Monte Carlo Estimation
 ---
 

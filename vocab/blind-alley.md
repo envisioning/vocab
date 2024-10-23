@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: blind-alley
-summary: Situation in problem-solving where a path or strategy leads nowhere, offering
-  no further possibilities for progress or solution.
+summary: Situation in problem-solving where a path or strategy leads nowhere, offering no further possibilities for progress or solution.
 title: Blind Alley
 ---
 

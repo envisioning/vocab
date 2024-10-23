@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: relu
-summary: Activation function commonly used in neural networks which outputs the input
-  directly if it is positive, otherwise, it outputs zero.
+summary: Activation function commonly used in neural networks which outputs the input directly if it is positive, otherwise, it outputs zero.
 title: ReLU (Rectified Linear Unit)
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: DATA, MATH
 slug: unembedding
-summary: Process of reversing the transformation of data from its original high-dimensional
-  space to a lower-dimensional space.
+summary: Process of reversing the transformation of data from its original high-dimensional space to a lower-dimensional space.
 title: Unembedding
 ---
 

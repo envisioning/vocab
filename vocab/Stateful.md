@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: stateful
-summary: System or application that saves client data from previous sessions to influence
-  and personalize future interactions.
+summary: System or application that saves client data from previous sessions to influence and personalize future interactions.
 title: Stateful
 ---
 

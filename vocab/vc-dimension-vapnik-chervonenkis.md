@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: vc-dimension
-summary: Measure of the capacity of a statistical classification algorithm, quantifying
-  how complex the model is in terms of its ability to fit varied sets of data.
+summary: Measure of the capacity of a statistical classification algorithm, quantifying how complex the model is in terms of its ability to fit varied sets of data.
 title: VC Dimension (Vapnik-Chervonenkis)
 ---
 

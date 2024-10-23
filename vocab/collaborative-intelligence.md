@@ -1,8 +1,7 @@
 ---
 category: CORE, GOV
 slug: collaborative-intelligence
-summary: Synergy between human intelligence and AI to achieve outcomes neither could
-  accomplish alone.
+summary: Synergy between human intelligence and AI to achieve outcomes neither could accomplish alone.
 title: Collaborative Intelligence
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: backpropagation
-summary: Algorithm used for training artificial neural networks, crucial for optimizing
-  the weights to minimize error between predicted and actual outcomes.
+summary: Algorithm used for training artificial neural networks, crucial for optimizing the weights to minimize error between predicted and actual outcomes.
 title: Backpropagation
 ---
 

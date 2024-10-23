@@ -1,8 +1,7 @@
 ---
 category: BIO, GOV
 slug: exponential-slope-blindness
-summary: Human cognitive bias that makes it difficult to perceive and understand the
-  implications of exponential growth accurately.
+summary: Human cognitive bias that makes it difficult to perceive and understand the implications of exponential growth accurately.
 title: Exponential Slope Blindness
 ---
 

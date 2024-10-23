@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: nas
-summary: Automated process that designs optimal neural network architectures for specific
-  tasks.
+summary: Automated process that designs optimal neural network architectures for specific tasks.
 title: NAS (Neural Architecture Search)
 ---
 

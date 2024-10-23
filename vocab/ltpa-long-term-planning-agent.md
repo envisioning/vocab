@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: ltpa
-summary: AI system designed to make decisions over extended periods, considering future
-  consequences and outcomes.
+summary: AI system designed to make decisions over extended periods, considering future consequences and outcomes.
 title: LTPA (Long-Term Planning Agent)
 ---
 

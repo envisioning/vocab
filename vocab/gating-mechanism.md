@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: gating-mechanism
-summary: Control function that regulates the flow of information through the model,
-  deciding what information to keep, discard, or update.
+summary: Control function that regulates the flow of information through the model, deciding what information to keep, discard, or update.
 title: Gating Mechanism
 ---
 

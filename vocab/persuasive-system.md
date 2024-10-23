@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: persuasive-system
-summary: Type of software designed to change a person's attitude or behavior through
-  persuasion and social influence.
+summary: Type of software designed to change a person's attitude or behavior through persuasion and social influence.
 title: Persuasive System
 ---
 

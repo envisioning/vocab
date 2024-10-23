@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: graph-machine-learning
-summary: AI field that applies ML techniques to graph-structured data, enabling the
-  analysis and prediction of relationships and behaviors among interconnected nodes.
+summary: AI field that applies ML techniques to graph-structured data, enabling the analysis and prediction of relationships and behaviors among interconnected nodes.
 title: Graph Machine Learning
 ---
 

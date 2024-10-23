@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: incidental-polysemanticity
-summary: Phenomenon where a neural network, particularly in large language models,
-  learns to associate multiple meanings or interpretations with a single internal
-  representation or neuron, often without explicit instruction.
+summary: Phenomenon where a neural network, particularly in large language models, learns to associate multiple meanings or interpretations with a single internal representation or neuron, often without explicit instruction.
 title: Incidental Polysemanticity
 ---
 

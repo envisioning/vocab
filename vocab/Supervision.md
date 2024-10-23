@@ -1,8 +1,7 @@
 ---
 category: DATA, CORE
 slug: supervision
-summary: Use of labeled data to train ML models, guiding the learning process by providing
-  input-output pairs.
+summary: Use of labeled data to train ML models, guiding the learning process by providing input-output pairs.
 title: Supervision
 ---
 

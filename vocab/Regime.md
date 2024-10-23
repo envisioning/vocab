@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: regime
-summary: Distinct operational or behavioral mode in which an AI system functions,
-  characterized by specific patterns or properties of data, parameters, or algorithms.
+summary: Distinct operational or behavioral mode in which an AI system functions, characterized by specific patterns or properties of data, parameters, or algorithms.
 title: Regime
 ---
 

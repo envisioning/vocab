@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: sovereign-ai
-summary: Hypothetical form of AI that operates independently with its own autonomy,
-  potentially possessing the ability to make decisions and take actions without human
-  intervention.
+summary: Hypothetical form of AI that operates independently with its own autonomy, potentially possessing the ability to make decisions and take actions without human intervention.
 title: Sovereign AI
 ---
 

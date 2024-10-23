@@ -1,8 +1,7 @@
 ---
 category: ARCH, MATH
 slug: pfgm
-summary: Generative model that utilizes Poisson processes in its architecture to model
-  and generate complex data distributions.
+summary: Generative model that utilizes Poisson processes in its architecture to model and generate complex data distributions.
 title: PFGM (Poisson Flow Generative Model)
 ---
 

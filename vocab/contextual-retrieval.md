@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: contextual-retrieval
-summary: AI-driven search technique that retrieves information based on the broader
-  context of a query, rather than relying solely on exact keywords or phrases.
+summary: AI-driven search technique that retrieves information based on the broader context of a query, rather than relying solely on exact keywords or phrases.
 title: Contextual Retrieval
 ---
 

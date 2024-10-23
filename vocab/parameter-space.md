@@ -1,9 +1,7 @@
 ---
 category: MATH, CORE
 slug: parameter-space
-summary: Multidimensional space defined by all possible values of the parameters of
-  a model, often used in ML and optimization to explore different configurations that
-  influence model performance.
+summary: Multidimensional space defined by all possible values of the parameters of a model, often used in ML and optimization to explore different configurations that influence model performance.
 title: Parameter Space
 ---
 

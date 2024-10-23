@@ -1,9 +1,7 @@
 ---
 category: CORE, MATH
 slug: universal-learning-algorithms
-summary: Theoretical frameworks aimed at creating systems capable of learning any
-  task to human-level competency, leveraging principles that could allow for generalization
-  across diverse domains.
+summary: Theoretical frameworks aimed at creating systems capable of learning any task to human-level competency, leveraging principles that could allow for generalization across diverse domains.
 title: Universal Learning Algorithms
 ---
 

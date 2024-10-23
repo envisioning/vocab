@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: parallelism
-summary: Simultaneous execution of multiple processes or tasks to improve performance
-  and efficiency.
+summary: Simultaneous execution of multiple processes or tasks to improve performance and efficiency.
 title: Parallelism
 ---
 

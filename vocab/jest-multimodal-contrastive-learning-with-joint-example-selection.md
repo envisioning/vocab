@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: jest
-summary: AI technique that enhances the learning of shared representations across
-  different modalities by jointly selecting and leveraging relevant examples.
+summary: AI technique that enhances the learning of shared representations across different modalities by jointly selecting and leveraging relevant examples.
 title: JEST (Multimodal Contrastive Learning with Joint Example Selection)
 ---
 

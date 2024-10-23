@@ -1,8 +1,7 @@
 ---
 category: GOV, ARCH
 slug: ai-auditing
-summary: The process of examining, monitoring and improving AI systems to ensure ethical,
-  fair, transparent, and accountable operation.
+summary: The process of examining, monitoring and improving AI systems to ensure ethical, fair, transparent, and accountable operation.
 title: AI Auditing
 ---
 

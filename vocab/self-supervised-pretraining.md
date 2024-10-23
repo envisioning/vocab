@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: self-supervised-pretraining
-summary: ML approach where a model learns to predict parts of the input data from
-  other parts without requiring labeled data, which is then fine-tuned on downstream
-  tasks.
+summary: ML approach where a model learns to predict parts of the input data from other parts without requiring labeled data, which is then fine-tuned on downstream tasks.
 title: Self-Supervised Pretraining
 ---
 

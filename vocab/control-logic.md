@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: control-logic
-summary: Decision-making processes within a system that manage and dictate how various
-  components respond to inputs, aiming to achieve desired outcomes or maintain specific
-  conditions.
+summary: Decision-making processes within a system that manage and dictate how various components respond to inputs, aiming to achieve desired outcomes or maintain specific conditions.
 title: Control Logic
 ---
 

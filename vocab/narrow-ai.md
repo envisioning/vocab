@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: narrow-ai
-summary: Also known as Weak AI, refers to AI systems designed to perform a specific
-  task or a narrow range of tasks with a high level of proficiency.
+summary: Also known as Weak AI, refers to AI systems designed to perform a specific task or a narrow range of tasks with a high level of proficiency.
 title: Narrow AI
 ---
 

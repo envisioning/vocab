@@ -1,8 +1,7 @@
 ---
 category: DATA, ARCH
 slug: vector-database
-summary: Specialized database optimized for storing and querying vectors, which are
-  arrays of numbers representing data in high-dimensional space.
+summary: Specialized database optimized for storing and querying vectors, which are arrays of numbers representing data in high-dimensional space.
 title: Vector Database
 ---
 

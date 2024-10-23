@@ -1,8 +1,7 @@
 ---
 category: ARCH, BIO
 slug: exocortex
-summary: External artificial extension of the human brain, designed to augment cognitive
-  functions through advanced computing technologies.
+summary: External artificial extension of the human brain, designed to augment cognitive functions through advanced computing technologies.
 title: Exocortex
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: adapter
-summary: Lightweight, modular component added to a pre-trained model to fine-tune
-  it for specific tasks without altering the original model's parameters significantly.
+summary: Lightweight, modular component added to a pre-trained model to fine-tune it for specific tasks without altering the original model's parameters significantly.
 title: Adapter
 ---
 

@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: replaced-token-detection
-summary: Method used in self-supervised learning where the task involves identifying
-  or predicting tokens that have been intentionally altered or replaced in a given
-  sequence.
+summary: Method used in self-supervised learning where the task involves identifying or predicting tokens that have been intentionally altered or replaced in a given sequence.
 title: Replaced Token Detection
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: tf-idf
-summary: Numerical statistic used to evaluate the importance of a word within a document
-  relative to a collection of documents.
+summary: Numerical statistic used to evaluate the importance of a word within a document relative to a collection of documents.
 title: TF-IDF (Term Frequency-Inverse Document Frequency)
 ---
 

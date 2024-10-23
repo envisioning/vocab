@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: lost-in-the-middle
-summary: Issue in LLMs where they tend to struggle with retaining and processing information
-  from the middle parts of long input sequences.
+summary: Issue in LLMs where they tend to struggle with retaining and processing information from the middle parts of long input sequences.
 title: Lost-in-the-Middle
 ---
 

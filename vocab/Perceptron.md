@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: perceptron
-summary: Model in neural networks designed to perform binary classification tasks
-  by mimicking the decision-making process of a single neuron.
+summary: Model in neural networks designed to perform binary classification tasks by mimicking the decision-making process of a single neuron.
 title: Perceptron
 ---
 

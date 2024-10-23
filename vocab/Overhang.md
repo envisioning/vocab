@@ -1,9 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: overhang
-summary: Disparity between the minimum computation needed for a certain performance
-  level and the actual computation used in training a model, often leading to superior
-  model performance.
+summary: Disparity between the minimum computation needed for a certain performance level and the actual computation used in training a model, often leading to superior model performance.
 title: Overhang
 ---
 

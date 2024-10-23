@@ -1,8 +1,7 @@
 ---
 category: ARCH, DATA
 slug: parameter-size
-summary: Count of individual weights in a ML model that are learned from data during
-  training.
+summary: Count of individual weights in a ML model that are learned from data during training.
 title: Parameter Size
 ---
 

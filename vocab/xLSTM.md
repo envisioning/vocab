@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: xlstm
-summary: Extended form of Long Short-Term Memory (LSTM), integrating enhancements
-  for scalability and efficiency in DL models.
+summary: Extended form of Long Short-Term Memory (LSTM), integrating enhancements for scalability and efficiency in DL models.
 title: xLSTM
 ---
 

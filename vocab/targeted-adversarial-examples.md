@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: targeted-adversarial-examples
-summary: Inputs intentionally designed to cause a machine learning model to misclassify
-  them into a specific, incorrect category.
+summary: Inputs intentionally designed to cause a machine learning model to misclassify them into a specific, incorrect category.
 title: Targeted Adversarial Examples
 ---
 

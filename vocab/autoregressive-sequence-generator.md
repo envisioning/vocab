@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: autoregressive-sequence-generator
-summary: A predictive model harnessed in AI tasks, particularly involving times series,
-  which leverages its own prior outputs as inputs in subsequent predictions.
+summary: A predictive model harnessed in AI tasks, particularly involving times series, which leverages its own prior outputs as inputs in subsequent predictions.
 title: Autoregressive Sequence Generator
 ---
 

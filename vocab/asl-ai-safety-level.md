@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: asl
-summary: Tiered system for categorizing the risk levels associated with AI systems
-  to guide their development and deployment responsibly.
+summary: Tiered system for categorizing the risk levels associated with AI systems to guide their development and deployment responsibly.
 title: ASL (AI Safety Level)
 ---
 

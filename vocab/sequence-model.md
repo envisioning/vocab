@@ -1,8 +1,7 @@
 ---
 category: ARCH, DATA
 slug: sequence-model
-summary: Model designed to process and predict sequences of data, such as time series,
-  text, or biological sequences.
+summary: Model designed to process and predict sequences of data, such as time series, text, or biological sequences.
 title: Sequence Model
 ---
 

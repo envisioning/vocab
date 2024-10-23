@@ -1,8 +1,7 @@
 ---
 category: MATH, DATA
 slug: inverse-problems
-summary: Determining the underlying causes or parameters from observed data, essentially
-  reversing the usual process of predicting effects from known causes.
+summary: Determining the underlying causes or parameters from observed data, essentially reversing the usual process of predicting effects from known causes.
 title: Inverse Problems
 ---
 

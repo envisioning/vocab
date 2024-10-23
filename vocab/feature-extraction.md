@@ -1,8 +1,7 @@
 ---
 category: DATA, IMPL
 slug: feature-extraction
-summary: Process of transforming raw data into a set of features that are more meaningful
-  and informative for a specific task, such as classification or prediction.
+summary: Process of transforming raw data into a set of features that are more meaningful and informative for a specific task, such as classification or prediction.
 title: Feature Extraction
 ---
 

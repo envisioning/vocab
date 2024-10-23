@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: search-optimization
-summary: Process of enhancing algorithms' ability to efficiently search for the most
-  optimal solution in a potentially vast solution space.
+summary: Process of enhancing algorithms' ability to efficiently search for the most optimal solution in a potentially vast solution space.
 title: Search Optimization
 ---
 

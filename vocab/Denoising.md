@@ -1,8 +1,7 @@
 ---
 category: DATA, MATH
 slug: denoising
-summary: Process of removing noise from data, particularly in the context of images
-  and signals, to enhance the quality of the information.
+summary: Process of removing noise from data, particularly in the context of images and signals, to enhance the quality of the information.
 title: Denoising
 ---
 

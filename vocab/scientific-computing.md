@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: scientific-computing
-summary: Computational methods and tools to solve complex scientific and engineering
-  problems.
+summary: Computational methods and tools to solve complex scientific and engineering problems.
 title: Scientific Computing
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: gradient-descent
-summary: Optimization algorithm used to find the minimum of a function by iteratively
-  moving towards the steepest descent direction.
+summary: Optimization algorithm used to find the minimum of a function by iteratively moving towards the steepest descent direction.
 title: Gradient Descent
 ---
 

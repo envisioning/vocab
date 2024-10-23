@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: qml
-summary: Integration of quantum algorithms within ML models to improve computational
-  speed and data handling abilities.
+summary: Integration of quantum algorithms within ML models to improve computational speed and data handling abilities.
 title: QML (Quantum Machine Learning)
 ---
 

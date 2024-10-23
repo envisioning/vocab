@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: cd
-summary: Algorithm used to approximate the gradient of the log-likelihood for training
-  probabilistic models.
+summary: Algorithm used to approximate the gradient of the log-likelihood for training probabilistic models.
 title: CD (Contrastive Divergence)
 ---
 

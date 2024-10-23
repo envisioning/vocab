@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: branching-factor
-summary: Number of possible actions or moves that can be taken from any given point
-  in a decision-making process, such as in game trees or search algorithms.
+summary: Number of possible actions or moves that can be taken from any given point in a decision-making process, such as in game trees or search algorithms.
 title: Branching Factor
 ---
 

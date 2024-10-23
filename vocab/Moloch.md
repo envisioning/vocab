@@ -1,8 +1,7 @@
 ---
 category: GOV
 slug: moloch
-summary: Metaphorical force or systemic dynamic that leads groups or individuals to
-  pursue short-term goals at the expense of long-term well-being or optimal outcomes.
+summary: Metaphorical force or systemic dynamic that leads groups or individuals to pursue short-term goals at the expense of long-term well-being or optimal outcomes.
 title: Moloch
 ---
 

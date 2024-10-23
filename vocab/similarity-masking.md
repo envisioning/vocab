@@ -1,9 +1,7 @@
 ---
 category: DATA, CORE
 slug: similarity-masking
-summary: Technique used to filter or obscure less important features in data based
-  on their similarity to other features, enhancing the focus on distinct or more relevant
-  aspects for tasks like ML or pattern recognition.
+summary: Technique used to filter or obscure less important features in data based on their similarity to other features, enhancing the focus on distinct or more relevant aspects for tasks like ML or pattern recognition.
 title: Similarity Masking
 ---
 

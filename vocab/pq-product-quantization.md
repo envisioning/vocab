@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: pq
-summary: Technique used in large-scale vector quantization for efficient similarity
-  search and data compression by decomposing high-dimensional vectors into smaller
-  sub-vectors and quantizing each sub-vector separately.
+summary: Technique used in large-scale vector quantization for efficient similarity search and data compression by decomposing high-dimensional vectors into smaller sub-vectors and quantizing each sub-vector separately.
 title: PQ (Product Quantization)
 ---
 

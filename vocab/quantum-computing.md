@@ -1,9 +1,7 @@
 ---
 category: CORE, MATH
 slug: quantum-computing
-summary: An area of computing focused on developing computer technology centered around
-  the principles of quantum theory, which explains the behavior of energy and material
-  on the quantum level.
+summary: An area of computing focused on developing computer technology centered around the principles of quantum theory, which explains the behavior of energy and material on the quantum level.
 title: Quantum Computing
 ---
 

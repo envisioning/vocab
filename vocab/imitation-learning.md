@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: imitation-learning
-summary: AI technique where models learn to perform tasks by mimicking human behavior
-  or strategies demonstrated in training data.
+summary: AI technique where models learn to perform tasks by mimicking human behavior or strategies demonstrated in training data.
 title: Imitation Learning
 ---
 

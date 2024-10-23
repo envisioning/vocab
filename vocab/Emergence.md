@@ -1,9 +1,7 @@
 ---
 category: CORE, BIO
 slug: emergence
-summary: Phenomenon where larger entities, patterns, and regularities arise through
-  interactions among smaller or simpler entities that themselves do not exhibit such
-  properties.
+summary: Phenomenon where larger entities, patterns, and regularities arise through interactions among smaller or simpler entities that themselves do not exhibit such properties.
 title: Emergence
 ---
 

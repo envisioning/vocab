@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: bias-variance-dilemma
-summary: Fundamental problem in supervised ML that involves a trade-off between a
-  model’s ability to minimize error due to bias and error due to variance.
+summary: Fundamental problem in supervised ML that involves a trade-off between a model’s ability to minimize error due to bias and error due to variance.
 title: Bias-Variance Dilemma
 ---
 

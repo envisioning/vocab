@@ -1,8 +1,7 @@
 ---
 category: DATA, IMPL
 slug: internet-scale
-summary: Systems, applications, or analyses designed to handle and process the vast
-  and diverse data sets available across the entire internet.
+summary: Systems, applications, or analyses designed to handle and process the vast and diverse data sets available across the entire internet.
 title: Internet Scale
 ---
 

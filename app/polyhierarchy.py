@@ -30,7 +30,7 @@ def parse_markdown_files(directory):
                     if frontmatter_match:
                         frontmatter = frontmatter_match.group(1)
                         title_match = re.search(r'title:\s*"?([^"\n]+)"?', frontmatter)
-                        summary_match = re.search(r'summary:\s*"?([^"]+)"?', frontmatter)
+                        summary_match = re.search(r'summary:\s*"?(.*?)(?:"|$|\n)', frontmatter)
                         categories_match = re.search(r'category:\s*([^\n]+)', frontmatter)
                         slug_match = re.search(r'slug:\s*"?([^"\n]+)"?', frontmatter)
                         
@@ -96,7 +96,7 @@ def calculate_similarity(terms):
     tfidf_matrix = vectorizer.fit_transform(combined_texts)
     return cosine_similarity(tfidf_matrix)
 
-def create_graph(terms, similarity_matrix, threshold=0.4):
+def create_graph(terms, similarity_matrix, threshold=0.3):
     G = nx.Graph()
     term_list = list(terms.keys())
     for term in term_list:

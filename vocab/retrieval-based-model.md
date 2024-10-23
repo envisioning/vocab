@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: retrieval-based
-summary: Algorithms that generate responses by selecting them from a predefined set
-  of responses, based on the input they receive.
+summary: Algorithms that generate responses by selecting them from a predefined set of responses, based on the input they receive.
 title: Retrieval-Based (Model)
 ---
 

@@ -1,9 +1,7 @@
 ---
 category: ARCH, DATA
 slug: byte-level-state-space
-summary: Representation of the state space of a system or model at the granularity
-  of individual bytes, capturing every possible state a byte can assume within a computational
-  context.
+summary: Representation of the state space of a system or model at the granularity of individual bytes, capturing every possible state a byte can assume within a computational context.
 title: Byte-Level State Space
 ---
 

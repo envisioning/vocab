@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: model-level
-summary: Abstraction layer at which an AI or ML model operates, focusing on the specific
-  details and mechanics of the model's architecture and functioning.
+summary: Abstraction layer at which an AI or ML model operates, focusing on the specific details and mechanics of the model's architecture and functioning.
 title: Model Level
 ---
 

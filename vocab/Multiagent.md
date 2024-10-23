@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: multiagent
-summary: Multiple autonomous entities (agents) interacting in a shared environment,
-  often with cooperative or competitive objectives.
+summary: Multiple autonomous entities (agents) interacting in a shared environment, often with cooperative or competitive objectives.
 title: Multiagent
 ---
 

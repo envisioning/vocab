@@ -1,8 +1,7 @@
 ---
 category: IMPL, ARCH
 slug: mlops
-summary: Practice of collaboratively combining ML system development and ML system
-  operation, aiming for faster deployment and reliable management.
+summary: Practice of collaboratively combining ML system development and ML system operation, aiming for faster deployment and reliable management.
 title: MLOps (Machine Learning Operations)
 ---
 

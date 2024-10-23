@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: bgpt
-summary: Variant of the GPT architecture designed to process data at the byte level
-  rather than at the word or sub-word level, allowing for greater flexibility in handling
-  diverse text types and structures.
+summary: Variant of the GPT architecture designed to process data at the byte level rather than at the word or sub-word level, allowing for greater flexibility in handling diverse text types and structures.
 title: bGPT (Byte-Level Transformer)
 ---
 

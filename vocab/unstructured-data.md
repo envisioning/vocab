@@ -1,8 +1,7 @@
 ---
 category: DATA
 slug: unstructured-data
-summary: Data that lacks a pre-defined format or organization, making it challenging
-  to collect, process, and analyze using conventional database tools.
+summary: Data that lacks a pre-defined format or organization, making it challenging to collect, process, and analyze using conventional database tools.
 title: Unstructured Data
 ---
 

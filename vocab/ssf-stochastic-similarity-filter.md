@@ -1,9 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: ssf
-summary: Moderates GPU usage by skipping processing of similar consecutive input images,
-  thereby improving computational efficiency in real-time image and video generation
-  tasks.
+summary: Moderates GPU usage by skipping processing of similar consecutive input images, thereby improving computational efficiency in real-time image and video generation tasks.
 title: SSF (Stochastic Similarity Filter)
 ---
 

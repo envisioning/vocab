@@ -1,12 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: xrx
-summary: Flexible framework designed for building multimodal AI-powered systems that
-  interact with users through a variety of inputs (like text, voice, and more) and
-  outputs, while incorporating advanced reasoning capabilities. The name xRx stands
-  for "any input (x), reasoning (R), any output (x)," emphasizing its versatility
-  in handling different interaction modalities and integrating reasoning across complex
-  domains.
+summary: Flexible framework designed for building multimodal AI-powered systems that interact with users through a variety of inputs (like text, voice, and more) and outputs, while incorporating advanced reasoning capabilities. The name xRx stands for "any input (x), reasoning (R), any output (x)," emphasizing its versatility in handling different interaction modalities and integrating reasoning across complex domains.
 title: xRx
 ---
 

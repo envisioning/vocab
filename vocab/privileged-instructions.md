@@ -1,9 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: privileged-instructions
-summary: Commands in computing that can only be executed in a privileged mode, typically
-  restricted to the operating system or other system-level software to manage hardware
-  and critical operations securely.
+summary: Commands in computing that can only be executed in a privileged mode, typically restricted to the operating system or other system-level software to manage hardware and critical operations securely.
 title: Privileged Instructions
 ---
 

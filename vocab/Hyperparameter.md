@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: hyperparameter
-summary: Configuration settings used to structure ML models, which guide the learning
-  process and are set before training begins.
+summary: Configuration settings used to structure ML models, which guide the learning process and are set before training begins.
 title: Hyperparameter
 ---
 

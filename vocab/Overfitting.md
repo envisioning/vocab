@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: overfitting
-summary: When a ML model learns the detail and noise in the training data to the extent
-  that it negatively impacts the performance of the model on new data.
+summary: When a ML model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.
 title: Overfitting
 ---
 

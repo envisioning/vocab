@@ -1,8 +1,7 @@
 ---
 category: CORE, GOV
 slug: interpretability
-summary: Extent to which a human can understand the cause of a decision made by an
-  AI system.
+summary: Extent to which a human can understand the cause of a decision made by an AI system.
 title: Interpretability
 ---
 

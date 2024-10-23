@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: p
-summary: Probability of an existential catastrophe, often discussed within the context
-  of AI safety and risk assessment.
+summary: Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.
 title: P(Doom)
 ---
 

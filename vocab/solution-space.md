@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: solution-space
-summary: Refers to the set of all possible solutions to a given problem or decision-making
-  scenario.
+summary: Refers to the set of all possible solutions to a given problem or decision-making scenario.
 title: Solution Space
 ---
 

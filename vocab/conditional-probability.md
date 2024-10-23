@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: conditional-probability
-summary: Measures the likelihood of an event occurring, given that another event has
-  already occurred.
+summary: Measures the likelihood of an event occurring, given that another event has already occurred.
 title: Conditional Probability
 ---
 

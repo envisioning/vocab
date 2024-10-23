@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: inductive-prior
-summary: Set of assumptions or biases that a ML model uses to infer patterns from
-  data and make predictions, effectively guiding the learning process based on prior
-  knowledge or expected behavior.
+summary: Set of assumptions or biases that a ML model uses to infer patterns from data and make predictions, effectively guiding the learning process based on prior knowledge or expected behavior.
 title: Inductive Prior
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: panel-of-experts
-summary: Decision-making system where multiple experts provide their opinions or solutions,
-  and the consensus or most supported option is chosen.
+summary: Decision-making system where multiple experts provide their opinions or solutions, and the consensus or most supported option is chosen.
 title: Panel-of-Experts
 ---
 

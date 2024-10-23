@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: vlm
-summary: AI models designed to interpret and generate content by integrating visual
-  and textual information, enabling them to perform tasks like image captioning, visual
-  question answering, and more.
+summary: AI models designed to interpret and generate content by integrating visual and textual information, enabling them to perform tasks like image captioning, visual question answering, and more.
 title: VLM (Visual Language Model)
 ---
 

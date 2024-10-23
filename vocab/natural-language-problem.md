@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: natural-language-problem
-summary: Challenges encountered in understanding, processing, or generating human
-  language using computational methods.
+summary: Challenges encountered in understanding, processing, or generating human language using computational methods.
 title: Natural Language Problem
 ---
 

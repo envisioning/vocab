@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: convergence
-summary: The point at which an algorithm or learning process stabilizes, reaching
-  a state where further iterations or data input do not significantly alter its outcome.
+summary: The point at which an algorithm or learning process stabilizes, reaching a state where further iterations or data input do not significantly alter its outcome.
 title: Convergence
 ---
 

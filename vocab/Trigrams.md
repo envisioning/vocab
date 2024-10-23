@@ -1,8 +1,7 @@
 ---
 category: DATA, CORE
 slug: trigrams
-summary: Specific type of n-gram where n is 3, commonly used in language modeling
-  and predicting the next item in NLP.
+summary: Specific type of n-gram where n is 3, commonly used in language modeling and predicting the next item in NLP.
 title: Trigrams
 ---
 

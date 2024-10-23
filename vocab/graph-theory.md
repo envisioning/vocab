@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
 slug: graph-theory
-summary: Field of mathematics and computer science focusing on the properties of graphs,
-  which are structures made up of vertices (or nodes) connected by edges.
+summary: Field of mathematics and computer science focusing on the properties of graphs, which are structures made up of vertices (or nodes) connected by edges.
 title: Graph Theory
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: DATA, MATH
 slug: eda
-summary: Technique used to analyze data sets to summarize their main characteristics,
-  often with visual methods, before applying more formal modeling.
+summary: Technique used to analyze data sets to summarize their main characteristics, often with visual methods, before applying more formal modeling.
 title: EDA (Exploratory Data Analysis)
 ---
 

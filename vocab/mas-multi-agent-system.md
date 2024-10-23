@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: mas
-summary: Software framework where several autonomous entities called agents interact
-  to achieve individual or collective goals.
+summary: Software framework where several autonomous entities called agents interact to achieve individual or collective goals.
 title: MAS (Multi-Agent System)
 ---
 

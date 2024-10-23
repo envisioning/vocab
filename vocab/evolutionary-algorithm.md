@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: evolutionary-algorithm
-summary: Optimization methods inspired by the process of natural selection where potential
-  solutions evolve over generations to optimize a given objective function.
+summary: Optimization methods inspired by the process of natural selection where potential solutions evolve over generations to optimize a given objective function.
 title: Evolutionary Algorithm
 ---
 

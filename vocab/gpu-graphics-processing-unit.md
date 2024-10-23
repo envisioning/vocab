@@ -1,9 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: gpu
-summary: Specialized electronic circuit designed to rapidly manipulate and alter memory
-  to accelerate the creation of images in a frame buffer intended for output to a
-  display device, but widely used in deep learning for its parallel processing capabilities.
+summary: Specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device, but widely used in deep learning for its parallel processing capabilities.
 title: GPU (Graphics Processing Unit)
 ---
 

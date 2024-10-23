@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: invariance
-summary: Property of a model or algorithm that ensures its output remains unchanged
-  when specific transformations are applied to the input data.
+summary: Property of a model or algorithm that ensures its output remains unchanged when specific transformations are applied to the input data.
 title: Invariance
 ---
 

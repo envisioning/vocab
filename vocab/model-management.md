@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: model-management
-summary: Practices and technologies used to handle various lifecycle stages of machine
-  learning models including development, deployment, monitoring, and maintenance.
+summary: Practices and technologies used to handle various lifecycle stages of machine learning models including development, deployment, monitoring, and maintenance.
 title: Model Management
 ---
 

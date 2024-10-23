@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: teacher-guided-rejection-sampling
-summary: Advanced ML technique that refines a model by iteratively sampling and accepting
-  data based on evaluations from multiple expert models (teachers).
+summary: Advanced ML technique that refines a model by iteratively sampling and accepting data based on evaluations from multiple expert models (teachers).
 title: Teacher-Guided Rejection Sampling
 ---
 

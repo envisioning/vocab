@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: gail
-summary: Advanced ML technique that uses adversarial training to enable an agent to
-  learn behaviors directly from expert demonstrations without requiring explicit reward
-  signals.
+summary: Advanced ML technique that uses adversarial training to enable an agent to learn behaviors directly from expert demonstrations without requiring explicit reward signals.
 title: GAIL (Generative Adversarial Imitation Learning)
 ---
 

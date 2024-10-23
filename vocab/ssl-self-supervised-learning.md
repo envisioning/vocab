@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: ssl
-summary: Type of ML where the system learns to predict part of its input from other
-  parts, using its own data structure as supervision.
+summary: Type of ML where the system learns to predict part of its input from other parts, using its own data structure as supervision.
 title: SSL (Self-Supervised Learning)
 ---
 

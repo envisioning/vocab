@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: autonomous-reasoning
-summary: Capacity of AI systems to make independent decisions or draw conclusions
-  based on logic or data without human intervention.
+summary: Capacity of AI systems to make independent decisions or draw conclusions based on logic or data without human intervention.
 title: Autonomous Reasoning
 ---
 

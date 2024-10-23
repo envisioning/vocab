@@ -1,9 +1,7 @@
 ---
 category: IMPL, DATA
 slug: kaggle-effect
-summary: Phenomenon where ML models developed on Kaggle competitions perform well
-  on specific datasets but may not generalize as effectively to real-world applications
-  due to the unique constraints and optimizations used in these competitions.
+summary: Phenomenon where ML models developed on Kaggle competitions perform well on specific datasets but may not generalize as effectively to real-world applications due to the unique constraints and optimizations used in these competitions.
 title: Kaggle Effect
 ---
 

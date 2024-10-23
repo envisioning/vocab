@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: alexnet
-summary: Deep convolutional neural network that significantly advanced the field of
-  computer vision by winning the ImageNet Large Scale Visual Recognition Challenge
-  in 2012.
+summary: Deep convolutional neural network that significantly advanced the field of computer vision by winning the ImageNet Large Scale Visual Recognition Challenge in 2012.
 title: AlexNet
 ---
 

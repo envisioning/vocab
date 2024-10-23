@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: 1-n-systems
-summary: Architectures where one input or controller manages multiple outputs or agents,
-  applicable in fields like neural networks and robotics.
+summary: Architectures where one input or controller manages multiple outputs or agents, applicable in fields like neural networks and robotics.
 title: 1-N Systems
 ---
 

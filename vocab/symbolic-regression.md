@@ -1,8 +1,7 @@
 ---
 category: MATH, DATA
 slug: symbolic-regression
-summary: Type of regression analysis that searches for mathematical expressions to
-  best fit a given set of data points.
+summary: Type of regression analysis that searches for mathematical expressions to best fit a given set of data points.
 title: Symbolic Regression
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: unhobbling
-summary: Process of unlocking latent capabilities in AI models by addressing limitations
-  and inefficiencies, thus significantly enhancing their practical utility.
+summary: Process of unlocking latent capabilities in AI models by addressing limitations and inefficiencies, thus significantly enhancing their practical utility.
 title: Unhobbling
 ---
 

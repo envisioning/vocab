@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: fairness-aware-machine-learning
-summary: Focuses on developing algorithms that ensure equitable treatment and outcomes
-  across different demographic groups.
+summary: Focuses on developing algorithms that ensure equitable treatment and outcomes across different demographic groups.
 title: Fairness-Aware Machine Learning
 ---
 

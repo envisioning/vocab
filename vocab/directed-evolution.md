@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: directed-evolution
-summary: Use of evolutionary algorithms to iteratively improve ML models or algorithms
-  by mimicking the process of natural selection.
+summary: Use of evolutionary algorithms to iteratively improve ML models or algorithms by mimicking the process of natural selection.
 title: Directed Evolution
 ---
 

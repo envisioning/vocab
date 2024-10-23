@@ -1,8 +1,7 @@
 ---
 category: IMPL, DATA
 slug: price-per-token
-summary: Cost of processing a single token used in NLP tasks, particularly when interacting
-  with AI models like GPT.
+summary: Cost of processing a single token used in NLP tasks, particularly when interacting with AI models like GPT.
 title: Price Per Token
 ---
 

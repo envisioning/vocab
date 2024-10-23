@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: mechanistic-interpretability
-summary: Study and methods used to understand the specific causal mechanisms through
-  which AI models produce their outputs.
+summary: Study and methods used to understand the specific causal mechanisms through which AI models produce their outputs.
 title: Mechanistic Interpretability
 ---
 

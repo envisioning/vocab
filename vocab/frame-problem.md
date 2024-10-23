@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: frame-problem
-summary: Challenge in AI of representing and updating the effects of actions in a
-  dynamic world without having to explicitly state all conditions that remain unchanged.
+summary: Challenge in AI of representing and updating the effects of actions in a dynamic world without having to explicitly state all conditions that remain unchanged.
 title: Frame Problem
 ---
 

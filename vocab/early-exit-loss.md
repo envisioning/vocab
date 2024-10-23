@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: early-exit-loss
-summary: An optimization technique in AI models that balances overall accuracy and
-  computational efficiency.
+summary: An optimization technique in AI models that balances overall accuracy and computational efficiency.
 title: Early Exit Loss
 ---
 

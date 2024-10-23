@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: convergent-learning
-summary: Process by which a ML model consistently arrives at the same solution or
-  prediction given the same input data, despite variations in initial conditions or
-  configurations.
+summary: Process by which a ML model consistently arrives at the same solution or prediction given the same input data, despite variations in initial conditions or configurations.
 title: Convergent Learning
 ---
 

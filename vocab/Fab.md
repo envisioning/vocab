@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: fab
-summary: A fabrication facility, or fab, is where microchips are manufactured using
-  sophisticated processes involving advanced materials and photolithography.
+summary: A fabrication facility, or fab, is where microchips are manufactured using sophisticated processes involving advanced materials and photolithography.
 title: Fab
 ---
 

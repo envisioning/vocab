@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: activation-beacon
-summary: Method used in LLMs to extend the context window they can process by employing
-  a technique of condensing and streamlining longer text sequences.
+summary: Method used in LLMs to extend the context window they can process by employing a technique of condensing and streamlining longer text sequences.
 title: Activation Beacon
 ---
 

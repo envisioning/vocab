@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: artefactual-autopoiesis
-summary: Design and creation of artificial systems capable of self-maintenance and
-  reproduction, mirroring the autopoietic characteristics of living organisms.
+summary: Design and creation of artificial systems capable of self-maintenance and reproduction, mirroring the autopoietic characteristics of living organisms.
 title: Artefactual Autopoiesis
 ---
 

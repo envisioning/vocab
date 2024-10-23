@@ -1,8 +1,7 @@
 ---
 category: CORE, GOV
 slug: turing-test
-summary: Measure of a machine's ability to exhibit intelligent behavior equivalent
-  to, or indistinguishable from, that of a human.
+summary: Measure of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.
 title: Turing Test
 ---
 

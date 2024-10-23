@@ -1,8 +1,7 @@
 ---
 category: IMPL, DATA
 slug: aeo
-summary: Process of optimizing content to improve its chances of being selected as
-  the direct response by search engines or voice assistants to user queries.
+summary: Process of optimizing content to improve its chances of being selected as the direct response by search engines or voice assistants to user queries.
 title: AEO (Answer Engine Optimization)
 ---
 

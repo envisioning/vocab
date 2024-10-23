@@ -1,8 +1,7 @@
 ---
 category: DATA, ARCH
 slug: kv
-summary: Data storage model where data is stored as a collection of key-value pairs,
-  where each key is unique and maps directly to a value.
+summary: Data storage model where data is stored as a collection of key-value pairs, where each key is unique and maps directly to a value.
 title: KV (Key-Value)
 ---
 

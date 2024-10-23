@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: natural-language
-summary: Any language that has developed naturally among humans, used for everyday
-  communication, such as English, Mandarin, or Spanish.
+summary: Any language that has developed naturally among humans, used for everyday communication, such as English, Mandarin, or Spanish.
 title: Natural Language
 ---
 

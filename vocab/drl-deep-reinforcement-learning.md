@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: drl
-summary: Combines neural networks with a reinforcement learning framework, enabling
-  AI systems to learn optimal actions through trial and error to maximize a cumulative
-  reward.
+summary: Combines neural networks with a reinforcement learning framework, enabling AI systems to learn optimal actions through trial and error to maximize a cumulative reward.
 title: DRL (Deep Reinforcement Learning)
 ---
 

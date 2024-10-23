@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: overparameterization-regime
-summary: A phase in ML where the model has more parameters than the number of training
-  samples, often leading to a high-variance, overfitted model.
+summary: A phase in ML where the model has more parameters than the number of training samples, often leading to a high-variance, overfitted model.
 title: Overparameterization Regime
 ---
 

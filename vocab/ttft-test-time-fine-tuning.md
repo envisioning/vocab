@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: ttft
-summary: Process of adapting a pre-trained model using new data during the testing
-  phase to improve its performance on specific tasks.
+summary: Process of adapting a pre-trained model using new data during the testing phase to improve its performance on specific tasks.
 title: TTFT (Test Time Fine-Tuning)
 ---
 

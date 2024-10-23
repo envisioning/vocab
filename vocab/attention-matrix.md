@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: attention-matrix
-summary: Component in attention mechanisms of neural networks that determines the
-  importance of each element in a sequence relative to others, allowing the model
-  to focus on relevant parts of the input when generating outputs.
+summary: Component in attention mechanisms of neural networks that determines the importance of each element in a sequence relative to others, allowing the model to focus on relevant parts of the input when generating outputs.
 title: Attention Matrix
 ---
 

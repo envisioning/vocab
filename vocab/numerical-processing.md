@@ -1,8 +1,7 @@
 ---
 category: DATA, MATH
 slug: numerical-processing
-summary: Algorithms and techniques for handling and analyzing numerical data to extract
-  patterns, make predictions, or understand underlying trends.
+summary: Algorithms and techniques for handling and analyzing numerical data to extract patterns, make predictions, or understand underlying trends.
 title: Numerical Processing
 ---
 

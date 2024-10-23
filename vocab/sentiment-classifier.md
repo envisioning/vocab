@@ -1,8 +1,7 @@
 ---
 category: IMPL, DATA
 slug: sentiment-classifier
-summary: NLP tool that identifies and categorizes opinions expressed in a piece of
-  text.
+summary: NLP tool that identifies and categorizes opinions expressed in a piece of text.
 title: Sentiment Classifier
 ---
 

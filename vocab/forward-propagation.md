@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: forward-propagation
-summary: Process in a neural network where input data is passed through layers of
-  the network to generate output.
+summary: Process in a neural network where input data is passed through layers of the network to generate output.
 title: Forward Propagation
 ---
 

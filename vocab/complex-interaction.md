@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: complex-interaction
-summary: Intricate, multi-layered exchanges or behaviors between components of an
-  AI system, or between the AI system and its environment, which may involve non-linear
-  dynamics and feedback loops.
+summary: Intricate, multi-layered exchanges or behaviors between components of an AI system, or between the AI system and its environment, which may involve non-linear dynamics and feedback loops.
 title: Complex Interaction
 ---
 

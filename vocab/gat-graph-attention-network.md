@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: gat
-summary: Type of neural network that applies attention mechanisms directly to graphs
-  to dynamically prioritize information from different nodes in the graph.
+summary: Type of neural network that applies attention mechanisms directly to graphs to dynamically prioritize information from different nodes in the graph.
 title: GAT (Graph Attention Network)
 ---
 

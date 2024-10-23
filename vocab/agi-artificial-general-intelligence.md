@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: agi
-summary: AI capable of understanding, learning, and applying knowledge across a wide
-  range of tasks, matching or surpassing human intelligence.
+summary: AI capable of understanding, learning, and applying knowledge across a wide range of tasks, matching or surpassing human intelligence.
 title: AGI (Artificial General Intelligence)
 ---
 

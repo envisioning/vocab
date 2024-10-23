@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: mode-collapse
-summary: Phenomenon in Generative Adversarial Networks (GANs) where the generator
-  produces limited, highly similar outputs, ignoring the diversity of the target data
-  distribution.
+summary: Phenomenon in Generative Adversarial Networks (GANs) where the generator produces limited, highly similar outputs, ignoring the diversity of the target data distribution.
 title: Mode Collapse
 ---
 

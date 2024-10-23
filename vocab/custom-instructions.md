@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: custom-instructions
-summary: Directives or rules provided by users to AI systems, tailoring the AI's responses
-  or behaviors to specific needs or contexts.
+summary: Directives or rules provided by users to AI systems, tailoring the AI's responses or behaviors to specific needs or contexts.
 title: Custom Instructions
 ---
 

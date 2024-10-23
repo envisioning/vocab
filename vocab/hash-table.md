@@ -1,9 +1,7 @@
 ---
 category: DATA, ARCH
 slug: hash-table
-summary: Data structure that stores key-value pairs and allows for fast data retrieval
-  by using a hash function to compute an index into an array of buckets or slots,
-  from which the desired value can be found.
+summary: Data structure that stores key-value pairs and allows for fast data retrieval by using a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
 title: Hash Table
 ---
 

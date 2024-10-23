@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: ebm
-summary: Class of deep learning models that learn to associate lower energy levels
-  with more probable configurations of the input data.
+summary: Class of deep learning models that learn to associate lower energy levels with more probable configurations of the input data.
 title: EBM (Energy-Based Model)
 ---
 

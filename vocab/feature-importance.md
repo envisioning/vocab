@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: feature-importance
-summary: Techniques used to identify and rank the significance of input variables
-  (features) in contributing to the predictive power of a ML model.
+summary: Techniques used to identify and rank the significance of input variables (features) in contributing to the predictive power of a ML model.
 title: Feature Importance
 ---
 

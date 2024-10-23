@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: hypersphere-based-transformer
-summary: An improved framework for transformers focused on enhancing efficiency and
-  performance by leveraging hyperspheres.
+summary: An improved framework for transformers focused on enhancing efficiency and performance by leveraging hyperspheres.
 title: Hypersphere-Based Transformer
 ---
 

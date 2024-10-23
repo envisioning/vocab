@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: autogpt
-summary: Autonomous AI agent that uses GPT-4 to generate prompts for itself, enabling
-  it to complete tasks with minimal human intervention.
+summary: Autonomous AI agent that uses GPT-4 to generate prompts for itself, enabling it to complete tasks with minimal human intervention.
 title: AutoGPT
 ---
 

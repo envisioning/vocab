@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: stochastic-parrot
-summary: Language models that generate text based on probabilistic predictions, often
-  criticized for parroting information without understanding.
+summary: Language models that generate text based on probabilistic predictions, often criticized for parroting information without understanding.
 title: Stochastic Parrot
 ---
 

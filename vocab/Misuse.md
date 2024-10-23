@@ -1,8 +1,7 @@
 ---
 category: GOV
 slug: misuse
-summary: Application of AI technologies in ways that are unethical, illegal, or harmful
-  to individuals or society.
+summary: Application of AI technologies in ways that are unethical, illegal, or harmful to individuals or society.
 title: Misuse
 ---
 

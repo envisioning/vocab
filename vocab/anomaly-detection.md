@@ -1,8 +1,7 @@
 ---
 category: DATA, CORE
 slug: anomaly-detection
-summary: Process of identifying unusual patterns that deviate from expected behavior,
-  often used to detect fraud, network intrusions, or unusual transactions.
+summary: Process of identifying unusual patterns that deviate from expected behavior, often used to detect fraud, network intrusions, or unusual transactions.
 title: Anomaly Detection
 ---
 

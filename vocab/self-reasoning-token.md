@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: self-reasoning-token
-summary: AI mechanism designed to enhance the planning capabilities of language models
-  by allowing them to anticipate and prepare for future outputs.
+summary: AI mechanism designed to enhance the planning capabilities of language models by allowing them to anticipate and prepare for future outputs.
 title: Self-Reasoning Token
 ---
 

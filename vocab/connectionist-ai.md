@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: connectionist-ai
-summary: Set of computational models in AI that simulate the human brain's network
-  of neurons to process information and learn from data.
+summary: Set of computational models in AI that simulate the human brain's network of neurons to process information and learn from data.
 title: Connectionist AI
 ---
 

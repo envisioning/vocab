@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: gflownet
-summary: Research direction at the intersection of reinforcement learning, deep generative
-  models, and energy-based probabilistic modeling, aimed at improving generative active
-  learning and unsupervised learning.
+summary: Research direction at the intersection of reinforcement learning, deep generative models, and energy-based probabilistic modeling, aimed at improving generative active learning and unsupervised learning.
 title: GFlowNet (Generative Flow Networks)
 ---
 

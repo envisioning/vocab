@@ -1,9 +1,7 @@
 ---
 category: ARCH, BIO
 slug: mortal-computation
-summary: Novel concept in computing that integrates the hardware-software relationship
-  more closely, where computational systems are designed to reflect biological principles,
-  particularly mortality and adaptability.
+summary: Novel concept in computing that integrates the hardware-software relationship more closely, where computational systems are designed to reflect biological principles, particularly mortality and adaptability.
 title: Mortal Computation
 ---
 

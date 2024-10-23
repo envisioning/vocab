@@ -1,9 +1,7 @@
 ---
 category: CORE, DATA
 slug: semantic-segmentation
-summary: Process of partitioning a digital image into multiple segments (sets of pixels)
-  to simplify its representation into something more meaningful and easier to analyze,
-  where each segment corresponds to different objects or parts of objects.
+summary: Process of partitioning a digital image into multiple segments (sets of pixels) to simplify its representation into something more meaningful and easier to analyze, where each segment corresponds to different objects or parts of objects.
 title: Semantic Segmentation
 ---
 

@@ -1,9 +1,7 @@
 ---
 category: MATH, DATA
 slug: mixture-model
-summary: Probabilistic model that assumes that the data is generated from a mixture
-  of several distributions, each representing a different subpopulation within the
-  overall population.
+summary: Probabilistic model that assumes that the data is generated from a mixture of several distributions, each representing a different subpopulation within the overall population.
 title: Mixture Model
 ---
 

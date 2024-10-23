@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: neuroevolution
-summary: AI approach that uses evolutionary algorithms to develop and optimize artificial
-  neural networks.
+summary: AI approach that uses evolutionary algorithms to develop and optimize artificial neural networks.
 title: Neuroevolution
 ---
 

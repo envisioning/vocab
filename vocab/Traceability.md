@@ -1,8 +1,7 @@
 ---
 category: GOV, DATA
 slug: traceability
-summary: Ability to track and document the origins, evolution, and interactions of
-  data, models, and decisions throughout the AI lifecycle.
+summary: Ability to track and document the origins, evolution, and interactions of data, models, and decisions throughout the AI lifecycle.
 title: Traceability
 ---
 

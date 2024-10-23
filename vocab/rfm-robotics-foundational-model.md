@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: rfm
-summary: Base model designed to provide fundamental capabilities or understanding
-  for the development of various robotic systems and applications.
+summary: Base model designed to provide fundamental capabilities or understanding for the development of various robotic systems and applications.
 title: RFM (Robotics Foundational Model)
 ---
 

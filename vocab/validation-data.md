@@ -1,8 +1,7 @@
 ---
 category: DATA, CORE
 slug: validation-data
-summary: Subset of data used to assess the performance of a model during the training
-  phase, separate from the training data itself.
+summary: Subset of data used to assess the performance of a model during the training phase, separate from the training data itself.
 title: Validation Data
 ---
 

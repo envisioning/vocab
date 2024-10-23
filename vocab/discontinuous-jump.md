@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: discontinuous-jump
-summary: Sudden, significant leap in the performance or capability of an AI system,
-  deviating sharply from its previous trajectory of incremental improvements.
+summary: Sudden, significant leap in the performance or capability of an AI system, deviating sharply from its previous trajectory of incremental improvements.
 title: Discontinuous Jump
 ---
 

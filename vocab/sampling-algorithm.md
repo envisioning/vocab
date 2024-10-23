@@ -1,9 +1,7 @@
 ---
 category: DATA, MATH
 slug: sampling-algorithm
-summary: Method used to select a subset of data from a larger set, ensuring that the
-  sample is representative of the original population for the purpose of analysis
-  or computational efficiency.
+summary: Method used to select a subset of data from a larger set, ensuring that the sample is representative of the original population for the purpose of analysis or computational efficiency.
 title: Sampling Algorithm
 ---
 

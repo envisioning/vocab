@@ -1,8 +1,7 @@
 ---
 category: MATH
 slug: ooms
-summary: Way to understand and compare quantities in terms of their scale or size,
-  typically using powers of ten.
+summary: Way to understand and compare quantities in terms of their scale or size, typically using powers of ten.
 title: OOMs (Orders of Magnitude)
 ---
 

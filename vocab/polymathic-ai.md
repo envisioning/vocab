@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: polymathic-ai
-summary: AI systems that possess a wide range of skills and knowledge, enabling them
-  to perform tasks across various domains, much like a human polymath.
+summary: AI systems that possess a wide range of skills and knowledge, enabling them to perform tasks across various domains, much like a human polymath.
 title: Polymathic AI
 ---
 

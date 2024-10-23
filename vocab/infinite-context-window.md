@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: infinite-context-window
-summary: Method in NLP where a model has potential to consider entire available preceding
-  information for predictions.
+summary: Method in NLP where a model has potential to consider entire available preceding information for predictions.
 title: Infinite Context Window
 ---
 

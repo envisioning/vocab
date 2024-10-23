@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: lnns
-summary: Innovative ML models designed to learn new tasks without impacting previously
-  learnt tasks, thus preventing catastrophic forgetting.
+summary: Innovative ML models designed to learn new tasks without impacting previously learnt tasks, thus preventing catastrophic forgetting.
 title: LNNs (Liquid Neural Networks)
 ---
 

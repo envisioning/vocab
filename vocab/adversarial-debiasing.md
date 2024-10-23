@@ -1,9 +1,7 @@
 ---
 category: CORE, IMPL
 slug: adversarial-debiasing
-summary: ML technique aimed at reducing bias in models by using adversarial training,
-  where one network tries to predict sensitive attributes and another tries to prevent
-  it.
+summary: ML technique aimed at reducing bias in models by using adversarial training, where one network tries to predict sensitive attributes and another tries to prevent it.
 title: Adversarial Debiasing
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: flow-engineering
-summary: Structured process of improving problem-solving in tasks like code generation
-  by guiding a model through systematic, iterative refinements based on feedback loops.
+summary: Structured process of improving problem-solving in tasks like code generation by guiding a model through systematic, iterative refinements based on feedback loops.
 title: Flow Engineering
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: tcn
-summary: Type of neural network designed to handle sequential data by applying convolutional
-  operations over time.
+summary: Type of neural network designed to handle sequential data by applying convolutional operations over time.
 title: TCN (Temporal Convolutional Networks)
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: itm
-summary: AI technique that involves automatically identifying correspondences between
-  textual descriptions and visual elements within images.
+summary: AI technique that involves automatically identifying correspondences between textual descriptions and visual elements within images.
 title: ITM (Image-Text Matching)
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, DATA
 slug: ast
-summary: Data structure significant in compiling or interpreting code, capturing hierarchical
-  properties of the source code syntax.
+summary: Data structure significant in compiling or interpreting code, capturing hierarchical properties of the source code syntax.
 title: AST (Abstract Syntax Tree)
 ---
 

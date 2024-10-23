@@ -1,8 +1,7 @@
 ---
 category: BIO, CORE
 slug: wake-sleep
-summary: Biologically inspired algorithm used within unsupervised learning to train
-  deep belief networks.
+summary: Biologically inspired algorithm used within unsupervised learning to train deep belief networks.
 title: Wake Sleep
 ---
 

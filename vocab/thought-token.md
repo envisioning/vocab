@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: thought-token
-summary: Computational abstraction used in NLP models to represent and manipulate
-  complex ideas or concepts within sequences of text.
+summary: Computational abstraction used in NLP models to represent and manipulate complex ideas or concepts within sequences of text.
 title: Thought Token
 ---
 

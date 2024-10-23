@@ -1,8 +1,7 @@
 ---
 category: DATA, MATH
 slug: sampling
-summary: Fundamental technique used to reduce computational cost and simplify data
-  management
+summary: Fundamental technique used to reduce computational cost and simplify data management
 title: Sampling
 ---
 

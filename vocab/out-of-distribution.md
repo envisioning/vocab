@@ -1,8 +1,7 @@
 ---
 category: DATA, CORE
 slug: out-of-distribution
-summary: Data that differs significantly from the training data used to train a machine
-  learning model, leading to unreliable or inaccurate predictions.
+summary: Data that differs significantly from the training data used to train a machine learning model, leading to unreliable or inaccurate predictions.
 title: Out of Distribution
 ---
 

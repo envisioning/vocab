@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: ai-failure-modes
-summary: Diverse scenarios where AI systems do not perform as expected or generate
-  unintended consequences.
+summary: Diverse scenarios where AI systems do not perform as expected or generate unintended consequences.
 title: AI Failure Modes
 ---
 

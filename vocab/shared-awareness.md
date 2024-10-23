@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: shared-awareness
-summary: Collective understanding and perception of information among multiple agents,
-  both human and machine, in a given environment.
+summary: Collective understanding and perception of information among multiple agents, both human and machine, in a given environment.
 title: Shared Awareness
 ---
 

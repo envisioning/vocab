@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: reasoning-path
-summary: Logical steps or sequence of inferences made by an AI model or system to
-  arrive at a conclusion, decision, or solution.
+summary: Logical steps or sequence of inferences made by an AI model or system to arrive at a conclusion, decision, or solution.
 title: Reasoning Path
 ---
 

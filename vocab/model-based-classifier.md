@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: model-based-classifier
-summary: ML algorithm that uses a pre-defined statistical model to make predictions
-  based on input data.
+summary: ML algorithm that uses a pre-defined statistical model to make predictions based on input data.
 title: Model-Based Classifier
 ---
 

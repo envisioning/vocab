@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: latent-space
-summary: Abstract, multi-dimensional representation of data where similar items are
-  mapped close together, commonly used in ML and AI models.
+summary: Abstract, multi-dimensional representation of data where similar items are mapped close together, commonly used in ML and AI models.
 title: Latent Space
 ---
 

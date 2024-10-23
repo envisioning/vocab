@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: hitl
-summary: Integration of human judgment into AI systems to improve or guide the decision-making
-  process.
+summary: Integration of human judgment into AI systems to improve or guide the decision-making process.
 title: HITL (Human-in-the-Loop)
 ---
 

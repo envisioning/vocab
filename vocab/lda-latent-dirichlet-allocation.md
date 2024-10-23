@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: lda
-summary: Generative statistical model often used in natural language processing to
-  discover hidden (or latent) topics within a collection of documents.
+summary: Generative statistical model often used in natural language processing to discover hidden (or latent) topics within a collection of documents.
 title: LDA (Latent Dirichlet Allocation)
 ---
 

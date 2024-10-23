@@ -1,9 +1,7 @@
 ---
 category: GOV, CORE
 slug: dual-use
-summary: Technologies developed for civilian purposes that can also be repurposed
-  for military or malicious applications, highlighting ethical considerations in their
-  development and regulation.
+summary: Technologies developed for civilian purposes that can also be repurposed for military or malicious applications, highlighting ethical considerations in their development and regulation.
 title: Dual Use
 ---
 

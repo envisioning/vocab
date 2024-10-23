@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: learnability
-summary: Capacity of an algorithm or model to effectively learn from data, often measured
-  by how well it can generalize from training data to unseen data.
+summary: Capacity of an algorithm or model to effectively learn from data, often measured by how well it can generalize from training data to unseen data.
 title: Learnability
 ---
 

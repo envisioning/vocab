@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: inference-time-reasoning
-summary: Process by which a trained AI model applies learned patterns to new data
-  to make decisions or predictions during its operational phase.
+summary: Process by which a trained AI model applies learned patterns to new data to make decisions or predictions during its operational phase.
 title: Inference-Time Reasoning
 ---
 

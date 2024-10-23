@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: recursive-self-improvement
-summary: Process by which an AI system iteratively improves itself, enhancing its
-  intelligence and capabilities without human intervention.
+summary: Process by which an AI system iteratively improves itself, enhancing its intelligence and capabilities without human intervention.
 title: Recursive Self-Improvement
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, BIO
 slug: bci
-summary: Enables direct communication pathways between the brain and external devices,
-  allowing for control of computers or prosthetics with neural activity.
+summary: Enables direct communication pathways between the brain and external devices, allowing for control of computers or prosthetics with neural activity.
 title: BCI (Brain Computer Interface)
 ---
 

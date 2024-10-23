@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: meta-prompt
-summary: AI technique that emphasizes the structural and syntactical framework of
-  prompts to guide models in problem-solving and task execution, prioritizing the
-  'how' of information presentation over the 'what'.
+summary: AI technique that emphasizes the structural and syntactical framework of prompts to guide models in problem-solving and task execution, prioritizing the 'how' of information presentation over the 'what'.
 title: Meta Prompt
 ---
 

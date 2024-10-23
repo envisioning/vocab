@@ -1,9 +1,7 @@
 ---
 category: ARCH, CORE
 slug: comparative-advantage
-summary: Strategic advantage that a particular AI model, system, or approach has over
-  others in performing specific tasks more efficiently or effectively due to unique
-  strengths or capabilities.
+summary: Strategic advantage that a particular AI model, system, or approach has over others in performing specific tasks more efficiently or effectively due to unique strengths or capabilities.
 title: Comparative Advantage
 ---
 

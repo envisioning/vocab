@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: greedy-decoding
-summary: Technique used in ML models, especially in NLP, where the model selects the
-  most likely next item in a sequence at each step.
+summary: Technique used in ML models, especially in NLP, where the model selects the most likely next item in a sequence at each step.
 title: Greedy Decoding
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: causal-ai
-summary: A form of AI that reasons using cause and effect logic to provide interpretable
-  predictions and decisions.
+summary: A form of AI that reasons using cause and effect logic to provide interpretable predictions and decisions.
 title: Causal AI
 ---
 

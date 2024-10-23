@@ -1,8 +1,7 @@
 ---
 category: IMPL, ARCH
 slug: prompt-caching
-summary: Practice of storing previously used prompts and their corresponding AI-generated
-  outputs to improve efficiency and reduce computational costs in AI systems.
+summary: Practice of storing previously used prompts and their corresponding AI-generated outputs to improve efficiency and reduce computational costs in AI systems.
 title: Prompt Caching
 ---
 

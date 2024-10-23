@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: speech-processing
-summary: Technology that enables computers to recognize, interpret, and generate human
-  speech.
+summary: Technology that enables computers to recognize, interpret, and generate human speech.
 title: Speech Processing
 ---
 

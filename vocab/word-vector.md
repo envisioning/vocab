@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: word-vector
-summary: Numerical representations of words that capture their meanings, relationships,
-  and context within a language.
+summary: Numerical representations of words that capture their meanings, relationships, and context within a language.
 title: Word Vector
 ---
 

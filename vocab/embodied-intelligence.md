@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: embodied-intelligence
-summary: Intelligence emerging from the physical interaction of an agent with its
-  environment, emphasizing the importance of a body in learning and cognition.
+summary: Intelligence emerging from the physical interaction of an agent with its environment, emphasizing the importance of a body in learning and cognition.
 title: Embodied Intelligence
 ---
 

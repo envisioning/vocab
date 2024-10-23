@@ -1,9 +1,7 @@
 ---
 category: MATH, DATA
 slug: embedding-space
-summary: Mathematical representation where high-dimensional vectors of data points,
-  such as text, images, or other complex data types, are transformed into a lower-dimensional
-  space that captures their essential properties.
+summary: Mathematical representation where high-dimensional vectors of data points, such as text, images, or other complex data types, are transformed into a lower-dimensional space that captures their essential properties.
 title: Embedding Space
 ---
 

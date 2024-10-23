@@ -1,9 +1,7 @@
 ---
 category: MATH, CORE
 slug: rejection-sampling
-summary: Method used to generate samples from a probability distribution by proposing
-  candidates from a simpler distribution and accepting or rejecting them based on
-  a criterion related to the target distribution.
+summary: Method used to generate samples from a probability distribution by proposing candidates from a simpler distribution and accepting or rejecting them based on a criterion related to the target distribution.
 title: Rejection Sampling
 ---
 

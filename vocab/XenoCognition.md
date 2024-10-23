@@ -1,8 +1,7 @@
 ---
 category: BIO, CORE
 slug: xenocognition
-summary: Exploration of cognition and intelligence in non-human entities, both biological
-  and artificial, to broaden understanding of varied cognitive processes.
+summary: Exploration of cognition and intelligence in non-human entities, both biological and artificial, to broaden understanding of varied cognitive processes.
 title: XenoCognition
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, GOV
 slug: saif
-summary: Set of guidelines and best practices developed by Google to enhance the security
-  of AI systems across various applications.
+summary: Set of guidelines and best practices developed by Google to enhance the security of AI systems across various applications.
 title: SAIF (Secure AI Framework)
 ---
 

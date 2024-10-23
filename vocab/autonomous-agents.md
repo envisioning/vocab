@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: autonomous-agents
-summary: Systems capable of independent action in dynamic, unpredictable environments
-  to achieve designated objectives.
+summary: Systems capable of independent action in dynamic, unpredictable environments to achieve designated objectives.
 title: Autonomous Agents
 ---
 

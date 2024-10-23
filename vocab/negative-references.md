@@ -1,8 +1,7 @@
 ---
 category: GOV, ARCH
 slug: negative-references
-summary: Mechanisms that prevent or mitigate undesirable, biased, or harmful outputs
-  from AI models during text generation, aligned with ethical AI practices.
+summary: Mechanisms that prevent or mitigate undesirable, biased, or harmful outputs from AI models during text generation, aligned with ethical AI practices.
 title: Negative References
 ---
 

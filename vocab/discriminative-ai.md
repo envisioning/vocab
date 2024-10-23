@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: discriminative-ai
-summary: Algorithms that learn the boundary between classes of data, focusing on distinguishing
-  between different outputs given an input.
+summary: Algorithms that learn the boundary between classes of data, focusing on distinguishing between different outputs given an input.
 title: Discriminative AI
 ---
 

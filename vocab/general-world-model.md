@@ -1,9 +1,7 @@
 ---
 category: CORE, ARCH
 slug: general-world-model
-summary: AI systems designed to generate internal representations of the world, enabling
-  them to predict and interact with their environment effectively across a broad range
-  of scenarios.
+summary: AI systems designed to generate internal representations of the world, enabling them to predict and interact with their environment effectively across a broad range of scenarios.
 title: General World Model
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: IMPL, ARCH
 slug: gpu-poor
-summary: Scenario where there is a lack of adequate GPU resources available for computational
-  tasks.
+summary: Scenario where there is a lack of adequate GPU resources available for computational tasks.
 title: GPU-Poor
 ---
 

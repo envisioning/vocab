@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: autoformalization
-summary: Process of automatically converting natural language descriptions or informal
-  mathematical ideas into formal mathematical or logical expressions using AI.
+summary: Process of automatically converting natural language descriptions or informal mathematical ideas into formal mathematical or logical expressions using AI.
 title: Autoformalization
 ---
 

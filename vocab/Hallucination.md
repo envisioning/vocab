@@ -1,8 +1,7 @@
 ---
 category: ARCH, DATA
 slug: hallucination
-summary: Generation of inaccurate, fabricated, or irrelevant output by a model, not
-  grounded in the input data or reality.
+summary: Generation of inaccurate, fabricated, or irrelevant output by a model, not grounded in the input data or reality.
 title: Hallucination
 ---
 

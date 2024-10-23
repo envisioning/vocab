@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: sparsity
-summary: Technique and principle of having models that utilize minimal data representation
-  and processing, typically through zero or near-zero values.
+summary: Technique and principle of having models that utilize minimal data representation and processing, typically through zero or near-zero values.
 title: Sparsity
 ---
 

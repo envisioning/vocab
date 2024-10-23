@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: benchmark
-summary: Standard or set of standards used to measure and compare the performance
-  of algorithms, models, or systems.
+summary: Standard or set of standards used to measure and compare the performance of algorithms, models, or systems.
 title: Benchmark
 ---
 

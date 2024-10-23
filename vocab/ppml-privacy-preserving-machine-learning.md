@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: ppml
-summary: Techniques that protect user data privacy during the machine learning process,
-  without compromising the utility of the models.
+summary: Techniques that protect user data privacy during the machine learning process, without compromising the utility of the models.
 title: PPML (Privacy-Preserving Machine Learning)
 ---
 

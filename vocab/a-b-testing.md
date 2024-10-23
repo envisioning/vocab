@@ -1,8 +1,7 @@
 ---
 category: DATA, MATH
 slug: a-b-testing
-summary: Method used to compare two versions of a variable to determine which one
-  performs better in achieving a specific outcome.
+summary: Method used to compare two versions of a variable to determine which one performs better in achieving a specific outcome.
 title: A-B Testing
 ---
 

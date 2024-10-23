@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: agglomerative-clustering
-summary: A type of hierarchical clustering method in AI used to merge data points
-  into clusters based on similarity measures.
+summary: A type of hierarchical clustering method in AI used to merge data points into clusters based on similarity measures.
 title: Agglomerative Clustering
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: ARCH, IMPL
 slug: chatbot
-summary: Software application designed to simulate conversation with human users,
-  often over the Internet.
+summary: Software application designed to simulate conversation with human users, often over the Internet.
 title: Chatbot
 ---
 

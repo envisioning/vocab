@@ -1,9 +1,7 @@
 ---
 category: MATH, CORE
 slug: convolution
-summary: Mathematical operation used in signal processing and image processing to
-  combine two functions, resulting in a third function that represents how one function
-  modifies the other.
+summary: Mathematical operation used in signal processing and image processing to combine two functions, resulting in a third function that represents how one function modifies the other.
 title: Convolution
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: IMPL, DATA
 slug: federated-analytics
-summary: An approach that uses machine learning algorithms to analyze decentralized
-  data sources while constantly preserving the privacy and security of the data.
+summary: An approach that uses machine learning algorithms to analyze decentralized data sources while constantly preserving the privacy and security of the data.
 title: Federated Analytics
 ---
 

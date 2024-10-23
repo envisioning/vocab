@@ -1,9 +1,7 @@
 ---
 category: MATH, CORE
 slug: thermodynamic-bayesian-inference
-summary: Framework that draws an analogy between thermodynamics and Bayesian probability
-  theory to infer statistical models by treating inference as an energy-minimizing
-  process.
+summary: Framework that draws an analogy between thermodynamics and Bayesian probability theory to infer statistical models by treating inference as an energy-minimizing process.
 title: Thermodynamic Bayesian Inference
 ---
 

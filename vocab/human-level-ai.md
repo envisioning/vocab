@@ -1,8 +1,7 @@
 ---
 category: CORE, BIO
 slug: human-level-ai
-summary: AI systems that can perform any intellectual task with the same proficiency
-  as a human being.
+summary: AI systems that can perform any intellectual task with the same proficiency as a human being.
 title: Human-Level AI
 ---
 

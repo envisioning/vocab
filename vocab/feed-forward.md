@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: feed-forward
-summary: Essential structure of an artificial neural network that directs data or
-  information from the input layer towards the output layer without looping back.
+summary: Essential structure of an artificial neural network that directs data or information from the input layer towards the output layer without looping back.
 title: Feed Forward
 ---
 

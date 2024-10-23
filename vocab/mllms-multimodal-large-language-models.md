@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: mllms
-summary: Advanced AI systems capable of understanding and generating information across
-  different forms of data, such as text, images, and audio.
+summary: Advanced AI systems capable of understanding and generating information across different forms of data, such as text, images, and audio.
 title: MLLMs (Multimodal Large Language Models)
 ---
 

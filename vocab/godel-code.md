@@ -1,8 +1,7 @@
 ---
 category: MATH, CORE
-slug: g-del-code
-summary: Method of encoding mathematical and logical statements as unique natural
-  numbers, introduced by Kurt Gödel as part of his proof of the incompleteness theorems.
+slug: godel-code
+summary: Method of encoding mathematical and logical statements as unique natural numbers, introduced by Kurt Gödel as part of his proof of the incompleteness theorems.
 title: Gödel Code
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: syntactic-templates
-summary: Predefined structures that define the permissible syntax patterns for sentences
-  in natural language processing (NLP) to facilitate parsing and generation tasks.
+summary: Predefined structures that define the permissible syntax patterns for sentences in natural language processing (NLP) to facilitate parsing and generation tasks.
 title: Syntactic Templates
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: multi-token-prediction
-summary: AI technique used in NLP where a model generates multiple output tokens simultaneously,
-  often improving coherence and speed compared to single-token generation methods.
+summary: AI technique used in NLP where a model generates multiple output tokens simultaneously, often improving coherence and speed compared to single-token generation methods.
 title: Multi-Token Prediction
 ---
 

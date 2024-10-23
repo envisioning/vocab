@@ -1,9 +1,7 @@
 ---
 category: CORE, MATH
 slug: svm
-summary: Supervised ML model used primarily for classification and regression tasks,
-  which finds the optimal hyperplane that best separates different classes in the
-  data.
+summary: Supervised ML model used primarily for classification and regression tasks, which finds the optimal hyperplane that best separates different classes in the data.
 title: SVM (Support Vector Machine)
 ---
 

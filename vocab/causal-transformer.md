@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: causal-transformer
-summary: A neural network model that utilizes causality to improve sequence prediction
-  tasks.
+summary: A neural network model that utilizes causality to improve sequence prediction tasks.
 title: Causal Transformer
 ---
 

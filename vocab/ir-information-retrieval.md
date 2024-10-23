@@ -1,8 +1,7 @@
 ---
 category: CORE, DATA
 slug: ir
-summary: Process of obtaining relevant information from a large repository based on
-  user queries.
+summary: Process of obtaining relevant information from a large repository based on user queries.
 title: IR (Information Retrieval)
 ---
 

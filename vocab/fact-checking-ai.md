@@ -1,8 +1,7 @@
 ---
 category: IMPL, CORE
 slug: fact-checking-ai
-summary: An application of AI designed to authenticate and validate the truthfulness
-  of information.
+summary: An application of AI designed to authenticate and validate the truthfulness of information.
 title: Fact-Checking AI
 ---
 

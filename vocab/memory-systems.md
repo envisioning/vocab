@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: memory-systems
-summary: Mechanisms and structures designed to store, manage, and recall information,
-  enabling machines to learn from past experiences and perform complex tasks.
+summary: Mechanisms and structures designed to store, manage, and recall information, enabling machines to learn from past experiences and perform complex tasks.
 title: Memory Systems
 ---
 

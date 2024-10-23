@@ -1,8 +1,7 @@
 ---
 category: CORE, MATH
 slug: regularization
-summary: Technique used in machine learning to reduce model overfitting by adding
-  a penalty to the loss function based on the complexity of the model.
+summary: Technique used in machine learning to reduce model overfitting by adding a penalty to the loss function based on the complexity of the model.
 title: Regularization
 ---
 

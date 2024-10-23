@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: cnn
-summary: Deep learning algorithm that can capture spatial hierarchies in data, particularly
-  useful for image and video recognition tasks.
+summary: Deep learning algorithm that can capture spatial hierarchies in data, particularly useful for image and video recognition tasks.
 title: CNN (Convolutional Neural Network)
 ---
 

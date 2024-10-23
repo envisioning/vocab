@@ -1,9 +1,7 @@
 ---
 category: ARCH, GOV
 slug: god-in-a-box
-summary: AI systems or models that are so powerful and advanced that they could theoretically
-  solve any problem or fulfill any command, but are contained within strict controls
-  to prevent unintended consequences.
+summary: AI systems or models that are so powerful and advanced that they could theoretically solve any problem or fulfill any command, but are contained within strict controls to prevent unintended consequences.
 title: God in a Box
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: generative
-summary: Subset of AI technologies capable of generating new content, ideas, or data
-  that mimic human-like outputs.
+summary: Subset of AI technologies capable of generating new content, ideas, or data that mimic human-like outputs.
 title: Generative
 ---
 

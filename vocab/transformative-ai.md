@@ -1,8 +1,7 @@
 ---
 category: GOV, CORE
 slug: transformative-ai
-summary: AI systems capable of bringing about profound, large-scale changes in society,
-  potentially altering the economy, governance, and even human life itself.
+summary: AI systems capable of bringing about profound, large-scale changes in society, potentially altering the economy, governance, and even human life itself.
 title: Transformative AI
 ---
 

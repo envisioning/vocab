@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: xai
-summary: AI systems designed to provide insights into their behavior and decisions,
-  making them transparent and understandable to humans.
+summary: AI systems designed to provide insights into their behavior and decisions, making them transparent and understandable to humans.
 title: XAI (Explainable AI)
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: CORE, IMPL
 slug: personal-software
-summary: Software that learns and adapts to individual behaviors in order to infer
-  preferences and aid in task execution.
+summary: Software that learns and adapts to individual behaviors in order to infer preferences and aid in task execution.
 title: Personal Software
 ---
 

@@ -1,8 +1,7 @@
 ---
 category: BIO, MATH
 slug: pds
-summary: Tool used to measure the complexity and depth of an individual's psychological
-  experiences and inner life.
+summary: Tool used to measure the complexity and depth of an individual's psychological experiences and inner life.
 title: PDS (Psychological Depth Scale)
 ---
 

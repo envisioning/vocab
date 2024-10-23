@@ -1,9 +1,7 @@
 ---
 category: MATH, DATA
 slug: manifold-learning
-summary: Type of non-linear dimensionality reduction technique used to uncover the
-  underlying structure of high-dimensional data by assuming it lies on a lower-dimensional
-  manifold.
+summary: Type of non-linear dimensionality reduction technique used to uncover the underlying structure of high-dimensional data by assuming it lies on a lower-dimensional manifold.
 title: Manifold Learning
 ---
 

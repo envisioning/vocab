@@ -1,8 +1,7 @@
 ---
 category: GOV, ARCH
 slug: acps
-summary: Guidelines that regulates who or what can view or use resources in a computing
-  environment.
+summary: Guidelines that regulates who or what can view or use resources in a computing environment.
 title: ACPs (Access Control Policies)
 ---
 

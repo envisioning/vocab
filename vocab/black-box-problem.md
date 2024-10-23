@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: black-box-problem
-summary: The difficulty in understanding and interpreting how an AI system, particularly
-  ML models, makes decisions.
+summary: The difficulty in understanding and interpreting how an AI system, particularly ML models, makes decisions.
 title: Black Box Problem
 ---
 

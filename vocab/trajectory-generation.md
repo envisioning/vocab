@@ -1,8 +1,7 @@
 ---
 category: CORE, ARCH
 slug: trajectory-generation
-summary: Computational methods for designing the path that an object or agent should
-  follow to reach a destination efficiently and effectively.
+summary: Computational methods for designing the path that an object or agent should follow to reach a destination efficiently and effectively.
 title: Trajectory Generation
 ---
 

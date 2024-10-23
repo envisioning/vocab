@@ -1,8 +1,7 @@
 ---
 category: ARCH, CORE
 slug: lstm
-summary: Type of recurrent neural network architecture designed to learn long-term
-  dependencies in sequential data.
+summary: Type of recurrent neural network architecture designed to learn long-term dependencies in sequential data.
 title: LSTM (Long Short-Term Memory)
 ---
 

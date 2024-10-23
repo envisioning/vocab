@@ -1,8 +1,7 @@
 ---
 category: IMPL, ARCH
 slug: cli
-summary: Text-based user interface used to interact with software or operating systems
-  through commands, rather than graphical elements.
+summary: Text-based user interface used to interact with software or operating systems through commands, rather than graphical elements.
 title: CLI (Command Line Interface)
 ---
 
