@@ -56,7 +56,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             id: node.id,
             name: node.name,
             outbound: node.children ? node.children.length : 0,
-            inbound: 0,
+            inbound: 0,  // Will be counted in the next step
             summary: node.summary
         });
 
@@ -72,7 +72,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         }
     });
 
-    // Count inbound connections
+    // Count inbound connections - Fixed version
     links.forEach(link => {
         const targetNode = nodes.find(n => n.id === link.target);
         if (targetNode) {
@@ -105,16 +105,19 @@ d3.json("ai_terms_hierarchy.json").then(data => {
     // Define the stroke width scale with a smaller range
     const strokeWidthScale = d3.scaleLinear()
         .domain([minSimilarity, maxSimilarity])
-        .range([1, 5]); // Adjust the range as needed
+        .range([0.2, 0.5]); // Adjusted to much thinner lines
 
-    // Create the force simulation
+    // Create the force simulation with adjusted parameters
     const simulation = d3.forceSimulation(nodes)
         .force("link", d3.forceLink(links).id(d => d.id).distance(200))
-        .force("charge", d3.forceManyBody().strength(-500))
+        .force("charge", d3.forceManyBody().strength(-1000)) // Increased repulsion
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + 20))
-        .force("attract", attractTowardCenter(0.1))
-        .stop(); // Stop the simulation immediately
+        .force("attract", attractTowardCenter(0.2)) // Increased center attraction
+        .alphaDecay(0.1) // Increased decay rate (default is 0.0228)
+        .alphaMin(0.001) // Increased minimum alpha (default is 0.001)
+        .velocityDecay(0.6) // Increased velocity decay (default is 0.4)
+        .stop();
 
     // Function to attract nodes toward the center
     function attractTowardCenter(strength) {
@@ -134,7 +137,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         .append("line")
         .attr("stroke", "#ccc")
         .attr("stroke-opacity", 0.15)  // Reduced opacity from 0.3 to 0.15
-        .attr("stroke-width", d => Math.min(1, strokeWidthScale(d.similarity))); // Ensure maximum width is 1px
+        .attr("stroke-width", d => Math.min(0.5, strokeWidthScale(d.similarity))); // Ensure maximum width is 0.5px
 
     // Create a tooltip div
     const tooltip = d3.select("body").append("div")
@@ -239,8 +242,8 @@ d3.json("ai_terms_hierarchy.json").then(data => {
                 (l.source.id === d.id || l.target.id === d.id) ? 0.7 : 0.3
             )
             .attr("stroke", l => {
-                if (l.source.id === d.id) return "#4CAF50";  // Green for outgoing
-                if (l.target.id === d.id) return "#FFA500";  // Orange for incoming
+                if (l.source.id === d.id) return "#333";  
+                if (l.target.id === d.id) return "#444";  
                 return "#ccc";  // Gray for unrelated
             });
     })
@@ -327,7 +330,7 @@ d3.json("ai_terms_hierarchy.json").then(data => {
             // Reset link properties
             link.transition()
                 .duration(750)
-                .attr("stroke", d => d.source.id < d.target.id ? "#4CAF50" : "#FFA500")
+                .attr("stroke", "#ccc") // Changed from green/orange to light gray
                 .attr("stroke-opacity", 0)
                 .attr("stroke-width", d => strokeWidthScale(d.similarity))
                 .attr("x1", d => d.source.x)
@@ -362,8 +365,10 @@ d3.json("ai_terms_hierarchy.json").then(data => {
     function formatTooltipContent(d, connectedNodes = null) {
         let content = `<strong style="font-size: larger;">${d.name}</strong><br><br>`;
         content += `${d.summary}<br><br>`;
-        content += `<strong>Inbound:</strong> ${d.inbound}<br>`;
-        content += `<strong>Outbound:</strong> ${d.outbound}<br>`;
+        
+        // Calculate total connections based on either the connectedNodes set or the larger of inbound/outbound
+        const totalConnections = connectedNodes ? connectedNodes.size : Math.max(d.inbound, d.outbound);
+        content += `<strong>Total Connections:</strong> ${totalConnections}<br>`;
         
         // Add connected nodes if provided (for click interactions)
         if (connectedNodes) {
@@ -371,7 +376,9 @@ d3.json("ai_terms_hierarchy.json").then(data => {
                 const node = nodes.find(n => n.id === nodeId);
                 return node ? node.name : nodeId;
             });
-            content += `<strong>Connected to:</strong><br>${connections.join('<br>')}`;
+            if (connections.length > 0) {
+                content += `<br><strong>Connected to:</strong><br>${connections.join('<br>')}`;
+            }
         }
         
         return content;
@@ -421,9 +428,9 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         node.attr("opacity", n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.1);
 
         link
-            .attr("stroke", l => l.source.id === d.id ? "#4CAF50" : "#ccc")
+            .attr("stroke", l => (l.source.id === d.id || l.target.id === d.id) ? "#333" : "#ccc") // Changed to dark gray
             .attr("stroke-opacity", l => {
-                if (l.source.id === d.id) return 0.7; // Only show outgoing connections
+                if (l.source.id === d.id || l.target.id === d.id) return 0.7; // Show connected lines
                 return 0.15; // Keep other lines at default low opacity
             });
 
@@ -509,22 +516,41 @@ d3.json("ai_terms_hierarchy.json").then(data => {
     // Function to apply the active filter to nodes and links
     function applyFilter() {
         if (activeFilter) {
-            // Show nodes that include the active category
-            node.style("display", d => nodeDetailsMap.get(d.id).categories.includes(activeFilter) ? null : "none");
-            
-            // Show labels corresponding to visible nodes
-            label.style("display", d => nodeDetailsMap.get(d.id).categories.includes(activeFilter) ? null : "none");
-            
-            // Show links where either source or target has the active category
-            link.style("display", l => 
-                nodeDetailsMap.get(l.source.id).categories.includes(activeFilter) || 
-                nodeDetailsMap.get(l.target.id).categories.includes(activeFilter) ? null : "none"
+            // Filter nodes and links
+            const visibleNodes = nodes.filter(d => 
+                nodeDetailsMap.get(d.id).categories.includes(activeFilter)
             );
+            const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
+            
+            const visibleLinks = links.filter(l => 
+                visibleNodeIds.has(l.source.id) && visibleNodeIds.has(l.target.id)
+            );
+
+            // Update visibility
+            node.style("display", d => visibleNodeIds.has(d.id) ? null : "none");
+            label.style("display", d => visibleNodeIds.has(d.id) ? null : "none");
+            link.style("display", l => 
+                visibleNodeIds.has(l.source.id) && visibleNodeIds.has(l.target.id) ? null : "none"
+            );
+
+            // Restart simulation with only visible nodes and links
+            simulation.nodes(visibleNodes);
+            simulation.force("link").links(visibleLinks);
+            simulation
+                .alpha(0.3) // Reduced initial alpha (was 1)
+                .restart();
         } else {
             // Reset display if no filter is active
             node.style("display", null);
             label.style("display", null);
             link.style("display", null);
+
+            // Restart simulation with all nodes and links
+            simulation.nodes(nodes);
+            simulation.force("link").links(links);
+            simulation
+                .alpha(0.3) // Reduced initial alpha (was 1)
+                .restart();
         }
     }
 
