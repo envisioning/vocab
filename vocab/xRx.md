@@ -1,7 +1,15 @@
 ---
+category: ARCH, IMPL
+slug: xrx
+summary: Flexible framework designed for building multimodal AI-powered systems that
+  interact with users through a variety of inputs (like text, voice, and more) and
+  outputs, while incorporating advanced reasoning capabilities. The name xRx stands
+  for "any input (x), reasoning (R), any output (x)," emphasizing its versatility
+  in handling different interaction modalities and integrating reasoning across complex
+  domains.
 title: xRx
-summary: Flexible framework designed for building multimodal AI-powered systems that interact with users through a variety of inputs (like text, voice, and more) and outputs, while incorporating advanced reasoning capabilities. The name xRx stands for "any input (x), reasoning (R), any output (x)," emphasizing its versatility in handling different interaction modalities and integrating reasoning across complex domains.
 ---
+
 ### Expert-Level Explanation:
 xRx enables developers to create AI systems capable of seamless real-time interaction across multiple forms of communication—text, voice, audio, and visual elements. It integrates components like speech-to-text (STT), text-to-speech (TTS), and reasoning agents, which allow the system to convert inputs (e.g., voice commands) into actionable information, process it with sophisticated reasoning algorithms, and produce multimodal outputs (e.g., a spoken response or a text summary). A key feature of xRx is its ability to handle low-latency inference, essential for natural, real-time AI interactions, making it particularly suited for applications like AI assistants, customer service bots, and adaptive learning environments.
 

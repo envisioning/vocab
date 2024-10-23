@@ -1,6 +1,9 @@
 ---
-title: "Chunking"
-summary: "A concept in cognitive psychology and AI, where information is broken down and grouped into chunks to simplify complex data and optimize memory usage."
+category: CORE, BIO
+slug: chunking
+summary: A concept in cognitive psychology and AI, where information is broken down
+  and grouped into chunks to simplify complex data and optimize memory usage.
+title: Chunking
 ---
 
 Chunking, or unitization, is a cognitive process that human beings and AI systems use to organize and manage large amounts of data or information. It works by splitting up complex data into smaller, more manageable pieces, known as 'chunks'. In AI, it is used to better comprehend and process complex datasets, especially in Natural Language Processing (NLP) and Machine Learning (ML) models. It helps these models understand and replicate human-like behavior more effectively by optimizing how they handle data and resources.

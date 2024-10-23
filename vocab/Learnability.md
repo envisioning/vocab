@@ -1,6 +1,9 @@
 ---
+category: CORE, DATA
+slug: learnability
+summary: Capacity of an algorithm or model to effectively learn from data, often measured
+  by how well it can generalize from training data to unseen data.
 title: Learnability
-summary: Capacity of an algorithm or model to effectively learn from data, often measured by how well it can generalize from training data to unseen data.
 ---
 
 **Expert-level explanation:** Learnability is a core concept in machine learning theory, focusing on how well a machine learning algorithm can infer patterns from a limited set of training examples and perform well on new, unseen data. It is closely tied to generalization and is often studied under frameworks like the Probably Approximately Correct (PAC) learning model. Learnability evaluates whether a hypothesis class (set of possible models) can be learned efficiently, given finite data, and how complexity and noise in the data affect the learning process. It also considers the trade-offs between sample size, computational complexity, and error rates to determine the feasibility of learning in various settings. Factors such as overfitting, underfitting, and model complexity are integral to understanding the learnability of a system.

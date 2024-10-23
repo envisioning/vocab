@@ -1,7 +1,11 @@
 ---
+category: DATA, CORE
+slug: supervision
+summary: Use of labeled data to train ML models, guiding the learning process by providing
+  input-output pairs.
 title: Supervision
-summary: Use of labeled data to train ML models, guiding the learning process by providing input-output pairs.
 ---
+
 Detailed Explanation
 Supervision in the context of AI, particularly in supervised learning, involves the training of algorithms using a dataset that contains both input data and the corresponding correct output. The model learns to map inputs to outputs through iterative training, adjusting its parameters to minimize the difference between its predictions and the actual outputs. This method is fundamental in tasks such as classification and regression, where the model must predict discrete labels or continuous values. Supervised learning requires a large, labeled dataset and is used in applications ranging from image recognition to natural language processing and medical diagnostics, where accuracy and reliability are critical.
 

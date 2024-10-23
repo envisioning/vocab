@@ -16,6 +16,7 @@ def parse_markdown_files(directory):
     successful_files = 0
     failed_files = 0
     failed_filenames = []
+    duplicate_terms = []
 
     for filename in os.listdir(directory):
         if filename.lower().endswith(".md"):
@@ -25,22 +26,44 @@ def parse_markdown_files(directory):
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
-                    # Look for content between --- markers (frontmatter)
                     frontmatter_match = re.search(r'---\s*(.*?)\s*---', content, re.MULTILINE | re.DOTALL)
                     if frontmatter_match:
                         frontmatter = frontmatter_match.group(1)
                         title_match = re.search(r'title:\s*"?([^"\n]+)"?', frontmatter)
                         summary_match = re.search(r'summary:\s*"?([^"]+)"?', frontmatter)
+                        categories_match = re.search(r'category:\s*([^\n]+)', frontmatter)
+                        slug_match = re.search(r'slug:\s*"?([^"\n]+)"?', frontmatter)
+                        
+                        # Get the main content after frontmatter
+                        main_content = content.split('---', 2)[-1].strip()
                         
                         if title_match and summary_match:
                             title = title_match.group(1).strip()
                             summary = summary_match.group(1).strip()
                             summary = re.sub(r'\s+', ' ', summary)
-                            terms[title] = summary
+                            
+                            categories = []
+                            if categories_match:
+                                categories = [cat.strip() for cat in categories_match.group(1).split(',')]
+                            
+                            slug = slug_match.group(1).strip() if slug_match else None
+                            
+                            if title in terms:
+                                duplicate_terms.append((title, filename))
+                                logging.warning(f"Duplicate term found: {title} in {filename}")
+                            
+                            # Store all metadata and content
+                            terms[title] = {
+                                'summary': summary,
+                                'categories': categories,
+                                'slug': slug,
+                                'content': main_content  # Store the main content
+                            }
+                            
                             logging.info(f"Successfully parsed {filename}")
                             successful_files += 1
                         else:
-                            logging.warning(f"Failed to extract title or summary from {filename}")
+                            logging.warning(f"Failed to extract required fields from {filename}")
                             failed_files += 1
                             failed_filenames.append(filename)
                     else:
@@ -55,14 +78,22 @@ def parse_markdown_files(directory):
     logging.info(f"Total files processed: {total_files}")
     logging.info(f"Successfully parsed files: {successful_files}")
     logging.info(f"Failed files: {failed_files}")
-    if failed_filenames:  # Only log failed files if there are any
+    if failed_filenames:
         logging.info(f"Failed files list: {', '.join(failed_filenames)}")
     logging.info(f"Total terms parsed: {len(terms)}")
+    if duplicate_terms:
+        logging.info(f"Duplicate terms found: {duplicate_terms}")
     return terms
 
 def calculate_similarity(terms):
+    # Combine title, summary, and main content for each term
+    combined_texts = [
+        f"{term} {term_data['summary']} {term_data['content']}" 
+        for term, term_data in terms.items()
+    ]
+    
     vectorizer = TfidfVectorizer()
-    tfidf_matrix = vectorizer.fit_transform(terms.values())
+    tfidf_matrix = vectorizer.fit_transform(combined_texts)
     return cosine_similarity(tfidf_matrix)
 
 def create_graph(terms, similarity_matrix, threshold=0.4):
@@ -126,13 +157,15 @@ def assign_ids(hierarchy):
     
     return id_mapping
 
-def create_polyhierarchy(hierarchy, id_mapping, terms):  # Added terms parameter
+def create_polyhierarchy(hierarchy, id_mapping, terms):
     polyhierarchy = []
     for term, connections in hierarchy.items():
         node = {
             "id": id_mapping[term],
             "name": term,
-            "summary": terms[term],  # Add summary from terms dictionary
+            "summary": terms[term]['summary'],
+            "categories": terms[term]['categories'],
+            "slug": terms[term]['slug'],
             "children": [
                 {
                     "id": id_mapping[child],
@@ -148,7 +181,9 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):  # Added terms parameter
             node = {
                 "id": id_mapping[term],
                 "name": term,
-                "summary": terms[term],  # Add summary for leaf nodes
+                "summary": terms[term]['summary'],
+                "categories": terms[term]['categories'],
+                "slug": terms[term]['slug'],
                 "children": []
             }
             polyhierarchy.append(node)
@@ -176,7 +211,7 @@ def main(directory):
     id_mapping = assign_ids(hierarchy)
     
     logging.info("Creating polyhierarchy")
-    polyhierarchy = create_polyhierarchy(hierarchy, id_mapping, terms)  # Pass terms to the function
+    polyhierarchy = create_polyhierarchy(hierarchy, id_mapping, terms)
     
     output_file = 'ai_terms_hierarchy.json'
     logging.info(f"Writing results to {output_file}")

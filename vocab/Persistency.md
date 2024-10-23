@@ -1,6 +1,9 @@
 ---
-title: "Persistency"
-summary: "Persistent storage and retrieval of generated data and learned behaviors to maintain a model's performance and ensure its utility over time."
+category: ARCH, IMPL
+slug: persistency
+summary: Persistent storage and retrieval of generated data and learned behaviors
+  to maintain a model's performance and ensure its utility over time.
+title: Persistency
 ---
 
 Persistency has particular importance in AI when it comes to managing large data sets, model retraining and achieving balance between system resources and overall performance. AI applications often generate vast amounts of data. To use this data effectively for improved future performance and decision-making, such information must be stored persistently and accessed when needed. This not only establishes a consistent basis for machine learning but also ensures the longevity of the learned behaviors and responses. Essentially, persistency in AI is more about maintaining a continuous learning and evolving trajectory rather than starting from scratch each time.

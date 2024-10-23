@@ -2,6 +2,8 @@ import requests
 import argparse
 import logging
 from config import API_KEY
+import re
+from unidecode import unidecode  # You'll need to pip install unidecode
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -30,7 +32,7 @@ def get_definition_from_gpt(term):
             {"role": "user", "content": "Write for an AI expert audience, and always assume the term is related to AI."},
             {"role": "user", "content": "Acronyms should be like this: 'ML (Machine Learning)' "},
             {"role": "user", "content": "Always call Artificial Intelligence as AI and Machine Learning as ML."},
-            {"role": "user", "content": "You will return the following markdown format using FrontMatter and rest in body. Make sure the summary does not include the term in the beginning. Follow exactly this structure (starting with ---):"},
+            {"role": "user", "content": "You will return the following markdown format using FrontMatter and rest in body. Make sure the summary does not include the term in the beginning. Follow exactly this structure. The file should start with ---"},
             {"role": "user", "content": "---"},
             {"role": "user", "content": "title: ML (Machine Learning)"},
             {"role": "user", "content": "summary: Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one."},
@@ -53,6 +55,16 @@ def get_definition_from_gpt(term):
         logging.error(f"Error fetching definition for {term}: {e}")
         return None
 
+def slugify(text):
+    """Convert text to URL-friendly slug."""
+    # Convert to lowercase and replace accented characters
+    text = unidecode(text).lower()
+    # Replace any non-alphanumeric character with a hyphen
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    # Remove leading/trailing hyphens
+    text = text.strip('-')
+    return text
+
 def main():
     parser = argparse.ArgumentParser(description='Fetch AI term definitions from CustomGPT.')
     parser.add_argument('term', type=str, help='The AI term to define')
@@ -63,11 +75,32 @@ def main():
     
     definition = get_definition_from_gpt(term)
     if definition:
-        filename = f"terms/{term}.md"
-        logging.info(f"Writing definition to file: {filename}")
-        with open(filename, "w") as file:
-            file.write(f"{term}\n\n{definition}")
-        logging.info(f"Definition for {term} successfully saved to {filename}")
+        # Extract title from the frontmatter
+        title = None
+        if '---' in definition:
+            parts = definition.split('---', 2)
+            if len(parts) >= 2:
+                # Look for title in metadata
+                for line in parts[1].split('\n'):
+                    if line.startswith('title:'):
+                        title = line.replace('title:', '').strip()
+                        break
+        
+        if title:
+            # Create slugified filename from the full title
+            slug = slugify(title)
+            filename = f"terms/{slug}.md"
+            
+            # Add slug to the metadata section with proper spacing
+            metadata = parts[1].strip()
+            definition = f"---\n{metadata}\nslug: {slug}\n---{parts[2]}"
+        
+            logging.info(f"Writing definition to file: {filename}")
+            with open(filename, "w") as file:
+                file.write(definition)
+            logging.info(f"Definition for {term} successfully saved to {filename}")
+        else:
+            logging.error("Could not find title in API response")
     else:
         logging.warning(f"Skipping {term}, no definition found.")
 

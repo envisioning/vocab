@@ -1,7 +1,12 @@
 ---
+category: CORE, MATH
+slug: q-learning
+summary: Model-free reinforcement learning algorithm that seeks to learn the value
+  of actions in a given state, enabling an agent to maximize cumulative reward over
+  time.
 title: Q-Learning
-summary: Model-free reinforcement learning algorithm that seeks to learn the value of actions in a given state, enabling an agent to maximize cumulative reward over time.
 ---
+
 **Detailed Explanation:**  
 Q-learning works by iteratively updating an action-value function, known as the Q-function, which estimates the expected utility (or reward) of taking a particular action in a specific state. The core idea is that the agent interacts with the environment by taking actions and receiving feedback in the form of rewards, which it uses to refine its Q-values. This process allows the agent to learn an optimal policy, even in environments where the model (i.e., the transition probabilities) is unknown. Q-learning is "off-policy," meaning it can learn from actions outside the current policy, making it robust for applications such as game playing, robotics, and navigation.
 

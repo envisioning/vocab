@@ -1,6 +1,8 @@
 ---
-title: "EEG-to-Text"
-summary: "A method to transcribe brainwaves into readable text using AI."
+category: CORE, DATA
+slug: eeg-to-text
+summary: A method to transcribe brainwaves into readable text using AI.
+title: EEG-to-Text
 ---
 
 EEG-to-text is an advanced application of Artificial Intelligence (AI) and Machine Learning (ML) that involves transcribing electrical brain activity, specifically electroencephalogram (EEG) readings, directly into text. This cutting-edge technology works by using ML algorithms to analyze and interpret patterns in EEG data, then convert these patterns into corresponding text. The goal of EEG-to-text technology is to help augment human-computer interaction, with particularly important implications in assistive technologies for individuals with neurological disorders or speech and mobility impairments.

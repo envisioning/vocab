@@ -1,7 +1,12 @@
 ---
+category: MATH, CORE
+slug: convolution
+summary: Mathematical operation used in signal processing and image processing to
+  combine two functions, resulting in a third function that represents how one function
+  modifies the other.
 title: Convolution
-summary: Mathematical operation used in signal processing and image processing to combine two functions, resulting in a third function that represents how one function modifies the other.
 ---
+
 Detailed Explanation:
 In the context of AI and deep learning, convolution refers to the process of applying a convolutional filter (or kernel) to an input, such as an image, to produce an output feature map. This operation is fundamental in convolutional neural networks (CNNs), where it allows the network to detect and learn hierarchical patterns and features from raw input data. By sliding the filter across the input and performing element-wise multiplications and summations, convolution captures local dependencies and spatial hierarchies in data, which is crucial for tasks like image recognition, object detection, and other computer vision applications. The process reduces the dimensionality of the data while preserving important spatial relationships, making it more computationally efficient and enabling deeper network architectures.
 

@@ -1,7 +1,10 @@
 ---
-title: Translational
+category: IMPL, CORE
+slug: translational
 summary: Process or approach of converting scientific research into practical applications.
+title: Translational
 ---
+
 The translational approach in AI involves taking theoretical research or innovative technologies developed in laboratories and academia and adapting them into real-world applications that can be used in industry, healthcare, education, and more. This process is crucial for bridging the gap between pioneering scientific discoveries and their practical, scalable implementations. It often involves multidisciplinary teams including researchers, engineers, industry experts, and sometimes policymakers, to ensure that the solutions are not only technically viable but also socially and economically feasible.
 
 Historical Overview: The concept of "translational" research has its roots in medicine and biology, where it referred to translating clinical findings into treatment strategies. Over the past few decades, particularly since the early 2000s, this concept has been increasingly applied within the field of artificial intelligence to emphasize the importance of moving from theoretical AI models to practical applications.

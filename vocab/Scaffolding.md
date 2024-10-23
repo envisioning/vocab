@@ -1,7 +1,11 @@
 ---
+category: CORE, ARCH
+slug: scaffolding
+summary: Method of gradually building up the complexity of tasks or learning environments
+  to help an AI system develop more sophisticated capabilities over time.
 title: Scaffolding
-summary: Method of gradually building up the complexity of tasks or learning environments to help an AI system develop more sophisticated capabilities over time.
 ---
+
 Detailed Explanation:
 In AI, scaffolding is a training technique that incrementally increases the complexity of the tasks presented to an AI model. This approach allows the AI to first master simpler tasks before progressing to more challenging ones, mimicking the way humans learn. By doing so, scaffolding helps to ensure a solid foundational understanding and enhances the model's ability to generalize knowledge to more complex situations. It is particularly useful in reinforcement learning and developmental robotics, where the AI interacts with dynamic environments. Through structured stages, the AI can develop robust decision-making skills and adaptability.
 

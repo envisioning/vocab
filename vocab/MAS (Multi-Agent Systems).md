@@ -1,9 +1,0 @@
----
-title: MAS (Multi-Agent Systems)
-summary: Systems in which multiple autonomous agents interact with each other within a shared environment to achieve individual or collective goals.
----
-Detailed Explanation: Multi-Agent Systems (MAS) consist of multiple interacting intelligent agents, which can be either software-based or robotic entities. These agents operate autonomously, possess varying degrees of intelligence, and can collaborate, compete, or coordinate their actions to achieve objectives. MAS are employed in complex problem-solving environments such as distributed control systems, traffic management, robotics, and simulations of social systems. The key challenge in MAS is designing protocols for communication, cooperation, negotiation, and conflict resolution among agents. The decentralized nature of MAS makes them highly scalable and robust, capable of handling dynamic and unpredictable environments by distributing tasks and responsibilities among various agents.
-
-Historical Overview: The concept of Multi-Agent Systems emerged in the late 1980s and early 1990s, as researchers began to explore distributed artificial intelligence (DAI). The term gained significant traction in the mid-1990s with advancements in computational power and networked systems, which allowed for more practical implementations and studies of MAS in various domains.
-
-Key Contributors: Early influential figures in the development of MAS include Victor Lesser, who significantly contributed to the foundations of distributed AI and multi-agent coordination, and Michael Wooldridge, known for his work on the theoretical aspects of MAS and agent communication. Their contributions, along with many others, have shaped the theoretical and practical applications of MAS in modern AI.

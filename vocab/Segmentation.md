@@ -1,6 +1,9 @@
 ---
-title: "Segmentation"
-summary: "Process in AI that subdivides an image or dataset into multiple parts to simplify and/or change the perspective of comprehension."
+category: DATA, CORE
+slug: segmentation
+summary: Process in AI that subdivides an image or dataset into multiple parts to
+  simplify and/or change the perspective of comprehension.
+title: Segmentation
 ---
 
 Segmentation in the context of Artificial Intelligence (AI) and Machine Learning (ML) refers to a process by which an image or a dataset is divided into multiple segments, or sets. This process aids in pattern recognition, object detection, image recognition, and other ML tasks, as it can dramatically simplify or change the understanding of the image or dataset. For instance, in the field of Computer Vision, image segmentation helps to identify and distinguish different objects in an image by dividing the image into segments, where each segment consists of a set of pixels sharing certain characteristics.

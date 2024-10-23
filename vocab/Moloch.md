@@ -1,7 +1,11 @@
 ---
+category: GOV
+slug: moloch
+summary: Metaphorical force or systemic dynamic that leads groups or individuals to
+  pursue short-term goals at the expense of long-term well-being or optimal outcomes.
 title: Moloch
-summary: Metaphorical force or systemic dynamic that leads groups or individuals to pursue short-term goals at the expense of long-term well-being or optimal outcomes.
 ---
+
 ### **Expert Explanation:**
 In AI and rationalist circles, "Moloch" symbolizes destructive coordination failures—scenarios where competing entities, driven by self-interest or competition, make choices that collectively lead to negative or suboptimal outcomes, even when all participants are aware of the harm. This concept draws heavily on game theory, illustrating how misaligned incentives between groups or individuals can lead to catastrophic results. In AI safety and alignment discussions, Moloch represents the potential dangers of poorly aligned artificial intelligence systems that could exploit weaknesses in human coordination, leading to outcomes that harm humanity, such as an arms race in AI development. It's used to highlight the importance of addressing global coordination issues to prevent existential risks.
 

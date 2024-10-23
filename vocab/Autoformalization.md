@@ -1,7 +1,11 @@
 ---
+category: CORE, IMPL
+slug: autoformalization
+summary: Process of automatically converting natural language descriptions or informal
+  mathematical ideas into formal mathematical or logical expressions using AI.
 title: Autoformalization
-summary: Process of automatically converting natural language descriptions or informal mathematical ideas into formal mathematical or logical expressions using AI.
 ---
+
 **Expert-Level Explanation**:  
 Autoformalization leverages natural language processing (NLP) and symbolic reasoning to interpret informal descriptions—such as those found in mathematical proofs or legal text—and translate them into rigorously formal statements. This process typically involves mapping natural language semantics onto formal systems, such as predicate logic, type theory, or formal verification frameworks. A key challenge is the ambiguity and imprecision in natural language, which requires sophisticated models that can understand context, infer meaning, and correctly formalize assumptions and definitions. Autoformalization has wide applications in automated theorem proving, knowledge representation, and formal methods in software verification, where rigor and precision are critical.
 

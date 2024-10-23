@@ -1,6 +1,9 @@
 ---
-title: "Valence"
-summary: "Emotional value associated with a particular stimulus, often used in AI to fine-tune emotional processing."
+category: CORE, DATA
+slug: valence
+summary: Emotional value associated with a particular stimulus, often used in AI to
+  fine-tune emotional processing.
+title: Valence
 ---
 
 Valence in the context of AI is typically related to emotion AI or affective computing. It refers to the emotional value associated with a particular stimulus and usually ranges between positive (attracting) and negative (repelling) conditions. Valence is critical in the AI realm for fine-tuning systems that mimic, interpret, or respond to human emotions. It's widely used in fields such as sentiment analysis, emotion detection, and human-robot interaction. A system capable of evaluating valence can measure and respond to user emotions more effectively, thereby enhancing the user experience and making the interaction more natural and meaningful.

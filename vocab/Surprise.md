@@ -1,6 +1,8 @@
 ---
-title: "Surprise"
-summary: "Measuring the degree of unexpectedness or novelty in AI systems."
+category: CORE, MATH
+slug: surprise
+summary: Measuring the degree of unexpectedness or novelty in AI systems.
+title: Surprise
 ---
 
 Surprise in AI refers to measuring the degree of unexpectedness or novelty in the outcomes produced by an AI system. It is a subfield of AI that involves determining how far off the actual predictions or results are from what the AI system initially expected. This concept is particularly useful in domains like anomaly detection where identifying significant deviations from the norm is crucial. It also has applications in reinforcement learning where an AI agent leverages surprise to discover new, potentially rewarding strategies.

@@ -1,6 +1,9 @@
 ---
-title: "Trigrams"
-summary: "Specific type of n-gram where n is 3, commonly used in language modeling and predicting the next item in NLP."
+category: DATA, CORE
+slug: trigrams
+summary: Specific type of n-gram where n is 3, commonly used in language modeling
+  and predicting the next item in NLP.
+title: Trigrams
 ---
 
 Trigrams are a crucial tool in Natural Language Processing (NLP), a sector of AI that deals with the interaction between computers and human language. In a trigram, a sequence of three items is taken from a given sample of text or speech. In the context of NLP, these 'items' are typically words, although they could also be letters, syllables, or other linguistic units, depending on the specific problem at hand. The prime usage of trigrams is for predicting the upcoming word in a sentence, which is crucial for language modeling, machine translation, spell check, and speech recognition.

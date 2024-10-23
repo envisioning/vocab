@@ -1,11 +1,13 @@
 ---
-title: Log-Likelihood
-summary: Measure used in statistical models to quantify how well a model predicts a given set of observations, expressed as the logarithm of the likelihood function.
+category: MATH, DATA
+slug: log-likelihood
+summary: Logarithm of the likelihood function, used in statistical models to measure
+  how well a model explains a given set of data.
+title: Log Likelihood
 ---
-In statistical modeling and machine learning, the log-likelihood function is crucial for parameter estimation and model evaluation. It transforms the product of probabilities (which can be very small and numerically unstable) into a sum, making computations more tractable. Maximizing the log-likelihood helps find the parameter values that make the observed data most probable, which is a foundational method in Maximum Likelihood Estimation (MLE). This concept is widely used in various fields, including econometrics, bioinformatics, and natural language processing, due to its robustness and efficiency in handling large datasets.
 
-Historical Overview:
-The concept of likelihood was introduced by Ronald A. Fisher in 1921, laying the groundwork for modern statistical inference. The use of log-likelihood emerged as a natural extension to simplify computations and has been integral to statistical practices since the mid-20th century, particularly gaining prominence with the advent of computational statistics and machine learning algorithms.
+**Expert Explanation:** Log likelihood is central in maximum likelihood estimation (MLE), where it transforms the product of probabilities into a sum (via logarithm), simplifying the optimization of complex models. Given a probabilistic model and observed data, the likelihood represents the probability of the data given the model's parameters. Taking the log of this function improves numerical stability and makes it easier to differentiate, thus facilitating parameter estimation through gradient-based methods. Log likelihood is crucial in many AI tasks, such as training probabilistic models (e.g., in Gaussian Mixture Models or Hidden Markov Models) or learning weights in neural networks (e.g., in softmax classifiers), where maximizing the log likelihood helps find the best-fit model parameters.
 
-Key Contributors:
-Ronald A. Fisher is the most significant figure associated with the development of likelihood theory. His pioneering work in the early 20th century established the foundation for modern statistical methods. Subsequent contributions by statisticians and mathematicians such as Jerzy Neyman and Egon Pearson further developed the theoretical underpinnings and practical applications of likelihood and log-likelihood in statistical inference.
+**Historical Overview:** The concept of likelihood was introduced by Ronald Fisher in 1921 as part of his foundational work in statistics. Log likelihood gained prominence as computational methods advanced, particularly during the 1960s and 1970s, with the rise of statistical computing and the increased use of MLE.
+
+**Key Contributors:** Ronald A. Fisher, a pioneer in modern statistics, introduced the likelihood function, which laid the foundation for log likelihood's later widespread use. The development of computational techniques, such as gradient descent and optimization algorithms by figures like John von Neumann and others, further enhanced the practical application of log likelihood in statistical modeling and AI.

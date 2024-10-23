@@ -1,7 +1,11 @@
 ---
+category: ARCH, IMPL
+slug: streaming
+summary: Continuous generation and delivery of text in real-time as the model processes
+  input sequentially.
 title: Streaming
-summary: Continuous generation and delivery of text in real-time as the model processes input sequentially.
 ---
+
 Expert-level explanation:
 Streaming in the GPT context involves the model generating text outputs token-by-token in a sequential manner, allowing for real-time or near-real-time interaction. This approach is essential for applications requiring immediate feedback, such as conversational agents, live coding assistants, or interactive storytelling. Unlike batch processing, where the entire input is processed before generating output, streaming allows for partial input to be used, making the system responsive and adaptive to ongoing input changes. It optimizes computational resources by reducing latency and is particularly valuable in user-facing applications where delay can impact user experience.
 

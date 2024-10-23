@@ -1,7 +1,11 @@
 ---
+category: CORE, MATH
+slug: perplexity
+summary: Measure used in language modeling to evaluate how well a model predicts a
+  sample of text, quantifying the model's uncertainty in its predictions.
 title: Perplexity
-summary: Measure used in language modeling to evaluate how well a model predicts a sample of text, quantifying the model's uncertainty in its predictions.
 ---
+
 In the context of language modeling, perplexity is essentially a measurement of how "surprised" a model is by a given sequence of words. It is calculated as the exponential of the average negative log-likelihood of a sequence of words, given the model. Lower perplexity indicates that the model is more confident in its predictions, suggesting better performance. This metric is particularly useful in comparing different models or tuning models for optimal performance in tasks like speech recognition, machine translation, and other natural language processing (NLP) applications. Perplexity serves not only as a benchmark for model evaluation but also as a guiding metric in the development of more efficient and accurate language models.
 
 Historical Overview:

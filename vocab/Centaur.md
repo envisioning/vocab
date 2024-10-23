@@ -1,7 +1,11 @@
 ---
-title: "Centaur"
-summary: "Collaborative system where humans and AI work together, combining human intuition and expertise with AI's computational power and data processing capabilities."
+category: ARCH, DATA
+slug: centaur
+summary: Collaborative system where humans and AI work together, combining human intuition
+  and expertise with AI's computational power and data processing capabilities.
+title: Centaur
 ---
+
 The concept of a centaur in AI embodies the synergy between human cognitive skills and artificial intelligence technologies to achieve superior problem-solving capabilities, decision-making, and innovation. This hybrid approach leverages the strengths of both humans and machines, where AI handles tasks involving data analysis, pattern recognition, and computational speed, while humans contribute with strategic thinking, creativity, and ethical considerations. Centaur systems are particularly prevalent in fields such as chess, medical diagnostics, and financial analysis, demonstrating that the collaboration between human intuition and AI can outperform either humans or AI working independently.
 
 Historical overview: The term "centaur" gained prominence in the context of AI and human-computer interaction after the success of human-computer teams in chess competitions during the early 2000s. It was notably used to describe the approach where grandmasters teamed up with chess software to compete, highlighting the potential of human-machine collaboration.
@@ -117,4 +121,3 @@ Key Characteristics of Centaur Systems
 - Augment human capabilities: Centaur systems can help humans to perform tasks more efficiently and effectively.
 - Improve decision-making: Centaur systems can provide humans with valuable insights and recommendations.
 - Facilitate collaboration: Centaur systems can facilitate collaboration between humans and computers, enabling them to work together more effectively.
-

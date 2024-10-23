@@ -1,6 +1,9 @@
 ---
-title: "Enrichment"
-summary: "Process of improving raw data quality with supplemental information to enable more accurate and insightful AI models."
+category: DATA, IMPL
+slug: enrichment
+summary: Process of improving raw data quality with supplemental information to enable
+  more accurate and insightful AI models.
+title: Enrichment
 ---
 
 Enrichment, in an AI context, is the practice of augmenting raw data with additional information to boost the quality and depth of insights gained through AI and Machine Learning (ML) models. It involves integrating data from multiple disparate sources, which can enhance the accuracy of predictive models, decision-making systems, and more. It can even unlock new analytical opportunities. For instance, a basic customer database could be enriched with social media activity data, demographic information, or purchasing history, providing a richer profile for targeted marketing campaigns or personalized service offerings.

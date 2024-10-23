@@ -1,7 +1,11 @@
 ---
+category: CORE, DATA
+slug: lost-in-the-middle
+summary: Issue in LLMs where they tend to struggle with retaining and processing information
+  from the middle parts of long input sequences.
 title: Lost-in-the-Middle
-summary: Issue in LLMs where they tend to struggle with retaining and processing information from the middle parts of long input sequences.
 ---
+
 Detailed Explanation: The "Lost-in-the-Middle" phenomenon in large language models describes a degradation in the model's ability to accurately process and generate responses based on information found in the middle of long text sequences. This is due to the inherent limitation of the attention mechanisms in these models, which prioritize the beginning and end of sequences more effectively. This issue can lead to inaccuracies or incomplete responses when dealing with extended context. Addressing this problem is critical for improving the performance of LLMs in tasks requiring deep comprehension and synthesis of long documents, such as summarization, long-form question answering, and document analysis.
 
 Historical Overview: The term "Lost-in-the-Middle" began to surface in discussions around LLMs in the early 2020s, as models like GPT-3 and others demonstrated impressive capabilities but also revealed limitations in handling long sequences. The concept gained more attention as researchers delved into the specifics of how attention mechanisms distribute focus across text inputs.

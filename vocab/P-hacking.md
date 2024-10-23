@@ -1,7 +1,12 @@
 ---
+category: DATA, MATH
+slug: p-hacking
+summary: Manipulation of data analysis to achieve statistically significant results,
+  often by repeatedly testing different variables or subsets of data until desirable
+  outcomes are found.
 title: P-hacking
-summary: Manipulation of data analysis to achieve statistically significant results, often by repeatedly testing different variables or subsets of data until desirable outcomes are found.
 ---
+
 Expert-Level Explanation:
 P-hacking, or data dredging, occurs when researchers conduct multiple statistical tests on data and selectively report those that yield significant p-values, typically less than 0.05. This practice undermines the integrity of scientific research by inflating the likelihood of Type I errors—false positives—where researchers incorrectly reject the null hypothesis. P-hacking exploits the flexibility in data analysis, such as choosing different covariates, altering sample sizes, or reclassifying data to achieve statistical significance. While it can arise from intentional misconduct, it often results from subconscious biases and pressures to publish significant findings. This undermines the reproducibility and reliability of scientific studies, leading to misleading conclusions and wasted resources.
 

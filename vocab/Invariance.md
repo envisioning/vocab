@@ -1,7 +1,11 @@
 ---
+category: CORE, DATA
+slug: invariance
+summary: Property of a model or algorithm that ensures its output remains unchanged
+  when specific transformations are applied to the input data.
 title: Invariance
-summary: Property of a model or algorithm that ensures its output remains unchanged when specific transformations are applied to the input data.
 ---
+
 Detailed Explanation:
 Invariance is a critical concept in AI and machine learning, particularly in fields like computer vision and natural language processing. It implies that an AI model can recognize patterns or features consistently, regardless of transformations such as translation, rotation, scaling, or other alterations to the input data. For example, a convolutional neural network (CNN) designed for image recognition is typically translation-invariant, meaning it can identify objects in an image no matter where they appear. This property enhances the robustness and generalization capabilities of models, allowing them to perform well on real-world data where such transformations are common. Invariance is often achieved through architectural choices, like the use of convolutional layers in CNNs or data augmentation techniques during training.
 

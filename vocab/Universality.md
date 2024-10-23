@@ -1,7 +1,11 @@
 ---
+category: CORE, MATH
+slug: universality
+summary: Concept that certain computational systems can simulate any other computational
+  system, given the correct inputs and enough time and resources.
 title: Universality
-summary: Concept that certain computational systems can simulate any other computational system, given the correct inputs and enough time and resources.
 ---
+
 Detailed Explanation:
 Universality in AI is fundamentally tied to the theory of computation, particularly to the notion of a universal Turing machine, which can emulate the operations of any other Turing machine. This concept is significant because it underpins the theoretical foundation of modern computers and AI systems, suggesting that a sufficiently powerful and well-designed AI could, in principle, perform any computation that any other AI or algorithm can, given adequate resources. This leads to the idea that the capabilities of AI systems are not inherently limited by their design but rather by the practical constraints of hardware, software, and available data. In AI, this universality principle implies that a general-purpose AI, or artificial general intelligence (AGI), could theoretically learn and execute any task that a human can, provided it has access to the necessary information and training.
 

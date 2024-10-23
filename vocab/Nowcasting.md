@@ -1,6 +1,9 @@
 ---
-title: "Nowcasting"
-summary: "Immediate forecast of economic or environmental conditions based on real-time data evolution using AI models."
+category: DATA, ARCH
+slug: nowcasting
+summary: Immediate forecast of economic or environmental conditions based on real-time
+  data evolution using AI models.
+title: Nowcasting
 ---
 
 Nowcasting is an AI-based predictive analytics technique that uses real-time data to provide immediate short-term forecasts, traditionally for economic or weather conditions. As a fusion of "now" and "forecasting," it signifies the prediction of the present, the very near future, and the very recent past. Its applications are varied and significant, are used in various domains such as meteorology, economics, and financial markets. In these fields, accurate and immediate data-driven predictions can aid in informed decision-making and proactive responses. The method leverages AI and machine learning algorithms to learn from historical and current data, discern patterns, and predict immediate trends.

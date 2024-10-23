@@ -1,6 +1,9 @@
 ---
-title: "Numerosity"
-summary: "Understanding of the quantitative attributes revolving around the number of elements in a data set."
+category: DATA, MATH
+slug: numerosity
+summary: Understanding of the quantitative attributes revolving around the number
+  of elements in a data set.
+title: Numerosity
 ---
 
 Numerosity is a principle in AI tied to the comprehension of the quantitative aspects of a data set or collection, especially paying attention to the volume of elements. This term is dutifully employed in Machine Learning (ML) and deep learning models. A significant challenge in dealing with data in ML is numerosity reduction, which involves techniques to reduce the volume of data without losing vital information. These techniques can tackle the issue of storage space, computing power, and algorithmic efficiency. High numerosity can lead to higher computational complexity and can also lead to overfitting in supervised learning models. Therefore understanding and handling numerosity is crucial for effective and efficient ML models.

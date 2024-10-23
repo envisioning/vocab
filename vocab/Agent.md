@@ -1,7 +1,11 @@
 ---
+category: CORE, ARCH
+slug: agent
+summary: System capable of perceiving its environment through sensors and acting upon
+  that environment to achieve specific goals.
 title: Agent
-summary: System capable of perceiving its environment through sensors and acting upon that environment to achieve specific goals.
 ---
+
 In artificial intelligence, the concept of an "agent" refers to any system that can observe its environment, interpret these observations, and take actions to maximize its chances of success or utility. Agents are foundational in various AI domains, such as robotics, where they physically interact with their surroundings, and in software, where they make decisions or predictions based on data inputs. The intelligence of an agent is determined by its ability to make optimal decisions in complex environments, often modeled using algorithms from machine learning, decision theory, or artificial neural networks. Agents can be autonomous, semi-autonomous, or controlled by human input, and they may operate in deterministic or stochastic environments.
 
 Historical Overview:

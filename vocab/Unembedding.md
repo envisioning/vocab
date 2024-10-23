@@ -1,6 +1,9 @@
 ---
-title: "Unembedding"
-summary: "Process of reversing the transformation of data from its original high-dimensional space to a lower-dimensional space."
+category: DATA, MATH
+slug: unembedding
+summary: Process of reversing the transformation of data from its original high-dimensional
+  space to a lower-dimensional space.
+title: Unembedding
 ---
 
 Unembedding refers to the procedure of transitioning data that has been previously embedded, from a lower-dimensional representation to its original, or a similar, higher-dimensional space. This technique is often used in complex machine learning applications where data dimensionality reduction techniques, such as embedding, have been applied to simplify the dataset or algorithm inputs. Unembedding may be necessary when one wants to analyze or visualize the data in its original context, after it has undergone a series of transformations for the purposes of ML model optimization.

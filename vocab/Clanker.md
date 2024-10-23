@@ -1,6 +1,10 @@
 ---
-title: "Clanker"
-summary: "Slang term used pejoratively to refer to robots or AI systems, especially those seen as replacements for human jobs, reflecting anti-AI sentiment in popular discourse."
+category: GOV
+slug: clanker
+summary: Slang term used pejoratively to refer to robots or AI systems, especially
+  those seen as replacements for human jobs, reflecting anti-AI sentiment in popular
+  discourse.
+title: Clanker
 ---
 
 In modern usage, the term "Clanker" has gained attention in the context of AI automation and robotics, particularly as a symbol of resistance against job displacement caused by machines. It has also emerged in meme culture, where it reflects the frustrations of workers who feel threatened by AI's increasing role in industries traditionally dominated by humans. The term can be viewed as a reflection of broader societal concerns over the growing role of artificial intelligence and robotics, representing fears of dehumanization and loss of control over technological advancements​.

@@ -1,7 +1,12 @@
 ---
+category: ARCH, IMPL
+slug: router
+summary: Mechanism that directs queries to the most suitable model or sub-component
+  within a multi-model or multi-component architecture to optimize performance and
+  accuracy.
 title: Router
-summary: Mechanism that directs queries to the most suitable model or sub-component within a multi-model or multi-component architecture to optimize performance and accuracy.
 ---
+
 Detailed Explanation:
 In AI and particularly in large language models, a router functions to manage and direct incoming queries to the most appropriate model or sub-model based on the nature of the query. This is crucial in systems where multiple specialized models are deployed to handle different types of tasks or domains of knowledge. For instance, in a setup involving several LLMs trained for specific tasks—such as one for scientific queries, another for historical data, and yet another for conversational AI—the router assesses the input and determines which model is best suited to respond. This ensures that each query is handled by the most competent model, enhancing the system's overall efficiency and effectiveness. Routers can use various techniques, including rule-based algorithms, machine learning classifiers, or ensemble methods to make these decisions.
 
