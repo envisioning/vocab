@@ -17,10 +17,10 @@ def get_definition_from_gpt(term):
         'Content-Type': 'application/json'
     }
     data = {
-        "model": "gpt-4",
+        "model": "gpt-4o",
         "messages": [
             {"role": "system", "content": "Your role is to succinctly define AI-related terms. Follow a structured response format when a term is provided."},
-            {"role": "user", "content": "Here is an AI related term: {term}. Now please define it using the following instructions:"},
+            {"role": "user", "content": f"Here is an AI related term: {term}. Now please define it using the following instructions:"},
             {"role": "user", "content": "1. A one-sentence summary of the term, crafted to give a clear, immediate understanding of the concept."},
             {"role": "user", "content": "2. A detailed paragraph offering an expert-level explanation of the term's significance, applications, or theoretical background. This paragraph targets those with a deep interest or background in AI."},
             {"role": "user", "content": "3. A very brief historical overview, providing the year of first use and when the term gained popularity, with a succinct context."},

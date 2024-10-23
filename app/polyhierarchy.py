@@ -15,6 +15,7 @@ def parse_markdown_files(directory):
     total_files = 0
     successful_files = 0
     failed_files = 0
+    failed_filenames = []
 
     for filename in os.listdir(directory):
         if filename.lower().endswith(".md"):
@@ -24,29 +25,38 @@ def parse_markdown_files(directory):
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
-                    title_match = re.search(r'title:\s*(.+)', content, re.MULTILINE)
-                    summary_match = re.search(r'summary:\s*(.+(?:\n.+)*)', content, re.MULTILINE | re.DOTALL)
-                    if title_match and summary_match:
-                        title = title_match.group(1).strip().strip('"')
-                        summary = summary_match.group(1).strip().strip('"')
-                        summary = re.sub(r'\s+', ' ', summary)  # Replace multiple whitespace with single space
-                        terms[title] = summary
-                        logging.info(f"Successfully parsed {filename}")
-                        successful_files += 1
+                    # Look for content between --- markers (frontmatter)
+                    frontmatter_match = re.search(r'---\s*(.*?)\s*---', content, re.MULTILINE | re.DOTALL)
+                    if frontmatter_match:
+                        frontmatter = frontmatter_match.group(1)
+                        title_match = re.search(r'title:\s*"?([^"\n]+)"?', frontmatter)
+                        summary_match = re.search(r'summary:\s*"?([^"]+)"?', frontmatter)
+                        
+                        if title_match and summary_match:
+                            title = title_match.group(1).strip()
+                            summary = summary_match.group(1).strip()
+                            summary = re.sub(r'\s+', ' ', summary)
+                            terms[title] = summary
+                            logging.info(f"Successfully parsed {filename}")
+                            successful_files += 1
+                        else:
+                            logging.warning(f"Failed to extract title or summary from {filename}")
+                            failed_files += 1
+                            failed_filenames.append(filename)
                     else:
-                        logging.warning(f"Failed to extract title or summary from {filename}")
+                        logging.warning(f"No frontmatter found in {filename}")
                         failed_files += 1
-                        if title_match:
-                            logging.info(f"Title found: {title_match.group(1)}")
-                        if summary_match:
-                            logging.info(f"Summary found: {summary_match.group(1)}")
+                        failed_filenames.append(filename)
             except Exception as e:
                 logging.error(f"Error processing {filename}: {str(e)}")
                 failed_files += 1
+                failed_filenames.append(filename)
 
     logging.info(f"Total files processed: {total_files}")
     logging.info(f"Successfully parsed files: {successful_files}")
     logging.info(f"Failed files: {failed_files}")
+    if failed_filenames:  # Only log failed files if there are any
+        logging.info(f"Failed files list: {', '.join(failed_filenames)}")
     logging.info(f"Total terms parsed: {len(terms)}")
     return terms
 
@@ -55,24 +65,27 @@ def calculate_similarity(terms):
     tfidf_matrix = vectorizer.fit_transform(terms.values())
     return cosine_similarity(tfidf_matrix)
 
-def create_graph(terms, similarity_matrix, threshold=0.3):
+def create_graph(terms, similarity_matrix, threshold=0.4):
     G = nx.Graph()
     term_list = list(terms.keys())
     for term in term_list:
         G.add_node(term)
     
-    # Add edges based on similarity threshold
+    # Add edges based on similarity threshold with weights
     for i in range(len(terms)):
         for j in range(i+1, len(terms)):
-            if similarity_matrix[i][j] > threshold:
-                G.add_edge(term_list[i], term_list[j])
+            similarity = similarity_matrix[i][j]
+            if similarity > threshold:
+                G.add_edge(term_list[i], term_list[j], weight=float(similarity))
     
     # Connect isolated nodes to their nearest neighbor
     isolated_nodes = list(nx.isolates(G))
     for node in isolated_nodes:
         i = term_list.index(node)
-        nearest_neighbor = max(range(len(terms)), key=lambda j: similarity_matrix[i][j] if i != j else 0)
-        G.add_edge(node, term_list[nearest_neighbor])
+        nearest_neighbor_idx = max(range(len(terms)), 
+                                 key=lambda j: similarity_matrix[i][j] if i != j else 0)
+        similarity = float(similarity_matrix[i][nearest_neighbor_idx])
+        G.add_edge(node, term_list[nearest_neighbor_idx], weight=similarity)
     
     # Ensure the graph is fully connected
     if not nx.is_connected(G):
@@ -80,16 +93,21 @@ def create_graph(terms, similarity_matrix, threshold=0.3):
         for i in range(len(components) - 1):
             node1 = next(iter(components[i]))
             node2 = next(iter(components[i+1]))
-            G.add_edge(node1, node2)
+            # Add a minimal weight for forced connections
+            G.add_edge(node1, node2, weight=threshold)
     
     return G
 
 def create_hierarchy(G):
-    hierarchy = defaultdict(list)
+    hierarchy = defaultdict(dict)
+    # Store both neighbors and their similarity scores
     for node in G.nodes():
         neighbors = list(G.neighbors(node))
+        # Get edge data (similarity scores) for each neighbor
+        neighbor_scores = {neighbor: G.get_edge_data(node, neighbor)['weight'] 
+                         for neighbor in neighbors}
         if len(neighbors) > 0:
-            hierarchy[node] = neighbors
+            hierarchy[node] = neighbor_scores
     return hierarchy
 
 def assign_ids(hierarchy):
@@ -108,13 +126,19 @@ def assign_ids(hierarchy):
     
     return id_mapping
 
-def create_polyhierarchy(hierarchy, id_mapping):
+def create_polyhierarchy(hierarchy, id_mapping, terms):  # Added terms parameter
     polyhierarchy = []
-    for term, children in hierarchy.items():
+    for term, connections in hierarchy.items():
         node = {
             "id": id_mapping[term],
             "name": term,
-            "children": [id_mapping[child] for child in children]
+            "summary": terms[term],  # Add summary from terms dictionary
+            "children": [
+                {
+                    "id": id_mapping[child],
+                    "similarity": float(score)
+                } for child, score in connections.items()
+            ]
         }
         polyhierarchy.append(node)
     
@@ -124,6 +148,7 @@ def create_polyhierarchy(hierarchy, id_mapping):
             node = {
                 "id": id_mapping[term],
                 "name": term,
+                "summary": terms[term],  # Add summary for leaf nodes
                 "children": []
             }
             polyhierarchy.append(node)
@@ -151,7 +176,7 @@ def main(directory):
     id_mapping = assign_ids(hierarchy)
     
     logging.info("Creating polyhierarchy")
-    polyhierarchy = create_polyhierarchy(hierarchy, id_mapping)
+    polyhierarchy = create_polyhierarchy(hierarchy, id_mapping, terms)  # Pass terms to the function
     
     output_file = 'ai_terms_hierarchy.json'
     logging.info(f"Writing results to {output_file}")
