@@ -1,7 +1,17 @@
 ---
 category: ARCH, GOV
+generality:
+- 0.4
+- 0.385
+- 0.37
+- 0.355
+- 0.34
+- 0.325
+- 0.31
 slug: rainbow-teaming
-summary: Approach that integrates multiple specialized teams, each representing a different function, to comprehensively assess and enhance an organization's security posture.
+summary: Approach that integrates multiple specialized teams, each representing a
+  different function, to comprehensively assess and enhance an organization's security
+  posture.
 title: Rainbow Teaming
 ---
 

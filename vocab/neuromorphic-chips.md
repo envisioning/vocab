@@ -1,7 +1,17 @@
 ---
 category: ARCH, BIO
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: neuromorphic-chips
-summary: Specialized hardware designed to mimic the neural structures and functioning of the human brain to enhance computational efficiency and speed in processing AI algorithms.
+summary: Specialized hardware designed to mimic the neural structures and functioning
+  of the human brain to enhance computational efficiency and speed in processing AI
+  algorithms.
 title: Neuromorphic Chips
 ---
 

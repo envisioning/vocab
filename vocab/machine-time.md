@@ -1,7 +1,17 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
+- 0.645
+- 0.63
 slug: machine-time
-summary: The time a computer system or a machine spends executing tasks, often used in contrast with human interaction or waiting times. It encompasses the processing time required by the hardware to complete computations or operations.
+summary: The time a computer system or a machine spends executing tasks, often used
+  in contrast with human interaction or waiting times. It encompasses the processing
+  time required by the hardware to complete computations or operations.
 title: Machine Time
 ---
 

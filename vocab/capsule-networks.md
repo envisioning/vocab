@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.72
+- 0.7
+- 0.68
+- 0.66
+- 0.64
+- 0.62
+- 0.6
 slug: capsule-networks
-summary: Type of artificial neural network designed to improve the processing of spatial hierarchical information by encoding data into small groups of neurons called capsules.
+summary: Type of artificial neural network designed to improve the processing of spatial
+  hierarchical information by encoding data into small groups of neurons called capsules.
 title: Capsule Networks
 ---
 

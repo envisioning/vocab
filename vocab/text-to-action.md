@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.71
+- 0.7
+- 0.685
+- 0.675
+- 0.66
+- 0.65
+- 0.64
 slug: text-to-action
-summary: Process of interpreting and converting written or spoken language into executable actions by a system or application.
+summary: Process of interpreting and converting written or spoken language into executable
+  actions by a system or application.
 title: Text to Action
 ---
 

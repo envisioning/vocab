@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.875
+- 0.88
+- 0.885
+- 0.89
+- 0.895
+- 0.9
+- 0.905
 slug: overfitting
-summary: When a ML model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data.
+summary: When a ML model learns the detail and noise in the training data to the extent
+  that it negatively impacts the performance of the model on new data.
 title: Overfitting
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.85
+- 0.84
+- 0.835
+- 0.83
+- 0.825
+- 0.82
+- 0.815
 slug: centaur
-summary: Collaborative system where humans and AI work together, combining human intuition and expertise with AI's computational power and data processing capabilities.
+summary: Collaborative system where humans and AI work together, combining human intuition
+  and expertise with AI's computational power and data processing capabilities.
 title: Centaur
 ---
 

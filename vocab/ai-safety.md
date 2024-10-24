@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: ai-safety
-summary: Field of research aimed at ensuring AI technologies are beneficial and do not pose harm to humanity.
+summary: Field of research aimed at ensuring AI technologies are beneficial and do
+  not pose harm to humanity.
 title: AI Safety
 ---
 

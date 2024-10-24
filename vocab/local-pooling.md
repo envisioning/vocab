@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.72
+- 0.7
+- 0.68
+- 0.66
+- 0.64
+- 0.62
+- 0.6
 slug: local-pooling
-summary: Process that reduces the spatial dimensions of input data by aggregating information in local regions to create more abstract representations.
+summary: Process that reduces the spatial dimensions of input data by aggregating
+  information in local regions to create more abstract representations.
 title: Local Pooling
 ---
 

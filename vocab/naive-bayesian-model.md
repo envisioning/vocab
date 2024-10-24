@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
 slug: naive-bayesian-model
-summary: Probabilistic classifier that assumes strong (naive) independence between the features of a dataset.
+summary: Probabilistic classifier that assumes strong (naive) independence between
+  the features of a dataset.
 title: Naive Bayesian Model
 ---
 

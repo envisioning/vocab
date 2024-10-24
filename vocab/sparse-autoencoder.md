@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: sparse-autoencoder
-summary: Type of neural network designed to learn efficient data representations by enforcing sparsity on the hidden layer activations.
+summary: Type of neural network designed to learn efficient data representations by
+  enforcing sparsity on the hidden layer activations.
 title: Sparse Autoencoder
 ---
 

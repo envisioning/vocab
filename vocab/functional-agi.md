@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.94
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
 slug: functional-agi
-summary: Hypothetical AI technology that possesses the capacity to understand, learn, and apply knowledge across diverse tasks which normally require human intelligence.
+summary: Hypothetical AI technology that possesses the capacity to understand, learn,
+  and apply knowledge across diverse tasks which normally require human intelligence.
 title: Functional AGI
 ---
 

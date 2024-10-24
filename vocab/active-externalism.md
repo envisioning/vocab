@@ -1,7 +1,16 @@
 ---
 category: BIO, CORE
+generality:
+- 0.725
+- 0.71
+- 0.7
+- 0.69
+- 0.675
+- 0.66
+- 0.645
 slug: active-externalism
-summary: Theory that cognitive processes can extend beyond the human mind to include external devices or environments as integral components of thinking.
+summary: Theory that cognitive processes can extend beyond the human mind to include
+  external devices or environments as integral components of thinking.
 title: Active Externalism
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.43
+- 0.415
+- 0.4
+- 0.385
+- 0.37
+- 0.355
+- 0.34
 slug: sima
-summary: AI agent designed to operate across multiple 3D virtual environments, following natural language instructions to accomplish varied tasks.
+summary: AI agent designed to operate across multiple 3D virtual environments, following
+  natural language instructions to accomplish varied tasks.
 title: SIMA (Scalable Instructable Multiworld Agent)
 ---
 

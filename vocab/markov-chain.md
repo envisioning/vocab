@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.91
+- 0.885
+- 0.86
+- 0.835
+- 0.81
+- 0.785
+- 0.76
 slug: markov-chain
-summary: Stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
+summary: Stochastic model describing a sequence of possible events in which the probability
+  of each event depends only on the state attained in the previous event.
 title: Markov Chain
 ---
 

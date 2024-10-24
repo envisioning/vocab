@@ -1,7 +1,17 @@
 ---
 category: DATA, MATH
+generality:
+- 0.86
+- 0.84
+- 0.85
+- 0.83
+- 0.82
+- 0.81
+- 0.8
 slug: dimension-returns
-summary: The output shape or size of the dimensions in a dataset, matrix, or tensor after a specific operation is performed, which is critical in ensuring proper alignment and compatibility in machine learning models.
+summary: The output shape or size of the dimensions in a dataset, matrix, or tensor
+  after a specific operation is performed, which is critical in ensuring proper alignment
+  and compatibility in machine learning models.
 title: Dimension Returns
 ---
 

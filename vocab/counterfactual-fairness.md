@@ -1,7 +1,17 @@
 ---
 category: GOV, CORE
+generality:
+- 0.65
+- 0.63
+- 0.61
+- 0.59
+- 0.57
+- 0.55
+- 0.53
 slug: counterfactual-fairness
-summary: ML concept that ensures decisions remain fair by being unaffected by sensitive attributes, such as race or gender, in hypothetical scenarios where these attributes are altered.
+summary: ML concept that ensures decisions remain fair by being unaffected by sensitive
+  attributes, such as race or gender, in hypothetical scenarios where these attributes
+  are altered.
 title: Counterfactual Fairness
 ---
 

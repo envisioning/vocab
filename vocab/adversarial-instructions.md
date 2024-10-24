@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.77
+- 0.76
+- 0.75
+- 0.74
+- 0.73
+- 0.72
+- 0.71
 slug: adversarial-instructions
-summary: Inputs designed to deceive AI models into making incorrect predictions or decisions, highlighting vulnerabilities in their learning algorithms.
+summary: Inputs designed to deceive AI models into making incorrect predictions or
+  decisions, highlighting vulnerabilities in their learning algorithms.
 title: Adversarial Instructions
 ---
 

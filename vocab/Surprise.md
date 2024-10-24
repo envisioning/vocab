@@ -1,5 +1,13 @@
 ---
 category: CORE, MATH
+generality:
+- 0.625
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
 slug: surprise
 summary: Measuring the degree of unexpectedness or novelty in AI systems.
 title: Surprise

@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: ai-winter
-summary: Periods of reduced funding and interest in AI research and development, often due to unmet expectations and lack of significant progress.
+summary: Periods of reduced funding and interest in AI research and development, often
+  due to unmet expectations and lack of significant progress.
 title: AI Winter
 ---
 

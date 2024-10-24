@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.72
+- 0.695
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
 slug: retrieval-based
-summary: Algorithms that generate responses by selecting them from a predefined set of responses, based on the input they receive.
+summary: Algorithms that generate responses by selecting them from a predefined set
+  of responses, based on the input they receive.
 title: Retrieval-Based (Model)
 ---
 

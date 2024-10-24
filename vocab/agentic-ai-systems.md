@@ -1,7 +1,17 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.7
+- 0.725
+- 0.75
+- 0.775
+- 0.8
+- 0.825
+- 0.85
 slug: agentic-ai-systems
-summary: Advanced AI capable of making decisions and taking actions autonomously to achieve specific goals, embodying characteristics of agency and decision-making usually associated with humans or animals.
+summary: Advanced AI capable of making decisions and taking actions autonomously to
+  achieve specific goals, embodying characteristics of agency and decision-making
+  usually associated with humans or animals.
 title: Agentic AI Systems
 ---
 

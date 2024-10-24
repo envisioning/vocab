@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
+- 0.74
 slug: nas
-summary: Automated process that designs optimal neural network architectures for specific tasks.
+summary: Automated process that designs optimal neural network architectures for specific
+  tasks.
 title: NAS (Neural Architecture Search)
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.87
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
 slug: tpu
-summary: Specialized hardware accelerators designed to significantly speed up the calculations required for ML tasks.
+summary: Specialized hardware accelerators designed to significantly speed up the
+  calculations required for ML tasks.
 title: TPU (Tensor Processing Units)
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.62
+- 0.6
+- 0.585
+- 0.57
+- 0.55
+- 0.535
+- 0.52
 slug: valence
-summary: Emotional value associated with a particular stimulus, often used in AI to fine-tune emotional processing.
+summary: Emotional value associated with a particular stimulus, often used in AI to
+  fine-tune emotional processing.
 title: Valence
 ---
 

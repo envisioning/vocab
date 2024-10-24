@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.95
+- 0.935
+- 0.92
+- 0.905
+- 0.89
+- 0.875
+- 0.86
 slug: unsupervised-learning
-summary: Type of ML where algorithms learn patterns from untagged data, without any guidance on what outcomes to predict.
+summary: Type of ML where algorithms learn patterns from untagged data, without any
+  guidance on what outcomes to predict.
 title: Unsupervised Learning
 ---
 

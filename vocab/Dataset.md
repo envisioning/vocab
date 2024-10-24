@@ -1,7 +1,16 @@
 ---
 category: DATA
+generality:
+- 0.92
+- 0.915
+- 0.91
+- 0.905
+- 0.9
+- 0.895
+- 0.89
 slug: dataset
-summary: Collection of related data points organized in a structured format, often used for training and testing machine learning models.
+summary: Collection of related data points organized in a structured format, often
+  used for training and testing machine learning models.
 title: Dataset
 ---
 

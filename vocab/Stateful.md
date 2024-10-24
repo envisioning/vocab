@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.895
+- 0.89
+- 0.88
+- 0.875
+- 0.865
+- 0.86
+- 0.85
 slug: stateful
-summary: System or application that saves client data from previous sessions to influence and personalize future interactions.
+summary: System or application that saves client data from previous sessions to influence
+  and personalize future interactions.
 title: Stateful
 ---
 

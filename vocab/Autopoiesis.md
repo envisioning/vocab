@@ -1,7 +1,16 @@
 ---
 category: BIO, CORE
+generality:
+- 0.79
+- 0.77
+- 0.75
+- 0.73
+- 0.71
+- 0.69
+- 0.67
 slug: autopoiesis
-summary: Systems capable of reproducing and maintaining themselves by regulating their internal environment in response to external conditions.
+summary: Systems capable of reproducing and maintaining themselves by regulating their
+  internal environment in response to external conditions.
 title: Autopoiesis
 ---
 

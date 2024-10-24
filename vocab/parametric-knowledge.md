@@ -1,7 +1,16 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.863
+- 0.859
+- 0.854
+- 0.849
+- 0.844
+- 0.839
+- 0.835
 slug: parametric-knowledge
-summary: Information and patterns encoded within the parameters of a machine learning model, which are learned during the training process.
+summary: Information and patterns encoded within the parameters of a machine learning
+  model, which are learned during the training process.
 title: Parametric Knowledge
 ---
 

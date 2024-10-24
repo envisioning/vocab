@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.73
+- 0.72
+- 0.705
+- 0.7
+- 0.685
+- 0.68
+- 0.67
 slug: red-queen-effect
-summary: The continuous need for systems or agents to adapt and evolve just to maintain their relative performance in a competitive or dynamic environment.
+summary: The continuous need for systems or agents to adapt and evolve just to maintain
+  their relative performance in a competitive or dynamic environment.
 title: Red Queen Effect
 ---
 

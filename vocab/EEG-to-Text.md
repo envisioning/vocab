@@ -1,5 +1,13 @@
 ---
 category: CORE, DATA
+generality:
+- 0.4
+- 0.425
+- 0.45
+- 0.475
+- 0.5
+- 0.525
+- 0.55
 slug: eeg-to-text
 summary: A method to transcribe brainwaves into readable text using AI.
 title: EEG-to-Text

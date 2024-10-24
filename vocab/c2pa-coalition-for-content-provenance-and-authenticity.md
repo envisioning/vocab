@@ -1,7 +1,16 @@
 ---
 category: GOV, ARCH
+generality:
+- 0.35
+- 0.325
+- 0.3
+- 0.275
+- 0.25
+- 0.225
+- 0.2
 slug: c2pa
-summary: Initiative focused on establishing industry standards for authenticating digital media content to combat misinformation and ensure content provenance.
+summary: Initiative focused on establishing industry standards for authenticating
+  digital media content to combat misinformation and ensure content provenance.
 title: C2PA (Coalition for Content Provenance and Authenticity)
 ---
 

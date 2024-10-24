@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: forward-propagation
-summary: Process in a neural network where input data is passed through layers of the network to generate output.
+summary: Process in a neural network where input data is passed through layers of
+  the network to generate output.
 title: Forward Propagation
 ---
 

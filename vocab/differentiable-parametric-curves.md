@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.61
+- 0.605
+- 0.6
+- 0.595
+- 0.59
+- 0.585
+- 0.58
 slug: differentiable-parametric-curves
-summary: Mathematical curves described by parametric equations that are differentiable, meaning they have continuous derivatives.
+summary: Mathematical curves described by parametric equations that are differentiable,
+  meaning they have continuous derivatives.
 title: Differentiable Parametric Curves
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: BIO, ARCH
+generality:
+- 0.75
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
 slug: biocomputer
-summary: Computational system that uses biological molecules, such as DNA and proteins, to perform data processing and storage tasks.
+summary: Computational system that uses biological molecules, such as DNA and proteins,
+  to perform data processing and storage tasks.
 title: Biocomputer
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.82
+- 0.81
+- 0.79
+- 0.78
+- 0.77
+- 0.75
+- 0.74
 slug: mle
-summary: Statistical method used to estimate the parameters of a probability distribution by maximizing a likelihood function.
+summary: Statistical method used to estimate the parameters of a probability distribution
+  by maximizing a likelihood function.
 title: MLE (Maximum Likelihood Estimation)
 ---
 

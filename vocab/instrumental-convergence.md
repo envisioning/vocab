@@ -1,5 +1,13 @@
 ---
 category: CORE, MATH
+generality:
+- 0.71
+- 0.685
+- 0.66
+- 0.635
+- 0.61
+- 0.585
+- 0.56
 slug: instrumental-convergence
 summary: ''
 title: Instrumental Convergence

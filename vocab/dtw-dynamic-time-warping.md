@@ -1,7 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.73
+- 0.715
+- 0.7
+- 0.685
+- 0.67
+- 0.655
+- 0.64
 slug: dtw
-summary: Algorithm used to measure similarity between two time series by aligning them in a nonlinear fashion, allowing for comparisons even when there are shifts and distortions in time.
+summary: Algorithm used to measure similarity between two time series by aligning
+  them in a nonlinear fashion, allowing for comparisons even when there are shifts
+  and distortions in time.
 title: DTW (Dynamic Time Warping)
 ---
 

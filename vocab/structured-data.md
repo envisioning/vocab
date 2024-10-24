@@ -1,7 +1,16 @@
 ---
 category: DATA
+generality:
+- 0.91
+- 0.89
+- 0.87
+- 0.85
+- 0.83
+- 0.81
+- 0.79
 slug: structured-data
-summary: Information that is highly organized and formatted in a way that is easily searchable and accessible by computer systems, typically stored in databases.
+summary: Information that is highly organized and formatted in a way that is easily
+  searchable and accessible by computer systems, typically stored in databases.
 title: Structured Data
 ---
 

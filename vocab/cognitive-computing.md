@@ -1,5 +1,13 @@
 ---
 category: CORE, BIO
+generality:
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
 slug: cognitive-computing
 summary: Computer systems that simulate human thought processes to solve complex problems.
 title: Cognitive Computing

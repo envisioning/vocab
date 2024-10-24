@@ -1,7 +1,16 @@
 ---
 category: DATA, CORE
+generality:
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
+- 0.71
 slug: association-rule
-summary: Method in data mining for discovering interesting relationships, patterns, or correlations among a large set of data items.
+summary: Method in data mining for discovering interesting relationships, patterns,
+  or correlations among a large set of data items.
 title: Association Rule
 ---
 

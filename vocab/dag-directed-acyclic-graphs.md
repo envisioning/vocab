@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
+- 0.76
 slug: dag
-summary: Graph that consists of vertices connected by edges, with the directionality from one vertex to another and no possibility of forming a cycle.
+summary: Graph that consists of vertices connected by edges, with the directionality
+  from one vertex to another and no possibility of forming a cycle.
 title: DAG (Directed Acyclic Graphs)
 ---
 

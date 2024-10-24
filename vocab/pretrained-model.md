@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
+- 0.83
 slug: pretrained-model
-summary: ML model that has been previously trained on a large dataset and can be fine-tuned or used as is for similar tasks or applications.
+summary: ML model that has been previously trained on a large dataset and can be fine-tuned
+  or used as is for similar tasks or applications.
 title: Pretrained Model
 ---
 

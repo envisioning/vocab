@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
 slug: agent
-summary: System capable of perceiving its environment through sensors and acting upon that environment to achieve specific goals.
+summary: System capable of perceiving its environment through sensors and acting upon
+  that environment to achieve specific goals.
 title: Agent
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.78
+- 0.765
+- 0.75
+- 0.72
+- 0.705
+- 0.69
+- 0.665
 slug: bow
-summary: Text representation technique used in NLP to simplify text content by treating it as an unordered set of words.
+summary: Text representation technique used in NLP to simplify text content by treating
+  it as an unordered set of words.
 title: BoW (Bag-of-Words)
 ---
 

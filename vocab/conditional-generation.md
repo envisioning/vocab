@@ -1,5 +1,13 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: conditional-generation
 summary: Process where models produce output based on specified conditions or constraints.
 title: Conditional Generation

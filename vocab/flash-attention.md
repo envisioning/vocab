@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
 slug: flash-attention
-summary: GPU-optimized attention mechanism designed to efficiently handle extremely large sequences of data in neural networks.
+summary: GPU-optimized attention mechanism designed to efficiently handle extremely
+  large sequences of data in neural networks.
 title: Flash Attention
 ---
 

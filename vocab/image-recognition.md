@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.9
+- 0.875
+- 0.86
+- 0.85
+- 0.84
+- 0.83
+- 0.82
 slug: image-recognition
-summary: Ability of AI to identify objects, places, people, writing, and actions in images.
+summary: Ability of AI to identify objects, places, people, writing, and actions in
+  images.
 title: Image Recognition
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: fab
-summary: A fabrication facility, or fab, is where microchips are manufactured using sophisticated processes involving advanced materials and photolithography.
+summary: A fabrication facility, or fab, is where microchips are manufactured using
+  sophisticated processes involving advanced materials and photolithography.
 title: Fab
 ---
 

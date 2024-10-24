@@ -1,66 +1,49 @@
-// Load the JSON data
+// Data loading and processing remains similar
 d3.json("ai_terms_hierarchy.json").then(data => {
     const width = window.innerWidth;
     const height = window.innerHeight;
-
-    // Add search input
-    const searchInput = d3.select("#graph")
-        .insert("input", ":first-child")
-        .attr("type", "text")
-        .attr("placeholder", "Search nodes...")
-        .style("position", "absolute")
-        .style("top", "10px")
-        .style("left", "10px")
-        .style("z-index", "1000")
-        .style("padding", "5px");
-
-    // Create the SVG element
+    
+    // Create base SVG
     const svg = d3.select("#graph")
         .append("svg")
         .attr("width", width)
         .attr("height", height);
-
-    // Create a group for the graph elements
+        
+    // Create a group for zoom/pan
     const g = svg.append("g");
-
-    // Create zoom behavior
+    
+    // Setup zoom behavior
     const zoom = d3.zoom()
-        .scaleExtent([0.1, 10])
-        .on("zoom", (event) => {
-            g.attr("transform", event.transform);
-        });
-
+        .scaleExtent([0.1, 4])
+        .on("zoom", (event) => g.attr("transform", event.transform));
     svg.call(zoom);
 
-    // Create a Map to store all node details from the flat structure
+    // Process data similarly to original
     const nodeDetailsMap = new Map();
+    const nodes = [];
+    const links = [];
 
-    // First pass: collect all node details
+    // First pass: collect node details
     data.forEach(node => {
         nodeDetailsMap.set(node.id, {
             id: node.id,
             name: node.name,
             summary: node.summary,
             children: node.children || [],
-            categories: node.categories || []
+            categories: node.categories || [],
+            generality: node.generality || 0
         });
     });
 
-    // Initialize arrays for nodes and links
-    const nodes = [];
-    const links = [];
-
-    // First pass: collect all nodes
+    // Build nodes and links arrays
     data.forEach(node => {
         nodes.push({
             id: node.id,
             name: node.name,
-            outbound: node.children ? node.children.length : 0,
-            inbound: 0,  // Will be counted in the next step
+            generality: node.generality || 0,
             summary: node.summary
         });
 
-        // Add all child relationships to links
         if (node.children) {
             node.children.forEach(child => {
                 links.push({
@@ -72,499 +55,198 @@ d3.json("ai_terms_hierarchy.json").then(data => {
         }
     });
 
-    // Count inbound connections - Fixed version
-    links.forEach(link => {
-        const targetNode = nodes.find(n => n.id === link.target);
-        if (targetNode) {
-            targetNode.inbound++;
-        }
-    });
-
-    // **Debugging: Log inbound and outbound counts**
-    console.log("Node Counts:");
-    nodes.forEach(node => {
-        console.log(`Node ID: ${node.id}, Outbound: ${node.outbound}, Inbound: ${node.inbound}`);
-    });
-
-    // Calculate the maximum number of connections for scaling
-    const maxConnections = Math.max(
-        ...nodes.map(d => Math.max(d.outbound, d.inbound))
-    );
-
-    // Define node radius based on connections
-    const nodeRadius = d => 5 + (Math.max(d.inbound, d.outbound) / maxConnections) * 25;
-
-    // **Define the Stroke Width Scale**
-    // Extract all similarity values
-    const similarityValues = links.map(link => link.similarity);
-
-    // Calculate the minimum and maximum similarity for scaling
-    const minSimilarity = d3.min(similarityValues);
-    const maxSimilarity = d3.max(similarityValues);
-
-    // Define the stroke width scale with a smaller range
-    const strokeWidthScale = d3.scaleLinear()
-        .domain([minSimilarity, maxSimilarity])
-        .range([0.2, 0.5]); // Adjusted to much thinner lines
-
-    // Create the force simulation with adjusted parameters
-    const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(links).id(d => d.id).distance(200))
-        .force("charge", d3.forceManyBody().strength(-1000)) // Increased repulsion
-        .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + 20))
-        .force("attract", attractTowardCenter(0.2)) // Increased center attraction
-        .alphaDecay(0.1) // Increased decay rate (default is 0.0228)
-        .alphaMin(0.001) // Increased minimum alpha (default is 0.001)
-        .velocityDecay(0.6) // Increased velocity decay (default is 0.4)
-        .stop();
-
-    // Function to attract nodes toward the center
-    function attractTowardCenter(strength) {
-        return function(alpha) {
-            for (let i = 0, n = nodes.length, node, k = alpha * strength; i < n; ++i) {
-                node = nodes[i];
-                node.vx -= (node.x - width / 2) * k;
-                node.vy -= (node.y - height / 2) * k;
-            }
-        };
-    }
-
-    // Create the links with lighter gray and thinner lines
-    const link = g.selectAll("line")
-        .data(links)
-        .enter()
-        .append("line")
-        .attr("stroke", "#ccc")
-        .attr("stroke-opacity", 0.15)  // Reduced opacity from 0.3 to 0.15
-        .attr("stroke-width", d => Math.min(0.5, strokeWidthScale(d.similarity))); // Ensure maximum width is 0.5px
-
-    // Create a tooltip div
-    const tooltip = d3.select("body").append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0)
-        .style("position", "absolute")
-        .style("background-color", "white")
-        .style("border", "solid")
-        .style("border-width", "1px")
-        .style("border-radius", "5px")
-        .style("padding", "10px");
-
-    // Add this after the nodeDetailsMap initialization and before creating nodes
-    const categoryColors = d3.scaleOrdinal()
-        .domain(['CORE', 'ARCH', 'IMPL', 'DATA', 'MATH', 'BIO', 'GOV'])
-        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#bcbd22']);
-
-    // Modify the node creation to use category colors and add secondary category outline
-    const node = g.selectAll("circle")
-        .data(nodes)
-        .enter()
-        .append("circle")
-        .attr("r", nodeRadius)
-        .attr("fill", d => {
-            // Use first category for fill
-            const primaryCategory = nodeDetailsMap.get(d.id).categories[0];
-            return categoryColors(primaryCategory);
-        })
-        .attr("stroke", d => {
-            // Use second category for stroke if it exists
-            const categories = nodeDetailsMap.get(d.id).categories;
-            return categories.length > 1 ? categoryColors(categories[1]) : "none";
-        })
-        .attr("stroke-width", d => {
-            // Only show stroke if there's a secondary category
-            return nodeDetailsMap.get(d.id).categories.length > 1 ? "3px" : "0px";
-        })
-        .style("cursor", "pointer");
-
-    // Add labels to the nodes
-    const label = g.selectAll("text")
-        .data(nodes)
-        .enter()
-        .append("text")
-        .text(d => d.name)
-        .attr("font-size", 10)
-        .attr("text-anchor", "middle")
-        .attr("dy", d => nodeRadius(d) + 15)
-        .style("cursor", "pointer");
-
-    // Add search functionality
-    searchInput.on("input", function() {
-        const searchTerm = this.value.toLowerCase();
-        const matchingNodes = nodes.filter(n => n.name.toLowerCase().includes(searchTerm));
+    // New visualization code starts here
+    function createGeneralityLayout() {
+        const centerX = width / 2;
+        const centerY = height / 2;
         
-        node.attr("fill", d => {
-            const category = nodeDetailsMap.get(d.id).categories[0];
-            if (matchingNodes.includes(d)) {
-                // Make matching nodes brighter while keeping their category color
-                return d3.color(categoryColors(category)).brighter(1);
-            }
-            return categoryColors(category);
-        })
-        .attr("r", d => matchingNodes.includes(d) ? nodeRadius(d) * 1.5 : nodeRadius(d));
-        
-        label.attr("font-weight", d => matchingNodes.includes(d) ? "bold" : "normal")
-            .attr("font-size", d => matchingNodes.includes(d) ? 12 : 10);
-        
-        if (matchingNodes.length > 0) {
-            const matchingNode = matchingNodes[0];
-            const scale = 2;
-            const translate = [width / 2 - matchingNode.x * scale, height / 2 - matchingNode.y * scale];
-            svg.transition().duration(750).call(
-                zoom.transform,
-                d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
-            );
-        }
-    });
-
-    // Add hover event handlers to show tooltip
-    node.on("mouseover", function(event, d) {
-        // Show tooltip
-        showTooltip(event, d);
-        
-        // Highlight connected nodes
-        const connectedNodes = new Set();
-        links.forEach(link => {
-            if (link.source.id === d.id) connectedNodes.add(link.target.id);
-            if (link.target.id === d.id) connectedNodes.add(link.source.id);
+        // Calculate connections
+        nodes.forEach(node => {
+            node.connections = links.filter(l => 
+                l.source === node.id || l.target === node.id
+            ).length;
         });
 
-        // Add outline to connected nodes
-        node.attr("stroke", n => {
-            if (connectedNodes.has(n.id)) return "#ff9900";
-            const categories = nodeDetailsMap.get(n.id).categories;
-            return categories.length > 1 ? categoryColors(categories[1]) : "none";
+        const maxConnections = Math.max(...nodes.map(n => n.connections));
+        
+        // Calculate node sizes
+        nodes.forEach(node => {
+            node.radius = 12 + (node.connections / maxConnections * 40);
         });
 
-        // Show connections with proportional thickness and colors
-        link
-            .attr("stroke-opacity", l => 
-                (l.source.id === d.id || l.target.id === d.id) ? 0.7 : 0.3
-            )
-            .attr("stroke", l => {
-                if (l.source.id === d.id) return "#333";  
-                if (l.target.id === d.id) return "#444";  
-                return "#ccc";  // Gray for unrelated
-            });
-    })
-    .on("mouseout", function() {
-        // Hide tooltip
-        tooltip.transition().duration(500).style("opacity", 0);
-        
-        // Remove outlines
-        node.attr("stroke", n => {
-            const categories = nodeDetailsMap.get(n.id).categories;
-            return categories.length > 1 ? categoryColors(categories[1]) : "none";
-        });
-        
-        // Reset connections to light gray
-        link
-            .attr("stroke", "#ccc")
-            .attr("stroke-opacity", 0.3);  // Reset to lower opacity
-    });
+        // Sort nodes by generality (highest first)
+        nodes.sort((a, b) => b.generality - a.generality);
 
-    // Run the simulation
-    for (let i = 0; i < 300; ++i) simulation.tick();
+        // Create exponential scale for radius calculation
+        const radiusScale = d3.scalePow()
+            .exponent(3) // More dramatic exponential scaling
+            .domain([0, 1])  // Domain from low to high generality
+            .range([Math.min(width, height) * 0.45, 0]); // Range from outer to center
 
-    // Set the final positions
-    link
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
-
-    node
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y);
-
-    label
-        .attr("x", d => d.x)
-        .attr("y", d => d.y);
-
-    let highlightedNode = null;
-
-    // Remove hover event handlers and only use click for interactivity
-    node.on("click", toggleHighlight);
-    label.on("click", toggleHighlight);
-
-    svg.on("click", (event) => {
-        if (event.target === svg.node()) {
-            unhighlightAll();
-        }
-    });
-
-    function toggleHighlight(event, d) {
-        if (event.defaultPrevented) return; // ignore drag
-        event.stopPropagation(); // prevent unhighlighting when clicking on node
-
-        if (highlightedNode === d) {
-            resetPositions().then(() => {
-                highlightedNode = null;
-            });
-        } else {
-            if (highlightedNode) {
-                // First reset, then highlight new node
-                resetPositions().then(() => {
-                    highlight(event, d);
-                    highlightedNode = d;
-                });
-            } else {
-                // Direct highlight if no node was previously highlighted
-                highlight(event, d);
-                highlightedNode = d;
-            }
-        }
-    }
-
-    // Function to reset node positions
-    function resetPositions() {
-        // Return a promise that resolves when the transition is complete
-        return new Promise(resolve => {
-            // Reset node positions
-            node.transition()
-                .duration(750)
-                .attr("opacity", 1)
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-
-            // Reset link properties
-            link.transition()
-                .duration(750)
-                .attr("stroke", "#ccc") // Changed from green/orange to light gray
-                .attr("stroke-opacity", 0)
-                .attr("stroke-width", d => strokeWidthScale(d.similarity))
-                .attr("x1", d => d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
-
-            // Reset label positions
-            label.transition()
-                .duration(750)
-                .attr("opacity", 1)
-                .attr("x", d => d.x)
-                .attr("y", d => d.y)
-                .on("end", resolve); // Resolve the promise when transition ends
-        });
-    }
-
-    // Function to unhighlight all nodes and links
-    function unhighlightAll() {
-        if (highlightedNode) {
-            node.attr("opacity", 1);
-            link
-                .attr("stroke", "#ccc")
-                .attr("stroke-opacity", 0.3)  // Reset to lower opacity
-                .attr("stroke-width", d => strokeWidthScale(d.similarity));
-            label.attr("opacity", 1);
-            highlightedNode = null;
-        }
-    }
-
-    // Helper function to format tooltip content
-    function formatTooltipContent(d, connectedNodes = null) {
-        let content = `<strong style="font-size: larger;">${d.name}</strong><br><br>`;
-        content += `${d.summary}<br><br>`;
-        
-        // Calculate total connections based on either the connectedNodes set or the larger of inbound/outbound
-        const totalConnections = connectedNodes ? connectedNodes.size : Math.max(d.inbound, d.outbound);
-        content += `<strong>Total Connections:</strong> ${totalConnections}<br>`;
-        
-        // Add connected nodes if provided (for click interactions)
-        if (connectedNodes) {
-            const connections = Array.from(connectedNodes).map(nodeId => {
-                const node = nodes.find(n => n.id === nodeId);
-                return node ? node.name : nodeId;
-            });
-            if (connections.length > 0) {
-                content += `<br><strong>Connected to:</strong><br>${connections.join('<br>')}`;
-            }
-        }
-        
-        return content;
-    }
-
-    // Function to show tooltip
-    function showTooltip(event, d, connectedNodes = null) {
-        // Get the current zoom transform
-        const transform = d3.zoomTransform(svg.node());
-        
-        // Apply the transform to the node's coordinates
-        const [x, y] = transform.apply([d.x, d.y]);
-        
-        // Get the SVG's bounding rectangle
-        const svgRect = svg.node().getBoundingClientRect();
-        
-        // Calculate the absolute position on the page
-        const tooltipX = svgRect.left + x;
-        const tooltipY = svgRect.top + y + nodeRadius(d) + 10; // 10px below the node
-        
-        // Update tooltip content and position
-        tooltip.transition().duration(200).style("opacity", 0.9);
-        tooltip.html(formatTooltipContent(d, connectedNodes))
-            .style("left", `${tooltipX}px`)
-            .style("top", `${tooltipY}px`)
-            .style("transform", "translate(-50%, 0)"); // Center the tooltip horizontally
-    }
-
-    // Function to highlight a specific node and its connections
-    function highlight(event, d) {
-        const connectedNodes = new Set();
-        const connectionDetails = new Map();
-        
-        // Gather connected nodes and their similarity scores
-        links.forEach(link => {
-            if (link.source.id === d.id) {
-                connectedNodes.add(link.target.id);
-                connectionDetails.set(link.target.id, link.similarity);
-            }
-            if (link.target.id === d.id) {
-                connectedNodes.add(link.source.id);
-                connectionDetails.set(link.source.id, link.similarity);
-            }
-        });
-
-        // Update visual properties
-        node.attr("opacity", n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.1);
-
-        link
-            .attr("stroke", l => (l.source.id === d.id || l.target.id === d.id) ? "#333" : "#ccc") // Changed to dark gray
-            .attr("stroke-opacity", l => {
-                if (l.source.id === d.id || l.target.id === d.id) return 0.7; // Show connected lines
-                return 0.15; // Keep other lines at default low opacity
-            });
-
-        // Update label visibility
-        label.attr("opacity", n => connectedNodes.has(n.id) || n.id === d.id ? 1 : 0.1);
-    }
-
-    // Update the simulation on each tick
-    simulation.on("tick", () => {
-        link
-            .attr("x1", d => d.source.x)
-            .attr("y1", d => d.source.y)
-            .attr("x2", d => d.target.x)
-            .attr("y2", d => d.target.y);
-
-        node
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
-
-        label
-            .attr("x", d => d.x)
-            .attr("y", d => d.y);
-    });
-
-    // Define category descriptions (move this before the legend creation)
-    const categoryDescriptions = {
-        "CORE": "Core AI Concepts",
-        "ARCH": "Architecture & Models",
-        "IMPL": "Implementation & Tools",
-        "DATA": "Data Processing",
-        "MATH": "Mathematical Foundations",
-        "BIO": "Biological & Neural",
-        "GOV": "Governance & Ethics"
-    };
-
-    // Create a legend with adjusted positioning
-    const legend = svg.append("g")
-        .attr("class", "legend")
-        .attr("transform", `translate(20, ${height - 180})`);
-
-    const categories = ['CORE', 'ARCH', 'IMPL', 'DATA', 'MATH', 'BIO', 'GOV'];
-
-    // Add a state to track the active filter
-    let activeFilter = null;
-
-    // Create legend items with click event listeners
-    legend.selectAll("circle")
-        .data(categories)
-        .enter()
-        .append("circle")
-        .attr("cx", 10)
-        .attr("cy", (d, i) => i * 25)
-        .attr("r", 7)
-        .attr("fill", d => categoryColors(d))
-        .style("cursor", "pointer")  // Change cursor to pointer on hover
-        .on("click", function(event, category) {
-            if (activeFilter === category) {
-                activeFilter = null;  // Reset filter if the same category is clicked
-            } else {
-                activeFilter = category;  // Set new filter
-            }
-            applyFilter();
-            updateLegendVisuals();
-        });
-
-    // Add labels to the legend items with expanded titles
-    legend.selectAll("text")
-        .data(categories)
-        .enter()
-        .append("text")
-        .attr("x", 25)
-        .attr("y", (d, i) => i * 25)
-        .attr("dy", "0.35em")  // Vertical alignment
-        .text(d => categoryDescriptions[d])
-        .attr("font-size", "12px")
-        .attr("fill", "black")
-        .style("cursor", "pointer")  // Change cursor to pointer on hover
-        .on("click", function(event, category) {
-            // Trigger click on the corresponding circle
-            legend.selectAll("circle").filter(c => c === category).dispatch("click");
-        });
-
-    // Function to apply the active filter to nodes and links
-    function applyFilter() {
-        if (activeFilter) {
-            // Filter nodes and links
-            const visibleNodes = nodes.filter(d => 
-                nodeDetailsMap.get(d.id).categories.includes(activeFilter)
-            );
-            const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
+        // Position nodes with exponential spacing
+        nodes.forEach((node, i) => {
+            const radius = radiusScale(node.generality); // Use generality directly for radius
             
-            const visibleLinks = links.filter(l => 
-                visibleNodeIds.has(l.source.id) && visibleNodeIds.has(l.target.id)
+            const goldenRatio = (1 + Math.sqrt(5)) / 2;
+            const angle = i * 2.5 * Math.PI / goldenRatio;
+            
+            node.x = centerX + radius * Math.cos(angle);
+            node.y = centerY + radius * Math.sin(angle);
+        });
+
+        // Create force simulation with stronger center force for high generality
+        const simulation = d3.forceSimulation(nodes)
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collide", d3.forceCollide().radius(d => d.radius * 1.8))
+            .force("radial", d3.forceRadial(
+                d => radiusScale(d.generality), // Use same exponential scale
+                width / 2,
+                height / 2
+            ).strength(1)) // Strong radial force
+            .stop();
+
+        // Run simulation
+        for (let i = 0; i < 400; ++i) simulation.tick();
+
+        // Color scale
+        const colorScale = d3.scaleLinear()
+            .domain([0, 1])
+            .range(["#e6f3ff", "#0047ab"]);
+
+        // Create tooltip
+        const tooltip = d3.select("body")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        function showTooltip(event, d) {
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+            tooltip.html(`
+                <strong>${d.name}</strong><br>
+                Connections: ${d.connections}<br>
+                Generality: ${d.generality.toFixed(2)}<br>
+                ${d.summary}
+            `)
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 10) + "px");
+        }
+
+        function hideTooltip() {
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
+        }
+
+        // Create a group for links that will be shown/hidden
+        const linksGroup = g.append("g").attr("class", "links");
+
+        // Draw nodes with click interaction
+        const nodeElements = g.selectAll("circle")
+            .data(nodes)
+            .join("circle")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("r", d => d.radius)
+            .attr("fill", d => colorScale(d.generality))
+            .attr("stroke", "#fff")
+            .attr("stroke-width", 1)
+            .style("cursor", "pointer")
+            .on("mouseover", showTooltip)
+            .on("mouseout", hideTooltip)
+            .on("click", handleNodeClick);
+
+        // Add centered labels with smaller text
+        const labelElements = g.selectAll("text")
+            .data(nodes)
+            .join("text")
+            .attr("x", d => d.x)
+            .attr("y", d => d.y)
+            .attr("text-anchor", "middle")
+            .attr("dy", "0.35em")
+            .text(d => d.name)
+            .attr("font-size", d => 5 + (d.generality * 1)) // Reduced from 6 + 1.5
+            .attr("fill", "#333")
+            .style("pointer-events", "all")
+            .style("cursor", "pointer")
+            .on("mouseover", showTooltip)
+            .on("mouseout", hideTooltip)
+            .on("click", handleNodeClick);
+
+        let activeNode = null;
+
+        function handleNodeClick(event, d) {
+            if (activeNode === d) {
+                // If clicking the same node, reset the view
+                resetView();
+                activeNode = null;
+            } else {
+                // Show connections for the clicked node
+                showConnections(d);
+                activeNode = d;
+            }
+        }
+
+        function showConnections(node) {
+            // Find connected nodes (parents and children)
+            const connectedNodes = new Set();
+            connectedNodes.add(node.id);
+            
+            // Add parents and children to connected nodes
+            links.forEach(link => {
+                if (link.source === node.id) {
+                    connectedNodes.add(link.target);
+                }
+                if (link.target === node.id) {
+                    connectedNodes.add(link.source);
+                }
+            });
+
+            // Update nodes opacity
+            nodeElements.style("opacity", d => 
+                connectedNodes.has(d.id) ? 1 : 0.1
             );
 
-            // Update visibility
-            node.style("display", d => visibleNodeIds.has(d.id) ? null : "none");
-            label.style("display", d => visibleNodeIds.has(d.id) ? null : "none");
-            link.style("display", l => 
-                visibleNodeIds.has(l.source.id) && visibleNodeIds.has(l.target.id) ? null : "none"
+            // Update labels opacity
+            labelElements.style("opacity", d => 
+                connectedNodes.has(d.id) ? 1 : 0.1
             );
 
-            // Restart simulation with only visible nodes and links
-            simulation.nodes(visibleNodes);
-            simulation.force("link").links(visibleLinks);
-            simulation
-                .alpha(0.3) // Reduced initial alpha (was 1)
-                .restart();
-        } else {
-            // Reset display if no filter is active
-            node.style("display", null);
-            label.style("display", null);
-            link.style("display", null);
+            // Remove existing links
+            linksGroup.selectAll("line").remove();
 
-            // Restart simulation with all nodes and links
-            simulation.nodes(nodes);
-            simulation.force("link").links(links);
-            simulation
-                .alpha(0.3) // Reduced initial alpha (was 1)
-                .restart();
+            // Draw new links
+            linksGroup.selectAll("line")
+                .data(links.filter(l => 
+                    (l.source === node.id || l.target === node.id)
+                ))
+                .join("line")
+                .attr("x1", l => nodes.find(n => n.id === l.source).x)
+                .attr("y1", l => nodes.find(n => n.id === l.source).y)
+                .attr("x2", l => nodes.find(n => n.id === l.target).x)
+                .attr("y2", l => nodes.find(n => n.id === l.target).y)
+                .attr("stroke", "#999")
+                .attr("stroke-width", 1)
+                .attr("stroke-opacity", 0.6);
+        }
+
+        function resetView() {
+            // Reset all nodes and labels to full opacity
+            nodeElements.style("opacity", 1);
+            labelElements.style("opacity", 1);
+            
+            // Remove all links
+            linksGroup.selectAll("line").remove();
         }
     }
 
-    // Function to update the visual state of the legend
-    function updateLegendVisuals() {
-        legend.selectAll("circle")
-            .attr("stroke", d => d === activeFilter ? "#000" : "none")
-            .attr("stroke-width", d => d === activeFilter ? 2 : 0);
-        
-        legend.selectAll("text")
-            .attr("font-weight", d => d === activeFilter ? "bold" : "normal");
-    }
+    // Initialize the visualization
+    createGeneralityLayout();
 
-    // Initial call to set the correct visuals
-    applyFilter();
-    updateLegendVisuals();
+    // Log data for debugging
+    console.log("Nodes:", nodes);
+    console.log("Links:", links);
+}).catch(error => {
+    console.error("Error loading the data:", error);
 });

@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
+- 0.725
+- 0.7
 slug: inference-acceleration
-summary: Methods and hardware optimizations employed to increase the speed and efficiency of the inference process in machine learning models, particularly neural networks.
+summary: Methods and hardware optimizations employed to increase the speed and efficiency
+  of the inference process in machine learning models, particularly neural networks.
 title: Inference Acceleration
 ---
 

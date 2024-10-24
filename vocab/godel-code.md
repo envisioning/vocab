@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.78
+- 0.765
+- 0.745
+- 0.73
+- 0.71
+- 0.695
+- 0.675
 slug: godel-code
-summary: Method of encoding mathematical and logical statements as unique natural numbers, introduced by Kurt Gödel as part of his proof of the incompleteness theorems.
+summary: Method of encoding mathematical and logical statements as unique natural
+  numbers, introduced by Kurt Gödel as part of his proof of the incompleteness theorems.
 title: Gödel Code
 ---
 

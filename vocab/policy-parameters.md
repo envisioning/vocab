@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.75
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
 slug: policy-parameters
-summary: Variables in a ML model, particularly in RL, that define the behavior of the policy by determining the actions an agent takes in different states.
+summary: Variables in a ML model, particularly in RL, that define the behavior of
+  the policy by determining the actions an agent takes in different states.
 title: Policy Parameters
 ---
 

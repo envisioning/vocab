@@ -1,7 +1,16 @@
 ---
 category: DATA, MATH
+generality:
+- 0.935
+- 0.92
+- 0.905
+- 0.89
+- 0.875
+- 0.86
+- 0.845
 slug: numerical-processing
-summary: Algorithms and techniques for handling and analyzing numerical data to extract patterns, make predictions, or understand underlying trends.
+summary: Algorithms and techniques for handling and analyzing numerical data to extract
+  patterns, make predictions, or understand underlying trends.
 title: Numerical Processing
 ---
 

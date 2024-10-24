@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.81
+- 0.805
+- 0.8
+- 0.79
 slug: tunable-parameters
-summary: Variables in an AI model that are adjusted during training to optimize the model's performance on a given task.
+summary: Variables in an AI model that are adjusted during training to optimize the
+  model's performance on a given task.
 title: Tunable Parameters
 ---
 

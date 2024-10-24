@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.85
+- 0.83
+- 0.825
+- 0.81
+- 0.8
+- 0.79
+- 0.785
 slug: causal-ai
-summary: A form of AI that reasons using cause and effect logic to provide interpretable predictions and decisions.
+summary: A form of AI that reasons using cause and effect logic to provide interpretable
+  predictions and decisions.
 title: Causal AI
 ---
 

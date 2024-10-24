@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
 slug: moat
-summary: A concept of competitive advantage that AI companies gain by developing proprietary data, algorithms, and models.
+summary: A concept of competitive advantage that AI companies gain by developing proprietary
+  data, algorithms, and models.
 title: Moat
 ---
 

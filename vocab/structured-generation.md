@@ -1,7 +1,17 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.735
+- 0.715
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
 slug: structured-generation
-summary: Process where outputs are produced in a structured format, often requiring adherence to specific formats or templates, such as tables, graphs, or well-organized textual reports.
+summary: Process where outputs are produced in a structured format, often requiring
+  adherence to specific formats or templates, such as tables, graphs, or well-organized
+  textual reports.
 title: Structured Generation
 ---
 

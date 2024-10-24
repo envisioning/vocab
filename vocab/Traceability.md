@@ -1,7 +1,16 @@
 ---
 category: GOV, DATA
+generality:
+- 0.8
+- 0.78
+- 0.76
+- 0.74
+- 0.72
+- 0.7
+- 0.68
 slug: traceability
-summary: Ability to track and document the origins, evolution, and interactions of data, models, and decisions throughout the AI lifecycle.
+summary: Ability to track and document the origins, evolution, and interactions of
+  data, models, and decisions throughout the AI lifecycle.
 title: Traceability
 ---
 

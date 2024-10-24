@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.8
+- 0.805
+- 0.81
+- 0.815
+- 0.82
+- 0.825
+- 0.83
 slug: self-correction
-summary: An AI system's ability to recognize and rectify its own mistakes or errors without external intervention.
+summary: An AI system's ability to recognize and rectify its own mistakes or errors
+  without external intervention.
 title: Self-Correction
 ---
 

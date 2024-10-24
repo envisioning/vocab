@@ -1,7 +1,17 @@
 ---
 category: CORE, BIO
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: grokking
-summary: Refers to the process of deeply understanding something intuitively and completely, often used in AI to describe achieving a profound comprehension of complex concepts or systems.
+summary: Refers to the process of deeply understanding something intuitively and completely,
+  often used in AI to describe achieving a profound comprehension of complex concepts
+  or systems.
 title: Grokking
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.81
+- 0.805
+- 0.8
+- 0.795
 slug: fourier-analysis
-summary: Mathematical method for decomposing functions or signals into their constituent frequencies.
+summary: Mathematical method for decomposing functions or signals into their constituent
+  frequencies.
 title: Fourier Analysis
 ---
 

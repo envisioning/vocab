@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.87
+- 0.86
+- 0.855
+- 0.84
+- 0.835
+- 0.83
+- 0.825
 slug: hierarchical-planning
-summary: Approach to solving complex problems by breaking them down into more manageable sub-problems, organizing these into a hierarchy.
+summary: Approach to solving complex problems by breaking them down into more manageable
+  sub-problems, organizing these into a hierarchy.
 title: Hierarchical Planning
 ---
 

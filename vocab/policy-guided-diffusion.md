@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.325
+- 0.3
+- 0.275
+- 0.25
+- 0.225
+- 0.2
+- 0.175
 slug: policy-guided-diffusion
-summary: Method where a policy, typically learned via RL, guides the diffusion process in generating samples that conform to desired specifications or constraints.
+summary: Method where a policy, typically learned via RL, guides the diffusion process
+  in generating samples that conform to desired specifications or constraints.
 title: Policy-Guided Diffusion
 ---
 

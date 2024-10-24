@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.315
+- 0.295
+- 0.275
+- 0.255
+- 0.235
+- 0.215
+- 0.195
 slug: targeted-adversarial-examples
-summary: Inputs intentionally designed to cause a machine learning model to misclassify them into a specific, incorrect category.
+summary: Inputs intentionally designed to cause a machine learning model to misclassify
+  them into a specific, incorrect category.
 title: Targeted Adversarial Examples
 ---
 

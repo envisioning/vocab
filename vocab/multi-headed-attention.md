@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.82
+- 0.81
+- 0.805
+- 0.8
+- 0.795
+- 0.79
+- 0.785
 slug: multi-headed-attention
-summary: Mechanism in neural networks that allows the model to jointly attend to information from different representation subspaces at different positions.
+summary: Mechanism in neural networks that allows the model to jointly attend to information
+  from different representation subspaces at different positions.
 title: Multi-headed Attention
 ---
 

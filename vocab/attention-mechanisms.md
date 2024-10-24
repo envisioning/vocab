@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: attention-mechanisms
-summary: Dynamically prioritize certain parts of input data over others, enabling models to focus on relevant information when processing complex data sequences.
+summary: Dynamically prioritize certain parts of input data over others, enabling
+  models to focus on relevant information when processing complex data sequences.
 title: Attention Mechanisms
 ---
 

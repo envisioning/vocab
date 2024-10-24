@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.715
+- 0.69
+- 0.665
+- 0.64
+- 0.615
+- 0.59
+- 0.565
 slug: instruction-following-model
-summary: AI system designed to execute tasks based on specific commands or instructions provided by users.
+summary: AI system designed to execute tasks based on specific commands or instructions
+  provided by users.
 title: Instruction Following Model
 ---
 

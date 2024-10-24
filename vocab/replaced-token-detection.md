@@ -1,7 +1,17 @@
 ---
 category: CORE, DATA
+generality:
+- 0.76
+- 0.735
+- 0.71
+- 0.685
+- 0.66
+- 0.635
+- 0.61
 slug: replaced-token-detection
-summary: Method used in self-supervised learning where the task involves identifying or predicting tokens that have been intentionally altered or replaced in a given sequence.
+summary: Method used in self-supervised learning where the task involves identifying
+  or predicting tokens that have been intentionally altered or replaced in a given
+  sequence.
 title: Replaced Token Detection
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.72
+- 0.71
+- 0.7
+- 0.68
+- 0.67
+- 0.66
+- 0.65
 slug: fine-tuning
-summary: Method used in ML to adjust the parameters of an already trained model to improve its accuracy on a specific, often smaller, dataset.
+summary: Method used in ML to adjust the parameters of an already trained model to
+  improve its accuracy on a specific, often smaller, dataset.
 title: Fine Tuning
 ---
 

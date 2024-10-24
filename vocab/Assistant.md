@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: assistant
-summary: Software system designed to perform tasks or services for an individual, often leveraging NLP and ML to interact and respond intelligently.
+summary: Software system designed to perform tasks or services for an individual,
+  often leveraging NLP and ML to interact and respond intelligently.
 title: Assistant
 ---
 

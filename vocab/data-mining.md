@@ -1,7 +1,16 @@
 ---
 category: DATA, CORE
+generality:
+- 0.905
+- 0.89
+- 0.885
+- 0.88
+- 0.875
+- 0.865
+- 0.86
 slug: data-mining
-summary: Extracting valuable information from large datasets to identify patterns, trends, and relationships that may not be immediately apparent.
+summary: Extracting valuable information from large datasets to identify patterns,
+  trends, and relationships that may not be immediately apparent.
 title: Data Mining
 ---
 

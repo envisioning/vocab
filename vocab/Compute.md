@@ -1,5 +1,13 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.9
+- 0.905
+- 0.91
+- 0.915
+- 0.92
+- 0.925
+- 0.93
 slug: compute
 summary: Processing power and resources required to run AI algorithms and models.
 title: Compute

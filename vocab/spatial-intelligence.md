@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
 slug: spatial-intelligence
-summary: Ability of a system to understand, reason, and manipulate spatial relationships and properties within its environment.
+summary: Ability of a system to understand, reason, and manipulate spatial relationships
+  and properties within its environment.
 title: Spatial Intelligence
 ---
 

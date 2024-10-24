@@ -1,7 +1,16 @@
 ---
 category: DATA, MATH
+generality:
+- 0.9
+- 0.875
+- 0.89
+- 0.86
+- 0.88
+- 0.85
+- 0.865
 slug: predictive-analytics
-summary: Using statistical techniques and algorithms to analyze historical data and make predictions about future events.
+summary: Using statistical techniques and algorithms to analyze historical data and
+  make predictions about future events.
 title: Predictive Analytics
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.72
+- 0.695
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
 slug: attention-masking
-summary: Technique used in models based on transformers, where it manipulates the handling of sequence order and irrelevant elements in ML tasks.
+summary: Technique used in models based on transformers, where it manipulates the
+  handling of sequence order and irrelevant elements in ML tasks.
 title: Attention Masking
 ---
 

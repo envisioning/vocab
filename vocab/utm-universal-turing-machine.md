@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.96
+- 0.935
+- 0.91
+- 0.885
+- 0.86
+- 0.835
+- 0.81
 slug: utm
-summary: Theoretical construct in computer science that can simulate any other Turing machine's computing process given the appropriate input and its own machine's description.
+summary: Theoretical construct in computer science that can simulate any other Turing
+  machine's computing process given the appropriate input and its own machine's description.
 title: UTM (Universal Turing Machine)
 ---
 

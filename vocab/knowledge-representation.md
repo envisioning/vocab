@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
 slug: knowledge-representation
-summary: Method by which AI systems formalize and utilize the knowledge necessary to solve complex tasks.
+summary: Method by which AI systems formalize and utilize the knowledge necessary
+  to solve complex tasks.
 title: Knowledge Representation
 ---
 

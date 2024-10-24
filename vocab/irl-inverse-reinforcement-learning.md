@@ -1,7 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.72
+- 0.695
+- 0.68
+- 0.665
+- 0.64
+- 0.615
+- 0.59
 slug: irl
-summary: Technique in which an algorithm learns the underlying reward function of an environment based on observed behavior from an agent, essentially inferring the goals an agent is trying to achieve.
+summary: Technique in which an algorithm learns the underlying reward function of
+  an environment based on observed behavior from an agent, essentially inferring the
+  goals an agent is trying to achieve.
 title: IRL (Inverse Reinforcement Learning)
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: federated-learning
-summary: ML approach enabling models to be trained across multiple decentralized devices or servers holding local data samples, without exchanging them.
+summary: ML approach enabling models to be trained across multiple decentralized devices
+  or servers holding local data samples, without exchanging them.
 title: Federated Learning
 ---
 

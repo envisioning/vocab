@@ -1,5 +1,13 @@
 ---
 category: MATH, DATA
+generality:
+- 0.78
+- 0.79
+- 0.8
+- 0.81
+- 0.82
+- 0.83
+- 0.84
 slug: covariance
 summary: How much two random variables change together
 title: Covariance

@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: singularity
-summary: Hypothetical future point at which technological growth becomes uncontrollable and irreversible, resulting in unforeseeable changes to human civilization.
+summary: Hypothetical future point at which technological growth becomes uncontrollable
+  and irreversible, resulting in unforeseeable changes to human civilization.
 title: Singularity
 ---
 

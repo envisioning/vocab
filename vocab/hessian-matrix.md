@@ -1,7 +1,17 @@
 ---
 category: MATH, CORE
+generality:
+- 0.87
+- 0.86
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
 slug: hessian-matrix
-summary: Square matrix of second-order partial derivatives of a scalar-valued function, crucial in optimization, particularly for understanding the curvature of multidimensional functions.
+summary: Square matrix of second-order partial derivatives of a scalar-valued function,
+  crucial in optimization, particularly for understanding the curvature of multidimensional
+  functions.
 title: Hessian Matrix
 ---
 

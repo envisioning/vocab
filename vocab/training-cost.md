@@ -1,7 +1,16 @@
 ---
 category: IMPL, GOV
+generality:
+- 0.875
+- 0.87
+- 0.865
+- 0.86
+- 0.855
+- 0.85
+- 0.845
 slug: training-cost
-summary: Quantifies the resources required to develop AI models, including computational expenses, energy consumption, and human expertise.
+summary: Quantifies the resources required to develop AI models, including computational
+  expenses, energy consumption, and human expertise.
 title: Training Cost
 ---
 

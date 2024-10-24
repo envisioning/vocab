@@ -34,6 +34,9 @@ def parse_markdown_files(directory):
                         categories_match = re.search(r'category:\s*([^\n]+)', frontmatter)
                         slug_match = re.search(r'slug:\s*"?([^"\n]+)"?', frontmatter)
                         
+                        # Add generality extraction
+                        generality_match = re.search(r'generality:\s*\n((?:-\s*\d+\.?\d*\s*\n)+)', frontmatter)
+                        
                         # Get the main content after frontmatter
                         main_content = content.split('---', 2)[-1].strip()
                         
@@ -52,12 +55,19 @@ def parse_markdown_files(directory):
                                 duplicate_terms.append((title, filename))
                                 logging.warning(f"Duplicate term found: {title} in {filename}")
                             
+                            # Extract and process generality scores
+                            generality_scores = []
+                            if generality_match:
+                                scores_text = generality_match.group(1)
+                                generality_scores = [float(score.strip()) for score in re.findall(r'-\s*(\d+\.?\d*)', scores_text)]
+                            
                             # Store all metadata and content
                             terms[title] = {
                                 'summary': summary,
                                 'categories': categories,
                                 'slug': slug,
-                                'content': main_content  # Store the main content
+                                'content': main_content,
+                                'generality_scores': generality_scores  # Add generality scores
                             }
                             
                             logging.info(f"Successfully parsed {filename}")
@@ -96,7 +106,7 @@ def calculate_similarity(terms):
     tfidf_matrix = vectorizer.fit_transform(combined_texts)
     return cosine_similarity(tfidf_matrix)
 
-def create_graph(terms, similarity_matrix, threshold=0.3):
+def create_graph(terms, similarity_matrix, threshold=0.4):
     G = nx.Graph()
     term_list = list(terms.keys())
     for term in term_list:
@@ -160,12 +170,18 @@ def assign_ids(hierarchy):
 def create_polyhierarchy(hierarchy, id_mapping, terms):
     polyhierarchy = []
     for term, connections in hierarchy.items():
+        # Calculate average generality if scores exist
+        generality_avg = None
+        if terms[term]['generality_scores']:
+            generality_avg = round(sum(terms[term]['generality_scores']) / len(terms[term]['generality_scores']), 3)
+        
         node = {
             "id": id_mapping[term],
             "name": term,
             "summary": terms[term]['summary'],
             "categories": terms[term]['categories'],
             "slug": terms[term]['slug'],
+            "generality": generality_avg,  # Add generality average
             "children": [
                 {
                     "id": id_mapping[child],
@@ -178,12 +194,18 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
     # Add leaf nodes
     for term in id_mapping.keys():
         if term not in hierarchy:
+            # Calculate average generality if scores exist
+            generality_avg = None
+            if terms[term]['generality_scores']:
+                generality_avg = round(sum(terms[term]['generality_scores']) / len(terms[term]['generality_scores']), 3)
+            
             node = {
                 "id": id_mapping[term],
                 "name": term,
                 "summary": terms[term]['summary'],
                 "categories": terms[term]['categories'],
                 "slug": terms[term]['slug'],
+                "generality": generality_avg,  # Add generality average
                 "children": []
             }
             polyhierarchy.append(node)

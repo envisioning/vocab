@@ -1,7 +1,16 @@
 ---
 category: MATH, DATA
+generality:
+- 0.83
+- 0.825
+- 0.82
+- 0.815
+- 0.81
+- 0.805
+- 0.8
 slug: hypothesis-testing
-summary: A statistical method used to make decisions or inferences about one or more data sets.
+summary: A statistical method used to make decisions or inferences about one or more
+  data sets.
 title: Hypothesis Testing
 ---
 

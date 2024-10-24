@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: gat
-summary: Type of neural network that applies attention mechanisms directly to graphs to dynamically prioritize information from different nodes in the graph.
+summary: Type of neural network that applies attention mechanisms directly to graphs
+  to dynamically prioritize information from different nodes in the graph.
 title: GAT (Graph Attention Network)
 ---
 

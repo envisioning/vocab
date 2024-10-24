@@ -1,7 +1,16 @@
 ---
 category: DATA, IMPL
+generality:
+- 0.89
+- 0.87
+- 0.86
+- 0.85
+- 0.83
+- 0.81
+- 0.8
 slug: internet-scale
-summary: Systems, applications, or analyses designed to handle and process the vast and diverse data sets available across the entire internet.
+summary: Systems, applications, or analyses designed to handle and process the vast
+  and diverse data sets available across the entire internet.
 title: Internet Scale
 ---
 

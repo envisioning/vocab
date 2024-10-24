@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.74
+- 0.715
+- 0.69
+- 0.665
+- 0.64
+- 0.615
+- 0.59
 slug: glu
-summary: Neural network component that uses a gating mechanism to control information flow, improving model efficiency and performance.
+summary: Neural network component that uses a gating mechanism to control information
+  flow, improving model efficiency and performance.
 title: GLU (Gated Linear Unit)
 ---
 

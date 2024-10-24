@@ -1,7 +1,17 @@
 ---
 category: MATH, CORE
+generality:
+- 0.88
+- 0.865
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
 slug: scaling-laws
-summary: Mathematical relationships that describe how the performance of machine learning models, particularly deep learning models, improves as their size, the amount of data, or computational resources increases.
+summary: Mathematical relationships that describe how the performance of machine learning
+  models, particularly deep learning models, improves as their size, the amount of
+  data, or computational resources increases.
 title: Scaling Laws
 ---
 

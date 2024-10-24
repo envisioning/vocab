@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: ablation
-summary: Method where components of a neural network are systematically removed or altered to study their impact on the model's performance.
+summary: Method where components of a neural network are systematically removed or
+  altered to study their impact on the model's performance.
 title: Ablation
 ---
 

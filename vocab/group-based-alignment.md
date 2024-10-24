@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.765
+- 0.748
+- 0.732
+- 0.717
+- 0.702
+- 0.688
+- 0.671
 slug: group-based-alignment
-summary: Process of coordinating multiple AI systems or agents to work together harmoniously, ensuring their actions align with shared goals and values.
+summary: Process of coordinating multiple AI systems or agents to work together harmoniously,
+  ensuring their actions align with shared goals and values.
 title: Group-Based Alignment
 ---
 

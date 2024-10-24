@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
+- 0.77
 slug: discriminator
-summary: Model that determines the likelihood of a given input being real or fake, typically used in generative adversarial networks (GANs).
+summary: Model that determines the likelihood of a given input being real or fake,
+  typically used in generative adversarial networks (GANs).
 title: Discriminator
 ---
 

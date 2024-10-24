@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.875
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
+- 0.725
 slug: monte-carlo-estimation
-summary: A technique used within AI to approximate the probability of an event by running several simulations and observations.
+summary: A technique used within AI to approximate the probability of an event by
+  running several simulations and observations.
 title: Monte Carlo Estimation
 ---
 

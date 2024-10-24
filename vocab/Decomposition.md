@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.935
+- 0.93
+- 0.925
+- 0.92
+- 0.915
+- 0.91
+- 0.905
 slug: decomposition
-summary: Process of breaking down a complex problem into smaller, more manageable parts that can be solved individually.
+summary: Process of breaking down a complex problem into smaller, more manageable
+  parts that can be solved individually.
 title: Decomposition
 ---
 

@@ -1,5 +1,13 @@
 ---
 category: CORE, MATH
+generality:
+- 0.87
+- 0.865
+- 0.86
+- 0.855
+- 0.85
+- 0.845
+- 0.84
 slug: algorithmic-probability
 summary: ''
 title: Algorithmic Probability

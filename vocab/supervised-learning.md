@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.95
+- 0.925
+- 0.9
+- 0.88
+- 0.86
+- 0.84
+- 0.82
 slug: supervised-learning
-summary: ML approach where models are trained on labeled data to predict outcomes or classify data into categories.
+summary: ML approach where models are trained on labeled data to predict outcomes
+  or classify data into categories.
 title: Supervised Learning
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.64
+- 0.615
+- 0.59
+- 0.565
+- 0.54
+- 0.515
+- 0.49
 slug: logits
-summary: Raw, unnormalized outputs of the last layer in a neural network before applying the softmax function in classification tasks.
+summary: Raw, unnormalized outputs of the last layer in a neural network before applying
+  the softmax function in classification tasks.
 title: Logits
 ---
 

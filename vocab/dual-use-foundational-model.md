@@ -1,7 +1,16 @@
 ---
 category: CORE, GOV
+generality:
+- 0.75
+- 0.73
+- 0.71
+- 0.69
+- 0.67
+- 0.65
+- 0.63
 slug: dual-use-foundational-model
-summary: AI systems designed for general purposes that can be adapted for both beneficial and potentially harmful applications.
+summary: AI systems designed for general purposes that can be adapted for both beneficial
+  and potentially harmful applications.
 title: Dual Use Foundational Model
 ---
 

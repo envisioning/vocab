@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: chatgpt
-summary: Advanced conversational AI model developed by OpenAI based on the GPT architecture, designed to generate human-like text responses.
+summary: Advanced conversational AI model developed by OpenAI based on the GPT architecture,
+  designed to generate human-like text responses.
 title: ChatGPT
 ---
 

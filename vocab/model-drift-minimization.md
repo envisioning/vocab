@@ -1,7 +1,16 @@
 ---
 category: IMPL, DATA
+generality:
+- 0.81
+- 0.785
+- 0.76
+- 0.735
+- 0.71
+- 0.685
+- 0.66
 slug: model-drift-minimization
-summary: Strategies and methodologies to ensure that a ML model remains accurate and relevant over time as the underlying data changes.
+summary: Strategies and methodologies to ensure that a ML model remains accurate and
+  relevant over time as the underlying data changes.
 title: Model Drift Minimization
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
+- 0.76
 slug: discount-factor
-summary: Multiplicative factor used to reduce future values or rewards to their present value in decision-making processes, particularly in reinforcement learning.
+summary: Multiplicative factor used to reduce future values or rewards to their present
+  value in decision-making processes, particularly in reinforcement learning.
 title: Discount Factor
 ---
 

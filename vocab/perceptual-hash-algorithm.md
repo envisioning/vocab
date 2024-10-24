@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: perceptual-hash-algorithm
-summary: Generates a unique hash that reflects the visual or auditory similarity of data, such as an image, rather than its exact content.
+summary: Generates a unique hash that reflects the visual or auditory similarity of
+  data, such as an image, rather than its exact content.
 title: Perceptual Hash Algorithm
 ---
 

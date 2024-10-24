@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
 slug: bayesian-network
-summary: Graphical model that represents probabilistic relationships among variables using directed acyclic graphs (DAGs).
+summary: Graphical model that represents probabilistic relationships among variables
+  using directed acyclic graphs (DAGs).
 title: Bayesian Network
 ---
 

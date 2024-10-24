@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
+- 0.71
+- 0.69
 slug: encoder-decoder-models
-summary: Class of deep learning architectures that process an input to generate a corresponding output.
+summary: Class of deep learning architectures that process an input to generate a
+  corresponding output.
 title: Encoder-Decoder Models
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.45
+- 0.435
+- 0.42
+- 0.405
+- 0.39
+- 0.375
+- 0.36
 slug: jailbreaking
-summary: Exploiting vulnerabilities in AI systems to bypass restrictions and unlock otherwise inaccessible functionalities.
+summary: Exploiting vulnerabilities in AI systems to bypass restrictions and unlock
+  otherwise inaccessible functionalities.
 title: Jailbreaking
 ---
 

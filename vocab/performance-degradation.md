@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.71
+- 0.69
+- 0.67
+- 0.65
+- 0.63
+- 0.61
+- 0.59
 slug: performance-degradation
-summary: Decline in the efficiency or effectiveness of an AI system over time or under specific conditions, leading to reduced accuracy, speed, or reliability.
+summary: Decline in the efficiency or effectiveness of an AI system over time or under
+  specific conditions, leading to reduced accuracy, speed, or reliability.
 title: Performance Degradation
 ---
 

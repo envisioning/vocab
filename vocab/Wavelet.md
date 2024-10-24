@@ -1,7 +1,16 @@
 ---
 category: MATH, DATA
+generality:
+- 0.8
+- 0.78
+- 0.77
+- 0.76
+- 0.74
+- 0.72
+- 0.7
 slug: wavelet
-summary: Mathematical function used for analyzing localized variations of power within a time series or signal, providing a multi-resolution analysis.
+summary: Mathematical function used for analyzing localized variations of power within
+  a time series or signal, providing a multi-resolution analysis.
 title: Wavelet
 ---
 

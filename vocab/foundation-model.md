@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.91
+- 0.885
+- 0.86
+- 0.835
+- 0.81
+- 0.785
+- 0.76
 slug: foundation-model
-summary: Type of large-scale pre-trained model that can be adapted to a wide range of tasks without needing to be trained from scratch each time.
+summary: Type of large-scale pre-trained model that can be adapted to a wide range
+  of tasks without needing to be trained from scratch each time.
 title: Foundation Model
 ---
 

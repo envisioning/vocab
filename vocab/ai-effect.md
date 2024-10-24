@@ -1,7 +1,17 @@
 ---
 category: CORE, GOV
+generality:
+- 0.8
+- 0.79
+- 0.78
+- 0.77
+- 0.76
+- 0.75
+- 0.74
 slug: ai-effect
-summary: Phenomenon where once an AI system can perform a task previously thought to require human intelligence, the task is no longer considered to be a benchmark for intelligence.
+summary: Phenomenon where once an AI system can perform a task previously thought
+  to require human intelligence, the task is no longer considered to be a benchmark
+  for intelligence.
 title: AI Effect
 ---
 

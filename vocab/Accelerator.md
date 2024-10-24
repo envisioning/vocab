@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.82
+- 0.8
+- 0.79
+- 0.77
+- 0.75
+- 0.73
+- 0.71
 slug: accelerator
-summary: Hardware designed to speed up specific types of computations, such as those needed for AI model training and inference.
+summary: Hardware designed to speed up specific types of computations, such as those
+  needed for AI model training and inference.
 title: Accelerator
 ---
 

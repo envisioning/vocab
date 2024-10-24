@@ -1,5 +1,13 @@
 ---
 category: CORE, BIO
+generality:
+- 0.78
+- 0.76
+- 0.74
+- 0.72
+- 0.7
+- 0.68
+- 0.66
 slug: intention
 summary: Planned or desired outcome that an agent aims to achieve through its actions.
 title: Intention

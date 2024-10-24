@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: adversarial-attacks
-summary: Manipulating input data to deceive machine learning models, causing them to make incorrect predictions or classifications.
+summary: Manipulating input data to deceive machine learning models, causing them
+  to make incorrect predictions or classifications.
 title: Adversarial Attacks
 ---
 

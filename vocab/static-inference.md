@@ -1,7 +1,16 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
 slug: static-inference
-summary: Process of performing predictions using a pre-trained machine learning model without updating the model parameters during runtime.
+summary: Process of performing predictions using a pre-trained machine learning model
+  without updating the model parameters during runtime.
 title: Static Inference
 ---
 

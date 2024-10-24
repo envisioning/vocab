@@ -1,7 +1,17 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.71
+- 0.688
+- 0.666
+- 0.644
+- 0.622
+- 0.6
+- 0.578
 slug: capsule-network
-summary: Type of artificial neural network that aims to more accurately model hierarchical relationships and spatial information in visual data by using groups of neurons called capsules.
+summary: Type of artificial neural network that aims to more accurately model hierarchical
+  relationships and spatial information in visual data by using groups of neurons
+  called capsules.
 title: Capsule Network
 ---
 

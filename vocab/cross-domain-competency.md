@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: cross-domain-competency
-summary: Ability of an AI system to understand, learn, and apply knowledge and skills across multiple, varied domains or areas of expertise.
+summary: Ability of an AI system to understand, learn, and apply knowledge and skills
+  across multiple, varied domains or areas of expertise.
 title: Cross-Domain Competency
 ---
 

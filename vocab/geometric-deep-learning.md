@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.79
+- 0.76
+- 0.73
+- 0.7
+- 0.67
+- 0.64
+- 0.61
 slug: geometric-deep-learning
-summary: Field of study that extends DL techniques to data that is structured as graphs, manifolds, or more general topological spaces.
+summary: Field of study that extends DL techniques to data that is structured as graphs,
+  manifolds, or more general topological spaces.
 title: Geometric Deep Learning
 ---
 

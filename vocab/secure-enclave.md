@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.72
+- 0.7
+- 0.685
+- 0.665
+- 0.64
+- 0.625
+- 0.605
 slug: secure-enclave
-summary: Hardware-based security feature designed to protect sensitive data by isolating it in a dedicated and secure area of a processor.
+summary: Hardware-based security feature designed to protect sensitive data by isolating
+  it in a dedicated and secure area of a processor.
 title: Secure Enclave
 ---
 

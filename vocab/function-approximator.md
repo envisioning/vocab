@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.84
+- 0.82
+- 0.81
+- 0.805
+- 0.8
+- 0.79
+- 0.78
 slug: function-approximator
-summary: Computational model used to estimate a target function that is generally complex or unknown, often applied in machine learning and control systems.
+summary: Computational model used to estimate a target function that is generally
+  complex or unknown, often applied in machine learning and control systems.
 title: Function Approximator
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.51
+- 0.485
+- 0.46
+- 0.435
+- 0.41
+- 0.385
+- 0.36
 slug: rag
-summary: Combines the retrieval of informative documents from a large corpus with the generative capabilities of neural models to enhance language model responses with real-world knowledge.
+summary: Combines the retrieval of informative documents from a large corpus with
+  the generative capabilities of neural models to enhance language model responses
+  with real-world knowledge.
 title: RAG (Retrieval-Augmented Generation)
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.865
+- 0.855
+- 0.845
+- 0.835
+- 0.825
+- 0.815
+- 0.805
 slug: metaheuristic
-summary: High-level problem-independent algorithmic framework that provides a set of guidelines or strategies to develop heuristic optimization algorithms.
+summary: High-level problem-independent algorithmic framework that provides a set
+  of guidelines or strategies to develop heuristic optimization algorithms.
 title: Metaheuristic
 ---
 

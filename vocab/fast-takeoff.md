@@ -1,7 +1,16 @@
 ---
 category: CORE, GOV
+generality:
+- 0.5
+- 0.525
+- 0.55
+- 0.475
+- 0.5
+- 0.525
+- 0.45
 slug: fast-takeoff
-summary: Rapid transition from human-level to superintelligent AI, occurring in a very short period of time.
+summary: Rapid transition from human-level to superintelligent AI, occurring in a
+  very short period of time.
 title: Fast Takeoff
 ---
 

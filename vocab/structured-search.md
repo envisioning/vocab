@@ -1,7 +1,16 @@
 ---
 category: DATA, ARCH
+generality:
+- 0.825
+- 0.81
+- 0.795
+- 0.78
+- 0.765
+- 0.75
+- 0.735
 slug: structured-search
-summary: Method of querying and retrieving information from databases and other structured data sources where data is organized in defined types and relationships.
+summary: Method of querying and retrieving information from databases and other structured
+  data sources where data is organized in defined types and relationships.
 title: Structured Search
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.65
+- 0.635
+- 0.62
+- 0.605
+- 0.59
+- 0.575
+- 0.56
 slug: model-garden
-summary: Centralized repository that houses a collection of pre-trained machine learning models designed to be easily accessible and reusable by developers and researchers.
+summary: Centralized repository that houses a collection of pre-trained machine learning
+  models designed to be easily accessible and reusable by developers and researchers.
 title: Model Garden
 ---
 

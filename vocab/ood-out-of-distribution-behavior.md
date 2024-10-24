@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: ood
-summary: When an AI model encounters data that significantly differ from its training data, often leading to unreliable or erroneous predictions.
+summary: When an AI model encounters data that significantly differ from its training
+  data, often leading to unreliable or erroneous predictions.
 title: OOD (Out Of Distribution Behavior)
 ---
 

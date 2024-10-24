@@ -1,7 +1,16 @@
 ---
 category: DATA, IMPL
+generality:
+- 0.925
+- 0.91
+- 0.895
+- 0.88
+- 0.865
+- 0.85
+- 0.835
 slug: feature-design
-summary: Process of selecting, modifying, or creating new features from raw data to improve the performance of machine learning models.
+summary: Process of selecting, modifying, or creating new features from raw data to
+  improve the performance of machine learning models.
 title: Feature Design
 ---
 

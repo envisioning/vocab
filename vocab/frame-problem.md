@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: frame-problem
-summary: Challenge in AI of representing and updating the effects of actions in a dynamic world without having to explicitly state all conditions that remain unchanged.
+summary: Challenge in AI of representing and updating the effects of actions in a
+  dynamic world without having to explicitly state all conditions that remain unchanged.
 title: Frame Problem
 ---
 

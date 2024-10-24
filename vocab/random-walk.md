@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: random-walk
-summary: Mathematical concept representing a path consisting of a succession of random steps on some mathematical space.
+summary: Mathematical concept representing a path consisting of a succession of random
+  steps on some mathematical space.
 title: Random Walk
 ---
 

@@ -1,5 +1,13 @@
 ---
 category: CORE, MATH
+generality:
+- 0.95
+- 0.92
+- 0.9
+- 0.89
+- 0.87
+- 0.86
+- 0.84
 slug: turing-completeness
 summary: Systems that can simulate a Turing machine's computational abilities.
 title: Turing Completeness

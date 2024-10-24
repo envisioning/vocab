@@ -1,7 +1,17 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: model-collapse
-summary: Phenomenon where a ML model, particularly in unsupervised or generative learning, repeatedly produces identical or highly similar outputs despite varying inputs, leading to a loss of diversity in the generated data.
+summary: Phenomenon where a ML model, particularly in unsupervised or generative learning,
+  repeatedly produces identical or highly similar outputs despite varying inputs,
+  leading to a loss of diversity in the generated data.
 title: Model Collapse
 ---
 

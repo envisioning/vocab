@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.87
+- 0.865
+- 0.86
+- 0.855
+- 0.85
+- 0.845
+- 0.84
 slug: multiagent
-summary: Multiple autonomous entities (agents) interacting in a shared environment, often with cooperative or competitive objectives.
+summary: Multiple autonomous entities (agents) interacting in a shared environment,
+  often with cooperative or competitive objectives.
 title: Multiagent
 ---
 

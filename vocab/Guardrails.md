@@ -1,7 +1,16 @@
 ---
 category: GOV, ARCH
+generality:
+- 0.825
+- 0.815
+- 0.8
+- 0.79
+- 0.785
+- 0.77
+- 0.76
 slug: guardrails
-summary: Principles, policies, and technical measures implemented to ensure AI systems operate safely, ethically, and within regulatory and societal norms.
+summary: Principles, policies, and technical measures implemented to ensure AI systems
+  operate safely, ethically, and within regulatory and societal norms.
 title: Guardrails
 ---
 

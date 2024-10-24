@@ -1,7 +1,16 @@
 ---
 category: IMPL, DATA
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: sentiment-classifier
-summary: NLP tool that identifies and categorizes opinions expressed in a piece of text.
+summary: NLP tool that identifies and categorizes opinions expressed in a piece of
+  text.
 title: Sentiment Classifier
 ---
 

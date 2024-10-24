@@ -1,7 +1,17 @@
 ---
 category: BIO, CORE
+generality:
+- 0.67
+- 0.655
+- 0.64
+- 0.625
+- 0.61
+- 0.595
+- 0.58
 slug: active-inference
-summary: Theoretical framework in neuroscience and artificial intelligence that describes how agents infer and act to minimize their prediction errors about the state of the world.
+summary: Theoretical framework in neuroscience and artificial intelligence that describes
+  how agents infer and act to minimize their prediction errors about the state of
+  the world.
 title: Active Inference
 ---
 

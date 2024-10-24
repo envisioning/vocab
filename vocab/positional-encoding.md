@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.8
+- 0.787
+- 0.775
+- 0.762
+- 0.75
+- 0.737
+- 0.725
 slug: positional-encoding
-summary: Technique used in neural network models, especially in transformers, to inject information about the order of tokens in the input sequence.
+summary: Technique used in neural network models, especially in transformers, to inject
+  information about the order of tokens in the input sequence.
 title: Positional Encoding
 ---
 

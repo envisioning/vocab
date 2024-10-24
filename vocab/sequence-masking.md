@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
 slug: sequence-masking
-summary: ML technique to prevent certain parts of input sequences from influencing the training process of models, particularly in natural language processing tasks.
+summary: ML technique to prevent certain parts of input sequences from influencing
+  the training process of models, particularly in natural language processing tasks.
 title: Sequence Masking
 ---
 

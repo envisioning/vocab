@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.825
+- 0.81
+- 0.79
+- 0.775
+- 0.76
+- 0.74
+- 0.72
 slug: evolutionary-algorithm
-summary: Optimization methods inspired by the process of natural selection where potential solutions evolve over generations to optimize a given objective function.
+summary: Optimization methods inspired by the process of natural selection where potential
+  solutions evolve over generations to optimize a given objective function.
 title: Evolutionary Algorithm
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.71
+- 0.72
+- 0.73
+- 0.74
+- 0.75
+- 0.76
+- 0.77
 slug: hebbian-learning
-summary: Neural network learning rule based on the principle that synapses between neurons are strengthened when the neurons activate simultaneously.
+summary: Neural network learning rule based on the principle that synapses between
+  neurons are strengthened when the neurons activate simultaneously.
 title: Hebbian Learning
 ---
 

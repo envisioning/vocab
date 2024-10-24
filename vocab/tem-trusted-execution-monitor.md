@@ -1,8 +1,17 @@
 ---
 category: GOV, CORE
+generality:
+- 0.6
+- 0.585
+- 0.57
+- 0.555
+- 0.54
+- 0.525
+- 0.51
 slug: tem-trusted-execution-monitor
+summary: Security component that ensures the integrity and confidentiality of code
+  and data within a computer system by managing and protecting execution environments.
 title: TEM (Trusted Execution Monitor)
-summary: Security component that ensures the integrity and confidentiality of code and data within a computer system by managing and protecting execution environments.
 ---
 
 Expert-level Explanation: A Trusted Execution Monitor (TEM) operates as a safeguard within a computing system to enforce security policies and ensure that sensitive computations are isolated from potentially untrusted parts of the system. It accomplishes this by creating secure enclaves where code and data can be executed and stored without interference from malicious software or unauthorized users. TEMs provide mechanisms to protect these secure enclaves from tampering, even in the presence of higher-privileged malware. This isolation is critical for applications requiring high levels of security, such as financial transactions, secure communications, and personal data protection. By ensuring that only authenticated and authorized code can run within these enclaves, TEMs significantly enhance the overall security posture of the system.

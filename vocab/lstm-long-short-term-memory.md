@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
+- 0.77
 slug: lstm
-summary: Type of recurrent neural network architecture designed to learn long-term dependencies in sequential data.
+summary: Type of recurrent neural network architecture designed to learn long-term
+  dependencies in sequential data.
 title: LSTM (Long Short-Term Memory)
 ---
 

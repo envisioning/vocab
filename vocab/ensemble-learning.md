@@ -1,8 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.87
+- 0.845
+- 0.82
+- 0.795
+- 0.77
+- 0.745
+- 0.72
 slug: ensemble-learning
-title: "Ensemble Learning"
-summary: "ML paradigm where multiple models (often called weak learners) are trained to solve the same problem and combined to improve the accuracy of predictions."
+summary: ML paradigm where multiple models (often called weak learners) are trained
+  to solve the same problem and combined to improve the accuracy of predictions.
+title: Ensemble Learning
 ---
 
 Ensemble learning capitalizes on the idea that a group of weak learners can come together to form a strong learner, thereby improving model performance, especially in complex problem spaces where a single model may struggle. This technique is fundamental in reducing bias and variance, two core issues in machine learning model performance. By aggregating the predictions of several models, ensemble methods can often achieve higher accuracy than any individual model. Common approaches include bagging, which builds multiple models (usually of the same type) from different subsamples of the training dataset, and boosting, which builds models sequentially by adjusting the weights of instances based on the prediction error of the previous model. Another popular method is stacking, which involves combining different types of models and using a meta-model to learn how to best combine their predictions.

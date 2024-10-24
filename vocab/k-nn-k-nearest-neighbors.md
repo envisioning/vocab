@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: k-nn
-summary: Simple, non-parametric algorithm used in ML for classification and regression tasks by assigning labels based on the majority vote of the nearest neighbors.
+summary: Simple, non-parametric algorithm used in ML for classification and regression
+  tasks by assigning labels based on the majority vote of the nearest neighbors.
 title: k-NN (k-Nearest Neighbors)
 ---
 

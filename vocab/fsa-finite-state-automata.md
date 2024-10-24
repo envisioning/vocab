@@ -1,7 +1,17 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.835
+- 0.81
+- 0.785
+- 0.76
+- 0.735
+- 0.71
+- 0.685
 slug: fsa
-summary: Computational model that processes input sequences and transitions between a finite number of states according to a set of rules, typically used for recognizing patterns or designing digital circuits.
+summary: Computational model that processes input sequences and transitions between
+  a finite number of states according to a set of rules, typically used for recognizing
+  patterns or designing digital circuits.
 title: FSA (Finite State Automata)
 ---
 

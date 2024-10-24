@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.875
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
+- 0.725
 slug: end-to-end-learning
-summary: ML approach where a system is trained to directly map input data to the desired output, minimizing the need for manual feature engineering.
+summary: ML approach where a system is trained to directly map input data to the desired
+  output, minimizing the need for manual feature engineering.
 title: End-to-End Learning
 ---
 

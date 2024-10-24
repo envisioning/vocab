@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.45
+- 0.425
+- 0.41
+- 0.39
+- 0.375
+- 0.35
+- 0.325
 slug: slapa
-summary: AI agent designed to autonomously learn and interact with APIs to perform tasks more effectively over time.
+summary: AI agent designed to autonomously learn and interact with APIs to perform
+  tasks more effectively over time.
 title: SLAPA (Self-Learning Agent for Performing APIs)
 ---
 

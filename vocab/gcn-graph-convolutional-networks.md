@@ -1,7 +1,17 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.74
+- 0.72
+- 0.7
+- 0.68
+- 0.66
+- 0.64
+- 0.62
 slug: gcn
-summary: Class of neural networks designed to operate on graph-structured data, leveraging convolutional layers to aggregate and transform features from graph nodes and their neighbors.
+summary: Class of neural networks designed to operate on graph-structured data, leveraging
+  convolutional layers to aggregate and transform features from graph nodes and their
+  neighbors.
 title: GCN (Graph Convolutional Networks)
 ---
 

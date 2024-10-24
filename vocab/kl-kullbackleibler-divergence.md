@@ -1,7 +1,16 @@
 ---
 category: MATH, DATA
+generality:
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
 slug: kl-divergence
-summary: Measure of how one probability distribution diverges from a second, reference probability distribution.
+summary: Measure of how one probability distribution diverges from a second, reference
+  probability distribution.
 title: KL (Kullback–Leibler) Divergence
 ---
 

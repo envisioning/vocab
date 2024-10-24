@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.4
+- 0.385
+- 0.37
+- 0.355
+- 0.34
+- 0.325
+- 0.31
 slug: fabless
-summary: Company which designs and markets hardware while outsourcing the manufacturing of silicon wafers and chips to specialized semiconductor foundries.
+summary: Company which designs and markets hardware while outsourcing the manufacturing
+  of silicon wafers and chips to specialized semiconductor foundries.
 title: Fabless
 ---
 

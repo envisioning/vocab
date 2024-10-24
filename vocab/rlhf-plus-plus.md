@@ -1,8 +1,17 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: rlhf-plus-plus
-summary:
-  Advanced form of RLFH (Reinforcement Learning from Human Feedback), a technique used in ML to enhance model performance by incorporating human feedback into the training process.
+summary: Advanced form of RLFH (Reinforcement Learning from Human Feedback), a technique
+  used in ML to enhance model performance by incorporating human feedback into the
+  training process.
 title: RLHF++
 ---
 

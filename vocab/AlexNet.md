@@ -1,7 +1,17 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.67
+- 0.65
+- 0.63
+- 0.61
+- 0.59
+- 0.57
+- 0.55
 slug: alexnet
-summary: Deep convolutional neural network that significantly advanced the field of computer vision by winning the ImageNet Large Scale Visual Recognition Challenge in 2012.
+summary: Deep convolutional neural network that significantly advanced the field of
+  computer vision by winning the ImageNet Large Scale Visual Recognition Challenge
+  in 2012.
 title: AlexNet
 ---
 

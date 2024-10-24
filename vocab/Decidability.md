@@ -1,7 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.9
+- 0.875
+- 0.86
+- 0.855
+- 0.85
+- 0.845
+- 0.84
 slug: decidability
-summary: Whether a problem can be algorithmically solved, meaning there exists a clear procedure (algorithm) that will determine a yes-or-no answer for any given input within a finite amount of time.
+summary: Whether a problem can be algorithmically solved, meaning there exists a clear
+  procedure (algorithm) that will determine a yes-or-no answer for any given input
+  within a finite amount of time.
 title: Decidability
 ---
 

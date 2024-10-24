@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.86
+- 0.85
+- 0.875
+- 0.855
+- 0.87
+- 0.865
+- 0.86
 slug: dimensionality-reduction
-summary: Process used in ML to reduce the number of input variables or features in a dataset, simplifying models while retaining essential information.
+summary: Process used in ML to reduce the number of input variables or features in
+  a dataset, simplifying models while retaining essential information.
 title: Dimensionality Reduction
 ---
 

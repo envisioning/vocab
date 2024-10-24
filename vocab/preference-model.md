@@ -1,7 +1,16 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
+- 0.71
 slug: preference-model
-summary: Computational framework used to predict and understand an individual's preferences, often applied in recommendation systems and decision-making processes.
+summary: Computational framework used to predict and understand an individual's preferences,
+  often applied in recommendation systems and decision-making processes.
 title: Preference Model
 ---
 

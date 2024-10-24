@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.375
+- 0.35
+- 0.34
+- 0.325
+- 0.31
+- 0.29
+- 0.28
 slug: low-bit-palletization
-summary: Process of reducing the bit depth of data representations to streamline computation and improve efficiency in neural network processing and other AI applications.
+summary: Process of reducing the bit depth of data representations to streamline computation
+  and improve efficiency in neural network processing and other AI applications.
 title: Low-Bit Palletization
 ---
 

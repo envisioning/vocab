@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
 slug: cybernetics
-summary: Interdisciplinary study of control and communication in living organisms and machines.
+summary: Interdisciplinary study of control and communication in living organisms
+  and machines.
 title: Cybernetics
 ---
 

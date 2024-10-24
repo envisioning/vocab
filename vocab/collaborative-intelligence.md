@@ -1,7 +1,16 @@
 ---
 category: CORE, GOV
+generality:
+- 0.775
+- 0.765
+- 0.755
+- 0.745
+- 0.735
+- 0.725
+- 0.715
 slug: collaborative-intelligence
-summary: Synergy between human intelligence and AI to achieve outcomes neither could accomplish alone.
+summary: Synergy between human intelligence and AI to achieve outcomes neither could
+  accomplish alone.
 title: Collaborative Intelligence
 ---
 

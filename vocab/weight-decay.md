@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.78
+- 0.76
+- 0.75
+- 0.73
+- 0.71
+- 0.7
+- 0.68
 slug: weight-decay
-summary: Regularization technique used in training neural networks to prevent overfitting by penalizing large weights.
+summary: Regularization technique used in training neural networks to prevent overfitting
+  by penalizing large weights.
 title: Weight Decay
 ---
 

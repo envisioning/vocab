@@ -1,7 +1,16 @@
 ---
 category: CORE, GOV
+generality:
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
+- 0.275
+- 0.25
 slug: paperclip-maximizer
-summary: Theoretical AI designed to maximize the production of paperclips, illustrating the potential dangers of an AI system pursuing a goal without proper constraints.
+summary: Theoretical AI designed to maximize the production of paperclips, illustrating
+  the potential dangers of an AI system pursuing a goal without proper constraints.
 title: Paperclip Maximizer
 ---
 

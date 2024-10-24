@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: ait
-summary: Studies the complexity of strings and the amount of information they contain, using algorithms and computational methods.
+summary: Studies the complexity of strings and the amount of information they contain,
+  using algorithms and computational methods.
 title: AIT (Algorithmic Information Theory)
 ---
 

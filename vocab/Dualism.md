@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: dualism
-summary: Theory or concept that emphasizes the division between symbolic (classical) AI and sub-symbolic (connectionist) AI.
+summary: Theory or concept that emphasizes the division between symbolic (classical)
+  AI and sub-symbolic (connectionist) AI.
 title: Dualism
 ---
 

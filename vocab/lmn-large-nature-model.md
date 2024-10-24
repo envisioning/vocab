@@ -1,7 +1,16 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.45
+- 0.425
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
 slug: lmn
-summary: Open-source model focused on nature, using a vast, ethically sourced dataset of natural world elements.
+summary: Open-source model focused on nature, using a vast, ethically sourced dataset
+  of natural world elements.
 title: LMN (Large Nature Model)
 ---
 

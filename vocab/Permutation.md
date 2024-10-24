@@ -1,5 +1,13 @@
 ---
 category: MATH
+generality:
+- 0.81
+- 0.795
+- 0.78
+- 0.765
+- 0.75
+- 0.735
+- 0.72
 slug: permutation
 summary: Arrangement of all or part of a set of objects in a specific order.
 title: Permutation

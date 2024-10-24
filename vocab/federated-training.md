@@ -1,7 +1,17 @@
 ---
 category: IMPL, DATA
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: federated-training
-summary: Decentralized machine learning approach where multiple devices or nodes collaboratively train a shared model while keeping their data localized, rather than aggregating it centrally.
+summary: Decentralized machine learning approach where multiple devices or nodes collaboratively
+  train a shared model while keeping their data localized, rather than aggregating
+  it centrally.
 title: Federated Training
 ---
 

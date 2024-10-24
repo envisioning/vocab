@@ -1,7 +1,16 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.21
+- 0.22
+- 0.23
+- 0.24
+- 0.25
+- 0.26
+- 0.27
 slug: abliteration
-summary: Technique that uncensors language models by removing alignment restrictions without requiring retraining.
+summary: Technique that uncensors language models by removing alignment restrictions
+  without requiring retraining.
 title: Abliteration
 ---
 

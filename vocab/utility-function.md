@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: utility-function
-summary: Mathematical tool utilized in AI to model preferences and calculate the best decision based on expected outcomes.
+summary: Mathematical tool utilized in AI to model preferences and calculate the best
+  decision based on expected outcomes.
 title: Utility Function
 ---
 

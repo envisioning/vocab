@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.78
+- 0.76
+- 0.74
+- 0.72
+- 0.7
+- 0.68
+- 0.66
 slug: meta-regressor
-summary: Type of ensemble learning method that uses the predictions of several base regression models to train a second-level model to make a final prediction.
+summary: Type of ensemble learning method that uses the predictions of several base
+  regression models to train a second-level model to make a final prediction.
 title: Meta-Regressor
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: q-learning
-summary: Model-free reinforcement learning algorithm that seeks to learn the value of actions in a given state, enabling an agent to maximize cumulative reward over time.
+summary: Model-free reinforcement learning algorithm that seeks to learn the value
+  of actions in a given state, enabling an agent to maximize cumulative reward over
+  time.
 title: Q-Learning
 ---
 

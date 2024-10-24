@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.8
+- 0.805
+- 0.81
+- 0.815
+- 0.82
+- 0.825
+- 0.83
 slug: autoencoder
-summary: Type of artificial neural network used to learn efficient codings of unlabeled data, typically for the purpose of dimensionality reduction or feature learning.
+summary: Type of artificial neural network used to learn efficient codings of unlabeled
+  data, typically for the purpose of dimensionality reduction or feature learning.
 title: Autoencoder
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.975
+- 0.965
+- 0.955
+- 0.945
+- 0.935
+- 0.925
+- 0.915
 slug: human-level-ai
-summary: AI systems that can perform any intellectual task with the same proficiency as a human being.
+summary: AI systems that can perform any intellectual task with the same proficiency
+  as a human being.
 title: Human-Level AI
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.69
+- 0.67
+- 0.655
+- 0.64
+- 0.62
+- 0.605
+- 0.59
 slug: masking
-summary: Technique used in NLP models to prevent future input tokens from influencing the prediction of current tokens.
+summary: Technique used in NLP models to prevent future input tokens from influencing
+  the prediction of current tokens.
 title: Masking
 ---
 

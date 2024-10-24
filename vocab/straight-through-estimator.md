@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.6
+- 0.585
+- 0.57
+- 0.555
+- 0.54
+- 0.525
+- 0.51
 slug: straight-through-estimator
-summary: Technique used in training neural networks to enable the backpropagation of gradients through non-differentiable functions or operations.
+summary: Technique used in training neural networks to enable the backpropagation
+  of gradients through non-differentiable functions or operations.
 title: Straight-Through Estimator
 ---
 

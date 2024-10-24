@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.45
+- 0.425
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
 slug: jagged-frontier
-summary: Metaphorically describes an area of AI research characterized by rapid, uneven advances and significant uncertainties or complexities.
+summary: Metaphorically describes an area of AI research characterized by rapid, uneven
+  advances and significant uncertainties or complexities.
 title: Jagged Frontier
 ---
 

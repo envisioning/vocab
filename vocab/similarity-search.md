@@ -1,7 +1,16 @@
 ---
 category: DATA, CORE
+generality:
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
+- 0.71
 slug: similarity-search
-summary: Method used in data science to identify similar items from a large dataset based on their proximity to a given query item (also known as proximity search).
+summary: Method used in data science to identify similar items from a large dataset
+  based on their proximity to a given query item (also known as proximity search).
 title: Similarity Search
 ---
 

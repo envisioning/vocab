@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.81
+- 0.805
+- 0.8
+- 0.795
+- 0.79
+- 0.785
+- 0.78
 slug: syntactic-templates
-summary: Predefined structures that define the permissible syntax patterns for sentences in natural language processing (NLP) to facilitate parsing and generation tasks.
+summary: Predefined structures that define the permissible syntax patterns for sentences
+  in natural language processing (NLP) to facilitate parsing and generation tasks.
 title: Syntactic Templates
 ---
 

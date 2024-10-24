@@ -1,7 +1,16 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.71
+- 0.705
+- 0.7
+- 0.695
+- 0.69
+- 0.685
+- 0.68
 slug: expressive-hidden-states
-summary: internal representations within a neural network that effectively capture and encode complex patterns and dependencies in the input data.
+summary: internal representations within a neural network that effectively capture
+  and encode complex patterns and dependencies in the input data.
 title: Expressive Hidden States
 ---
 

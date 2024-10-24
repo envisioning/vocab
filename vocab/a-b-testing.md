@@ -1,7 +1,16 @@
 ---
 category: DATA, MATH
+generality:
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
+- 0.645
+- 0.63
 slug: a-b-testing
-summary: Method used to compare two versions of a variable to determine which one performs better in achieving a specific outcome.
+summary: Method used to compare two versions of a variable to determine which one
+  performs better in achieving a specific outcome.
 title: A-B Testing
 ---
 

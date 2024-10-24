@@ -1,7 +1,17 @@
 ---
 category: MATH, CORE
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: convolution
-summary: Mathematical operation used in signal processing and image processing to combine two functions, resulting in a third function that represents how one function modifies the other.
+summary: Mathematical operation used in signal processing and image processing to
+  combine two functions, resulting in a third function that represents how one function
+  modifies the other.
 title: Convolution
 ---
 

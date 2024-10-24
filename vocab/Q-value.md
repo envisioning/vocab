@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.88
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
 slug: q-value
-summary: Measure used in RL to represent the expected future rewards that an agent can obtain, starting from a given state and choosing a particular action.
+summary: Measure used in RL to represent the expected future rewards that an agent
+  can obtain, starting from a given state and choosing a particular action.
 title: Q-Value
 ---
 

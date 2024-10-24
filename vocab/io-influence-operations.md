@@ -1,7 +1,16 @@
 ---
 category: GOV
+generality:
+- 0.5
+- 0.49
+- 0.48
+- 0.47
+- 0.46
+- 0.45
+- 0.44
 slug: io
-summary: Strategic actions designed to affect the perceptions, attitudes, and behaviors of target audiences to achieve specific objectives.
+summary: Strategic actions designed to affect the perceptions, attitudes, and behaviors
+  of target audiences to achieve specific objectives.
 title: IO (Influence Operations)
 ---
 

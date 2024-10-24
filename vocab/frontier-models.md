@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.9
+- 0.875
+- 0.86
+- 0.84
+- 0.815
+- 0.79
+- 0.77
 slug: frontier-models
-summary: The most advanced and powerful AI models currently available, pushing the boundaries of AI capabilities towards achieving general intelligence.
+summary: The most advanced and powerful AI models currently available, pushing the
+  boundaries of AI capabilities towards achieving general intelligence.
 title: Frontier Models
 ---
 

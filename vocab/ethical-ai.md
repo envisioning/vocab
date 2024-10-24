@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: ethical-ai
-summary: Practice of creating AI technologies that follow clearly defined ethical guidelines and principles to benefit society while minimizing harm.
+summary: Practice of creating AI technologies that follow clearly defined ethical
+  guidelines and principles to benefit society while minimizing harm.
 title: Ethical AI
 ---
 

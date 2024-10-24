@@ -1,7 +1,17 @@
 ---
 category: GOV, CORE
+generality:
+- 0.87
+- 0.845
+- 0.82
+- 0.795
+- 0.77
+- 0.745
+- 0.72
 slug: effective-accelerationism
-summary: Ideology that encourages the rapid advancement of technology, especially AI, to address global challenges and accelerate progress towards a technologically advanced future.
+summary: Ideology that encourages the rapid advancement of technology, especially
+  AI, to address global challenges and accelerate progress towards a technologically
+  advanced future.
 title: Effective Accelerationism
 ---
 

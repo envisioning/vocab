@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.825
+- 0.8
+- 0.815
+- 0.83
+- 0.81
+- 0.805
+- 0.82
 slug: abductive-reasoning
-summary: Form of logical inference that starts with an observation and seeks the simplest and most likely explanation for it.
+summary: Form of logical inference that starts with an observation and seeks the simplest
+  and most likely explanation for it.
 title: Abductive Reasoning
 ---
 

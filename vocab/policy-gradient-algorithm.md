@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: policy-gradient-algorithm
-summary: Type of RL algorithm that optimizes the policy directly by computing gradients of expected rewards with respect to policy parameters.
+summary: Type of RL algorithm that optimizes the policy directly by computing gradients
+  of expected rewards with respect to policy parameters.
 title: Policy Gradient Algorithm
 ---
 

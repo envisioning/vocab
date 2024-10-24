@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.7
+- 0.68
+- 0.66
+- 0.64
+- 0.62
+- 0.6
+- 0.58
 slug: spillover
-summary: Unintended consequences or effects that AI systems can have outside of their designed operational contexts.
+summary: Unintended consequences or effects that AI systems can have outside of their
+  designed operational contexts.
 title: Spillover
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.75
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
 slug: policy-gradient
-summary: Class of algorithms in RL that optimizes the parameters of a policy directly through gradient ascent on expected future rewards.
+summary: Class of algorithms in RL that optimizes the parameters of a policy directly
+  through gradient ascent on expected future rewards.
 title: Policy Gradient
 ---
 

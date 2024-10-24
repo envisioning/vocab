@@ -1,7 +1,17 @@
 ---
 category: IMPL, CORE
+generality:
+- 0.88
+- 0.87
+- 0.865
+- 0.86
+- 0.855
+- 0.85
+- 0.845
 slug: autograd
-summary: Automatic differentiation system embedded within various ML frameworks that facilitates the computation of gradients, which are crucial for optimizing models during training.
+summary: Automatic differentiation system embedded within various ML frameworks that
+  facilitates the computation of gradients, which are crucial for optimizing models
+  during training.
 title: Autograd
 ---
 

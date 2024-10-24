@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.76
+- 0.745
+- 0.73
+- 0.715
+- 0.7
+- 0.685
+- 0.67
 slug: double-descent
-summary: Phenomenon in ML where the prediction error on test data initially decreases, increases, and then decreases again as model complexity grows.
+summary: Phenomenon in ML where the prediction error on test data initially decreases,
+  increases, and then decreases again as model complexity grows.
 title: Double Descent
 ---
 

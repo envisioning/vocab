@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
 slug: steerability
-summary: Ability to intentionally manipulate the output of the network in a specific direction by applying predetermined modifications to its inputs or parameters.
+summary: Ability to intentionally manipulate the output of the network in a specific
+  direction by applying predetermined modifications to its inputs or parameters.
 title: Steerability
 ---
 

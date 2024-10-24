@@ -1,7 +1,17 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.85
+- 0.825
+- 0.8
+- 0.78
+- 0.73
+- 0.725
+- 0.7
 slug: vanishing-gradient
-summary: Phenomenon in neural networks where gradients of the network's parameters become very small, effectively preventing the weights from changing their values during training.
+summary: Phenomenon in neural networks where gradients of the network's parameters
+  become very small, effectively preventing the weights from changing their values
+  during training.
 title: Vanishing Gradient
 ---
 

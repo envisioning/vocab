@@ -1,7 +1,17 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.88
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
 slug: hybrid-ai
-summary: Combines symbolic AI (rule-based systems) and sub-symbolic AI (machine learning) approaches to leverage the strengths of both for more versatile and explainable AI systems.
+summary: Combines symbolic AI (rule-based systems) and sub-symbolic AI (machine learning)
+  approaches to leverage the strengths of both for more versatile and explainable
+  AI systems.
 title: Hybrid AI
 ---
 

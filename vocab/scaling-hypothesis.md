@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.81
+- 0.795
+- 0.78
+- 0.765
+- 0.75
+- 0.735
+- 0.72
 slug: scaling-hypothesis
-summary: Enlarging model size, data, and computational resources can consistently improve task performance up to very large scales.
+summary: Enlarging model size, data, and computational resources can consistently
+  improve task performance up to very large scales.
 title: Scaling Hypothesis
 ---
 

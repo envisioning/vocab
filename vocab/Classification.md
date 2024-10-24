@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.9
+- 0.875
+- 0.86
+- 0.855
+- 0.84
+- 0.83
+- 0.82
 slug: classification
-summary: Supervised learning task in ML where the goal is to assign input data to one of several predefined categories.
+summary: Supervised learning task in ML where the goal is to assign input data to
+  one of several predefined categories.
 title: Classification
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
+- 0.645
+- 0.63
 slug: ami
-summary: Electronic environments that are sensitive, adaptive, and responsive to the presence of people, aiming to enhance the quality of life through seamless integration of technology.
+summary: Electronic environments that are sensitive, adaptive, and responsive to the
+  presence of people, aiming to enhance the quality of life through seamless integration
+  of technology.
 title: AmI (Ambient Intelligence)
 ---
 

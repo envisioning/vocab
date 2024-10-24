@@ -1,7 +1,17 @@
 ---
 category: CORE, BIO
+generality:
+- 0.6
+- 0.58
+- 0.56
+- 0.54
+- 0.52
+- 0.5
+- 0.48
 slug: wbe
-summary: Hypothetical process of scanning a biological brain in detail and replicating its state and processes in a computational system to achieve functional and experiential equivalence.
+summary: Hypothetical process of scanning a biological brain in detail and replicating
+  its state and processes in a computational system to achieve functional and experiential
+  equivalence.
 title: WBE (Whole Brain Emulation)
 ---
 

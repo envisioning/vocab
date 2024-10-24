@@ -1,7 +1,16 @@
 ---
 category: GOV, ARCH
+generality:
+- 0.2
+- 0.225
+- 0.24
+- 0.26
+- 0.275
+- 0.29
+- 0.31
 slug: hpoc
-summary: Designated person responsible for overseeing and managing interactions between an AI system and its users or other systems.
+summary: Designated person responsible for overseeing and managing interactions between
+  an AI system and its users or other systems.
 title: HPOC (Human Point of Contact)
 ---
 

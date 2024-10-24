@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.91
+- 0.89
+- 0.87
+- 0.85
+- 0.83
+- 0.81
+- 0.79
 slug: superintelligence
-summary: A form of AI that surpasses the cognitive performance of humans in virtually all domains of interest, including creativity, general wisdom, and problem-solving.
+summary: A form of AI that surpasses the cognitive performance of humans in virtually
+  all domains of interest, including creativity, general wisdom, and problem-solving.
 title: Superintelligence
 ---
 

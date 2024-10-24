@@ -1,7 +1,16 @@
 ---
 category: BIO, DATA
+generality:
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
+- 0.71
 slug: chunking-strategy
-summary: Method of grouping similar pieces of information together to simplify processing and enhance memory performance.
+summary: Method of grouping similar pieces of information together to simplify processing
+  and enhance memory performance.
 title: Chunking Strategy
 ---
 

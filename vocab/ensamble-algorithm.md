@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
+- 0.83
 slug: ensamble-algorithm
-summary: Combines multiple machine learning models to improve overall performance by reducing bias, variance, or noise.
+summary: Combines multiple machine learning models to improve overall performance
+  by reducing bias, variance, or noise.
 title: Ensamble Algorithm
 ---
 

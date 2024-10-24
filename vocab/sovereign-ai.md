@@ -1,7 +1,17 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.45
+- 0.425
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
 slug: sovereign-ai
-summary: Hypothetical form of AI that operates independently with its own autonomy, potentially possessing the ability to make decisions and take actions without human intervention.
+summary: Hypothetical form of AI that operates independently with its own autonomy,
+  potentially possessing the ability to make decisions and take actions without human
+  intervention.
 title: Sovereign AI
 ---
 

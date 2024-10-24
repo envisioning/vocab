@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.95
+- 0.93
+- 0.91
+- 0.89
+- 0.87
+- 0.85
+- 0.83
 slug: nlp
-summary: Techniques and methodologies for understanding and generating human language by computers.
+summary: Techniques and methodologies for understanding and generating human language
+  by computers.
 title: NLP (Neuro-Linguistic Programming)
 ---
 

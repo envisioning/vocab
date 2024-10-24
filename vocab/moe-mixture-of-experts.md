@@ -1,7 +1,17 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.78
+- 0.755
+- 0.73
+- 0.705
+- 0.68
+- 0.655
+- 0.63
 slug: moe
-summary: ML architecture that utilizes multiple specialist models (experts) to handle different parts of the input space, coordinated by a gating mechanism that decides which expert to use for each input.
+summary: ML architecture that utilizes multiple specialist models (experts) to handle
+  different parts of the input space, coordinated by a gating mechanism that decides
+  which expert to use for each input.
 title: MoE (Mixture of Experts)
 ---
 

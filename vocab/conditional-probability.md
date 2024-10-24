@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.925
+- 0.91
+- 0.895
+- 0.88
+- 0.865
+- 0.85
+- 0.835
 slug: conditional-probability
-summary: Measures the likelihood of an event occurring, given that another event has already occurred.
+summary: Measures the likelihood of an event occurring, given that another event has
+  already occurred.
 title: Conditional Probability
 ---
 

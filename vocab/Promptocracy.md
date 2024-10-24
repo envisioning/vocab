@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.45
+- 0.425
+- 0.41
+- 0.385
+- 0.36
+- 0.335
+- 0.31
 slug: promptocracy
-summary: Theoretical governance model where decision-making is guided by AI-generated prompts based on large datasets and probabilistic models.
+summary: Theoretical governance model where decision-making is guided by AI-generated
+  prompts based on large datasets and probabilistic models.
 title: Promptocracy
 ---
 

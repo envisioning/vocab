@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: solution-space
-summary: Refers to the set of all possible solutions to a given problem or decision-making scenario.
+summary: Refers to the set of all possible solutions to a given problem or decision-making
+  scenario.
 title: Solution Space
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: non-contrastive
-summary: ML approach that focuses on learning useful representations of data without explicitly contrasting positive examples against negative examples.
+summary: ML approach that focuses on learning useful representations of data without
+  explicitly contrasting positive examples against negative examples.
 title: Non-Contrastive
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: asl
-summary: Tiered system for categorizing the risk levels associated with AI systems to guide their development and deployment responsibly.
+summary: Tiered system for categorizing the risk levels associated with AI systems
+  to guide their development and deployment responsibly.
 title: ASL (AI Safety Level)
 ---
 

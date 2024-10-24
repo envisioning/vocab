@@ -1,7 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.71
+- 0.685
+- 0.66
+- 0.635
+- 0.61
+- 0.585
+- 0.56
 slug: verifier-theory
-summary: Concept in computational complexity theory that focuses on the role of a verifier in determining the correctness of a solution to a problem within a given complexity class.
+summary: Concept in computational complexity theory that focuses on the role of a
+  verifier in determining the correctness of a solution to a problem within a given
+  complexity class.
 title: Verifier Theory
 ---
 

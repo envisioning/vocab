@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.765
+- 0.74
+- 0.72
+- 0.7
+- 0.68
+- 0.66
+- 0.64
 slug: streaming
-summary: Continuous generation and delivery of text in real-time as the model processes input sequentially.
+summary: Continuous generation and delivery of text in real-time as the model processes
+  input sequentially.
 title: Streaming
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: DATA, ARCH
+generality:
+- 0.85
+- 0.845
+- 0.83
+- 0.825
+- 0.815
+- 0.81
+- 0.8
 slug: query
-summary: Request made to a data management system or AI model to retrieve information or execute a command based on specific criteria.
+summary: Request made to a data management system or AI model to retrieve information
+  or execute a command based on specific criteria.
 title: Query
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.79
+- 0.765
+- 0.74
+- 0.715
+- 0.69
+- 0.665
+- 0.64
 slug: model-compression
-summary: Techniques designed to reduce the size of a machine learning model without significantly sacrificing its accuracy.
+summary: Techniques designed to reduce the size of a machine learning model without
+  significantly sacrificing its accuracy.
 title: Model Compression
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: MATH, DATA
+generality:
+- 0.855
+- 0.835
+- 0.82
+- 0.81
+- 0.795
+- 0.78
+- 0.765
 slug: manifold-learning
-summary: Type of non-linear dimensionality reduction technique used to uncover the underlying structure of high-dimensional data by assuming it lies on a lower-dimensional manifold.
+summary: Type of non-linear dimensionality reduction technique used to uncover the
+  underlying structure of high-dimensional data by assuming it lies on a lower-dimensional
+  manifold.
 title: Manifold Learning
 ---
 

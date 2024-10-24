@@ -1,7 +1,17 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.4
+- 0.375
+- 0.42
+- 0.385
+- 0.415
+- 0.395
+- 0.405
 slug: clip
-summary: Machine learning model developed by OpenAI that learns visual concepts from natural language descriptions, enabling it to understand images in a manner aligned with textual descriptions.
+summary: Machine learning model developed by OpenAI that learns visual concepts from
+  natural language descriptions, enabling it to understand images in a manner aligned
+  with textual descriptions.
 title: CLIP (Contrastive Language–Image Pre-training)
 ---
 

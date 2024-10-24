@@ -1,7 +1,17 @@
 ---
 category: DATA, ARCH
+generality:
+- 0.672
+- 0.649
+- 0.625
+- 0.602
+- 0.578
+- 0.555
+- 0.531
 slug: triple
-summary: Data structure in the form of a three-part entity consisting of a subject, predicate, and object, commonly used in semantic web technologies and knowledge graphs.
+summary: Data structure in the form of a three-part entity consisting of a subject,
+  predicate, and object, commonly used in semantic web technologies and knowledge
+  graphs.
 title: Triple
 ---
 

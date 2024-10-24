@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.85
+- 0.84
+- 0.832
+- 0.825
+- 0.812
+- 0.81
+- 0.805
 slug: swarm-intelligence
-summary: Form of AI inspired by the collective behavior of social insects and animals, used to solve complex problems through decentralized, self-organized systems.
+summary: Form of AI inspired by the collective behavior of social insects and animals,
+  used to solve complex problems through decentralized, self-organized systems.
 title: Swarm Intelligence
 ---
 

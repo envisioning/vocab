@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.84
+- 0.815
+- 0.79
+- 0.765
+- 0.74
+- 0.715
+- 0.69
 slug: expert-system
-summary: Computer program designed to mimic the decision-making abilities of a human expert in a specific domain.
+summary: Computer program designed to mimic the decision-making abilities of a human
+  expert in a specific domain.
 title: Expert System
 ---
 

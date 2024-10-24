@@ -1,7 +1,16 @@
 ---
 category: DATA, MATH
+generality:
+- 0.95
+- 0.925
+- 0.9
+- 0.88
+- 0.86
+- 0.84
+- 0.81
 slug: dimension
-summary: Number of features or attributes that represent a data point in a vector space.
+summary: Number of features or attributes that represent a data point in a vector
+  space.
 title: Dimension
 ---
 

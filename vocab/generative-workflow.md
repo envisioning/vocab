@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.71
+- 0.7
+- 0.72
+- 0.69
+- 0.715
+- 0.725
+- 0.705
 slug: generative-workflow
-summary: Process of using AI to automatically create content, such as text, images, or music, based on learned patterns from data.
+summary: Process of using AI to automatically create content, such as text, images,
+  or music, based on learned patterns from data.
 title: Generative Workflow
 ---
 

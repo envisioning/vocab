@@ -1,7 +1,16 @@
 ---
 category: DATA, CORE
+generality:
+- 0.94
+- 0.915
+- 0.895
+- 0.87
+- 0.845
+- 0.82
+- 0.795
 slug: gigo
-summary: Concept that emphasizes the quality of output is determined by the quality of input data.
+summary: Concept that emphasizes the quality of output is determined by the quality
+  of input data.
 title: GIGO (Garbage In, Garbage Out)
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: DATA, ARCH
+generality:
+- 0.83
+- 0.814
+- 0.798
+- 0.782
+- 0.766
+- 0.75
+- 0.734
 slug: semantic-indexing
-summary: Structured representation of information that captures the meaning and relationships between concepts, enabling more effective search and retrieval of data based on the meaning of words rather than just keyword matches.
+summary: Structured representation of information that captures the meaning and relationships
+  between concepts, enabling more effective search and retrieval of data based on
+  the meaning of words rather than just keyword matches.
 title: Semantic Indexing
 ---
 

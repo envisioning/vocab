@@ -1,5 +1,13 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.8
+- 0.775
+- 0.75
+- 0.725
+- 0.7
+- 0.675
+- 0.65
 slug: instruction-following
 summary: Ability to accurately understand and execute tasks based on given directives.
 title: Instruction-Following

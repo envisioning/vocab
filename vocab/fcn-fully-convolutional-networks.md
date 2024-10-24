@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.805
+- 0.79
+- 0.775
+- 0.76
+- 0.745
+- 0.73
+- 0.715
 slug: fcn
-summary: Neural network architecture designed specifically for image segmentation tasks, where the goal is to classify each pixel of an image into a category.
+summary: Neural network architecture designed specifically for image segmentation
+  tasks, where the goal is to classify each pixel of an image into a category.
 title: FCN (Fully Convolutional Networks)
 ---
 

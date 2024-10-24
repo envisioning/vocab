@@ -1,7 +1,17 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.75
+- 0.735
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
 slug: actor-critic-models
-summary: 'Reinforcement learning architecture that includes two components: an actor that determines the actions to take and a critic that evaluates those actions to improve the policy.'
+summary: 'Reinforcement learning architecture that includes two components: an actor
+  that determines the actions to take and a critic that evaluates those actions to
+  improve the policy.'
 title: Actor-Critic Models
 ---
 

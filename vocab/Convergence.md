@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.86
+- 0.855
+- 0.85
+- 0.845
+- 0.84
+- 0.835
+- 0.83
 slug: convergence
-summary: The point at which an algorithm or learning process stabilizes, reaching a state where further iterations or data input do not significantly alter its outcome.
+summary: The point at which an algorithm or learning process stabilizes, reaching
+  a state where further iterations or data input do not significantly alter its outcome.
 title: Convergence
 ---
 

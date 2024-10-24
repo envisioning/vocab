@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.75
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
 slug: private-cloud-compute
-summary: Dedicated cloud infrastructure to provide cloud computing services exclusively to a single organization, ensuring enhanced control, privacy, and security.
+summary: Dedicated cloud infrastructure to provide cloud computing services exclusively
+  to a single organization, ensuring enhanced control, privacy, and security.
 title: Private Cloud Compute
 ---
 

@@ -1,8 +1,17 @@
 ---
 category: CORE, DATA
+generality:
+- 0.965
+- 0.95
+- 0.94
+- 0.93
+- 0.92
+- 0.91
+- 0.9
 slug: nlp-natural-language-processing
-title: "NLP (Natural Language Processing)"
-summary: "Field of AI that focuses on the interaction between computers and humans through natural language."
+summary: Field of AI that focuses on the interaction between computers and humans
+  through natural language.
+title: NLP (Natural Language Processing)
 ---
 
 NLP involves the development of algorithms and systems that allow computers to process, understand, and generate human language in a valuable way. It encompasses a range of techniques and tools that deal with the syntactic, semantic, and pragmatic aspects of language, aiming to bridge the gap between human communication and computer understanding. This field is crucial for creating applications such as language translation, sentiment analysis, chatbots, and voice-activated assistants. NLP combines computational linguistics—rule-based modeling of human language—with statistical, machine learning, and deep learning models.

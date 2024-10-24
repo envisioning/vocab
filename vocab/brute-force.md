@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.88
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
 slug: brute-force
-summary: Straightforward problem-solving approach that systematically enumerates all possible candidates to find a solution.
+summary: Straightforward problem-solving approach that systematically enumerates all
+  possible candidates to find a solution.
 title: Brute Force
 ---
 

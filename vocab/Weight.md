@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.89
+- 0.87
+- 0.845
+- 0.82
+- 0.795
+- 0.77
+- 0.745
 slug: weight
-summary: Represents a coefficient for a feature in a model that determines the influence of that feature on the model's predictions.
+summary: Represents a coefficient for a feature in a model that determines the influence
+  of that feature on the model's predictions.
 title: Weight
 ---
 

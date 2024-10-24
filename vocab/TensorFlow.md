@@ -1,7 +1,16 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.975
+- 0.95
+- 0.945
+- 0.93
+- 0.925
+- 0.92
+- 0.915
 slug: tensorflow
-summary: Open-source software library for machine learning, developed by Google, used for designing, building, and training deep learning models.
+summary: Open-source software library for machine learning, developed by Google, used
+  for designing, building, and training deep learning models.
 title: TensorFlow
 ---
 

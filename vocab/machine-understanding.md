@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.912
+- 0.878
+- 0.853
+- 0.827
+- 0.802
+- 0.775
+- 0.75
 slug: machine-understanding
-summary: Capability of AI systems to interpret and comprehend data, text, images, or situations in a manner akin to human understanding.
+summary: Capability of AI systems to interpret and comprehend data, text, images,
+  or situations in a manner akin to human understanding.
 title: Machine Understanding
 ---
 

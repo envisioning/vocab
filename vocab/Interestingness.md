@@ -1,7 +1,16 @@
 ---
 category: DATA, CORE
+generality:
+- 0.645
+- 0.625
+- 0.62
+- 0.605
+- 0.6
+- 0.585
+- 0.58
 slug: interestingness
-summary: Measure of how engaging or surprising information is, often used in ML and computational creativity to prioritize novel and useful data.
+summary: Measure of how engaging or surprising information is, often used in ML and
+  computational creativity to prioritize novel and useful data.
 title: Interestingness
 ---
 

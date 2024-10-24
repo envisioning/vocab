@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.765
+- 0.74
+- 0.715
+- 0.69
+- 0.665
+- 0.64
+- 0.615
 slug: ln
-summary: Technique in deep learning that standardizes the inputs of each layer independently, improving the stability of the neural network.
+summary: Technique in deep learning that standardizes the inputs of each layer independently,
+  improving the stability of the neural network.
 title: LN (Layer Normalization)
 ---
 

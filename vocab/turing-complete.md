@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.99
+- 0.985
+- 0.98
+- 0.975
+- 0.97
+- 0.965
+- 0.96
 slug: turing-complete
-summary: System capable of simulating any Turing machine, thereby performing arbitrary computational operations given enough time and resources.
+summary: System capable of simulating any Turing machine, thereby performing arbitrary
+  computational operations given enough time and resources.
 title: Turing Complete
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: rightsizing
-summary: Adjusting the computational resources allocated to AI systems to match the workload requirements optimally.
+summary: Adjusting the computational resources allocated to AI systems to match the
+  workload requirements optimally.
 title: Rightsizing
 ---
 

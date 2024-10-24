@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.11
+- 0.12
+- 0.13
+- 0.14
+- 0.15
+- 0.16
+- 0.17
 slug: move-37
-summary: Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol, which showcased the superior strategic capabilities of AI in the game of Go.
+summary: Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol,
+  which showcased the superior strategic capabilities of AI in the game of Go.
 title: Move 37
 ---
 

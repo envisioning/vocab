@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.87
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
 slug: random-forest
-summary: Robust ML algorithm that combines multiple decision trees to improve prediction accuracy and prevent overfitting.
+summary: Robust ML algorithm that combines multiple decision trees to improve prediction
+  accuracy and prevent overfitting.
 title: Random Forest
 ---
 

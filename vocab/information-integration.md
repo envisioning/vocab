@@ -1,5 +1,13 @@
 ---
 category: DATA, IMPL
+generality:
+- 0.815
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
 slug: information-integration
 summary: Process of combining data from different sources to provide a unified view.
 title: Information Integration

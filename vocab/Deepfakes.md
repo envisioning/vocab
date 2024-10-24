@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.62
+- 0.6
+- 0.58
+- 0.56
+- 0.54
+- 0.52
+- 0.5
 slug: deepfakes
-summary: Synthetic media produced by AI technologies that superimpose existing images or videos onto source images or videos to create realistic likenesses.
+summary: Synthetic media produced by AI technologies that superimpose existing images
+  or videos onto source images or videos to create realistic likenesses.
 title: Deepfakes
 ---
 

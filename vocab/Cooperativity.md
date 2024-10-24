@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: cooperativity
-summary: How multiple agents or components work together in a system to achieve better performance or solutions than they could individually.
+summary: How multiple agents or components work together in a system to achieve better
+  performance or solutions than they could individually.
 title: Cooperativity
 ---
 

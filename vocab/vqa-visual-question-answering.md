@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: vqa
-summary: Field of AI where systems are designed to answer questions about visual content, such as images or videos.
+summary: Field of AI where systems are designed to answer questions about visual content,
+  such as images or videos.
 title: VQA (Visual Question Answering)
 ---
 

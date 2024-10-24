@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
+- 0.77
 slug: sample-efficiency
-summary: Ability of a ML model to achieve high performance with a relatively small number of training samples.
+summary: Ability of a ML model to achieve high performance with a relatively small
+  number of training samples.
 title: Sample Efficiency
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: CORE, MATH
+generality:
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: solomonoff-induction
-summary: Theory of prediction that combines elements of algorithmic information theory and Bayesian inference to create a universal framework for inferring future data from past observations.
+summary: Theory of prediction that combines elements of algorithmic information theory
+  and Bayesian inference to create a universal framework for inferring future data
+  from past observations.
 title: Solomonoff Induction
 ---
 

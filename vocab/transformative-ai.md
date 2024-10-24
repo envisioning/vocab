@@ -1,7 +1,16 @@
 ---
 category: GOV, CORE
+generality:
+- 0.9
+- 0.875
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
 slug: transformative-ai
-summary: AI systems capable of bringing about profound, large-scale changes in society, potentially altering the economy, governance, and even human life itself.
+summary: AI systems capable of bringing about profound, large-scale changes in society,
+  potentially altering the economy, governance, and even human life itself.
 title: Transformative AI
 ---
 

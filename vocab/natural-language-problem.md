@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.92
+- 0.905
+- 0.89
+- 0.875
+- 0.86
+- 0.845
+- 0.83
 slug: natural-language-problem
-summary: Challenges encountered in understanding, processing, or generating human language using computational methods.
+summary: Challenges encountered in understanding, processing, or generating human
+  language using computational methods.
 title: Natural Language Problem
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.355
+- 0.365
+- 0.375
+- 0.385
+- 0.395
+- 0.405
+- 0.415
 slug: fast-weights
-summary: Fast weights are temporary, rapidly changing parameters in neural networks designed to capture transient patterns or short-term dependencies in data.
+summary: Fast weights are temporary, rapidly changing parameters in neural networks
+  designed to capture transient patterns or short-term dependencies in data.
 title: Fast Weights
 ---
 

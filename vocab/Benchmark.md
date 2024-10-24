@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.921
+- 0.899
+- 0.877
+- 0.855
+- 0.833
+- 0.811
+- 0.789
 slug: benchmark
-summary: Standard or set of standards used to measure and compare the performance of algorithms, models, or systems.
+summary: Standard or set of standards used to measure and compare the performance
+  of algorithms, models, or systems.
 title: Benchmark
 ---
 

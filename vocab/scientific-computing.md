@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.875
+- 0.87
+- 0.865
+- 0.86
+- 0.855
+- 0.85
+- 0.845
 slug: scientific-computing
-summary: Computational methods and tools to solve complex scientific and engineering problems.
+summary: Computational methods and tools to solve complex scientific and engineering
+  problems.
 title: Scientific Computing
 ---
 

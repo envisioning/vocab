@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.885
+- 0.87
+- 0.855
+- 0.84
+- 0.825
+- 0.81
+- 0.795
 slug: simulation
-summary: Process of creating a digital model of a real-world or theoretical situation to study the behavior and dynamics of systems.
+summary: Process of creating a digital model of a real-world or theoretical situation
+  to study the behavior and dynamics of systems.
 title: Simulation
 ---
 

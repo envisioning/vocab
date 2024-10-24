@@ -1,7 +1,17 @@
 ---
 category: ARCH, DATA
+generality:
+- 0.78
+- 0.76
+- 0.74
+- 0.72
+- 0.7
+- 0.68
+- 0.66
 slug: volumetric-ai
-summary: AI techniques to process, analyze, and generate three-dimensional volumetric data, often used in fields like medical imaging, 3D reconstruction, and virtual reality.
+summary: AI techniques to process, analyze, and generate three-dimensional volumetric
+  data, often used in fields like medical imaging, 3D reconstruction, and virtual
+  reality.
 title: Volumetric AI
 ---
 

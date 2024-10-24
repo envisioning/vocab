@@ -1,7 +1,16 @@
 ---
 category: DATA, IMPL
+generality:
+- 0.925
+- 0.91
+- 0.895
+- 0.88
+- 0.865
+- 0.85
+- 0.835
 slug: feature-extraction
-summary: Process of transforming raw data into a set of features that are more meaningful and informative for a specific task, such as classification or prediction.
+summary: Process of transforming raw data into a set of features that are more meaningful
+  and informative for a specific task, such as classification or prediction.
 title: Feature Extraction
 ---
 

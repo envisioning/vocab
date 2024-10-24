@@ -1,7 +1,16 @@
 ---
 category: DATA
+generality:
+- 0.88
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
 slug: ground-truth
-summary: Data that is considered a true, accurate, or actual representation used for comparison with analytical model outputs.
+summary: Data that is considered a true, accurate, or actual representation used for
+  comparison with analytical model outputs.
 title: Ground Truth
 ---
 

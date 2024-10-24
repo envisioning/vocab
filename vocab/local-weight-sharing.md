@@ -1,7 +1,17 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.72
+- 0.71
+- 0.7
+- 0.69
+- 0.68
+- 0.67
+- 0.66
 slug: local-weight-sharing
-summary: Technique where the same weights are used across different positions in an input, enhancing the network's ability to recognize patterns irrespective of their spatial location.
+summary: Technique where the same weights are used across different positions in an
+  input, enhancing the network's ability to recognize patterns irrespective of their
+  spatial location.
 title: Local Weight Sharing
 ---
 

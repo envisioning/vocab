@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.935
+- 0.93
+- 0.925
+- 0.92
+- 0.915
+- 0.91
+- 0.905
 slug: tensor
-summary: Multi-dimensional array used in mathematics and computer science, serving as a fundamental data structure in neural networks for representing data and parameters.
+summary: Multi-dimensional array used in mathematics and computer science, serving
+  as a fundamental data structure in neural networks for representing data and parameters.
 title: Tensor
 ---
 

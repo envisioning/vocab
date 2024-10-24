@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.6
+- 0.58
+- 0.565
+- 0.545
+- 0.52
+- 0.5
+- 0.485
 slug: one-shot-learning
-summary: ML technique where a model learns information about object categories from a single training example.
+summary: ML technique where a model learns information about object categories from
+  a single training example.
 title: One-Shot Learning
 ---
 

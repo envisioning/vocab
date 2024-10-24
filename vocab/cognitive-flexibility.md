@@ -1,7 +1,16 @@
 ---
 category: BIO
+generality:
+- 0.82
+- 0.805
+- 0.79
+- 0.78
+- 0.765
+- 0.75
+- 0.735
 slug: cognitive-flexibility
-summary: Mental ability to switch between thinking about two different concepts, or to think about multiple concepts simultaneously.
+summary: Mental ability to switch between thinking about two different concepts, or
+  to think about multiple concepts simultaneously.
 title: Cognitive Flexibility
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.77
+- 0.75
+- 0.73
+- 0.71
+- 0.69
+- 0.67
+- 0.65
 slug: computational-creativity
-summary: The study and building of software and algorithms that exhibit behaviors deemed creative in humans, such as generating original artwork, music, or solving problems in unique ways.
+summary: The study and building of software and algorithms that exhibit behaviors
+  deemed creative in humans, such as generating original artwork, music, or solving
+  problems in unique ways.
 title: Computational Creativity
 ---
 

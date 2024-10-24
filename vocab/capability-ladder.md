@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
+- 0.525
 slug: capability-ladder
-summary: Conceptual framework used to describe the progression of an AI system's abilities from simple, specific tasks to complex, general tasks.
+summary: Conceptual framework used to describe the progression of an AI system's abilities
+  from simple, specific tasks to complex, general tasks.
 title: Capability Ladder
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: rlhf
-summary: Technique that combines reinforcement learning (RL) with human feedback to guide the learning process towards desired outcomes.
+summary: Technique that combines reinforcement learning (RL) with human feedback to
+  guide the learning process towards desired outcomes.
 title: RLHF (Reinforcement Learning from Human Feedback)
 ---
 

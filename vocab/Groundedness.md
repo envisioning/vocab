@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.7
+- 0.71
+- 0.72
+- 0.73
+- 0.74
+- 0.75
+- 0.76
 slug: groundedness
-summary: Property of language models that ensures their generated content or interpretations are closely tied to or derived from real-world knowledge and contexts.
+summary: Property of language models that ensures their generated content or interpretations
+  are closely tied to or derived from real-world knowledge and contexts.
 title: Groundedness
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: MATH, CORE
+generality:
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
 slug: parameter-space
-summary: Multidimensional space defined by all possible values of the parameters of a model, often used in ML and optimization to explore different configurations that influence model performance.
+summary: Multidimensional space defined by all possible values of the parameters of
+  a model, often used in ML and optimization to explore different configurations that
+  influence model performance.
 title: Parameter Space
 ---
 

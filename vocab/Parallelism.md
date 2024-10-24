@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.868
+- 0.852
+- 0.826
+- 0.811
+- 0.798
+- 0.774
+- 0.75
 slug: parallelism
-summary: Simultaneous execution of multiple processes or tasks to improve performance and efficiency.
+summary: Simultaneous execution of multiple processes or tasks to improve performance
+  and efficiency.
 title: Parallelism
 ---
 

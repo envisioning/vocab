@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: autonomous-learning
-summary: Systems capable of learning and adapting their strategies or knowledge without human intervention, based on their interactions with the environment.
+summary: Systems capable of learning and adapting their strategies or knowledge without
+  human intervention, based on their interactions with the environment.
 title: Autonomous Learning
 ---
 

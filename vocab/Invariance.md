@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: invariance
-summary: Property of a model or algorithm that ensures its output remains unchanged when specific transformations are applied to the input data.
+summary: Property of a model or algorithm that ensures its output remains unchanged
+  when specific transformations are applied to the input data.
 title: Invariance
 ---
 

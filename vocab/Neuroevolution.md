@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.875
+- 0.86
+- 0.84
+- 0.815
+- 0.79
+- 0.77
+- 0.75
 slug: neuroevolution
-summary: AI approach that uses evolutionary algorithms to develop and optimize artificial neural networks.
+summary: AI approach that uses evolutionary algorithms to develop and optimize artificial
+  neural networks.
 title: Neuroevolution
 ---
 

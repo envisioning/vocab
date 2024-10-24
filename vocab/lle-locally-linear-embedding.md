@@ -1,7 +1,16 @@
 ---
 category: MATH, DATA
+generality:
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
+- 0.495
+- 0.47
 slug: lle
-summary: Nonlinear dimensionality reduction technique that preserves local neighborhood information to reduce high-dimensional data to a lower-dimensional space.
+summary: Nonlinear dimensionality reduction technique that preserves local neighborhood
+  information to reduce high-dimensional data to a lower-dimensional space.
 title: LLE (Locally Linear Embedding)
 ---
 

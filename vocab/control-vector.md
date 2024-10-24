@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.66
+- 0.645
+- 0.63
+- 0.615
+- 0.6
+- 0.585
+- 0.57
 slug: control-vector
-summary: Computational mechanism used in AI models to adjust certain characteristics of the model's outputs based on specific parameters or conditions.
+summary: Computational mechanism used in AI models to adjust certain characteristics
+  of the model's outputs based on specific parameters or conditions.
 title: Control Vector
 ---
 

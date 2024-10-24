@@ -1,7 +1,16 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: mlops
-summary: Practice of collaboratively combining ML system development and ML system operation, aiming for faster deployment and reliable management.
+summary: Practice of collaboratively combining ML system development and ML system
+  operation, aiming for faster deployment and reliable management.
 title: MLOps (Machine Learning Operations)
 ---
 

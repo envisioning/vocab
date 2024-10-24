@@ -1,7 +1,16 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.92
+- 0.905
+- 0.89
+- 0.88
+- 0.865
+- 0.85
+- 0.835
 slug: heuristic-search-techniques
-summary: Methods used in AI to find solutions or make decisions more efficiently by using rules of thumb or informed guesses to guide the search process.
+summary: Methods used in AI to find solutions or make decisions more efficiently by
+  using rules of thumb or informed guesses to guide the search process.
 title: Heuristic Search Techniques
 ---
 

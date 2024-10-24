@@ -1,8 +1,16 @@
 ---
 category: CORE, GOV
+generality:
+- 0.2
+- 0.185
+- 0.17
+- 0.155
+- 0.14
+- 0.125
+- 0.11
 slug: rokos-basilisk
-summary:
-  Thought experiment proposing that a future all-powerful AI could punish those who did not help bring about its existence.
+summary: Thought experiment proposing that a future all-powerful AI could punish those
+  who did not help bring about its existence.
 title: Roko's Basilisk
 ---
 

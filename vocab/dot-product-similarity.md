@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.815
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
 slug: dot-product-similarity
-summary: Measures the similarity between two vectors by calculating the sum of the products of their corresponding entries.
+summary: Measures the similarity between two vectors by calculating the sum of the
+  products of their corresponding entries.
 title: Dot Product Similarity
 ---
 

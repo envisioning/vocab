@@ -1,7 +1,17 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: transfer-learning
-summary: ML method where a model developed for a task is reused as the starting point for a model on a second task, leveraging the knowledge gained from the first task to improve performance on the second.
+summary: ML method where a model developed for a task is reused as the starting point
+  for a model on a second task, leveraging the knowledge gained from the first task
+  to improve performance on the second.
 title: Transfer Learning
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: CORE, BIO
+generality:
+- 0.86
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
+- 0.8
 slug: snn
-summary: Type of artificial neural network that mimics the way biological neural networks in the brain process information, using spikes of electrical activity to transmit and process information.
+summary: Type of artificial neural network that mimics the way biological neural networks
+  in the brain process information, using spikes of electrical activity to transmit
+  and process information.
 title: SNN (Spiking Neural Network)
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.745
+- 0.72
+- 0.695
+- 0.67
+- 0.645
+- 0.62
+- 0.595
 slug: ppo
-summary: RL algorithm that aims to balance ease of implementation, sample efficiency, and reliable performance by using a simpler but effective update method for policy optimization.
+summary: RL algorithm that aims to balance ease of implementation, sample efficiency,
+  and reliable performance by using a simpler but effective update method for policy
+  optimization.
 title: PPO (Proximal Policy Optimization)
 ---
 

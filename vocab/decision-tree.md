@@ -1,7 +1,17 @@
 ---
 category: CORE, DATA
+generality:
+- 0.9
+- 0.875
+- 0.86
+- 0.855
+- 0.84
+- 0.82
+- 0.805
 slug: decision-tree
-summary: Flowchart-like tree structure where each internal node represents a "test" on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
+summary: Flowchart-like tree structure where each internal node represents a "test"
+  on an attribute, each branch represents the outcome of the test, and each leaf node
+  represents a class label (decision taken after computing all attributes).
 title: Decision Tree
 ---
 

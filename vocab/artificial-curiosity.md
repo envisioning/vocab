@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: artificial-curiosity
-summary: Algorithmic mechanism in AI that motivates the system's behavior to learn inquisitively and explore unfamiliar environments.
+summary: Algorithmic mechanism in AI that motivates the system's behavior to learn
+  inquisitively and explore unfamiliar environments.
 title: Artificial Curiosity
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.975
+- 0.965
+- 0.95
+- 0.94
+- 0.93
+- 0.915
+- 0.905
 slug: loss-function
-summary: Quantifies the difference between the predicted values by a model and the actual values, serving as a guide for model optimization.
+summary: Quantifies the difference between the predicted values by a model and the
+  actual values, serving as a guide for model optimization.
 title: Loss Function
 ---
 

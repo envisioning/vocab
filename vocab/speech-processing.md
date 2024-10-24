@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: speech-processing
-summary: Technology that enables computers to recognize, interpret, and generate human speech.
+summary: Technology that enables computers to recognize, interpret, and generate human
+  speech.
 title: Speech Processing
 ---
 

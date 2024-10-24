@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
 slug: self-speculative-decoding
-summary: Mechanism that predicts subsequent symbols in a sequence, enhancing prediction accuracy.
+summary: Mechanism that predicts subsequent symbols in a sequence, enhancing prediction
+  accuracy.
 title: Self-Speculative Decoding
 ---
 

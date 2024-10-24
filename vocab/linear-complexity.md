@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.85
+- 0.845
+- 0.84
+- 0.835
+- 0.83
+- 0.825
+- 0.82
 slug: linear-complexity
-summary: Situation where the time or space required to solve a problem increases linearly with the size of the input.
+summary: Situation where the time or space required to solve a problem increases linearly
+  with the size of the input.
 title: Linear Complexity
 ---
 

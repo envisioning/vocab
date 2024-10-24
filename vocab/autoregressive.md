@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
 slug: autoregressive
-summary: Statistical algorithms used in time series forecasting, where future values are predicted based on a weighted sum of past observations.
+summary: Statistical algorithms used in time series forecasting, where future values
+  are predicted based on a weighted sum of past observations.
 title: Autoregressive
 ---
 

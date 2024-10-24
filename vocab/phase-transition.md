@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.91
+- 0.89
+- 0.87
+- 0.86
+- 0.84
+- 0.82
+- 0.8
 slug: phase-transition
-summary: Critical point where a small change in a parameter or condition causes a significant shift in the system's behavior or performance.
+summary: Critical point where a small change in a parameter or condition causes a
+  significant shift in the system's behavior or performance.
 title: Phase Transition
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: CORE, IMPL
+generality:
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
+- 0.275
+- 0.25
 slug: speculative-edits
-summary: Proactive generation of multiple possible edits in a computational process, typically by a system anticipating future states or changes in data before they occur, in order to improve efficiency.
+summary: Proactive generation of multiple possible edits in a computational process,
+  typically by a system anticipating future states or changes in data before they
+  occur, in order to improve efficiency.
 title: Speculative Edits
 ---
 

@@ -1,7 +1,17 @@
 ---
 category: GOV, ARCH
+generality:
+- 0.45
+- 0.435
+- 0.42
+- 0.405
+- 0.39
+- 0.375
+- 0.36
 slug: nationalization
-summary: Government's takeover or control of AI technology and assets, typically to secure national interests, enhance regulatory oversight, or maintain sovereignty over critical technological infrastructure.
+summary: Government's takeover or control of AI technology and assets, typically to
+  secure national interests, enhance regulatory oversight, or maintain sovereignty
+  over critical technological infrastructure.
 title: Nationalization
 ---
 

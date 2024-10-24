@@ -1,7 +1,16 @@
 ---
 category: CORE, MATH
+generality:
+- 0.75
+- 0.73
+- 0.71
+- 0.68
+- 0.66
+- 0.64
+- 0.62
 slug: horizon
-summary: Length of the future over which decisions are considered, with long horizon involving many future steps and short horizon involving only a few.
+summary: Length of the future over which decisions are considered, with long horizon
+  involving many future steps and short horizon involving only a few.
 title: Horizon
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: IMPL, ARCH
+generality:
+- 0.8
+- 0.785
+- 0.77
+- 0.755
+- 0.74
+- 0.725
+- 0.71
 slug: instrumentation
-summary: Techniques and tools used to monitor, measure, and analyze the performance and behavior of AI systems.
+summary: Techniques and tools used to monitor, measure, and analyze the performance
+  and behavior of AI systems.
 title: Instrumentation
 ---
 

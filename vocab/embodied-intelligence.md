@@ -1,7 +1,16 @@
 ---
 category: CORE, BIO
+generality:
+- 0.825
+- 0.81
+- 0.8
+- 0.785
+- 0.775
+- 0.76
+- 0.745
 slug: embodied-intelligence
-summary: Intelligence emerging from the physical interaction of an agent with its environment, emphasizing the importance of a body in learning and cognition.
+summary: Intelligence emerging from the physical interaction of an agent with its
+  environment, emphasizing the importance of a body in learning and cognition.
 title: Embodied Intelligence
 ---
 

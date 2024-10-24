@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: attention
-summary: Refers to mechanisms that allow models to dynamically focus on specific parts of input data, enhancing the relevance and context-awareness of the processing.
+summary: Refers to mechanisms that allow models to dynamically focus on specific parts
+  of input data, enhancing the relevance and context-awareness of the processing.
 title: Attention
 ---
 

@@ -1,7 +1,16 @@
 ---
 category: CORE, DATA
+generality:
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
 slug: attention-pattern
-summary: Mechanism that selectively focuses on certain parts of the input data to improve processing efficiency and performance outcomes.
+summary: Mechanism that selectively focuses on certain parts of the input data to
+  improve processing efficiency and performance outcomes.
 title: Attention Pattern
 ---
 

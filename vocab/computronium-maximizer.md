@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.2
+- 0.23
+- 0.265
+- 0.275
+- 0.305
+- 0.32
+- 0.35
 slug: computronium-maximizer
-summary: A hypothetical AI system designed to transform all available matter into computronium, an optimized form of matter for computational purposes.
+summary: A hypothetical AI system designed to transform all available matter into
+  computronium, an optimized form of matter for computational purposes.
 title: Computronium Maximizer
 ---
 

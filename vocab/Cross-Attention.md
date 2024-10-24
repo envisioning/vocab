@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
+- 0.645
+- 0.63
 slug: cross-attention
-summary: Mechanism in neural networks that allows the model to weigh and integrate information from different input sources dynamically.
+summary: Mechanism in neural networks that allows the model to weigh and integrate
+  information from different input sources dynamically.
 title: Cross-Attention
 ---
 

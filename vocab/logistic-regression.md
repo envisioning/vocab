@@ -1,7 +1,16 @@
 ---
 category: MATH, CORE
+generality:
+- 0.92
+- 0.9
+- 0.88
+- 0.86
+- 0.84
+- 0.82
+- 0.8
 slug: logistic-regression
-summary: Statistical model that estimates the probability of a binary outcome, commonly used for classification tasks.
+summary: Statistical model that estimates the probability of a binary outcome, commonly
+  used for classification tasks.
 title: Logistic Regression
 ---
 

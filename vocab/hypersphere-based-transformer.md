@@ -1,7 +1,16 @@
 ---
 category: ARCH, CORE
+generality:
+- 0.325
+- 0.35
+- 0.375
+- 0.4
+- 0.41
+- 0.43
+- 0.45
 slug: hypersphere-based-transformer
-summary: An improved framework for transformers focused on enhancing efficiency and performance by leveraging hyperspheres.
+summary: An improved framework for transformers focused on enhancing efficiency and
+  performance by leveraging hyperspheres.
 title: Hypersphere-Based Transformer
 ---
 

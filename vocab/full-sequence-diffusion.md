@@ -1,7 +1,16 @@
 ---
 category: CORE, ARCH
+generality:
+- 0.31
+- 0.295
+- 0.28
+- 0.265
+- 0.25
+- 0.235
+- 0.22
 slug: full-sequence-diffusion
-summary: Approach in diffusion models where the entire sequence of data undergoes the diffusion process simultaneously rather than segment by segment.
+summary: Approach in diffusion models where the entire sequence of data undergoes
+  the diffusion process simultaneously rather than segment by segment.
 title: Full-Sequence Diffusion
 ---
 

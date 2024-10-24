@@ -1,7 +1,16 @@
 ---
 category: ARCH, IMPL
+generality:
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: query-flock
-summary: Method to manage and process multiple related queries simultaneously, improving efficiency and response time.
+summary: Method to manage and process multiple related queries simultaneously, improving
+  efficiency and response time.
 title: Query Flock
 ---
 

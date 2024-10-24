@@ -1,7 +1,16 @@
 ---
 category: DATA, IMPL
+generality:
+- 0.84
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.77
+- 0.76
 slug: enrichment
-summary: Process of improving raw data quality with supplemental information to enable more accurate and insightful AI models.
+summary: Process of improving raw data quality with supplemental information to enable
+  more accurate and insightful AI models.
 title: Enrichment
 ---
 
