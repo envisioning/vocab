@@ -9,8 +9,7 @@ generality:
 - 0.535
 - 0.51
 slug: attestation
-summary: Process of verifying the integrity and authenticity of a system or software,
-  ensuring that it has not been tampered with or compromised.
+summary: Process of verifying the integrity and authenticity of a system or software, ensuring that it has not been tampered with or compromised.
 title: Attestation
 ---
 

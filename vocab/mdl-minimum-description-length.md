@@ -9,9 +9,7 @@ generality:
 - 0.835
 - 0.83
 slug: mdl
-summary: Principle formalization of Occam's Razor in information theory, advocating
-  that the best hypothesis for a given set of data is the one that leads to the shortest
-  total description of the data and the hypothesis.
+summary: Principle formalization of Occam's Razor in information theory, advocating that the best hypothesis for a given set of data is the one that leads to the shortest total description of the data and the hypothesis.
 title: MDL (Minimum Description Length)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.86
 - 0.83
 slug: generalization
-summary: Ability of a ML model to perform well on new, unseen data that was not included
-  in the training set.
+summary: Ability of a ML model to perform well on new, unseen data that was not included in the training set.
 title: Generalization
 ---
 

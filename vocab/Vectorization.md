@@ -9,8 +9,7 @@ generality:
 - 0.78
 - 0.76
 slug: vectorization
-summary: Process of converting non-numeric data into numeric format so that it can
-  be used by ML algorithms.
+summary: Process of converting non-numeric data into numeric format so that it can be used by ML algorithms.
 title: Vectorization
 ---
 

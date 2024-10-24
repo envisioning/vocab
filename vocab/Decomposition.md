@@ -9,8 +9,7 @@ generality:
 - 0.91
 - 0.905
 slug: decomposition
-summary: Process of breaking down a complex problem into smaller, more manageable
-  parts that can be solved individually.
+summary: Process of breaking down a complex problem into smaller, more manageable parts that can be solved individually.
 title: Decomposition
 ---
 

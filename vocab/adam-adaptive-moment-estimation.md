@@ -9,8 +9,7 @@ generality:
 - 0.72
 - 0.71
 slug: adam
-summary: Algorithm for gradient-based optimization of stochastic objective functions,
-  widely used in training DL models.
+summary: Algorithm for gradient-based optimization of stochastic objective functions, widely used in training DL models.
 title: ADAM (Adaptive Moment Estimation)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.13
 - 0.11
 slug: nian
-summary: Idiom used to describe the difficulty of finding a specific piece of information
-  or data within a vast, but homogeneous, dataset.
+summary: Idiom used to describe the difficulty of finding a specific piece of information or data within a vast, but homogeneous, dataset.
 title: NIAN (Needle in a Needlestack)
 ---
 

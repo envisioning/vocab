@@ -9,9 +9,7 @@ generality:
 - 0.68
 - 0.66
 slug: contrastive-learning
-summary: ML technique used primarily in unsupervised learning that improves model
-  performance by teaching the model to distinguish between similar and dissimilar
-  data points.
+summary: ML technique used primarily in unsupervised learning that improves model performance by teaching the model to distinguish between similar and dissimilar data points.
 title: Contrastive Learning
 ---
 

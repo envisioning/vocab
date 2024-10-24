@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: sample-difficulty
-summary: Degrees of complexities or challenges associated with particular samples
-  or data points in a data set.
+summary: Degrees of complexities or challenges associated with particular samples or data points in a data set.
 title: Sample Difficulty
 ---
 

@@ -9,9 +9,7 @@ generality:
 - 0.54
 - 0.525
 slug: aco
-summary: Probabilistic technique for solving computational problems which can be reduced
-  to finding good paths through graphs, inspired by the behavior of ants seeking paths
-  between their colony and food sources.
+summary: Probabilistic technique for solving computational problems which can be reduced to finding good paths through graphs, inspired by the behavior of ants seeking paths between their colony and food sources.
 title: ACO (Ant Colony Optimization)
 ---
 

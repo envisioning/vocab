@@ -9,8 +9,7 @@ generality:
 - 0.25
 - 0.235
 slug: diffusion-forcing
-summary: Intentional manipulation of diffusion models to guide the generation of data
-  towards desired outcomes.
+summary: Intentional manipulation of diffusion models to guide the generation of data towards desired outcomes.
 title: Diffusion Forcing
 ---
 

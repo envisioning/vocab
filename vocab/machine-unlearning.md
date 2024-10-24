@@ -9,8 +9,7 @@ generality:
 - 0.7
 - 0.685
 slug: machine-unlearning
-summary: Process by which an ML model is systematically modified to forget specific
-  data, ensuring that the data no longer influences the model's behavior or decisions.
+summary: Process by which an ML model is systematically modified to forget specific data, ensuring that the data no longer influences the model's behavior or decisions.
 title: Machine Unlearning
 ---
 

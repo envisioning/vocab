@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.835
 slug: conditional-probability
-summary: Measures the likelihood of an event occurring, given that another event has
-  already occurred.
+summary: Measures the likelihood of an event occurring, given that another event has already occurred.
 title: Conditional Probability
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.845
 - 0.84
 slug: composability
-summary: Design feature in software systems that allows different components to be
-  selected and assembled in various combinations to satisfy specific user requirements.
+summary: Design feature in software systems that allows different components to be selected and assembled in various combinations to satisfy specific user requirements.
 title: Composability
 ---
 

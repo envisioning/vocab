@@ -9,9 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: adapter-layer
-summary: Neural network layer used to enable transfer learning by adding small, trainable
-  modules to a pre-trained model, allowing it to adapt to new tasks with minimal additional
-  training.
+summary: Neural network layer used to enable transfer learning by adding small, trainable modules to a pre-trained model, allowing it to adapt to new tasks with minimal additional training.
 title: Adapter Layer
 ---
 

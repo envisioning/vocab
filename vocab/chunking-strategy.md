@@ -9,8 +9,7 @@ generality:
 - 0.725
 - 0.71
 slug: chunking-strategy
-summary: Method of grouping similar pieces of information together to simplify processing
-  and enhance memory performance.
+summary: Method of grouping similar pieces of information together to simplify processing and enhance memory performance.
 title: Chunking Strategy
 ---
 

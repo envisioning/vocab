@@ -9,9 +9,7 @@ generality:
 - 0.605
 - 0.58
 slug: ai-watchdog
-summary: Organizations, frameworks, or systems designed to monitor, regulate, and
-  guide the development and deployment of artificial intelligence technologies to
-  ensure they adhere to ethical standards, legal requirements, and societal expectations.
+summary: Organizations, frameworks, or systems designed to monitor, regulate, and guide the development and deployment of artificial intelligence technologies to ensure they adhere to ethical standards, legal requirements, and societal expectations.
 title: AI Watchdog
 ---
 

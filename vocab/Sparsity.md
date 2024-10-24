@@ -9,8 +9,7 @@ generality:
 - 0.845
 - 0.84
 slug: sparsity
-summary: Technique and principle of having models that utilize minimal data representation
-  and processing, typically through zero or near-zero values.
+summary: Technique and principle of having models that utilize minimal data representation and processing, typically through zero or near-zero values.
 title: Sparsity
 ---
 

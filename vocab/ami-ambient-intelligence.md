@@ -9,9 +9,7 @@ generality:
 - 0.645
 - 0.63
 slug: ami
-summary: Electronic environments that are sensitive, adaptive, and responsive to the
-  presence of people, aiming to enhance the quality of life through seamless integration
-  of technology.
+summary: Electronic environments that are sensitive, adaptive, and responsive to the presence of people, aiming to enhance the quality of life through seamless integration of technology.
 title: AmI (Ambient Intelligence)
 ---
 

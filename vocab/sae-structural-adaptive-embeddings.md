@@ -9,8 +9,7 @@ generality:
 - 0.56
 - 0.55
 slug: sae
-summary: Embedding technique that dynamically adapts to the structural properties
-  of the data to improve the representation of complex relationships within the dataset.
+summary: Embedding technique that dynamically adapts to the structural properties of the data to improve the representation of complex relationships within the dataset.
 title: SAE (Structural Adaptive Embeddings)
 ---
 

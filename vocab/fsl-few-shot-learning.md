@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: fsl
-summary: ML approach that enables models to learn and make accurate predictions from
-  a very small dataset.
+summary: ML approach that enables models to learn and make accurate predictions from a very small dataset.
 title: FSL (Few-Shot Learning)
 ---
 

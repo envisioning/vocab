@@ -9,9 +9,7 @@ generality:
 - 0.825
 - 0.82
 slug: attention-block
-summary: Core component in neural networks, particularly in transformers, designed
-  to selectively focus on the most relevant parts of an input sequence when making
-  predictions.
+summary: Core component in neural networks, particularly in transformers, designed to selectively focus on the most relevant parts of an input sequence when making predictions.
 title: Attention Block
 ---
 

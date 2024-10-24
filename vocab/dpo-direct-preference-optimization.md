@@ -9,8 +9,7 @@ generality:
 - 0.425
 - 0.4
 slug: dpo
-summary: ML technique used to optimize models based directly on user preferences rather
-  than traditional loss functions.
+summary: ML technique used to optimize models based directly on user preferences rather than traditional loss functions.
 title: DPO (Direct Preference Optimization)
 ---
 

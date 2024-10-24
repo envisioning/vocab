@@ -9,8 +9,7 @@ generality:
 - 0.66
 - 0.64
 slug: output-verifier
-summary: Mechanism used to confirm that the output of a system, particularly in software
-  or hardware systems, matches the expected results, ensuring accuracy and correctness.
+summary: Mechanism used to confirm that the output of a system, particularly in software or hardware systems, matches the expected results, ensuring accuracy and correctness.
 title: Output Verifier
 ---
 

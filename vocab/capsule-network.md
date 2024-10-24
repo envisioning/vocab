@@ -9,9 +9,7 @@ generality:
 - 0.6
 - 0.578
 slug: capsule-network
-summary: Type of artificial neural network that aims to more accurately model hierarchical
-  relationships and spatial information in visual data by using groups of neurons
-  called capsules.
+summary: Type of artificial neural network that aims to more accurately model hierarchical relationships and spatial information in visual data by using groups of neurons called capsules.
 title: Capsule Network
 ---
 

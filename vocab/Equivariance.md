@@ -9,9 +9,7 @@ generality:
 - 0.595
 - 0.585
 slug: equivariance
-summary: Property of a function whereby the function commutes with the actions of
-  a group, meaning that transformations applied to the input result in proportional
-  transformations in the output.
+summary: Property of a function whereby the function commutes with the actions of a group, meaning that transformations applied to the input result in proportional transformations in the output.
 title: Equivariance
 ---
 

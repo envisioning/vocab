@@ -9,8 +9,7 @@ generality:
 - 0.425
 - 0.4
 slug: nerf
-summary: Technique for creating high-quality 3D models from a set of 2D images using
-  deep learning.
+summary: Technique for creating high-quality 3D models from a set of 2D images using deep learning.
 title: NeRF (Neural Radiance Fields)
 ---
 

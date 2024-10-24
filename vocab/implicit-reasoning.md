@@ -9,8 +9,7 @@ generality:
 - 0.805
 - 0.8
 slug: implicit-reasoning
-summary: Ability of a system to make inferences and draw conclusions that are not
-  explicitly programmed or directly stated in the input data.
+summary: Ability of a system to make inferences and draw conclusions that are not explicitly programmed or directly stated in the input data.
 title: Implicit Reasoning
 ---
 

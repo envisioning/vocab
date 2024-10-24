@@ -9,8 +9,7 @@ generality:
 - 0.53
 - 0.515
 slug: gabor-function
-summary: Mathematical tool used in image processing and signal analysis, known for
-  its ability to localize information in both the spatial and frequency domains simultaneously.
+summary: Mathematical tool used in image processing and signal analysis, known for its ability to localize information in both the spatial and frequency domains simultaneously.
 title: Gabor Function
 ---
 

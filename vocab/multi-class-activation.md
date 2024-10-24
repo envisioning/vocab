@@ -9,8 +9,7 @@ generality:
 - 0.73
 - 0.71
 slug: multi-class-activation
-summary: A technique used in ML algorithms to manage problems where there are more
-  than two classes or categories.
+summary: A technique used in ML algorithms to manage problems where there are more than two classes or categories.
 title: Multi-Class Activation
 ---
 

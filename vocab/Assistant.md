@@ -9,8 +9,7 @@ generality:
 - 0.775
 - 0.76
 slug: assistant
-summary: Software system designed to perform tasks or services for an individual,
-  often leveraging NLP and ML to interact and respond intelligently.
+summary: Software system designed to perform tasks or services for an individual, often leveraging NLP and ML to interact and respond intelligently.
 title: Assistant
 ---
 

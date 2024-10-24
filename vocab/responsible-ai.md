@@ -9,8 +9,7 @@ generality:
 - 0.765
 - 0.74
 slug: responsible-ai
-summary: Application of AI in a manner that is transparent, unbiased, and respects
-  user privacy and value.
+summary: Application of AI in a manner that is transparent, unbiased, and respects user privacy and value.
 title: Responsible AI
 ---
 

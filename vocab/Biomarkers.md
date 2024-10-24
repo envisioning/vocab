@@ -9,8 +9,7 @@ generality:
 - 0.435
 - 0.42
 slug: biomarkers
-summary: Identifiable biological indicators that offer valuable insights into the
-  health or disease status of an individual in the context of AI.
+summary: Identifiable biological indicators that offer valuable insights into the health or disease status of an individual in the context of AI.
 title: Biomarkers
 ---
 

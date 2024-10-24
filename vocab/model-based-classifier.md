@@ -9,8 +9,7 @@ generality:
 - 0.825
 - 0.82
 slug: model-based-classifier
-summary: ML algorithm that uses a pre-defined statistical model to make predictions
-  based on input data.
+summary: ML algorithm that uses a pre-defined statistical model to make predictions based on input data.
 title: Model-Based Classifier
 ---
 

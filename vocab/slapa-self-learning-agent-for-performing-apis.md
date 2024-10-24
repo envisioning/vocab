@@ -9,8 +9,7 @@ generality:
 - 0.35
 - 0.325
 slug: slapa
-summary: AI agent designed to autonomously learn and interact with APIs to perform
-  tasks more effectively over time.
+summary: AI agent designed to autonomously learn and interact with APIs to perform tasks more effectively over time.
 title: SLAPA (Self-Learning Agent for Performing APIs)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.825
 - 0.82
 slug: linear-complexity
-summary: Situation where the time or space required to solve a problem increases linearly
-  with the size of the input.
+summary: Situation where the time or space required to solve a problem increases linearly with the size of the input.
 title: Linear Complexity
 ---
 

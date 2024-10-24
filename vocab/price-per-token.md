@@ -9,8 +9,7 @@ generality:
 - 0.15
 - 0.13
 slug: price-per-token
-summary: Cost of processing a single token used in NLP tasks, particularly when interacting
-  with AI models like GPT.
+summary: Cost of processing a single token used in NLP tasks, particularly when interacting with AI models like GPT.
 title: Price Per Token
 ---
 

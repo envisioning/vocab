@@ -9,8 +9,7 @@ generality:
 - 0.375
 - 0.36
 slug: hallucination
-summary: Generation of inaccurate, fabricated, or irrelevant output by a model, not
-  grounded in the input data or reality.
+summary: Generation of inaccurate, fabricated, or irrelevant output by a model, not grounded in the input data or reality.
 title: Hallucination
 ---
 

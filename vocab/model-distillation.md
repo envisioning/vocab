@@ -9,9 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: model-distillation
-summary: ML technique where a larger, more complex model (teacher) is used to train
-  a smaller, simpler model (student) to approximate the teacher's predictions while
-  maintaining similar performance.
+summary: ML technique where a larger, more complex model (teacher) is used to train a smaller, simpler model (student) to approximate the teacher's predictions while maintaining similar performance.
 title: Model Distillation
 ---
 

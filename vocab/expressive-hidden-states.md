@@ -9,8 +9,7 @@ generality:
 - 0.685
 - 0.68
 slug: expressive-hidden-states
-summary: internal representations within a neural network that effectively capture
-  and encode complex patterns and dependencies in the input data.
+summary: internal representations within a neural network that effectively capture and encode complex patterns and dependencies in the input data.
 title: Expressive Hidden States
 ---
 

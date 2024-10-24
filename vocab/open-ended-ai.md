@@ -9,8 +9,7 @@ generality:
 - 0.82
 - 0.8
 slug: open-ended-ai
-summary: AI systems designed to adapt and improve continuously, capable of generating
-  creative or novel solutions without a predefined endpoint or specific task.
+summary: AI systems designed to adapt and improve continuously, capable of generating creative or novel solutions without a predefined endpoint or specific task.
 title: Open-Ended AI
 ---
 

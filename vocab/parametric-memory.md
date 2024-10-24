@@ -9,9 +9,7 @@ generality:
 - 0.545
 - 0.53
 slug: parametric-memory
-summary: Memory architecture where specific memories or facts are stored using parameterized
-  models, often used to improve efficiency in storing and retrieving information in
-  machine learning systems.
+summary: Memory architecture where specific memories or facts are stored using parameterized models, often used to improve efficiency in storing and retrieving information in machine learning systems.
 title: Parametric Memory
 ---
 

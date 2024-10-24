@@ -9,9 +9,7 @@ generality:
 - 0.76
 - 0.74
 slug: unverifyability
-summary: Inability to confirm the correctness or truth of a system, model, or process,
-  especially in complex AI systems where verification is either impossible or highly
-  difficult.
+summary: Inability to confirm the correctness or truth of a system, model, or process, especially in complex AI systems where verification is either impossible or highly difficult.
 title: Unverifyability
 ---
 

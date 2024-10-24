@@ -9,8 +9,7 @@ generality:
 - 0.785
 - 0.78
 slug: instantiation
-summary: Process of creating a specific instance of an abstract concept, algorithm,
-  or data structure, allowing for its practical use and application.
+summary: Process of creating a specific instance of an abstract concept, algorithm, or data structure, allowing for its practical use and application.
 title: Instantiation
 ---
 

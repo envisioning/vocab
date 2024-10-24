@@ -9,8 +9,7 @@ generality:
 - 0.83
 - 0.825
 slug: hierarchical-planning
-summary: Approach to solving complex problems by breaking them down into more manageable
-  sub-problems, organizing these into a hierarchy.
+summary: Approach to solving complex problems by breaking them down into more manageable sub-problems, organizing these into a hierarchy.
 title: Hierarchical Planning
 ---
 

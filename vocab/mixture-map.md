@@ -9,8 +9,7 @@ generality:
 - 0.67
 - 0.66
 slug: mixture-map
-summary: Graphical representation used in data science and ML to visualize the relationships
-  and interactions between different components or features of a dataset.
+summary: Graphical representation used in data science and ML to visualize the relationships and interactions between different components or features of a dataset.
 title: Mixture Map
 ---
 

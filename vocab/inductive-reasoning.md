@@ -9,8 +9,7 @@ generality:
 - 0.865
 - 0.85
 slug: inductive-reasoning
-summary: Logical process where specific observations or instances are used to form
-  broader generalizations and theories.
+summary: Logical process where specific observations or instances are used to form broader generalizations and theories.
 title: Inductive Reasoning
 ---
 

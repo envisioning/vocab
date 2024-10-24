@@ -9,8 +9,7 @@ generality:
 - 0.965
 - 0.96
 slug: turing-complete
-summary: System capable of simulating any Turing machine, thereby performing arbitrary
-  computational operations given enough time and resources.
+summary: System capable of simulating any Turing machine, thereby performing arbitrary computational operations given enough time and resources.
 title: Turing Complete
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: in-context-learning
-summary: Method where an AI model uses the context provided in a prompt to guide its
-  responses without additional external training.
+summary: Method where an AI model uses the context provided in a prompt to guide its responses without additional external training.
 title: In-Context Learning
 ---
 

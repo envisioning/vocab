@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: super-prompting
-summary: Method in AI where specific, carefully crafted input prompts are used to
-  guide a model towards generating more accurate or contextually appropriate outputs.
+summary: Method in AI where specific, carefully crafted input prompts are used to guide a model towards generating more accurate or contextually appropriate outputs.
 title: Super Prompting
 ---
 

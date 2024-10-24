@@ -9,8 +9,7 @@ generality:
 - 0.34
 - 0.325
 slug: mims
-summary: ML approach where training occurs on labeled bags of instances instead of
-  individual instances, particularly useful when exact annotations are missing.
+summary: ML approach where training occurs on labeled bags of instances instead of individual instances, particularly useful when exact annotations are missing.
 title: MIMS (Multiple Instance Learning for Missing Annotations)
 ---
 

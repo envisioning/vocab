@@ -9,8 +9,7 @@ generality:
 - 0.785
 - 0.78
 slug: log-likelihood
-summary: Logarithm of the likelihood function, used in statistical models to measure
-  how well a model explains a given set of data.
+summary: Logarithm of the likelihood function, used in statistical models to measure how well a model explains a given set of data.
 title: Log Likelihood
 ---
 

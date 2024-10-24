@@ -9,8 +9,7 @@ generality:
 - 0.6
 - 0.575
 slug: chatgpt
-summary: Advanced conversational AI model developed by OpenAI based on the GPT architecture,
-  designed to generate human-like text responses.
+summary: Advanced conversational AI model developed by OpenAI based on the GPT architecture, designed to generate human-like text responses.
 title: ChatGPT
 ---
 

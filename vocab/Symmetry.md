@@ -9,8 +9,7 @@ generality:
 - 0.845
 - 0.84
 slug: symmetry
-summary: Invariances in data or models where certain transformations do not affect
-  the outcomes or predictions.
+summary: Invariances in data or models where certain transformations do not affect the outcomes or predictions.
 title: Symmetry
 ---
 

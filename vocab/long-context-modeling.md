@@ -9,9 +9,7 @@ generality:
 - 0.625
 - 0.61
 slug: long-context-modeling
-summary: Techniques and architectures designed to process and understand sequences
-  of data that are significantly longer than those typically handled by conventional
-  models, enabling better performance on tasks requiring extended context.
+summary: Techniques and architectures designed to process and understand sequences of data that are significantly longer than those typically handled by conventional models, enabling better performance on tasks requiring extended context.
 title: Long-Context Modeling
 ---
 

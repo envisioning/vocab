@@ -9,8 +9,7 @@ generality:
 - 0.815
 - 0.8
 slug: control-problem
-summary: Challenge of ensuring that highly advanced AI systems act in alignment with
-  human values and intentions.
+summary: Challenge of ensuring that highly advanced AI systems act in alignment with human values and intentions.
 title: Control Problem
 ---
 

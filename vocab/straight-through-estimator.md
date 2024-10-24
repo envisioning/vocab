@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.51
 slug: straight-through-estimator
-summary: Technique used in training neural networks to enable the backpropagation
-  of gradients through non-differentiable functions or operations.
+summary: Technique used in training neural networks to enable the backpropagation of gradients through non-differentiable functions or operations.
 title: Straight-Through Estimator
 ---
 

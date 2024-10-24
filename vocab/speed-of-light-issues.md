@@ -9,8 +9,7 @@ generality:
 - 0.35
 - 0.33
 slug: speed-of-light-issues
-summary: Challenges or constraints in computing, communication, and physics that arise
-  due to the finite speed at which light (and thus electromagnetic signals) travels.
+summary: Challenges or constraints in computing, communication, and physics that arise due to the finite speed at which light (and thus electromagnetic signals) travels.
 title: Speed of Light Issues
 ---
 

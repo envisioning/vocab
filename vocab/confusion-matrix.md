@@ -9,8 +9,7 @@ generality:
 - 0.6
 - 0.575
 slug: confusion-matrix
-summary: Table used to evaluate the performance of a classification model by visualizing
-  its true versus predicted values.
+summary: Table used to evaluate the performance of a classification model by visualizing its true versus predicted values.
 title: Confusion Matrix
 ---
 

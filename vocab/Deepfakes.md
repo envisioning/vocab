@@ -9,8 +9,7 @@ generality:
 - 0.52
 - 0.5
 slug: deepfakes
-summary: Synthetic media produced by AI technologies that superimpose existing images
-  or videos onto source images or videos to create realistic likenesses.
+summary: Synthetic media produced by AI technologies that superimpose existing images or videos onto source images or videos to create realistic likenesses.
 title: Deepfakes
 ---
 

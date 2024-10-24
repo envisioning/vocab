@@ -9,8 +9,7 @@ generality:
 - 0.735
 - 0.71
 slug: program-induction
-summary: A process in AI where computers generate, or 'induce', programs based on
-  provided data and specific output criteria.
+summary: A process in AI where computers generate, or 'induce', programs based on provided data and specific output criteria.
 title: Program Induction
 ---
 

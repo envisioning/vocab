@@ -9,8 +9,7 @@ generality:
 - 0.73
 - 0.72
 slug: mtl
-summary: ML approach where a single model is trained simultaneously on multiple related
-  tasks, leveraging commonalities and differences across tasks to improve generalization.
+summary: ML approach where a single model is trained simultaneously on multiple related tasks, leveraging commonalities and differences across tasks to improve generalization.
 title: MTL (Multi-Task Learning)
 ---
 

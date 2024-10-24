@@ -9,8 +9,7 @@ generality:
 - 0.75
 - 0.73
 slug: automl
-summary: Streamlines the process of applying ML by automating the tasks of selecting
-  the appropriate algorithms and tuning their hyperparameters.
+summary: Streamlines the process of applying ML by automating the tasks of selecting the appropriate algorithms and tuning their hyperparameters.
 title: AutoML (Automated Machine Learning)
 ---
 

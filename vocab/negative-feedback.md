@@ -9,8 +9,7 @@ generality:
 - 0.8
 - 0.785
 slug: negative-feedback
-summary: Control mechanism where the output of a system is fed back into the system
-  in a way that counteracts fluctuations from a setpoint, thereby promoting stability.
+summary: Control mechanism where the output of a system is fed back into the system in a way that counteracts fluctuations from a setpoint, thereby promoting stability.
 title: Negative Feedback
 ---
 

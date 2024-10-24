@@ -9,8 +9,7 @@ generality:
 - 0.875
 - 0.89
 slug: dlms
-summary: Advanced ML models designed to understand, generate, and translate human
-  language by leveraging DL techniques.
+summary: Advanced ML models designed to understand, generate, and translate human language by leveraging DL techniques.
 title: DLMs (Deep Language Models)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.825
 - 0.83
 slug: asi
-summary: Hypothetical form of AI that surpasses human intelligence across all domains,
-  including creativity, general wisdom, and problem-solving capabilities.
+summary: Hypothetical form of AI that surpasses human intelligence across all domains, including creativity, general wisdom, and problem-solving capabilities.
 title: ASI (Artificial Super Intelligence)
 ---
 

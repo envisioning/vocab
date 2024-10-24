@@ -9,8 +9,7 @@ generality:
 - 0.774
 - 0.75
 slug: parallelism
-summary: Simultaneous execution of multiple processes or tasks to improve performance
-  and efficiency.
+summary: Simultaneous execution of multiple processes or tasks to improve performance and efficiency.
 title: Parallelism
 ---
 

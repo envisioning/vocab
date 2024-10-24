@@ -9,8 +9,7 @@ generality:
 - 0.76
 - 0.74
 slug: observability
-summary: Capability to monitor and understand the internal states of an AI system
-  through its outputs.
+summary: Capability to monitor and understand the internal states of an AI system through its outputs.
 title: Observability
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.69
 - 0.675
 slug: persistency
-summary: Persistent storage and retrieval of generated data and learned behaviors
-  to maintain a model's performance and ensure its utility over time.
+summary: Persistent storage and retrieval of generated data and learned behaviors to maintain a model's performance and ensure its utility over time.
 title: Persistency
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.865
 - 0.87
 slug: orchestration
-summary: Systematic coordination and management of various models, algorithms, and
-  processes to efficiently execute complex tasks and workflows.
+summary: Systematic coordination and management of various models, algorithms, and processes to efficiently execute complex tasks and workflows.
 title: Orchestration
 ---
 

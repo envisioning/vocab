@@ -9,8 +9,7 @@ generality:
 - 0.585
 - 0.56
 slug: token-speculation-techniques
-summary: Strategies used in NLP models to predict multiple potential tokens (words
-  or subwords) in parallel, improving the efficiency of text generation.
+summary: Strategies used in NLP models to predict multiple potential tokens (words or subwords) in parallel, improving the efficiency of text generation.
 title: Token Speculation Techniques
 ---
 

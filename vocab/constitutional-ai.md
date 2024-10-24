@@ -9,9 +9,7 @@ generality:
 - 0.68
 - 0.66
 slug: constitutional-ai
-summary: Development of foundational principles and regulations that govern the design,
-  deployment, and operation of AI systems to ensure they adhere to ethical standards,
-  human rights, and democratic values.
+summary: Development of foundational principles and regulations that govern the design, deployment, and operation of AI systems to ensure they adhere to ethical standards, human rights, and democratic values.
 title: Constitutional AI
 ---
 

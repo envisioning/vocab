@@ -9,8 +9,7 @@ generality:
 - 0.7
 - 0.67
 slug: task-environment
-summary: Setting or context within which an intelligent agent operates and attempts
-  to achieve its objectives.
+summary: Setting or context within which an intelligent agent operates and attempts to achieve its objectives.
 title: Task Environment
 ---
 

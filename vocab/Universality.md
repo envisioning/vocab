@@ -9,8 +9,7 @@ generality:
 - 0.917
 - 0.905
 slug: universality
-summary: Concept that certain computational systems can simulate any other computational
-  system, given the correct inputs and enough time and resources.
+summary: Concept that certain computational systems can simulate any other computational system, given the correct inputs and enough time and resources.
 title: Universality
 ---
 

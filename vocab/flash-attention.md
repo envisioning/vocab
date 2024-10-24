@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: flash-attention
-summary: GPU-optimized attention mechanism designed to efficiently handle extremely
-  large sequences of data in neural networks.
+summary: GPU-optimized attention mechanism designed to efficiently handle extremely large sequences of data in neural networks.
 title: Flash Attention
 ---
 

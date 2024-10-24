@@ -9,8 +9,7 @@ generality:
 - 0.64
 - 0.61
 slug: geometric-deep-learning
-summary: Field of study that extends DL techniques to data that is structured as graphs,
-  manifolds, or more general topological spaces.
+summary: Field of study that extends DL techniques to data that is structured as graphs, manifolds, or more general topological spaces.
 title: Geometric Deep Learning
 ---
 

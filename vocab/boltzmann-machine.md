@@ -9,8 +9,7 @@ generality:
 - 0.765
 - 0.75
 slug: boltzmann-machine
-summary: Stochastic recurrent neural network used to learn and represent complex probability
-  distributions over binary variables.
+summary: Stochastic recurrent neural network used to learn and represent complex probability distributions over binary variables.
 title: Boltzmann Machine
 ---
 

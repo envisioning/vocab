@@ -9,8 +9,7 @@ generality:
 - 0.775
 - 0.76
 slug: chatbot
-summary: Software application designed to simulate conversation with human users,
-  often over the Internet.
+summary: Software application designed to simulate conversation with human users, often over the Internet.
 title: Chatbot
 ---
 

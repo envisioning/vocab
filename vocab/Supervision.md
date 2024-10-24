@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.83
 slug: supervision
-summary: Use of labeled data to train ML models, guiding the learning process by providing
-  input-output pairs.
+summary: Use of labeled data to train ML models, guiding the learning process by providing input-output pairs.
 title: Supervision
 ---
 

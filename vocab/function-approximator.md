@@ -9,8 +9,7 @@ generality:
 - 0.79
 - 0.78
 slug: function-approximator
-summary: Computational model used to estimate a target function that is generally
-  complex or unknown, often applied in machine learning and control systems.
+summary: Computational model used to estimate a target function that is generally complex or unknown, often applied in machine learning and control systems.
 title: Function Approximator
 ---
 

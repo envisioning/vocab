@@ -9,9 +9,7 @@ generality:
 - 0.86
 - 0.84
 slug: optimization-problem
-summary: Optimization problem in AI which involves finding the best solution from
-  all feasible solutions, given a set of constraints and an objective to achieve or
-  optimize.
+summary: Optimization problem in AI which involves finding the best solution from all feasible solutions, given a set of constraints and an objective to achieve or optimize.
 title: Optimization Problem
 ---
 

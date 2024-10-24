@@ -9,9 +9,7 @@ generality:
 - 0.825
 - 0.81
 slug: ontology
-summary: Structured framework that categorizes and organizes information or data into
-  a hierarchy of concepts and relationships, facilitating the sharing and reuse of
-  knowledge across systems and domains.
+summary: Structured framework that categorizes and organizes information or data into a hierarchy of concepts and relationships, facilitating the sharing and reuse of knowledge across systems and domains.
 title: Ontology
 ---
 

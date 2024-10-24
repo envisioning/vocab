@@ -9,8 +9,7 @@ generality:
 - 0.75
 - 0.76
 slug: groundedness
-summary: Property of language models that ensures their generated content or interpretations
-  are closely tied to or derived from real-world knowledge and contexts.
+summary: Property of language models that ensures their generated content or interpretations are closely tied to or derived from real-world knowledge and contexts.
 title: Groundedness
 ---
 

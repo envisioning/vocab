@@ -9,8 +9,7 @@ generality:
 - 0.75
 - 0.73
 slug: recognition-model
-summary: Element of AI that identifies patterns and features in data through learning
-  processes.
+summary: Element of AI that identifies patterns and features in data through learning processes.
 title: Recognition Model
 ---
 

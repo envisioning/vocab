@@ -9,8 +9,7 @@ generality:
 - 0.535
 - 0.52
 slug: valence
-summary: Emotional value associated with a particular stimulus, often used in AI to
-  fine-tune emotional processing.
+summary: Emotional value associated with a particular stimulus, often used in AI to fine-tune emotional processing.
 title: Valence
 ---
 

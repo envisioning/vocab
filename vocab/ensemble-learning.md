@@ -9,8 +9,7 @@ generality:
 - 0.745
 - 0.72
 slug: ensemble-learning
-summary: ML paradigm where multiple models (often called weak learners) are trained
-  to solve the same problem and combined to improve the accuracy of predictions.
+summary: ML paradigm where multiple models (often called weak learners) are trained to solve the same problem and combined to improve the accuracy of predictions.
 title: Ensemble Learning
 ---
 

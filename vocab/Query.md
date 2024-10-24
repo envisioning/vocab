@@ -9,8 +9,7 @@ generality:
 - 0.81
 - 0.8
 slug: query
-summary: Request made to a data management system or AI model to retrieve information
-  or execute a command based on specific criteria.
+summary: Request made to a data management system or AI model to retrieve information or execute a command based on specific criteria.
 title: Query
 ---
 

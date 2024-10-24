@@ -9,9 +9,7 @@ generality:
 - 0.815
 - 0.8
 slug: internal-representation
-summary: The way information or knowledge is structured and stored within an AI or
-  computational system, enabling the system to process, reason, or make decisions
-  based on that information.
+summary: The way information or knowledge is structured and stored within an AI or computational system, enabling the system to process, reason, or make decisions based on that information.
 title: Internal Representation
 ---
 

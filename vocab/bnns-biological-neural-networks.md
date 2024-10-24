@@ -9,8 +9,7 @@ generality:
 - 0.92
 - 0.91
 slug: bnns
-summary: Complex networks of neurons found in biological organisms, responsible for
-  processing and transmitting information through electrical and chemical signals.
+summary: Complex networks of neurons found in biological organisms, responsible for processing and transmitting information through electrical and chemical signals.
 title: BNNs (Biological Neural Networks)
 ---
 

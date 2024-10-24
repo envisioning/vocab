@@ -9,8 +9,7 @@ generality:
 - 0.42
 - 0.4
 slug: wham
-summary: Multimodal, highly interactive 3D environment for developing and testing
-  AI models.
+summary: Multimodal, highly interactive 3D environment for developing and testing AI models.
 title: WHAM (World and Human Action Model)
 ---
 

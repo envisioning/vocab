@@ -9,8 +9,7 @@ generality:
 - 0.78
 - 0.77
 slug: self-attention
-summary: Mechanism in neural networks that allows models to weigh the importance of
-  different parts of the input data differently.
+summary: Mechanism in neural networks that allows models to weigh the importance of different parts of the input data differently.
 title: Self-Attention
 ---
 

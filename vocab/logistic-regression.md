@@ -9,8 +9,7 @@ generality:
 - 0.82
 - 0.8
 slug: logistic-regression
-summary: Statistical model that estimates the probability of a binary outcome, commonly
-  used for classification tasks.
+summary: Statistical model that estimates the probability of a binary outcome, commonly used for classification tasks.
 title: Logistic Regression
 ---
 

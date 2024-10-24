@@ -9,8 +9,7 @@ generality:
 - 0.8
 - 0.785
 slug: ethical-ai
-summary: Practice of creating AI technologies that follow clearly defined ethical
-  guidelines and principles to benefit society while minimizing harm.
+summary: Practice of creating AI technologies that follow clearly defined ethical guidelines and principles to benefit society while minimizing harm.
 title: Ethical AI
 ---
 

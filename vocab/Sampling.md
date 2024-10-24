@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.84
 slug: sampling
-summary: Fundamental technique used to reduce computational cost and simplify data
-  management
+summary: Fundamental technique used to reduce computational cost and simplify data management
 title: Sampling
 ---
 

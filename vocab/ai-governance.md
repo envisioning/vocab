@@ -9,8 +9,7 @@ generality:
 - 0.84
 - 0.83
 slug: ai-governance
-summary: Set of policies, principles, and practices that guide the ethical development,
-  deployment, and regulation of artificial intelligence technologies.
+summary: Set of policies, principles, and practices that guide the ethical development, deployment, and regulation of artificial intelligence technologies.
 title: AI Governance
 ---
 

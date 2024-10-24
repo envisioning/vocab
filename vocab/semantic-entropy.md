@@ -9,8 +9,7 @@ generality:
 - 0.652
 - 0.628
 slug: semantic-entropy
-summary: Measure of uncertainty or unpredictability in the meaning of a message or
-  data, often considering the context in which the information is used.
+summary: Measure of uncertainty or unpredictability in the meaning of a message or data, often considering the context in which the information is used.
 title: Semantic Entropy
 ---
 

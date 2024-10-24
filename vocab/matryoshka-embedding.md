@@ -9,8 +9,7 @@ generality:
 - 0.35
 - 0.33
 slug: matryoshka-embedding
-summary: Method of representing nested structures in data using embeddings that encapsulate
-  multiple layers of information, similar to Russian Matryoshka nesting dolls.
+summary: Method of representing nested structures in data using embeddings that encapsulate multiple layers of information, similar to Russian Matryoshka nesting dolls.
 title: Matryoshka Embedding
 ---
 

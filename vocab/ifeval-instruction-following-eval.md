@@ -9,8 +9,7 @@ generality:
 - 0.475
 - 0.45
 slug: ifeval
-summary: Methodology designed to assess the ability of AI systems to follow and execute
-  human-given instructions accurately and effectively.
+summary: Methodology designed to assess the ability of AI systems to follow and execute human-given instructions accurately and effectively.
 title: IFEval (Instruction-Following Eval)
 ---
 

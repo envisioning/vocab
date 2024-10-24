@@ -9,8 +9,7 @@ generality:
 - 0.61
 - 0.59
 slug: performance-degradation
-summary: Decline in the efficiency or effectiveness of an AI system over time or under
-  specific conditions, leading to reduced accuracy, speed, or reliability.
+summary: Decline in the efficiency or effectiveness of an AI system over time or under specific conditions, leading to reduced accuracy, speed, or reliability.
 title: Performance Degradation
 ---
 

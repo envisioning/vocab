@@ -9,8 +9,7 @@ generality:
 - 0.325
 - 0.3
 slug: jagged-frontier
-summary: Metaphorically describes an area of AI research characterized by rapid, uneven
-  advances and significant uncertainties or complexities.
+summary: Metaphorically describes an area of AI research characterized by rapid, uneven advances and significant uncertainties or complexities.
 title: Jagged Frontier
 ---
 

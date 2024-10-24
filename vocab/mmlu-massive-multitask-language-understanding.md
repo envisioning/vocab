@@ -9,8 +9,7 @@ generality:
 - 0.49
 - 0.465
 slug: mmlu
-summary: Evaluation framework designed to assess the performance of language models
-  across a broad spectrum of tasks and domains.
+summary: Evaluation framework designed to assess the performance of language models across a broad spectrum of tasks and domains.
 title: MMLU (Massive Multitask Language Understanding)
 ---
 

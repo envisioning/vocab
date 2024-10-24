@@ -9,8 +9,7 @@ generality:
 - 0.175
 - 0.16
 slug: toy-program
-summary: Simple, small-scale software application created primarily for educational
-  purposes, testing, or proof of concept rather than for real-world use.
+summary: Simple, small-scale software application created primarily for educational purposes, testing, or proof of concept rather than for real-world use.
 title: Toy Program
 ---
 

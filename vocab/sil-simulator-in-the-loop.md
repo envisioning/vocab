@@ -9,9 +9,7 @@ generality:
 - 0.53
 - 0.51
 slug: sil
-summary: Methodology in which a simulator is integrated into the control loop of a
-  system, providing a virtual environment for real-time testing and validation of
-  algorithms, control strategies, or system performance.
+summary: Methodology in which a simulator is integrated into the control loop of a system, providing a virtual environment for real-time testing and validation of algorithms, control strategies, or system performance.
 title: SIL (Simulator in the Loop)
 ---
 

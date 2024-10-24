@@ -9,9 +9,7 @@ generality:
 - 0.665
 - 0.64
 slug: layer-normalization
-summary: Technique used in neural networks to normalize the inputs across the features
-  within a layer, improving training stability and model performance, particularly
-  in recurrent and transformer models.
+summary: Technique used in neural networks to normalize the inputs across the features within a layer, improving training stability and model performance, particularly in recurrent and transformer models.
 title: Layer Normalization
 ---
 

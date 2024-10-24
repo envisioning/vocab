@@ -9,8 +9,7 @@ generality:
 - 0.47
 - 0.455
 slug: stride-length
-summary: Refers to the number of pixels by which the filter or kernel moves across
-  the input data during convolution operations in convolutional neural networks (CNNs).
+summary: Refers to the number of pixels by which the filter or kernel moves across the input data during convolution operations in convolutional neural networks (CNNs).
 title: Stride Length
 ---
 

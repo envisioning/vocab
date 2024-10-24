@@ -9,8 +9,7 @@ generality:
 - 0.855
 - 0.86
 slug: knowledge-graph
-summary: Organizes and represents data as an interconnected network of entities (such
-  as objects, events, concepts) and their relationships.
+summary: Organizes and represents data as an interconnected network of entities (such as objects, events, concepts) and their relationships.
 title: Knowledge Graph
 ---
 

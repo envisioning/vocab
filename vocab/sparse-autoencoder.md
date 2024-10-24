@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: sparse-autoencoder
-summary: Type of neural network designed to learn efficient data representations by
-  enforcing sparsity on the hidden layer activations.
+summary: Type of neural network designed to learn efficient data representations by enforcing sparsity on the hidden layer activations.
 title: Sparse Autoencoder
 ---
 

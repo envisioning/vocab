@@ -9,8 +9,7 @@ generality:
 - 0.7
 - 0.68
 slug: data-wall
-summary: Limitation faced when the available data becomes insufficient for further
-  training or improving machine learning models.
+summary: Limitation faced when the available data becomes insufficient for further training or improving machine learning models.
 title: Data Wall
 ---
 

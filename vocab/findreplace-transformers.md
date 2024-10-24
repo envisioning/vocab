@@ -9,8 +9,7 @@ generality:
 - 0.265
 - 0.25
 slug: find-replace-transformers
-summary: Novel architectural extension of traditional transformers, designed to achieve
-  Turing completeness and enhance model performance on complex tasks.
+summary: Novel architectural extension of traditional transformers, designed to achieve Turing completeness and enhance model performance on complex tasks.
 title: Find+Replace Transformers
 ---
 

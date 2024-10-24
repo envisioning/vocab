@@ -9,8 +9,7 @@ generality:
 - 0.485
 - 0.47
 slug: gqn
-summary: Neural network architecture designed to enable machines to understand and
-  generate visual scenes from different viewpoints based on limited observations.
+summary: Neural network architecture designed to enable machines to understand and generate visual scenes from different viewpoints based on limited observations.
 title: GQN (Generative Query Network)
 ---
 

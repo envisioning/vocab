@@ -9,8 +9,7 @@ generality:
 - 0.705
 - 0.69
 slug: noise
-summary: Irrelevant or meaningless data in a dataset or unwanted variations in signals
-  that can interfere with the training and performance of AI models.
+summary: Irrelevant or meaningless data in a dataset or unwanted variations in signals that can interfere with the training and performance of AI models.
 title: Noise
 ---
 

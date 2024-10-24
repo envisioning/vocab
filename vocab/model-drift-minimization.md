@@ -9,8 +9,7 @@ generality:
 - 0.685
 - 0.66
 slug: model-drift-minimization
-summary: Strategies and methodologies to ensure that a ML model remains accurate and
-  relevant over time as the underlying data changes.
+summary: Strategies and methodologies to ensure that a ML model remains accurate and relevant over time as the underlying data changes.
 title: Model Drift Minimization
 ---
 

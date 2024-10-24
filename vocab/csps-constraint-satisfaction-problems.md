@@ -9,8 +9,7 @@ generality:
 - 0.78
 - 0.77
 slug: csps
-summary: Mathematical problems defined by a set of variables, a domain of values for
-  each variable, and a set of constraints specifying allowable combinations of values.
+summary: Mathematical problems defined by a set of variables, a domain of values for each variable, and a set of constraints specifying allowable combinations of values.
 title: CSPs (Constraint Satisfaction Problems)
 ---
 

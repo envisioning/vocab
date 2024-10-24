@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: intelligence-explosion
-summary: Hypothetical scenario where an AI system rapidly improves its own capabilities
-  and intelligence, leading to a superintelligent AI far surpassing human intelligence.
+summary: Hypothetical scenario where an AI system rapidly improves its own capabilities and intelligence, leading to a superintelligent AI far surpassing human intelligence.
 title: Intelligence Explosion
 ---
 

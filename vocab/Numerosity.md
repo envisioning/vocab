@@ -9,8 +9,7 @@ generality:
 - 0.605
 - 0.59
 slug: numerosity
-summary: Understanding of the quantitative attributes revolving around the number
-  of elements in a data set.
+summary: Understanding of the quantitative attributes revolving around the number of elements in a data set.
 title: Numerosity
 ---
 

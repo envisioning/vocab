@@ -9,8 +9,7 @@ generality:
 - 0.82
 - 0.8
 slug: objective-function
-summary: Objective function used in ML which quantitatively defines the goal of an
-  optimization problem by measuring the performance of a model or solution.
+summary: Objective function used in ML which quantitatively defines the goal of an optimization problem by measuring the performance of a model or solution.
 title: Objective Function
 ---
 

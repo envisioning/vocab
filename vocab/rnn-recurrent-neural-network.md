@@ -9,9 +9,7 @@ generality:
 - 0.865
 - 0.85
 slug: rnn
-summary: Class of neural networks where connections between nodes form a directed
-  graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior
-  for a sequence of inputs.
+summary: Class of neural networks where connections between nodes form a directed graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior for a sequence of inputs.
 title: RNN (Recurrent Neural Network)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.865
 slug: predictive-analytics
-summary: Using statistical techniques and algorithms to analyze historical data and
-  make predictions about future events.
+summary: Using statistical techniques and algorithms to analyze historical data and make predictions about future events.
 title: Predictive Analytics
 ---
 

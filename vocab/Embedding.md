@@ -9,9 +9,7 @@ generality:
 - 0.875
 - 0.88
 slug: embedding
-summary: Representations of items, like words, sentences, or objects, in a continuous
-  vector space, facilitating their quantitative comparison and manipulation by AI
-  models.
+summary: Representations of items, like words, sentences, or objects, in a continuous vector space, facilitating their quantitative comparison and manipulation by AI models.
 title: Embedding
 ---
 

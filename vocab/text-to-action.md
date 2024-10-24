@@ -9,8 +9,7 @@ generality:
 - 0.65
 - 0.64
 slug: text-to-action
-summary: Process of interpreting and converting written or spoken language into executable
-  actions by a system or application.
+summary: Process of interpreting and converting written or spoken language into executable actions by a system or application.
 title: Text to Action
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.66
 - 0.65
 slug: empathic-ai
-summary: AI systems designed to recognize, understand, and respond to human emotions
-  in a nuanced and contextually appropriate manner.
+summary: AI systems designed to recognize, understand, and respond to human emotions in a nuanced and contextually appropriate manner.
 title: Empathic AI
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.81
 - 0.8
 slug: hyperscalers
-summary: Large tech organizations that design and manage infrastructure to support
-  the massive scale of big data, AI and cloud computing.
+summary: Large tech organizations that design and manage infrastructure to support the massive scale of big data, AI and cloud computing.
 title: Hyperscalers
 ---
 

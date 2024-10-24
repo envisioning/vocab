@@ -9,8 +9,7 @@ generality:
 - 0.75
 - 0.73
 slug: base-model
-summary: Pre-trained AI model that serves as a starting point for further training
-  or adaptation on specific tasks or datasets.
+summary: Pre-trained AI model that serves as a starting point for further training or adaptation on specific tasks or datasets.
 title: Base Model
 ---
 

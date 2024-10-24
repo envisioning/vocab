@@ -9,8 +9,7 @@ generality:
 - 0.545
 - 0.52
 slug: react
-summary: AI framework for integrating reasoning and acting capabilities, enabling
-  models to make decisions based on both logic and learned actions.
+summary: AI framework for integrating reasoning and acting capabilities, enabling models to make decisions based on both logic and learned actions.
 title: ReAct (Reason+Act)
 ---
 

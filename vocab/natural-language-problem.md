@@ -9,8 +9,7 @@ generality:
 - 0.845
 - 0.83
 slug: natural-language-problem
-summary: Challenges encountered in understanding, processing, or generating human
-  language using computational methods.
+summary: Challenges encountered in understanding, processing, or generating human language using computational methods.
 title: Natural Language Problem
 ---
 

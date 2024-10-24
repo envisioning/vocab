@@ -9,9 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: confidential-computing
-summary: Security measure that protects data in use by performing computation in a
-  hardware-based environment, preventing unauthorized access or visibility even if
-  the system is compromised.
+summary: Security measure that protects data in use by performing computation in a hardware-based environment, preventing unauthorized access or visibility even if the system is compromised.
 title: Confidential Computing
 ---
 

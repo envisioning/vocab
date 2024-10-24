@@ -9,9 +9,7 @@ generality:
 - 0.88
 - 0.87
 slug: clustering
-summary: Unsupervised learning method used to group a set of objects in such a way
-  that objects in the same group (called a cluster) are more similar to each other
-  than to those in other groups.
+summary: Unsupervised learning method used to group a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups.
 title: Clustering
 ---
 

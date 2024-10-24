@@ -9,8 +9,7 @@ generality:
 - 0.545
 - 0.53
 slug: counterfactual-explanations
-summary: Statements or scenarios that explain how a different outcome could have been
-  achieved by altering specific inputs or conditions in an AI system.
+summary: Statements or scenarios that explain how a different outcome could have been achieved by altering specific inputs or conditions in an AI system.
 title: Counterfactual Explanations
 ---
 

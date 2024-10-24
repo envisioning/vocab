@@ -9,8 +9,7 @@ generality:
 - 0.84
 - 0.83
 slug: pretrained-model
-summary: ML model that has been previously trained on a large dataset and can be fine-tuned
-  or used as is for similar tasks or applications.
+summary: ML model that has been previously trained on a large dataset and can be fine-tuned or used as is for similar tasks or applications.
 title: Pretrained Model
 ---
 

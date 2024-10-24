@@ -9,8 +9,7 @@ generality:
 - 0.63
 - 0.6
 slug: infinite-context-window
-summary: Method in NLP where a model has potential to consider entire available preceding
-  information for predictions.
+summary: Method in NLP where a model has potential to consider entire available preceding information for predictions.
 title: Infinite Context Window
 ---
 

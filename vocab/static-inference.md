@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: static-inference
-summary: Process of performing predictions using a pre-trained machine learning model
-  without updating the model parameters during runtime.
+summary: Process of performing predictions using a pre-trained machine learning model without updating the model parameters during runtime.
 title: Static Inference
 ---
 

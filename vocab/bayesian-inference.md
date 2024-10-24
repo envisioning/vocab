@@ -9,9 +9,7 @@ generality:
 - 0.88
 - 0.875
 slug: bayesian-inference
-summary: Method of statistical inference in which Bayes' theorem is used to update
-  the probability estimate for a hypothesis as more evidence or information becomes
-  available.
+summary: Method of statistical inference in which Bayes' theorem is used to update the probability estimate for a hypothesis as more evidence or information becomes available.
 title: Bayesian Inference
 ---
 

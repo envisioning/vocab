@@ -9,8 +9,7 @@ generality:
 - 0.505
 - 0.48
 slug: overparameterized
-summary: ML model that has more parameters than the number of data points available
-  for training.
+summary: ML model that has more parameters than the number of data points available for training.
 title: Overparameterized
 ---
 

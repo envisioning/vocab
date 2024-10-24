@@ -9,8 +9,7 @@ generality:
 - 0.32
 - 0.35
 slug: computronium-maximizer
-summary: A hypothetical AI system designed to transform all available matter into
-  computronium, an optimized form of matter for computational purposes.
+summary: A hypothetical AI system designed to transform all available matter into computronium, an optimized form of matter for computational purposes.
 title: Computronium Maximizer
 ---
 

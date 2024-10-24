@@ -9,8 +9,7 @@ generality:
 - 0.485
 - 0.46
 slug: criteria-drift
-summary: Phenomenon where the criteria used to evaluate a ML model change over time,
-  leading to a potential decline in the model's performance.
+summary: Phenomenon where the criteria used to evaluate a ML model change over time, leading to a potential decline in the model's performance.
 title: Criteria Drift
 ---
 

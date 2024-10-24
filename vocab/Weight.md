@@ -9,8 +9,7 @@ generality:
 - 0.77
 - 0.745
 slug: weight
-summary: Represents a coefficient for a feature in a model that determines the influence
-  of that feature on the model's predictions.
+summary: Represents a coefficient for a feature in a model that determines the influence of that feature on the model's predictions.
 title: Weight
 ---
 

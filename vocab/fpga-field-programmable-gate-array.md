@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: fpga
-summary: Type of integrated circuit that can be configured by the customer or designer
-  after manufacturing.
+summary: Type of integrated circuit that can be configured by the customer or designer after manufacturing.
 title: FPGA (Field-Programmable Gate Array)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.78
 - 0.77
 slug: singularity
-summary: Hypothetical future point at which technological growth becomes uncontrollable
-  and irreversible, resulting in unforeseeable changes to human civilization.
+summary: Hypothetical future point at which technological growth becomes uncontrollable and irreversible, resulting in unforeseeable changes to human civilization.
 title: Singularity
 ---
 

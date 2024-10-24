@@ -9,9 +9,7 @@ generality:
 - 0.67
 - 0.65
 slug: computational-creativity
-summary: The study and building of software and algorithms that exhibit behaviors
-  deemed creative in humans, such as generating original artwork, music, or solving
-  problems in unique ways.
+summary: The study and building of software and algorithms that exhibit behaviors deemed creative in humans, such as generating original artwork, music, or solving problems in unique ways.
 title: Computational Creativity
 ---
 

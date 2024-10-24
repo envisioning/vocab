@@ -9,8 +9,7 @@ generality:
 - 0.875
 - 0.85
 slug: token
-summary: Basic unit of data processed in NLP tasks, representing words, characters,
-  or subwords.
+summary: Basic unit of data processed in NLP tasks, representing words, characters, or subwords.
 title: Token
 ---
 

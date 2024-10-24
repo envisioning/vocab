@@ -9,8 +9,7 @@ generality:
 - 0.79
 - 0.77
 slug: symbolic-ai
-summary: Also known as Good Old-Fashioned AI (GOFAI), involves the manipulation of
-  symbols to represent problems and compute solutions through rules.
+summary: Also known as Good Old-Fashioned AI (GOFAI), involves the manipulation of symbols to represent problems and compute solutions through rules.
 title: Symbolic AI
 ---
 

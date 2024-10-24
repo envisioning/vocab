@@ -9,8 +9,7 @@ generality:
 - 0.839
 - 0.835
 slug: parametric-knowledge
-summary: Information and patterns encoded within the parameters of a machine learning
-  model, which are learned during the training process.
+summary: Information and patterns encoded within the parameters of a machine learning model, which are learned during the training process.
 title: Parametric Knowledge
 ---
 

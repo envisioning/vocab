@@ -9,8 +9,7 @@ generality:
 - 0.855
 - 0.84
 slug: robustness
-summary: Ability of an algorithm or model to deliver consistent and accurate results
-  under varying operating conditions and input perturbations.
+summary: Ability of an algorithm or model to deliver consistent and accurate results under varying operating conditions and input perturbations.
 title: Robustness
 ---
 

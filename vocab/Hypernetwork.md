@@ -9,8 +9,7 @@ generality:
 - 0.675
 - 0.66
 slug: hypernetwork
-summary: Neural network that generates the weights for another neural network, enabling
-  dynamic adaptation and increased flexibility in learning and generalization.
+summary: Neural network that generates the weights for another neural network, enabling dynamic adaptation and increased flexibility in learning and generalization.
 title: Hypernetwork
 ---
 

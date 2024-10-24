@@ -9,8 +9,7 @@ generality:
 - 0.725
 - 0.7
 slug: data-imputation
-summary: Process of replacing missing or incomplete data within a dataset with substituted
-  values to maintain the dataset's integrity and usability.
+summary: Process of replacing missing or incomplete data within a dataset with substituted values to maintain the dataset's integrity and usability.
 title: Data Imputation
 ---
 

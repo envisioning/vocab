@@ -9,9 +9,7 @@ generality:
 - 0.75
 - 0.74
 slug: bayesian-optimization
-summary: Strategy for optimizing complex, expensive-to-evaluate functions by building
-  a probabilistic model of the function and using it to select the most promising
-  points to evaluate.
+summary: Strategy for optimizing complex, expensive-to-evaluate functions by building a probabilistic model of the function and using it to select the most promising points to evaluate.
 title: Bayesian Optimization
 ---
 

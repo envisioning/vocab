@@ -9,8 +9,7 @@ generality:
 - 0.81
 - 0.805
 slug: black-box
-summary: System or model whose internal workings are not visible or understandable
-  to the user, only the input and output are known.
+summary: System or model whose internal workings are not visible or understandable to the user, only the input and output are known.
 title: Black Box
 ---
 

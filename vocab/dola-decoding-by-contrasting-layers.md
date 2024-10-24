@@ -9,8 +9,7 @@ generality:
 - 0.325
 - 0.35
 slug: dola
-summary: Novel method for enhancing language model performance by focusing on contrasting
-  the outputs of different layers to improve decoding accuracy.
+summary: Novel method for enhancing language model performance by focusing on contrasting the outputs of different layers to improve decoding accuracy.
 title: DoLa (Decoding by Contrasting Layers)
 ---
 

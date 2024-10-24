@@ -9,8 +9,7 @@ generality:
 - 0.66
 - 0.642
 slug: reflective-programming
-summary: Programming paradigm that allows a program to inspect and modify its own
-  structure and behavior at runtime.
+summary: Programming paradigm that allows a program to inspect and modify its own structure and behavior at runtime.
 title: Reflective Programming
 ---
 

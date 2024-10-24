@@ -9,8 +9,7 @@ generality:
 - 0.765
 - 0.74
 slug: gofai
-summary: Traditional approach to AI that relies on symbolic reasoning, logic, and
-  rule-based systems to simulate intelligent behavior.
+summary: Traditional approach to AI that relies on symbolic reasoning, logic, and rule-based systems to simulate intelligent behavior.
 title: GOFAI (Good Old-Fashioned AI)
 ---
 

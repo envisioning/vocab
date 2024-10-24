@@ -9,8 +9,7 @@ generality:
 - 0.685
 - 0.67
 slug: diffusion
-summary: Class of generative models used to create high-quality, diverse samples of
-  data by iteratively adding and then reversing noise.
+summary: Class of generative models used to create high-quality, diverse samples of data by iteratively adding and then reversing noise.
 title: Diffusion
 ---
 

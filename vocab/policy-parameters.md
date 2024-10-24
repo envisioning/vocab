@@ -9,8 +9,7 @@ generality:
 - 0.625
 - 0.6
 slug: policy-parameters
-summary: Variables in a ML model, particularly in RL, that define the behavior of
-  the policy by determining the actions an agent takes in different states.
+summary: Variables in a ML model, particularly in RL, that define the behavior of the policy by determining the actions an agent takes in different states.
 title: Policy Parameters
 ---
 

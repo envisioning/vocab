@@ -9,8 +9,7 @@ generality:
 - 0.83
 - 0.805
 slug: algorithmic-bias
-summary: Systematic and unfair discrimination embedded in the outcomes of algorithms,
-  often reflecting prejudices present in the training data or design process.
+summary: Systematic and unfair discrimination embedded in the outcomes of algorithms, often reflecting prejudices present in the training data or design process.
 title: Algorithmic Bias
 ---
 

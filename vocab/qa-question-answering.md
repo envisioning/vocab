@@ -9,8 +9,7 @@ generality:
 - 0.8
 - 0.785
 slug: qa
-summary: Field of natural language processing focused on building systems that automatically
-  answer questions posed by humans in a natural language.
+summary: Field of natural language processing focused on building systems that automatically answer questions posed by humans in a natural language.
 title: QA (Question Answering)
 ---
 

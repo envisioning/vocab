@@ -9,8 +9,7 @@ generality:
 - 0.825
 - 0.83
 slug: autoencoder
-summary: Type of artificial neural network used to learn efficient codings of unlabeled
-  data, typically for the purpose of dimensionality reduction or feature learning.
+summary: Type of artificial neural network used to learn efficient codings of unlabeled data, typically for the purpose of dimensionality reduction or feature learning.
 title: Autoencoder
 ---
 

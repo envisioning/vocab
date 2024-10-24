@@ -9,8 +9,7 @@ generality:
 - 0.72
 - 0.695
 slug: proliferation-problem
-summary: The issue of an overwhelming number of options or paths that an algorithm
-  must consider, making computation impractically complex or resource-intensive.
+summary: The issue of an overwhelming number of options or paths that an algorithm must consider, making computation impractically complex or resource-intensive.
 title: Proliferation Problem
 ---
 

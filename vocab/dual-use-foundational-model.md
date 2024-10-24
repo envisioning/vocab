@@ -9,8 +9,7 @@ generality:
 - 0.65
 - 0.63
 slug: dual-use-foundational-model
-summary: AI systems designed for general purposes that can be adapted for both beneficial
-  and potentially harmful applications.
+summary: AI systems designed for general purposes that can be adapted for both beneficial and potentially harmful applications.
 title: Dual Use Foundational Model
 ---
 

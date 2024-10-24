@@ -9,9 +9,7 @@ generality:
 - 0.79
 - 0.785
 slug: compositional-reasoning
-summary: Cognitive process of understanding complex concepts or systems by breaking
-  them down into their constituent parts and understanding the relationships between
-  these parts.
+summary: Cognitive process of understanding complex concepts or systems by breaking them down into their constituent parts and understanding the relationships between these parts.
 title: Compositional Reasoning
 ---
 

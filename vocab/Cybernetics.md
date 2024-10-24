@@ -9,8 +9,7 @@ generality:
 - 0.88
 - 0.87
 slug: cybernetics
-summary: Interdisciplinary study of control and communication in living organisms
-  and machines.
+summary: Interdisciplinary study of control and communication in living organisms and machines.
 title: Cybernetics
 ---
 

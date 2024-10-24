@@ -9,8 +9,7 @@ generality:
 - 0.865
 - 0.86
 slug: data-mining
-summary: Extracting valuable information from large datasets to identify patterns,
-  trends, and relationships that may not be immediately apparent.
+summary: Extracting valuable information from large datasets to identify patterns, trends, and relationships that may not be immediately apparent.
 title: Data Mining
 ---
 

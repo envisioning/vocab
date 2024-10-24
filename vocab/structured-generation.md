@@ -9,9 +9,7 @@ generality:
 - 0.625
 - 0.6
 slug: structured-generation
-summary: Process where outputs are produced in a structured format, often requiring
-  adherence to specific formats or templates, such as tables, graphs, or well-organized
-  textual reports.
+summary: Process where outputs are produced in a structured format, often requiring adherence to specific formats or templates, such as tables, graphs, or well-organized textual reports.
 title: Structured Generation
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.815
 - 0.8
 slug: regularization
-summary: Technique used in machine learning to reduce model overfitting by adding
-  a penalty to the loss function based on the complexity of the model.
+summary: Technique used in machine learning to reduce model overfitting by adding a penalty to the loss function based on the complexity of the model.
 title: Regularization
 ---
 

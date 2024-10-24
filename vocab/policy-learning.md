@@ -9,9 +9,7 @@ generality:
 - 0.77
 - 0.76
 slug: policy-learning
-summary: Branch of reinforcement learning where the objective is to find an optimal
-  policy that dictates the best action to take in various states to maximize cumulative
-  reward.
+summary: Branch of reinforcement learning where the objective is to find an optimal policy that dictates the best action to take in various states to maximize cumulative reward.
 title: Policy Learning
 ---
 

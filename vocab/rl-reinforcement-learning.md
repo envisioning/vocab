@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.83
 slug: rl
-summary: Type of ML where an agent learns to make decisions by performing actions
-  in an environment to achieve a goal, guided by rewards.
+summary: Type of ML where an agent learns to make decisions by performing actions in an environment to achieve a goal, guided by rewards.
 title: RL (Reinforcement Learning)
 ---
 

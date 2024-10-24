@@ -9,8 +9,7 @@ generality:
 - 0.775
 - 0.765
 slug: synthetic-data-generation
-summary: Creating artificial data programmatically, often used to train ML models
-  where real data is scarce, sensitive, or biased.
+summary: Creating artificial data programmatically, often used to train ML models where real data is scarce, sensitive, or biased.
 title: Synthetic Data Generation
 ---
 

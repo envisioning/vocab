@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: asl
-summary: Tiered system for categorizing the risk levels associated with AI systems
-  to guide their development and deployment responsibly.
+summary: Tiered system for categorizing the risk levels associated with AI systems to guide their development and deployment responsibly.
 title: ASL (AI Safety Level)
 ---
 

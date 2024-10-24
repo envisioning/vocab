@@ -9,8 +9,7 @@ generality:
 - 0.54
 - 0.52
 slug: teacher-model
-summary: Pre-trained, high-performing model that guides the training of a simpler,
-  student model, often in the context of knowledge distillation.
+summary: Pre-trained, high-performing model that guides the training of a simpler, student model, often in the context of knowledge distillation.
 title: Teacher Model
 ---
 

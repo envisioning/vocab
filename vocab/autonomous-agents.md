@@ -9,8 +9,7 @@ generality:
 - 0.865
 - 0.86
 slug: autonomous-agents
-summary: Systems capable of independent action in dynamic, unpredictable environments
-  to achieve designated objectives.
+summary: Systems capable of independent action in dynamic, unpredictable environments to achieve designated objectives.
 title: Autonomous Agents
 ---
 

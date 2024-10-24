@@ -9,8 +9,7 @@ generality:
 - 0.78
 - 0.76
 slug: brute-force
-summary: Straightforward problem-solving approach that systematically enumerates all
-  possible candidates to find a solution.
+summary: Straightforward problem-solving approach that systematically enumerates all possible candidates to find a solution.
 title: Brute Force
 ---
 

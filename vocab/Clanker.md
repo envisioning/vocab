@@ -9,9 +9,7 @@ generality:
 - 0.095
 - 0.09
 slug: clanker
-summary: Slang term used pejoratively to refer to robots or AI systems, especially
-  those seen as replacements for human jobs, reflecting anti-AI sentiment in popular
-  discourse.
+summary: Slang term used pejoratively to refer to robots or AI systems, especially those seen as replacements for human jobs, reflecting anti-AI sentiment in popular discourse.
 title: Clanker
 ---
 

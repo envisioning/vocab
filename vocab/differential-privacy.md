@@ -9,9 +9,7 @@ generality:
 - 0.785
 - 0.78
 slug: differential-privacy
-summary: System for publicly sharing information about a dataset by describing the
-  patterns of groups within the dataset while withholding information about individuals
-  in the dataset.
+summary: System for publicly sharing information about a dataset by describing the patterns of groups within the dataset while withholding information about individuals in the dataset.
 title: Differential Privacy
 ---
 

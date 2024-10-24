@@ -9,9 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: rank-fusion
-summary: Technique used to combine multiple ranked lists of items, such as search
-  engine results, into a single aggregated ranking that ideally reflects the consensus
-  or most relevant ordering.
+summary: Technique used to combine multiple ranked lists of items, such as search engine results, into a single aggregated ranking that ideally reflects the consensus or most relevant ordering.
 title: Rank Fusion
 ---
 

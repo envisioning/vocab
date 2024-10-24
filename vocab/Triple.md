@@ -9,9 +9,7 @@ generality:
 - 0.555
 - 0.531
 slug: triple
-summary: Data structure in the form of a three-part entity consisting of a subject,
-  predicate, and object, commonly used in semantic web technologies and knowledge
-  graphs.
+summary: Data structure in the form of a three-part entity consisting of a subject, predicate, and object, commonly used in semantic web technologies and knowledge graphs.
 title: Triple
 ---
 

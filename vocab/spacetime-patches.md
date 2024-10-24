@@ -9,8 +9,7 @@ generality:
 - 0.52
 - 0.51
 slug: spacetime-patches
-summary: Technique for transforming video data into a format suitable for ML models
-  by breaking down video into temporal and spatial segments.
+summary: Technique for transforming video data into a format suitable for ML models by breaking down video into temporal and spatial segments.
 title: Spacetime Patches
 ---
 

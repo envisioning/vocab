@@ -9,8 +9,7 @@ generality:
 - 0.805
 - 0.8
 slug: rfm
-summary: Base model designed to provide fundamental capabilities or understanding
-  for the development of various robotic systems and applications.
+summary: Base model designed to provide fundamental capabilities or understanding for the development of various robotic systems and applications.
 title: RFM (Robotics Foundational Model)
 ---
 

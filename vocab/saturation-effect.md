@@ -9,9 +9,7 @@ generality:
 - 0.625
 - 0.6
 slug: saturation-effect
-summary: Phenomenon where the performance improvements of a model diminish as the
-  complexity of the model or the amount of training data increases beyond a certain
-  point.
+summary: Phenomenon where the performance improvements of a model diminish as the complexity of the model or the amount of training data increases beyond a certain point.
 title: Saturation Effect
 ---
 

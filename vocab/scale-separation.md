@@ -9,8 +9,7 @@ generality:
 - 0.555
 - 0.54
 slug: scale-separation
-summary: Distinguishing between phenomena or variables that operate on distinctly
-  different magnitudes, time scales, or spatial dimensions.
+summary: Distinguishing between phenomena or variables that operate on distinctly different magnitudes, time scales, or spatial dimensions.
 title: Scale Separation
 ---
 

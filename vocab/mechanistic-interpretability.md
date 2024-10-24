@@ -9,8 +9,7 @@ generality:
 - 0.66
 - 0.64
 slug: mechanistic-interpretability
-summary: Study and methods used to understand the specific causal mechanisms through
-  which AI models produce their outputs.
+summary: Study and methods used to understand the specific causal mechanisms through which AI models produce their outputs.
 title: Mechanistic Interpretability
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.225
 - 0.2
 slug: chinchilla-scaling
-summary: Strategy in training LLMs that optimizes the ratio of model size to training
-  data size.
+summary: Strategy in training LLMs that optimizes the ratio of model size to training data size.
 title: Chinchilla Scaling
 ---
 

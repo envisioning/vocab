@@ -9,8 +9,7 @@ generality:
 - 0.8
 - 0.785
 slug: dualism
-summary: Theory or concept that emphasizes the division between symbolic (classical)
-  AI and sub-symbolic (connectionist) AI.
+summary: Theory or concept that emphasizes the division between symbolic (classical) AI and sub-symbolic (connectionist) AI.
 title: Dualism
 ---
 

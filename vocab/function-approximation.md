@@ -9,8 +9,7 @@ generality:
 - 0.77
 - 0.75
 slug: function-approximation
-summary: Method used in AI to estimate complex functions using simpler, computationally
-  efficient models.
+summary: Method used in AI to estimate complex functions using simpler, computationally efficient models.
 title: Function Approximation
 ---
 

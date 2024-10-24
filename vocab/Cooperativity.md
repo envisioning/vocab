@@ -9,8 +9,7 @@ generality:
 - 0.78
 - 0.77
 slug: cooperativity
-summary: How multiple agents or components work together in a system to achieve better
-  performance or solutions than they could individually.
+summary: How multiple agents or components work together in a system to achieve better performance or solutions than they could individually.
 title: Cooperativity
 ---
 

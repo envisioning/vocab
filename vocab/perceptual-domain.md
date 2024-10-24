@@ -9,8 +9,7 @@ generality:
 - 0.775
 - 0.76
 slug: perceptual-domain
-summary: Range of sensory inputs and interpretations that an AI system can process,
-  akin to human perception systems such as vision, hearing, and touch.
+summary: Range of sensory inputs and interpretations that an AI system can process, akin to human perception systems such as vision, hearing, and touch.
 title: Perceptual Domain
 ---
 

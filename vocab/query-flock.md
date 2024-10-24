@@ -9,8 +9,7 @@ generality:
 - 0.475
 - 0.45
 slug: query-flock
-summary: Method to manage and process multiple related queries simultaneously, improving
-  efficiency and response time.
+summary: Method to manage and process multiple related queries simultaneously, improving efficiency and response time.
 title: Query Flock
 ---
 

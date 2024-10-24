@@ -9,8 +9,7 @@ generality:
 - 0.75
 - 0.735
 slug: structured-search
-summary: Method of querying and retrieving information from databases and other structured
-  data sources where data is organized in defined types and relationships.
+summary: Method of querying and retrieving information from databases and other structured data sources where data is organized in defined types and relationships.
 title: Structured Search
 ---
 

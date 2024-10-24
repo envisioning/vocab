@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.83
 slug: matmul
-summary: Fundamental operation in linear algebra and essential in various applications,
-  including neural networks and machine learning algorithms.
+summary: Fundamental operation in linear algebra and essential in various applications, including neural networks and machine learning algorithms.
 title: MatMul (Matrix Multiplication)
 ---
 

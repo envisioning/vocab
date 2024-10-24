@@ -9,9 +9,7 @@ generality:
 - 0.55
 - 0.535
 slug: transposed-convolutional-layer
-summary: Type of neural network layer that performs the opposite operation of a traditional
-  convolutional layer, effectively upscaling input feature maps to a larger spatial
-  resolution.
+summary: Type of neural network layer that performs the opposite operation of a traditional convolutional layer, effectively upscaling input feature maps to a larger spatial resolution.
 title: Transposed Convolutional Layer
 ---
 

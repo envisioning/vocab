@@ -9,8 +9,7 @@ generality:
 - 0.55
 - 0.525
 slug: capability-ladder
-summary: Conceptual framework used to describe the progression of an AI system's abilities
-  from simple, specific tasks to complex, general tasks.
+summary: Conceptual framework used to describe the progression of an AI system's abilities from simple, specific tasks to complex, general tasks.
 title: Capability Ladder
 ---
 

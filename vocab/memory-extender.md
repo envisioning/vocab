@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: memory-extender
-summary: Techniques or systems designed to enhance the memory capabilities of AI models,
-  enabling them to retain and utilize more information over longer periods.
+summary: Techniques or systems designed to enhance the memory capabilities of AI models, enabling them to retain and utilize more information over longer periods.
 title: Memory Extender
 ---
 

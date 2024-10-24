@@ -9,8 +9,7 @@ generality:
 - 0.705
 - 0.69
 slug: next-token-prediction
-summary: Technique used in language modeling where the model predicts the following
-  token based on the previous ones.
+summary: Technique used in language modeling where the model predicts the following token based on the previous ones.
 title: Next Token Prediction
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.875
 - 0.86
 slug: unsupervised-learning
-summary: Type of ML where algorithms learn patterns from untagged data, without any
-  guidance on what outcomes to predict.
+summary: Type of ML where algorithms learn patterns from untagged data, without any guidance on what outcomes to predict.
 title: Unsupervised Learning
 ---
 

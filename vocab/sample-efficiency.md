@@ -9,8 +9,7 @@ generality:
 - 0.785
 - 0.77
 slug: sample-efficiency
-summary: Ability of a ML model to achieve high performance with a relatively small
-  number of training samples.
+summary: Ability of a ML model to achieve high performance with a relatively small number of training samples.
 title: Sample Efficiency
 ---
 

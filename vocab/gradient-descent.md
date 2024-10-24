@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.84
 slug: gradient-descent
-summary: Optimization algorithm used to find the minimum of a function by iteratively
-  moving towards the steepest descent direction.
+summary: Optimization algorithm used to find the minimum of a function by iteratively moving towards the steepest descent direction.
 title: Gradient Descent
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.775
 - 0.76
 slug: co-pilot
-summary: System designed to assist humans in various tasks by offering suggestions,
-  automating routine tasks, and enhancing decision-making processes.
+summary: System designed to assist humans in various tasks by offering suggestions, automating routine tasks, and enhancing decision-making processes.
 title: Co-Pilot
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.8
 - 0.795
 slug: bellman-equation
-summary: Recursive formula used to find the optimal policy in decision-making processes,
-  particularly in the context of dynamic programming and RL.
+summary: Recursive formula used to find the optimal policy in decision-making processes, particularly in the context of dynamic programming and RL.
 title: Bellman Equation
 ---
 

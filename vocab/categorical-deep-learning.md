@@ -9,9 +9,7 @@ generality:
 - 0.8
 - 0.795
 slug: categorical-deep-learning
-summary: Application of DL techniques to analyze and predict categorical data, which
-  includes discrete and typically non-numeric values that represent categories or
-  classes.
+summary: Application of DL techniques to analyze and predict categorical data, which includes discrete and typically non-numeric values that represent categories or classes.
 title: Categorical Deep Learning
 ---
 

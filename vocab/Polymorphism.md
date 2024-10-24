@@ -9,8 +9,7 @@ generality:
 - 0.585
 - 0.57
 slug: polymorphism
-summary: Ability of objects to take on many forms, allowing methods to perform differently
-  based on the object that invokes them.
+summary: Ability of objects to take on many forms, allowing methods to perform differently based on the object that invokes them.
 title: Polymorphism
 ---
 

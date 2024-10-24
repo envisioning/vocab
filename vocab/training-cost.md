@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.845
 slug: training-cost
-summary: Quantifies the resources required to develop AI models, including computational
-  expenses, energy consumption, and human expertise.
+summary: Quantifies the resources required to develop AI models, including computational expenses, energy consumption, and human expertise.
 title: Training Cost
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.895
 - 0.89
 slug: dataset
-summary: Collection of related data points organized in a structured format, often
-  used for training and testing machine learning models.
+summary: Collection of related data points organized in a structured format, often used for training and testing machine learning models.
 title: Dataset
 ---
 

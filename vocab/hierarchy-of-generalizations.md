@@ -9,9 +9,7 @@ generality:
 - 0.8
 - 0.785
 slug: hierarchy-of-generalizations
-summary: Conceptual framework in ML that organizes features or representations from
-  specific to general, often used in neural networks to capture varying levels of
-  abstraction in data.
+summary: Conceptual framework in ML that organizes features or representations from specific to general, often used in neural networks to capture varying levels of abstraction in data.
 title: Hierarchy of Generalizations
 ---
 

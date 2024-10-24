@@ -9,9 +9,7 @@ generality:
 - 0.475
 - 0.45
 slug: chinese-room
-summary: Thought experiment by philosopher John Searle that challenges the notion
-  that a computer running a program can truly "understand" language or exhibit consciousness,
-  despite appearing to do so.
+summary: Thought experiment by philosopher John Searle that challenges the notion that a computer running a program can truly "understand" language or exhibit consciousness, despite appearing to do so.
 title: Chinese Room
 ---
 

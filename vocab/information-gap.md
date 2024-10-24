@@ -9,8 +9,7 @@ generality:
 - 0.65
 - 0.635
 slug: information-gap
-summary: Discrepancy between the information needed to solve a problem or make a decision
-  and the information that is actually available.
+summary: Discrepancy between the information needed to solve a problem or make a decision and the information that is actually available.
 title: Information Gap
 ---
 

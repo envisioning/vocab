@@ -9,9 +9,7 @@ generality:
 - 0.85
 - 0.86
 slug: dp
-summary: Method used in computer science and mathematics to solve complex problems
-  by breaking them down into simpler subproblems and solving each of these subproblems
-  just once, storing their solutions.
+summary: Method used in computer science and mathematics to solve complex problems by breaking them down into simpler subproblems and solving each of these subproblems just once, storing their solutions.
 title: DP (Dynamic Programming)
 ---
 

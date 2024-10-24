@@ -9,8 +9,7 @@ generality:
 - 0.76
 - 0.75
 slug: embodied-ai
-summary: Integration of AI into physical entities, enabling these systems to interact
-  with the real world through sensory inputs and actions.
+summary: Integration of AI into physical entities, enabling these systems to interact with the real world through sensory inputs and actions.
 title: Embodied AI
 ---
 

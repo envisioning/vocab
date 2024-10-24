@@ -9,8 +9,7 @@ generality:
 - 0.625
 - 0.6
 slug: surrogate-objective
-summary: Alternative goal used to approximate or replace a primary objective in optimization
-  problems, especially when the primary objective is difficult to evaluate directly.
+summary: Alternative goal used to approximate or replace a primary objective in optimization problems, especially when the primary objective is difficult to evaluate directly.
 title: Surrogate Objective
 ---
 

@@ -9,9 +9,7 @@ generality:
 - 0.375
 - 0.39
 slug: lfms
-summary: 'New category of generative AI models designed by Liquid AI, optimized for
-  both efficiency and scalability across various data types like text, audio, and
-  video. '
+summary: 'New category of generative AI models designed by Liquid AI, optimized for both efficiency and scalability across various data types like text, audio, and video. '
 title: LFMs (Liquid Foundation Models)
 ---
 

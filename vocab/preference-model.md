@@ -9,8 +9,7 @@ generality:
 - 0.725
 - 0.71
 slug: preference-model
-summary: Computational framework used to predict and understand an individual's preferences,
-  often applied in recommendation systems and decision-making processes.
+summary: Computational framework used to predict and understand an individual's preferences, often applied in recommendation systems and decision-making processes.
 title: Preference Model
 ---
 

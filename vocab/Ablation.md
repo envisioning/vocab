@@ -9,8 +9,7 @@ generality:
 - 0.6
 - 0.575
 slug: ablation
-summary: Method where components of a neural network are systematically removed or
-  altered to study their impact on the model's performance.
+summary: Method where components of a neural network are systematically removed or altered to study their impact on the model's performance.
 title: Ablation
 ---
 

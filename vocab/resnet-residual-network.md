@@ -9,9 +9,7 @@ generality:
 - 0.775
 - 0.76
 slug: resnet
-summary: Type of CNN (Convolutional Neural Network) architecture that introduces residual
-  learning to facilitate the training of much deeper networks by utilizing shortcut
-  connections or skip connections that allow the gradient to bypass some layers.
+summary: Type of CNN (Convolutional Neural Network) architecture that introduces residual learning to facilitate the training of much deeper networks by utilizing shortcut connections or skip connections that allow the gradient to bypass some layers.
 title: ResNet (Residual Network)
 ---
 

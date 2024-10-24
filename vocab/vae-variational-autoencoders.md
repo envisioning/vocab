@@ -9,9 +9,7 @@ generality:
 - 0.673
 - 0.649
 slug: vae
-summary: Class of generative models that use neural networks to encode inputs into
-  a latent space and then decode from this space to reconstruct the input or generate
-  new data that resemble the input data.
+summary: Class of generative models that use neural networks to encode inputs into a latent space and then decode from this space to reconstruct the input or generate new data that resemble the input data.
 title: VAE (Variational Autoencoders)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.825
 - 0.83
 slug: tts
-summary: Converts written text into spoken voice output, enabling computers to read
-  text aloud.
+summary: Converts written text into spoken voice output, enabling computers to read text aloud.
 title: TTS (Text-to-Speech)
 ---
 

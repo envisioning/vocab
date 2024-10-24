@@ -9,8 +9,7 @@ generality:
 - 0.66
 - 0.64
 slug: streaming
-summary: Continuous generation and delivery of text in real-time as the model processes
-  input sequentially.
+summary: Continuous generation and delivery of text in real-time as the model processes input sequentially.
 title: Streaming
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.74
 - 0.72
 slug: scaffolding
-summary: Method of gradually building up the complexity of tasks or learning environments
-  to help an AI system develop more sophisticated capabilities over time.
+summary: Method of gradually building up the complexity of tasks or learning environments to help an AI system develop more sophisticated capabilities over time.
 title: Scaffolding
 ---
 

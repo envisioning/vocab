@@ -9,8 +9,7 @@ generality:
 - 0.64
 - 0.62
 slug: quantization
-summary: Process of reducing the precision of the weights and activations in neural
-  network models to decrease their memory and computational requirements.
+summary: Process of reducing the precision of the weights and activations in neural network models to decrease their memory and computational requirements.
 title: Quantization
 ---
 

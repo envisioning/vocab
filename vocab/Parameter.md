@@ -9,8 +9,7 @@ generality:
 - 0.81
 - 0.79
 slug: parameter
-summary: Variable that is internal to the model and whose value is estimated from
-  the training data.
+summary: Variable that is internal to the model and whose value is estimated from the training data.
 title: Parameter
 ---
 

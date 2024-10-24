@@ -9,9 +9,7 @@ generality:
 - 0.79
 - 0.785
 slug: capability-control
-summary: Strategies and mechanisms implemented to ensure that AI systems act within
-  desired limits, preventing them from performing actions that are undesired or harmful
-  to humans.
+summary: Strategies and mechanisms implemented to ensure that AI systems act within desired limits, preventing them from performing actions that are undesired or harmful to humans.
 title: Capability Control
 ---
 

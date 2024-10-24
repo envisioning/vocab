@@ -9,8 +9,7 @@ generality:
 - 0.72
 - 0.7
 slug: wavelet
-summary: Mathematical function used for analyzing localized variations of power within
-  a time series or signal, providing a multi-resolution analysis.
+summary: Mathematical function used for analyzing localized variations of power within a time series or signal, providing a multi-resolution analysis.
 title: Wavelet
 ---
 

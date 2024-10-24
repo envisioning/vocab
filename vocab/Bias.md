@@ -9,8 +9,7 @@ generality:
 - 0.845
 - 0.84
 slug: bias
-summary: Systematic errors in data or algorithms that create unfair outcomes, such
-  as privileging one arbitrary group of users over others.
+summary: Systematic errors in data or algorithms that create unfair outcomes, such as privileging one arbitrary group of users over others.
 title: Bias
 ---
 

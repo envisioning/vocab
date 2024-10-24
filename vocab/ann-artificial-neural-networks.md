@@ -9,9 +9,7 @@ generality:
 - 0.825
 - 0.8
 slug: ann
-summary: Computing systems inspired by the biological neural networks that constitute
-  animal brains, designed to progressively improve their performance on tasks by considering
-  examples.
+summary: Computing systems inspired by the biological neural networks that constitute animal brains, designed to progressively improve their performance on tasks by considering examples.
 title: ANN (Artificial Neural Networks)
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.9
 - 0.88
 slug: training
-summary: Process of teaching a ML model to make accurate predictions or decisions,
-  by adjusting its parameters based on data.
+summary: Process of teaching a ML model to make accurate predictions or decisions, by adjusting its parameters based on data.
 title: Training
 ---
 

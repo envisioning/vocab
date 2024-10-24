@@ -9,8 +9,7 @@ generality:
 - 0.58
 - 0.56
 slug: early-exit-loss
-summary: An optimization technique in AI models that balances overall accuracy and
-  computational efficiency.
+summary: An optimization technique in AI models that balances overall accuracy and computational efficiency.
 title: Early Exit Loss
 ---
 

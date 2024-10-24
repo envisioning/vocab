@@ -9,8 +9,7 @@ generality:
 - 0.725
 - 0.71
 slug: brainoware
-summary: AI systems designed to emulate the functions and processes of the human brain,
-  focusing on cognitive and neural-inspired computing.
+summary: AI systems designed to emulate the functions and processes of the human brain, focusing on cognitive and neural-inspired computing.
 title: Brainoware
 ---
 

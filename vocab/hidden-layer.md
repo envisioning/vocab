@@ -9,9 +9,7 @@ generality:
 - 0.82
 - 0.8
 slug: hidden-layer
-summary: Layer of neurons in an artificial neural network that processes inputs from
-  the previous layer, transforming the data before passing it on to the next layer,
-  without direct exposure to the input or output data.
+summary: Layer of neurons in an artificial neural network that processes inputs from the previous layer, transforming the data before passing it on to the next layer, without direct exposure to the input or output data.
 title: Hidden Layer
 ---
 

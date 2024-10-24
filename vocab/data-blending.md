@@ -9,8 +9,7 @@ generality:
 - 0.79
 - 0.785
 slug: data-blending
-summary: Process of combining data from multiple sources into a single, cohesive dataset
-  for analysis.
+summary: Process of combining data from multiple sources into a single, cohesive dataset for analysis.
 title: Data Blending
 ---
 

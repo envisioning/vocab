@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: self-awareness
-summary: Nn entity's ability to recognize itself as an individual, distinct from its
-  environment and other entities, often involving introspection and a sense of identity.
+summary: Nn entity's ability to recognize itself as an individual, distinct from its environment and other entities, often involving introspection and a sense of identity.
 title: Self-Awareness
 ---
 

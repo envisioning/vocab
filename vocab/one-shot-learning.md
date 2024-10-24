@@ -9,8 +9,7 @@ generality:
 - 0.5
 - 0.485
 slug: one-shot-learning
-summary: ML technique where a model learns information about object categories from
-  a single training example.
+summary: ML technique where a model learns information about object categories from a single training example.
 title: One-Shot Learning
 ---
 

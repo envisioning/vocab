@@ -9,8 +9,7 @@ generality:
 - 0.225
 - 0.2
 slug: c2pa
-summary: Initiative focused on establishing industry standards for authenticating
-  digital media content to combat misinformation and ensure content provenance.
+summary: Initiative focused on establishing industry standards for authenticating digital media content to combat misinformation and ensure content provenance.
 title: C2PA (Coalition for Content Provenance and Authenticity)
 ---
 

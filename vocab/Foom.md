@@ -9,8 +9,7 @@ generality:
 - 0.25
 - 0.225
 slug: foom
-summary: Hypothetical rapid and uncontrollable growth of an AI's capabilities, leading
-  to a superintelligent entity in a very short period.
+summary: Hypothetical rapid and uncontrollable growth of an AI's capabilities, leading to a superintelligent entity in a very short period.
 title: Foom
 ---
 

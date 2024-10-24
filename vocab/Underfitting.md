@@ -9,9 +9,7 @@ generality:
 - 0.73
 - 0.705
 slug: underfitting
-summary: Occurs when a ML model is too simple to capture the underlying pattern of
-  the data it is trained on, resulting in poor performance on both training and testing
-  datasets.
+summary: Occurs when a ML model is too simple to capture the underlying pattern of the data it is trained on, resulting in poor performance on both training and testing datasets.
 title: Underfitting
 ---
 

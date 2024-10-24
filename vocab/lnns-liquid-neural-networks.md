@@ -9,8 +9,7 @@ generality:
 - 0.55
 - 0.54
 slug: lnns
-summary: Innovative ML models designed to learn new tasks without impacting previously
-  learnt tasks, thus preventing catastrophic forgetting.
+summary: Innovative ML models designed to learn new tasks without impacting previously learnt tasks, thus preventing catastrophic forgetting.
 title: LNNs (Liquid Neural Networks)
 ---
 

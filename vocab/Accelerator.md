@@ -9,8 +9,7 @@ generality:
 - 0.73
 - 0.71
 slug: accelerator
-summary: Hardware designed to speed up specific types of computations, such as those
-  needed for AI model training and inference.
+summary: Hardware designed to speed up specific types of computations, such as those needed for AI model training and inference.
 title: Accelerator
 ---
 

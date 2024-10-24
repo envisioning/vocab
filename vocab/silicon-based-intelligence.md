@@ -9,9 +9,7 @@ generality:
 - 0.745
 - 0.73
 slug: silicon-based-intelligence
-summary: Concept of artificial intelligence systems that operate on silicon-based
-  hardware, contrasting with biological, carbon-based forms of intelligence such as
-  humans.
+summary: Concept of artificial intelligence systems that operate on silicon-based hardware, contrasting with biological, carbon-based forms of intelligence such as humans.
 title: Silicon-Based Intelligence
 ---
 

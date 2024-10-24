@@ -9,9 +9,7 @@ generality:
 - 0.665
 - 0.65
 slug: joint-embedding-architecture
-summary: Neural network design that learns to map different forms of data (e.g., images
-  and text) into a shared embedding space, facilitating tasks like cross-modal retrieval
-  and multi-modal representation learning.
+summary: Neural network design that learns to map different forms of data (e.g., images and text) into a shared embedding space, facilitating tasks like cross-modal retrieval and multi-modal representation learning.
 title: Joint Embedding Architecture
 ---
 

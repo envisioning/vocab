@@ -9,8 +9,7 @@ generality:
 - 0.805
 - 0.82
 slug: abductive-reasoning
-summary: Form of logical inference that starts with an observation and seeks the simplest
-  and most likely explanation for it.
+summary: Form of logical inference that starts with an observation and seeks the simplest and most likely explanation for it.
 title: Abductive Reasoning
 ---
 

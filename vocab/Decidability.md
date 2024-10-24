@@ -9,9 +9,7 @@ generality:
 - 0.845
 - 0.84
 slug: decidability
-summary: Whether a problem can be algorithmically solved, meaning there exists a clear
-  procedure (algorithm) that will determine a yes-or-no answer for any given input
-  within a finite amount of time.
+summary: Whether a problem can be algorithmically solved, meaning there exists a clear procedure (algorithm) that will determine a yes-or-no answer for any given input within a finite amount of time.
 title: Decidability
 ---
 

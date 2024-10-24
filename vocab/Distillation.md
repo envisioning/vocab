@@ -9,8 +9,7 @@ generality:
 - 0.625
 - 0.6
 slug: distillation
-summary: Process of compressing a larger, complex model (the teacher) into a smaller,
-  simpler model (the student) while retaining much of the original model's performance.
+summary: Process of compressing a larger, complex model (the teacher) into a smaller, simpler model (the student) while retaining much of the original model's performance.
 title: Distillation
 ---
 

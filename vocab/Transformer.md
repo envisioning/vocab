@@ -9,8 +9,7 @@ generality:
 - 0.821
 - 0.799
 slug: transformer
-summary: Deep learning model architecture designed for handling sequential data, especially
-  effective in natural language processing tasks.
+summary: Deep learning model architecture designed for handling sequential data, especially effective in natural language processing tasks.
 title: Transformer
 ---
 

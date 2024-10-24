@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: activation-data
-summary: Intermediate outputs produced by neurons in a neural network when processing
-  input data, which are used to evaluate and update the network during training.
+summary: Intermediate outputs produced by neurons in a neural network when processing input data, which are used to evaluate and update the network during training.
 title: Activation Data
 ---
 

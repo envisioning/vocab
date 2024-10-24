@@ -9,9 +9,7 @@ generality:
 - 0.775
 - 0.77
 slug: nmf
-summary: Technique in multivariate analysis that factors high-dimensional vectors
-  into a lower-dimensional representation, while preserving the non-negative elements
-  in the data sets.
+summary: Technique in multivariate analysis that factors high-dimensional vectors into a lower-dimensional representation, while preserving the non-negative elements in the data sets.
 title: NMF (Non-Negative Matrix Factorization)
 ---
 

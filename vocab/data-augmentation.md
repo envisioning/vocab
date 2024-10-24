@@ -9,8 +9,7 @@ generality:
 - 0.8
 - 0.785
 slug: data-augmentation
-summary: Techniques used to increase the size and improve the quality of training
-  datasets for machine learning models without collecting new data.
+summary: Techniques used to increase the size and improve the quality of training datasets for machine learning models without collecting new data.
 title: Data Augmentation
 ---
 

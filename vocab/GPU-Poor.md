@@ -9,8 +9,7 @@ generality:
 - 0.275
 - 0.25
 slug: gpu-poor
-summary: Scenario where there is a lack of adequate GPU resources available for computational
-  tasks.
+summary: Scenario where there is a lack of adequate GPU resources available for computational tasks.
 title: GPU-Poor
 ---
 

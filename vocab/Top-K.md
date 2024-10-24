@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: top-k
-summary: Method in ML and information retrieval where the system selects the k most
-  relevant or highest-scoring items from a larger set of predictions or results.
+summary: Method in ML and information retrieval where the system selects the k most relevant or highest-scoring items from a larger set of predictions or results.
 title: Top-K
 ---
 

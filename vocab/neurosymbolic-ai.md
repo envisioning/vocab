@@ -9,8 +9,7 @@ generality:
 - 0.645
 - 0.63
 slug: neurosymbolic-ai
-summary: Integration of neural networks with symbolic AI to create systems that can
-  both understand and manipulate symbols in a manner similar to human cognitive processes.
+summary: Integration of neural networks with symbolic AI to create systems that can both understand and manipulate symbols in a manner similar to human cognitive processes.
 title: Neurosymbolic AI
 ---
 

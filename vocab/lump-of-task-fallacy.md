@@ -9,8 +9,7 @@ generality:
 - 0.61
 - 0.59
 slug: lump-of-task-fallacy
-summary: Misconception that a task or series of tasks performed by human intelligence
-  can be replicated entirely by artificial intelligence.
+summary: Misconception that a task or series of tasks performed by human intelligence can be replicated entirely by artificial intelligence.
 title: Lump of Task Fallacy
 ---
 

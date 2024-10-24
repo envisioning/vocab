@@ -9,8 +9,7 @@ generality:
 - 0.77
 - 0.755
 slug: semi-supervised-learning
-summary: ML approach that uses a combination of a small amount of labeled data and
-  a large amount of unlabeled data for training models.
+summary: ML approach that uses a combination of a small amount of labeled data and a large amount of unlabeled data for training models.
 title: Semi-Supervised Learning
 ---
 

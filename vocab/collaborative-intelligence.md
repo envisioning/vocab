@@ -9,8 +9,7 @@ generality:
 - 0.725
 - 0.715
 slug: collaborative-intelligence
-summary: Synergy between human intelligence and AI to achieve outcomes neither could
-  accomplish alone.
+summary: Synergy between human intelligence and AI to achieve outcomes neither could accomplish alone.
 title: Collaborative Intelligence
 ---
 

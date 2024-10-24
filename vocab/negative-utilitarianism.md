@@ -9,8 +9,7 @@ generality:
 - 0.3
 - 0.275
 slug: negative-utilitarianism
-summary: Ethical theory that prioritizes minimizing suffering and negative experiences
-  over maximizing happiness and positive experiences.
+summary: Ethical theory that prioritizes minimizing suffering and negative experiences over maximizing happiness and positive experiences.
 title: Negative Utilitarianism
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.655
 - 0.65
 slug: on-the-fly-program-synthesis
-summary: Automatic creation of executable code in real-time, typically during the
-  execution of a program or in response to specific, immediate computational needs.
+summary: Automatic creation of executable code in real-time, typically during the execution of a program or in response to specific, immediate computational needs.
 title: On-the-fly Program Synthesis
 ---
 

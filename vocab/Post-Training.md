@@ -9,9 +9,7 @@ generality:
 - 0.6
 - 0.575
 slug: post-training
-summary: Techniques and adjustments applied to neural networks after their initial
-  training phase to enhance performance, efficiency, or adaptability to new data or
-  tasks.
+summary: Techniques and adjustments applied to neural networks after their initial training phase to enhance performance, efficiency, or adaptability to new data or tasks.
 title: Post-Training
 ---
 

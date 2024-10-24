@@ -9,8 +9,7 @@ generality:
 - 0.85
 - 0.845
 slug: scientific-computing
-summary: Computational methods and tools to solve complex scientific and engineering
-  problems.
+summary: Computational methods and tools to solve complex scientific and engineering problems.
 title: Scientific Computing
 ---
 

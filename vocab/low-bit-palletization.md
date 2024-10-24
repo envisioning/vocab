@@ -9,8 +9,7 @@ generality:
 - 0.29
 - 0.28
 slug: low-bit-palletization
-summary: Process of reducing the bit depth of data representations to streamline computation
-  and improve efficiency in neural network processing and other AI applications.
+summary: Process of reducing the bit depth of data representations to streamline computation and improve efficiency in neural network processing and other AI applications.
 title: Low-Bit Palletization
 ---
 

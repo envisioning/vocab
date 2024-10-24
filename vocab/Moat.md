@@ -9,8 +9,7 @@ generality:
 - 0.525
 - 0.5
 slug: moat
-summary: A concept of competitive advantage that AI companies gain by developing proprietary
-  data, algorithms, and models.
+summary: A concept of competitive advantage that AI companies gain by developing proprietary data, algorithms, and models.
 title: Moat
 ---
 

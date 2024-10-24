@@ -9,9 +9,7 @@ generality:
 - 0.355
 - 0.34
 slug: p-hacking
-summary: Manipulation of data analysis to achieve statistically significant results,
-  often by repeatedly testing different variables or subsets of data until desirable
-  outcomes are found.
+summary: Manipulation of data analysis to achieve statistically significant results, often by repeatedly testing different variables or subsets of data until desirable outcomes are found.
 title: P-hacking
 ---
 

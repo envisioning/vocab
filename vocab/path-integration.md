@@ -9,9 +9,7 @@ generality:
 - 0.595
 - 0.57
 slug: path-integration
-summary: Computational process by which an agent estimates its current position based
-  on its previous position and the path it has taken, using internal cues rather than
-  external landmarks.
+summary: Computational process by which an agent estimates its current position based on its previous position and the path it has taken, using internal cues rather than external landmarks.
 title: Path Integration
 ---
 

@@ -9,8 +9,7 @@ generality:
 - 0.575
 - 0.55
 slug: point-wise-feedforward-network
-summary: Neural network layer that applies a series of linear and non-linear transformations
-  to each position (or "point") in the input sequence independently.
+summary: Neural network layer that applies a series of linear and non-linear transformations to each position (or "point") in the input sequence independently.
 title: Point-wise Feedforward Network
 ---
 
