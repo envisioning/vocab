@@ -1,20 +1,21 @@
 ---
 category: GOV
 generality:
-- 0.5
-- 0.49
-- 0.48
-- 0.47
-- 0.46
-- 0.45
-- 0.44
+  - 0.5
+  - 0.49
+  - 0.48
+  - 0.47
+  - 0.46
+  - 0.45
+  - 0.44
 slug: io-influence-operations
-summary: Strategic actions designed to affect the perceptions, attitudes, and behaviors
+summary:
+  Strategic actions designed to affect the perceptions, attitudes, and behaviors
   of target audiences to achieve specific objectives.
 title: IO (Influence Operations)
 ---
 
-Expert-Level Explanation: Influence Operations involve the coordinated use of various informational, psychological, and cyber tactics to shape the narrative and influence the decision-making processes of individuals, groups, or governments. These operations can include propaganda, disinformation, social media manipulation, and other forms of information warfare. The goal is to create favorable conditions for achieving political, military, economic, or ideological objectives by altering the target's perception of reality. Advanced technologies, including AI, play a significant role in modern IO by enabling large-scale data analysis, personalized content delivery, and automated dissemination of persuasive messages.
+Influence Operations involve the coordinated use of various informational, psychological, and cyber tactics to shape the narrative and influence the decision-making processes of individuals, groups, or governments. These operations can include propaganda, disinformation, social media manipulation, and other forms of information warfare. The goal is to create favorable conditions for achieving political, military, economic, or ideological objectives by altering the target's perception of reality. Advanced technologies, including AI, play a significant role in modern IO by enabling large-scale data analysis, personalized content delivery, and automated dissemination of persuasive messages.
 
 The concept of influence operations has roots in military and political strategies dating back to ancient civilizations, but it gained modern prominence during the 20th century with the advent of mass media and psychological warfare techniques. The term "influence operations" became more widely used in the early 21st century, particularly with the rise of digital communication and social media platforms which have exponentially increased the reach and impact of these operations.
 

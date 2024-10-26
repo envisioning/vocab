@@ -1,20 +1,21 @@
 ---
 category: BIO, MATH
 generality:
-- 0.28
-- 0.26
-- 0.24
-- 0.22
-- 0.2
-- 0.18
-- 0.16
+  - 0.28
+  - 0.26
+  - 0.24
+  - 0.22
+  - 0.2
+  - 0.18
+  - 0.16
 slug: pds-psychological-depth-scale
-summary: Tool used to measure the complexity and depth of an individual's psychological
+summary:
+  Tool used to measure the complexity and depth of an individual's psychological
   experiences and inner life.
 title: PDS (Psychological Depth Scale)
 ---
 
-Expert Explanation: The Psychological Depth Scale (PDS) assesses how deeply individuals process their thoughts, emotions, and experiences. It evaluates the extent to which people engage with their inner life, reflecting on their motivations, values, and existential questions. This scale is used in psychological research to understand personality traits, cognitive styles, and therapeutic progress. The PDS helps psychologists distinguish between superficial and profound levels of self-awareness and introspection, offering insights into how individuals relate to themselves and the world around them.
+The Psychological Depth Scale (PDS) assesses how deeply individuals process their thoughts, emotions, and experiences. It evaluates the extent to which people engage with their inner life, reflecting on their motivations, values, and existential questions. This scale is used in psychological research to understand personality traits, cognitive styles, and therapeutic progress. The PDS helps psychologists distinguish between superficial and profound levels of self-awareness and introspection, offering insights into how individuals relate to themselves and the world around them.
 
 The concept of measuring psychological depth has roots in early 20th-century psychoanalysis, but the specific term "Psychological Depth Scale" and its formal usage emerged in psychological research in the late 20th century. It gained prominence as researchers sought more nuanced tools for understanding personality and cognitive processes.
 
