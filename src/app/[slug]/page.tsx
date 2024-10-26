@@ -287,23 +287,23 @@ export default async function ArticlePage({ params }: PageProps) {
               <span>Generality: {generality}</span>
             </div>
           </div>
-
-          {/* Related articles section */}
-          {relatedArticles.length > 0 && (
-            <div className="mt-8 pt-8">
-              <h2 className="text-2xl font-bold mb-4">Related</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {relatedArticles.map((article) => (
-                  <ArticleCard
-                    key={`${article.slug}-${article.relationship || "default"}`}
-                    {...article}
-                    relationship={article.relationship || "parent"} // Provide a valid default relationship
-                  />
-                ))}
-              </div>
-            </div>
-          )}
         </div>
+
+        {/* Related articles section */}
+        {relatedArticles.length > 0 && (
+          <div className="mt-8 pt-8">
+            <h2 className="text-2xl font-bold mb-4">Related</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {relatedArticles.map((article) => (
+                <ArticleCard
+                  key={`${article.slug}-${article.relationship || "default"}`}
+                  {...article}
+                  relationship={article.relationship || "parent"} // Provide a valid default relationship
+                />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
