@@ -8,8 +8,9 @@ generality:
 - 0.37
 - 0.355
 - 0.34
-slug: sima
-summary: AI agent designed to operate across multiple 3D virtual environments, following natural language instructions to accomplish varied tasks.
+slug: sima-scalable-instructable-multiworld-agent
+summary: AI agent designed to operate across multiple 3D virtual environments, following
+  natural language instructions to accomplish varied tasks.
 title: SIMA (Scalable Instructable Multiworld Agent)
 ---
 

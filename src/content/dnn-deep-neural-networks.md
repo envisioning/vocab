@@ -8,8 +8,9 @@ generality:
 - 0.905
 - 0.895
 - 0.885
-slug: dnn
-summary: Advanced neural network architectures with multiple layers that enable complex pattern recognition and learning from large amounts of data.
+slug: dnn-deep-neural-networks
+summary: Advanced neural network architectures with multiple layers that enable complex
+  pattern recognition and learning from large amounts of data.
 title: DNN (Deep Neural Networks)
 ---
 

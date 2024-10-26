@@ -1,13 +1,13 @@
 ---
 category: ARCH, IMPL
 generality:
-- 0.68
-- 0.66
-- 0.64
-- 0.62
-- 0.6
-- 0.58
-- 0.56
+  - 0.68
+  - 0.66
+  - 0.64
+  - 0.62
+  - 0.6
+  - 0.58
+  - 0.56
 slug: early-exit-loss
 summary: An optimization technique in AI models that balances overall accuracy and computational efficiency.
 title: Early Exit Loss
@@ -17,4 +17,4 @@ Early Exit Loss pertains to a strategy utilized in designing deep neural network
 
 Historically, the concept behind Early Exit Loss falls within the broader exploration of efficient neural network design, which gained traction as deep learning models grew increasingly complex and computationally demanding, particularly from around 2015 onwards. It became an essential strategy for deploying high-performance models in infrastructures with computational constraints.
 
-Key contributors: While an exact originator for 'Early Exit Loss' per se is not definitively known, many researchers have contributed to the underlying ideas. Notably, the 'BranchyNet' model proposed by researchers Ankur Garg and Jonathan K. Su in 2016 had a significant impact in promoting the concept of early-exit architectures.
+While an exact originator for 'Early Exit Loss' per se is not definitively known, many researchers have contributed to the underlying ideas. Notably, the 'BranchyNet' model proposed by researchers Ankur Garg and Jonathan K. Su in 2016 had a significant impact in promoting the concept of early-exit architectures.

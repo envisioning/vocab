@@ -1,13 +1,13 @@
 ---
 category: ARCH, IMPL
 generality:
-- 0.4
-- 0.375
-- 0.35
-- 0.325
-- 0.3
-- 0.275
-- 0.25
+  - 0.4
+  - 0.375
+  - 0.35
+  - 0.325
+  - 0.3
+  - 0.275
+  - 0.25
 slug: self-reasoning-token
 summary: AI mechanism designed to enhance the planning capabilities of language models by allowing them to anticipate and prepare for future outputs.
 title: Self-Reasoning Token
@@ -17,6 +17,6 @@ Self-Reasoning Tokens are a novel concept aimed at improving the forward-thinkin
 
 Historical Context: The concept of Self-Reasoning Tokens is relatively new, with significant development seen around 2024. It builds on existing knowledge about how language models like GPT process and predict sequences, further enhancing their predictive and reasoning faculties.
 
-Key Contributors: Felipe Bonetto appears to be a central figure in the development of Self-Reasoning Tokens. His work focuses on integrating these tokens within models to better manage future-oriented tasks and enhance model interpretability​ ([GitHub](https://github.com/lucidrains/self-reasoning-tokens-pytorch))​​ ([Reasoning Tokens](https://reasoning-tokens.ghost.io/reasoning-tokens/))​​ ([AIR: The AI Recon](https://ai-recon.ghost.io/air-48-april-21-2024/))​.
+Felipe Bonetto appears to be a central figure in the development of Self-Reasoning Tokens. His work focuses on integrating these tokens within models to better manage future-oriented tasks and enhance model interpretability​ ([GitHub](https://github.com/lucidrains/self-reasoning-tokens-pytorch))​​ ([Reasoning Tokens](https://reasoning-tokens.ghost.io/reasoning-tokens/))​​ ([AIR: The AI Recon](https://ai-recon.ghost.io/air-48-april-21-2024/))​.
 
 For those interested in a deeper dive into how these tokens function and their potential impact on AI development, the full details and ongoing updates can be explored further on the [Self-Reasoning Tokens website](https://reasoning-tokens.ghost.io/).

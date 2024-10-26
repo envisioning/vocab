@@ -8,8 +8,9 @@ generality:
 - 0.75
 - 0.725
 - 0.7
-slug: xai
-summary: AI systems designed to provide insights into their behavior and decisions, making them transparent and understandable to humans.
+slug: xai-explainable-ai
+summary: AI systems designed to provide insights into their behavior and decisions,
+  making them transparent and understandable to humans.
 title: XAI (Explainable AI)
 ---
 

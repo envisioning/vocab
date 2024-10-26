@@ -8,8 +8,9 @@ generality:
 - 0.91
 - 0.9
 - 0.89
-slug: cnn
-summary: Deep learning algorithm that can capture spatial hierarchies in data, particularly useful for image and video recognition tasks.
+slug: cnn-convolutional-neural-network
+summary: Deep learning algorithm that can capture spatial hierarchies in data, particularly
+  useful for image and video recognition tasks.
 title: CNN (Convolutional Neural Network)
 ---
 

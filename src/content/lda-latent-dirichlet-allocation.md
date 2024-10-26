@@ -8,8 +8,9 @@ generality:
 - 0.785
 - 0.78
 - 0.77
-slug: lda
-summary: Generative statistical model often used in natural language processing to discover hidden (or latent) topics within a collection of documents.
+slug: lda-latent-dirichlet-allocation
+summary: Generative statistical model often used in natural language processing to
+  discover hidden (or latent) topics within a collection of documents.
 title: LDA (Latent Dirichlet Allocation)
 ---
 

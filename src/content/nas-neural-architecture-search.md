@@ -8,8 +8,9 @@ generality:
 - 0.78
 - 0.76
 - 0.74
-slug: nas
-summary: Automated process that designs optimal neural network architectures for specific tasks.
+slug: nas-neural-architecture-search
+summary: Automated process that designs optimal neural network architectures for specific
+  tasks.
 title: NAS (Neural Architecture Search)
 ---
 

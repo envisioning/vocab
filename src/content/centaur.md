@@ -1,13 +1,13 @@
 ---
 category: ARCH, DATA
 generality:
-- 0.85
-- 0.84
-- 0.835
-- 0.83
-- 0.825
-- 0.82
-- 0.815
+  - 0.85
+  - 0.84
+  - 0.835
+  - 0.83
+  - 0.825
+  - 0.82
+  - 0.815
 slug: centaur
 summary: Collaborative system where humans and AI work together, combining human intuition and expertise with AI's computational power and data processing capabilities.
 title: Centaur
@@ -15,11 +15,12 @@ title: Centaur
 
 The concept of a centaur in AI embodies the synergy between human cognitive skills and artificial intelligence technologies to achieve superior problem-solving capabilities, decision-making, and innovation. This hybrid approach leverages the strengths of both humans and machines, where AI handles tasks involving data analysis, pattern recognition, and computational speed, while humans contribute with strategic thinking, creativity, and ethical considerations. Centaur systems are particularly prevalent in fields such as chess, medical diagnostics, and financial analysis, demonstrating that the collaboration between human intuition and AI can outperform either humans or AI working independently.
 
-Historical overview: The term "centaur" gained prominence in the context of AI and human-computer interaction after the success of human-computer teams in chess competitions during the early 2000s. It was notably used to describe the approach where grandmasters teamed up with chess software to compete, highlighting the potential of human-machine collaboration.
+The term "centaur" gained prominence in the context of AI and human-computer interaction after the success of human-computer teams in chess competitions during the early 2000s. It was notably used to describe the approach where grandmasters teamed up with chess software to compete, highlighting the potential of human-machine collaboration.
 
-Key contributors: While the concept of human-machine collaboration predates the term "centaur" and has been evolving with the development of AI, specific attribution to the development of centaur systems as a formalized concept is diffuse. However, Garry Kasparov, a chess grandmaster, is often associated with popularizing the centaur approach in chess, demonstrating its effectiveness in enhancing human decision-making with AI support.
+While the concept of human-machine collaboration predates the term "centaur" and has been evolving with the development of AI, specific attribution to the development of centaur systems as a formalized concept is diffuse. However, Garry Kasparov, a chess grandmaster, is often associated with popularizing the centaur approach in chess, demonstrating its effectiveness in enhancing human decision-making with AI support.
 
 ---
+
 # Timeline
 
 - 1950s: The term "centaur" is first used in the field of artificial intelligence (AI) to describe systems combining human and computer intelligence.
@@ -27,11 +28,11 @@ Key contributors: While the concept of human-machine collaboration predates the 
 - 1980s: Centaur systems find applications in games, robotics, education and other areas. Computers get closer to human level in chess.
 - 1989: World Chess Champion Garry Kasparov defeats computer program Deep Thought in a match, showing human superiority for now.
 - 1997:
-    - Feb 10-11: Kasparov defeats IBM's Deep Blue in a match
-    - May 11-14: Kasparov loses a rematch to Deep Blue, the first time a computer defeats a reigning world champion in classical chess - a pivotal moment.
+  - Feb 10-11: Kasparov defeats IBM's Deep Blue in a match
+  - May 11-14: Kasparov loses a rematch to Deep Blue, the first time a computer defeats a reigning world champion in classical chess - a pivotal moment.
 - 1998:
-	- The "centaur" concept is coined at the Advanced Chess tournament in León, where players used computer assistance, foreshadowing human-computer teams.
-	- The Centaur Project launches at the University of Maryland to develop centaur systems.
+  - The "centaur" concept is coined at the Advanced Chess tournament in León, where players used computer assistance, foreshadowing human-computer teams.
+  - The Centaur Project launches at the University of Maryland to develop centaur systems.
 - 2000s: Centaur systems spread to more applications like medical diagnosis, financial forecasting, game playing. Online chess servers allow human-computer collaboration.
 - 2005: Garry Kasparov's book "How Life Imitates Chess" popularizes the "centaur" term, describing the potential of human-computer teams.
 - 2010: Freestyle Chess tournaments validate centaurs consistently outperforming humans or computers alone.
@@ -39,27 +40,10 @@ Key contributors: While the concept of human-machine collaboration predates the 
 - 2016: Google DeepMind's AlphaGo defeats world champion Lee Sedol at Go, boosting interest in AI-human collaboration for strategic games.
 - 2020s: Neural network chess engines like AlphaZero and Leela drive new approaches. The centaur concept extends beyond chess into medicine, finance, creative fields and more.
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---- 
 # RAW:
+
 - 1950-1960s: Early computer chess programs are developed, but they are not yet competitive with human players.
 - 1970s-1980s: Computers begin to play at stronger levels, with programs like Chess 4.x and Belle leading the way.
 - 1989: The first match between a World Chess Champion and a computer takes place when Garry Kasparov defeats Deep Thought.
@@ -80,6 +64,7 @@ Key contributors: While the concept of human-machine collaboration predates the 
 Keep in mind that the timeline above is a simplified version of the history of the centaur concept in chess and related fields. There are many more events and developments that have contributed to the evolution of this idea over time.
 
 ---
+
 The "centaur" concept refers to a combination of human and computer intelligence working together, particularly in the field of chess. Here's a timeline that captures the significant events related to this concept:
 
 1970s-1980s: Early computer chess programs are developed, but they are still significantly weaker than top human players.
@@ -100,8 +85,8 @@ The "centaur" concept refers to a combination of human and computer intelligence
 
 The "centaur" concept was born out of the recognition that the combination of human intuition, strategic thinking, and computer calculation power can be more powerful than either alone. It represents a new paradigm of human-machine collaboration, where the strengths of each are leveraged to achieve superior results.
 
-
 ---
+
 Before 1997
 
 - 1950s: The term "centaur" is first used in the field of artificial intelligence (AI) to describe a system that combines human and computer intelligence.

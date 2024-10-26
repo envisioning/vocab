@@ -3,27 +3,58 @@ import path from "path";
 import matter from "gray-matter";
 import ArticleCard from "@/components/ArticleCard";
 import { Article } from "@/types/article";
+import { Suspense } from "react";
+import ArticleList from "@/components/ArticleList";
 
 async function getArticles(): Promise<Article[]> {
-  const files = fs.readdirSync(path.join(process.cwd(), "src/content"));
+  const contentDirectory = path.join(process.cwd(), "src/content");
+  const files = fs.readdirSync(contentDirectory);
 
-  const articles = files.map((filename) => {
-    const slug = filename.replace(".md", "");
-    const markdownWithMeta = fs.readFileSync(
-      path.join(process.cwd(), "src/content", filename),
-      "utf-8"
+  const invalidFiles: string[] = [];
+
+  const articles = files
+    .map((filename) => {
+      const slug = filename.replace(".md", "");
+      const filePath = path.join(contentDirectory, filename);
+      const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
+
+      const { data: frontmatter } = matter(markdownWithMeta);
+
+      // Process category to ensure it's an array of trimmed strings
+      const category =
+        typeof frontmatter.category === "string"
+          ? frontmatter.category.split(",").map((cat: string) => cat.trim())
+          : frontmatter.category;
+
+      // Validate required fields
+      if (!frontmatter.title || !frontmatter.summary) {
+        invalidFiles.push(filename);
+        return null;
+      }
+
+      return {
+        slug,
+        ...frontmatter,
+        category, // Use the processed category
+        generality: Array.isArray(frontmatter.generality)
+          ? frontmatter.generality
+          : [frontmatter.generality],
+      } as Article;
+    })
+    .filter(Boolean) as Article[];
+
+  // Log all invalid files at once
+  if (invalidFiles.length > 0) {
+    console.warn(
+      `\n[Article Load Warning] Found ${invalidFiles.length} articles with missing required fields:\n`
     );
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-
-    return {
-      slug,
-      ...frontmatter,
-      generality: Array.isArray(frontmatter.generality)
-        ? frontmatter.generality
-        : [frontmatter.generality],
-    } as Article;
-  });
+    invalidFiles.forEach((file) => {
+      console.warn(`- ${file}`);
+    });
+    console.warn(
+      `\nPlease ensure all articles have both 'title' and 'summary' in their front matter.\n`
+    );
+  }
 
   return articles.sort((a, b) => {
     const avgA =
@@ -38,14 +69,10 @@ export default async function Home() {
   const articles = await getArticles();
 
   return (
-    <main className="min-h-screen bg-gray-100 py-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {articles.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
-          ))}
-        </div>
-      </div>
+    <main className="min-h-screen bg-gray-100">
+      <Suspense fallback={<div>Loading...</div>}>
+        <ArticleList initialArticles={articles} />
+      </Suspense>
     </main>
   );
 }

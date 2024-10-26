@@ -8,8 +8,9 @@ generality:
 - 0.65
 - 0.625
 - 0.6
-slug: mpc
-summary: Control algorithm that uses a model of the system to predict future states and optimizes control actions over a future time horizon.
+slug: mpc-model-predictive-control
+summary: Control algorithm that uses a model of the system to predict future states
+  and optimizes control actions over a future time horizon.
 title: MPC (Model-Predictive Control)
 ---
 

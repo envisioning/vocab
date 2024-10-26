@@ -8,8 +8,9 @@ generality:
 - 0.585
 - 0.56
 - 0.535
-slug: saif
-summary: Set of guidelines and best practices developed by Google to enhance the security of AI systems across various applications.
+slug: saif-secure-ai-framework
+summary: Set of guidelines and best practices developed by Google to enhance the security
+  of AI systems across various applications.
 title: SAIF (Secure AI Framework)
 ---
 
@@ -17,4 +18,4 @@ The SAIF is designed to address specific security vulnerabilities inherent in AI
 
 Historical Context: SAIF was introduced by Google in June 2023, reflecting the company's response to the growing integration of AI in business and the need for an industry-standard security framework that can adapt to the evolving capabilities and risks associated with AI technologies​ ([blog.google](https://blog.google/technology/safety-security/introducing-googles-secure-ai-framework/))​.
 
-Key Contributors: The development of SAIF is led by Google's cybersecurity and AI experts. While specific names are not frequently cited, the framework leverages Google's extensive experience and expertise in AI and cybersecurity, making it a collaborative effort within the company. Google's broader security team, including roles such as Vice Presidents of Engineering and Chief Information Security Officers, have been instrumental in crafting and advocating for the adoption of SAIF practices across industries​ ([blog.google](https://blog.google/technology/safety-security/introducing-googles-secure-ai-framework/))​.
+The development of SAIF is led by Google's cybersecurity and AI experts. While specific names are not frequently cited, the framework leverages Google's extensive experience and expertise in AI and cybersecurity, making it a collaborative effort within the company. Google's broader security team, including roles such as Vice Presidents of Engineering and Chief Information Security Officers, have been instrumental in crafting and advocating for the adoption of SAIF practices across industries​ ([blog.google](https://blog.google/technology/safety-security/introducing-googles-secure-ai-framework/))​.

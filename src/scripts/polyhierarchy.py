@@ -243,4 +243,4 @@ def main(directory):
     logging.info("Processing completed successfully")
 
 if __name__ == "__main__":
-    main("../vocab/")
+    main("../content/")

@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Emerging vocabulary to explain AI
 
-## Getting Started
+Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which underpin the development of ML (Machine Learning) and its many derivations.
 
-First, run the development server:
+## This will help you:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Follow the conversation and more easily understand recent developments in the field.
+- Advance your technological literacy and further your professional development.
+- Engage critically with the most important technology of our lifetimes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to use Envisioning AI:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Start with the basics and build up your conceptual knowledge.
+- Search for terms you are not familiar with.
+- Navigate the entire knowledge graph.
 
-## Learn More
+The entire index has been co-created with different AI tools in order to create a comprehensive overview of the field with accurate and useful definitions. If you spot a mistake or want to suggest missing concepts, email us on hello@envisioning.io.
 
-To learn more about Next.js, take a look at the following resources:
+#### Access Envisioning AI:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- http://github.com/envisioning/vocab
+- https://envisioning.io/vocab
+- https://envisioning.ai
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## How is the data fact checked?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+LLMs have remarkable self-knowledge. This is likely because of the amount of research papers and articles used in the training data. This minimizes the chances of hallucinations or factual mistakes, which has been validated by running most entries through a fact-checking [CustomGPT](https://chat.openai.com/g/g-T87zDPHN1-envisioning-ai).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+##### Similar:
+
+- [Anatomy of AI](https://anatomyof.ai/img/ai-anatomy-map.pdf) (Kate Crawford)
+- [Automated Futures](https://imperialtechforesight.com/wp-content/uploads/2020/08/Imperial-Tech-Foresight-Automated-Technologies.pdf) (Imperial TechForesight)
+
+## Definition Creation
+
+## Similarity Score
+
+## Image Generation
+
+- GPT4o: Receives title and summary, suggests image prompt for FLUX 1.1 Pro.
+
+---
+
+### (cc) 2024 [Envisioning](https://envisioning.io)
