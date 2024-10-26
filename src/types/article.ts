@@ -6,4 +6,5 @@ export interface Article {
   summary: string;
   image?: string;
   content?: string;
+  relationship?: string; // Add this line to define the relationship property
 }

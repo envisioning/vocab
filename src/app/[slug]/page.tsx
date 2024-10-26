@@ -5,6 +5,8 @@ import { marked } from "marked";
 import Link from "next/link";
 import { Article } from "@/types/article";
 import Image from "next/image";
+import { existsSync } from "fs";
+import dynamic from "next/dynamic";
 
 interface PageProps {
   params: Promise<{
@@ -195,10 +197,28 @@ function ArticleCard({
   );
 }
 
+// Add this function to check for component existence
+function getCustomComponent(slug: string) {
+  const componentPath = path.join(
+    process.cwd(),
+    "src/components/articles",
+    `${slug}.tsx`
+  );
+  return existsSync(componentPath);
+}
+
 export default async function ArticlePage({ params }: PageProps) {
   const { slug } = await params;
   const { frontmatter, content, hasImage } = await getArticleContent(slug);
   const relatedArticles = await getRelatedArticles(slug);
+  const hasCustomComponent = getCustomComponent(slug);
+
+  // Add dynamic component import
+  const CustomComponent = hasCustomComponent
+    ? dynamic(() => import(`@/components/articles/${slug}`), {
+        ssr: true,
+      })
+    : null;
 
   // Calculate average generality if it's an array, limited to 3 decimal places
   const generality = Array.isArray(frontmatter.generality)
@@ -249,6 +269,9 @@ export default async function ArticlePage({ params }: PageProps) {
 
           {/* Article content */}
           <div className="px-8 py-6">
+            {/* Add custom component if it exists */}
+            {CustomComponent && <CustomComponent />}
+
             <div
               className="prose max-w-none 
                 prose-headings:mt-8 prose-headings:mb-4
@@ -264,22 +287,23 @@ export default async function ArticlePage({ params }: PageProps) {
               <span>Generality: {generality}</span>
             </div>
           </div>
-        </div>
 
-        {/* Related articles section */}
-        {relatedArticles.length > 0 && (
-          <div className="mt-8 pt-8">
-            <h2 className="text-2xl font-bold mb-4">Related</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {relatedArticles.map((article) => (
-                <ArticleCard
-                  key={`${article.slug}-${article.relationship}`}
-                  {...article}
-                />
-              ))}
+          {/* Related articles section */}
+          {relatedArticles.length > 0 && (
+            <div className="mt-8 pt-8">
+              <h2 className="text-2xl font-bold mb-4">Related</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {relatedArticles.map((article) => (
+                  <ArticleCard
+                    key={`${article.slug}-${article.relationship || "default"}`}
+                    {...article}
+                    relationship={article.relationship || "parent"} // Provide a valid default relationship
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
