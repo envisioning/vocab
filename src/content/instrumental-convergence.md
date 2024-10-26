@@ -9,7 +9,7 @@ generality:
   - 0.585
   - 0.56
 slug: instrumental-convergence
-summary: ""
+summary: "Suggests that diverse intelligent agents will likely pursue common sub-goals, such as self-preservation and resource acquisition, to achieve their primary objectives."
 title: Instrumental Convergence
 ---
 
