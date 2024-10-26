@@ -5,7 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Articles",
+  title: {
+    template: "%s - Vocab",
+    default: "Vocab",
+  },
   description: "Articles sorted by generality",
 };
 

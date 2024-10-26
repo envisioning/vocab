@@ -7,6 +7,7 @@ import { Article } from "@/types/article";
 import Image from "next/image";
 import { existsSync } from "fs";
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{
@@ -205,6 +206,17 @@ function getCustomComponent(slug: string) {
     `${slug}.tsx`
   );
   return existsSync(componentPath);
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const { frontmatter } = await getArticleContent(slug);
+
+  return {
+    title: frontmatter.title,
+  };
 }
 
 export default async function ArticlePage({ params }: PageProps) {

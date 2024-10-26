@@ -21,7 +21,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0" />
         <div className="absolute bottom-0 p-6 w-full">
           <h2 className="text-2xl font-semibold mb-3 text-white truncate">
             {article.title}
