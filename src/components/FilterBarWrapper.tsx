@@ -1,190 +1,107 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Article } from "@/types/article";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import FilterBar from "./FilterBar";
 
 interface FilterBarWrapperProps {
   allArticles: Article[];
-  displayMode?: "suggestions" | "full";
+  onFilterChange: (articles: Article[]) => void;
 }
 
 export default function FilterBarWrapper({
   allArticles,
-  displayMode = "suggestions",
+  onFilterChange,
 }: FilterBarWrapperProps) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  const [searchTerm, setSearchTerm] = useState(
-    searchParams.get("search") || ""
-  );
-  const [selectedCategory, setSelectedCategory] = useState(
-    searchParams.get("category") || ""
-  );
-
-  // Add new state for controlling suggestion visibility
-  const [showSuggestions, setShowSuggestions] = useState(false);
-
-  // Add state for keyboard navigation
-  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortOption, setSortOption] = useState("g");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   // Get unique categories from all articles
   const categories = Array.from(
-    new Set(allArticles.flatMap((article) => article.category))
-  ).sort();
+    new Set(allArticles.flatMap((article) => article.categories)) // Changed from category to categories
+  );
 
-  // Modified filtered articles logic
-  const filteredArticles = allArticles
-    .filter((article) => {
-      const matchesSearch = article.title
-        .toLowerCase()
-        .includes(searchTerm.toLowerCase());
-
-      const matchesCategory =
-        selectedCategory === "" || article.category.includes(selectedCategory);
-
-      return matchesSearch && matchesCategory;
-    })
-    .sort((a, b) => {
-      // Sort by generality (shorter terms are usually more general)
-      return a.title.length - b.title.length;
-    });
-
-  // Add ref for input element
-  const searchInputRef = useRef<HTMLInputElement>(null);
-
-  // Add keyboard shortcut handler
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault();
-        searchInputRef.current?.focus();
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
-
-  // Handle keyboard navigation
-  const handleKeyDown = async (e: React.KeyboardEvent<HTMLInputElement>) => {
-    const suggestions = filteredArticles.slice(0, 5);
-
-    if (showSuggestions && suggestions.length > 0) {
-      switch (e.key) {
-        case "ArrowDown":
-          e.preventDefault();
-          setSelectedIndex((prev) =>
-            prev < suggestions.length - 1 ? prev + 1 : prev
-          );
-          break;
-        case "ArrowUp":
-          e.preventDefault();
-          setSelectedIndex((prev) => (prev > -1 ? prev - 1 : prev));
-          break;
-        case "Enter":
-          e.preventDefault();
-          if (selectedIndex >= 0 && suggestions[selectedIndex]) {
-            const selectedArticle = suggestions[selectedIndex];
-            window.location.assign(`/${selectedArticle.slug}`);
-          }
-          break;
-        case "Escape":
-          setShowSuggestions(false);
-          setSelectedIndex(-1);
-          break;
-      }
+  // Handle filter changes
+  const handleSearch = (value: string) => {
+    console.log("Searching:", value);
+    setSearchTerm(value);
+    if (value === "") {
+      setSelectedCategory(""); // Clear category when search is cleared
+      filterArticles("", sortOption, "");
+    } else {
+      setSelectedCategory(""); // Clear category when searching
+      filterArticles(value, sortOption, "");
     }
   };
 
-  // Reset selected index when search term changes
-  useEffect(() => {
-    setSelectedIndex(-1);
-  }, [searchTerm]);
+  const handleSort = (value: string) => {
+    setSortOption(value);
+    filterArticles(searchTerm, value, selectedCategory);
+  };
 
-  // Update URL when filters change
-  useEffect(() => {
-    const params = new URLSearchParams();
-    if (searchTerm) params.set("search", searchTerm);
-    if (selectedCategory) params.set("category", selectedCategory);
+  const handleCategory = (value: string) => {
+    console.log("Selecting category:", value);
+    setSelectedCategory(value);
+    // When selecting a category, we want to filter by the category code only
+    filterArticles("", sortOption, value);
+  };
 
-    const newUrl =
-      pathname + (params.toString() ? `?${params.toString()}` : "");
-    router.push(newUrl);
-  }, [searchTerm, selectedCategory, pathname, router]);
+  const filterArticles = (search: string, sort: string, category: string) => {
+    let filtered = [...allArticles];
+    console.log("Initial articles:", filtered.length);
+
+    if (category) {
+      // Debug logging
+      console.log("Filtering by category:", category);
+      console.log("Sample article categories:", filtered[0]?.categories);
+
+      filtered = filtered.filter((article) => {
+        const hasCategory = article.categories.includes(category);
+        console.log(
+          `Article ${article.slug} has categories:`,
+          article.categories,
+          "Match:",
+          hasCategory
+        );
+        return hasCategory;
+      });
+
+      console.log("After category filter:", filtered.length);
+    } else if (search) {
+      filtered = filtered.filter((article) =>
+        article.title.toLowerCase().includes(search.toLowerCase())
+      );
+      console.log("After search filter:", filtered.length);
+    }
+
+    // Apply sorting
+    filtered.sort((a, b) => {
+      if (sort === "g") {
+        const avgA =
+          a.generality.reduce((acc, curr) => acc + curr, 0) /
+          a.generality.length;
+        const avgB =
+          b.generality.reduce((acc, curr) => acc + curr, 0) /
+          b.generality.length;
+        return avgB - avgA;
+      }
+      return a.title.localeCompare(b.title);
+    });
+
+    onFilterChange(filtered);
+  };
 
   return (
-    <div className="sticky top-0 z-10 bg-white dark:bg-gray-900 p-4 shadow-md">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row gap-4">
-        <div className="flex-1 relative">
-          <input
-            ref={searchInputRef}
-            type="text"
-            placeholder="Search AI terms... (⌘K)"
-            value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              setShowSuggestions(e.target.value.length > 1);
-            }}
-            onKeyDown={handleKeyDown}
-            className="w-full px-4 py-2 rounded-lg border dark:border-gray-700 
-                     dark:bg-gray-800 dark:text-white focus:outline-none 
-                     focus:ring-2 focus:ring-blue-500"
-          />
-
-          {/* Move suggestions inside input container and adjust positioning */}
-          {displayMode === "suggestions" &&
-            showSuggestions &&
-            searchTerm.length > 1 && (
-              <div className="absolute left-0 right-0 mt-1 z-20 border rounded-lg shadow-lg overflow-hidden">
-                {filteredArticles.slice(0, 5).map((article, index) => (
-                  <div
-                    key={article.slug}
-                    className={`p-3 bg-white dark:bg-gray-800 border-b dark:border-gray-700 
-                             hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer
-                             ${
-                               index === selectedIndex
-                                 ? "bg-blue-50 dark:bg-blue-900 border-l-4 border-l-blue-500"
-                                 : ""
-                             }`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      window.location.assign(`/${article.slug}`);
-                    }}
-                  >
-                    <h3 className="font-semibold dark:text-white">
-                      {article.title}
-                    </h3>
-                  </div>
-                ))}
-              </div>
-            )}
-        </div>
-
-        {/* Category Filter */}
-        <select
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          className="px-4 py-2 rounded-lg border dark:border-gray-700 
-                   dark:bg-gray-800 dark:text-white focus:outline-none 
-                   focus:ring-2 focus:ring-blue-500"
-        >
-          <option value="">All Categories</option>
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category}
-            </option>
-          ))}
-        </select>
-
-        {/* Results Count */}
-        <div className="text-sm text-gray-500 dark:text-gray-400 py-2">
-          {filteredArticles.length} terms found
-        </div>
-      </div>
-    </div>
+    <FilterBar
+      searchTerm={searchTerm}
+      onSearchChange={handleSearch}
+      sortOption={sortOption}
+      onSortChange={handleSort}
+      selectedCategory={selectedCategory}
+      onCategoryChange={handleCategory}
+      categories={categories}
+      allArticles={allArticles}
+    />
   );
 }

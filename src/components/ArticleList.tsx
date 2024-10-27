@@ -4,13 +4,13 @@ import { Article } from "@/types/article";
 import ArticleCard from "./ArticleCard";
 
 interface ArticleListProps {
-  initialArticles: Article[];
+  articles: Article[]; // Changed from initialArticles to articles
 }
 
-export default function ArticleList({ initialArticles }: ArticleListProps) {
+export default function ArticleList({ articles }: ArticleListProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {initialArticles.map((article) => (
+      {articles.map((article) => (
         <ArticleCard key={article.slug} article={article} />
       ))}
     </div>

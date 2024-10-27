@@ -17,6 +17,4 @@ An algorithm is a finite sequence of well-defined instructions, typically used t
 
 The concept of algorithms dates back to ancient times, with its origins often attributed to Persian mathematician Al-Khwarizmi around 825 AD. The term "algorithm" itself is derived from the Latinized name of Al-Khwarizmi. The formalization and study of algorithms gained significant momentum with the development of computer science in the mid-20th century, particularly after Alan Turing's work on the theoretical foundations of computation in the 1930s and 1940s.
 
-- Al-Khwarizmi: Often called the "father of algebra," his works introduced systematic methods for solving linear and quadratic equations.
-- Alan Turing: Laid the groundwork for theoretical computer science, particularly with the Turing machine, which formalized the concept of computation and algorithms.
-- Donald Knuth: Author of "The Art of Computer Programming," he significantly advanced the study and understanding of algorithms and data structures.
+Al-Khwarizmi: Often called the "father of algebra," his works introduced systematic methods for solving linear and quadratic equations. Alan Turing: Laid the groundwork for theoretical computer science, particularly with the Turing machine, which formalized the concept of computation and algorithms. Donald Knuth: Author of "The Art of Computer Programming," he significantly advanced the study and understanding of algorithms and data structures.

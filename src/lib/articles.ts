@@ -27,18 +27,20 @@ export async function getArticles(): Promise<Article[]> {
 
       return {
         slug,
+        title: frontmatter.title,
+        categories: category,
+        summary: frontmatter.summary,
         ...frontmatter,
-        category,
         generality: Array.isArray(frontmatter.generality)
-          ? frontmatter.generality
-          : [frontmatter.generality],
+          ? frontmatter.generality.map(Number)
+          : frontmatter.generality ? [Number(frontmatter.generality)] : [0],
       } as Article;
     })
     .filter(Boolean) as Article[];
 
   return articles.sort((a, b) => {
-    const avgA = a.generality.reduce((acc, curr) => acc + curr, 0) / a.generality.length;
-    const avgB = b.generality.reduce((acc, curr) => acc + curr, 0) / b.generality.length;
+    const avgA = a.generality?.reduce((acc, curr) => acc + (curr || 0), 0) / (a.generality?.length || 1);
+    const avgB = b.generality?.reduce((acc, curr) => acc + (curr || 0), 0) / (b.generality?.length || 1);
     return avgB - avgA;
   });
 }

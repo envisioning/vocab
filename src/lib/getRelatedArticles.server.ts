@@ -7,13 +7,11 @@ const DEFAULT_GENERALITY = [0.5]; // Default generality score for articles missi
 // Add these interfaces at the top of the file
 interface HierarchyChild {
   slug: string;
-  id: string;
   similarity?: number;
 }
 
 interface HierarchyItem {
   slug: string;
-  id: string;
   name: string;
   summary: string;
   categories: string[];
@@ -50,7 +48,6 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
     
     return {
       slug: child.slug,
-      id: child.id,
       relationship: "child" as const,
       similarity: child.similarity || 0,
       title: childArticle.name,
@@ -60,34 +57,33 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
         ? childArticle.generality 
         : childArticle.generality 
           ? [childArticle.generality]
-          : DEFAULT_GENERALITY,  // Use default if generality is missing
+          : DEFAULT_GENERALITY,
     };
-  }).filter((child): child is { slug: string; id: string; relationship: "child"; similarity: number; title: string; summary: string; category: string[]; generality: number[] } => child !== null) || [];
+  }).filter((child): child is { slug: string; relationship: "child"; similarity: number; title: string; summary: string; category: string[]; generality: number[] } => child !== null) || [];
 
   // Find parent articles with proper error handling
   const parentConnections = hierarchyData
     ?.filter((item: HierarchyItem) => 
       item.children?.some((child: HierarchyChild) => child.slug === currentArticle.slug)
     )
-    .map((parentItem) => {
+    .map((parentItem): RelatedArticle => {
       const childWithSimilarity = parentItem.children?.find(
         (child: HierarchyChild) => child.slug === currentArticle.slug
       );
       
       return {
         slug: parentItem.slug,
-        id: parentItem.id,
-        relationship: "parent" as const,
+        relationship: "parent",
         similarity: childWithSimilarity?.similarity || 0,
         title: parentItem.name,
         summary: parentItem.summary,
-        category: parentItem.categories,
+        categories: parentItem.categories,
         generality: Array.isArray(parentItem.generality)
           ? parentItem.generality
           : parentItem.generality
             ? [parentItem.generality]
-            : DEFAULT_GENERALITY,  // Use default if generality is missing
-      } as RelatedArticle;
+            : DEFAULT_GENERALITY,
+      };
     }) || [];
 
   // Combine and handle bidirectional relationships
@@ -96,7 +92,10 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
   // Add child connections
   childConnections.forEach((conn) => {
     if (conn) {
-      connectionMap.set(conn.slug, conn);
+      connectionMap.set(conn.slug, {
+        ...conn,
+        categories: conn.category  // Rename category to categories
+      });
     }
   });
 

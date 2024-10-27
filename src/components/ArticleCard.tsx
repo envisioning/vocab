@@ -5,11 +5,15 @@ import { Article, RelatedArticle } from "@/types/article";
 interface ArticleCardProps {
   article: Article | RelatedArticle;
   size?: "normal" | "compact";
+  // Add new prop to control which metric to show
+  metricType?: "generality" | "similarity";
 }
 
 export default function ArticleCard({
   article,
   size = "compact",
+  // Default to generality for backwards compatibility
+  metricType = "generality",
 }: ArticleCardProps) {
   // Calculate average generality with defensive checks
   const avgGenerality =
@@ -20,8 +24,12 @@ export default function ArticleCard({
         ).toFixed(3)
       : "N/A";
 
-  // Check if article is a RelatedArticle by checking for similarity property
-  const isRelatedArticle = "similarity" in article;
+  // Determine which metric to show based on metricType prop
+  const metricLabel = metricType === "similarity" ? "Similarity" : "Generality";
+  const metricValue =
+    metricType === "similarity" && "similarity" in article
+      ? (article?.similarity ?? 0 * 100).toFixed(1) + "%"
+      : avgGenerality;
 
   return (
     <Link
@@ -57,13 +65,9 @@ export default function ArticleCard({
           >
             {article.summary}
           </p>
-          {isRelatedArticle ? (
-            <p className="text-gray-400 text-sm">
-              Similarity: {(article.similarity || 0).toFixed(3)}
-            </p>
-          ) : (
-            <p className="text-gray-400 text-sm">Generality: {avgGenerality}</p>
-          )}
+          <p className="text-gray-400 text-sm">
+            {metricLabel}: {metricValue}
+          </p>
         </div>
       </div>
     </Link>

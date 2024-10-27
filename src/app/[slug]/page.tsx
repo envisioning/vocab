@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
@@ -10,7 +9,8 @@ import { existsSync } from "fs";
 import { Suspense } from "react";
 import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
-// import { getArticles } from "@/lib/articles"; // Ensure all articles are fetched if needed
+import { getArticles } from "@/lib/getArticles";
+import ClientWrapper from "@/components/ClientWrapper";
 
 interface PageProps {
   params: {
@@ -102,13 +102,11 @@ export default async function ArticlePage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-100 py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="text-black hover:text-blue-800 mb-4 inline-block"
-        >
-          &larr; Back to Home
-        </Link>
-
+        <ClientWrapper
+          articles={await getArticles()}
+          displayMode="suggestions"
+          showList={false}
+        />
         <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
           <div className="relative h-[400px]">
             {hasImage && (

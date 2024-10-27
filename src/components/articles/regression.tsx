@@ -93,7 +93,6 @@ const RegressionDemo = () => {
   const startX = 0;
   const endX = 100;
   const startY = regressionStats.intercept + regressionStats.slope * startX;
-  const endY = regressionStats.intercept + regressionStats.slope * endX;
 
   // Animated line points
   const currentEndX = startX + (endX - startX) * progress;
