@@ -1,25 +1,27 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { ReactNode } from "react";
+import FilterBarWrapper from "../components/FilterBarWrapper";
+import { Article } from "@/types/article";
+import { getArticles } from "@/lib/articles"; // Use this instead of aiTerms
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: {
-    template: "%s - Vocab",
-    default: "Vocab",
-  },
-  description: "Articles sorted by generality",
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
+  const articles = await getArticles();
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head />
+      <body className="min-h-screen bg-gray-100">
+        <div className="flex flex-col min-h-screen">
+          <FilterBarWrapper allArticles={articles} />
+          <main className="flex-grow container mx-auto px-4 py-8">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }

@@ -8,9 +8,9 @@ import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import { existsSync } from "fs";
 import { Suspense } from "react";
-
 import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
+import { getArticles } from "@/lib/articles"; // Ensure all articles are fetched if needed
 
 interface PageProps {
   params: {
@@ -18,20 +18,18 @@ interface PageProps {
   };
 }
 
-// Separate async function to get article content
 async function getArticleContent(slug: string): Promise<{
   frontmatter: Omit<Article, "slug">;
   content: string;
   hasImage: boolean;
   slug: string;
 }> {
-  console.log(`Fetching content for slug: ${slug}`); // Logging
+  console.log(`Fetching content for slug: ${slug}`);
   const markdownWithMeta = fs.readFileSync(
     path.join(process.cwd(), "src/content", `${slug}.md`),
     "utf-8"
   );
 
-  // Check if image exists
   const imagePath = path.join(process.cwd(), "public/images", `${slug}.webp`);
   const hasImage = fs.existsSync(imagePath);
 
@@ -44,11 +42,10 @@ async function getArticleContent(slug: string): Promise<{
   };
 }
 
-// Metadata generation
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  console.log("Generating metadata for params:", params); // Logging
+  console.log("Generating metadata for params:", params);
   try {
     const { frontmatter } = await getArticleContent(params.slug);
     return {
@@ -62,16 +59,14 @@ export async function generateMetadata({
   }
 }
 
-// Add generateStaticParams for static optimization
 export async function generateStaticParams() {
-  console.log("Generating static params"); // Logging
+  console.log("Generating static params");
   const files = fs.readdirSync(path.join(process.cwd(), "src/content"));
   return files.map((filename) => ({
     slug: filename.replace(".md", ""),
   }));
 }
 
-// Main page component
 export default async function ArticlePage({ params }: PageProps) {
   console.log("Rendering ArticlePage with params:", params);
 
@@ -79,7 +74,6 @@ export default async function ArticlePage({ params }: PageProps) {
     params.slug
   );
 
-  // Update the path check to use the full path
   const customComponentPath = path.join(
     process.cwd(),
     "src/components/articles",
@@ -87,14 +81,12 @@ export default async function ArticlePage({ params }: PageProps) {
   );
   const hasCustomComponent = existsSync(customComponentPath);
 
-  // Update the dynamic import to use the correct path
   const CustomComponent = hasCustomComponent
     ? dynamic(() => import(`../../components/articles/${params.slug}`), {
         ssr: true,
       })
     : null;
 
-  // Update the generality calculation to handle undefined
   const generality =
     Array.isArray(frontmatter.generality) && frontmatter.generality.length > 0
       ? Number(
@@ -105,7 +97,7 @@ export default async function ArticlePage({ params }: PageProps) {
         )
       : "N/A";
 
-  console.log("Generality calculated as:", generality); // Logging
+  console.log("Generality calculated as:", generality);
 
   return (
     <div className="min-h-screen bg-gray-100 py-6">
@@ -117,9 +109,7 @@ export default async function ArticlePage({ params }: PageProps) {
           &larr; Back to Home
         </Link>
 
-        {/* Reduced width of main content to max-w-3xl */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
-          {/* Header section with background image */}
           <div className="relative h-[400px]">
             {hasImage && (
               <Image
@@ -131,10 +121,8 @@ export default async function ArticlePage({ params }: PageProps) {
                 sizes="(max-width: 1200px) 100vw, 1200px"
               />
             )}
-            {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/30" />
 
-            {/* Content overlay */}
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
               <h1 className="text-4xl font-bold mb-4 text-white">
                 {frontmatter.title}
@@ -145,9 +133,7 @@ export default async function ArticlePage({ params }: PageProps) {
             </div>
           </div>
 
-          {/* Article content */}
           <div className="px-8 py-6">
-            {/* Add custom component if it exists */}
             {CustomComponent && <CustomComponent />}
 
             <div
@@ -167,7 +153,6 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Related articles section */}
         <Suspense
           fallback={
             <div className="mt-8 pt-8 animate-pulse max-w-4xl mx-auto">
