@@ -10,7 +10,7 @@ import { existsSync } from "fs";
 import { Suspense } from "react";
 import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
-import { getArticles } from "@/lib/articles"; // Ensure all articles are fetched if needed
+// import { getArticles } from "@/lib/articles"; // Ensure all articles are fetched if needed
 
 interface PageProps {
   params: {

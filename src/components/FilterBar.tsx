@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import type { Article } from "@/types/article";
 
@@ -28,7 +28,6 @@ export default function FilterBar({
 }: FilterBarProps) {
   const [suggestions, setSuggestions] = useState<Article[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const router = useRouter();
   const pathname = usePathname();
 
   useEffect(() => {

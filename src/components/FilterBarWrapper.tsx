@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { Article } from "@/types/article";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import ArticleCard from "@/components/ArticleCard";
 
 interface FilterBarWrapperProps {
   allArticles: Article[];

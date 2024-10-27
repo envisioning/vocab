@@ -1,10 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Article } from "@/types/article";
 import ArticleCard from "./ArticleCard";
-import { useRouter, useSearchParams } from "next/navigation";
-import FilterBarWrapper from "./FilterBarWrapper";
 
 interface ArticleListProps {
   initialArticles: Article[];

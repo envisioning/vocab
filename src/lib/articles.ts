@@ -16,7 +16,9 @@ export async function getArticles(): Promise<Article[]> {
 
       const category = Array.isArray(frontmatter.category)
         ? frontmatter.category
-        : frontmatter.category.split(",").map((cat: string) => cat.trim());
+        : typeof frontmatter.category === 'string'
+          ? frontmatter.category.split(",").map((cat: string) => cat.trim())
+          : [];
 
       if (!frontmatter.title || !frontmatter.summary) {
         console.warn(`Invalid article: ${filename}`);

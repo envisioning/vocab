@@ -1,7 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import FilterBarWrapper from "../components/FilterBarWrapper";
-import { Article } from "@/types/article";
 import { getArticles } from "@/lib/articles"; // Use this instead of aiTerms
 
 export default async function RootLayout({
