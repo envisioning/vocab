@@ -1,5 +1,4 @@
 ---
-category: BIO, DATA
 generality:
   - 0.8
   - 0.785

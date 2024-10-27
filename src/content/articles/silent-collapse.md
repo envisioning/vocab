@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 0.47
-- 0.455
-- 0.44
-- 0.425
-- 0.41
-- 0.395
-- 0.38
+  - 0.47
+  - 0.455
+  - 0.44
+  - 0.425
+  - 0.41
+  - 0.395
+  - 0.38
 slug: silent-collapse
 summary: Gradual degradation in the performance of AI models when trained on synthetic data produced by other AIs, leading to a decline in output quality over successive iterations.
 title: Silent Collapse

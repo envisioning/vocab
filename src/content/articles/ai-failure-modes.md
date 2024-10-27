@@ -1,13 +1,12 @@
 ---
-category: GOV, CORE
 generality:
-- 0.785
-- 0.76
-- 0.73
-- 0.71
-- 0.69
-- 0.67
-- 0.65
+  - 0.785
+  - 0.76
+  - 0.73
+  - 0.71
+  - 0.69
+  - 0.67
+  - 0.65
 slug: ai-failure-modes
 summary: Diverse scenarios where AI systems do not perform as expected or generate unintended consequences.
 title: AI Failure Modes

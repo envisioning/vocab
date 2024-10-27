@@ -1,15 +1,15 @@
 ---
-category: MATH, CORE
 generality:
-- 0.85
-- 0.825
-- 0.82
-- 0.8
-- 0.79
-- 0.78
-- 0.775
+  - 0.85
+  - 0.825
+  - 0.82
+  - 0.8
+  - 0.79
+  - 0.78
+  - 0.775
 slug: vc-dimension-vapnik-chervonenkis
-summary: Measure of the capacity of a statistical classification algorithm, quantifying
+summary:
+  Measure of the capacity of a statistical classification algorithm, quantifying
   how complex the model is in terms of its ability to fit varied sets of data.
 title: VC Dimension (Vapnik-Chervonenkis)
 ---

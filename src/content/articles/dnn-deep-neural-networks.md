@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.95
-- 0.935
-- 0.925
-- 0.915
-- 0.905
-- 0.895
-- 0.885
+  - 0.95
+  - 0.935
+  - 0.925
+  - 0.915
+  - 0.905
+  - 0.895
+  - 0.885
 slug: dnn-deep-neural-networks
-summary: Advanced neural network architectures with multiple layers that enable complex
+summary:
+  Advanced neural network architectures with multiple layers that enable complex
   pattern recognition and learning from large amounts of data.
 title: DNN (Deep Neural Networks)
 ---

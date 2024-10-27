@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.91
-- 0.895
-- 0.88
-- 0.865
-- 0.85
-- 0.835
-- 0.82
+  - 0.91
+  - 0.895
+  - 0.88
+  - 0.865
+  - 0.85
+  - 0.835
+  - 0.82
 slug: gan-generative-adversarial-network
-summary: Class of AI algorithms used in unsupervised ML, implemented by a system of
+summary:
+  Class of AI algorithms used in unsupervised ML, implemented by a system of
   two neural networks contesting with each other in a game.
 title: GAN (Generative Adversarial Network)
 ---

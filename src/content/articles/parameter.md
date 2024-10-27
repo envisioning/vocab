@@ -1,13 +1,12 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.91
-- 0.89
-- 0.87
-- 0.85
-- 0.83
-- 0.81
-- 0.79
+  - 0.91
+  - 0.89
+  - 0.87
+  - 0.85
+  - 0.83
+  - 0.81
+  - 0.79
 slug: parameter
 summary: Variable that is internal to the model and whose value is estimated from the training data.
 title: Parameter

@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.9
-- 0.875
-- 0.87
-- 0.86
-- 0.85
-- 0.845
-- 0.84
+  - 0.9
+  - 0.875
+  - 0.87
+  - 0.86
+  - 0.85
+  - 0.845
+  - 0.84
 slug: ir-information-retrieval
-summary: Process of obtaining relevant information from a large repository based on
+summary:
+  Process of obtaining relevant information from a large repository based on
   user queries.
 title: IR (Information Retrieval)
 ---

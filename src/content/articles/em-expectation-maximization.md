@@ -1,15 +1,15 @@
 ---
-category: MATH, CORE
 generality:
-- 0.82
-- 0.81
-- 0.8
-- 0.79
-- 0.78
-- 0.77
-- 0.76
+  - 0.82
+  - 0.81
+  - 0.8
+  - 0.79
+  - 0.78
+  - 0.77
+  - 0.76
 slug: em-expectation-maximization
-summary: Statistical technique used to find the maximum likelihood estimates of parameters
+summary:
+  Statistical technique used to find the maximum likelihood estimates of parameters
   in probabilistic models, specifically when the model depends on unobserved latent
   variables.
 title: EM (Expectation-Maximization)

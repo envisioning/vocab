@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
-- 0.425
-- 0.4
+  - 0.55
+  - 0.525
+  - 0.5
+  - 0.475
+  - 0.45
+  - 0.425
+  - 0.4
 slug: nerf-neural-radiance-fields
-summary: Technique for creating high-quality 3D models from a set of 2D images using
+summary:
+  Technique for creating high-quality 3D models from a set of 2D images using
   deep learning.
 title: NeRF (Neural Radiance Fields)
 ---

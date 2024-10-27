@@ -1,13 +1,12 @@
 ---
-category: DATA, MATH
 generality:
-- 0.725
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
+  - 0.725
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
 slug: confusion-matrix
 summary: Table used to evaluate the performance of a classification model by visualizing its true versus predicted values.
 title: Confusion Matrix

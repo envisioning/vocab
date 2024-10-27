@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.78
-- 0.765
-- 0.75
-- 0.735
-- 0.72
-- 0.705
-- 0.69
+  - 0.78
+  - 0.765
+  - 0.75
+  - 0.735
+  - 0.72
+  - 0.705
+  - 0.69
 slug: mlm-masked-language-modeling
-summary: Training technique where random words in a sentence are replaced with a special
+summary:
+  Training technique where random words in a sentence are replaced with a special
   token, and the model learns to predict these masked words based on their context.
 title: MLM (Masked-Language Modeling)
 ---

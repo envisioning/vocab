@@ -1,15 +1,15 @@
 ---
-category: MATH, DATA
 generality:
-- 0.81
-- 0.8
-- 0.79
-- 0.785
-- 0.78
-- 0.775
-- 0.77
+  - 0.81
+  - 0.8
+  - 0.79
+  - 0.785
+  - 0.78
+  - 0.775
+  - 0.77
 slug: nmf-non-negative-matrix-factorization
-summary: Technique in multivariate analysis that factors high-dimensional vectors
+summary:
+  Technique in multivariate analysis that factors high-dimensional vectors
   into a lower-dimensional representation, while preserving the non-negative elements
   in the data sets.
 title: NMF (Non-Negative Matrix Factorization)

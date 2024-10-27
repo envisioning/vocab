@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
+  - 0.55
 slug: mllms-multimodal-large-language-models
-summary: Advanced AI systems capable of understanding and generating information across
+summary:
+  Advanced AI systems capable of understanding and generating information across
   different forms of data, such as text, images, and audio.
 title: MLLMs (Multimodal Large Language Models)
 ---

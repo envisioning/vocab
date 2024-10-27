@@ -1,13 +1,12 @@
 ---
-category: CORE, MATH
 generality:
-- 0.95
-- 0.93
-- 0.91
-- 0.895
-- 0.88
-- 0.86
-- 0.84
+  - 0.95
+  - 0.93
+  - 0.91
+  - 0.895
+  - 0.88
+  - 0.86
+  - 0.84
 slug: optimization-problem
 summary: Optimization problem in AI which involves finding the best solution from all feasible solutions, given a set of constraints and an objective to achieve or optimize.
 title: Optimization Problem

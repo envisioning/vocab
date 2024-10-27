@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.73
-- 0.71
-- 0.69
-- 0.67
-- 0.65
-- 0.63
-- 0.61
+  - 0.73
+  - 0.71
+  - 0.69
+  - 0.67
+  - 0.65
+  - 0.63
+  - 0.61
 slug: mas-multi-agent-system
-summary: Software framework where several autonomous entities called agents interact
+summary:
+  Software framework where several autonomous entities called agents interact
   to achieve individual or collective goals.
 title: MAS (Multi-Agent System)
 ---

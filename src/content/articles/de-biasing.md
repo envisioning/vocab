@@ -1,5 +1,4 @@
 ---
-category: GOV, IMPL
 generality:
   - 0.85
   - 0.825

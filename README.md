@@ -1,6 +1,6 @@
 # Emerging vocabulary to explain AI
 
-Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which underpin the development of ML (Machine Learning) and its many derivations.
+Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which underpin the development of [ML (Machine Learning)](/ml-machine-learning) and its many derivations.
 
 ## This will help you:
 
@@ -22,7 +22,6 @@ The entire index has been co-created with different AI tools in order to create 
 
 - http://github.com/envisioning/vocab
 - https://envisioning.io/vocab
-- https://envisioning.ai
 
 ---
 

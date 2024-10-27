@@ -1,15 +1,15 @@
 ---
-category: CORE, MATH
 generality:
-- 0.95
-- 0.93
-- 0.91
-- 0.89
-- 0.87
-- 0.85
-- 0.83
+  - 0.95
+  - 0.93
+  - 0.91
+  - 0.89
+  - 0.87
+  - 0.85
+  - 0.83
 slug: rl-reinforcement-learning
-summary: Type of ML where an agent learns to make decisions by performing actions
+summary:
+  Type of ML where an agent learns to make decisions by performing actions
   in an environment to achieve a goal, guided by rewards.
 title: RL (Reinforcement Learning)
 ---

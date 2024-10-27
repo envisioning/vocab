@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.68
-- 0.665
-- 0.65
-- 0.635
-- 0.62
-- 0.605
-- 0.59
+  - 0.68
+  - 0.665
+  - 0.65
+  - 0.635
+  - 0.62
+  - 0.605
+  - 0.59
 slug: trpo-trust-region-policy-optimization
-summary: Advanced algorithm used in RL to ensure stable and reliable policy updates
+summary:
+  Advanced algorithm used in RL to ensure stable and reliable policy updates
   by optimizing within a trust region, thus preventing drastic policy changes.
 title: TRPO (Trust Region Policy Optimization)
 ---

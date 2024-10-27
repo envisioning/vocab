@@ -1,15 +1,15 @@
 ---
-category: IMPL, ARCH
 generality:
-- 0.84
-- 0.835
-- 0.83
-- 0.825
-- 0.82
-- 0.815
-- 0.81
+  - 0.84
+  - 0.835
+  - 0.83
+  - 0.825
+  - 0.82
+  - 0.815
+  - 0.81
 slug: cuda-compute-unified-device-architecture
-summary: Parallel computing platform and application programming interface (API) that
+summary:
+  Parallel computing platform and application programming interface (API) that
   allows software developers and software engineers to use a graphics processing unit
   (GPU) for general purpose processing.
 title: CUDA (Compute Unified Device Architecture)

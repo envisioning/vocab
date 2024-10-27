@@ -1,13 +1,12 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
-- 0.84
+  - 0.87
+  - 0.865
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
+  - 0.84
 slug: composability
 summary: Design feature in software systems that allows different components to be selected and assembled in various combinations to satisfy specific user requirements.
 title: Composability

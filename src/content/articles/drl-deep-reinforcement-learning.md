@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
-- 0.84
+  - 0.87
+  - 0.865
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
+  - 0.84
 slug: drl-deep-reinforcement-learning
-summary: Combines neural networks with a reinforcement learning framework, enabling
+summary:
+  Combines neural networks with a reinforcement learning framework, enabling
   AI systems to learn optimal actions through trial and error to maximize a cumulative
   reward.
 title: DRL (Deep Reinforcement Learning)

@@ -1,5 +1,4 @@
 ---
-category: CORE
 generality:
   - 0.975
   - 0.97

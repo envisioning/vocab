@@ -1,13 +1,12 @@
 ---
-category: CORE, IMPL
 generality:
-- 0.62
-- 0.605
-- 0.59
-- 0.575
-- 0.56
-- 0.545
-- 0.53
+  - 0.62
+  - 0.605
+  - 0.59
+  - 0.575
+  - 0.56
+  - 0.545
+  - 0.53
 slug: counterfactual-explanations
 summary: Statements or scenarios that explain how a different outcome could have been achieved by altering specific inputs or conditions in an AI system.
 title: Counterfactual Explanations

@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
+  - 0.6
+  - 0.575
+  - 0.55
+  - 0.525
+  - 0.5
+  - 0.475
+  - 0.45
 slug: pq-product-quantization
-summary: Technique used in large-scale vector quantization for efficient similarity
+summary:
+  Technique used in large-scale vector quantization for efficient similarity
   search and data compression by decomposing high-dimensional vectors into smaller
   sub-vectors and quantizing each sub-vector separately.
 title: PQ (Product Quantization)

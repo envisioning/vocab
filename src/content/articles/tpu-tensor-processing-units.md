@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.87
-- 0.85
-- 0.835
-- 0.82
-- 0.805
-- 0.79
-- 0.775
+  - 0.87
+  - 0.85
+  - 0.835
+  - 0.82
+  - 0.805
+  - 0.79
+  - 0.775
 slug: tpu-tensor-processing-units
-summary: Specialized hardware accelerators designed to significantly speed up the
+summary:
+  Specialized hardware accelerators designed to significantly speed up the
   calculations required for ML tasks.
 title: TPU (Tensor Processing Units)
 ---

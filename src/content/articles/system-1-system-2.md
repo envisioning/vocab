@@ -1,5 +1,4 @@
 ---
-category: BIO
 generality:
   - 0.65
   - 0.625

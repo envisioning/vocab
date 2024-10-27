@@ -1,5 +1,4 @@
 ---
-category: IMPL, DATA
 generality:
   - 0.75
   - 0.735

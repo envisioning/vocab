@@ -1,13 +1,12 @@
 ---
-category: CORE, MATH
 generality:
-- 0.66
-- 0.635
-- 0.61
-- 0.585
-- 0.56
-- 0.535
-- 0.51
+  - 0.66
+  - 0.635
+  - 0.61
+  - 0.585
+  - 0.56
+  - 0.535
+  - 0.51
 slug: attestation
 summary: Process of verifying the integrity and authenticity of a system or software, ensuring that it has not been tampered with or compromised.
 title: Attestation

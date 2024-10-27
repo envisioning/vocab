@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 0.81
-- 0.8
-- 0.795
-- 0.79
-- 0.785
-- 0.78
-- 0.775
+  - 0.81
+  - 0.8
+  - 0.795
+  - 0.79
+  - 0.785
+  - 0.78
+  - 0.775
 slug: data-efficient-learning
 summary: ML approach that requires fewer data to train a functional model.
 title: Data Efficient Learning

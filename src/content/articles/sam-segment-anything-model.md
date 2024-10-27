@@ -1,15 +1,15 @@
 ---
-category: ARCH, DATA
 generality:
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
+  - 0.6
+  - 0.575
+  - 0.55
+  - 0.525
+  - 0.5
+  - 0.475
+  - 0.45
 slug: sam-segment-anything-model
-summary: AI model designed for high-precision image segmentation, capable of identifying
+summary:
+  AI model designed for high-precision image segmentation, capable of identifying
   and delineating every object within an image.
 title: SAM (Segment Anything Model)
 ---

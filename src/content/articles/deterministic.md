@@ -1,13 +1,12 @@
 ---
-category: CORE, MATH
 generality:
-- 0.85
-- 0.825
-- 0.8
-- 0.775
-- 0.75
-- 0.725
-- 0.7
+  - 0.85
+  - 0.825
+  - 0.8
+  - 0.775
+  - 0.75
+  - 0.725
+  - 0.7
 slug: deterministic
 summary: System or process is one that, given a particular initial state, will always produce the same output or result, with no randomness or unpredictability involved.
 title: Deterministic

@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.89
-- 0.865
-- 0.84
-- 0.815
-- 0.79
-- 0.765
-- 0.74
+  - 0.89
+  - 0.865
+  - 0.84
+  - 0.815
+  - 0.79
+  - 0.765
+  - 0.74
 slug: ssl-self-supervised-learning
-summary: Type of ML where the system learns to predict part of its input from other
+summary:
+  Type of ML where the system learns to predict part of its input from other
   parts, using its own data structure as supervision.
 title: SSL (Self-Supervised Learning)
 ---

@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
+  - 0.55
 slug: ebm-energy-based-model
-summary: Class of deep learning models that learn to associate lower energy levels
+summary:
+  Class of deep learning models that learn to associate lower energy levels
   with more probable configurations of the input data.
 title: EBM (Energy-Based Model)
 ---

@@ -1,15 +1,15 @@
 ---
-category: CORE, IMPL
 generality:
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
+  - 0.6
+  - 0.575
+  - 0.55
+  - 0.525
+  - 0.5
+  - 0.475
+  - 0.45
 slug: ifeval-instruction-following-eval
-summary: Methodology designed to assess the ability of AI systems to follow and execute
+summary:
+  Methodology designed to assess the ability of AI systems to follow and execute
   human-given instructions accurately and effectively.
 title: IFEval (Instruction-Following Eval)
 ---

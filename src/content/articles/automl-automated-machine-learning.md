@@ -1,15 +1,15 @@
 ---
-category: CORE, IMPL
 generality:
-- 0.85
-- 0.83
-- 0.81
-- 0.79
-- 0.77
-- 0.75
-- 0.73
+  - 0.85
+  - 0.83
+  - 0.81
+  - 0.79
+  - 0.77
+  - 0.75
+  - 0.73
 slug: automl-automated-machine-learning
-summary: Streamlines the process of applying ML by automating the tasks of selecting
+summary:
+  Streamlines the process of applying ML by automating the tasks of selecting
   the appropriate algorithms and tuning their hyperparameters.
 title: AutoML (Automated Machine Learning)
 ---

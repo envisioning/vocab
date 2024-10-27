@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.95
-- 0.935
-- 0.92
-- 0.905
-- 0.89
-- 0.875
-- 0.86
+  - 0.95
+  - 0.935
+  - 0.92
+  - 0.905
+  - 0.89
+  - 0.875
+  - 0.86
 slug: dl-deep-learning
-summary: Subset of machine learning that involves neural networks with many layers,
+summary:
+  Subset of machine learning that involves neural networks with many layers,
   enabling the modeling of complex patterns in data.
 title: DL (Deep Learning)
 ---

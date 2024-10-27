@@ -1,5 +1,4 @@
 ---
-category: GOV, ARCH
 generality:
   - 0.72
   - 0.69

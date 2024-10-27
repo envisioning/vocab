@@ -1,5 +1,4 @@
 ---
-category: CORE, MATH
 generality:
   - 0.901
   - 0.892

@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.83
-- 0.825
-- 0.82
-- 0.815
-- 0.81
-- 0.805
-- 0.8
+  - 0.83
+  - 0.825
+  - 0.82
+  - 0.815
+  - 0.81
+  - 0.805
+  - 0.8
 slug: rfm-robotics-foundational-model
-summary: Base model designed to provide fundamental capabilities or understanding
+summary:
+  Base model designed to provide fundamental capabilities or understanding
   for the development of various robotic systems and applications.
 title: RFM (Robotics Foundational Model)
 ---

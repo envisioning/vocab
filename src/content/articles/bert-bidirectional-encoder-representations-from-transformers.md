@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.84
-- 0.82
-- 0.805
-- 0.79
-- 0.77
-- 0.75
-- 0.73
+  - 0.84
+  - 0.82
+  - 0.805
+  - 0.79
+  - 0.77
+  - 0.75
+  - 0.73
 slug: bert-bidirectional-encoder-representations-from-transformers
-summary: Deep Learning model for NLP that significantly improves the understanding
+summary:
+  Deep Learning model for NLP that significantly improves the understanding
   of context and the meaning of words in sentences by analyzing text bidirectionally.
 title: BERT (Bidirectional Encoder Representations from Transformers)
 ---

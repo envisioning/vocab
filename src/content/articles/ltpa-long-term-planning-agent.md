@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.61
-- 0.6
-- 0.59
-- 0.58
-- 0.57
-- 0.56
-- 0.55
+  - 0.61
+  - 0.6
+  - 0.59
+  - 0.58
+  - 0.57
+  - 0.56
+  - 0.55
 slug: ltpa-long-term-planning-agent
-summary: AI system designed to make decisions over extended periods, considering future
+summary:
+  AI system designed to make decisions over extended periods, considering future
   consequences and outcomes.
 title: LTPA (Long-Term Planning Agent)
 ---

@@ -1,15 +1,15 @@
 ---
-category: CORE, IMPL
 generality:
-- 0.77
-- 0.76
-- 0.75
-- 0.74
-- 0.73
-- 0.72
-- 0.71
+  - 0.77
+  - 0.76
+  - 0.75
+  - 0.74
+  - 0.73
+  - 0.72
+  - 0.71
 slug: adam-adaptive-moment-estimation
-summary: Algorithm for gradient-based optimization of stochastic objective functions,
+summary:
+  Algorithm for gradient-based optimization of stochastic objective functions,
   widely used in training DL models.
 title: ADAM (Adaptive Moment Estimation)
 ---

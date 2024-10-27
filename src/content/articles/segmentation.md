@@ -1,13 +1,12 @@
 ---
-category: DATA, CORE
 generality:
-- 0.88
-- 0.865
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
+  - 0.88
+  - 0.865
+  - 0.845
+  - 0.83
+  - 0.815
+  - 0.8
+  - 0.785
 slug: segmentation
 summary: Process in AI that subdivides an image or dataset into multiple parts to simplify and/or change the perspective of comprehension.
 title: Segmentation

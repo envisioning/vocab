@@ -1,5 +1,4 @@
 ---
-category: CORE, ARCH
 generality:
   - 0.65
   - 0.635

@@ -1,13 +1,12 @@
 ---
-category: ARCH, BIO
 generality:
-- 0.315
-- 0.292
-- 0.27
-- 0.248
-- 0.225
-- 0.202
-- 0.18
+  - 0.315
+  - 0.292
+  - 0.27
+  - 0.248
+  - 0.225
+  - 0.202
+  - 0.18
 slug: mortal-computation
 summary: Novel concept in computing that integrates the hardware-software relationship more closely, where computational systems are designed to reflect biological principles, particularly mortality and adaptability.
 title: Mortal Computation

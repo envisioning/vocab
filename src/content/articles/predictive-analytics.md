@@ -1,5 +1,4 @@
 ---
-category: DATA, MATH
 generality:
   - 0.9
   - 0.875

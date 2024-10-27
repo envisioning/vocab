@@ -1,13 +1,12 @@
 ---
-category: BIO, DATA
 generality:
-- 0.51
-- 0.495
-- 0.48
-- 0.465
-- 0.45
-- 0.435
-- 0.42
+  - 0.51
+  - 0.495
+  - 0.48
+  - 0.465
+  - 0.45
+  - 0.435
+  - 0.42
 slug: biomarkers
 summary: Identifiable biological indicators that offer valuable insights into the health or disease status of an individual in the context of AI.
 title: Biomarkers

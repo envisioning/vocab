@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.45
-- 0.435
-- 0.42
-- 0.405
-- 0.39
-- 0.375
-- 0.36
+  - 0.45
+  - 0.435
+  - 0.42
+  - 0.405
+  - 0.39
+  - 0.375
+  - 0.36
 slug: emt-extended-mind-transformer
-summary: Transformer model architecture that integrates external memory systems to
+summary:
+  Transformer model architecture that integrates external memory systems to
   enhance the model's ability to handle long-range dependencies and maintain relevant
   information over extended inputs. This approach allows the transformer to "extend
   its mind" by attending to external memories dynamically, improving its performance

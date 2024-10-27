@@ -1,15 +1,15 @@
 ---
-category: MATH, CORE
 generality:
-- 0.95
-- 0.93
-- 0.91
-- 0.89
-- 0.87
-- 0.85
-- 0.83
+  - 0.95
+  - 0.93
+  - 0.91
+  - 0.89
+  - 0.87
+  - 0.85
+  - 0.83
 slug: matmul-matrix-multiplication
-summary: Fundamental operation in linear algebra and essential in various applications,
+summary:
+  Fundamental operation in linear algebra and essential in various applications,
   including neural networks and machine learning algorithms.
 title: MatMul (Matrix Multiplication)
 ---

@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.72
-- 0.7
-- 0.68
-- 0.66
-- 0.64
-- 0.62
-- 0.6
+  - 0.72
+  - 0.7
+  - 0.68
+  - 0.66
+  - 0.64
+  - 0.62
+  - 0.6
 slug: zsl-zero-shot-learning
-summary: ML technique where a model learns to recognize objects, tasks, or concepts
+summary:
+  ML technique where a model learns to recognize objects, tasks, or concepts
   it has never seen during training.
 title: ZSL (Zero-Shot Learning)
 ---

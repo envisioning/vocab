@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
-- 0.77
-- 0.755
+  - 0.845
+  - 0.83
+  - 0.815
+  - 0.8
+  - 0.785
+  - 0.77
+  - 0.755
 slug: semi-supervised-learning
 summary: ML approach that uses a combination of a small amount of labeled data and a large amount of unlabeled data for training models.
 title: Semi-Supervised Learning

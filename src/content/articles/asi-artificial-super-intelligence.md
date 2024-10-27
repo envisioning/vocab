@@ -1,15 +1,15 @@
 ---
-category: CORE, GOV
 generality:
-- 0.8
-- 0.805
-- 0.81
-- 0.815
-- 0.82
-- 0.825
-- 0.83
+  - 0.8
+  - 0.805
+  - 0.81
+  - 0.815
+  - 0.82
+  - 0.825
+  - 0.83
 slug: asi-artificial-super-intelligence
-summary: Hypothetical form of AI that surpasses human intelligence across all domains,
+summary:
+  Hypothetical form of AI that surpasses human intelligence across all domains,
   including creativity, general wisdom, and problem-solving capabilities.
 title: ASI (Artificial Super Intelligence)
 ---

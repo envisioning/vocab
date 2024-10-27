@@ -20,14 +20,17 @@ export default async function ReadmePage() {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto mt-6">
           <div className="px-8 py-6">
             <div
-              className="prose max-w-none 
-                prose-headings:mt-8 prose-headings:mb-4
-                prose-p:my-6 prose-p:leading-7
-                prose-li:my-2 prose-li:leading-7
-                prose-ul:my-4 prose-ol:my-4
-                [&>p]:mb-8 [&>p]:mt-4
-                [&>p]:text-gray-600
-                [&>p+p]:mt-8"
+              className="prose max-w-none
+                prose-headings:font-display
+                prose-h1:text-2xl prose-h1:font-bold prose-h1:text-gray-900 prose-h1:mb-6 prose-h1:mt-12
+                prose-h2:text-xl prose-h2:font-semibold prose-h2:text-gray-800 prose-h2:mb-4 prose-h2:mt-10
+                prose-h3:text-lg prose-h3:font-medium prose-h3:text-gray-700 prose-h3:mb-4 prose-h3:mt-8
+                prose-h4:text-m prose-h4:font-medium prose-h4:text-gray-700 prose-h4:mb-3 prose-h4:mt-6
+                prose-p:text-gray-600 prose-p:leading-7 prose-p:mb-4
+                prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
+                prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
+                prose-li:my-2 prose-li:text-gray-600
+                prose-hr:my-8 prose-hr:border-gray-200"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
           </div>

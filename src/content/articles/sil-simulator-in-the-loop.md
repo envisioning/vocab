@@ -1,15 +1,15 @@
 ---
-category: IMPL, ARCH
 generality:
-- 0.62
-- 0.6
-- 0.585
-- 0.565
-- 0.55
-- 0.53
-- 0.51
+  - 0.62
+  - 0.6
+  - 0.585
+  - 0.565
+  - 0.55
+  - 0.53
+  - 0.51
 slug: sil-simulator-in-the-loop
-summary: Methodology in which a simulator is integrated into the control loop of a
+summary:
+  Methodology in which a simulator is integrated into the control loop of a
   system, providing a virtual environment for real-time testing and validation of
   algorithms, control strategies, or system performance.
 title: SIL (Simulator in the Loop)

@@ -1,5 +1,4 @@
 ---
-category: ARCH, IMPL
 generality:
   - 0.725
   - 0.7

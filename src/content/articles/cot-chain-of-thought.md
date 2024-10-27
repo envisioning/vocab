@@ -1,15 +1,15 @@
 ---
-category: CORE, BIO
 generality:
-- 0.74
-- 0.715
-- 0.69
-- 0.665
-- 0.64
-- 0.615
-- 0.59
+  - 0.74
+  - 0.715
+  - 0.69
+  - 0.665
+  - 0.64
+  - 0.615
+  - 0.59
 slug: cot-chain-of-thought
-summary: Reasoning method employed in AI that mimics human-like thought processes
+summary:
+  Reasoning method employed in AI that mimics human-like thought processes
   to solve complex problems by breaking them down into a series of simpler, interconnected
   steps.
 title: CoT (Chain of Thought)

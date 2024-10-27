@@ -1,13 +1,12 @@
 ---
-category: DATA, CORE
 generality:
-- 0.98
-- 0.97
-- 0.96
-- 0.95
-- 0.94
-- 0.93
-- 0.92
+  - 0.98
+  - 0.97
+  - 0.96
+  - 0.95
+  - 0.94
+  - 0.93
+  - 0.92
 slug: training-data
 summary: Dataset used to teach a ML model how to make predictions or perform tasks.
 title: Training Data

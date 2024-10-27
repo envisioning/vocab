@@ -1,13 +1,12 @@
 ---
-category: MATH, DATA
 generality:
-- 0.875
-- 0.85
-- 0.89
-- 0.86
-- 0.88
-- 0.865
-- 0.87
+  - 0.875
+  - 0.85
+  - 0.89
+  - 0.86
+  - 0.88
+  - 0.865
+  - 0.87
 slug: causal-inference
 summary: Process of determining the cause-and-effect relationship between variables.
 title: Causal Inference

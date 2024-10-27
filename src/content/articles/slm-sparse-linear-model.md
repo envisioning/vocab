@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.61
-- 0.63
-- 0.605
-- 0.615
-- 0.625
-- 0.62
-- 0.635
+  - 0.61
+  - 0.63
+  - 0.605
+  - 0.615
+  - 0.625
+  - 0.62
+  - 0.635
 slug: slm-sparse-linear-model
-summary: Predictive model that uses a sparse representation of the underlying data
+summary:
+  Predictive model that uses a sparse representation of the underlying data
   to make accurate predictions.
 title: SLM (Sparse Linear Model)
 ---

@@ -1,15 +1,15 @@
 ---
-category: IMPL, DATA
 generality:
-- 0.4
-- 0.375
-- 0.35
-- 0.325
-- 0.3
-- 0.275
-- 0.25
+  - 0.4
+  - 0.375
+  - 0.35
+  - 0.325
+  - 0.3
+  - 0.275
+  - 0.25
 slug: ttt-test-time-training
-summary: ML approach where the model adapts itself during the inference phase using
+summary:
+  ML approach where the model adapts itself during the inference phase using
   auxiliary tasks and additional training data available at test time to improve performance.
 title: TTT (Test-Time Training)
 ---

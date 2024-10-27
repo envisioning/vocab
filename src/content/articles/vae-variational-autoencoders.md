@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.793
-- 0.769
-- 0.745
-- 0.721
-- 0.697
-- 0.673
-- 0.649
+  - 0.793
+  - 0.769
+  - 0.745
+  - 0.721
+  - 0.697
+  - 0.673
+  - 0.649
 slug: vae-variational-autoencoders
-summary: Class of generative models that use neural networks to encode inputs into
+summary:
+  Class of generative models that use neural networks to encode inputs into
   a latent space and then decode from this space to reconstruct the input or generate
   new data that resemble the input data.
 title: VAE (Variational Autoencoders)

@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.71
-- 0.685
-- 0.66
-- 0.635
-- 0.61
-- 0.585
-- 0.56
+  - 0.71
+  - 0.685
+  - 0.66
+  - 0.635
+  - 0.61
+  - 0.585
+  - 0.56
 slug: npc-non-player-character
-summary: Character in a virtual environment that operates under AI control, exhibiting
+summary:
+  Character in a virtual environment that operates under AI control, exhibiting
   behaviors or responses not directed by human players.
 title: NPC (Non-Player Character)
 ---

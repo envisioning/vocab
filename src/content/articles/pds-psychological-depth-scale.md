@@ -1,5 +1,4 @@
 ---
-category: BIO, MATH
 generality:
   - 0.28
   - 0.26

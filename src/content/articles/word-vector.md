@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 0.75
-- 0.73
-- 0.71
-- 0.69
-- 0.67
-- 0.65
-- 0.63
+  - 0.75
+  - 0.73
+  - 0.71
+  - 0.69
+  - 0.67
+  - 0.65
+  - 0.63
 slug: word-vector
 summary: Numerical representations of words that capture their meanings, relationships, and context within a language.
 title: Word Vector

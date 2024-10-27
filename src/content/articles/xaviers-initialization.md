@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.735
-- 0.715
-- 0.69
-- 0.67
-- 0.645
-- 0.625
-- 0.6
+  - 0.735
+  - 0.715
+  - 0.69
+  - 0.67
+  - 0.645
+  - 0.625
+  - 0.6
 slug: xaviers-initialization
-summary: Weight initialization technique designed to keep the variance of the outputs
+summary:
+  Weight initialization technique designed to keep the variance of the outputs
   of a neuron approximately equal to the variance of its inputs across layers in a
   deep neural network.
 title: Xavier's Initialization

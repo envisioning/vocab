@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.89
-- 0.88
-- 0.87
-- 0.86
-- 0.85
-- 0.84
-- 0.83
+  - 0.89
+  - 0.88
+  - 0.87
+  - 0.86
+  - 0.85
+  - 0.84
+  - 0.83
 slug: gcc-general-computer-control
-summary: Ability of an AI system to autonomously manage and utilize a wide range of
+summary:
+  Ability of an AI system to autonomously manage and utilize a wide range of
   computer software and systems without specific programming for each individual task.
 title: GCC (General Computer Control)
 ---

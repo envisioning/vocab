@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.8
-- 0.79
-- 0.78
-- 0.77
-- 0.76
-- 0.75
-- 0.74
+  - 0.8
+  - 0.79
+  - 0.78
+  - 0.77
+  - 0.76
+  - 0.75
+  - 0.74
 slug: rbms-restricted-boltzmann-machines
-summary: Type of generative stochastic artificial neural network that can learn a
+summary:
+  Type of generative stochastic artificial neural network that can learn a
   probability distribution over its set of inputs.
 title: RBMs (Restricted Boltzmann Machines)
 ---

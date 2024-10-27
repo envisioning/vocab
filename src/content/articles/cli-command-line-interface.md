@@ -1,15 +1,15 @@
 ---
-category: IMPL, ARCH
 generality:
-- 0.875
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
+  - 0.875
+  - 0.87
+  - 0.865
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
 slug: cli-command-line-interface
-summary: Text-based user interface used to interact with software or operating systems
+summary:
+  Text-based user interface used to interact with software or operating systems
   through commands, rather than graphical elements.
 title: CLI (Command Line Interface)
 ---

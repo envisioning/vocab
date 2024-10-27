@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 1.0
-- 0.98
-- 0.96
-- 0.94
-- 0.92
-- 0.9
-- 0.88
+  - 1.0
+  - 0.98
+  - 0.96
+  - 0.94
+  - 0.92
+  - 0.9
+  - 0.88
 slug: training
 summary: Process of teaching a ML model to make accurate predictions or decisions, by adjusting its parameters based on data.
 title: Training
@@ -18,7 +17,6 @@ Training is a fundamental aspect of developing machine learning (ML) models, a p
 The concept of training machine learning models has been around since the inception of the field, with notable developments in training methods occurring alongside advancements in computational power and algorithmic efficiency. The backpropagation algorithm, central to training deep neural networks, was first introduced in the 1970s but gained significant popularity in the 1980s as computational resources became more accessible.
 
 While it's challenging to credit the development of training in AI to specific individuals due to its broad and foundational nature, several figures stand out in the history of machine learning and neural networks. Notably, Geoffrey Hinton, Yann LeCun, and Yoshua Bengio have made significant contributions to the development of training algorithms and techniques, particularly in the context of deep learning, earning them the nickname "the Godfathers of AI".
-
 
 In the context of artificial intelligence (AI), "training" refers to the process of teaching a machine learning model to make predictions or decisions based on data. This involves providing the model with input data (often known as features) and the corresponding output data (such as labels for classification problems or actual values for regression problems), and allowing the model to learn the relationships between inputs and outputs. The goal is for the model to generalize from the training data so that it can accurately predict or make decisions about new, unseen data.
 

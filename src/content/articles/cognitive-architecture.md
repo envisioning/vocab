@@ -1,5 +1,4 @@
 ---
-category: ARCH, BIO
 generality:
   - 0.925
   - 0.9

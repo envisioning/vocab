@@ -1,13 +1,12 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.85
-- 0.855
-- 0.86
-- 0.865
-- 0.87
-- 0.875
-- 0.88
+  - 0.85
+  - 0.855
+  - 0.86
+  - 0.865
+  - 0.87
+  - 0.875
+  - 0.88
 slug: embedding
 summary: Representations of items, like words, sentences, or objects, in a continuous vector space, facilitating their quantitative comparison and manipulation by AI models.
 title: Embedding

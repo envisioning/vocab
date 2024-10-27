@@ -1,13 +1,12 @@
 ---
-category: DATA
 generality:
-- 0.89
-- 0.87
-- 0.85
-- 0.83
-- 0.81
-- 0.79
-- 0.77
+  - 0.89
+  - 0.87
+  - 0.85
+  - 0.83
+  - 0.81
+  - 0.79
+  - 0.77
 slug: unstructured-data
 summary: Data that lacks a pre-defined format or organization, making it challenging to collect, process, and analyze using conventional database tools.
 title: Unstructured Data

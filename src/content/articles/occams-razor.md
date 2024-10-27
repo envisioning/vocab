@@ -1,15 +1,15 @@
 ---
-category: MATH, CORE
 generality:
-- 0.95
-- 0.91
-- 0.875
-- 0.855
-- 0.84
-- 0.815
-- 0.8
+  - 0.95
+  - 0.91
+  - 0.875
+  - 0.855
+  - 0.84
+  - 0.815
+  - 0.8
 slug: occams-razor
-summary: Principle that, among competing models with similar predictive power, the
+summary:
+  Principle that, among competing models with similar predictive power, the
   simplest one should be chosen.
 title: Occam's Razor
 ---

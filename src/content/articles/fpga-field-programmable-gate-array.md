@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
+  - 0.55
 slug: fpga-field-programmable-gate-array
-summary: Type of integrated circuit that can be configured by the customer or designer
+summary:
+  Type of integrated circuit that can be configured by the customer or designer
   after manufacturing.
 title: FPGA (Field-Programmable Gate Array)
 ---

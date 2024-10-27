@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
+  - 0.55
+  - 0.525
+  - 0.5
 slug: fsl-few-shot-learning
-summary: ML approach that enables models to learn and make accurate predictions from
+summary:
+  ML approach that enables models to learn and make accurate predictions from
   a very small dataset.
 title: FSL (Few-Shot Learning)
 ---

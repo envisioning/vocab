@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.85
-- 0.825
-- 0.8
-- 0.775
-- 0.75
-- 0.725
-- 0.7
+  - 0.85
+  - 0.825
+  - 0.8
+  - 0.775
+  - 0.75
+  - 0.725
+  - 0.7
 slug: mlp-multilayer-perceptron
-summary: Type of artificial neural network comprised of multiple layers of neurons,
+summary:
+  Type of artificial neural network comprised of multiple layers of neurons,
   with each layer fully connected to the next, commonly used for tasks involving classification
   and regression.
 title: MLP (Multilayer Perceptron)

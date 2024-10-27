@@ -1,15 +1,15 @@
 ---
-category: MATH, CORE
 generality:
-- 0.83
-- 0.82
-- 0.81
-- 0.8
-- 0.79
-- 0.78
-- 0.77
+  - 0.83
+  - 0.82
+  - 0.81
+  - 0.8
+  - 0.79
+  - 0.78
+  - 0.77
 slug: csps-constraint-satisfaction-problems
-summary: Mathematical problems defined by a set of variables, a domain of values for
+summary:
+  Mathematical problems defined by a set of variables, a domain of values for
   each variable, and a set of constraints specifying allowable combinations of values.
 title: CSPs (Constraint Satisfaction Problems)
 ---

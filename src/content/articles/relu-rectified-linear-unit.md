@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.9
-- 0.885
-- 0.87
-- 0.855
-- 0.84
-- 0.825
-- 0.81
+  - 0.9
+  - 0.885
+  - 0.87
+  - 0.855
+  - 0.84
+  - 0.825
+  - 0.81
 slug: relu-rectified-linear-unit
-summary: Activation function commonly used in neural networks which outputs the input
+summary:
+  Activation function commonly used in neural networks which outputs the input
   directly if it is positive, otherwise, it outputs zero.
 title: ReLU (Rectified Linear Unit)
 ---

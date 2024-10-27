@@ -1,13 +1,12 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.8
-- 0.805
-- 0.81
-- 0.815
-- 0.82
-- 0.825
-- 0.83
+  - 0.8
+  - 0.805
+  - 0.81
+  - 0.815
+  - 0.82
+  - 0.825
+  - 0.83
 slug: sequential-models
 summary: Type of data models in AI where the arrangement of data points or events adhere to a specific order for predictive analysis and pattern recognition.
 title: Sequential Models

@@ -1,15 +1,15 @@
 ---
-category: DATA, ARCH
 generality:
-- 0.61
-- 0.6
-- 0.59
-- 0.58
-- 0.57
-- 0.56
-- 0.55
+  - 0.61
+  - 0.6
+  - 0.59
+  - 0.58
+  - 0.57
+  - 0.56
+  - 0.55
 slug: sae-structural-adaptive-embeddings
-summary: Embedding technique that dynamically adapts to the structural properties
+summary:
+  Embedding technique that dynamically adapts to the structural properties
   of the data to improve the representation of complex relationships within the dataset.
 title: SAE (Structural Adaptive Embeddings)
 ---

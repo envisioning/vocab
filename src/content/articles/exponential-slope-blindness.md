@@ -1,5 +1,4 @@
 ---
-category: BIO, GOV
 generality:
   - 0.32
   - 0.305

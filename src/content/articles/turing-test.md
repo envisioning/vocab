@@ -1,13 +1,12 @@
 ---
-category: CORE, GOV
 generality:
-- 0.9
-- 0.875
-- 0.85
-- 0.825
-- 0.8
-- 0.775
-- 0.75
+  - 0.9
+  - 0.875
+  - 0.85
+  - 0.825
+  - 0.8
+  - 0.775
+  - 0.75
 slug: turing-test
 summary: Measure of a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human.
 title: Turing Test

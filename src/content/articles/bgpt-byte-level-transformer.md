@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.49
-- 0.47
-- 0.45
-- 0.43
-- 0.41
-- 0.39
-- 0.37
+  - 0.49
+  - 0.47
+  - 0.45
+  - 0.43
+  - 0.41
+  - 0.39
+  - 0.37
 slug: bgpt-byte-level-transformer
-summary: Variant of the GPT architecture designed to process data at the byte level
+summary:
+  Variant of the GPT architecture designed to process data at the byte level
   rather than at the word or sub-word level, allowing for greater flexibility in handling
   diverse text types and structures.
 title: bGPT (Byte-Level Transformer)

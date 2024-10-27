@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.75
-- 0.725
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
+  - 0.75
+  - 0.725
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
 slug: lvlms-large-vision-language-models
-summary: Advanced AI systems designed to integrate and interpret both visual and textual
+summary:
+  Advanced AI systems designed to integrate and interpret both visual and textual
   data, enabling more sophisticated understanding and generation based on both modalities.
 title: LVLMs (Large Vision Language Models)
 ---

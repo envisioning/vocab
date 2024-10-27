@@ -1,15 +1,15 @@
 ---
-category: MATH, CORE
 generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
+  - 0.55
 slug: ssm-state-space-model
-summary: Mathematical frameworks used to model dynamic systems by describing their
+summary:
+  Mathematical frameworks used to model dynamic systems by describing their
   states in space and how these states evolve over time under the influence of inputs,
   disturbances, and noise.
 title: SSM (State-Space Model)

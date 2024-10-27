@@ -1,13 +1,12 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.625
-- 0.61
-- 0.595
-- 0.58
-- 0.565
-- 0.55
-- 0.535
+  - 0.625
+  - 0.61
+  - 0.595
+  - 0.58
+  - 0.565
+  - 0.55
+  - 0.535
 slug: transposed-convolutional-layer
 summary: Type of neural network layer that performs the opposite operation of a traditional convolutional layer, effectively upscaling input feature maps to a larger spatial resolution.
 title: Transposed Convolutional Layer

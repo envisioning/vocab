@@ -1,5 +1,4 @@
 ---
-category: BIO, CORE
 generality:
   - 0.6
   - 0.58

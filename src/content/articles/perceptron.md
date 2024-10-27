@@ -1,13 +1,12 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.872
-- 0.845
-- 0.82
-- 0.798
-- 0.776
-- 0.752
-- 0.73
+  - 0.872
+  - 0.845
+  - 0.82
+  - 0.798
+  - 0.776
+  - 0.752
+  - 0.73
 slug: perceptron
 summary: Model in neural networks designed to perform binary classification tasks by mimicking the decision-making process of a single neuron.
 title: Perceptron

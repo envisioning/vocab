@@ -1,15 +1,15 @@
 ---
-category: MATH, DATA
 generality:
-- 0.86
-- 0.855
-- 0.85
-- 0.845
-- 0.84
-- 0.835
-- 0.83
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
+  - 0.84
+  - 0.835
+  - 0.83
 slug: mdl-minimum-description-length
-summary: Principle formalization of Occam's Razor in information theory, advocating
+summary:
+  Principle formalization of Occam's Razor in information theory, advocating
   that the best hypothesis for a given set of data is the one that leads to the shortest
   total description of the data and the hypothesis.
 title: MDL (Minimum Description Length)

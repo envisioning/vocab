@@ -1,5 +1,4 @@
 ---
-category: CORE, DATA
 generality:
   - 0.92
   - 0.905

@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.83
-- 0.84
-- 0.85
-- 0.855
-- 0.86
-- 0.865
-- 0.87
+  - 0.83
+  - 0.84
+  - 0.85
+  - 0.855
+  - 0.86
+  - 0.865
+  - 0.87
 slug: dqn-deep-q-networks
-summary: RL technique that combines Q-learning with deep neural networks to enable
+summary:
+  RL technique that combines Q-learning with deep neural networks to enable
   agents to learn how to make optimal decisions from high-dimensional sensory inputs.
 title: DQN (Deep Q-Networks)
 ---

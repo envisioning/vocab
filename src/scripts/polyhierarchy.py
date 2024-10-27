@@ -31,7 +31,6 @@ def parse_markdown_files(directory):
                         frontmatter = frontmatter_match.group(1)
                         title_match = re.search(r'title:\s*"?([^"\n]+)"?', frontmatter)
                         summary_match = re.search(r'summary:\s*"?(.*?)(?:"|$|\n)', frontmatter)
-                        categories_match = re.search(r'category:\s*([^\n]+)', frontmatter)
                         slug_match = re.search(r'slug:\s*"?([^"\n]+)"?', frontmatter)
                         
                         # Add generality extraction
@@ -44,10 +43,6 @@ def parse_markdown_files(directory):
                             title = title_match.group(1).strip()
                             summary = summary_match.group(1).strip()
                             summary = re.sub(r'\s+', ' ', summary)
-                            
-                            categories = []
-                            if categories_match:
-                                categories = [cat.strip() for cat in categories_match.group(1).split(',')]
                             
                             slug = slug_match.group(1).strip() if slug_match else None
                             
@@ -68,10 +63,9 @@ def parse_markdown_files(directory):
                             # Store all metadata and content
                             terms[title] = {
                                 'summary': summary,
-                                'categories': categories,
                                 'slug': slug,
                                 'content': main_content,
-                                'generality_scores': generality_scores  # Add generality scores
+                                'generality_scores': generality_scores
                             }
                             
                             logging.info(f"Successfully parsed {filename}")
@@ -199,7 +193,6 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
             "slug": id_mapping[term], 
             "name": term,
             "summary": terms[term]['summary'],
-            "categories": terms[term]['categories'],
             "generality": generality_avg,
             "children": [
                 {
@@ -226,7 +219,6 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 "slug": id_mapping[term],  # Changed from "id" to "slug"
                 "name": term,
                 "summary": terms[term]['summary'],
-                "categories": terms[term]['categories'],
                 "generality": generality_avg,
                 "children": []
             }

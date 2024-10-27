@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.89
-- 0.865
-- 0.84
-- 0.815
-- 0.79
-- 0.765
-- 0.74
+  - 0.89
+  - 0.865
+  - 0.84
+  - 0.815
+  - 0.79
+  - 0.765
+  - 0.74
 slug: gofai-good-old-fashioned-ai
-summary: Traditional approach to AI that relies on symbolic reasoning, logic, and
+summary:
+  Traditional approach to AI that relies on symbolic reasoning, logic, and
   rule-based systems to simulate intelligent behavior.
 title: GOFAI (Good Old-Fashioned AI)
 ---

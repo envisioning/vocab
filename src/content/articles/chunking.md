@@ -1,13 +1,12 @@
 ---
-category: CORE, BIO
 generality:
-- 0.875
-- 0.85
-- 0.825
-- 0.8
-- 0.775
-- 0.75
-- 0.725
+  - 0.875
+  - 0.85
+  - 0.825
+  - 0.8
+  - 0.775
+  - 0.75
+  - 0.725
 slug: chunking
 summary: A concept in cognitive psychology and AI, where information is broken down and grouped into chunks to simplify complex data and optimize memory usage.
 title: Chunking

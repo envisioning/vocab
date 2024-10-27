@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.93
-- 0.915
-- 0.91
-- 0.895
-- 0.88
-- 0.865
-- 0.85
+  - 0.93
+  - 0.915
+  - 0.91
+  - 0.895
+  - 0.88
+  - 0.865
+  - 0.85
 slug: rnn-recurrent-neural-network
-summary: Class of neural networks where connections between nodes form a directed
+summary:
+  Class of neural networks where connections between nodes form a directed
   graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior
   for a sequence of inputs.
 title: RNN (Recurrent Neural Network)

@@ -1,13 +1,12 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.875
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
+  - 0.875
+  - 0.87
+  - 0.865
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
 slug: ensemble-methods
 summary: ML technique where multiple models are trained and used collectively to solve a problem.
 title: Ensemble Methods

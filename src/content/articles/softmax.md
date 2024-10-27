@@ -1,13 +1,12 @@
 ---
-category: MATH, CORE
 generality:
-- 0.86
-- 0.84
-- 0.82
-- 0.8
-- 0.78
-- 0.76
-- 0.74
+  - 0.86
+  - 0.84
+  - 0.82
+  - 0.8
+  - 0.78
+  - 0.76
+  - 0.74
 slug: softmax
 summary: Function that converts a vector of numerical values into a vector of probabilities, where the probabilities of each value are proportional to the exponentials of the input numbers.
 title: SoftMax

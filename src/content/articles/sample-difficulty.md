@@ -1,5 +1,4 @@
 ---
-category: DATA
 generality:
   - 0.7
   - 0.675

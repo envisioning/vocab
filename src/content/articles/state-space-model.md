@@ -1,5 +1,4 @@
 ---
-category: MATH, ARCH
 generality:
   - 0.86
   - 0.855

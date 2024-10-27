@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.85
-- 0.845
-- 0.865
-- 0.84
-- 0.87
-- 0.83
-- 0.855
+  - 0.85
+  - 0.845
+  - 0.865
+  - 0.84
+  - 0.87
+  - 0.83
+  - 0.855
 slug: dbn-deep-belief-network
-summary: A type of artificial neural network that is deeply structured with multiple
+summary:
+  A type of artificial neural network that is deeply structured with multiple
   layers of latent variables, or hidden units.
 title: DBN (Deep Belief Network)
 ---

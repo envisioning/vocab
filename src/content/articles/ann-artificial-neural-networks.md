@@ -1,15 +1,15 @@
 ---
-category: CORE, BIO
 generality:
-- 0.95
-- 0.925
-- 0.9
-- 0.875
-- 0.85
-- 0.825
-- 0.8
+  - 0.95
+  - 0.925
+  - 0.9
+  - 0.875
+  - 0.85
+  - 0.825
+  - 0.8
 slug: ann-artificial-neural-networks
-summary: Computing systems inspired by the biological neural networks that constitute
+summary:
+  Computing systems inspired by the biological neural networks that constitute
   animal brains, designed to progressively improve their performance on tasks by considering
   examples.
 title: ANN (Artificial Neural Networks)

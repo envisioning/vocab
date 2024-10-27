@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.87
-- 0.85
-- 0.83
-- 0.81
-- 0.79
-- 0.77
-- 0.75
+  - 0.87
+  - 0.85
+  - 0.83
+  - 0.81
+  - 0.79
+  - 0.77
+  - 0.75
 slug: gps-general-problem-solver
-summary: Early AI program designed to simulate human problem-solving processes through
+summary:
+  Early AI program designed to simulate human problem-solving processes through
   a heuristic-based approach.
 title: GPS (General Problem Solver)
 ---

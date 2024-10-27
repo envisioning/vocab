@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.85
-- 0.835
-- 0.82
-- 0.805
-- 0.79
-- 0.775
-- 0.76
+  - 0.85
+  - 0.835
+  - 0.82
+  - 0.805
+  - 0.79
+  - 0.775
+  - 0.76
 slug: resnet-residual-network
-summary: Type of CNN (Convolutional Neural Network) architecture that introduces residual
+summary:
+  Type of CNN (Convolutional Neural Network) architecture that introduces residual
   learning to facilitate the training of much deeper networks by utilizing shortcut
   connections or skip connections that allow the gradient to bypass some layers.
 title: ResNet (Residual Network)

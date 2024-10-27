@@ -1,15 +1,15 @@
 ---
-category: CORE, MATH
 generality:
-- 0.72
-- 0.7
-- 0.68
-- 0.66
-- 0.64
-- 0.62
-- 0.6
+  - 0.72
+  - 0.7
+  - 0.68
+  - 0.66
+  - 0.64
+  - 0.62
+  - 0.6
 slug: cd-contrastive-divergence
-summary: Algorithm used to approximate the gradient of the log-likelihood for training
+summary:
+  Algorithm used to approximate the gradient of the log-likelihood for training
   probabilistic models.
 title: CD (Contrastive Divergence)
 ---

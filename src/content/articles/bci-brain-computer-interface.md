@@ -1,15 +1,15 @@
 ---
-category: ARCH, BIO
 generality:
-- 0.775
-- 0.76
-- 0.745
-- 0.73
-- 0.715
-- 0.7
-- 0.685
+  - 0.775
+  - 0.76
+  - 0.745
+  - 0.73
+  - 0.715
+  - 0.7
+  - 0.685
 slug: bci-brain-computer-interface
-summary: Enables direct communication pathways between the brain and external devices,
+summary:
+  Enables direct communication pathways between the brain and external devices,
   allowing for control of computers or prosthetics with neural activity.
 title: BCI (Brain Computer Interface)
 ---

@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.86
-- 0.85
-- 0.84
-- 0.83
-- 0.82
-- 0.81
-- 0.8
+  - 0.86
+  - 0.85
+  - 0.84
+  - 0.83
+  - 0.82
+  - 0.81
+  - 0.8
 slug: asr-automatic-speech-recognition
-summary: Translates spoken language into written text, enabling computers to understand
+summary:
+  Translates spoken language into written text, enabling computers to understand
   and process human speech.
 title: ASR (Automatic Speech Recognition)
 ---

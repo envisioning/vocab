@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.75
-- 0.735
-- 0.72
-- 0.705
-- 0.69
-- 0.675
-- 0.66
+  - 0.75
+  - 0.735
+  - 0.72
+  - 0.705
+  - 0.69
+  - 0.675
+  - 0.66
 slug: vits-vision-transformers
-summary: Class of DL models that apply the transformer architecture, originally designed
+summary:
+  Class of DL models that apply the transformer architecture, originally designed
   for natural language processing, to computer vision tasks.
 title: ViTs (Vision Transformers)
 ---

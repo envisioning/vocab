@@ -1,13 +1,12 @@
 ---
-category: IMPL, DATA
 generality:
-- 0.35
-- 0.325
-- 0.3
-- 0.275
-- 0.25
-- 0.225
-- 0.2
+  - 0.35
+  - 0.325
+  - 0.3
+  - 0.275
+  - 0.25
+  - 0.225
+  - 0.2
 slug: chinchilla-scaling
 summary: Strategy in training LLMs that optimizes the ratio of model size to training data size.
 title: Chinchilla Scaling

@@ -1,15 +1,15 @@
 ---
-category: CORE, DATA
 generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
+  - 0.6
+  - 0.575
+  - 0.55
 slug: tf-idf-term-frequency-inverse-document-frequency
-summary: Numerical statistic used to evaluate the importance of a word within a document
+summary:
+  Numerical statistic used to evaluate the importance of a word within a document
   relative to a collection of documents.
 title: TF-IDF (Term Frequency-Inverse Document Frequency)
 ---

@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.615
-- 0.59
-- 0.565
-- 0.54
-- 0.515
-- 0.49
-- 0.465
+  - 0.615
+  - 0.59
+  - 0.565
+  - 0.54
+  - 0.515
+  - 0.49
+  - 0.465
 slug: mmlu-massive-multitask-language-understanding
-summary: Evaluation framework designed to assess the performance of language models
+summary:
+  Evaluation framework designed to assess the performance of language models
   across a broad spectrum of tasks and domains.
 title: MMLU (Massive Multitask Language Understanding)
 ---

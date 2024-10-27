@@ -1,5 +1,4 @@
 ---
-category: IMPL, CORE
 generality:
   - 0.68
   - 0.675

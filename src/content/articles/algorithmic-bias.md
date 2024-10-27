@@ -1,5 +1,4 @@
 ---
-category: GOV, DATA
 generality:
   - 0.925
   - 0.9

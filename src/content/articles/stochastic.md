@@ -1,13 +1,12 @@
 ---
-category: MATH, CORE
 generality:
-- 0.93
-- 0.915
-- 0.9
-- 0.885
-- 0.87
-- 0.855
-- 0.84
+  - 0.93
+  - 0.915
+  - 0.9
+  - 0.885
+  - 0.87
+  - 0.855
+  - 0.84
 slug: stochastic
 summary: Systems or processes that are inherently random, involving variables that are subject to chance.
 title: Stochastic

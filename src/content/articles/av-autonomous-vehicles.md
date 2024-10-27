@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.875
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
+  - 0.875
+  - 0.87
+  - 0.865
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
 slug: av-autonomous-vehicles
-summary: Self-driving cars that combine sensors, algorithms, and software to navigate
+summary:
+  Self-driving cars that combine sensors, algorithms, and software to navigate
   and drive without human intervention.
 title: AV (Autonomous Vehicles)
 ---

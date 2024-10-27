@@ -1,13 +1,12 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.2
-- 0.21
-- 0.22
-- 0.23
-- 0.24
-- 0.25
-- 0.26
+  - 0.2
+  - 0.21
+  - 0.22
+  - 0.23
+  - 0.24
+  - 0.25
+  - 0.26
 slug: lora-low-rank-adaptation
 summary: Technique for fine-tuning LLMs in a parameter-efficient manner.
 title: LoRA (Low-Rank Adaptation)

@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.67
-- 0.645
-- 0.62
-- 0.595
-- 0.57
-- 0.545
-- 0.52
+  - 0.67
+  - 0.645
+  - 0.62
+  - 0.595
+  - 0.57
+  - 0.545
+  - 0.52
 slug: react-reasonact
-summary: AI framework for integrating reasoning and acting capabilities, enabling
+summary:
+  AI framework for integrating reasoning and acting capabilities, enabling
   models to make decisions based on both logic and learned actions.
 title: ReAct (Reason+Act)
 ---

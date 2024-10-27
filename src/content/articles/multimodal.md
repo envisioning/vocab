@@ -1,13 +1,12 @@
 ---
-category: ARCH, DATA
 generality:
-- 0.92
-- 0.89
-- 0.87
-- 0.84
-- 0.81
-- 0.78
-- 0.75
+  - 0.92
+  - 0.89
+  - 0.87
+  - 0.84
+  - 0.81
+  - 0.78
+  - 0.75
 slug: multimodal
 summary: AI systems or models that can process and understand information from multiple modalities, such as text, images, and sound.
 title: Multimodal

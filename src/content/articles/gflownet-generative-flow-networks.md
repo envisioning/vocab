@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.6
-- 0.58
-- 0.56
-- 0.54
-- 0.52
-- 0.5
-- 0.48
+  - 0.6
+  - 0.58
+  - 0.56
+  - 0.54
+  - 0.52
+  - 0.5
+  - 0.48
 slug: gflownet-generative-flow-networks
-summary: Research direction at the intersection of reinforcement learning, deep generative
+summary:
+  Research direction at the intersection of reinforcement learning, deep generative
   models, and energy-based probabilistic modeling, aimed at improving generative active
   learning and unsupervised learning.
 title: GFlowNet (Generative Flow Networks)

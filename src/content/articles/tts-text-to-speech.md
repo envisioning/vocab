@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.8
-- 0.805
-- 0.81
-- 0.815
-- 0.82
-- 0.825
-- 0.83
+  - 0.8
+  - 0.805
+  - 0.81
+  - 0.815
+  - 0.82
+  - 0.825
+  - 0.83
 slug: tts-text-to-speech
-summary: Converts written text into spoken voice output, enabling computers to read
+summary:
+  Converts written text into spoken voice output, enabling computers to read
   text aloud.
 title: TTS (Text-to-Speech)
 ---

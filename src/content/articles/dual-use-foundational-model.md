@@ -1,5 +1,4 @@
 ---
-category: CORE, GOV
 generality:
   - 0.75
   - 0.73

@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.875
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
+  - 0.875
+  - 0.86
+  - 0.845
+  - 0.83
+  - 0.815
+  - 0.8
+  - 0.785
 slug: seq2seq-sequence-to-sequence
-summary: Neural network architecture designed to transform sequences of data, such
+summary:
+  Neural network architecture designed to transform sequences of data, such
   as converting a sentence from one language to another or translating speech into
   text.
 title: Seq2Seq (Sequence to Sequence)

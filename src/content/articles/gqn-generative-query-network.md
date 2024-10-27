@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.56
-- 0.545
-- 0.53
-- 0.515
-- 0.5
-- 0.485
-- 0.47
+  - 0.56
+  - 0.545
+  - 0.53
+  - 0.515
+  - 0.5
+  - 0.485
+  - 0.47
 slug: gqn-generative-query-network
-summary: Neural network architecture designed to enable machines to understand and
+summary:
+  Neural network architecture designed to enable machines to understand and
   generate visual scenes from different viewpoints based on limited observations.
 title: GQN (Generative Query Network)
 ---

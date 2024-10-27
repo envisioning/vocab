@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.93
-- 0.92
-- 0.905
-- 0.895
-- 0.88
-- 0.87
-- 0.86
+  - 0.93
+  - 0.92
+  - 0.905
+  - 0.895
+  - 0.88
+  - 0.87
+  - 0.86
 slug: nlu-natural-language-understanding
-summary: Subfield of NLP focused on enabling machines to understand and interpret
+summary:
+  Subfield of NLP focused on enabling machines to understand and interpret
   human language in a way that is both meaningful and contextually relevant.
 title: NLU (Natural Language Understanding)
 ---

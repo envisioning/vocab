@@ -1,13 +1,12 @@
 ---
-category: MATH, DATA
 generality:
-- 0.89
-- 0.875
-- 0.86
-- 0.85
-- 0.84
-- 0.83
-- 0.82
+  - 0.89
+  - 0.875
+  - 0.86
+  - 0.85
+  - 0.84
+  - 0.83
+  - 0.82
 slug: cross-validation
 summary: Statistical method used to estimate the skill of ML models on unseen data by partitioning the original dataset into a training set to train the model and a test set to evaluate it.
 title: Cross Validation

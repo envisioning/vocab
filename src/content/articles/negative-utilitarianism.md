@@ -1,5 +1,4 @@
 ---
-category: GOV
 generality:
   - 0.425
   - 0.4

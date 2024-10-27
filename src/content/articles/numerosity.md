@@ -1,13 +1,12 @@
 ---
-category: DATA, MATH
 generality:
-- 0.68
-- 0.665
-- 0.65
-- 0.635
-- 0.62
-- 0.605
-- 0.59
+  - 0.68
+  - 0.665
+  - 0.65
+  - 0.635
+  - 0.62
+  - 0.605
+  - 0.59
 slug: numerosity
 summary: Understanding of the quantitative attributes revolving around the number of elements in a data set.
 title: Numerosity

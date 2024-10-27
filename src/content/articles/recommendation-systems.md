@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 0.85
-- 0.855
-- 0.86
-- 0.865
-- 0.87
-- 0.875
-- 0.88
+  - 0.85
+  - 0.855
+  - 0.86
+  - 0.865
+  - 0.87
+  - 0.875
+  - 0.88
 slug: recommendation-systems
 summary: Algorithms designed to suggest relevant items to users (such as movies, books, products, etc.) based on their preferences and behaviors.
 title: Recommendation Systems

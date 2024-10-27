@@ -1,5 +1,4 @@
 ---
-category: ARCH, DATA
 generality:
   - 0.425
   - 0.41

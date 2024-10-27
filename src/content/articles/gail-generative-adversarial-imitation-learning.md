@@ -1,15 +1,15 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.738
-- 0.72
-- 0.702
-- 0.685
-- 0.667
-- 0.65
-- 0.632
+  - 0.738
+  - 0.72
+  - 0.702
+  - 0.685
+  - 0.667
+  - 0.65
+  - 0.632
 slug: gail-generative-adversarial-imitation-learning
-summary: Advanced ML technique that uses adversarial training to enable an agent to
+summary:
+  Advanced ML technique that uses adversarial training to enable an agent to
   learn behaviors directly from expert demonstrations without requiring explicit reward
   signals.
 title: GAIL (Generative Adversarial Imitation Learning)

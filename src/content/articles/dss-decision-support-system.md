@@ -1,15 +1,15 @@
 ---
-category: ARCH, IMPL
 generality:
-- 0.8
-- 0.785
-- 0.775
-- 0.76
-- 0.74
-- 0.73
-- 0.72
+  - 0.8
+  - 0.785
+  - 0.775
+  - 0.76
+  - 0.74
+  - 0.73
+  - 0.72
 slug: dss-decision-support-system
-summary: A computerized program used to support determinations, judgments, and courses
+summary:
+  A computerized program used to support determinations, judgments, and courses
   of action in an organization or a business.
 title: DSS (Decision Support System)
 ---

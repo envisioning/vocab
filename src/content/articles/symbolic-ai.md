@@ -1,13 +1,12 @@
 ---
-category: CORE, ARCH
 generality:
-- 0.89
-- 0.87
-- 0.85
-- 0.83
-- 0.81
-- 0.79
-- 0.77
+  - 0.89
+  - 0.87
+  - 0.85
+  - 0.83
+  - 0.81
+  - 0.79
+  - 0.77
 slug: symbolic-ai
 summary: Also known as Good Old-Fashioned AI (GOFAI), involves the manipulation of symbols to represent problems and compute solutions through rules.
 title: Symbolic AI

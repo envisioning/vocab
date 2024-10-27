@@ -1,13 +1,12 @@
 ---
-category: CORE, DATA
 generality:
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
-- 0.84
+  - 0.87
+  - 0.865
+  - 0.86
+  - 0.855
+  - 0.85
+  - 0.845
+  - 0.84
 slug: sparsity
 summary: Technique and principle of having models that utilize minimal data representation and processing, typically through zero or near-zero values.
 title: Sparsity

@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.75
-- 0.73
-- 0.715
-- 0.7
-- 0.675
-- 0.65
-- 0.625
+  - 0.75
+  - 0.73
+  - 0.715
+  - 0.7
+  - 0.675
+  - 0.65
+  - 0.625
 slug: tcn-temporal-convolutional-networks
-summary: Type of neural network designed to handle sequential data by applying convolutional
+summary:
+  Type of neural network designed to handle sequential data by applying convolutional
   operations over time.
 title: TCN (Temporal Convolutional Networks)
 ---

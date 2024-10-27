@@ -1,15 +1,15 @@
 ---
-category: ARCH, CORE
 generality:
-- 0.85
-- 0.83
-- 0.82
-- 0.81
-- 0.8
-- 0.79
-- 0.78
+  - 0.85
+  - 0.83
+  - 0.82
+  - 0.81
+  - 0.8
+  - 0.79
+  - 0.78
 slug: gpt-generative-pre-trained-transformer
-summary: Type of neural network architecture that excels in generating human-like
+summary:
+  Type of neural network architecture that excels in generating human-like
   text based on the input it receives.
 title: GPT (Generative Pre-Trained Transformer)
 ---
