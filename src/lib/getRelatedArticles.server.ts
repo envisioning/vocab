@@ -58,7 +58,9 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
       category: childArticle.categories,
       generality: Array.isArray(childArticle.generality) 
         ? childArticle.generality 
-        : [childArticle.generality],
+        : childArticle.generality 
+          ? [childArticle.generality]
+          : DEFAULT_GENERALITY,  // Use default if generality is missing
     };
   }).filter((child): child is { slug: string; id: string; relationship: "child"; similarity: number; title: string; summary: string; category: string[]; generality: number[] } => child !== null) || [];
 
@@ -82,7 +84,9 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
         category: parentItem.categories,
         generality: Array.isArray(parentItem.generality)
           ? parentItem.generality
-          : [parentItem.generality],
+          : parentItem.generality
+            ? [parentItem.generality]
+            : DEFAULT_GENERALITY,  // Use default if generality is missing
       } as RelatedArticle;
     }) || [];
 
