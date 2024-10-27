@@ -8,9 +8,8 @@ import ArticleList from "@/components/ArticleList";
 async function getArticles(): Promise<Article[]> {
   const contentDirectory = path.join(process.cwd(), "src/content");
   // Filter for .md files only
-  const files = fs
-    .readdirSync(contentDirectory)
-    .filter((file) => file.endsWith(".md"));
+  const files = await fs.promises.readdir(contentDirectory);
+  const mdFiles = files.filter((file) => file.endsWith(".md"));
 
   const invalidFiles: string[] = [];
 

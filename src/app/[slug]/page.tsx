@@ -45,9 +45,10 @@ async function getArticleContent(slug: string): Promise<{
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  console.log("Generating metadata for params:", params);
+  const slug = await params.slug; // ✅ Correctly awaited
+  console.log("Generating metadata for params:", { slug });
   try {
-    const { frontmatter } = await getArticleContent(params.slug);
+    const { frontmatter } = await getArticleContent(slug);
     return {
       title: frontmatter.title,
     };
@@ -68,21 +69,20 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticlePage({ params }: PageProps) {
-  console.log("Rendering ArticlePage with params:", params);
+  const slug = await params.slug; // ✅ Correctly awaited
+  console.log("Rendering ArticlePage with params:", { slug });
 
-  const { frontmatter, content, hasImage } = await getArticleContent(
-    params.slug
-  );
+  const { frontmatter, content, hasImage } = await getArticleContent(slug);
 
   const customComponentPath = path.join(
     process.cwd(),
     "src/components/articles",
-    `${params.slug}.tsx`
+    `${slug}.tsx`
   );
   const hasCustomComponent = existsSync(customComponentPath);
 
   const CustomComponent = hasCustomComponent
-    ? dynamic(() => import(`../../components/articles/${params.slug}`), {
+    ? dynamic(() => import(`../../components/articles/${slug}`), {
         ssr: true,
       })
     : null;
@@ -113,7 +113,7 @@ export default async function ArticlePage({ params }: PageProps) {
           <div className="relative h-[400px]">
             {hasImage && (
               <Image
-                src={`/images/${params.slug}.webp`}
+                src={`/images/${slug}.webp`}
                 alt={frontmatter.title}
                 fill
                 loading="lazy"
@@ -166,7 +166,7 @@ export default async function ArticlePage({ params }: PageProps) {
           }
         >
           <div className="max-w-4xl mx-auto">
-            <RelatedArticles slug={params.slug} />
+            <RelatedArticles slug={slug} />
           </div>
         </Suspense>
       </div>
