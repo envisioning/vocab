@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import { Article } from "@/types/article";
 
 export async function getArticles(): Promise<Article[]> {
-  const contentDirectory = path.join(process.cwd(), "src/content");
+  const contentDirectory = path.join(process.cwd(), "src/content/articles");
   
   // Filter for .md files only
   const files = await fs.promises.readdir(contentDirectory);

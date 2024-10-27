@@ -26,7 +26,7 @@ async function getArticleContent(slug: string): Promise<{
 }> {
   console.log(`Fetching content for slug: ${slug}`);
   const markdownWithMeta = fs.readFileSync(
-    path.join(process.cwd(), "src/content", `${slug}.md`),
+    path.join(process.cwd(), "src/content/articles", `${slug}.md`),
     "utf-8"
   );
 
@@ -62,7 +62,9 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
   console.log("Generating static params");
-  const files = fs.readdirSync(path.join(process.cwd(), "src/content"));
+  const files = fs
+    .readdirSync(path.join(process.cwd(), "src/content/articles"))
+    .filter((file) => file.endsWith(".md"));
   return files.map((filename) => ({
     slug: filename.replace(".md", ""),
   }));

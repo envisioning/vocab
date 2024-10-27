@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { Article } from "@/types/article";
 
 export async function getArticles(): Promise<Article[]> {
-  const contentDirectory = path.join(process.cwd(), "src/content");
+  const contentDirectory = path.join(process.cwd(), "src/content/articles");
   const files = fs.readdirSync(contentDirectory).filter((file) => file.endsWith(".md"));
 
   const articles = files
