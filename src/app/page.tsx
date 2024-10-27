@@ -13,7 +13,7 @@ async function getArticles(): Promise<Article[]> {
 
   const invalidFiles: string[] = [];
 
-  const articles = files
+  const articles = mdFiles
     .map((filename) => {
       const slug = filename.replace(".md", "");
       const filePath = path.join(contentDirectory, filename);
