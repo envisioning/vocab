@@ -30,7 +30,7 @@ export default function ArticleCard({
     >
       <div
         className={`relative rounded-lg overflow-hidden ${
-          size === "compact" ? "h-[24rem]" : "h-[32rem]"
+          size === "compact" ? "h-[20rem]" : "h-[32rem]"
         }`}
       >
         <Image
