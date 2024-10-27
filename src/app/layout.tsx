@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import FilterBarWrapper from "@/components/FilterBarWrapper";
 import { getArticles } from "@/lib/getArticles";
 
@@ -20,7 +20,9 @@ export default async function RootLayout({
     <html lang="en" className={`${inter.variable}`}>
       <body className="min-h-screen bg-gray-100">
         <div className="flex flex-col min-h-screen">
-          <FilterBarWrapper articles={articles} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <FilterBarWrapper articles={articles} />
+          </Suspense>
           <main className="flex-grow container mx-auto px-4 py-8">
             {children}
           </main>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Article } from "@/types/article";
 import FilterBar from "./FilterBar";
@@ -9,7 +9,7 @@ interface FilterBarWrapperProps {
   articles: Article[];
 }
 
-export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
+function FilterBarContent({ articles }: FilterBarWrapperProps) {
   const searchParams = useSearchParams();
   const [searchTerm, setSearchTerm] = useState(searchParams.get("q") || "");
   const [sortOption, setSortOption] = useState("g");
@@ -38,5 +38,13 @@ export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
       allArticles={articles}
       isHomeRoute={pathname === "/"}
     />
+  );
+}
+
+export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
+  return (
+    <Suspense fallback={<div>Loading filters...</div>}>
+      <FilterBarContent articles={articles} />
+    </Suspense>
   );
 }

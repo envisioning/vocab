@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Article } from "@/types/article";
 import ArticleList from "./ArticleList";
 import { useSearchParams } from "next/navigation";
@@ -11,20 +11,30 @@ interface ClientWrapperProps {
   showList: boolean;
 }
 
+function ClientContent({
+  articles,
+  displayMode,
+}: Omit<ClientWrapperProps, "showList">) {
+  const searchParams = useSearchParams();
+  const searchTerm = searchParams.get("q") || "";
+
+  const filteredArticles = articles.filter((article) =>
+    article.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return <ArticleList articles={filteredArticles} displayMode={displayMode} />;
+}
+
 export default function ClientWrapper({
   articles,
   displayMode,
   showList,
 }: ClientWrapperProps) {
-  const searchParams = useSearchParams();
-  const searchTerm = searchParams.get("q") || "";
-
-  // Filter articles based on search term
-  const filteredArticles = articles.filter((article) =>
-    article.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   if (!showList) return null;
 
-  return <ArticleList articles={filteredArticles} displayMode={displayMode} />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ClientContent articles={articles} displayMode={displayMode} />
+    </Suspense>
+  );
 }
