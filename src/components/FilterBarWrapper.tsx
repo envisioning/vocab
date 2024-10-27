@@ -15,64 +15,25 @@ export default function FilterBarWrapper({
 }: FilterBarWrapperProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOption, setSortOption] = useState("g");
-  const [selectedCategory, setSelectedCategory] = useState("");
-
-  // Get unique categories from all articles
-  const categories = Array.from(
-    new Set(allArticles.flatMap((article) => article.categories)) // Changed from category to categories
-  );
 
   // Handle filter changes
   const handleSearch = (value: string) => {
-    console.log("Searching:", value);
     setSearchTerm(value);
-    if (value === "") {
-      setSelectedCategory(""); // Clear category when search is cleared
-      filterArticles("", sortOption, "");
-    } else {
-      setSelectedCategory(""); // Clear category when searching
-      filterArticles(value, sortOption, "");
-    }
+    filterArticles(value, sortOption);
   };
 
   const handleSort = (value: string) => {
     setSortOption(value);
-    filterArticles(searchTerm, value, selectedCategory);
+    filterArticles(searchTerm, value);
   };
 
-  const handleCategory = (value: string) => {
-    console.log("Selecting category:", value);
-    setSelectedCategory(value);
-    // When selecting a category, we want to filter by the category code only
-    filterArticles("", sortOption, value);
-  };
-
-  const filterArticles = (search: string, sort: string, category: string) => {
+  const filterArticles = (search: string, sort: string) => {
     let filtered = [...allArticles];
-    console.log("Initial articles:", filtered.length);
 
-    if (category) {
-      // Debug logging
-      console.log("Filtering by category:", category);
-      console.log("Sample article categories:", filtered[0]?.categories);
-
-      filtered = filtered.filter((article) => {
-        const hasCategory = article.categories.includes(category);
-        console.log(
-          `Article ${article.slug} has categories:`,
-          article.categories,
-          "Match:",
-          hasCategory
-        );
-        return hasCategory;
-      });
-
-      console.log("After category filter:", filtered.length);
-    } else if (search) {
+    if (search) {
       filtered = filtered.filter((article) =>
         article.title.toLowerCase().includes(search.toLowerCase())
       );
-      console.log("After search filter:", filtered.length);
     }
 
     // Apply sorting
@@ -98,9 +59,6 @@ export default function FilterBarWrapper({
       onSearchChange={handleSearch}
       sortOption={sortOption}
       onSortChange={handleSort}
-      selectedCategory={selectedCategory}
-      onCategoryChange={handleCategory}
-      categories={categories}
       allArticles={allArticles}
     />
   );

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useEffect, useState, KeyboardEvent } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Article } from "@/types/article";
 import Image from "next/image";
 
@@ -11,9 +11,6 @@ interface FilterBarProps {
   onSearchChange: (value: string) => void;
   sortOption: string;
   onSortChange: (value: string) => void;
-  selectedCategory: string;
-  onCategoryChange: (value: string) => void;
-  categories: string[];
   allArticles: Article[];
 }
 
@@ -22,98 +19,63 @@ export default function FilterBar({
   onSearchChange,
   sortOption,
   onSortChange,
-  selectedCategory,
-  onCategoryChange,
   allArticles,
 }: FilterBarProps) {
-  const [suggestions, setSuggestions] = useState<Article[]>([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
-  const [showCategories, setShowCategories] = useState(false);
-  const pathname = usePathname();
+  const router = useRouter();
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [showResults, setShowResults] = useState(false);
 
-  useEffect(() => {
-    if (pathname !== "/" && searchTerm.length > 0 && allArticles.length > 0) {
-      const filtered = allArticles.filter((article) =>
-        article.categories.some((cat) =>
-          cat.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      );
-      setSuggestions(filtered.slice(0, 5)); // Limit to top 5 suggestions
-      setShowSuggestions(true);
-    } else {
-      setShowSuggestions(false);
-    }
-  }, [searchTerm, allArticles, pathname]);
-
-  // Calculate number of hits for both search and category
-  const matchingArticles = allArticles.filter((article) => {
-    if (selectedCategory) {
-      return article.categories.includes(selectedCategory);
-    }
-    return searchTerm
-      ? article.title.toLowerCase().includes(searchTerm.toLowerCase())
-      : true;
-  });
+  // Calculate matching articles
+  const matchingArticles = allArticles.filter((article) =>
+    article.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const hitCount = matchingArticles.length;
   const totalCount = allArticles.length;
-  const isFiltered = searchTerm || selectedCategory;
-
-  const categoryLabels: {
-    [key: string]: { label: string; description: string };
-  } = {
-    CORE: {
-      label: "CORE",
-      description: "foundational AI concepts, base algorithms",
-    },
-    ARCH: {
-      label: "ARCH",
-      description: "architecture, components, models",
-    },
-    IMPL: {
-      label: "IMPL",
-      description: "tools, infrastructure, practical implementation",
-    },
-    DATA: {
-      label: "DATA",
-      description: "data processing, handling, patterns",
-    },
-    MATH: {
-      label: "MATH",
-      description: "mathematical & statistical foundations",
-    },
-    GOV: {
-      label: "GOV",
-      description: "governance, ethics, safety, societal impact",
-    },
-    BIO: {
-      label: "BIO",
-      description: "biological, neural, cognitive inspiration",
-    },
-  };
-
-  const handleCategorySelect = (key: string) => {
-    console.log("Category selected:", key);
-    console.log(
-      "Current categories in articles:",
-      allArticles.map((a) => a.categories)
-    );
-
-    if (key === selectedCategory) {
-      onCategoryChange("");
-      onSearchChange("");
-    } else {
-      onCategoryChange(key);
-      // Don't set search term when selecting category
-      onSearchChange("");
-    }
-    setShowCategories(false);
-  };
+  const isFiltered = searchTerm;
 
   const handleClear = () => {
     onSearchChange("");
-    onCategoryChange("");
+    setSelectedIndex(-1);
+    setShowResults(false);
   };
+
+  const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (!searchTerm) return;
+
+    switch (e.key) {
+      case "ArrowDown":
+        e.preventDefault();
+        setSelectedIndex((prev) =>
+          prev < matchingArticles.length - 1 ? prev + 1 : prev
+        );
+        setShowResults(true);
+        break;
+      case "ArrowUp":
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev > -1 ? prev - 1 : -1));
+        break;
+      case "Enter":
+        e.preventDefault();
+        if (selectedIndex >= 0 && matchingArticles[selectedIndex]) {
+          const selected = matchingArticles[selectedIndex];
+          onSearchChange(selected.title); // Set the search term to the selected article's title
+          router.push(`/${selected.slug}`);
+          setShowResults(false);
+        }
+        break;
+      case "Escape":
+        setShowResults(false);
+        setSelectedIndex(-1);
+        break;
+    }
+  };
+
+  // Reset selection when search term changes
+  useEffect(() => {
+    setSelectedIndex(-1);
+    setShowResults(!!searchTerm);
+  }, [searchTerm]);
 
   return (
     <div
@@ -123,7 +85,6 @@ export default function FilterBar({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap gap-4 items-center relative">
-          {/* Add logo and text */}
           <Link href="/" className="flex items-center gap-2 min-w-[120px]">
             <Image
               src="/envisioning.svg"
@@ -135,7 +96,6 @@ export default function FilterBar({
             <span className="font-medium text-gray-900">Vocab</span>
           </Link>
 
-          {/* Existing search input wrapper */}
           <div className="relative flex-grow min-w-[200px]">
             <input
               type="text"
@@ -143,34 +103,17 @@ export default function FilterBar({
               className="px-4 py-2 border rounded-lg w-full pr-24"
               value={searchTerm}
               onChange={(e) => onSearchChange(e.target.value)}
-              onFocus={() => {
-                if (searchTerm === "") {
-                  setShowCategories(true);
-                  setShowSuggestions(false);
-                } else if (pathname !== "/") {
-                  setShowSuggestions(true);
-                  setShowCategories(false);
-                }
-              }}
-              onBlur={() => {
-                // Delay hiding to allow click
-                setTimeout(() => {
-                  setShowSuggestions(false);
-                  setShowCategories(false);
-                }, 100);
-              }}
+              onKeyDown={handleKeyDown}
               aria-label="Search articles"
             />
 
-            {/* Always show counter, with different text based on filter state */}
             <div className="absolute right-12 top-1/2 -translate-y-1/2 text-sm text-gray-500">
               {isFiltered
                 ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
                 : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
             </div>
 
-            {/* Clear button */}
-            {(searchTerm || selectedCategory) && (
+            {searchTerm && (
               <button
                 onClick={handleClear}
                 className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
@@ -184,53 +127,35 @@ export default function FilterBar({
                 >
                   <path
                     fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                     clipRule="evenodd"
                   />
                 </svg>
               </button>
             )}
-          </div>
 
-          {/* Category suggestions */}
-          {showCategories && searchTerm === "" && (
-            <ul className="absolute left-0 top-full bg-white border rounded-lg mt-1 w-full max-w-lg z-20 shadow-lg">
-              {Object.entries(categoryLabels).map(
-                ([key, { label, description }]) => (
-                  <li
-                    key={key}
-                    className={`px-4 py-2 hover:bg-gray-100 cursor-pointer ${
-                      selectedCategory === key ? "bg-gray-100" : ""
-                    }`}
-                    onClick={() => handleCategorySelect(key)}
-                  >
-                    <div className="flex justify-center">
-                      <span className="text-gray-900">{label}</span>
-                      <span className="text-gray-500 ml-2">{description}</span>
-                    </div>
-                  </li>
-                )
-              )}
-            </ul>
-          )}
-
-          {/* Search suggestions - update this one too for consistency */}
-          {showSuggestions && suggestions.length > 0 && (
-            <ul className="absolute left-0 top-full bg-white border rounded-lg mt-1 w-full max-w-lg z-20 shadow-lg">
-              {suggestions.map((article) => (
-                <li key={article.slug} className="px-4 py-2 hover:bg-gray-100">
+            {/* Search Results Dropdown */}
+            {showResults && searchTerm && (
+              <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
+                {matchingArticles.map((article, index) => (
                   <Link
+                    key={article.slug}
                     href={`/${article.slug}`}
-                    onClick={() => setShowSuggestions(false)}
+                    className={`block px-4 py-2 hover:bg-gray-100 ${
+                      index === selectedIndex ? "bg-blue-50" : ""
+                    }`}
+                    onClick={() => {
+                      onSearchChange(article.title); // Set the search term to the clicked article's title
+                      setShowResults(false);
+                    }}
                   >
                     {article.title}
                   </Link>
-                </li>
-              ))}
-            </ul>
-          )}
+                ))}
+              </div>
+            )}
+          </div>
 
-          {/* Keep sort dropdown, remove category dropdown */}
           <select
             value={sortOption}
             onChange={(e) => onSortChange(e.target.value)}
