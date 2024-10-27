@@ -6,5 +6,15 @@ export interface Article {
   summary: string;
   image?: string;
   content?: string;
-  relationship?: string; // Add this line to define the relationship property
+  relationship?: "parent" | "child" | "bidirectional"; // Updated to specific union type
+}
+
+export interface RelatedArticle {
+  slug: string;
+  title: string;
+  summary: string;
+  category: string[];
+  relationship: 'parent' | 'child' | 'bidirectional';
+  similarity?: number;
+  generality: number[];
 }

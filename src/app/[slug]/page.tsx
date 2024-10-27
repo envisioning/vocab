@@ -3,23 +3,29 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
-import { Article } from "@/types/article";
 import Image from "next/image";
-import { existsSync } from "fs";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
+import { existsSync } from "fs";
+import { Suspense } from "react";
+
+import { Article } from "@/types/article";
+import RelatedArticles from "@/components/RelatedArticles";
 
 interface PageProps {
-  params: Promise<{
+  params: {
     slug: string;
-  }>;
+  };
 }
 
+// Separate async function to get article content
 async function getArticleContent(slug: string): Promise<{
   frontmatter: Omit<Article, "slug">;
   content: string;
   hasImage: boolean;
+  slug: string;
 }> {
+  console.log(`Fetching content for slug: ${slug}`); // Logging
   const markdownWithMeta = fs.readFileSync(
     path.join(process.cwd(), "src/content", `${slug}.md`),
     "utf-8"
@@ -34,213 +40,70 @@ async function getArticleContent(slug: string): Promise<{
     frontmatter: frontmatter as Omit<Article, "slug">,
     content,
     hasImage,
+    slug,
   };
 }
 
-// Update getRelatedArticles to handle bidirectional connections
-async function getRelatedArticles(slug: string): Promise<Article[]> {
-  const hierarchyData = JSON.parse(
-    fs.readFileSync(
-      path.join(process.cwd(), "src/data/ai_terms_hierarchy.json"),
-      "utf-8"
-    )
-  );
-
-  const currentArticle = hierarchyData.find((item: any) => item.slug === slug);
-  if (!currentArticle) return [];
-
-  // Get child articles (articles that the current article points to)
-  const childConnections =
-    currentArticle.children?.map((child: any) => ({
-      slug: child.slug,
-      id: child.id,
-      relationship: "child" as const,
-      similarity: child.similarity, // Add this
-    })) || [];
-
-  // Find parent articles (articles that point to the current article)
-  const parentConnections = hierarchyData
-    .filter((item: any) =>
-      item.children?.some((child: any) => child.id === currentArticle.id)
-    )
-    .map((item) => {
-      const childWithSimilarity = item.children.find(
-        (child: any) => child.id === currentArticle.id
-      );
-      return {
-        slug: item.slug,
-        id: item.id,
-        relationship: "parent" as const,
-        similarity: childWithSimilarity?.similarity, // Add this
-      };
-    });
-
-  // Create a map using slug as the key to prevent duplicates
-  const connectionMap = new Map<
-    string,
-    {
-      slug: string;
-      relationship: string;
-      similarity?: number;
-      // Use the higher similarity value for bidirectional connections
-      parentSimilarity?: number;
-      childSimilarity?: number;
-    }
-  >();
-
-  // Add child connections first
-  childConnections.forEach((conn) => {
-    connectionMap.set(conn.slug, {
-      ...conn,
-      relationship: "child" as const,
-      childSimilarity: conn.similarity,
-    });
-  });
-
-  // Add parent connections, handling bidirectional relationships
-  parentConnections.forEach((conn) => {
-    const existingConnection = connectionMap.get(conn.slug);
-    if (existingConnection) {
-      // If already exists, it's bidirectional - merge the connections
-      connectionMap.set(conn.slug, {
-        slug: conn.slug,
-        id: conn.id,
-        relationship: "bidirectional" as const,
-        similarity: Math.max(
-          conn.similarity || 0,
-          existingConnection.childSimilarity || 0
-        ),
-      });
-    } else {
-      connectionMap.set(conn.slug, {
-        ...conn,
-        relationship: "parent" as const,
-        similarity: conn.similarity,
-      });
-    }
-  });
-
-  // Convert connections to articles
-  const relatedArticles = Array.from(connectionMap.values())
-    .map((conn) => {
-      const article = hierarchyData.find(
-        (item: any) => item.slug === conn.slug
-      );
-      if (!article) return null;
-      return {
-        slug: article.slug,
-        title: article.name,
-        summary: article.summary,
-        category: article.categories,
-        relationship: conn.relationship,
-        similarity: conn.similarity,
-      };
-    })
-    .filter(Boolean)
-    .sort((a, b) => {
-      // Sort by bidirectional first, then by similarity
-      if (
-        a.relationship === "bidirectional" &&
-        b.relationship !== "bidirectional"
-      )
-        return -1;
-      if (
-        b.relationship === "bidirectional" &&
-        a.relationship !== "bidirectional"
-      )
-        return 1;
-      return (b.similarity || 0) - (a.similarity || 0); // Sort by similarity (highest first)
-    });
-
-  return relatedArticles;
-}
-
-// Add ArticleCard component definition
-function ArticleCard({
-  slug,
-  title,
-  summary,
-  category,
-  relationship,
-  similarity,
-}: Article & {
-  relationship: "parent" | "child" | "bidirectional";
-  similarity?: number;
-}) {
-  return (
-    <Link
-      href={`/${slug}`}
-      className="transform transition duration-500 hover:scale-105"
-    >
-      <div className="h-[24rem] relative rounded-lg overflow-hidden">
-        <Image
-          src={`/images/${slug}.webp`}
-          alt={title}
-          fill
-          loading="lazy"
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/0" />
-        <div className="absolute bottom-0 p-6 w-full">
-          <h3 className="text-xl font-semibold mb-3 text-white truncate">
-            {title}
-          </h3>
-          <p className="text-gray-200 mb-3">{summary}</p>
-          {similarity && (
-            <p className="text-gray-400 text-sm">
-              Similarity: {(similarity * 100).toFixed(1)}%
-            </p>
-          )}
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-// Add this function to check for component existence
-function getCustomComponent(slug: string) {
-  const componentPath = path.join(
-    process.cwd(),
-    "src/components/articles",
-    `${slug}.tsx`
-  );
-  return existsSync(componentPath);
-}
-
+// Metadata generation
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const { frontmatter } = await getArticleContent(slug);
-
-  return {
-    title: frontmatter.title,
-  };
+  console.log("Generating metadata for params:", params); // Logging
+  try {
+    const { frontmatter } = await getArticleContent(params.slug);
+    return {
+      title: frontmatter.title,
+    };
+  } catch (error) {
+    console.error("Error generating metadata:", error);
+    return {
+      title: "Article Not Found",
+    };
+  }
 }
 
-export default async function ArticlePage({ params }: PageProps) {
-  const { slug } = await params;
-  const { frontmatter, content, hasImage } = await getArticleContent(slug);
-  const relatedArticles = await getRelatedArticles(slug);
-  const hasCustomComponent = getCustomComponent(slug);
+// Add generateStaticParams for static optimization
+export async function generateStaticParams() {
+  console.log("Generating static params"); // Logging
+  const files = fs.readdirSync(path.join(process.cwd(), "src/content"));
+  return files.map((filename) => ({
+    slug: filename.replace(".md", ""),
+  }));
+}
 
-  // Add dynamic component import
+// Main page component
+export default async function ArticlePage({ params }: PageProps) {
+  console.log("Rendering ArticlePage with params:", params);
+
+  // Use params.slug directly since it's already available
+  const { frontmatter, content, hasImage } = await getArticleContent(
+    params.slug
+  );
+
+  // Check for custom component
+  const hasCustomComponent = existsSync(
+    path.join(process.cwd(), "src/components/articles", `${params.slug}.tsx`)
+  );
+
+  // Update CustomComponent to use slug
   const CustomComponent = hasCustomComponent
-    ? dynamic(() => import(`@/components/articles/${slug}`), {
+    ? dynamic(() => import(`@/components/articles/${params.slug}`), {
         ssr: true,
       })
     : null;
 
-  // Calculate average generality if it's an array, limited to 3 decimal places
-  const generality = Array.isArray(frontmatter.generality)
-    ? Number(
-        (
-          frontmatter.generality.reduce((a, b) => a + b, 0) /
-          frontmatter.generality.length
-        ).toFixed(3)
-      )
-    : frontmatter.generality;
+  // Update the generality calculation to handle undefined
+  const generality =
+    Array.isArray(frontmatter.generality) && frontmatter.generality.length > 0
+      ? Number(
+          (
+            frontmatter.generality.reduce((a, b) => a + b, 0) /
+            frontmatter.generality.length
+          ).toFixed(3)
+        )
+      : "N/A";
+
+  console.log("Generality calculated as:", generality); // Logging
 
   return (
     <div className="min-h-screen bg-gray-100 py-6">
@@ -257,7 +120,7 @@ export default async function ArticlePage({ params }: PageProps) {
           <div className="relative h-[400px]">
             {hasImage && (
               <Image
-                src={`/images/${slug}.webp`}
+                src={`/images/${params.slug}.webp`}
                 alt={frontmatter.title}
                 fill
                 loading="lazy"
@@ -302,20 +165,20 @@ export default async function ArticlePage({ params }: PageProps) {
         </div>
 
         {/* Related articles section */}
-        {relatedArticles.length > 0 && (
-          <div className="mt-8 pt-8">
-            <h2 className="text-2xl font-bold mb-4">Related</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {relatedArticles.map((article) => (
-                <ArticleCard
-                  key={`${article.slug}-${article.relationship || "default"}`}
-                  {...article}
-                  relationship={article.relationship || "parent"} // Provide a valid default relationship
-                />
-              ))}
+        <Suspense
+          fallback={
+            <div className="mt-8 pt-8 animate-pulse">
+              <h2 className="text-2xl font-bold mb-4">Related</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[1, 2].map((i) => (
+                  <div key={i} className="h-32 bg-gray-200 rounded-lg" />
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          }
+        >
+          <RelatedArticles slug={params.slug} />
+        </Suspense>
       </div>
     </div>
   );

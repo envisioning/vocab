@@ -1,14 +1,16 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import ArticleCard from "@/components/ArticleCard";
 import { Article } from "@/types/article";
 import { Suspense } from "react";
 import ArticleList from "@/components/ArticleList";
 
 async function getArticles(): Promise<Article[]> {
   const contentDirectory = path.join(process.cwd(), "src/content");
-  const files = fs.readdirSync(contentDirectory);
+  // Filter for .md files only
+  const files = fs
+    .readdirSync(contentDirectory)
+    .filter((file) => file.endsWith(".md"));
 
   const invalidFiles: string[] = [];
 

@@ -1,18 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Article } from "@/types/article";
 import ArticleCard from "./ArticleCard";
 import FilterBar from "./FilterBar";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface ArticleListProps {
   initialArticles: Article[];
 }
 
 export default function ArticleList({ initialArticles }: ArticleListProps) {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [sortOption, setSortOption] = useState("generality");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  // Initialize state from URL parameters with shorter names
+  const [searchTerm, setSearchTerm] = useState(
+    searchParams.get("search") || ""
+  );
+  const [sortOption, setSortOption] = useState(searchParams.get("s") || "g");
+  const [selectedCategory, setSelectedCategory] = useState(
+    searchParams.get("c") || ""
+  );
+
+  // Update URL when filters change using shorter parameter names
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (searchTerm) params.set("search", searchTerm);
+    if (sortOption !== "g") params.set("s", sortOption);
+    if (selectedCategory) params.set("c", selectedCategory);
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+
+    router.replace(newUrl);
+  }, [searchTerm, sortOption, selectedCategory, router]);
 
   const categories = [
     ...new Set(
@@ -61,7 +84,7 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
       }
 
       // Then apply the selected sort option
-      if (sortOption === "alphabetical") {
+      if (sortOption === "a") {
         return a.title.localeCompare(b.title);
       }
 

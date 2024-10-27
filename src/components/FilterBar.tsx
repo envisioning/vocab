@@ -5,7 +5,6 @@ interface FilterBarProps {
   onSortChange: (value: string) => void;
   selectedCategory: string;
   onCategoryChange: (value: string) => void;
-  categories: string[];
 }
 
 export default function FilterBar({
@@ -15,7 +14,6 @@ export default function FilterBar({
   onSortChange,
   selectedCategory,
   onCategoryChange,
-  categories,
 }: FilterBarProps) {
   return (
     <div
@@ -42,8 +40,8 @@ export default function FilterBar({
             className="px-4 py-2 border rounded-lg min-w-[150px]"
             aria-label="Sort articles"
           >
-            <option value="generality">Sort by Generality</option>
-            <option value="alphabetical">Sort Alphabetically</option>
+            <option value="g">Sort by Generality</option>
+            <option value="a">Sort Alphabetically</option>
           </select>
           <select
             value={selectedCategory}
@@ -52,9 +50,9 @@ export default function FilterBar({
             aria-label="Filter by category"
           >
             <option value="">All Categories</option>
-            {MAIN_CATEGORIES.map((category) => (
-              <option key={category} value={category}>
-                {category}
+            {CATEGORY_OPTIONS.map(({ value, label }) => (
+              <option key={value} value={value}>
+                {label}
               </option>
             ))}
           </select>
@@ -64,4 +62,15 @@ export default function FilterBar({
   );
 }
 
-const MAIN_CATEGORIES = ["CORE", "MATH", "IMPL", "DATA", "EVAL", "OPT", "ARCH"];
+const CATEGORY_OPTIONS = [
+  { value: "CORE", label: "Foundational AI Concepts" },
+  { value: "ARCH", label: "Architectures & Models" },
+  {
+    value: "IMPL",
+    label: "Implementation & Infrastructure",
+  },
+  { value: "DATA", label: "Data processing & Handling" },
+  { value: "MATH", label: "Math & Statistical Foundations" },
+  { value: "GOV", label: "Governance, Ethics & Safety" },
+  { value: "BIO", label: "Biological & Neural" },
+];

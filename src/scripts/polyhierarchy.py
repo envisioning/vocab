@@ -35,7 +35,7 @@ def parse_markdown_files(directory):
                         slug_match = re.search(r'slug:\s*"?([^"\n]+)"?', frontmatter)
                         
                         # Add generality extraction
-                        generality_match = re.search(r'generality:\s*\n((?:-\s*\d+\.?\d*\s*\n)+)', frontmatter)
+                        generality_match = re.search(r'generality:\s*\n((?:\s*-\s*\d+\.?\d*\s*\n*)+)', frontmatter)
                         
                         # Get the main content after frontmatter
                         main_content = content.split('---', 2)[-1].strip()
@@ -60,6 +60,10 @@ def parse_markdown_files(directory):
                             if generality_match:
                                 scores_text = generality_match.group(1)
                                 generality_scores = [float(score.strip()) for score in re.findall(r'-\s*(\d+\.?\d*)', scores_text)]
+                                logging.debug(f"Extracted generality scores for {title}: {generality_scores}")
+                            else:
+                                logging.warning(f"No generality scores found for {title}")
+                                generality_scores = []
                             
                             # Store all metadata and content
                             terms[title] = {
@@ -151,61 +155,79 @@ def create_hierarchy(G):
             hierarchy[node] = neighbor_scores
     return hierarchy
 
-def assign_ids(hierarchy):
+def assign_ids(hierarchy, terms):
+    # Use slugs as IDs
     id_mapping = {}
-    current_id = 1
-    
     for term in hierarchy.keys():
+        try:
+            slug = terms[term]['slug']
+            if not slug:
+                raise KeyError(f"Missing slug for term: {term}")
+            id_mapping[term] = slug
+        except KeyError as e:
+            logging.error(f"Error getting slug for {term}: {str(e)}")
+            # Fallback: create a slug from the term name if missing
+            id_mapping[term] = term.lower().replace(' ', '-')
+    
+    # Also map any terms that might be children but not in hierarchy keys
+    for term in terms:
         if term not in id_mapping:
-            id_mapping[term] = current_id
-            current_id += 1
-        
-        for child in hierarchy[term]:
-            if child not in id_mapping:
-                id_mapping[child] = current_id
-                current_id += 1
+            try:
+                slug = terms[term]['slug']
+                if not slug:
+                    raise KeyError(f"Missing slug for term: {term}")
+                id_mapping[term] = slug
+            except KeyError as e:
+                logging.error(f"Error getting slug for {term}: {str(e)}")
+                id_mapping[term] = term.lower().replace(' ', '-')
     
     return id_mapping
 
 def create_polyhierarchy(hierarchy, id_mapping, terms):
     polyhierarchy = []
     for term, connections in hierarchy.items():
-        # Calculate average generality if scores exist
-        generality_avg = None
-        if terms[term]['generality_scores']:
-            generality_avg = round(sum(terms[term]['generality_scores']) / len(terms[term]['generality_scores']), 3)
-        
+        try:
+            generality_scores = terms[term]['generality_scores']
+            generality_avg = round(sum(generality_scores) / len(generality_scores), 3) if generality_scores else None
+            if generality_avg is None:
+                logging.warning(f"Could not calculate generality for term: {term}")
+        except (KeyError, ZeroDivisionError) as e:
+            logging.error(f"Error calculating generality for {term}: {str(e)}")
+            generality_avg = None
+
         node = {
-            "id": id_mapping[term],
+            "slug": id_mapping[term], 
             "name": term,
             "summary": terms[term]['summary'],
             "categories": terms[term]['categories'],
-            "slug": terms[term]['slug'],
-            "generality": generality_avg,  # Add generality average
+            "generality": generality_avg,
             "children": [
                 {
-                    "id": id_mapping[child],
+                    "slug": id_mapping[child],  
                     "similarity": float(score)
                 } for child, score in connections.items()
             ]
         }
         polyhierarchy.append(node)
-    
-    # Add leaf nodes
+
+    # Handle leaf nodes
     for term in id_mapping.keys():
         if term not in hierarchy:
-            # Calculate average generality if scores exist
-            generality_avg = None
-            if terms[term]['generality_scores']:
-                generality_avg = round(sum(terms[term]['generality_scores']) / len(terms[term]['generality_scores']), 3)
-            
+            try:
+                generality_scores = terms[term]['generality_scores']
+                generality_avg = round(sum(generality_scores) / len(generality_scores), 3) if generality_scores else None
+                if generality_avg is None:
+                    logging.warning(f"Could not calculate generality for leaf term: {term}")
+            except (KeyError, ZeroDivisionError) as e:
+                logging.error(f"Error calculating generality for leaf {term}: {str(e)}")
+                generality_avg = None
+
             node = {
-                "id": id_mapping[term],
+                "slug": id_mapping[term],  # Changed from "id" to "slug"
                 "name": term,
                 "summary": terms[term]['summary'],
                 "categories": terms[term]['categories'],
-                "slug": terms[term]['slug'],
-                "generality": generality_avg,  # Add generality average
+                "generality": generality_avg,
                 "children": []
             }
             polyhierarchy.append(node)
@@ -230,7 +252,7 @@ def main(directory):
     hierarchy = create_hierarchy(G)
     
     logging.info("Assigning IDs")
-    id_mapping = assign_ids(hierarchy)
+    id_mapping = assign_ids(hierarchy, terms)  # Updated to pass terms
     
     logging.info("Creating polyhierarchy")
     polyhierarchy = create_polyhierarchy(hierarchy, id_mapping, terms)

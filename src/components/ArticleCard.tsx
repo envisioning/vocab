@@ -1,12 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Article } from "@/types/article";
+import { Article, RelatedArticle } from "@/types/article";
 
 interface ArticleCardProps {
-  article: Article;
+  article: Article | RelatedArticle;
 }
 
 export default function ArticleCard({ article }: ArticleCardProps) {
+  // Calculate average generality with defensive checks
+  const avgGenerality =
+    Array.isArray(article.generality) && article.generality.length > 0
+      ? (
+          article.generality.reduce((acc, curr) => acc + curr, 0) /
+          article.generality.length
+        ).toFixed(3)
+      : "N/A";
+
+  // Check if article is a RelatedArticle by checking for similarity property
+  const isRelatedArticle = "similarity" in article;
+
   return (
     <Link
       href={`/${article.slug}`}
@@ -27,13 +39,13 @@ export default function ArticleCard({ article }: ArticleCardProps) {
             {article.title}
           </h2>
           <p className="text-gray-200 mb-3">{article.summary}</p>
-          <p className="text-gray-400 text-sm">
-            Generality:{" "}
-            {(
-              article.generality.reduce((acc, curr) => acc + curr, 0) /
-              article.generality.length
-            ).toFixed(3)}
-          </p>
+          {isRelatedArticle ? (
+            <p className="text-gray-400 text-sm">
+              Similarity: {(article.similarity || 0).toFixed(3)}
+            </p>
+          ) : (
+            <p className="text-gray-400 text-sm">Generality: {avgGenerality}</p>
+          )}
         </div>
       </div>
     </Link>
