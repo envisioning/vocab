@@ -60,7 +60,7 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
         ? childArticle.generality 
         : [childArticle.generality],
     };
-  }).filter((child): child is RelatedArticle => child !== null) || [];
+  }).filter((child): child is { slug: string; id: string; relationship: "child"; similarity: number; title: string; summary: string; category: string[]; generality: number[] } => child !== null) || [];
 
   // Find parent articles with proper error handling
   const parentConnections = hierarchyData
@@ -91,7 +91,9 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
 
   // Add child connections
   childConnections.forEach((conn) => {
-    connectionMap.set(conn.slug, conn);
+    if (conn) {
+      connectionMap.set(conn.slug, conn);
+    }
   });
 
   // Add or merge parent connections
@@ -106,7 +108,7 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
       connectionMap.set(conn.slug, {
         ...conn,
         relationship: isBidirectional ? "bidirectional" : conn.relationship,
-        similarity: Math.max(conn.similarity, existing.similarity),
+        similarity: Math.max(conn.similarity ?? 0, existing.similarity ?? 0),
       });
     } else {
       connectionMap.set(conn.slug, conn);

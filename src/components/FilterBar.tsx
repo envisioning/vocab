@@ -5,6 +5,7 @@ interface FilterBarProps {
   onSortChange: (value: string) => void;
   selectedCategory: string;
   onCategoryChange: (value: string) => void;
+  categories?: string[]; // Add this line
 }
 
 export default function FilterBar({
