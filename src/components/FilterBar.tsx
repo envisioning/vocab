@@ -29,11 +29,39 @@ export default function FilterBar({
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [showResults, setShowResults] = useState(false);
 
-  // Calculate matching articles (with null check)
+  // Helper function to check if a title is an acronym with explanation
+  const isAcronym = (title: string): boolean => {
+    // Check if title contains parentheses and the text before it is all caps
+    const match = title.match(/^([^(]+)(\s*\(.*\))?$/);
+    if (match) {
+      const mainText = match[1].trim();
+      return mainText === mainText.toUpperCase() && mainText.length > 1;
+    }
+    return false;
+  };
+
+  // Modified matching articles logic with smarter acronym prioritization
   const matchingArticles =
-    allArticles?.filter((article) =>
-      article.title.toLowerCase().includes(searchTerm.toLowerCase())
-    ) || [];
+    allArticles
+      ?.filter((article) =>
+        article.title.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+      .sort((a, b) => {
+        // Check if search term matches the acronym part exactly
+        const aTitle = a.title.split("(")[0].trim().toLowerCase();
+        const bTitle = b.title.split("(")[0].trim().toLowerCase();
+        const searchLower = searchTerm.toLowerCase();
+
+        const aIsMatchingAcronym = aTitle === searchLower && isAcronym(a.title);
+        const bIsMatchingAcronym = bTitle === searchLower && isAcronym(b.title);
+
+        // Prioritize matching acronyms
+        if (aIsMatchingAcronym && !bIsMatchingAcronym) return -1;
+        if (!aIsMatchingAcronym && bIsMatchingAcronym) return 1;
+
+        // For all other cases, sort alphabetically
+        return a.title.localeCompare(b.title);
+      }) || [];
 
   const hitCount = matchingArticles.length;
   const totalCount = allArticles?.length || 0;
@@ -113,12 +141,12 @@ export default function FilterBar({
           <div className="relative flex-grow min-w-[200px]">
             <input
               type="text"
-              placeholder="Search articles..."
+              placeholder="Search..."
               className="px-4 py-2 border rounded-lg w-full pr-24"
               value={searchTerm}
               onChange={(e) => handleSearchChange(e.target.value)}
               onKeyDown={handleKeyDown}
-              aria-label="Search articles"
+              aria-label="Search"
             />
 
             <div className="absolute right-12 top-1/2 -translate-y-1/2 text-sm text-gray-500">
