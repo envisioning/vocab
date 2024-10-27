@@ -84,7 +84,11 @@ export default function RelatedArticles({ slug }: RelatedArticlesProps) {
       <h2 className="text-2xl font-bold mb-4">Related</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {relatedArticles.map((article) => (
-          <ArticleCard key={article.slug} article={article} size="compact" />
+          <ArticleCard
+            key={article.slug}
+            article={article}
+            metricType="similarity"
+          />
         ))}
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function ArticleCard({
   const metricLabel = metricType === "similarity" ? "Similarity" : "Generality";
   const metricValue =
     metricType === "similarity" && "similarity" in article
-      ? (article?.similarity ?? 0 * 100).toFixed(1) + "%"
+      ? ((article?.similarity ?? 0) * 100).toFixed(1) + "%" // Fixed multiplication
       : avgGenerality;
 
   return (
