@@ -1,31 +1,30 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { Article } from "@/types/article";
-import FilterBarWrapper from "./FilterBarWrapper";
 import ArticleList from "./ArticleList";
+import { useSearchParams } from "next/navigation";
 
 interface ClientWrapperProps {
   articles: Article[];
-  displayMode?: "suggestions" | "full";
-  showList?: boolean;
+  displayMode: "full" | "suggestions";
+  showList: boolean;
 }
 
 export default function ClientWrapper({
   articles,
-  displayMode = "full",
-  showList = true,
+  displayMode,
+  showList,
 }: ClientWrapperProps) {
-  const [filteredArticles, setFilteredArticles] = useState(articles);
+  const searchParams = useSearchParams();
+  const searchTerm = searchParams.get("q") || "";
 
-  return (
-    <div>
-      <FilterBarWrapper
-        allArticles={articles}
-        onFilterChange={setFilteredArticles}
-        displayMode={displayMode}
-      />
-      {showList && <ArticleList articles={filteredArticles} />}
-    </div>
+  // Filter articles based on search term
+  const filteredArticles = articles.filter((article) =>
+    article.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  if (!showList) return null;
+
+  return <ArticleList articles={filteredArticles} displayMode={displayMode} />;
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { Article } from "@/types/article";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 interface FilterBarProps {
   searchTerm: string;
@@ -12,6 +13,7 @@ interface FilterBarProps {
   sortOption: string;
   onSortChange: (value: string) => void;
   allArticles: Article[];
+  isHomeRoute: boolean;
 }
 
 export default function FilterBar({
@@ -19,19 +21,22 @@ export default function FilterBar({
   onSearchChange,
   sortOption,
   onSortChange,
-  allArticles,
+  allArticles = [], // Provide default empty array
+  isHomeRoute,
 }: FilterBarProps) {
   const router = useRouter();
+  const pathname = usePathname();
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [showResults, setShowResults] = useState(false);
 
-  // Calculate matching articles
-  const matchingArticles = allArticles.filter((article) =>
-    article.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Calculate matching articles (with null check)
+  const matchingArticles =
+    allArticles?.filter((article) =>
+      article.title.toLowerCase().includes(searchTerm.toLowerCase())
+    ) || [];
 
   const hitCount = matchingArticles.length;
-  const totalCount = allArticles.length;
+  const totalCount = allArticles?.length || 0;
   const isFiltered = searchTerm;
 
   const handleClear = () => {
@@ -77,6 +82,14 @@ export default function FilterBar({
     setShowResults(!!searchTerm);
   }, [searchTerm]);
 
+  const handleSearchChange = (value: string) => {
+    onSearchChange(value);
+    // Update URL with search term
+    const params = new URLSearchParams();
+    if (value) params.set("q", value);
+    router.push(`${pathname}?${params.toString()}`);
+  };
+
   return (
     <div
       className="sticky top-0 bg-white shadow-md p-4 z-10 mb-6"
@@ -96,13 +109,14 @@ export default function FilterBar({
             <span className="font-medium text-gray-900">Vocab</span>
           </Link>
 
+          {/* Show search on all routes */}
           <div className="relative flex-grow min-w-[200px]">
             <input
               type="text"
               placeholder="Search articles..."
               className="px-4 py-2 border rounded-lg w-full pr-24"
               value={searchTerm}
-              onChange={(e) => onSearchChange(e.target.value)}
+              onChange={(e) => handleSearchChange(e.target.value)}
               onKeyDown={handleKeyDown}
               aria-label="Search articles"
             />
@@ -156,15 +170,18 @@ export default function FilterBar({
             )}
           </div>
 
-          <select
-            value={sortOption}
-            onChange={(e) => onSortChange(e.target.value)}
-            className="px-4 py-2 border rounded-lg min-w-[150px]"
-            aria-label="Sort articles"
-          >
-            <option value="g">Sort by Generality</option>
-            <option value="a">Sort Alphabetically</option>
-          </select>
+          {/* Only show sort on home route */}
+          {isHomeRoute && (
+            <select
+              value={sortOption}
+              onChange={(e) => onSortChange(e.target.value)}
+              className="px-4 py-2 border rounded-lg min-w-[150px]"
+              aria-label="Sort articles"
+            >
+              <option value="g">Sort by Generality</option>
+              <option value="a">Sort Alphabetically</option>
+            </select>
+          )}
 
           <Link
             href="/about"
