@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -15,18 +18,6 @@ const config: Config = {
       typography: {
         DEFAULT: {
           css: {
-            h1: {
-              marginTop: '3rem',
-              marginBottom: '1.5rem',
-            },
-            h2: {
-              marginTop: '2.5rem',
-              marginBottom: '1rem',
-            },
-            h3: {
-              marginTop: '2rem',
-              marginBottom: '1rem',
-            },
             'h1, h2, h3, h4, h5': {
               color: 'var(--foreground)',
               fontWeight: '600',

@@ -1,7 +1,13 @@
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import FilterBarWrapper from "@/components/FilterBarWrapper";
 import { getArticles } from "@/lib/getArticles";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export default async function RootLayout({
   children,
@@ -11,7 +17,7 @@ export default async function RootLayout({
   const articles = await getArticles();
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable}`}>
       <body className="min-h-screen bg-gray-100">
         <div className="flex flex-col min-h-screen">
           <FilterBarWrapper articles={articles} />
