@@ -46,7 +46,7 @@ export default function ArticleCard({
           <h2
             className={`${
               size === "compact" ? "text-xl" : "text-2xl"
-            } font-semibold mb-3 text-white truncate`}
+            } font-semibold mb-3 text-white`}
           >
             {article.title}
           </h2>
