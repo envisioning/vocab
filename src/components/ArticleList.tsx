@@ -107,8 +107,8 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
         onCategoryChange={setSelectedCategory}
         categories={categories}
       />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
           {filteredArticles.length === 0 && (
             <div className="col-span-full text-center py-8 text-gray-500">
               No articles found matching your criteria

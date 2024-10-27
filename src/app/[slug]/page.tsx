@@ -75,19 +75,21 @@ export async function generateStaticParams() {
 export default async function ArticlePage({ params }: PageProps) {
   console.log("Rendering ArticlePage with params:", params);
 
-  // Use params.slug directly since it's already available
   const { frontmatter, content, hasImage } = await getArticleContent(
     params.slug
   );
 
-  // Check for custom component
-  const hasCustomComponent = existsSync(
-    path.join(process.cwd(), "src/components/articles", `${params.slug}.tsx`)
+  // Update the path check to use the full path
+  const customComponentPath = path.join(
+    process.cwd(),
+    "src/components/articles",
+    `${params.slug}.tsx`
   );
+  const hasCustomComponent = existsSync(customComponentPath);
 
-  // Update CustomComponent to use slug
+  // Update the dynamic import to use the correct path
   const CustomComponent = hasCustomComponent
-    ? dynamic(() => import(`@/components/articles/${params.slug}`), {
+    ? dynamic(() => import(`../../components/articles/${params.slug}`), {
         ssr: true,
       })
     : null;
@@ -107,7 +109,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-gray-100 py-6">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="text-black hover:text-blue-800 mb-4 inline-block"
@@ -115,7 +117,8 @@ export default async function ArticlePage({ params }: PageProps) {
           &larr; Back to Home
         </Link>
 
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+        {/* Reduced width of main content to max-w-3xl */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
           {/* Header section with background image */}
           <div className="relative h-[400px]">
             {hasImage && (
@@ -167,17 +170,19 @@ export default async function ArticlePage({ params }: PageProps) {
         {/* Related articles section */}
         <Suspense
           fallback={
-            <div className="mt-8 pt-8 animate-pulse">
+            <div className="mt-8 pt-8 animate-pulse max-w-4xl mx-auto">
               <h2 className="text-2xl font-bold mb-4">Related</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[1, 2].map((i) => (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[1, 2, 3].map((i) => (
                   <div key={i} className="h-32 bg-gray-200 rounded-lg" />
                 ))}
               </div>
             </div>
           }
         >
-          <RelatedArticles slug={params.slug} />
+          <div className="max-w-4xl mx-auto">
+            <RelatedArticles slug={params.slug} />
+          </div>
         </Suspense>
       </div>
     </div>
