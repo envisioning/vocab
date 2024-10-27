@@ -165,6 +165,14 @@ export default function FilterBar({
             <option value="g">Sort by Generality</option>
             <option value="a">Sort Alphabetically</option>
           </select>
+
+          <Link
+            href="/about"
+            className="px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors"
+            aria-label="About"
+          >
+            About
+          </Link>
         </div>
       </div>
     </div>
