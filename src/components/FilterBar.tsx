@@ -126,7 +126,10 @@ export default function FilterBar({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap gap-4 items-center relative">
-          <Link href="/" className="flex items-center gap-2">
+          <Link
+            href="https://envisioning.io"
+            className="flex items-center gap-2"
+          >
             <Image
               src="/envisioning.svg"
               alt="Envisioning Logo"

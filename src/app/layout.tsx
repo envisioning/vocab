@@ -14,7 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://yourdomain.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io"
   ),
   title: {
     default: "Envisioning Vocab",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     creator: "@envisioning",
     site: "@envisioning",
-    card: "summary_large_image",
+    card: "summary",
   },
 };
 

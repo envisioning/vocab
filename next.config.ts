@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     serverActions: true,
+    runtime: "edge",
   },
   typescript: {
     // !! WARN !!
