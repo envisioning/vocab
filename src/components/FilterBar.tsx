@@ -134,7 +134,14 @@ export default function FilterBar({
               height={24}
               className="w-6 h-6"
             />
-            <span className="font-medium text-gray-900">Vocab</span>
+            <span className="font-medium text-gray-900">Envisioning</span>
+          </Link>
+
+          <Link
+            href="/vocab/"
+            className="flex items-center gap-2 min-w-[120px]"
+          >
+            <span className="font-medium text-gray-900">/ Vocab</span>
           </Link>
 
           {/* Show search on all routes */}
