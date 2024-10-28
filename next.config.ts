@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/vocab',
   experimental: {
     serverActions: true,
     runtime: "edge",

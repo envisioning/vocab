@@ -24,11 +24,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Envisioning Vocab",
+    images: ["/vocab/default-social.webp"], // Add a default OG image
   },
   twitter: {
     creator: "@envisioning",
     site: "@envisioning",
-    card: "summary",
+    card: "summary_large_image", // Changed to summary_large_image for better sharing
   },
 };
 

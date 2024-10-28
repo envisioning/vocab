@@ -55,17 +55,19 @@ async function getArticleContent(slug: string): Promise<{
 
 export async function generateMetadata({
   params,
-}: PageProps): Promise<Metadata> {
-  const { slug } = params;
-  const articleContent = await getArticleContent(slug);
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const article = await getArticleContent(params.slug);
+  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
-  if (!articleContent) {
+  if (!article) {
     return {
       title: "Article Not Found",
     };
   }
 
-  const { frontmatter } = articleContent;
+  const { frontmatter, hasImage } = article;
 
   return {
     title: frontmatter.title,
@@ -73,19 +75,27 @@ export async function generateMetadata({
     openGraph: {
       title: frontmatter.title,
       description: frontmatter.summary,
-      url: `${SITE_URL}/${slug}`,
+      url: `${url}/${params.slug}`,
+      images: [
+        {
+          url: hasImage
+            ? `${url}/vocab/images/${params.slug}.webp`
+            : `${url}/vocab/default-social.webp`,
+          width: 1200,
+          height: 630,
+        },
+      ],
       siteName: "Envisioning Vocab",
-      type: "article",
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: frontmatter.title,
       description: frontmatter.summary,
-      creator: "@envisioning",
-      site: "@envisioning",
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${slug}`,
+      images: [
+        hasImage
+          ? `${url}/vocab/images/${params.slug}.webp`
+          : `${url}/vocab/default-social.webp`,
+      ],
     },
   };
 }
@@ -156,7 +166,7 @@ export default async function ArticlePage({ params }: PageProps) {
             <div className="relative h-[400px]">
               {hasImage && (
                 <Image
-                  src={`/images/${slug}.webp`}
+                  src={`/vocab/images/${slug}.webp`}
                   alt={frontmatter.title}
                   fill
                   loading="lazy"

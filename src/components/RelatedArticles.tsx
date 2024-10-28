@@ -23,7 +23,9 @@ export default function RelatedArticles({ slug }: RelatedArticlesProps) {
 
     async function fetchRelatedArticles() {
       try {
-        const response = await fetch(`/api/articles/related?slug=${slug}`);
+        const response = await fetch(
+          `/vocab/api/articles/related?slug=${slug}`
+        );
 
         if (!response.ok) {
           throw new Error("Failed to fetch related articles");
