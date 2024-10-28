@@ -42,7 +42,7 @@ export default function ArticleCard({
         }`}
       >
         <Image
-          src={`/images/${article.slug}.webp`}
+          src={`/vocab/images/${article.slug}.webp`}
           alt={article.title}
           fill
           loading="lazy"
