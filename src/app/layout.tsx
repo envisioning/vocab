@@ -4,10 +4,33 @@ import { ReactNode, Suspense } from "react";
 import FilterBarWrapper from "@/components/FilterBarWrapper";
 import { getArticles } from "@/lib/getArticles";
 
+import PlausibleProvider from "next-plausible";
+import { Metadata } from "next";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://yourdomain.com"
+  ),
+  title: {
+    default: "Envisioning Vocab",
+    template: "%s | Envisioning Vocab",
+  },
+  description: "Explore AI terminology and concepts",
+  openGraph: {
+    type: "website",
+    siteName: "Envisioning Vocab",
+  },
+  twitter: {
+    creator: "@envisioning",
+    site: "@envisioning",
+    card: "summary_large_image",
+  },
+};
 
 export default async function RootLayout({
   children,
@@ -19,14 +42,16 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`}>
       <body className="min-h-screen bg-gray-100">
-        <div className="flex flex-col min-h-screen">
-          <Suspense fallback={<div>Loading...</div>}>
-            <FilterBarWrapper articles={articles} />
-          </Suspense>
-          <main className="flex-grow container mx-auto px-4 py-8">
-            {children}
-          </main>
-        </div>
+        <PlausibleProvider domain="envisioning.io">
+          <div className="flex flex-col min-h-screen">
+            <Suspense fallback={<div>Loading...</div>}>
+              <FilterBarWrapper articles={articles} />
+            </Suspense>
+            <main className="flex-grow container mx-auto px-4 py-8">
+              {children}
+            </main>
+          </div>
+        </PlausibleProvider>
       </body>
     </html>
   );
