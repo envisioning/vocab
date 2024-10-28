@@ -126,7 +126,7 @@ export default function FilterBar({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap gap-4 items-center relative">
-          <Link href="/" className="flex items-center gap-2 min-w-[120px]">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/envisioning.svg"
               alt="Envisioning Logo"
@@ -134,14 +134,11 @@ export default function FilterBar({
               height={24}
               className="w-6 h-6"
             />
-            <span className="font-medium text-gray-900">Envisioning</span>
+            <span className="font-medium text-gray-900">Envisioning /</span>
           </Link>
 
-          <Link
-            href="/vocab/"
-            className="flex items-center gap-2 min-w-[120px]"
-          >
-            <span className="font-medium text-gray-900">/ Vocab</span>
+          <Link href="/vocab/" className="flex items-center gap-2">
+            <span className="font-medium text-gray-900 underline">Vocab</span>
           </Link>
 
           {/* Show search on all routes */}
