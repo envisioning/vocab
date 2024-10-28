@@ -11,6 +11,7 @@ import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
 import { getArticles } from "@/lib/getArticles";
 import ClientWrapper from "@/components/ClientWrapper";
+import { notFound } from "next/navigation"; // Import the notFound function
 
 interface PageProps {
   params: {
@@ -23,13 +24,19 @@ async function getArticleContent(slug: string): Promise<{
   content: string;
   hasImage: boolean;
   slug: string;
-}> {
-  console.log(`Fetching content for slug: ${slug}`);
-  const markdownWithMeta = fs.readFileSync(
-    path.join(process.cwd(), "src/content/articles", `${slug}.md`),
-    "utf-8"
+} | null> {
+  const filePath = path.join(
+    process.cwd(),
+    "src/content/articles",
+    `${slug}.md`
   );
 
+  // Check if the file exists
+  if (!fs.existsSync(filePath)) {
+    return null; // Return null if the file doesn't exist
+  }
+
+  const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
   const imagePath = path.join(process.cwd(), "public/images", `${slug}.webp`);
   const hasImage = fs.existsSync(imagePath);
 
@@ -71,10 +78,17 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticlePage({ params }: PageProps) {
-  const slug = await params.slug; // ✅ Correctly awaited
-  console.log("Rendering ArticlePage with params:", { slug });
+  const { slug } = params;
 
-  const { frontmatter, content, hasImage } = await getArticleContent(slug);
+  // Fetch the article content
+  const articleContent = await getArticleContent(slug);
+
+  if (!articleContent) {
+    // If the article doesn't exist, trigger the 404 page
+    notFound();
+  }
+
+  const { frontmatter, content, hasImage } = articleContent;
 
   const customComponentPath = path.join(
     process.cwd(),
