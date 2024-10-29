@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, KeyboardEvent } from "react";
+import { useEffect, useState, KeyboardEvent, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { Article } from "@/types/article";
@@ -28,6 +28,7 @@ export default function FilterBar({
   const pathname = usePathname();
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [showResults, setShowResults] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Helper function to check if a title is an acronym with explanation
   const isAcronym = (title: string): boolean => {
@@ -118,6 +119,25 @@ export default function FilterBar({
     router.push(`${pathname}?${params.toString()}`);
   };
 
+  // Add keyboard shortcut to focus search
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Check for Cmd+K (Mac) or Ctrl+K
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault(); // Prevent default browser behavior
+        inputRef.current?.focus();
+      }
+    };
+
+    // Add event listener
+    document.addEventListener("keydown", handleKeyDown as any);
+
+    // Cleanup
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown as any);
+    };
+  }, []);
+
   return (
     <div
       className="sticky top-0 bg-white shadow-md p-4 z-10 mb-6"
@@ -147,6 +167,7 @@ export default function FilterBar({
           {/* Show search on all routes */}
           <div className="relative flex-grow min-w-[200px]">
             <input
+              ref={inputRef}
               type="text"
               placeholder="Search..."
               className="px-4 py-2 border rounded-lg w-full pr-24"
