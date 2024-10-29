@@ -226,19 +226,6 @@ export default function FilterBar({
             )}
           </div>
 
-          {/* Only show sort on home route */}
-          {isHomeRoute && (
-            <select
-              value={sortOption}
-              onChange={(e) => onSortChange(e.target.value)}
-              className="px-4 py-2 border rounded-lg min-w-[150px]"
-              aria-label="Sort articles"
-            >
-              <option value="g">Sort by Generality</option>
-              <option value="a">Sort Alphabetically</option>
-            </select>
-          )}
-
           <Link
             href="/about"
             className="px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors"
