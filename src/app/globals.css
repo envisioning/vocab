@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: var(--font-inter), sans-serif;
 }
+
+.acronym {
+  display: inline-block;
+}
+
+.acronym-description {
+  font-size: 0.9em;
+  color: #fff;
+  /* text-gray-300 equivalent */
+}

@@ -82,7 +82,7 @@ def generate_image_prompt(title: str, summary: str) -> str:
 
 def main():
     # Define paths
-    content_dir = Path("../content")
+    content_dir = Path("../content/articles")
     images_dir = Path("../../public/images")
     images_dir.mkdir(parents=True, exist_ok=True)
 

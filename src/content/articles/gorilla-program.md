@@ -8,7 +8,7 @@ generality:
   - 0.63
   - 0.61
 slug: gorilla-program
-summary: Concept in AI that illustrates the potential risk of superintelligent machines surpassing human control. It draws an analogy between humans and gorillas, suggesting that just as gorillas have little influence over their future in a world dominated by humans, humanity might similarly lose control in a world dominated by advanced AI systems.
+summary: Concept in AI that illustrates the potential risk of superintelligent machines surpassing human control.
 title: Gorilla Program
 ---
 

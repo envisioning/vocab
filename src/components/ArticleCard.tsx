@@ -9,6 +9,15 @@ interface ArticleCardProps {
   metricType?: "generality" | "similarity";
 }
 
+// Add helper function to parse acronyms
+const parseAcronyms = (text: string) => {
+  const acronymRegex = /(\w+)\s*\(([^)]+)\)/g;
+  return text.replace(
+    acronymRegex,
+    '<div class="acronym">$1<br/><span class="acronym-description">$2</span></div>'
+  );
+};
+
 export default function ArticleCard({
   article,
   size = "compact",
@@ -55,9 +64,8 @@ export default function ArticleCard({
             className={`${
               size === "compact" ? "text-xl" : "text-2xl"
             } font-semibold mb-3 text-white`}
-          >
-            {article.title}
-          </h2>
+            dangerouslySetInnerHTML={{ __html: parseAcronyms(article.title) }}
+          />
           <p
             className={`text-gray-200 mb-3 ${
               size === "compact" ? "text-sm" : "text-base"

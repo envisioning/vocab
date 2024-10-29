@@ -8,7 +8,7 @@ generality:
   - 0.25
   - 0.235
 slug: adaptive-dual-scale-denoising
-summary: Denoising approach designed to balance both local and global feature extraction in models, particularly in the context of diffusion-based generative models. This method aims to enhance image quality by dynamically adjusting denoising processes across different spatial scales.
+summary: Denoising approach designed to balance both local and global feature extraction in models, particularly in the context of diffusion-based generative models.
 title: Adaptive Dual-Scale Denoising
 ---
 
