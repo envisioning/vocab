@@ -1,7 +1,16 @@
 ---
-title: Inductive Bias
-summary: Assumptions integrated into a learning algorithm to enable it to generalize from specific instances to broader patterns or concepts.
+generality:
+- 0.87
+- 0.86
+- 0.84
+- 0.82
+- 0.81
+- 0.8
+- 0.79
 slug: inductive-bias
+summary: Assumptions integrated into a learning algorithm to enable it to generalize
+  from specific instances to broader patterns or concepts.
+title: Inductive Bias
 ---
 
 Inductive bias is a foundational component in AI, particularly within ML, reflecting the pre-existing assumptions a learning algorithm incorporates to facilitate generalization beyond the provided training data. These biases determine the direction in which a model learns and generalizes, effectively guiding the hypothesis space that the model considers viable during learning processes. Inductive bias is crucial for tackling issues of overfitting, where a model must avoid memorizing training data and rather learn underlying patterns or structures that can apply to unseen data. Different algorithms demand varying degrees of inductive bias, and choosing the right bias is pivotal to the effectiveness of a learning model. For instance, decision trees exhibit a preference for simpler hypotheses, aligning with Occam’s razor, whereas neural networks may require more complex inductive biases reflecting prior knowledge or constraints of a problem space. The trade-off between bias and variance is a critical element of designing effective ML models, with inductive bias playing a central role.

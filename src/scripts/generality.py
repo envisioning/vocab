@@ -103,6 +103,11 @@ def process_files(md_files):
             logging.error(f"Failed to load frontmatter from '{md_file.name}': {e}")
             continue
 
+        # Skip if generality scores already exist
+        if SCORE_FIELD in post.metadata:
+            logging.info(f"Skipping '{md_file.name}' - already has generality scores")
+            continue
+
         title = post.metadata.get('title', '').strip()
         summary = post.metadata.get('summary', '').strip()
         

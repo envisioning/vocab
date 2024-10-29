@@ -1,7 +1,16 @@
 ---
-title: Assistant Model  
-summary: An AI model designed to assist users by providing responses, recommendations, or information based on natural language input.
+generality:
+- 0.8
+- 0.81
+- 0.82
+- 0.83
+- 0.84
+- 0.85
+- 0.86
 slug: assistant-model
+summary: An AI model designed to assist users by providing responses, recommendations,
+  or information based on natural language input.
+title: Assistant Model
 ---
 
 Assistant models, often integrated into virtual assistants or customer service chatbots, represent a critical application of AI and NLP (Natural Language Processing). These models leverage advanced techniques in NLP, contextual understanding, and dialogue management to interpret and generate meaningful responses to user queries. They are trained on vast datasets to understand various nuances of human language, enabling them to assist with tasks ranging from answering questions and providing recommendations to scheduling events and executing more complex decision-making processes. As these models evolve, they incorporate elements of personalization, learning from user interactions to improve their relevance and performance over time.

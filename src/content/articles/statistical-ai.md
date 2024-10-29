@@ -1,7 +1,16 @@
 ---
-title: Statistical AI
-summary: Utilizes statistical methods to analyze data and make probabilistic inferences, aimed at emulating aspects of human intelligence through quantitative models.
+generality:
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
 slug: statistical-ai
+summary: Utilizes statistical methods to analyze data and make probabilistic inferences,
+  aimed at emulating aspects of human intelligence through quantitative models.
+title: Statistical AI
 ---
 
 Statistical AI is grounded in the application of statistical techniques, such as Bayesian inference, hypothesis testing, regression analysis, and other probabilistic methods, to infer and predict outcomes from large datasets. This approach allows systems to learn patterns, make decisions, and form predictions by modeling uncertainties and estimating probable outcomes, often leading to advancements in areas such as natural language processing, computer vision, and autonomous systems. It offers a structured means to integrate various degrees of uncertainty and variability, making it particularly potent for real-world applications where data may be imperfect or incomplete.

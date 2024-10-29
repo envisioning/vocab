@@ -1,8 +1,17 @@
 ---
-title: Shor's Algorithm  
-summary: A quantum algorithm that efficiently solves integer factorization, potentially threatening classical encryption systems.
+generality:
+- 0.78
+- 0.77
+- 0.76
+- 0.75
+- 0.74
+- 0.73
+- 0.72
 slug: shor-s-algorithm
----  
+summary: A quantum algorithm that efficiently solves integer factorization, potentially
+  threatening classical encryption systems.
+title: Shor's Algorithm
+---
 
 Shor's Algorithm is a revolutionary quantum algorithm developed by Peter Shor in 1994, primarily for integer factorization, which underpins the security of widely used encryption schemes like RSA. The algorithm takes advantage of quantum computers' ability to run multiple calculations simultaneously via quantum parallelism, offering an exponential speedup over the best-known classical factoring algorithms, such as the quadratic sieve and the general number field sieve. This breakthrough highlights the potential of quantum computing to disrupt fields reliant on the hardness of problems, specifically cryptography, prompting significant research into quantum-resistant encryption protocols and broader discussions about post-quantum cryptography. Shor's Algorithm is often cited as a landmark result in the field of quantum computing, drawing attention to both the power and consequences of advancements in computational theories and technologies. 
 

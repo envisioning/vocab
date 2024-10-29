@@ -1,8 +1,16 @@
 ---
-title: Deep SSMs (Deep State-Space Models)
-
-summary: Advanced methodologies combining deep learning with state-space models to model complex dynamic systems characterized by sequences of observations.
+generality:
+- 0.725
+- 0.715
+- 0.7
+- 0.685
+- 0.675
+- 0.66
+- 0.645
 slug: deep-ssms-deep-state-space-models
+summary: Advanced methodologies combining deep learning with state-space models to
+  model complex dynamic systems characterized by sequences of observations.
+title: Deep SSMs (Deep State-Space Models)
 ---
 
 Deep SSMs integrate the representational power of deep learning with the structured probabilistic framework of state-space models, providing a robust approach for forecasting and analyzing time-series data with underlying temporal dependencies. These models adeptly capture latent states in complex sequences, making them well-suited for applications such as finance, biomedical signal processing, and autonomous systems where understanding and predicting dynamic behaviors are crucial. By marrying deep neural networks' adaptability with the probabilistic reasoning of SSMs, deep SSMs offer enhanced flexibility and accuracy in modeling non-linear, non-Gaussian processes, leveraging techniques like variational inference and recurrent neural networks to overcome limitations inherent in traditional linear state-space methodologies.

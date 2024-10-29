@@ -1,8 +1,17 @@
 ---
-title: Model Stability  
-summary: Refers to the consistency and reliability of a machine learning model's performance when exposed to different subsets of data or slight variations in input.
+generality:
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: model-stability
----  
+summary: Refers to the consistency and reliability of a machine learning model's performance
+  when exposed to different subsets of data or slight variations in input.
+title: Model Stability
+---
 
 Model stability is crucial in AI as it ensures that the models produce stable and predictable outputs under various conditions, essentially determining their robustness and trustworthiness when applied in real-world scenarios. This concept is particularly important when deploying models in dynamic environments where input data may be subject to noise or other variations. A stable model performs consistently, avoiding drastic performance drops and maintaining reliable predictions which is paramount for sensitive applications, such as healthcare or finance. Model stability is often evaluated using sensitivity analysis, robustness testing, and cross-validation techniques that assess how minor perturbations in the input data affect the model's outputs.
 

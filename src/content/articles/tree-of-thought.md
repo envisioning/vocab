@@ -1,8 +1,16 @@
 ---
-title: Tree of Thought
-
-summary: A cognitive framework within AI that models decision-making processes using tree-like structures to simulate human-like reasoning and planning.
+generality:
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
+- 0.83
 slug: tree-of-thought
+summary: A cognitive framework within AI that models decision-making processes using
+  tree-like structures to simulate human-like reasoning and planning.
+title: Tree of Thought
 ---
 
 Tree of Thought is a sophisticated AI concept where tree-like data structures are used to represent various potential decision pathways, emulating the way humans consider implications of different choices in complex problem-solving scenarios. In practice, this involves constructing 'thought trees' where branches represent different actions or decisions and nodes symbolize the outcomes or states resulting from those actions, facilitating AI systems in planning and reasoning tasks by systematically exploring these possible pathways. This approach is particularly significant in reinforcement learning and search algorithms, such as AlphaGo, where the AI evaluates and optimizes decisions by considering a vast number of potential outcomes, ultimately enhancing performance in tasks requiring strategic thinking and foresight.

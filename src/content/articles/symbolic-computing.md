@@ -1,7 +1,16 @@
 ---
-title: Symbolic Computing
-summary: A paradigm in AI that uses symbolic representations of problems and logic-based reasoning to perform computational tasks and solve complex problems.
+generality:
+- 0.87
+- 0.845
+- 0.82
+- 0.795
+- 0.77
+- 0.745
+- 0.72
 slug: symbolic-computing
+summary: A paradigm in AI that uses symbolic representations of problems and logic-based
+  reasoning to perform computational tasks and solve complex problems.
+title: Symbolic Computing
 ---
 
 Symbolic Computing is a cornerstone of classical AI, emphasizing the use of high-level human-readable symbols and logic to represent knowledge and solve problems. It operates on the premise that human thought processes can be emulated by manipulating symbols in a structured way, integrating mechanisms such as logic and rules-based systems. This paradigm facilitates the encoding of explicit knowledge and inference, making it adept for tasks requiring deep reasoning and transparency, such as theorem proving, symbolic algebra, and expert systems. Conversely, while highly interpretable, Symbolic Computing struggles with scalability and handling unstructured data, challenges that sub-symbolic methods like ML aim to address.

@@ -59,7 +59,7 @@ def generate_image_prompt(title: str, summary: str) -> str:
         "Avoid: words, realistic imagery.\n\n "
         f"Title: {title}\n"
         f"Summary: {summary}\n\n"
-        "Return only the prompt text, nothing else. Focus on visual elements, style, and mood."
+        "Return only the prompt text, nothing else. Keep it short. Focus on visual elements, style, and mood."
     )
     
     data = {
