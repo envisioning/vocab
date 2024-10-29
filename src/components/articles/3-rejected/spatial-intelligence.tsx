@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Box, Move3d, Boxes, Brain, Robot, Trophy, ArrowRight } from "lucide-react";
+import { Box, Move3d, Boxes, Brain, Bot, Trophy, ArrowRight } from "lucide-react";
 
 interface GameState {
   mode: 'observe' | 'predict' | 'challenge';
@@ -162,7 +162,7 @@ const SpatialIntelligenceLab = () => {
             gameState.mode === 'predict' ? 'bg-blue-500 text-white' : 'bg-gray-200'
           }`}
         >
-          <Robot className="inline mr-2" />
+          <Bot className="inline mr-2" />
           Predictor
         </button>
         <button

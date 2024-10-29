@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
-import { Factory, TreeDeciduous, Building2, AlertTriangle, Trash2, Factory2 } from "lucide-react"
+import { Factory, TreeDeciduous, Building2, AlertTriangle, Trash2 } from "lucide-react"
 
 interface Resource {
   name: string
