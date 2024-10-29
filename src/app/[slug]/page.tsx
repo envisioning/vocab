@@ -128,17 +128,40 @@ export default async function ArticlePage({ params }: PageProps) {
 
   const { frontmatter, content, hasImage } = articleContent;
 
-  const customComponentPath = path.join(
-    process.cwd(),
-    "src/components/articles",
-    `${slug}.tsx`
-  );
-  const hasCustomComponent = existsSync(customComponentPath);
+  // Check for custom component in root and "1" subdirectories
+  const possiblePaths = [
+    path.join(process.cwd(), "src/components/articles", `${slug}.tsx`),
+    ...fs
+      .readdirSync(path.join(process.cwd(), "src/components/articles"))
+      .filter(
+        (dir) =>
+          dir.startsWith("1") &&
+          fs
+            .statSync(path.join(process.cwd(), "src/components/articles", dir))
+            .isDirectory()
+      )
+      .map((dir) =>
+        path.join(process.cwd(), "src/components/articles", dir, `${slug}.tsx`)
+      ),
+  ];
+
+  const customComponentPath = possiblePaths.find((path) => existsSync(path));
+  const hasCustomComponent = !!customComponentPath;
 
   const CustomComponent = hasCustomComponent
-    ? dynamic(() => import(`../../components/articles/${slug}`), {
-        ssr: true,
-      })
+    ? dynamic(
+        () => {
+          const relativePath = customComponentPath!.split(
+            "src/components/articles/"
+          )[1];
+          return import(
+            `../../components/articles/${relativePath.replace(/\.tsx$/, "")}`
+          );
+        },
+        {
+          ssr: true,
+        }
+      )
     : null;
 
   const generality =
