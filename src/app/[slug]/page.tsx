@@ -128,14 +128,14 @@ export default async function ArticlePage({ params }: PageProps) {
 
   const { frontmatter, content, hasImage } = articleContent;
 
-  // Check for custom component in root and "1" subdirectories
+  // Check for custom component in root and "1" or "2" subdirectories
   const possiblePaths = [
     path.join(process.cwd(), "src/components/articles", `${slug}.tsx`),
     ...fs
       .readdirSync(path.join(process.cwd(), "src/components/articles"))
       .filter(
         (dir) =>
-          dir.startsWith("1") &&
+          (dir.startsWith("1") || dir.startsWith("2")) &&
           fs
             .statSync(path.join(process.cwd(), "src/components/articles", dir))
             .isDirectory()
