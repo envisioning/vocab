@@ -3,6 +3,9 @@
 src/scripts/config.py
 /src/scripts/config.py
 
+src/scripts/components-generator-metadata/config.py
+/src/scripts/components-generator-metadata/config.py
+
 # dependencies
 /node_modules
 /.pnp
@@ -41,3 +44,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+pnpm-lock.yaml
