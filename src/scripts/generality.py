@@ -13,7 +13,7 @@ logging.basicConfig(
 )
 
 # Constants
-VOCAB_DIR = Path('../vocab/')
+VOCAB_DIR = Path('../content/articles/')
 SCORE_FIELD = 'generality'
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
