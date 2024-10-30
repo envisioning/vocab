@@ -1,142 +1,172 @@
-"use client"
-import { useState, useEffect } from "react";
-import { ChefHat, Sprout, Book, ArrowRight, Info } from "lucide-react";
+"use client";
+import React, { useState, useEffect } from "react";
+import {
+  Brain,
+  CircleSlash2,
+  CircleCheck,
+  PlayCircle,
+  PauseCircle,
+  RefreshCw,
+} from "lucide-react";
 
-interface ComponentProps {}
+const SampleEfficiencyDemo = () => {
+  const [isPlaying, setIsPlaying] = useState(true); // Start playing automatically
+  const [sampleCount, setSampleCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
 
-type Scenario = {
-  icon: JSX.Element;
-  title: string;
-  efficientDescription: string;
-  inefficientDescription: string;
-};
-
-const SCENARIOS: Scenario[] = [
-  {
-    icon: <ChefHat className="w-6 h-6" />,
-    title: "The Master Chef",
-    efficientDescription: "Chef Maria recreates dishes after one taste",
-    inefficientDescription: "Chef John needs multiple attempts",
-  },
-  {
-    icon: <Sprout className="w-6 h-6" />,
-    title: "The Efficient Gardener",
-    efficientDescription: "Emma identifies plants quickly",
-    inefficientDescription: "Tom needs many examples",
-  },
-  {
-    icon: <Book className="w-6 h-6" />,
-    title: "The Quick Study",
-    efficientDescription: "Alice learns languages rapidly",
-    inefficientDescription: "Bob requires more repetition",
-  },
-];
-
-/**
- * SampleEfficiencySimulator: A component to teach sample efficiency through interactive scenarios
- */
-const SampleEfficiencySimulator: React.FC<ComponentProps> = () => {
-  const [currentScenario, setCurrentScenario] = useState<number>(0);
-  const [sampleCount, setSampleCount] = useState<number>(1);
-  const [showTooltip, setShowTooltip] = useState<boolean>(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentScenario((prev) => (prev + 1) % SCENARIOS.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    const sampleTimer = setInterval(() => {
-      setSampleCount((prev) => (prev < 10 ? prev + 1 : 1));
-    }, 1000);
-
-    return () => clearInterval(sampleTimer);
-  }, []);
-
-  const handleScenarioChange = () => {
-    setCurrentScenario((prev) => (prev + 1) % SCENARIOS.length);
+  // Models' accuracy curves (simplified for demonstration)
+  const getEfficientAccuracy = (samples) => {
+    return Math.min(95, Math.floor(100 * (1 - Math.exp(-samples / 10))));
   };
 
-  const scenario = SCENARIOS[currentScenario];
+  const getInefficientAccuracy = (samples) => {
+    return Math.min(95, Math.floor(100 * (1 - Math.exp(-samples / 25))));
+  };
+
+  // Initial animation effect
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setHasStarted(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Training animation
+  useEffect(() => {
+    let interval;
+    if (isPlaying && sampleCount < 50) {
+      interval = setInterval(() => {
+        setSampleCount((prev) => prev + 1);
+      }, 200);
+    }
+    return () => clearInterval(interval);
+  }, [isPlaying, sampleCount]);
+
+  const resetDemo = () => {
+    setIsPlaying(true);
+    setSampleCount(0);
+  };
+
+  const togglePlay = () => {
+    setIsPlaying(!isPlaying);
+  };
+
+  const efficientAccuracy = getEfficientAccuracy(sampleCount);
+  const inefficientAccuracy = getInefficientAccuracy(sampleCount);
 
   return (
-    <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Sample Efficiency Simulator</h2>
-      <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center">
-          {scenario.icon}
-          <span className="ml-2 font-semibold">{scenario.title}</span>
+    <div
+      className={`w-full max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg transition-opacity duration-500 ${
+        hasStarted ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <div className="mb-8 text-center">
+        <h2 className="text-2xl font-bold mb-2">Sample Efficiency in AI</h2>
+        <p className="text-gray-600">
+          Watch how models learn from training samples
+        </p>
+      </div>
+
+      <div className="flex justify-center gap-8 mb-8">
+        {/* Sample Efficient Model */}
+        <div className="text-center">
+          <div
+            className={`relative mb-4 transform transition-transform duration-300 ${
+              hasStarted ? "translate-y-0" : "translate-y-4"
+            }`}
+          >
+            <Brain className="w-16 h-16 text-blue-500 mx-auto" />
+            <div className="mt-2 font-semibold">Sample Efficient Model</div>
+            <div className="text-3xl font-bold text-blue-500 transition-all duration-300">
+              {efficientAccuracy}%
+            </div>
+            <div className="text-sm text-gray-500">accuracy</div>
+          </div>
         </div>
+
+        {/* Sample Inefficient Model */}
+        <div className="text-center">
+          <div
+            className={`relative mb-4 transform transition-transform duration-300 delay-150 ${
+              hasStarted ? "translate-y-0" : "translate-y-4"
+            }`}
+          >
+            <Brain className="w-16 h-16 text-red-500 mx-auto" />
+            <div className="mt-2 font-semibold">Sample Inefficient Model</div>
+            <div className="text-3xl font-bold text-red-500 transition-all duration-300">
+              {inefficientAccuracy}%
+            </div>
+            <div className="text-sm text-gray-500">accuracy</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Training Progress */}
+      <div className="mb-6">
+        <div className="flex justify-between mb-2">
+          <span className="text-sm text-gray-600">Training Samples</span>
+          <span className="text-sm font-semibold">{sampleCount}</span>
+        </div>
+        <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+          <div
+            className="bg-blue-500 rounded-full h-2.5 transition-all duration-200"
+            style={{ width: `${(sampleCount / 50) * 100}%` }}
+          ></div>
+        </div>
+      </div>
+
+      {/* Controls */}
+      <div className="flex justify-center gap-4">
         <button
-          onClick={handleScenarioChange}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
-          aria-label="Next scenario"
+          onClick={togglePlay}
+          className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
         >
-          <ArrowRight className="w-5 h-5" />
+          {isPlaying ? (
+            <>
+              <PauseCircle className="w-5 h-5" />
+              Pause
+            </>
+          ) : (
+            <>
+              <PlayCircle className="w-5 h-5" />
+              Play
+            </>
+          )}
+        </button>
+        <button
+          onClick={resetDemo}
+          className="flex items-center gap-2 px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
+        >
+          <RefreshCw className="w-5 h-5" />
+          Reset
         </button>
       </div>
-      <div className="grid grid-cols-2 gap-4 mb-6">
-        <div className="bg-green-100 p-4 rounded">
-          <h3 className="font-semibold mb-2">Sample-Efficient Model</h3>
-          <p>{scenario.efficientDescription}</p>
-          <div className="mt-4 h-4 bg-gray-200 rounded">
-            <div
-              className="h-full bg-green-500 rounded transition-all duration-300"
-              style={{ width: `${sampleCount * 10}%` }}
-            ></div>
-          </div>
-        </div>
-        <div className="bg-yellow-100 p-4 rounded">
-          <h3 className="font-semibold mb-2">Less Efficient Model</h3>
-          <p>{scenario.inefficientDescription}</p>
-          <div className="mt-4 h-4 bg-gray-200 rounded">
-            <div
-              className="h-full bg-yellow-500 rounded transition-all duration-300"
-              style={{ width: `${sampleCount * 5}%` }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      <div className="flex items-center justify-between">
-        <div>
-          <label htmlFor="sampleSlider" className="block mb-2">
-            Number of Samples: {sampleCount}
-          </label>
-          <input
-            id="sampleSlider"
-            type="range"
-            min="1"
-            max="10"
-            value={sampleCount}
-            onChange={(e) => setSampleCount(parseInt(e.target.value))}
-            className="w-64"
-          />
-        </div>
-        <div className="relative">
-          <button
-            onMouseEnter={() => setShowTooltip(true)}
-            onMouseLeave={() => setShowTooltip(false)}
-            className="text-blue-500 hover:text-blue-600 transition duration-300"
-            aria-label="Show information about sample efficiency"
-          >
-            <Info className="w-6 h-6" />
-          </button>
-          {showTooltip && (
-            <div className="absolute bottom-full right-0 mb-2 p-2 bg-white border border-gray-300 rounded shadow-lg w-64">
-              <p>
-                Sample efficiency measures how well a model learns from limited
-                data. Higher efficiency means better performance with fewer
-                samples.
-              </p>
-            </div>
-          )}
-        </div>
+
+      {/* Key Insights */}
+      <div
+        className={`mt-8 p-4 bg-gray-50 rounded-lg transform transition-all duration-500 delay-300 ${
+          hasStarted ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+        }`}
+      >
+        <h3 className="font-semibold mb-2">Key Insights:</h3>
+        <ul className="space-y-2">
+          <li className="flex items-start gap-2">
+            <CircleCheck className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+            <span>
+              Sample efficient model learns faster with fewer training examples
+            </span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CircleSlash2 className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
+            <span>
+              Sample inefficient model needs more data to achieve the same
+              accuracy
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   );
 };
 
-export default SampleEfficiencySimulator;
+export default SampleEfficiencyDemo;

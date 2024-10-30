@@ -1,132 +1,259 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Building2, Users, Brain, Cpu, Database, AlertTriangle } from "lucide-react";
+"use client";
+import React, { useState, useEffect } from "react";
+import { Brain } from "lucide-react";
 
-interface City {
-  parameters: number;
-  buildings: number;
-  citizens: number;
-  computePower: number;
-}
+const ParameterSizeVisualizer = () => {
+  const [layer1Size, setLayer1Size] = useState(3);
+  const [layer2Size, setLayer2Size] = useState(4);
+  const [parameterCount, setParameterCount] = useState(0);
+  const [connections, setConnections] = useState([]);
+  const [isAnimating, setIsAnimating] = useState(true);
 
-interface ModelStats {
-  name: string;
-  parameters: number;
-  task: string;
-}
+  // Add hover state for connections
+  const [hoveredConnection, setHoveredConnection] = useState(null);
 
-const FAMOUS_MODELS: ModelStats[] = [
-  { name: "Small NLP", parameters: 10000, task: "Text Classification" },
-  { name: "BERT Base", parameters: 110000000, task: "Language Understanding" },
-  { name: "GPT-3", parameters: 175000000000, task: "General Language Tasks" },
-];
-
-const ParameterCityBuilder = () => {
-  const [city, setCity] = useState<City>({
-    parameters: 0,
-    buildings: 0,
-    citizens: 0,
-    computePower: 0,
-  });
-
-  const [autoGrow, setAutoGrow] = useState<boolean>(true);
-  const [feedback, setFeedback] = useState<string>("");
+  const NEURON_SIZE = 24; // Size of neuron circles in pixels
+  const LAYER_WIDTH = 200; // Width between layers
+  const LAYER_HEIGHT = 200; // Height of the layer container
 
   useEffect(() => {
-    if (!autoGrow) return;
+    // Calculate total parameters (weights)
+    const totalParams = layer1Size * layer2Size;
+    setParameterCount(totalParams);
 
-    const growthInterval = setInterval(() => {
-      setCity(prev => ({
-        ...prev,
-        parameters: prev.parameters + 1000,
-        buildings: Math.floor(prev.parameters / 10000),
-        citizens: Math.floor(prev.parameters / 1000),
-        computePower: Math.floor(Math.log(prev.parameters + 1) * 10),
-      }));
-    }, 500);
-
-    return () => clearInterval(growthInterval);
-  }, [autoGrow]);
-
-  const handleAddParameters = (amount: number) => {
-    setCity(prev => ({
-      ...prev,
-      parameters: prev.parameters + amount,
-      buildings: Math.floor((prev.parameters + amount) / 10000),
-      citizens: Math.floor((prev.parameters + amount) / 1000),
-      computePower: Math.floor(Math.log(prev.parameters + amount + 1) * 10),
-    }));
-
-    const nearestModel = FAMOUS_MODELS.find(
-      model => Math.abs(model.parameters - (city.parameters + amount)) < 1000000
-    );
-
-    if (nearestModel) {
-      setFeedback(`Your model is similar to ${nearestModel.name} used for ${nearestModel.task}!`);
+    // Generate connection coordinates
+    const newConnections = [];
+    for (let i = 0; i < layer1Size; i++) {
+      for (let j = 0; j < layer2Size; j++) {
+        newConnections.push({
+          id: `${i}-${j}`,
+          highlighted: false,
+        });
+      }
     }
+    setConnections(newConnections);
+
+    // Animation loop
+    if (isAnimating) {
+      const interval = setInterval(() => {
+        setConnections((prev) => {
+          const newConns = [...prev];
+          // Reset all highlights
+          newConns.forEach((conn) => (conn.highlighted = false));
+          // Highlight random connection
+          const randomIdx = Math.floor(Math.random() * newConns.length);
+          newConns[randomIdx].highlighted = true;
+          return newConns;
+        });
+      }, 500);
+
+      return () => clearInterval(interval);
+    }
+  }, [layer1Size, layer2Size, isAnimating]);
+
+  // Calculate neuron positions
+  const getNeuronPosition = (layerIndex, neuronIndex, totalNeurons) => {
+    const spacing =
+      (LAYER_HEIGHT - NEURON_SIZE) / Math.max(totalNeurons - 1, 1);
+    const x = layerIndex === 0 ? NEURON_SIZE : LAYER_WIDTH - NEURON_SIZE;
+    const y =
+      (LAYER_HEIGHT - (totalNeurons - 1) * spacing) / 2 + neuronIndex * spacing;
+    return { x: x + NEURON_SIZE / 2, y: y + NEURON_SIZE / 2 };
+  };
+
+  const getExplanationText = () => {
+    return (
+      <>
+        <p className="text-gray-600 mb-2">
+          In neural networks, parameters (weights) connect neurons between
+          layers:
+        </p>
+        <ul className="list-disc list-inside mb-4 text-gray-600">
+          <li>
+            Each neuron in Layer 1 connects to <em>every</em> neuron in Layer 2
+          </li>
+          <li>
+            Therefore: {layer1Size} × {layer2Size} = {parameterCount} total
+            parameters
+          </li>
+        </ul>
+      </>
+    );
   };
 
   return (
-    <div className="p-6 bg-gray-50 rounded-lg shadow-lg max-w-4xl mx-auto" role="main">
-      <h1 className="text-2xl font-bold mb-6 text-gray-800">Parameter City Builder</h1>
+    <div className="w-full max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <div className="flex items-center gap-2 mb-6">
+        <Brain className="w-6 h-6 text-blue-500" />
+        <h2 className="text-xl font-bold text-gray-800">
+          Neural Network Parameter Counter
+        </h2>
+      </div>
 
+      {/* Add layer size controls */}
       <div className="grid grid-cols-2 gap-4 mb-6">
-        <div className="bg-white p-4 rounded-lg shadow">
-          <div className="flex items-center gap-2 mb-2">
-            <Building2 className="text-blue-500" />
-            <span>Buildings: {city.buildings.toLocaleString()}</span>
-          </div>
-          <div className="flex items-center gap-2 mb-2">
-            <Users className="text-green-500" />
-            <span>Citizens: {city.citizens.toLocaleString()}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Brain className="text-purple-500" />
-            <span>Parameters: {city.parameters.toLocaleString()}</span>
-          </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Layer 1 Neurons
+          </label>
+          <input
+            type="range"
+            min="1"
+            max="6"
+            value={layer1Size}
+            onChange={(e) => setLayer1Size(parseInt(e.target.value))}
+            className="w-full"
+          />
         </div>
-
-        <div className="bg-white p-4 rounded-lg shadow">
-          <div className="flex items-center gap-2 mb-2">
-            <Cpu className="text-red-500" />
-            <span>Compute Power: {city.computePower}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Database className="text-yellow-500" />
-            <span>Memory Usage: {(city.parameters * 4 / 1024 / 1024).toFixed(2)} MB</span>
-          </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Layer 2 Neurons
+          </label>
+          <input
+            type="range"
+            min="1"
+            max="6"
+            value={layer2Size}
+            onChange={(e) => setLayer2Size(parseInt(e.target.value))}
+            className="w-full"
+          />
         </div>
       </div>
 
-      <div className="flex gap-4 mb-6">
-        <button
-          onClick={() => handleAddParameters(1000)}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
-        >
-          Add 1K Parameters
-        </button>
-        <button
-          onClick={() => handleAddParameters(1000000)}
-          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300"
-        >
-          Add 1M Parameters
-        </button>
-        <button
-          onClick={() => setAutoGrow(!autoGrow)}
-          className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-300"
-        >
-          {autoGrow ? "Pause Growth" : "Resume Growth"}
-        </button>
-      </div>
+      {/* Replace existing explanation with dynamic one */}
+      <div className="mb-8">{getExplanationText()}</div>
 
-      {feedback && (
-        <div className="flex items-center gap-2 bg-blue-100 p-4 rounded-lg">
-          <AlertTriangle className="text-blue-500" />
-          <p>{feedback}</p>
+      {/* Update connection lines to include hover effects */}
+      {connections.map((conn, idx) => {
+        const fromNeuron = Math.floor(idx / layer2Size);
+        const toNeuron = idx % layer2Size;
+        const start = getNeuronPosition(0, fromNeuron, layer1Size);
+        const end = getNeuronPosition(1, toNeuron, layer2Size);
+
+        return (
+          <line
+            key={conn.id}
+            x1={start.x}
+            y1={start.y}
+            x2={end.x}
+            y2={end.y}
+            stroke={
+              conn.highlighted || hoveredConnection === conn.id
+                ? "#3B82F6"
+                : "#E5E7EB"
+            }
+            strokeWidth={
+              conn.highlighted || hoveredConnection === conn.id ? "2" : "1"
+            }
+            className="transition-all duration-300 cursor-pointer"
+            onMouseEnter={() => setHoveredConnection(conn.id)}
+            onMouseLeave={() => setHoveredConnection(null)}
+          />
+        );
+      })}
+
+      {/* Add connection info tooltip */}
+      {hoveredConnection && (
+        <div className="absolute bg-gray-800 text-white px-2 py-1 rounded text-sm">
+          Weight connection {hoveredConnection}
         </div>
       )}
+
+      <div className="flex justify-center items-center mb-4">
+        {/* Layer Labels */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-sm font-semibold mb-2">Layer 1</h3>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="w-6 text-center">{layer1Size}</span>
+          </div>
+        </div>
+
+        {/* Neural Network Visualization */}
+        <div
+          className="relative mx-8"
+          style={{
+            width: `${LAYER_WIDTH}px`,
+            height: `${LAYER_HEIGHT * 1.1}px`,
+          }}
+        >
+          <svg className="w-full h-full">
+            {/* Connection lines */}
+            {connections.map((conn, idx) => {
+              const fromNeuron = Math.floor(idx / layer2Size);
+              const toNeuron = idx % layer2Size;
+              const start = getNeuronPosition(0, fromNeuron, layer1Size);
+              const end = getNeuronPosition(1, toNeuron, layer2Size);
+
+              return (
+                <line
+                  key={conn.id}
+                  x1={start.x}
+                  y1={start.y}
+                  x2={end.x}
+                  y2={end.y}
+                  stroke={conn.highlighted ? "#3B82F6" : "#E5E7EB"}
+                  strokeWidth={conn.highlighted ? "2" : "1"}
+                  className="transition-all duration-300"
+                />
+              );
+            })}
+
+            {/* Layer 1 Neurons */}
+            {Array(layer1Size)
+              .fill()
+              .map((_, i) => {
+                const pos = getNeuronPosition(0, i, layer1Size);
+                return (
+                  <g
+                    key={`l1-${i}`}
+                    transform={`translate(${pos.x - NEURON_SIZE / 2},${
+                      pos.y - NEURON_SIZE / 2
+                    })`}
+                  >
+                    <circle
+                      cx={NEURON_SIZE / 2}
+                      cy={NEURON_SIZE / 2}
+                      r={NEURON_SIZE / 2}
+                      className="fill-blue-500"
+                    />
+                  </g>
+                );
+              })}
+
+            {/* Layer 2 Neurons */}
+            {Array(layer2Size)
+              .fill()
+              .map((_, i) => {
+                const pos = getNeuronPosition(1, i, layer2Size);
+                return (
+                  <g
+                    key={`l2-${i}`}
+                    transform={`translate(${pos.x - NEURON_SIZE / 2},${
+                      pos.y - NEURON_SIZE / 2
+                    })`}
+                  >
+                    <circle
+                      cx={NEURON_SIZE / 2}
+                      cy={NEURON_SIZE / 2}
+                      r={NEURON_SIZE / 2}
+                      className="fill-blue-500"
+                    />
+                  </g>
+                );
+              })}
+          </svg>
+        </div>
+
+        {/* Layer 2 Label */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-sm font-semibold mb-2">Layer 2</h3>
+          <div className="flex items-center gap-2 mb-2">
+            <span className="w-6 text-center">{layer2Size}</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default ParameterCityBuilder;
+export default ParameterSizeVisualizer;

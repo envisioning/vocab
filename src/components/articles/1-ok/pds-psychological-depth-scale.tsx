@@ -1,117 +1,127 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Layers, Brain, Waves, Check, X } from "lucide-react";
+"use client";
+import React, { useState } from "react";
+import {
+  Brain,
+  ArrowUp,
+  ArrowDown,
+  Lightbulb,
+  Heart,
+  MessageCircle,
+} from "lucide-react";
 
-interface Scenario {
-  id: number;
-  description: string;
-  level: "surface" | "middle" | "deep";
-  feedback: string;
-}
+const PDSExplainer = () => {
+  const [activeLevel, setActiveLevel] = useState(1);
 
-const PDSExplorer = () => {
-  const [currentLevel, setCurrentLevel] = useState<"surface" | "middle" | "deep">("surface");
-  const [score, setScore] = useState(0);
-  const [feedback, setFeedback] = useState("");
-  const [currentScenario, setCurrentScenario] = useState<Scenario | null>(null);
-
-  const scenarios: Scenario[] = [
+  const levels = [
     {
-      id: 1,
-      description: "Feeling annoyed at traffic",
-      level: "surface",
-      feedback: "Daily reactions are surface-level experiences"
+      id: 3,
+      title: "Deep",
+      description:
+        "Complex emotional insights, personal growth reflection, profound self-awareness",
+      icon: Brain,
+      examples: [
+        "I've noticed my anxiety stems from childhood experiences",
+        "My values have evolved through challenging times",
+      ],
+      color: "bg-blue-600",
     },
     {
       id: 2,
-      description: "Recurring fear of abandonment",
-      level: "middle",
-      feedback: "Personal patterns reflect middle-level psychology"
+      title: "Moderate",
+      description:
+        "Basic emotional awareness, simple self-reflection, clear feelings",
+      icon: Heart,
+      examples: [
+        "I feel happy when I accomplish my goals",
+        "Sometimes I worry about the future",
+      ],
+      color: "bg-blue-400",
     },
     {
-      id: 3,
-      description: "Core belief about self-worth",
-      level: "deep",
-      feedback: "Fundamental beliefs represent deep psychological structures"
-    }
+      id: 1,
+      title: "Surface",
+      description: "Simple statements, factual observations, basic reactions",
+      icon: MessageCircle,
+      examples: ["I like this", "That makes me sad", "This is fun"],
+      color: "bg-blue-200",
+    },
   ];
 
-  useEffect(() => {
-    const randomScenario = scenarios[Math.floor(Math.random() * scenarios.length)];
-    setCurrentScenario(randomScenario);
-    
-    return () => {
-      setCurrentScenario(null);
-    };
-  }, [score]);
-
-  const handleLevelSelect = (selectedLevel: "surface" | "middle" | "deep") => {
-    if (!currentScenario) return;
-    
-    if (selectedLevel === currentScenario.level) {
-      setScore(prev => prev + 1);
-      setFeedback("Correct! " + currentScenario.feedback);
-    } else {
-      setFeedback("Try again. Think about the depth of this experience.");
-    }
-    setCurrentLevel(selectedLevel);
+  const handleLevelClick = (level) => {
+    setActiveLevel(level);
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-8">
-      <div className="text-center space-y-4">
-        <h1 className="text-2xl font-bold text-gray-800">Psychological Depth Scale Explorer</h1>
-        <p className="text-gray-600">Score: {score}</p>
+    <div className="w-full max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl font-bold mb-2">
+          Psychological Depth Scale (PDS)
+        </h2>
+        <p className="text-gray-600">
+          <Lightbulb className="inline-block mr-2" size={20} />
+          Explore how AI measures the depth of psychological expressions
+        </p>
       </div>
 
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        {currentScenario && (
-          <div className="space-y-6">
-            <div className="flex items-center justify-center space-x-2">
-              <Brain className="w-8 h-8 text-blue-500" />
-              <p className="text-lg font-medium">{currentScenario.description}</p>
+      <div className="relative">
+        {levels.map((level) => {
+          const Icon = level.icon;
+          const isActive = activeLevel === level.id;
+
+          return (
+            <div
+              key={level.id}
+              className={`
+                transition-all duration-300 ease-in-out
+                mb-4 p-4 rounded-lg cursor-pointer
+                ${
+                  isActive
+                    ? `${level.color} text-white scale-105`
+                    : "bg-gray-50 hover:bg-gray-100"
+                }
+              `}
+              onClick={() => handleLevelClick(level.id)}
+            >
+              <div className="flex items-center gap-3">
+                <Icon
+                  size={24}
+                  className={isActive ? "text-white" : "text-gray-600"}
+                />
+                <h3 className="text-lg font-semibold">{level.title}</h3>
+              </div>
+
+              {isActive && (
+                <div className="mt-3 space-y-2 animate-fadeIn">
+                  <p className="text-sm">{level.description}</p>
+                  <div className="text-sm mt-2">
+                    <p className="font-semibold mb-1">Examples:</p>
+                    <ul className="list-disc list-inside">
+                      {level.examples.map((example, idx) => (
+                        <li key={idx} className="ml-2">
+                          {example}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
             </div>
+          );
+        })}
 
-            <div className="grid grid-cols-3 gap-4">
-              <button
-                onClick={() => handleLevelSelect("surface")}
-                className={`p-4 rounded-lg flex flex-col items-center space-y-2 transition-colors
-                  ${currentLevel === "surface" ? "bg-blue-500 text-white" : "bg-gray-100 hover:bg-gray-200"}`}
-                aria-label="Surface Level"
-              >
-                <Waves className="w-6 h-6" />
-                <span>Surface</span>
-              </button>
-
-              <button
-                onClick={() => handleLevelSelect("middle")}
-                className={`p-4 rounded-lg flex flex-col items-center space-y-2 transition-colors
-                  ${currentLevel === "middle" ? "bg-blue-500 text-white" : "bg-gray-100 hover:bg-gray-200"}`}
-                aria-label="Middle Level"
-              >
-                <Layers className="w-6 h-6" />
-                <span>Middle</span>
-              </button>
-
-              <button
-                onClick={() => handleLevelSelect("deep")}
-                className={`p-4 rounded-lg flex flex-col items-center space-y-2 transition-colors
-                  ${currentLevel === "deep" ? "bg-blue-500 text-white" : "bg-gray-100 hover:bg-gray-200"}`}
-                aria-label="Deep Level"
-              >
-                <Brain className="w-6 h-6" />
-                <span>Deep</span>
-              </button>
-            </div>
+        <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
+          <div className="flex flex-col gap-2">
+            <ArrowUp size={20} className="text-gray-400" />
+            <ArrowDown size={20} className="text-gray-400" />
           </div>
-        )}
-
-        <div className={`mt-6 p-4 rounded-lg text-center ${feedback.includes("Correct") ? "bg-green-100" : "bg-gray-100"}`}>
-          <p className="text-gray-700">{feedback}</p>
         </div>
+      </div>
+
+      <div className="mt-6 text-center text-sm text-gray-500">
+        Click on each level to explore its characteristics
       </div>
     </div>
   );
 };
 
-export default PDSExplorer;
+export default PDSExplainer;
