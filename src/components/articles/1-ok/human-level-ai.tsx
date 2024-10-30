@@ -1,6 +1,15 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
-import { Brain, Calculator, Heart, Music, Book, Puzzle, Trophy, AlertCircle } from "lucide-react";
+import {
+  Brain,
+  Calculator,
+  Heart,
+  Music,
+  Book,
+  Puzzle,
+  Trophy,
+  AlertCircle,
+} from "lucide-react";
 
 interface Capability {
   id: string;
@@ -17,27 +26,60 @@ interface ComparisonState {
 }
 
 const CAPABILITIES: Capability[] = [
-  { id: "math", name: "Mathematical Reasoning", icon: <Calculator size={24} />, humanLevel: 85, aiLevel: 95 },
-  { id: "emotional", name: "Emotional Intelligence", icon: <Heart size={24} />, humanLevel: 90, aiLevel: 40 },
-  { id: "creative", name: "Creative Expression", icon: <Music size={24} />, humanLevel: 88, aiLevel: 60 },
-  { id: "learning", name: "Adaptive Learning", icon: <Book size={24} />, humanLevel: 92, aiLevel: 75 },
-  { id: "problem", name: "Problem Solving", icon: <Puzzle size={24} />, humanLevel: 87, aiLevel: 82 },
+  {
+    id: "math",
+    name: "Mathematical Reasoning",
+    icon: <Calculator size={24} />,
+    humanLevel: 85,
+    aiLevel: 95,
+  },
+  {
+    id: "emotional",
+    name: "Emotional Intelligence",
+    icon: <Heart size={24} />,
+    humanLevel: 90,
+    aiLevel: 40,
+  },
+  {
+    id: "creative",
+    name: "Creative Expression",
+    icon: <Music size={24} />,
+    humanLevel: 88,
+    aiLevel: 60,
+  },
+  {
+    id: "learning",
+    name: "Adaptive Learning",
+    icon: <Book size={24} />,
+    humanLevel: 92,
+    aiLevel: 75,
+  },
+  {
+    id: "problem",
+    name: "Problem Solving",
+    icon: <Puzzle size={24} />,
+    humanLevel: 87,
+    aiLevel: 82,
+  },
 ];
 
 const AIComparisonVisualizer = () => {
   const [state, setState] = useState<ComparisonState>({
     isAnimating: false,
-    currentYear: 2023,
-    selectedCapability: "math"
+    currentYear: new Date().getFullYear(),
+    selectedCapability: "math",
   });
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout;
     if (state.isAnimating) {
       intervalId = setInterval(() => {
-        setState(prev => ({
+        setState((prev) => ({
           ...prev,
-          currentYear: prev.currentYear < 2030 ? prev.currentYear + 1 : 2023
+          currentYear:
+            prev.currentYear < new Date().getFullYear() + 7
+              ? prev.currentYear + 1
+              : new Date().getFullYear(),
         }));
       }, 2000);
     }
@@ -45,27 +87,33 @@ const AIComparisonVisualizer = () => {
   }, [state.isAnimating]);
 
   const handleCapabilitySelect = (capabilityId: string) => {
-    setState(prev => ({
+    setState((prev) => ({
       ...prev,
-      selectedCapability: capabilityId
+      selectedCapability: capabilityId,
     }));
   };
 
   const toggleAnimation = () => {
-    setState(prev => ({
+    setState((prev) => ({
       ...prev,
-      isAnimating: !prev.isAnimating
+      isAnimating: !prev.isAnimating,
     }));
   };
 
-  const selectedCap = CAPABILITIES.find(cap => cap.id === state.selectedCapability);
+  const selectedCap = CAPABILITIES.find(
+    (cap) => cap.id === state.selectedCapability
+  );
   if (!selectedCap) return null;
 
-  const yearProgress = (state.currentYear - 2023) / 7;
+  const baseYear = new Date().getFullYear();
+  const yearProgress = (state.currentYear - baseYear) / 7;
   const aiProgressLevel = selectedCap.aiLevel * (1 + yearProgress);
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg" role="main">
+    <div
+      className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg"
+      role="main"
+    >
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold flex items-center gap-2">
           <Brain className="text-blue-500" />

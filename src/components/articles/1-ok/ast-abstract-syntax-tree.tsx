@@ -1,105 +1,105 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Trees, ChevronDown, ChevronRight, Code } from "lucide-react";
+import React, { useState } from "react";
+import { Plus, Divide, CircleDot } from "lucide-react";
 
-interface Props {}
+const ASTExplainer = () => {
+  const [selectedNode, setSelectedNode] = useState(null);
 
-interface TreeNode {
-  id: string;
-  label: string;
-  children: TreeNode[];
-}
+  // Generate random number between min and max (inclusive)
+  const randomInt = (min: number, max: number) =>
+    Math.floor(Math.random() * (max - min + 1)) + min;
 
-const ASTExplainer: React.FC<Props> = () => {
-  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
-  const [selectedNode, setSelectedNode] = useState<string | null>(null);
+  // Generate random AST data
+  const generateRandomAST = () => {
+    const operators = ["+", "/"];
+    const firstNum = randomInt(1, 10);
+    const secondNum = randomInt(1, 10);
+    const thirdNum = randomInt(1, 10);
 
-  const sampleAST: TreeNode = {
-    id: "root",
-    label: "Program",
-    children: [
-      {
-        id: "func",
-        label: "Function",
-        children: [
-          {
-            id: "params",
-            label: "Parameters",
-            children: []
-          },
-          {
-            id: "body",
-            label: "Body",
-            children: [
-              {
-                id: "return",
-                label: "Return",
-                children: [
-                  {
-                    id: "value",
-                    label: "Value",
-                    children: []
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    return {
+      type: "BinaryExpression",
+      operator: operators[1], // Always division as root
+      left: {
+        type: "BinaryExpression",
+        operator: operators[0], // Always addition for nested
+        left: { type: "Number", value: firstNum },
+        right: { type: "Number", value: secondNum },
+      },
+      right: { type: "Number", value: thirdNum },
+    };
   };
 
-  const toggleNode = (nodeId: string) => {
-    setExpandedNodes(prev => {
-      const next = new Set(prev);
-      if (next.has(nodeId)) {
-        next.delete(nodeId);
-      } else {
-        next.add(nodeId);
-      }
-      return next;
-    });
-  };
+  const astData = generateRandomAST();
 
-  const renderNode = (node: TreeNode, level: number = 0) => {
-    const isExpanded = expandedNodes.has(node.id);
-    const isSelected = selectedNode === node.id;
+  const NodeComponent = ({ node, depth = 0, path = "" }) => {
+    const isSelected = selectedNode === path;
+    const marginLeft = depth * 40;
+
+    const getBackground = () => {
+      if (isSelected) return "bg-blue-100";
+      if (node.type === "BinaryExpression") return "bg-green-50";
+      return "bg-yellow-50";
+    };
 
     return (
-      <div key={node.id} className="ml-4">
+      <div style={{ marginLeft: `${marginLeft}px` }} className="my-2">
         <div
-          className={`flex items-center p-2 cursor-pointer rounded hover:bg-gray-100 
-            ${isSelected ? 'bg-blue-100' : ''}`}
-          onClick={() => toggleNode(node.id)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              toggleNode(node.id);
-            }
-          }}
-          role="button"
-          tabIndex={0}
-          aria-expanded={isExpanded}
-          aria-label={`Tree node ${node.label}`}
+          className={`p-4 rounded-lg border ${getBackground()} cursor-pointer transition-colors duration-200 hover:bg-blue-50`}
+          onClick={() => setSelectedNode(path)}
         >
-          {node.children.length > 0 && (
-            <span className="mr-2">
-              {isExpanded ? (
-                <ChevronDown className="w-4 h-4" />
+          <div className="flex items-center gap-2">
+            {node.type === "BinaryExpression" &&
+              (node.operator === "+" ? (
+                <Plus size={20} />
               ) : (
-                <ChevronRight className="w-4 h-4" />
-              )}
+                <Divide size={20} />
+              ))}
+            {node.type === "Number" && <CircleDot size={20} />}
+            <span className="font-mono">
+              {node.type === "Number"
+                ? `Number: ${node.value}`
+                : `${node.type} (${node.operator})`}
             </span>
-          )}
-          <Trees className="w-4 h-4 mr-2 text-blue-600" />
-          <span>{node.label}</span>
-        </div>
-        
-        {isExpanded && node.children.length > 0 && (
-          <div className="border-l-2 border-gray-200">
-            {node.children.map(child => renderNode(child, level + 1))}
           </div>
+        </div>
+        {node.left && (
+          <NodeComponent
+            node={node.left}
+            depth={depth + 1}
+            path={`${path}.left`}
+          />
         )}
+        {node.right && (
+          <NodeComponent
+            node={node.right}
+            depth={depth + 1}
+            path={`${path}.right`}
+          />
+        )}
+      </div>
+    );
+  };
+
+  const ExplanationPanel = () => {
+    const expression = `(${astData.left.left.value} + ${astData.left.right.value}) / ${astData.right.value}`;
+
+    const explanations = {
+      "": `This is the root node - a division operation dividing the sum by ${astData.right.value}`,
+      ".left": `This addition operation groups (${astData.left.left.value} + ${astData.left.right.value}) together before division`,
+      ".right": `This is the divisor (${astData.right.value}) in our expression`,
+      ".left.left": `The first number (${astData.left.left.value}) in our addition`,
+      ".left.right": `The second number (${astData.left.right.value}) in our addition`,
+    };
+
+    return (
+      <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h3 className="font-semibold mb-2">Expression: {expression}</h3>
+        <p className="text-gray-700">
+          {selectedNode
+            ? explanations[selectedNode]
+            : "Click on any node to see how it fits in the AST!"}
+        </p>
       </div>
     );
   };
@@ -107,29 +107,19 @@ const ASTExplainer: React.FC<Props> = () => {
   return (
     <div className="max-w-2xl mx-auto p-6">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold mb-4 flex items-center">
-          <Code className="w-6 h-6 mr-2 text-blue-600" />
-          Abstract Syntax Tree Explorer
-        </h1>
-        <p className="text-gray-600 mb-4">
-          Explore how computers break down code into a tree structure. Click nodes to expand/collapse.
+        <h2 className="text-2xl font-bold mb-2">
+          Abstract Syntax Tree Visualizer
+        </h2>
+        <p className="text-gray-600">
+          An AST represents code as a tree structure. This example shows how an
+          expression is represented as an AST. Each node represents an operation
+          or value.
         </p>
       </div>
 
-      <div 
-        className="border rounded-lg p-4 bg-white shadow-sm"
-        role="tree"
-        aria-label="Abstract Syntax Tree visualization"
-      >
-        {renderNode(sampleAST)}
-      </div>
-
-      <div className="mt-6 p-4 bg-blue-50 rounded-lg" role="complementary">
-        <h2 className="text-lg font-semibold mb-2">What is an AST?</h2>
-        <p className="text-gray-700">
-          An Abstract Syntax Tree (AST) represents the structure of code in a tree format.
-          Each node represents a construct in the code, showing how different parts relate to each other.
-        </p>
+      <div className="border rounded-xl p-6 bg-white">
+        <NodeComponent node={astData} />
+        <ExplanationPanel />
       </div>
     </div>
   );

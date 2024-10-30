@@ -1,143 +1,164 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Brain, Music, Calculator, Palette, Code, Book, ArrowRight, Check, X } from "lucide-react";
+"use client";
+import React, { useState } from "react";
+import {
+  Brain,
+  Music,
+  Calculator,
+  Palette,
+  Code,
+  Book,
+  ArrowRight,
+  Check,
+} from "lucide-react";
 
-interface Domain {
-    id: string;
-    name: string;
-    icon: JSX.Element;
-    color: string;
-}
+const CrossDomainExplorer = () => {
+  const [selectedDomain, setSelectedDomain] = useState(null);
+  const [showConnection, setShowConnection] = useState(false);
 
-interface Challenge {
-    id: string;
-    description: string;
-    requiredDomains: string[];
-    feedback: string;
-}
-
-const DOMAINS: Domain[] = [
-    { id: "music", name: "Music", icon: <Music className="w-6 h-6" />, color: "bg-blue-500" },
-    { id: "math", name: "Mathematics", icon: <Calculator className="w-6 h-6" />, color: "bg-green-500" },
-    { id: "art", name: "Art", icon: <Palette className="w-6 h-6" />, color: "bg-yellow-500" },
-    { id: "programming", name: "Programming", icon: <Code className="w-6 h-6" />, color: "bg-purple-500" },
-];
-
-const CHALLENGES: Challenge[] = [
+  const domains = [
     {
-        id: "1",
-        description: "Create a visual algorithm that generates musical patterns",
-        requiredDomains: ["programming", "music", "math"],
-        feedback: "Perfect! Programming helps automate, math provides structure, and music gives artistic direction.",
+      id: "math",
+      icon: Calculator,
+      title: "Mathematics",
+      skills: [
+        "Pattern Recognition",
+        "Logical Reasoning",
+        "Quantitative Analysis",
+      ],
+      applications: [
+        "Music Theory",
+        "Programming Algorithms",
+        "Art Composition",
+      ],
     },
     {
-        id: "2",
-        description: "Design an interactive art piece that responds to musical rhythm",
-        requiredDomains: ["art", "music", "programming"],
-        feedback: "Excellent! Art provides visuals, music drives rhythm, and programming enables interactivity.",
+      id: "music",
+      icon: Music,
+      title: "Music",
+      skills: [
+        "Pattern Recognition",
+        "Temporal Sequences",
+        "Emotional Expression",
+      ],
+      applications: ["Mathematical Rhythms", "Code Generation", "Visual Arts"],
     },
-];
+    {
+      id: "art",
+      icon: Palette,
+      title: "Visual Arts",
+      skills: ["Spatial Reasoning", "Pattern Creation", "Aesthetic Judgment"],
+      applications: [
+        "Mathematical Symmetry",
+        "Musical Composition",
+        "UI Design",
+      ],
+    },
+    {
+      id: "code",
+      icon: Code,
+      title: "Programming",
+      skills: ["Logic Structure", "Problem Solving", "Pattern Implementation"],
+      applications: [
+        "Mathematical Modeling",
+        "Music Generation",
+        "Generative Art",
+      ],
+    },
+  ];
 
-export default function CrossDomainLab() {
-    const [selectedDomains, setSelectedDomains] = useState<string[]>([]);
-    const [currentChallenge, setCurrentChallenge] = useState<Challenge>(CHALLENGES[0]);
-    const [feedback, setFeedback] = useState<string>("");
-    const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const handleDomainClick = (domain) => {
+    setSelectedDomain(domain);
+    setShowConnection(true);
+    setTimeout(() => setShowConnection(false), 2000);
+  };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setFeedback("");
-            setIsCorrect(null);
-        }, 3000);
-
-        return () => clearTimeout(timer);
-    }, [feedback]);
-
-    const handleDomainClick = (domainId: string) => {
-        setSelectedDomains(prev => {
-            if (prev.includes(domainId)) {
-                return prev.filter(id => id !== domainId);
-            }
-            return [...prev, domainId];
-        });
-    };
-
-    const checkSolution = () => {
-        const isCorrect = currentChallenge.requiredDomains.every(domain => 
-            selectedDomains.includes(domain)) && 
-            selectedDomains.length === currentChallenge.requiredDomains.length;
-        
-        setIsCorrect(isCorrect);
-        setFeedback(isCorrect ? currentChallenge.feedback : "Try again! Think about which domains work together.");
-    };
-
-    const nextChallenge = () => {
-        const currentIndex = CHALLENGES.findIndex(c => c.id === currentChallenge.id);
-        const nextIndex = (currentIndex + 1) % CHALLENGES.length;
-        setCurrentChallenge(CHALLENGES[nextIndex]);
-        setSelectedDomains([]);
-        setFeedback("");
-        setIsCorrect(null);
-    };
-
-    return (
-        <div className="max-w-2xl mx-auto p-6 space-y-6">
-            <div className="flex items-center space-x-2 mb-4">
-                <Brain className="w-8 h-8 text-blue-500" />
-                <h1 className="text-2xl font-bold">Cross-Domain Competency Lab</h1>
-            </div>
-
-            <div className="bg-gray-100 p-4 rounded-lg">
-                <h2 className="font-semibold mb-2">Current Challenge:</h2>
-                <p className="text-lg">{currentChallenge.description}</p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {DOMAINS.map(domain => (
-                    <button
-                        key={domain.id}
-                        onClick={() => handleDomainClick(domain.id)}
-                        className={`p-4 rounded-lg flex flex-col items-center transition-all duration-300 ${
-                            selectedDomains.includes(domain.id)
-                                ? `${domain.color} text-white`
-                                : 'bg-gray-200 hover:bg-gray-300'
-                        }`}
-                        aria-pressed={selectedDomains.includes(domain.id)}
-                    >
-                        {domain.icon}
-                        <span className="mt-2">{domain.name}</span>
-                    </button>
-                ))}
-            </div>
-
-            {feedback && (
-                <div className={`p-4 rounded-lg flex items-center space-x-2 ${
-                    isCorrect ? 'bg-green-100' : 'bg-red-100'
-                }`}>
-                    {isCorrect ? (
-                        <Check className="w-6 h-6 text-green-500" />
-                    ) : (
-                        <X className="w-6 h-6 text-red-500" />
-                    )}
-                    <p>{feedback}</p>
-                </div>
-            )}
-
-            <div className="flex space-x-4">
-                <button
-                    onClick={checkSolution}
-                    className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
-                >
-                    Check Solution
-                </button>
-                <button
-                    onClick={nextChallenge}
-                    className="flex items-center space-x-2 bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600 transition-colors duration-300"
-                >
-                    <span>Next Challenge</span>
-                    <ArrowRight className="w-4 h-4" />
-                </button>
-            </div>
+  return (
+    <div className="p-6 max-w-4xl mx-auto bg-white rounded-lg">
+      <div className="text-center mb-8">
+        <div className="flex items-center justify-center mb-4">
+          <Brain className="w-12 h-12 text-blue-600" />
         </div>
-    );
-}
+        <h1 className="text-2xl font-bold mb-2">
+          Cross-Domain Competency in AI
+        </h1>
+        <p className="text-gray-600">
+          Click on different domains to see how AI connects and applies
+          knowledge across fields
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        {domains.map((domain) => (
+          <button
+            key={domain.id}
+            onClick={() => handleDomainClick(domain)}
+            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
+              selectedDomain?.id === domain.id
+                ? "border-blue-500 bg-blue-50"
+                : "border-gray-200 hover:border-blue-300"
+            }`}
+          >
+            <domain.icon className="w-8 h-8 mx-auto mb-2 text-blue-600" />
+            <div className="text-sm font-medium">{domain.title}</div>
+          </button>
+        ))}
+      </div>
+
+      {selectedDomain && (
+        <div className="bg-gray-50 rounded-lg p-6 relative overflow-hidden">
+          <h2 className="text-xl font-bold mb-4">
+            {selectedDomain.title} Domain
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-medium mb-2 flex items-center">
+                <Book className="w-4 h-4 mr-2" />
+                Core Skills
+              </h3>
+              <ul className="space-y-2">
+                {selectedDomain.skills.map((skill, index) => (
+                  <li key={index} className="flex items-center text-sm">
+                    <Check className="w-4 h-4 mr-2 text-green-500" />
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-medium mb-2 flex items-center">
+                <ArrowRight className="w-4 h-4 mr-2" />
+                Cross-Domain Applications
+              </h3>
+              <ul className="space-y-2">
+                {selectedDomain.applications.map((app, index) => (
+                  <li key={index} className="flex items-center text-sm">
+                    <div
+                      className={`h-1 w-1 rounded-full mr-2 ${
+                        showConnection ? "bg-blue-500" : "bg-gray-400"
+                      }`}
+                    />
+                    {app}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {showConnection && (
+            <div className="absolute inset-0 bg-blue-500/10 border-2 border-blue-500 rounded-lg transition-opacity duration-300" />
+          )}
+        </div>
+      )}
+
+      <div className="mt-6 text-sm text-gray-500 text-center">
+        This visualization demonstrates how AI systems can leverage knowledge
+        and skills from one domain to enhance understanding and performance in
+        others.
+      </div>
+    </div>
+  );
+};
+
+export default CrossDomainExplorer;

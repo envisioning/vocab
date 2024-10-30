@@ -1,282 +1,260 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { ArrowRight, Brain, TextCursor, Zap, Play, Pause, RotateCcw } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Brain, Check, X, Pause, Play } from "lucide-react";
 
-interface Sentence {
-  vocabulary: string[];
-  probSequence: number[][];
-}
+const EXAMPLES = [
+  {
+    title: "Writing a Story",
+    sequence: [
+      {
+        prompt: "Once",
+        options: [
+          { token: "upon", probability: 0.75 },
+          { token: "there", probability: 0.15 },
+          { token: "when", probability: 0.1 },
+        ],
+      },
+      {
+        prompt: "Once upon",
+        options: [
+          { token: "a", probability: 0.85 },
+          { token: "the", probability: 0.1 },
+          { token: "my", probability: 0.05 },
+        ],
+      },
+      {
+        prompt: "Once upon a",
+        options: [
+          { token: "time", probability: 0.8 },
+          { token: "day", probability: 0.15 },
+          { token: "night", probability: 0.05 },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Weather Description",
+    sequence: [
+      {
+        prompt: "The",
+        options: [
+          { token: "sun", probability: 0.45 },
+          { token: "rain", probability: 0.3 },
+          { token: "wind", probability: 0.25 },
+        ],
+      },
+      {
+        prompt: "The sun",
+        options: [
+          { token: "shines", probability: 0.65 },
+          { token: "glows", probability: 0.2 },
+          { token: "sets", probability: 0.15 },
+        ],
+      },
+      {
+        prompt: "The sun shines",
+        options: [
+          { token: "brightly", probability: 0.5 },
+          { token: "warmly", probability: 0.3 },
+          { token: "softly", probability: 0.2 },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Code Completion",
+    sequence: [
+      {
+        prompt: "def",
+        options: [
+          { token: "calculate", probability: 0.4 },
+          { token: "process", probability: 0.35 },
+          { token: "analyze", probability: 0.25 },
+        ],
+      },
+      {
+        prompt: "def calculate",
+        options: [
+          { token: "_average", probability: 0.45 },
+          { token: "_sum", probability: 0.3 },
+          { token: "_total", probability: 0.25 },
+        ],
+      },
+      {
+        prompt: "def calculate_average",
+        options: [
+          { token: "(numbers):", probability: 0.7 },
+          { token: "(data):", probability: 0.2 },
+          { token: "(values):", probability: 0.1 },
+        ],
+      },
+    ],
+  },
+];
 
-const GreedyDecoding = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+const GreedyDecodingDemo = () => {
+  const [currentExample, setCurrentExample] = useState(0);
   const [currentStep, setCurrentStep] = useState(0);
-  const [selectedTokens, setSelectedTokens] = useState<string[]>([]);
-  const [currentProbabilities, setCurrentProbabilities] = useState<number[]>([]);
-  const [currentSentence, setCurrentSentence] = useState<Sentence>();
-
-  // Define all possible sentences and their corresponding vocabularies and probabilities
-  const sentences = [
-    {
-      text: "The cat sits on the mat",
-      vocabulary: ["The", "cat", "sits", "on", "the", "mat"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The dog runs in the park",
-      vocabulary: ["The", "dog", "runs", "in", "the", "park"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The bird flies through the sky",
-      vocabulary: ["The", "bird", "flies", "through", "the", "sky"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The fish swims in the pond",
-      vocabulary: ["The", "fish", "swims", "in", "the", "pond"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The child plays with the toy",
-      vocabulary: ["The", "child", "plays", "with", "the", "toy"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The sun shines in the sky",
-      vocabulary: ["The", "sun", "shines", "in", "the", "sky"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The wind blows through the trees",
-      vocabulary: ["The", "wind", "blows", "through", "the", "trees"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The rain falls on the ground",
-      vocabulary: ["The", "rain", "falls", "on", "the", "ground"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The car drives down the road",
-      vocabulary: ["The", "car", "drives", "down", "the", "road"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-    {
-      text: "The book sits on the shelf",
-      vocabulary: ["The", "book", "sits", "on", "the", "shelf"],
-      probSequence: [
-        [0.8, 0.05, 0.03, 0.04, 0.06, 0.02],
-        [0.02, 0.45, 0.40, 0.05, 0.05, 0.03],
-        [0.02, 0.05, 0.45, 0.35, 0.08, 0.05],
-        [0.02, 0.05, 0.05, 0.70, 0.13, 0.05],
-        [0.02, 0.05, 0.05, 0.03, 0.75, 0.10],
-        [0.02, 0.05, 0.05, 0.03, 0.05, 0.80],
-      ]
-    },
-  ];
-
-  // Select random sentence on mount
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * sentences.length);
-    setCurrentSentence(sentences[randomIndex]);
-  }, []);
+  const [isPaused, setIsPaused] = useState(false);
+  const [highlightedOption, setHighlightedOption] = useState(null);
+  const [showAllOptions, setShowAllOptions] = useState(false);
 
   useEffect(() => {
-    if (!isPlaying || !currentSentence) {
-      return;
-    }
+    if (isPaused) return;
 
-    const interval = setInterval(() => {
-      setCurrentStep((prev) => {
-        if (prev >= currentSentence.probSequence.length - 1) {
-          setIsPlaying(false);
-          return prev;
-        }
-        return prev + 1;
-      });
+    const timer = setTimeout(() => {
+      if (!showAllOptions) {
+        setShowAllOptions(true);
+        return;
+      }
+
+      if (highlightedOption === null) {
+        setHighlightedOption(0);
+        return;
+      }
+
+      // Reset and move to next step
+      const nextStep = () => {
+        setHighlightedOption(null);
+        setShowAllOptions(false);
+        setCurrentStep((prev) => prev + 1);
+      };
+
+      // Reset and move to next example
+      const nextExample = () => {
+        setHighlightedOption(null);
+        setShowAllOptions(false);
+        setCurrentStep(0);
+        setCurrentExample((prev) => (prev + 1) % EXAMPLES.length);
+      };
+
+      // If we've highlighted the chosen option, move to next step or example
+      if (currentStep >= EXAMPLES[currentExample].sequence.length - 1) {
+        setTimeout(nextExample, 1000);
+      } else {
+        setTimeout(nextStep, 1000);
+      }
     }, 1000);
 
-    return () => clearInterval(interval);
-  }, [isPlaying, currentSentence]);
+    return () => clearTimeout(timer);
+  }, [
+    currentExample,
+    currentStep,
+    highlightedOption,
+    showAllOptions,
+    isPaused,
+  ]);
 
-  useEffect(() => {
-    if (!currentSentence) {
-      return;
-    }
-
-    setCurrentProbabilities(currentSentence.probSequence[currentStep]);
-    const maxIndex = currentSentence.probSequence[currentStep].indexOf(
-      Math.max(...currentSentence.probSequence[currentStep])
-    );
-    setSelectedTokens((prev) => [...prev.slice(0, currentStep), currentSentence.vocabulary[maxIndex]]);
-  }, [currentStep, currentSentence]);
-
-  const handleReset = () => {
-    setCurrentStep(0);
-    setSelectedTokens([]);
-    setIsPlaying(true);
-    // Optionally select a new random sentence on reset
-    const randomIndex = Math.floor(Math.random() * sentences.length);
-    setCurrentSentence(sentences[randomIndex]);
-  };
-
-  if (!currentSentence) {
-    return null;
-  }
-
-  const isComplete = currentStep >= currentSentence.probSequence.length - 1;
+  const currentSequence = EXAMPLES[currentExample].sequence[currentStep];
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-8">
-      <div className="bg-blue-50 p-6 rounded-lg">
-        <div className="flex items-center gap-2 mb-4">
-          <Brain className="text-blue-600 w-6 h-6" />
-          <h2 className="text-2xl font-bold text-blue-900">Greedy Decoding</h2>
+    <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center gap-2">
+          <Brain className="w-6 h-6 text-blue-600" />
+          <h2 className="text-2xl font-bold text-gray-800">Greedy Decoding</h2>
+        </div>
+        <button
+          onClick={() => setIsPaused(!isPaused)}
+          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-100 text-blue-600 hover:bg-blue-200"
+        >
+          {isPaused ? (
+            <Play className="w-4 h-4" />
+          ) : (
+            <Pause className="w-4 h-4" />
+          )}
+          {isPaused ? "Resume" : "Pause"}
+        </button>
+      </div>
+
+      <div className="mb-4 text-lg text-blue-600 font-medium">
+        Example: {EXAMPLES[currentExample].title}
+      </div>
+
+      {/* Main visualization area */}
+      <div className="mb-8">
+        <div className="bg-gray-50 p-4 rounded-lg mb-4">
+          <p className="text-lg font-mono">{currentSequence.prompt}_</p>
         </div>
 
-        <div className="flex items-center gap-2 mb-6">
-          <TextCursor className="text-blue-500 w-5 h-5" />
-          <p className="text-blue-800">
-            Selecting the most probable next token at each step
-          </p>
-        </div>
-
-        <div className="bg-white p-4 rounded-lg shadow-sm">
-          <div className="flex gap-2 mb-4">
-            {selectedTokens.map((token, idx) => (
+        <div className="space-y-4">
+          {currentSequence.options.map((option, idx) => (
+            <div
+              key={option.token}
+              className={`transform transition-all duration-500 ${
+                showAllOptions
+                  ? "translate-x-0 opacity-100"
+                  : "translate-x-full opacity-0"
+              }`}
+              style={{ transitionDelay: `${idx * 200}ms` }}
+            >
               <div
-                key={idx}
-                className="bg-blue-100 text-blue-800 px-3 py-1 rounded-md flex items-center gap-1"
-              >
-                {token}
-                <ArrowRight className="w-4 h-4" />
-              </div>
-            ))}
-            <div className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-md flex items-center">
-              <Zap className="w-4 h-4 mr-1" />
-              Deciding...
-            </div>
-          </div>
-
-          <div className="grid grid-cols-7 gap-2">
-            {currentSentence.vocabulary.map((token, idx) => (
-              <div
-                key={idx}
-                className={`p-2 rounded-md text-center transition-all duration-300 ${currentProbabilities[idx] === Math.max(...currentProbabilities)
-                    ? "bg-green-100 border-2 border-green-500"
-                    : "bg-gray-50"
+                className={`flex items-center justify-between p-3 rounded-lg border
+                  ${
+                    highlightedOption === idx
+                      ? "bg-green-50 border-green-200"
+                      : "bg-gray-50 border-gray-200"
                   }`}
               >
-                <div className="text-sm font-medium">{token}</div>
-                <div className="text-xs text-gray-600">
-                  {(currentProbabilities[idx] * 100).toFixed(1)}%
+                <div className="flex items-center gap-2">
+                  {highlightedOption === idx ? (
+                    <Check className="w-5 h-5 text-green-600" />
+                  ) : (
+                    <X className="w-5 h-5 text-gray-400" />
+                  )}
+                  <span className="font-mono">{option.token}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-24 h-4 bg-gray-200 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-blue-600 transition-all duration-500"
+                      style={{ width: `${option.probability * 100}%` }}
+                    ></div>
+                  </div>
+                  <span className="text-sm text-gray-600 w-16">
+                    {(option.probability * 100).toFixed(1)}%
+                  </span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex justify-center gap-4 mt-6">
-          {!isComplete && (
-            <button
-              onClick={() => setIsPlaying(!isPlaying)}
-              className="flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
-            >
-              {isPlaying ? (
-                <>
-                  <Pause className="w-4 h-4" /> Pause
-                </>
-              ) : (
-                <>
-                  <Play className="w-4 h-4" /> Play
-                </>
-              )}
-            </button>
-          )}
-          <button
-            onClick={handleReset}
-            className="flex items-center gap-2 px-4 py-2 rounded-md bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors"
-          >
-            <RotateCcw className="w-4 h-4" /> Reset
-          </button>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="bg-gray-50 p-4 rounded-lg">
-        <h3 className="font-semibold mb-2">How it works:</h3>
-        <ul className="space-y-2 text-sm text-gray-700">
-          <li>1. Model calculates probabilities for each possible next token</li>
-          <li>2. Selects the token with highest probability</li>
-          <li>3. Repeats process for next position</li>
-          <li>4. Continues until sequence is complete</li>
+      {/* Progress indicators */}
+      <div className="flex justify-between items-center mt-4">
+        <div className="flex gap-2">
+          {EXAMPLES[currentExample].sequence.map((_, idx) => (
+            <div
+              key={idx}
+              className={`w-3 h-3 rounded-full ${
+                idx === currentStep ? "bg-blue-600" : "bg-gray-200"
+              }`}
+            ></div>
+          ))}
+        </div>
+        <div className="text-sm text-gray-600">
+          Example {currentExample + 1} of {EXAMPLES.length}
+        </div>
+      </div>
+
+      {/* Explanation */}
+      <div className="mt-6 p-4 bg-blue-50 rounded-lg text-gray-700">
+        <p className="font-medium mb-2">How Greedy Decoding Works:</p>
+        <ul className="list-disc pl-6 space-y-1 text-sm">
+          <li>
+            At each step, the model considers multiple possible next tokens
+          </li>
+          <li>It always selects the token with the highest probability</li>
+          <li>
+            The selection is "greedy" because it picks the local best choice
+          </li>
+          <li>This process continues until the sequence is complete</li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default GreedyDecoding;
+export default GreedyDecodingDemo;

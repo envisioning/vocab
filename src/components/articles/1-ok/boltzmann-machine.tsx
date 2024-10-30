@@ -1,196 +1,195 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Users, Thermometer, Activity, Network, Play, Pause, RefreshCw } from "lucide-react";
+"use client";
 
-interface Node {
-  id: number;
-  state: boolean;
-  x: number;
-  y: number;
-}
+import React, { useState, useEffect } from "react";
+import { Circle, RefreshCw, Thermometer } from "lucide-react";
 
-interface Connection {
-  from: number;
-  to: number;
-  weight: number;
-}
+const BoltzmannMachineExplainer = () => {
+  // Create a grid of nodes with slight random offsets
+  const createNodes = () => {
+    const nodes = [];
+    const gridSize = 4;
+    const spacing = 80;
+    const baseX = 100;
+    const baseY = 100;
 
-const GRID_SIZE = 4;
-const INITIAL_TEMPERATURE = 1.0;
-
-const BoltzmannMachine = () => {
-  const [nodes, setNodes] = useState<Node[]>([]);
-  const [connections, setConnections] = useState<Connection[]>([]);
-  const [temperature, setTemperature] = useState<number>(INITIAL_TEMPERATURE);
-  const [isRunning, setIsRunning] = useState<boolean>(false);
-  const [energy, setEnergy] = useState<number>(0);
-
-  useEffect(() => {
-    initializeNetwork();
-    return () => setIsRunning(false);
-  }, []);
-
-  const initializeNetwork = () => {
-    const initialNodes: Node[] = [];
-    const initialConnections: Connection[] = [];
-
-    for (let i = 0; i < GRID_SIZE * GRID_SIZE; i++) {
-      initialNodes.push({
-        id: i,
-        state: Math.random() > 0.5,
-        x: (i % GRID_SIZE) * 100 + 50,
-        y: Math.floor(i / GRID_SIZE) * 100 + 50
-      });
-    }
-
-    for (let i = 0; i < initialNodes.length; i++) {
-      for (let j = i + 1; j < initialNodes.length; j++) {
-        initialConnections.push({
-          from: i,
-          to: j,
-          weight: (Math.random() * 2 - 1) * 0.5
+    for (let i = 0; i < gridSize; i++) {
+      for (let j = 0; j < gridSize; j++) {
+        const randomOffset = () => (Math.random() - 0.5) * 20;
+        nodes.push({
+          id: i * gridSize + j,
+          state: Math.random() < 0.5 ? 1 : 0,
+          x: baseX + j * spacing + randomOffset(),
+          y: baseY + i * spacing + randomOffset(),
         });
       }
     }
+    return nodes;
+  };
 
-    setNodes(initialNodes);
-    setConnections(initialConnections);
+  const [nodes, setNodes] = useState(createNodes());
+  const [isRunning, setIsRunning] = useState(true);
+  const [temperature, setTemperature] = useState(1.0);
+
+  // Sigmoid function for probability calculation
+  const sigmoid = (x) => 1 / (1 + Math.exp(-x / temperature));
+
+  // Update multiple random nodes' states
+  const updateRandomNodes = () => {
+    const numNodesToUpdate = Math.floor(Math.random() * 3) + 1; // Update 1-3 nodes at once
+
+    setNodes((prevNodes) => {
+      const newNodes = [...prevNodes];
+      for (let i = 0; i < numNodesToUpdate; i++) {
+        const nodeId = Math.floor(Math.random() * nodes.length);
+
+        // Calculate "energy" based on neighbors' states
+        const neighbors = newNodes.filter(
+          (other) =>
+            Math.sqrt(
+              Math.pow(other.x - newNodes[nodeId].x, 2) +
+                Math.pow(other.y - newNodes[nodeId].y, 2)
+            ) < 100 && other.id !== nodeId
+        );
+
+        const neighborEnergy = neighbors.reduce(
+          (sum, neighbor) => sum + (neighbor.state * 2 - 1),
+          0
+        );
+
+        const energy = neighborEnergy + (Math.random() * 2 - 1);
+        const probability = sigmoid(energy);
+
+        newNodes[nodeId] = {
+          ...newNodes[nodeId],
+          state: Math.random() < probability ? 1 : 0,
+        };
+      }
+      return newNodes;
+    });
   };
 
   useEffect(() => {
-    let animationFrame: number;
-    
-    const updateStates = () => {
-      if (!isRunning) return;
-
-      setNodes(prevNodes => {
-        const newNodes = [...prevNodes];
-        const randomNodeIndex = Math.floor(Math.random() * nodes.length);
-        const currentEnergy = calculateEnergy(newNodes[randomNodeIndex], newNodes);
-        
-        newNodes[randomNodeIndex].state = !newNodes[randomNodeIndex].state;
-        const newEnergy = calculateEnergy(newNodes[randomNodeIndex], newNodes);
-        
-        const deltaEnergy = newEnergy - currentEnergy;
-        const probability = Math.exp(-deltaEnergy / temperature);
-
-        if (Math.random() > probability) {
-          newNodes[randomNodeIndex].state = !newNodes[randomNodeIndex].state;
-        }
-
-        setEnergy(calculateTotalEnergy(newNodes));
-        return newNodes;
-      });
-
-      animationFrame = requestAnimationFrame(updateStates);
-    };
-
+    let interval;
     if (isRunning) {
-      animationFrame = requestAnimationFrame(updateStates);
+      interval = setInterval(updateRandomNodes, 200);
     }
-
-    return () => cancelAnimationFrame(animationFrame);
-  }, [isRunning, temperature]);
-
-  const calculateEnergy = (node: Node, allNodes: Node[]) => {
-    let energy = 0;
-    connections.forEach(conn => {
-      if (conn.from === node.id || conn.to === node.id) {
-        const otherNode = allNodes[conn.from === node.id ? conn.to : conn.from];
-        energy += conn.weight * (node.state ? 1 : -1) * (otherNode.state ? 1 : -1);
-      }
-    });
-    return -energy;
-  };
-
-  const calculateTotalEnergy = (currentNodes: Node[]) => {
-    let total = 0;
-    connections.forEach(conn => {
-      total += conn.weight * 
-        (currentNodes[conn.from].state ? 1 : -1) * 
-        (currentNodes[conn.to].state ? 1 : -1);
-    });
-    return -total;
-  };
+    return () => clearInterval(interval);
+  }, [isRunning]);
 
   return (
-    <div className="p-4 max-w-4xl mx-auto" role="application">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold">Social Energy Simulator</h2>
-        <div className="flex gap-4">
-          <button
-            onClick={() => setIsRunning(!isRunning)}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded"
-            aria-label={isRunning ? "Pause simulation" : "Start simulation"}
-          >
-            {isRunning ? <Pause size={20} /> : <Play size={20} />}
-          </button>
-          <button
-            onClick={initializeNetwork}
-            className="flex items-center gap-2 px-4 py-2 bg-gray-500 text-white rounded"
-            aria-label="Reset network"
-          >
-            <RefreshCw size={20} />
-          </button>
+    <div className="p-6 max-w-3xl mx-auto bg-white rounded-xl shadow-lg">
+      <h2 className="text-2xl font-bold mb-4">Boltzmann Machine Simulation</h2>
+
+      <div className="mb-6">
+        <p className="text-gray-600 mb-4">
+          Watch as the neurons stochastically update their states based on their
+          neighbors and the system temperature. Higher temperature leads to more
+          random behavior, while lower temperature makes the system more
+          deterministic.
+        </p>
+      </div>
+
+      {/* Controls */}
+      <div className="flex flex-wrap gap-4 mb-6">
+        <button
+          onClick={() => setIsRunning(!isRunning)}
+          className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          {isRunning ? "Pause" : "Resume"}
+          <RefreshCw className={`w-4 h-4 ${isRunning ? "animate-spin" : ""}`} />
+        </button>
+
+        <div className="flex items-center gap-2">
+          <Thermometer className="w-4 h-4" />
+          <input
+            type="range"
+            min="0.1"
+            max="2"
+            step="0.1"
+            value={temperature}
+            onChange={(e) => setTemperature(parseFloat(e.target.value))}
+            className="w-32"
+          />
+          <span className="text-sm text-gray-600">
+            Temperature: {temperature.toFixed(1)}
+          </span>
         </div>
       </div>
 
-      <div className="flex gap-4">
-        <div className="relative w-[400px] h-[400px] border rounded">
-          <svg width="400" height="400">
-            {connections.map((conn, i) => (
-              <line
-                key={`conn-${i}`}
-                x1={nodes[conn.from]?.x}
-                y1={nodes[conn.from]?.y}
-                x2={nodes[conn.to]?.x}
-                y2={nodes[conn.to]?.y}
-                stroke={`rgba(59, 130, 246, ${Math.abs(conn.weight)})`}
-                strokeWidth="1"
-              />
-            ))}
-            {nodes.map((node, i) => (
+      {/* Network Visualization */}
+      <div className="relative h-96 border rounded-lg bg-gray-50 overflow-hidden">
+        <svg className="w-full h-full">
+          {/* Connections between nearby nodes */}
+          {nodes.map((node1) =>
+            nodes.map((node2) => {
+              const distance = Math.sqrt(
+                Math.pow(node1.x - node2.x, 2) + Math.pow(node1.y - node2.y, 2)
+              );
+              return (
+                node1.id < node2.id &&
+                distance < 100 && (
+                  <line
+                    key={`${node1.id}-${node2.id}`}
+                    x1={node1.x}
+                    y1={node1.y}
+                    x2={node2.x}
+                    y2={node2.y}
+                    stroke="gray"
+                    strokeWidth="1"
+                    strokeDasharray="4"
+                    opacity={0.5}
+                  />
+                )
+              );
+            })
+          )}
+
+          {/* Nodes */}
+          {nodes.map((node) => (
+            <g key={node.id} transform={`translate(${node.x},${node.y})`}>
               <circle
-                key={`node-${i}`}
-                cx={node.x}
-                cy={node.y}
-                r="20"
-                fill={node.state ? "#22C55E" : "#6B7280"}
+                r="16"
+                fill={node.state === 1 ? "#60A5FA" : "#E5E7EB"}
+                stroke="#2563EB"
+                strokeWidth="2"
                 className="transition-colors duration-300"
               />
-            ))}
-          </svg>
-        </div>
+              <text
+                textAnchor="middle"
+                dy="0.3em"
+                className="text-xs font-medium select-none"
+                fill={node.state === 1 ? "white" : "black"}
+              >
+                {node.state}
+              </text>
+            </g>
+          ))}
+        </svg>
+      </div>
 
-        <div className="flex flex-col gap-4">
+      {/* Stats */}
+      <div className="mt-4 flex justify-between text-sm text-gray-600">
+        <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <Thermometer className="text-blue-500" />
-            <input
-              type="range"
-              min="0.1"
-              max="2"
-              step="0.1"
-              value={temperature}
-              onChange={(e) => setTemperature(Number(e.target.value))}
-              className="w-full"
-              aria-label="Temperature control"
-            />
-            <span className="w-12 text-right">{temperature.toFixed(1)}</span>
+            <Circle className="w-4 h-4 text-blue-500 fill-current" /> Active (
+            {nodes.filter((n) => n.state === 1).length})
           </div>
-          
           <div className="flex items-center gap-2">
-            <Activity className="text-blue-500" />
-            <div className="w-full bg-gray-200 rounded-full h-2.5">
-              <div
-                className="bg-blue-500 h-2.5 rounded-full transition-all duration-300"
-                style={{ width: `${Math.min(100, Math.abs(energy) * 100)}%` }}
-              />
-            </div>
+            <Circle className="w-4 h-4 text-gray-300 fill-current" /> Inactive (
+            {nodes.filter((n) => n.state === 0).length})
           </div>
+        </div>
+        <div>
+          Activity Rate:{" "}
+          {(
+            (nodes.filter((n) => n.state === 1).length / nodes.length) *
+            100
+          ).toFixed(1)}
+          %
         </div>
       </div>
     </div>
   );
 };
 
-export default BoltzmannMachine;
+export default BoltzmannMachineExplainer;

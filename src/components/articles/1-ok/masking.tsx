@@ -1,6 +1,14 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
-import { Eye, EyeOff, Book, FastForward, Rewind, Play, Pause } from "lucide-react";
+import {
+  Eye,
+  EyeOff,
+  Book,
+  FastForward,
+  Rewind,
+  Play,
+  Pause,
+} from "lucide-react";
 
 interface MaskingLessonProps {}
 
@@ -10,65 +18,126 @@ type WordState = {
   predicted?: string;
 };
 
-const SAMPLE_SENTENCE = [
-  "The",
-  "quick",
-  "brown",
-  "fox",
-  "jumps",
-  "over",
-  "the",
-  "lazy",
-  "dog"
+const EXAMPLE_SENTENCES = [
+  {
+    text: [
+      "The",
+      "quick",
+      "brown",
+      "fox",
+      "jumps",
+      "over",
+      "the",
+      "lazy",
+      "dog",
+    ],
+    predictions: {
+      The: ["quick", "big", "small"],
+      quick: ["brown", "red", "blue"],
+      brown: ["fox", "dog", "cat"],
+      fox: ["jumps", "runs", "walks"],
+      jumps: ["over", "through", "under"],
+      over: ["the", "a", "that"],
+      the: ["lazy", "sleeping", "tired"],
+      lazy: ["dog", "cat", "wolf"],
+    },
+  },
+  {
+    text: [
+      "A",
+      "beautiful",
+      "butterfly",
+      "flies",
+      "through",
+      "the",
+      "summer",
+      "breeze",
+    ],
+    predictions: {
+      A: ["beautiful", "small", "large"],
+      beautiful: ["butterfly", "flower", "garden"],
+      butterfly: ["flies", "lands", "floats"],
+      flies: ["through", "over", "under"],
+      through: ["the", "a", "that"],
+      the: ["summer", "spring", "winter"],
+      summer: ["breeze", "sky", "day"],
+    },
+  },
+  {
+    text: ["She", "walked", "quietly", "into", "the", "ancient", "library"],
+    predictions: {
+      She: ["walked", "ran", "moved"],
+      walked: ["quietly", "slowly", "briskly"],
+      quietly: ["into", "through", "past"],
+      into: ["the", "a", "that"],
+      the: ["ancient", "old", "dark"],
+      ancient: ["library", "temple", "ruins"],
+    },
+  },
 ];
-
-const PREDICTIONS = {
-  "The": ["quick", "big", "small"],
-  "quick": ["brown", "red", "blue"],
-  "brown": ["fox", "dog", "cat"],
-  "fox": ["jumps", "runs", "walks"],
-  "jumps": ["over", "through", "under"],
-  "over": ["the", "a", "that"],
-  "the": ["lazy", "sleeping", "tired"],
-  "lazy": ["dog", "cat", "wolf"],
-};
 
 /**
  * Interactive component teaching masking concepts through sequential word revelation
  */
 const MaskingLesson: React.FC<MaskingLessonProps> = () => {
-  const [words, setWords] = useState<WordState[]>(
-    SAMPLE_SENTENCE.map(word => ({ word, revealed: false }))
+  const [currentExampleIndex, setCurrentExampleIndex] = useState(
+    Math.floor(Math.random() * EXAMPLE_SENTENCES.length)
   );
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [words, setWords] = useState<WordState[]>(
+    EXAMPLE_SENTENCES[currentExampleIndex].text.map((word) => ({
+      word,
+      revealed: false,
+    }))
+  );
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [showPredictions, setShowPredictions] = useState<boolean>(true);
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
-    
-    if (isPlaying && currentIndex < words.length) {
+
+    if (currentIndex >= words.length) {
       timer = setTimeout(() => {
-        setWords(prev => 
-          prev.map((word, idx) => 
+        const nextExampleIndex =
+          (currentExampleIndex + 1) % EXAMPLE_SENTENCES.length;
+        setCurrentExampleIndex(nextExampleIndex);
+        setWords(
+          EXAMPLE_SENTENCES[nextExampleIndex].text.map((word) => ({
+            word,
+            revealed: false,
+          }))
+        );
+        setCurrentIndex(0);
+      }, 2000); // Wait 2 seconds before switching to next example
+    } else {
+      timer = setTimeout(() => {
+        setWords((prev) =>
+          prev.map((word, idx) =>
             idx === currentIndex ? { ...word, revealed: true } : word
           )
         );
-        setCurrentIndex(prev => prev + 1);
+        setCurrentIndex((prev) => prev + 1);
       }, 1000);
     }
 
     return () => clearTimeout(timer);
-  }, [isPlaying, currentIndex, words.length]);
+  }, [currentIndex, currentExampleIndex, words.length]);
 
   const handleReset = () => {
-    setWords(SAMPLE_SENTENCE.map(word => ({ word, revealed: false })));
+    setWords(
+      EXAMPLE_SENTENCES[currentExampleIndex].text.map((word) => ({
+        word,
+        revealed: false,
+      }))
+    );
     setCurrentIndex(0);
-    setIsPlaying(false);
   };
 
   const getPredictions = (currentWord: string): string[] => {
-    return PREDICTIONS[currentWord as keyof typeof PREDICTIONS] || [];
+    return (
+      EXAMPLE_SENTENCES[currentExampleIndex].predictions[
+        currentWord as keyof typeof PREDICTIONS
+      ] || []
+    );
   };
 
   return (
@@ -82,10 +151,12 @@ const MaskingLesson: React.FC<MaskingLessonProps> = () => {
           <div
             key={idx}
             className={`relative p-4 border rounded-lg transition-all duration-300
-              ${wordState.revealed ? 'bg-white' : 'bg-gray-200'}`}
+              ${wordState.revealed ? "bg-white" : "bg-gray-200"}`}
             role="button"
             tabIndex={0}
-            aria-label={`Word ${idx + 1}${wordState.revealed ? ': ' + wordState.word : ': hidden'}`}
+            aria-label={`Word ${idx + 1}${
+              wordState.revealed ? ": " + wordState.word : ": hidden"
+            }`}
           >
             {wordState.revealed ? (
               <span className="text-lg font-medium">{wordState.word}</span>
@@ -117,13 +188,6 @@ const MaskingLesson: React.FC<MaskingLessonProps> = () => {
 
       <div className="flex items-center space-x-4">
         <button
-          onClick={() => setIsPlaying(!isPlaying)}
-          className="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300"
-          aria-label={isPlaying ? 'Pause' : 'Play'}
-        >
-          {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
-        </button>
-        <button
           onClick={handleReset}
           className="flex items-center px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors duration-300"
           aria-label="Reset"
@@ -133,9 +197,13 @@ const MaskingLesson: React.FC<MaskingLessonProps> = () => {
         <button
           onClick={() => setShowPredictions(!showPredictions)}
           className="flex items-center px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors duration-300"
-          aria-label={showPredictions ? 'Hide predictions' : 'Show predictions'}
+          aria-label={showPredictions ? "Hide predictions" : "Show predictions"}
         >
-          {showPredictions ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+          {showPredictions ? (
+            <EyeOff className="w-5 h-5" />
+          ) : (
+            <Eye className="w-5 h-5" />
+          )}
         </button>
       </div>
     </div>

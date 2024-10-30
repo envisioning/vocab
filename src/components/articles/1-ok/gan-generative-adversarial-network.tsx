@@ -1,151 +1,164 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Palette, Eye, XCircle, CheckCircle, Play, Pause, RotateCcw } from "lucide-react";
+"use client";
+import React, { useState, useEffect } from "react";
+import {
+  Paintbrush2,
+  Eye,
+  ThumbsUp,
+  ThumbsDown,
+  RefreshCw,
+} from "lucide-react";
 
-interface GANState {
-  generatorScore: number;
-  discriminatorScore: number;
-  currentRound: number;
-  isPlaying: boolean;
-  feedback: string;
-  generatedArt: string[];
-  realArt: string[];
-}
-
-/**
- * GANBattleArena - Interactive component teaching GAN concepts through art forgery metaphor
- * @returns React.FC
- */
-const GANBattleArena: React.FC = () => {
-  const [state, setState] = useState<GANState>({
-    generatorScore: 0,
-    discriminatorScore: 0,
-    currentRound: 0,
-    isPlaying: false,
-    feedback: "Ready to start the GAN battle!",
-    generatedArt: ["🎨", "🖼️", "🎭"],
-    realArt: ["🖼️", "🎨", "🎭"],
-  });
-
-  const handleStart = () => {
-    setState(prev => ({ ...prev, isPlaying: !prev.isPlaying }));
-  };
-
-  const handleReset = () => {
-    setState({
-      generatorScore: 0,
-      discriminatorScore: 0,
-      currentRound: 0,
-      isPlaying: false,
-      feedback: "Ready to start the GAN battle!",
-      generatedArt: ["🎨", "🖼️", "🎭"],
-      realArt: ["🖼️", "🎨", "🎭"],
-    });
-  };
-
-  const evaluateRound = () => {
-    const success = Math.random() > 0.5;
-    setState(prev => ({
-      ...prev,
-      generatorScore: success ? prev.generatorScore + 1 : prev.generatorScore,
-      discriminatorScore: !success ? prev.discriminatorScore + 1 : prev.discriminatorScore,
-      currentRound: prev.currentRound + 1,
-      feedback: success ? "Generator fooled the discriminator!" : "Discriminator caught the fake!",
-    }));
-  };
+const GANExplainer = () => {
+  const [iteration, setIteration] = useState(0);
+  const [quality, setQuality] = useState(20);
+  const [isTraining, setIsTraining] = useState(false);
+  const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
-    if (state.isPlaying && state.currentRound < 10) {
-      interval = setInterval(evaluateRound, 2000);
+    if (isTraining) {
+      const interval = setInterval(() => {
+        setIteration((prev) => {
+          if (prev >= 10) {
+            setIsTraining(false);
+            return prev;
+          }
+          setQuality((prevQ) => Math.min(prevQ + 8, 95));
+          return prev + 1;
+        });
+      }, 1000);
+      return () => clearInterval(interval);
     }
-    return () => clearInterval(interval);
-  }, [state.isPlaying, state.currentRound]);
+  }, [isTraining]);
+
+  const handleTrain = () => {
+    setIsTraining(true);
+    setIteration(0);
+    setQuality(20);
+    setFeedback("Training in progress...");
+  };
+
+  const getImage = () => {
+    const noise = Array(25)
+      .fill()
+      .map(() =>
+        Array(25)
+          .fill()
+          .map(() => Math.random() * (100 - quality) + quality)
+      );
+    return noise;
+  };
 
   return (
-    <div className="max-w-4xl mx-auto p-4 bg-gray-100 rounded-lg">
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold">GAN Battle Arena</h2>
-        <div className="space-x-2">
-          <button
-            onClick={handleStart}
-            className="p-2 bg-blue-500 text-white rounded-lg"
-            aria-label={state.isPlaying ? "Pause simulation" : "Start simulation"}
-          >
-            {state.isPlaying ? <Pause size={24} /> : <Play size={24} />}
-          </button>
-          <button
-            onClick={handleReset}
-            className="p-2 bg-gray-500 text-white rounded-lg"
-            aria-label="Reset simulation"
-          >
-            <RotateCcw size={24} />
-          </button>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 gap-4">
-        <div className="p-4 bg-white rounded-lg shadow">
-          <div className="flex items-center gap-2 mb-4">
-            <Palette className="text-blue-500" />
-            <h3 className="text-lg font-semibold">Generator (The Forger)</h3>
-          </div>
-          <div className="h-24 flex items-center justify-center">
-            {state.generatedArt.map((art, i) => (
-              <span key={i} className="text-4xl mx-2">{art}</span>
-            ))}
-          </div>
-          <div className="mt-4 bg-gray-200 rounded-full h-4">
-            <div
-              className="bg-blue-500 rounded-full h-full transition-all duration-500"
-              style={{ width: `${(state.generatorScore / 10) * 100}%` }}
-              role="progressbar"
-              aria-valuenow={state.generatorScore}
-              aria-valuemin={0}
-              aria-valuemax={10}
-            />
-          </div>
-        </div>
-
-        <div className="p-4 bg-white rounded-lg shadow">
-          <div className="flex items-center gap-2 mb-4">
-            <Eye className="text-blue-500" />
-            <h3 className="text-lg font-semibold">Discriminator (The Expert)</h3>
-          </div>
-          <div className="h-24 flex items-center justify-center">
-            {state.realArt.map((art, i) => (
-              <span key={i} className="text-4xl mx-2">{art}</span>
-            ))}
-          </div>
-          <div className="mt-4 bg-gray-200 rounded-full h-4">
-            <div
-              className="bg-green-500 rounded-full h-full transition-all duration-500"
-              style={{ width: `${(state.discriminatorScore / 10) * 100}%` }}
-              role="progressbar"
-              aria-valuenow={state.discriminatorScore}
-              aria-valuemin={0}
-              aria-valuemax={10}
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-6 p-4 bg-white rounded-lg shadow">
-        <p className="text-center text-lg">
-          {state.feedback}
-          {state.currentRound >= 10 && (
-            <span className="ml-2">
-              {state.generatorScore > state.discriminatorScore ? (
-                <CheckCircle className="inline text-green-500" />
-              ) : (
-                <XCircle className="inline text-red-500" />
-              )}
-            </span>
-          )}
+    <div className="max-w-3xl mx-auto p-6 space-y-6">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl font-bold mb-4">
+          GAN: Generator vs Discriminator
+        </h2>
+        <p className="text-gray-600">
+          Watch how the Generator (Artist) improves with feedback from the
+          Discriminator (Critic)
         </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Generator Section */}
+        <div className="bg-blue-50 p-6 rounded-lg">
+          <div className="flex items-center gap-2 mb-4">
+            <Paintbrush2 className="text-blue-600" />
+            <h3 className="font-semibold text-lg">Generator (The Artist)</h3>
+          </div>
+          <div className="aspect-square bg-white rounded-lg overflow-hidden">
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: `repeat(25, 1fr)`,
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              {getImage().map((row, i) =>
+                row.map((cell, j) => (
+                  <div
+                    key={`${i}-${j}`}
+                    style={{
+                      backgroundColor: `rgb(${cell}%, ${cell}%, ${cell}%)`,
+                      paddingBottom: "100%",
+                    }}
+                  />
+                ))
+              )}
+            </div>
+          </div>
+          <div className="mt-4">
+            <p className="text-sm text-gray-600">Quality Score: {quality}%</p>
+          </div>
+        </div>
+
+        {/* Discriminator Section */}
+        <div className="bg-purple-50 p-6 rounded-lg">
+          <div className="flex items-center gap-2 mb-4">
+            <Eye className="text-purple-600" />
+            <h3 className="font-semibold text-lg">
+              Discriminator (The Critic)
+            </h3>
+          </div>
+          <div className="flex flex-col items-center justify-center h-48">
+            <div className="flex gap-4 mb-4">
+              <ThumbsUp
+                className={`w-8 h-8 ${
+                  quality > 75 ? "text-green-500" : "text-gray-300"
+                }`}
+              />
+              <ThumbsDown
+                className={`w-8 h-8 ${
+                  quality <= 75 ? "text-red-500" : "text-gray-300"
+                }`}
+              />
+            </div>
+            <p className="text-sm text-gray-600 text-center">
+              {quality > 75
+                ? "This looks quite realistic!"
+                : "I can tell this is fake. Try again!"}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Training Controls */}
+      <div className="flex flex-col items-center gap-4 mt-8">
+        <button
+          onClick={handleTrain}
+          disabled={isTraining}
+          className={`
+            flex items-center gap-2 px-6 py-3 rounded-lg
+            ${
+              isTraining
+                ? "bg-gray-200 cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-600 text-white"
+            }
+          `}
+        >
+          <RefreshCw
+            className={`w-5 h-5 ${isTraining ? "animate-spin" : ""}`}
+          />
+          {isTraining ? "Training..." : "Start Training"}
+        </button>
+        <div className="text-sm text-gray-600">Iteration: {iteration} / 10</div>
+      </div>
+
+      <div className="mt-8 bg-gray-50 p-6 rounded-lg">
+        <h3 className="font-semibold mb-4">How it works:</h3>
+        <ol className="list-decimal list-inside space-y-2 text-gray-700">
+          <li>The Generator creates images starting from random noise</li>
+          <li>The Discriminator evaluates if the images look realistic</li>
+          <li>The Generator learns from the feedback and improves</li>
+          <li>
+            This process continues until the Generator creates convincing images
+          </li>
+        </ol>
       </div>
     </div>
   );
 };
 
-export default GANBattleArena;
+export default GANExplainer;

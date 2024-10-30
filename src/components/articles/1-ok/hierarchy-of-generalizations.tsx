@@ -1,6 +1,13 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
-import { Building2, Dog, Newspaper, ArrowRight, Check, RefreshCcw } from "lucide-react";
+import {
+  Building2,
+  Dog,
+  Newspaper,
+  ArrowRight,
+  Check,
+  RefreshCcw,
+} from "lucide-react";
 
 interface HierarchyItem {
   id: string;
@@ -17,7 +24,7 @@ interface DragItem {
 const THEMES = [
   { id: "art", icon: Building2, name: "Art Gallery" },
   { id: "zoo", icon: Dog, name: "Zoo Animals" },
-  { id: "news", icon: Newspaper, name: "News Organization" }
+  { id: "news", icon: Newspaper, name: "News Organization" },
 ];
 
 const HIERARCHY_DATA: Record<string, HierarchyItem[]> = {
@@ -25,20 +32,20 @@ const HIERARCHY_DATA: Record<string, HierarchyItem[]> = {
     { id: "a1", text: "Mona Lisa", level: 0, category: "art" },
     { id: "a2", text: "Portrait Style", level: 1, category: "art" },
     { id: "a3", text: "Renaissance", level: 2, category: "art" },
-    { id: "a4", text: "Classical Art", level: 3, category: "art" }
+    { id: "a4", text: "Classical Art", level: 3, category: "art" },
   ],
   zoo: [
     { id: "z1", text: "Spot the Dalmatian", level: 0, category: "zoo" },
     { id: "z2", text: "Dog Breeds", level: 1, category: "zoo" },
     { id: "z3", text: "Canines", level: 2, category: "zoo" },
-    { id: "z4", text: "Mammals", level: 3, category: "zoo" }
+    { id: "z4", text: "Mammals", level: 3, category: "zoo" },
   ],
   news: [
     { id: "n1", text: "Local Event", level: 0, category: "news" },
     { id: "n2", text: "City Stories", level: 1, category: "news" },
     { id: "n3", text: "Regional Trends", level: 2, category: "news" },
-    { id: "n4", text: "Global Patterns", level: 3, category: "news" }
-  ]
+    { id: "n4", text: "Global Patterns", level: 3, category: "news" },
+  ],
 };
 
 export default function HierarchyOfGeneralizations() {
@@ -50,7 +57,7 @@ export default function HierarchyOfGeneralizations() {
   useEffect(() => {
     const shuffledItems = [...HIERARCHY_DATA[selectedTheme]]
       .sort(() => Math.random() - 0.5)
-      .map(item => ({ ...item, level: 0 }));
+      .map((item) => ({ ...item, level: 0 }));
     setItems(shuffledItems);
     setScore(0);
     return () => setItems([]);
@@ -63,11 +70,13 @@ export default function HierarchyOfGeneralizations() {
   const handleDrop = (targetLevel: number) => {
     if (!draggedItem) return;
 
-    const updatedItems = items.map(item => {
+    const updatedItems = items.map((item) => {
       if (item.id === draggedItem.id) {
-        const correctLevel = HIERARCHY_DATA[selectedTheme].find(i => i.id === item.id)?.level;
+        const correctLevel = HIERARCHY_DATA[selectedTheme].find(
+          (i) => i.id === item.id
+        )?.level;
         const isCorrect = correctLevel === targetLevel;
-        if (isCorrect) setScore(prev => prev + 1);
+        if (isCorrect) setScore((prev) => prev + 1);
         return { ...item, level: targetLevel };
       }
       return item;
@@ -79,7 +88,7 @@ export default function HierarchyOfGeneralizations() {
   const resetGame = () => {
     const shuffledItems = [...HIERARCHY_DATA[selectedTheme]]
       .sort(() => Math.random() - 0.5)
-      .map(item => ({ ...item, level: 0 }));
+      .map((item) => ({ ...item, level: 0 }));
     setItems(shuffledItems);
     setScore(0);
   };
@@ -92,7 +101,7 @@ export default function HierarchyOfGeneralizations() {
             key={id}
             onClick={() => setSelectedTheme(id)}
             className={`flex items-center gap-2 p-2 rounded ${
-              selectedTheme === id ? 'bg-blue-500 text-white' : 'bg-gray-200'
+              selectedTheme === id ? "bg-blue-500 text-white" : "bg-gray-200"
             }`}
             aria-pressed={selectedTheme === id}
           >
@@ -103,7 +112,7 @@ export default function HierarchyOfGeneralizations() {
       </div>
 
       <div className="grid grid-cols-4 gap-4 mb-4">
-        {[3, 2, 1, 0].map(level => (
+        {[0, 1, 2, 3].map((level) => (
           <div
             key={level}
             onDragOver={(e) => e.preventDefault()}
@@ -112,8 +121,8 @@ export default function HierarchyOfGeneralizations() {
             aria-label={`Level ${level} drop zone`}
           >
             {items
-              .filter(item => item.level === level)
-              .map(item => (
+              .filter((item) => item.level === level)
+              .map((item) => (
                 <div
                   key={item.id}
                   draggable

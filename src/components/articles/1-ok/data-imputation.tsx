@@ -1,184 +1,176 @@
-"use client"
-import { useState, useEffect } from "react"
-import { Hospital, ClipboardCheck, Activity, TableProperties, Stethoscope, Database, FileCheck, AlertTriangle } from "lucide-react"
+"use client";
+import React, { useState, useEffect } from "react";
+import { AlertCircle, ArrowRight, ArrowLeft } from "lucide-react";
 
-interface Dataset {
-  id: number
-  name: string
-  missingValues: number[]
-  totalValues: number
-  type: "numeric" | "categorical"
-}
-
-interface TreatmentMethod {
-  id: number
-  name: string
-  description: string
-  icon: JSX.Element
-  suitable: "numeric" | "categorical" | "both"
-}
-
-const DataHospital = () => {
-  const [activeDataset, setActiveDataset] = useState<Dataset | null>(null)
-  const [selectedMethod, setSelectedMethod] = useState<TreatmentMethod | null>(null)
-  const [treatmentComplete, setTreatmentComplete] = useState(false)
-  const [healthScore, setHealthScore] = useState(0)
-
-  const datasets: Dataset[] = [
-    {
-      id: 1,
-      name: "Student Grades",
-      missingValues: [3, 7, 12],
-      totalValues: 20,
-      type: "numeric"
-    },
-    {
-      id: 2,
-      name: "Favorite Colors",
-      missingValues: [2, 8, 15],
-      totalValues: 20,
-      type: "categorical"
-    }
-  ]
-
-  const treatmentMethods: TreatmentMethod[] = [
-    {
-      id: 1,
-      name: "Mean Imputation",
-      description: "Replace missing values with the average",
-      icon: <Activity className="w-6 h-6" />,
-      suitable: "numeric"
-    },
-    {
-      id: 2, 
-      name: "Mode Imputation",
-      description: "Replace with most common value",
-      icon: <TableProperties className="w-6 h-6" />,
-      suitable: "both"
-    }
-  ]
+const DataImputationDemo = () => {
+  const [currentStep, setCurrentStep] = useState(0);
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [dataset, setDataset] = useState([]);
+  const [mean, setMean] = useState(0);
 
   useEffect(() => {
-    if (activeDataset) {
-      const score = ((activeDataset.totalValues - activeDataset.missingValues.length) / activeDataset.totalValues) * 100
-      setHealthScore(score)
-    }
-    return () => setHealthScore(0)
-  }, [activeDataset])
+    // Generate random dataset on component mount
+    const generateData = () => {
+      // First generate all values
+      const data = Array(5)
+        .fill(null)
+        .map((_, index) => ({
+          id: index + 1,
+          value: Math.floor(Math.random() * 50) + 25,
+        }));
 
-  const handleDatasetAdmission = (dataset: Dataset) => {
-    setActiveDataset(dataset)
-    setSelectedMethod(null)
-    setTreatmentComplete(false)
-  }
+      // Randomly select two indices to be missing
+      const missingIndices = new Set();
+      while (missingIndices.size < 2) {
+        missingIndices.add(Math.floor(Math.random() * 5));
+      }
 
-  const handleTreatment = () => {
-    if (selectedMethod && activeDataset) {
-      setTreatmentComplete(true)
-    }
-  }
+      // Set those indices to null
+      missingIndices.forEach((index) => {
+        data[index].value = null;
+      });
+
+      // Calculate mean from non-null values
+      const validValues = data.filter((item) => item.value !== null);
+      const calculatedMean = Math.round(
+        validValues.reduce((acc, curr) => acc + curr.value, 0) /
+          validValues.length
+      );
+
+      setDataset(data);
+      setMean(calculatedMean);
+    };
+
+    generateData();
+  }, []);
+
+  // Imputed dataset
+  const imputedData = dataset.map((item) => ({
+    ...item,
+    value: item.value === null ? mean : item.value,
+  }));
+
+  const steps = [
+    {
+      title: "Original Dataset",
+      description: "Here's our dataset with missing values (shown in red)",
+      data: dataset,
+    },
+    {
+      title: "Calculate Mean",
+      description: `The mean of the existing values is ${mean}`,
+      data: dataset,
+    },
+    {
+      title: "Imputed Dataset",
+      description: "Missing values are replaced with the mean",
+      data: imputedData,
+    },
+  ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
-      <header className="flex items-center gap-3 mb-8">
-        <Hospital className="w-8 h-8 text-blue-500" />
-        <h1 className="text-2xl font-bold">The Data Hospital</h1>
-      </header>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <section aria-label="Dataset Admission" className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <ClipboardCheck className="w-5 h-5" />
-            Patient Admission
+    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <div className="mb-6">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl font-bold text-gray-800">
+            Data Imputation Demo
+            <button
+              className="ml-2 inline-flex items-center"
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            ></button>
           </h2>
-          
-          <div className="space-y-4">
-            {datasets.map(dataset => (
-              <button
-                key={dataset.id}
-                onClick={() => handleDatasetAdmission(dataset)}
-                className={`w-full p-4 rounded-lg border-2 transition-colors ${
-                  activeDataset?.id === dataset.id 
-                    ? 'border-blue-500 bg-blue-50'
-                    : 'border-gray-200 hover:border-blue-300'
-                }`}
-                aria-pressed={activeDataset?.id === dataset.id}
-              >
-                <div className="flex justify-between items-center">
-                  <span className="font-medium">{dataset.name}</span>
-                  <Database className="w-5 h-5" />
-                </div>
-                <div className="mt-2 text-sm text-gray-600">
-                  Health: {((dataset.totalValues - dataset.missingValues.length) / dataset.totalValues * 100).toFixed(0)}%
-                </div>
-              </button>
-            ))}
-          </div>
-        </section>
+        </div>
+      </div>
 
-        {activeDataset && (
-          <section aria-label="Treatment Selection" className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-              <Stethoscope className="w-5 h-5" />
-              Treatment Selection
-            </h2>
+      <div className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">
+          {steps[currentStep].title}
+        </h3>
+        <p className="text-gray-600 mb-4">{steps[currentStep].description}</p>
 
-            <div className="space-y-4">
-              {treatmentMethods
-                .filter(method => method.suitable === activeDataset.type || method.suitable === "both")
-                .map(method => (
-                  <button
-                    key={method.id}
-                    onClick={() => setSelectedMethod(method)}
-                    className={`w-full p-4 rounded-lg border-2 transition-colors ${
-                      selectedMethod?.id === method.id
-                        ? 'border-blue-500 bg-blue-50'
-                        : 'border-gray-200 hover:border-blue-300'
-                    }`}
-                    aria-pressed={selectedMethod?.id === method.id}
-                  >
-                    <div className="flex items-center gap-3">
-                      {method.icon}
-                      <div className="text-left">
-                        <div className="font-medium">{method.name}</div>
-                        <div className="text-sm text-gray-600">{method.description}</div>
-                      </div>
-                    </div>
-                  </button>
-                ))}
-            </div>
-
-            {selectedMethod && (
-              <button
-                onClick={handleTreatment}
-                className="mt-6 w-full bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors"
-                aria-label="Begin treatment"
-              >
-                Begin Treatment
-              </button>
-            )}
-          </section>
-        )}
-
-        {treatmentComplete && (
-          <section aria-label="Treatment Results" className="bg-white p-6 rounded-lg shadow md:col-span-2">
-            <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-              <FileCheck className="w-5 h-5" />
-              Treatment Results
-            </h2>
-
-            <div className="flex items-center justify-between p-4 bg-green-50 rounded-lg">
-              <div>
-                <div className="font-medium text-green-700">Treatment Successful</div>
-                <div className="text-sm text-green-600">Dataset health restored to 100%</div>
+        <div className="grid grid-cols-5 gap-4 mb-6">
+          {steps[currentStep].data.map((item) => (
+            <div
+              key={item.id}
+              className={`p-4 rounded-lg text-center ${
+                item.value === null
+                  ? "bg-red-100 border-2 border-red-300"
+                  : currentStep === 2 && dataset[item.id - 1].value === null
+                  ? "bg-green-100 border-2 border-green-300"
+                  : "bg-gray-100"
+              }`}
+            >
+              <div className="text-lg font-semibold">
+                {item.value === null ? (
+                  <AlertCircle className="w-6 h-6 mx-auto text-red-500" />
+                ) : (
+                  item.value
+                )}
               </div>
-              <AlertTriangle className="w-6 h-6 text-green-500" />
+              <div className="text-sm text-gray-500">Value {item.id}</div>
             </div>
-          </section>
-        )}
+          ))}
+        </div>
+      </div>
+
+      <div className="flex justify-between items-center">
+        <button
+          onClick={() => setCurrentStep((prev) => Math.max(0, prev - 1))}
+          disabled={currentStep === 0}
+          className={`flex items-center px-4 py-2 rounded ${
+            currentStep === 0
+              ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+              : "bg-blue-500 text-white hover:bg-blue-600"
+          }`}
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Previous
+        </button>
+
+        <button
+          onClick={() => {
+            if (currentStep === steps.length - 1) {
+              setCurrentStep(0);
+              const generateData = () => {
+                const data = Array(5)
+                  .fill(null)
+                  .map((_, index) => ({
+                    id: index + 1,
+                    value: Math.floor(Math.random() * 50) + 25,
+                  }));
+
+                const missingIndices = new Set();
+                while (missingIndices.size < 2) {
+                  missingIndices.add(Math.floor(Math.random() * 5));
+                }
+
+                missingIndices.forEach((index) => {
+                  data[index].value = null;
+                });
+
+                const validValues = data.filter((item) => item.value !== null);
+                const calculatedMean = Math.round(
+                  validValues.reduce((acc, curr) => acc + curr.value, 0) /
+                    validValues.length
+                );
+
+                setDataset(data);
+                setMean(calculatedMean);
+              };
+              generateData();
+            } else {
+              setCurrentStep((prev) => Math.min(steps.length - 1, prev + 1));
+            }
+          }}
+          className="flex items-center px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600"
+        >
+          {currentStep === steps.length - 1 ? "Try New Dataset" : "Next"}
+          <ArrowRight className="w-4 h-4 ml-2" />
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DataHospital
+export default DataImputationDemo;
