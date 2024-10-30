@@ -23,6 +23,15 @@ interface PageProps {
   };
 }
 
+// Add the parser function at the top level
+const parseAcronyms = (text: string) => {
+  const acronymRegex = /(\w+)\s*\(([^)]+)\)/g;
+  return text.replace(
+    acronymRegex,
+    '<div class="acronym">$1<br/><span class="acronym-description">$2</span></div>'
+  );
+};
+
 async function getArticleContent(slug: string): Promise<{
   frontmatter: Omit<Article, "slug">;
   content: string;
@@ -200,9 +209,12 @@ export default async function ArticlePage({ params }: PageProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/30" />
 
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                <h1 className="text-4xl font-bold mb-4 text-white">
-                  {frontmatter.title}
-                </h1>
+                <h1
+                  className="text-4xl font-bold mb-4 text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: parseAcronyms(frontmatter.title),
+                  }}
+                />
                 <p className="text-gray-200 text-lg mb-4">
                   {frontmatter.summary}
                 </p>
@@ -224,7 +236,12 @@ export default async function ArticlePage({ params }: PageProps) {
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
               <div className="text-gray-500">
-                <span>Generality: {generality}</span>
+                <div className="block">Generality: {generality}</div>
+                <div className="block">
+                  <a href="#" className="text-gray-500 hover:underline">
+                    Report Content Error
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -1,140 +1,97 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Box, ChefHat, ArrowRight, Brain, HelpCircle, Check, X } from "lucide-react";
-
-interface MysteryProcess {
-  id: number;
-  input: string;
-  possibleOutputs: string[];
-}
+"use client";
+import React, { useState, useEffect } from "react";
+import { Box, Brain, ArrowRight } from "lucide-react";
 
 const UnverifiabilityDemo = () => {
-  const [activeBox, setActiveBox] = useState<number>(0);
-  const [userInput, setUserInput] = useState<string>("");
-  const [output, setOutput] = useState<string>("");
-  const [isProcessing, setIsProcessing] = useState<boolean>(false);
-  const [userTheory, setUserTheory] = useState<string>("");
-  const [showFeedback, setShowFeedback] = useState<boolean>(false);
+  const [currentStep, setCurrentStep] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+  const [prediction, setPrediction] = useState(null);
 
-  const mysteryProcesses: MysteryProcess[] = [
-    {
-      id: 1,
-      input: "ingredients",
-      possibleOutputs: ["Delicious pasta", "Amazing pasta", "Perfect pasta"]
-    },
-    {
-      id: 2,
-      input: "dream description",
-      possibleOutputs: ["Symbol of change", "Sign of growth", "New beginnings"]
-    }
+  const inputs = [
+    { image: "🐱", label: "cat" },
+    { image: "🐕", label: "dog" },
+    { image: "🦊", label: "fox" },
+    { image: "🐘", label: "elephant" },
+    { image: "🦜", label: "parrot" },
+    { image: "🐠", label: "fish" },
+    { image: "🦒", label: "giraffe" },
+    { image: "🐼", label: "panda" },
+    { image: "🦘", label: "kangaroo" },
   ];
 
-  const processInput = () => {
-    setIsProcessing(true);
-    const currentProcess = mysteryProcesses[activeBox];
-    
-    setTimeout(() => {
-      const randomOutput = currentProcess.possibleOutputs[
-        Math.floor(Math.random() * currentProcess.possibleOutputs.length)
-      ];
-      setOutput(randomOutput);
-      setIsProcessing(false);
-    }, 1500);
-  };
-
   useEffect(() => {
-    return () => {
-      setIsProcessing(false);
-    };
+    const timer = setInterval(() => {
+      setCurrentStep((prev) => (prev + 1) % inputs.length);
+      setPrediction(null);
+      setTimeout(() => {
+        setPrediction(Math.random() > 0.2);
+      }, 1000);
+    }, 3000);
+    return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-xl shadow-lg">
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">The Mystery Box Factory</h1>
-
-      <div className="flex gap-6 mb-8">
-        <button
-          onClick={() => setActiveBox(0)}
-          className={`flex items-center gap-2 p-4 rounded-lg ${
-            activeBox === 0 ? "bg-blue-500 text-white" : "bg-gray-200"
-          }`}
-          aria-label="Select Restaurant Box"
-        >
-          <ChefHat className="w-6 h-6" />
-          <span>Restaurant Box</span>
-        </button>
-
-        <button
-          onClick={() => setActiveBox(1)}
-          className={`flex items-center gap-2 p-4 rounded-lg ${
-            activeBox === 1 ? "bg-blue-500 text-white" : "bg-gray-200"
-          }`}
-          aria-label="Select Dream Box"
-        >
-          <Brain className="w-6 h-6" />
-          <span>Dream Box</span>
-        </button>
+    <div className="w-full max-w-2xl mx-auto p-6 space-y-6">
+      <div className="text-center space-y-2">
+        <h2 className="text-2xl font-bold">
+          Understanding Unverifiability in AI
+        </h2>
+        <p className="text-gray-600">
+          Watch how we can't verify the internal decision process
+        </p>
       </div>
 
-      <div className="relative p-6 bg-white rounded-xl shadow-md">
-        <div className="flex items-center gap-4 mb-6">
-          <input
-            type="text"
-            value={userInput}
-            onChange={(e) => setUserInput(e.target.value)}
-            placeholder={`Enter ${mysteryProcesses[activeBox].input}...`}
-            className="flex-1 p-3 border rounded-lg"
-            aria-label={`Enter ${mysteryProcesses[activeBox].input}`}
-          />
-          <button
-            onClick={processInput}
-            disabled={isProcessing || !userInput}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg disabled:opacity-50"
+      <div className="flex items-center justify-center space-x-8 h-48">
+        {/* Input */}
+        <div className="text-center">
+          <div className="text-5xl mb-2">{inputs[currentStep].image}</div>
+          <div className="text-sm text-gray-600">Input</div>
+        </div>
+
+        {/* Black Box */}
+        <div className="relative">
+          <div
+            className="w-32 h-32 bg-gray-900 rounded-lg flex items-center justify-center"
+            onMouseEnter={() => setShowHint(true)}
+            onMouseLeave={() => setShowHint(false)}
           >
-            Process
-          </button>
-        </div>
-
-        <div className="flex justify-between items-center mb-6">
-          <div className="w-1/3 text-center">Input</div>
-          <ArrowRight className="w-6 h-6 text-gray-400" />
-          <div className="w-1/3 text-center bg-gray-800 text-white p-4 rounded-lg">
-            Mystery Process
+            <Brain className="w-16 h-16 text-gray-700" />
+            {showHint && (
+              <div className="absolute -top-16 w-48 bg-white p-2 rounded shadow-lg text-xs text-gray-600">
+                We can't verify how decisions are made inside!
+              </div>
+            )}
           </div>
-          <ArrowRight className="w-6 h-6 text-gray-400" />
-          <div className="w-1/3 text-center">Output</div>
-        </div>
-
-        {isProcessing ? (
-          <div className="text-center text-blue-500">Processing...</div>
-        ) : output && (
-          <div className="text-center text-green-500 font-bold">{output}</div>
-        )}
-
-        <div className="mt-8">
-          <textarea
-            value={userTheory}
-            onChange={(e) => setUserTheory(e.target.value)}
-            placeholder="What's your theory about how this box works?"
-            className="w-full p-3 border rounded-lg"
-            rows={3}
-          />
-          <button
-            onClick={() => setShowFeedback(true)}
-            className="mt-4 px-6 py-3 bg-green-500 text-white rounded-lg"
-          >
-            Submit Theory
-          </button>
-        </div>
-
-        {showFeedback && (
-          <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-            <p className="text-gray-800">
-              Great theory! Remember: Just like this box, many AI systems produce reliable outputs
-              but their exact internal processes remain unverifiable.
-            </p>
+          <div className="absolute -bottom-6 w-full text-center text-sm text-gray-600">
+            Black Box Model
           </div>
-        )}
+        </div>
+
+        <ArrowRight className="w-6 h-6 text-gray-400" />
+
+        {/* Output */}
+        <div className="text-center w-24">
+          {prediction === null ? (
+            <div className="w-12 h-12 mx-auto text-gray-400 animate-pulse">
+              ❓
+            </div>
+          ) : prediction ? (
+            <div className="w-12 h-12 mx-auto text-green-500">✅</div>
+          ) : (
+            <div className="w-12 h-12 mx-auto text-red-500">❌</div>
+          )}
+          <div className="text-sm text-gray-600 mt-2">Prediction</div>
+        </div>
+      </div>
+
+      <div className="bg-gray-100 p-4 rounded-lg">
+        <h3 className="font-semibold mb-2">Key Points:</h3>
+        <ul className="space-y-2 text-sm text-gray-600">
+          <li>• We can observe inputs and outputs</li>
+          <li>• The internal decision process remains opaque</li>
+          <li>• Cannot verify if the model uses correct reasoning</li>
+          <li>• May work correctly but for wrong reasons</li>
+        </ul>
       </div>
     </div>
   );

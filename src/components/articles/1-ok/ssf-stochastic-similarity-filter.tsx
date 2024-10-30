@@ -1,158 +1,173 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Camera, Cpu, Gauge, Zap, SkipForward, Eye } from "lucide-react";
+"use client";
+import React, { useState, useEffect } from "react";
+import { Cpu, Play, Pause, RefreshCcw } from "lucide-react";
 
-interface Frame {
-  id: number;
-  content: string;
-  similarity: number;
-}
+const SSFExplainer = () => {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [currentFrame, setCurrentFrame] = useState(0);
+  const [gpuUsage, setGpuUsage] = useState(0);
+  const [frames, setFrames] = useState([]);
 
-interface FrameDetectiveProps {}
+  // Generate new random frames with some natural temporal coherence
+  const generateNewFrames = () => {
+    const newFrames = [];
+    let lastSimilarity = Math.random() * 0.3; // Start with a low similarity
 
-const FRAME_CONTENTS = [
-  "Person standing",
-  "Person standing",
-  "Person walking",
-  "Person walking",
-  "Person running",
-  "Person running",
-  "Person jumping",
-  "Person standing",
-];
+    for (let i = 0; i < 7; i++) {
+      // 70% chance to be similar to previous frame if the last frame was processed
+      // This creates more natural sequences of similar frames
+      const willBeSimilar =
+        lastSimilarity > 0.9 ? Math.random() < 0.7 : Math.random() < 0.3;
 
-const FrameDetective: React.FC<FrameDetectiveProps> = () => {
-  const [threshold, setThreshold] = useState<number>(50);
-  const [frames, setFrames] = useState<Frame[]>([]);
-  const [processedCount, setProcessedCount] = useState<number>(0);
-  const [skippedCount, setSkippedCount] = useState<number>(0);
-  const [isRunning, setIsRunning] = useState<boolean>(true);
+      const similarity = willBeSimilar
+        ? 0.9 + Math.random() * 0.09 // Very similar: 0.9-0.99
+        : 0.2 + Math.random() * 0.3; // Different: 0.2-0.5
 
-  useEffect(() => {
-    let frameInterval: NodeJS.Timer;
-    let currentIndex = 0;
+      newFrames.push({
+        id: i + 1,
+        similarity: similarity,
+      });
 
-    if (isRunning) {
-      frameInterval = setInterval(() => {
-        const newFrame: Frame = {
-          id: Date.now(),
-          content: FRAME_CONTENTS[currentIndex % FRAME_CONTENTS.length],
-          similarity: Math.random() * 100,
-        };
-
-        setFrames(prev => {
-          const updatedFrames = [...prev, newFrame].slice(-5);
-          const shouldProcess = newFrame.similarity > threshold;
-          
-          if (shouldProcess) {
-            setProcessedCount(p => p + 1);
-          } else {
-            setSkippedCount(s => s + 1);
-          }
-          
-          return updatedFrames;
-        });
-
-        currentIndex++;
-      }, 1000);
+      lastSimilarity = similarity;
     }
-
-    return () => clearInterval(frameInterval);
-  }, [isRunning, threshold]);
-
-  const handleThresholdChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setThreshold(Number(e.target.value));
+    return newFrames;
   };
 
+  // Initialize frames
+  useEffect(() => {
+    setFrames(generateNewFrames());
+  }, []);
+
+  useEffect(() => {
+    let interval;
+    if (isPlaying && frames.length > 0) {
+      interval = setInterval(() => {
+        setCurrentFrame((prev) => {
+          // When we reach the end, generate new frames and start over
+          if (prev === frames.length - 1) {
+            setFrames(generateNewFrames());
+            return 0;
+          }
+          return prev + 1;
+        });
+        setGpuUsage(frames[currentFrame].similarity > 0.9 ? 20 : 80);
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [isPlaying, currentFrame, frames]);
+
+  const handlePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleReset = () => {
+    setIsPlaying(true);
+    setCurrentFrame(0);
+    setGpuUsage(0);
+    setFrames(generateNewFrames());
+  };
+
+  if (frames.length === 0) return null;
+
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold flex items-center gap-2">
-          <Camera className="text-blue-500" />
-          Frame Detective
-        </h1>
-        <button
-          onClick={() => setIsRunning(!isRunning)}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
-          aria-label={isRunning ? "Pause simulation" : "Start simulation"}
-        >
-          {isRunning ? "Pause" : "Start"}
-        </button>
+    <div className="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg">
+      <h2 className="text-2xl font-bold mb-4 text-center">
+        Stochastic Similarity Filter (SSF)
+      </h2>
+
+      {/* Explanation */}
+      <div className="mb-6 text-gray-600">
+        <p className="mb-2">SSF optimizes GPU usage by:</p>
+        <ul className="list-disc pl-6 mb-4">
+          <li>Processing unique frames fully</li>
+          <li>Skipping similar consecutive frames</li>
+          <li>Reducing computational load</li>
+        </ul>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
-        <div className="bg-white p-4 rounded-lg shadow">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <Eye />
-            Security Feed
-          </h2>
-          <div className="space-y-2">
-            {frames.map(frame => (
+      {/* Main visualization area */}
+      <div className="mb-6 bg-gray-50 p-4 rounded-lg">
+        <div className="flex justify-between items-center mb-4">
+          <div className="flex items-center space-x-2">
+            <Cpu
+              className={`w-6 h-6 ${
+                gpuUsage > 50 ? "text-red-500" : "text-green-500"
+              }`}
+            />
+            <div className="w-32 h-4 bg-gray-200 rounded-full overflow-hidden">
               <div
-                key={frame.id}
-                className={`p-3 rounded ${
-                  frame.similarity > threshold
-                    ? "bg-green-100 border-green-500"
-                    : "bg-gray-100 border-gray-300"
-                } border`}
-              >
-                <div className="flex justify-between items-center">
-                  <span>{frame.content}</span>
-                  {frame.similarity <= threshold && (
-                    <SkipForward className="text-gray-500" size={20} />
-                  )}
-                </div>
-              </div>
-            ))}
+                className={`h-full ${
+                  gpuUsage > 50 ? "bg-red-500" : "bg-green-500"
+                } transition-all duration-300`}
+                style={{ width: `${gpuUsage}%` }}
+              ></div>
+            </div>
+          </div>
+          <div className="flex space-x-2">
+            <button
+              onClick={handlePlayPause}
+              className="p-2 rounded hover:bg-gray-200"
+            >
+              {isPlaying ? (
+                <Pause className="w-6 h-6" />
+              ) : (
+                <Play className="w-6 h-6" />
+              )}
+            </button>
+            <button
+              onClick={handleReset}
+              className="p-2 rounded hover:bg-gray-200"
+            >
+              <RefreshCcw className="w-6 h-6" />
+            </button>
           </div>
         </div>
 
-        <div className="bg-white p-4 rounded-lg shadow">
-          <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <Cpu />
-            Processing Metrics
-          </h2>
-          
-          <div className="mb-4">
-            <label className="block mb-2 flex items-center gap-2">
-              <Gauge size={20} />
-              Similarity Threshold: {threshold}%
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={threshold}
-              onChange={handleThresholdChange}
-              className="w-full"
-              aria-label="Adjust similarity threshold"
-            />
-          </div>
-
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <span>Processed Frames:</span>
-              <span className="text-green-500">{processedCount}</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span>Skipped Frames:</span>
-              <span className="text-gray-500">{skippedCount}</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span>Efficiency Gain:</span>
-              <span className="text-blue-500 flex items-center gap-1">
-                {skippedCount > 0
-                  ? Math.round((skippedCount / (processedCount + skippedCount)) * 100)
-                  : 0}
-                %
-                <Zap size={16} />
+        {/* Frame visualization */}
+        <div className="flex justify-center space-x-4 overflow-x-auto py-4">
+          {frames.map((frame, index) => (
+            <div
+              key={`${frame.id}-${frame.similarity}`}
+              className={`w-16 h-16 rounded-lg flex items-center justify-center transition-all duration-300 ${
+                index === currentFrame
+                  ? "ring-2 ring-blue-500 transform scale-110"
+                  : ""
+              } ${frame.similarity > 0.9 ? "bg-gray-200" : "bg-blue-100"}`}
+            >
+              <span className="text-sm font-mono">
+                {frame.similarity > 0.9 ? "Skip" : "Process"}
               </span>
             </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Current frame info */}
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-600">
+            Frame {currentFrame + 1}:
+            {frames[currentFrame].similarity > 0.9
+              ? " Skipped (Similar to previous frame)"
+              : " Processed (Significant change detected)"}
+          </p>
+          <p className="text-xs text-gray-500">
+            Similarity score: {frames[currentFrame].similarity.toFixed(2)}
+          </p>
+        </div>
+      </div>
+
+      {/* Legend */}
+      <div className="flex justify-center space-x-6 text-sm text-gray-600">
+        <div className="flex items-center">
+          <div className="w-4 h-4 bg-blue-100 rounded mr-2"></div>
+          <span>Processed Frame</span>
+        </div>
+        <div className="flex items-center">
+          <div className="w-4 h-4 bg-gray-200 rounded mr-2"></div>
+          <span>Skipped Frame</span>
         </div>
       </div>
     </div>
   );
 };
 
-export default FrameDetective;
+export default SSFExplainer;
