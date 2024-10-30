@@ -1,148 +1,144 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Cpu, Gpu, Image, MessageSquare, BarChart, Play, Pause, RefreshCw } from "lucide-react";
+'use client'
+import { useState, useEffect } from 'react'
+import { Cpu, Microchip, Play, Pause, RotateCcw } from 'lucide-react'
 
-interface Task {
-  id: number;
-  name: string;
-  icon: JSX.Element;
-  cpuAllocation: number;
-  gpuAllocation: number;
+interface ProcessingUnit {
+    id: number
+    tasks: number[]
 }
 
-interface ComponentProps {}
+const GPUPoorComponent: React.FC = () => {
+    const [isRunning, setIsRunning] = useState<boolean>(false)
+    const [cpuUnits, setCpuUnits] = useState<ProcessingUnit[]>([
+        { id: 1, tasks: [1, 2, 3, 4] }
+    ])
+    const [gpuUnits, setGpuUnits] = useState<ProcessingUnit[]>([
+        { id: 1, tasks: [1, 2, 3, 4] },
+        { id: 2, tasks: [5, 6, 7, 8] },
+        { id: 3, tasks: [9, 10, 11, 12] },
+        { id: 4, tasks: [13, 14, 15, 16] }
+    ])
+    const [progress, setProgress] = useState<number>(0)
 
-/**
- * AIResourceAllocator: A component to teach GPU-Poor concept through interactive resource allocation.
- */
-const AIResourceAllocator: React.FC<ComponentProps> = () => {
-  const [tasks, setTasks] = useState<Task[]>([
-    { id: 1, name: "Image Recognition", icon: <Image />, cpuAllocation: 0, gpuAllocation: 0 },
-    { id: 2, name: "Natural Language Processing", icon: <MessageSquare />, cpuAllocation: 0, gpuAllocation: 0 },
-    { id: 3, name: "Data Analysis", icon: <BarChart />, cpuAllocation: 0, gpuAllocation: 0 },
-  ]);
-  const [isGpuPoor, setIsGpuPoor] = useState<boolean>(true);
-  const [isSimulationRunning, setIsSimulationRunning] = useState<boolean>(false);
-  const [performance, setPerformance] = useState<number>(0);
+    useEffect(() => {
+        let animationFrame: number
+        let startTime: number
 
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-    if (isSimulationRunning) {
-      interval = setInterval(() => {
-        calculatePerformance();
-      }, 1000);
-    }
-    return () => clearInterval(interval);
-  }, [isSimulationRunning, tasks, isGpuPoor]);
-
-  const calculatePerformance = () => {
-    let totalPerformance = 0;
-    tasks.forEach(task => {
-      const cpuContribution = task.cpuAllocation * 1;
-      const gpuContribution = isGpuPoor ? task.gpuAllocation * 2 : task.gpuAllocation * 5;
-      totalPerformance += cpuContribution + gpuContribution;
-    });
-    setPerformance(Math.min(totalPerformance, 100));
-  };
-
-  const allocateResource = (taskId: number, resourceType: 'cpu' | 'gpu') => {
-    setTasks(prevTasks =>
-      prevTasks.map(task =>
-        task.id === taskId
-          ? {
-              ...task,
-              [resourceType === 'cpu' ? 'cpuAllocation' : 'gpuAllocation']: 
-                task[resourceType === 'cpu' ? 'cpuAllocation' : 'gpuAllocation'] + 1
+        const animate = (timestamp: number) => {
+            if (!startTime) startTime = timestamp
+            const elapsed = timestamp - startTime
+            const newProgress = Math.min((elapsed / 3000) * 100, 100)
+            
+            setProgress(newProgress)
+            
+            if (isRunning && newProgress < 100) {
+                animationFrame = requestAnimationFrame(animate)
             }
-          : task
-      )
-    );
-  };
+        }
 
-  const toggleSimulation = () => {
-    setIsSimulationRunning(prev => !prev);
-  };
+        if (isRunning) {
+            animationFrame = requestAnimationFrame(animate)
+        }
 
-  const resetSimulation = () => {
-    setTasks(tasks.map(task => ({ ...task, cpuAllocation: 0, gpuAllocation: 0 })));
-    setPerformance(0);
-    setIsSimulationRunning(false);
-  };
+        return () => {
+            if (animationFrame) {
+                cancelAnimationFrame(animationFrame)
+            }
+        }
+    }, [isRunning])
 
-  return (
-    <div className="p-4 bg-gray-100 rounded-lg shadow-md max-w-2xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">AI Resource Allocator</h2>
-      <div className="mb-4">
-        <label className="inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            className="sr-only peer"
-            checked={!isGpuPoor}
-            onChange={() => setIsGpuPoor(prev => !prev)}
-          />
-          <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
-          <span className="ml-3 text-sm font-medium text-gray-900">GPU-Rich Mode</span>
-        </label>
-      </div>
-      <div className="space-y-4">
-        {tasks.map(task => (
-          <div key={task.id} className="flex items-center justify-between bg-white p-3 rounded-lg">
-            <div className="flex items-center">
-              {task.icon}
-              <span className="ml-2">{task.name}</span>
+    const handleReset = () => {
+        setIsRunning(false)
+        setProgress(0)
+    }
+
+    const handlePlayPause = () => {
+        setIsRunning(!isRunning)
+    }
+
+    return (
+        <div className="w-full max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Processing Power Comparison</h2>
+            
+            <div className="mb-8">
+                <div className="flex items-center mb-4">
+                    <Cpu className="w-6 h-6 text-blue-500 mr-2" />
+                    <span className="font-semibold">CPU Processing</span>
+                    <span className="ml-2 text-sm text-gray-600">(Single-core processing, like doing tasks one at a time)</span>
+                </div>
+                <div className="grid grid-cols-1 gap-2 bg-gray-100 p-4 rounded-lg">
+                    {cpuUnits.map(unit => (
+                        <div key={unit.id} className="flex space-x-2">
+                            {unit.tasks.map(task => (
+                                <div
+                                    key={task}
+                                    className="w-8 h-8 bg-blue-500 rounded flex items-center justify-center text-white text-sm"
+                                    style={{
+                                        opacity: progress >= (task * 6.25) ? 0.3 : 1
+                                    }}
+                                >
+                                    {task}
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className="flex space-x-2">
-              <button
-                onClick={() => allocateResource(task.id, 'cpu')}
-                className="flex items-center bg-blue-500 text-white px-2 py-1 rounded"
-                aria-label={`Allocate CPU to ${task.name}`}
-              >
-                <Cpu size={16} />
-                <span className="ml-1">{task.cpuAllocation}</span>
-              </button>
-              <button
-                onClick={() => allocateResource(task.id, 'gpu')}
-                className="flex items-center bg-green-500 text-white px-2 py-1 rounded"
-                aria-label={`Allocate GPU to ${task.name}`}
-              >
-                <Gpu size={16} />
-                <span className="ml-1">{task.gpuAllocation}</span>
-              </button>
+
+            <div className="mb-8">
+                <div className="flex items-center mb-4">
+                    <Microchip className="w-6 h-6 text-green-500 mr-2" />
+                    <span className="font-semibold">GPU Processing</span>
+                    <span className="ml-2 text-sm text-gray-600">(Parallel processing, like having many helpers working together)</span>
+                </div>
+                <div className="grid grid-cols-4 gap-2 bg-gray-100 p-4 rounded-lg">
+                    {gpuUnits.map(unit => (
+                        <div key={unit.id} className="flex space-x-1">
+                            {unit.tasks.map(task => (
+                                <div
+                                    key={task}
+                                    className="w-6 h-6 bg-green-500 rounded flex items-center justify-center text-white text-xs"
+                                    style={{
+                                        opacity: progress >= (task * 6.25) ? 0.3 : 1
+                                    }}
+                                >
+                                    {task}
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="mt-4">
-        <div className="bg-gray-200 rounded-full h-4 overflow-hidden">
-          <div
-            className="bg-blue-500 h-full transition-all duration-500"
-            style={{ width: `${performance}%` }}
-            role="progressbar"
-            aria-valuenow={performance}
-            aria-valuemin={0}
-            aria-valuemax={100}
-          ></div>
+
+            <div className="flex justify-center space-x-4">
+                <button
+                    onClick={handlePlayPause}
+                    className="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+                    aria-label={isRunning ? 'Pause animation' : 'Start animation'}
+                >
+                    {isRunning ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+                    <span className="ml-2">{isRunning ? 'Pause' : 'Start'}</span>
+                </button>
+                <button
+                    onClick={handleReset}
+                    className="flex items-center px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition duration-300"
+                    aria-label="Reset animation"
+                >
+                    <RotateCcw className="w-4 h-4" />
+                    <span className="ml-2">Reset</span>
+                </button>
+            </div>
+
+            <div className="mt-6 text-center text-sm text-gray-600">
+                Watch how GPU processes tasks in parallel (4x faster!) while CPU handles them one by one.
+                {progress >= 100 && (
+                    <div className="mt-2 text-green-500 font-semibold">
+                        Processing complete! GPU wins the race! 🏆
+                    </div>
+                )}
+            </div>
         </div>
-        <p className="text-center mt-2">Performance: {performance.toFixed(2)}%</p>
-      </div>
-      <div className="mt-4 flex justify-center space-x-4">
-        <button
-          onClick={toggleSimulation}
-          className="bg-blue-500 text-white px-4 py-2 rounded flex items-center"
-        >
-          {isSimulationRunning ? <Pause size={16} /> : <Play size={16} />}
-          <span className="ml-2">{isSimulationRunning ? 'Pause' : 'Start'} Simulation</span>
-        </button>
-        <button
-          onClick={resetSimulation}
-          className="bg-gray-500 text-white px-4 py-2 rounded flex items-center"
-        >
-          <RefreshCw size={16} />
-          <span className="ml-2">Reset</span>
-        </button>
-      </div>
-    </div>
-  );
-};
+    )
+}
 
-export default AIResourceAllocator;
+export default GPUPoorComponent
