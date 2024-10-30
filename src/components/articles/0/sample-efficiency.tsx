@@ -15,11 +15,11 @@ const SampleEfficiencyDemo = () => {
   const [hasStarted, setHasStarted] = useState(false);
 
   // Models' accuracy curves (simplified for demonstration)
-  const getEfficientAccuracy = (samples) => {
+  const getEfficientAccuracy = (samples: number) => {
     return Math.min(95, Math.floor(100 * (1 - Math.exp(-samples / 10))));
   };
 
-  const getInefficientAccuracy = (samples) => {
+  const getInefficientAccuracy = (samples: number) => {
     return Math.min(95, Math.floor(100 * (1 - Math.exp(-samples / 25))));
   };
 
@@ -33,7 +33,7 @@ const SampleEfficiencyDemo = () => {
 
   // Training animation
   useEffect(() => {
-    let interval;
+    let interval: NodeJS.Timeout;
     if (isPlaying && sampleCount < 50) {
       interval = setInterval(() => {
         setSampleCount((prev) => prev + 1);

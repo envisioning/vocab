@@ -6,7 +6,9 @@ const SSFExplainer = () => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentFrame, setCurrentFrame] = useState(0);
   const [gpuUsage, setGpuUsage] = useState(0);
-  const [frames, setFrames] = useState([]);
+  const [frames, setFrames] = useState<{ id: number; similarity: number }[]>(
+    []
+  );
 
   // Generate new random frames with some natural temporal coherence
   const generateNewFrames = () => {
@@ -39,7 +41,7 @@ const SSFExplainer = () => {
   }, []);
 
   useEffect(() => {
-    let interval;
+    let interval: NodeJS.Timeout;
     if (isPlaying && frames.length > 0) {
       interval = setInterval(() => {
         setCurrentFrame((prev) => {

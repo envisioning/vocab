@@ -53,7 +53,7 @@ const OverparameterizationDemo = () => {
   const curvePoints = generateCurvePoints();
 
   // Convert points to SVG path
-  const generatePath = (points) => {
+  const generatePath = (points: { x: number; y: number }[]) => {
     return points
       .map((p, i) => (i === 0 ? `M ${p.x} ${p.y}` : `L ${p.x} ${p.y}`))
       .join(" ");

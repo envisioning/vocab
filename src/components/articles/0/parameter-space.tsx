@@ -8,7 +8,7 @@ const ParameterSpaceExplorer = () => {
     { x: 75, y: 65, strength: 1 },
   ]);
   const [loss, setLoss] = useState(0);
-  const [trail, setTrail] = useState([]);
+  const [trail, setTrail] = useState<{ x: number; y: number }[]>([]);
   const [iteration, setIteration] = useState(0);
   const [scenario, setScenario] = useState(0);
 
@@ -46,11 +46,11 @@ const ParameterSpaceExplorer = () => {
   ];
 
   // Calculate loss based on distance from all optimal points
-  const calculateLoss = (point) => {
+  const calculateLoss = (point: number[]) => {
     const losses = optimalPoints.map((optimalPoint) => {
       const distance = Math.sqrt(
-        Math.pow(point.x - optimalPoint.x, 2) +
-          Math.pow(point.y - optimalPoint.y, 2)
+        Math.pow(point[0] - optimalPoint.x, 2) +
+          Math.pow(point[1] - optimalPoint.y, 2)
       );
       return distance * (1 - optimalPoint.strength);
     });
@@ -58,20 +58,20 @@ const ParameterSpaceExplorer = () => {
   };
 
   // Calculate gradient for the current point
-  const calculateGradient = (point) => {
+  const calculateGradient = (point: [number, number]) => {
     const nearestOptimal = optimalPoints.reduce((nearest, current) => {
       const currentDist = Math.sqrt(
-        Math.pow(point.x - current.x, 2) + Math.pow(point.y - current.y, 2)
+        Math.pow(point[0] - current.x, 2) + Math.pow(point[1] - current.y, 2)
       );
       const nearestDist = Math.sqrt(
-        Math.pow(point.x - nearest.x, 2) + Math.pow(point.y - nearest.y, 2)
+        Math.pow(point[0] - nearest.x, 2) + Math.pow(point[1] - nearest.y, 2)
       );
       return currentDist < nearestDist ? current : nearest;
     });
 
     return {
-      dx: (nearestOptimal.x - point.x) * 0.05,
-      dy: (nearestOptimal.y - point.y) * 0.05,
+      dx: (nearestOptimal.x - point[0]) * 0.05,
+      dy: (nearestOptimal.y - point[1]) * 0.05,
     };
   };
 
@@ -92,7 +92,7 @@ const ParameterSpaceExplorer = () => {
   useEffect(() => {
     const animationFrame = requestAnimationFrame(() => {
       setCurrentPoint((prev) => {
-        const gradient = calculateGradient(prev);
+        const gradient = calculateGradient([prev.x, prev.y]);
 
         // Add some noise to make it more interesting
         const noise = {
@@ -110,7 +110,7 @@ const ParameterSpaceExplorer = () => {
         newPoint.y = Math.max(0, Math.min(100, newPoint.y));
 
         setTrail((prevTrail) => [...prevTrail.slice(-30), prev]);
-        setLoss(calculateLoss(newPoint));
+        setLoss(calculateLoss([newPoint.x, newPoint.y]));
 
         return newPoint;
       });

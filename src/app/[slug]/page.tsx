@@ -13,7 +13,6 @@ import { getArticles } from "@/lib/getArticles";
 import ClientWrapper from "@/components/ClientWrapper";
 import { notFound } from "next/navigation"; // Import the notFound function
 import { redirect } from "next/navigation"; // Add this import at the top with other imports
-import SocialMetaTags from "@/components/SocialMetaTags";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -144,7 +143,7 @@ export default async function ArticlePage({ params }: PageProps) {
       .readdirSync(path.join(process.cwd(), "src/components/articles"))
       .filter(
         (dir) =>
-          (dir.startsWith("1") || dir.startsWith("2")) &&
+          (dir.startsWith("0") || dir.startsWith("1") || dir.startsWith("2")) &&
           fs
             .statSync(path.join(process.cwd(), "src/components/articles", dir))
             .isDirectory()

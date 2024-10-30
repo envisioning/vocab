@@ -47,7 +47,7 @@ const PDSExplainer = () => {
     },
   ];
 
-  const handleLevelClick = (level) => {
+  const handleLevelClick = (level: number) => {
     setActiveLevel(level);
   };
 

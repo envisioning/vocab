@@ -6,7 +6,9 @@ const ParameterSizeVisualizer = () => {
   const [layer1Size, setLayer1Size] = useState(3);
   const [layer2Size, setLayer2Size] = useState(4);
   const [parameterCount, setParameterCount] = useState(0);
-  const [connections, setConnections] = useState([]);
+  const [connections, setConnections] = useState<
+    Array<{ id: string; highlighted: boolean }>
+  >([]);
   const [isAnimating, setIsAnimating] = useState(true);
 
   // Add hover state for connections
@@ -52,7 +54,11 @@ const ParameterSizeVisualizer = () => {
   }, [layer1Size, layer2Size, isAnimating]);
 
   // Calculate neuron positions
-  const getNeuronPosition = (layerIndex, neuronIndex, totalNeurons) => {
+  const getNeuronPosition = (
+    layerIndex: number,
+    neuronIndex: number,
+    totalNeurons: number
+  ) => {
     const spacing =
       (LAYER_HEIGHT - NEURON_SIZE) / Math.max(totalNeurons - 1, 1);
     const x = layerIndex === 0 ? NEURON_SIZE : LAYER_WIDTH - NEURON_SIZE;
@@ -146,8 +152,6 @@ const ParameterSizeVisualizer = () => {
               conn.highlighted || hoveredConnection === conn.id ? "2" : "1"
             }
             className="transition-all duration-300 cursor-pointer"
-            onMouseEnter={() => setHoveredConnection(conn.id)}
-            onMouseLeave={() => setHoveredConnection(null)}
           />
         );
       })}
@@ -199,48 +203,44 @@ const ParameterSizeVisualizer = () => {
             })}
 
             {/* Layer 1 Neurons */}
-            {Array(layer1Size)
-              .fill()
-              .map((_, i) => {
-                const pos = getNeuronPosition(0, i, layer1Size);
-                return (
-                  <g
-                    key={`l1-${i}`}
-                    transform={`translate(${pos.x - NEURON_SIZE / 2},${
-                      pos.y - NEURON_SIZE / 2
-                    })`}
-                  >
-                    <circle
-                      cx={NEURON_SIZE / 2}
-                      cy={NEURON_SIZE / 2}
-                      r={NEURON_SIZE / 2}
-                      className="fill-blue-500"
-                    />
-                  </g>
-                );
-              })}
+            {Array.from({ length: layer1Size }, (_, i) => i).map((i) => {
+              const pos = getNeuronPosition(0, i, layer1Size);
+              return (
+                <g
+                  key={`l1-${i}`}
+                  transform={`translate(${pos.x - NEURON_SIZE / 2},${
+                    pos.y - NEURON_SIZE / 2
+                  })`}
+                >
+                  <circle
+                    cx={NEURON_SIZE / 2}
+                    cy={NEURON_SIZE / 2}
+                    r={NEURON_SIZE / 2}
+                    className="fill-blue-500"
+                  />
+                </g>
+              );
+            })}
 
             {/* Layer 2 Neurons */}
-            {Array(layer2Size)
-              .fill()
-              .map((_, i) => {
-                const pos = getNeuronPosition(1, i, layer2Size);
-                return (
-                  <g
-                    key={`l2-${i}`}
-                    transform={`translate(${pos.x - NEURON_SIZE / 2},${
-                      pos.y - NEURON_SIZE / 2
-                    })`}
-                  >
-                    <circle
-                      cx={NEURON_SIZE / 2}
-                      cy={NEURON_SIZE / 2}
-                      r={NEURON_SIZE / 2}
-                      className="fill-blue-500"
-                    />
-                  </g>
-                );
-              })}
+            {Array.from({ length: layer2Size }, (_, i) => i).map((i) => {
+              const pos = getNeuronPosition(1, i, layer2Size);
+              return (
+                <g
+                  key={`l2-${i}`}
+                  transform={`translate(${pos.x - NEURON_SIZE / 2},${
+                    pos.y - NEURON_SIZE / 2
+                  })`}
+                >
+                  <circle
+                    cx={NEURON_SIZE / 2}
+                    cy={NEURON_SIZE / 2}
+                    r={NEURON_SIZE / 2}
+                    className="fill-blue-500"
+                  />
+                </g>
+              );
+            })}
           </svg>
         </div>
 
