@@ -33,53 +33,59 @@ export default function ComponentsListPage() {
           <div className="px-8 py-6">
             <h1 className="text-2xl font-bold mb-6">Component Directory</h1>
 
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">
-              0 Components ({zeroFiles.length})
-            </h2>
-            <ul className="space-y-2 mb-8 list-decimal pl-5">
-              {zeroFiles.map((file) => (
-                <li key={file} className="hover:bg-gray-50 p-2 rounded pl-1">
-                  <Link
-                    href={`/${file}`}
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    {file}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <details className="mb-6">
+              <summary className="text-xl font-semibold mb-4 text-gray-800 cursor-pointer">
+                0 - Components ({zeroFiles.length})
+              </summary>
+              <ul className="space-y-2 mb-8 list-decimal pl-5">
+                {zeroFiles.map((file) => (
+                  <li key={file} className="hover:bg-gray-50 p-2 rounded pl-1">
+                    <Link
+                      href={`/${file}`}
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      {file}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
 
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">
-              1-ok Components ({okFiles.length})
-            </h2>
-            <ul className="space-y-2 mb-8 list-decimal pl-5">
-              {okFiles.map((file) => (
-                <li key={file} className="hover:bg-gray-50 p-2 rounded pl-1">
-                  <Link
-                    href={`/${file}`}
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    {file}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <details className="mb-6">
+              <summary className="text-xl font-semibold mb-4 text-gray-800 cursor-pointer">
+                1-ok Components ({okFiles.length})
+              </summary>
+              <ul className="space-y-2 mb-8 list-decimal pl-5">
+                {okFiles.map((file) => (
+                  <li key={file} className="hover:bg-gray-50 p-2 rounded pl-1">
+                    <Link
+                      href={`/${file}`}
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      {file}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
 
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">
-              2-adjust Components ({adjustFiles.length})
-            </h2>
-            <ul className="space-y-2 list-decimal pl-5">
-              {adjustFiles.map((file) => (
-                <li key={file} className="hover:bg-gray-50 p-2 rounded pl-1">
-                  <Link
-                    href={`/${file}`}
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    {file}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <details className="mb-6">
+              <summary className="text-xl font-semibold mb-4 text-gray-800 cursor-pointer">
+                2-adjust Components ({adjustFiles.length})
+              </summary>
+              <ul className="space-y-2 list-decimal pl-5">
+                {adjustFiles.map((file) => (
+                  <li key={file} className="hover:bg-gray-50 p-2 rounded pl-1">
+                    <Link
+                      href={`/${file}`}
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      {file}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
           </div>
         </div>
       </div>
