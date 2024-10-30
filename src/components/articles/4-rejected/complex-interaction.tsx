@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Fish, Plant, Thermometer, Droplet, AlertCircle } from "lucide-react";
+import { Fish, Sprout, Thermometer, Droplet, AlertCircle } from "lucide-react";
 
 interface ComponentProps {}
 
@@ -82,7 +82,7 @@ const EcosystemSimulator: React.FC<ComponentProps> = () => {
           <span>Fish: {ecosystem.fishCount}</span>
         </div>
         <div className="flex items-center gap-2">
-          <Plant className="text-green-500" />
+          <Sprout className="text-green-500" />
           <span>Plants: {ecosystem.plantCount}</span>
         </div>
         <div className="flex items-center gap-2">

@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Brain, Calculator, Palette, Headphones, Robot, Zap, X } from "lucide-react";
+import { Brain, Calculator, Palette, Headphones, Bot, Zap, X } from "lucide-react";
 
 interface Challenge {
     id: number;
@@ -73,7 +73,7 @@ export default function AGISimulator() {
         <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-                    <Robot className="text-blue-500" />
+                    <Bot className="text-blue-500" />
                     AGI Evolution Simulator
                 </h1>
                 {activeChallenge && (

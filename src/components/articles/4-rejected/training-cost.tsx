@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Chef, CookingPot, Battery, Brain, Coins, BarChart2 } from "lucide-react";
+import { ChefHat, CookingPot, Battery, Brain, Coins, BarChart2 } from "lucide-react";
 
 interface TrainingStats {
   accuracy: number;

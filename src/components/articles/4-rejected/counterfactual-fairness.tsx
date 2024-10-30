@@ -1,146 +1,136 @@
 "use client"
 import { useState, useEffect } from "react";
-import { User, Users, Briefcase, GraduationCap, CreditCard, ArrowRight, ArrowLeft, RefreshCw } from "lucide-react";
+import { User, Users, Building2, GraduationCap, Briefcase, AlertCircle, CheckCircle2, Ban } from "lucide-react";
 
-interface Scenario {
-  id: number;
-  title: string;
-  icon: JSX.Element;
-  fairPrediction: string;
-  unfairPrediction: string;
+interface Profile {
+  education: number;
+  experience: number;
+  skills: number;
+  location: string;
+  gender: string;
+  ethnicity: string;
 }
 
-const SCENARIOS: Scenario[] = [
-  {
-    id: 1,
-    title: "Job Application",
-    icon: <Briefcase className="w-6 h-6" />,
-    fairPrediction: "Highly qualified for the position",
-    unfairPrediction: "May not fit company culture",
-  },
-  {
-    id: 2,
-    title: "University Admission",
-    icon: <GraduationCap className="w-6 h-6" />,
-    fairPrediction: "Strong academic potential",
-    unfairPrediction: "Might struggle with coursework",
-  },
-  {
-    id: 3,
-    title: "Loan Approval",
-    icon: <CreditCard className="w-6 h-6" />,
-    fairPrediction: "Good candidate for loan",
-    unfairPrediction: "High risk of default",
-  },
-];
+interface Decision {
+  loan: boolean;
+  job: boolean;
+  college: boolean;
+}
 
-/**
- * CounterfactualFairnessExplorer: A component to teach Counterfactual Fairness
- * through an interactive "Fairness Mirror" simulation.
- */
-const CounterfactualFairnessExplorer: React.FC = () => {
-  const [currentScenario, setCurrentScenario] = useState<number>(0);
-  const [isAltered, setIsAltered] = useState<boolean>(false);
-  const [isFair, setIsFair] = useState<boolean>(true);
+const LOCATIONS = ["Urban", "Suburban", "Rural"];
+const GENDERS = ["Male", "Female", "Non-binary"];
+const ETHNICITIES = ["A", "B", "C", "D"];
+
+const FairnessLens = () => {
+  const [baseProfile, setBaseProfile] = useState<Profile>({
+    education: 85,
+    experience: 75,
+    skills: 80,
+    location: LOCATIONS[0],
+    gender: GENDERS[0],
+    ethnicity: ETHNICITIES[0]
+  });
+
+  const [altProfile, setAltProfile] = useState<Profile>({...baseProfile});
+  const [decisions, setDecisions] = useState<{base: Decision, alt: Decision}>({
+    base: { loan: false, job: false, college: false },
+    alt: { loan: false, job: false, college: false }
+  });
+  const [fairnessViolation, setFairnessViolation] = useState<boolean>(false);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentScenario((prev) => (prev + 1) % SCENARIOS.length);
-    }, 5000);
+    const evaluateDecisions = () => {
+      const baseDecision = {
+        loan: baseProfile.education > 80 && baseProfile.experience > 70,
+        job: baseProfile.skills > 75 && baseProfile.experience > 70,
+        college: baseProfile.education > 80
+      };
 
-    return () => clearInterval(timer);
-  }, []);
+      const altDecision = {
+        loan: altProfile.education > 80 && altProfile.experience > 70,
+        job: altProfile.skills > 75 && altProfile.experience > 70,
+        college: altProfile.education > 80
+      };
 
-  const handleToggleAppearance = () => {
-    setIsAltered((prev) => !prev);
+      setDecisions({ base: baseDecision, alt: altDecision });
+      setFairnessViolation(
+        baseDecision.loan !== altDecision.loan ||
+        baseDecision.job !== altDecision.job ||
+        baseDecision.college !== altDecision.college
+      );
+    };
+
+    evaluateDecisions();
+    return () => {
+      setDecisions({ base: { loan: false, job: false, college: false },
+                    alt: { loan: false, job: false, college: false } });
+    };
+  }, [baseProfile, altProfile]);
+
+  const handleAttributeChange = (profile: "base" | "alt", attr: keyof Profile, value: string | number) => {
+    const updater = profile === "base" ? setBaseProfile : setAltProfile;
+    updater(prev => ({ ...prev, [attr]: value }));
   };
 
-  const handleToggleFairness = () => {
-    setIsFair((prev) => !prev);
-  };
+  const renderProfile = (profile: Profile, type: "base" | "alt") => (
+    <div className="p-4 bg-gray-100 rounded-lg">
+      <div className="flex items-center gap-2 mb-4">
+        <User className="w-6 h-6 text-blue-500" />
+        <h3 className="text-lg font-semibold">{type === "base" ? "Original" : "Alternative"} Profile</h3>
+      </div>
+      
+      <div className="space-y-4">
+        <div className="flex items-center gap-2">
+          <GraduationCap className="w-5 h-5 text-gray-600" />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={profile.education}
+            onChange={(e) => handleAttributeChange(type, "education", parseInt(e.target.value))}
+            className="w-full"
+            aria-label="Education level"
+          />
+          <span className="w-8">{profile.education}</span>
+        </div>
 
-  const handleNextScenario = () => {
-    setCurrentScenario((prev) => (prev + 1) % SCENARIOS.length);
-  };
+        <select
+          value={profile.location}
+          onChange={(e) => handleAttributeChange(type, "location", e.target.value)}
+          className="w-full p-2 border rounded"
+          aria-label="Location"
+        >
+          {LOCATIONS.map(loc => (
+            <option key={loc} value={loc}>{loc}</option>
+          ))}
+        </select>
+      </div>
 
-  const handlePrevScenario = () => {
-    setCurrentScenario((prev) => (prev - 1 + SCENARIOS.length) % SCENARIOS.length);
-  };
-
-  const handleReset = () => {
-    setIsAltered(false);
-    setIsFair(true);
-    setCurrentScenario(0);
-  };
-
-  const scenario = SCENARIOS[currentScenario];
+      <div className="mt-4 space-y-2">
+        {decisions[type].loan && <CheckCircle2 className="w-5 h-5 text-green-500" />}
+        {decisions[type].job && <Briefcase className="w-5 h-5 text-green-500" />}
+        {decisions[type].college && <Building2 className="w-5 h-5 text-green-500" />}
+      </div>
+    </div>
+  );
 
   return (
-    <div className="max-w-2xl mx-auto p-4 bg-gray-100 rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold mb-4 text-center">The Fairness Mirror</h1>
-      <div className="flex items-center justify-center mb-4">
-        <User className={`w-20 h-20 ${isAltered ? 'text-blue-500' : 'text-gray-700'}`} />
+    <div className="max-w-4xl mx-auto p-6">
+      <h2 className="text-2xl font-bold mb-6">FairnessLens: Explore Counterfactual Fairness</h2>
+      
+      <div className="grid grid-cols-2 gap-6">
+        {renderProfile(baseProfile, "base")}
+        {renderProfile(altProfile, "alt")}
       </div>
-      <div className="flex justify-between items-center mb-4">
-        <button
-          onClick={handlePrevScenario}
-          className="p-2 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-          aria-label="Previous scenario"
-        >
-          <ArrowLeft className="w-6 h-6" />
-        </button>
-        <div className="text-center">
-          <h2 className="text-xl font-semibold">{scenario.title}</h2>
-          {scenario.icon}
+
+      {fairnessViolation && (
+        <div className="mt-6 p-4 bg-red-100 rounded-lg flex items-center gap-2">
+          <AlertCircle className="w-6 h-6 text-red-500" />
+          <p className="text-red-700">Fairness violation detected! Decisions differ based on protected attributes.</p>
         </div>
-        <button
-          onClick={handleNextScenario}
-          className="p-2 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-          aria-label="Next scenario"
-        >
-          <ArrowRight className="w-6 h-6" />
-        </button>
-      </div>
-      <div className="mb-4 p-4 bg-white rounded-lg shadow">
-        <h3 className="font-semibold mb-2">AI Prediction:</h3>
-        <p>{isFair ? scenario.fairPrediction : scenario.unfairPrediction}</p>
-      </div>
-      <div className="flex justify-between mb-4">
-        <button
-          onClick={handleToggleAppearance}
-          className={`px-4 py-2 rounded ${
-            isAltered ? 'bg-blue-500 text-white' : 'bg-gray-300'
-          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
-        >
-          {isAltered ? 'Revert Appearance' : 'Alter Appearance'}
-        </button>
-        <button
-          onClick={handleToggleFairness}
-          className={`px-4 py-2 rounded ${
-            isFair ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
-          } focus:outline-none focus:ring-2 focus:ring-blue-500`}
-        >
-          {isFair ? 'Fair Prediction' : 'Unfair Prediction'}
-        </button>
-      </div>
-      <div className="text-center">
-        <button
-          onClick={handleReset}
-          className="px-4 py-2 bg-gray-500 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          <RefreshCw className="w-4 h-4 inline-block mr-2" />
-          Reset
-        </button>
-      </div>
-      <div className="mt-4 p-4 bg-blue-100 rounded-lg">
-        <h3 className="font-semibold mb-2">Learning Point:</h3>
-        <p>
-          Counterfactual Fairness ensures that AI predictions remain consistent
-          regardless of changes in protected attributes like appearance.
-        </p>
-      </div>
+      )}
     </div>
   );
 };
 
-export default CounterfactualFairnessExplorer;
+export default FairnessLens;

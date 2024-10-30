@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Spotlight, Camera, Star, UserCircle2, Theater } from "lucide-react";
+import { Star, UserCircle2, Theater } from "lucide-react";
 
 interface Actor {
   id: number;

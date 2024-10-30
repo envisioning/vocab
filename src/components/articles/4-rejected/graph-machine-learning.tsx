@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Circle, ArrowRight, Coffee, Pizza, Sandwich, Salad, ChefHat, Brain } from "lucide-react";
+import { Brain } from "lucide-react";
 
 interface Recipe {
   id: string;

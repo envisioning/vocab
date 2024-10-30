@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Dog, Heart, Pizza, Ball, Book, Music, Brain, ArrowRight } from "lucide-react";
+import { Dog, Heart, Pizza, Circle, Book, Music, Brain, ArrowRight } from "lucide-react";
 
 interface PetPreference {
   food: number;
@@ -18,7 +18,7 @@ interface ComponentProps {}
 
 const ACTIVITIES = {
   food: [Pizza, "Feed"],
-  play: [Ball, "Play"],
+  play: [Circle, "Play"],
   study: [Book, "Study"],
 } as const;
 

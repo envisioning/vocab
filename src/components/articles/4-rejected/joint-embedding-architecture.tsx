@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Smile, Heart, Sun, Cloud, Star, Moon, DragDropIcon } from "lucide-react";
+import { Smile, Heart, Sun, Cloud, Star, Moon } from "lucide-react";
 
 interface Concept {
   id: string;

@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Cat, DragDropIcon, Brain, Check, X, RefreshCw } from "lucide-react";
+import { Cat, Brain, Check, X, RefreshCw } from "lucide-react";
 
 interface Behavior {
   id: number;

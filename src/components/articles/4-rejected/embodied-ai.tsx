@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Robot, Eye, Ear, Hand, Brain, ArrowRight, RefreshCw, AlertCircle } from "lucide-react";
+import { Bot, Eye, Ear, Hand, Brain, ArrowRight, RefreshCw, AlertCircle } from "lucide-react";
 
 interface SensorData {
   visual: number;
@@ -92,7 +92,7 @@ const VirtualPetTrainer: React.FC<ComponentProps> = () => {
       <div className="grid grid-cols-2 gap-6">
         <div className="bg-white p-4 rounded-lg shadow">
           <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <Robot className="w-5 h-5 text-blue-500" />
+            <Bot className="w-5 h-5 text-blue-500" />
             Pet's Perspective
           </h2>
           <div className="space-y-4">
