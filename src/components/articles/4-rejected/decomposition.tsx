@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { ChefHat, Home, Robot, ArrowRight, Check, X, ZoomIn, ZoomOut } from "lucide-react";
+import { ChefHat, Home, Bot, ArrowRight, Check, X, ZoomIn, ZoomOut } from "lucide-react";
 
 interface Task {
     id: string;
@@ -20,7 +20,7 @@ const SCENARIOS: ScenarioType[] = [
     {
         id: "robot",
         title: "Build a Robot",
-        icon: <Robot className="w-6 h-6" />,
+        icon: <Bot className="w-6 h-6" />,
         rootTask: {
             id: "robot-main",
             title: "Create Working Robot",

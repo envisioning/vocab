@@ -1,3 +1,5 @@
+// /Users/kemi/Documents/GitHub/vocab/src/components/articles/1-ok/adversarial-debiasing.tsx
+
 "use client"
 import { useState, useEffect } from "react";
 import { Scale, User, Shield, AlertCircle, CheckCircle2, Brain } from "lucide-react";

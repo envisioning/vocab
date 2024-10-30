@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import { Music, Users, Pizza, ArrowRight, ArrowLeft, RefreshCw } from "lucide-react";
+import React from "react";
 
 interface ContrastiveItem {
     id: number;
@@ -10,7 +11,7 @@ interface ContrastiveItem {
     isPositive: boolean;
 }
 
-interface ComponentProps {}
+interface ComponentProps { }
 
 /**
  * ContrastiveLearningPlayground - Interactive component teaching contrastive learning
@@ -52,13 +53,15 @@ const ContrastiveLearningPlayground: React.FC<ComponentProps> = () => {
     };
 
     const handleDrag = (e: React.DragEvent, id: number) => {
-        if (draggedItem === null) return;
+        if (draggedItem === null) {
+            return;
+        }
 
         const container = e.currentTarget.getBoundingClientRect();
         const x = ((e.clientX - container.left) / container.width) * 100;
         const y = ((e.clientY - container.top) / container.height) * 100;
 
-        setItems(prev => prev.map(item => 
+        setItems(prev => prev.map(item =>
             item.id === id ? { ...item, x, y } : item
         ));
     };
@@ -131,8 +134,8 @@ const ContrastiveLearningPlayground: React.FC<ComponentProps> = () => {
                         role="button"
                         aria-label={`Draggable ${item.type} item`}
                     >
-                        {React.createElement(metaphors[item.type as keyof typeof metaphors].icon, { 
-                            className: "w-6 h-6" 
+                        {React.createElement(metaphors[item.type as keyof typeof metaphors].icon, {
+                            className: "w-6 h-6"
                         })}
                     </div>
                 ))}

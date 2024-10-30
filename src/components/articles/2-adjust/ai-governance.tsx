@@ -1,3 +1,5 @@
+// file path: /Users/kemi/Documents/GitHub/vocab/src/components/articles/2-adjust/ai-governance.tsx
+
 "use client"
 import { useState, useEffect } from "react";
 import { Building2, Car, Hospital, School, AlertTriangle, Check, X, Award } from "lucide-react";

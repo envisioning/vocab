@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Robot, Brain, ChefHat, Award, BarChart2, Play, Pause, RotateCcw } from "lucide-react";
+import { Bot, Brain, ChefHat, Award, BarChart2, Play, Pause, RotateCcw } from "lucide-react";
 
 interface ScenarioType {
     id: number;
@@ -61,7 +61,7 @@ export default function RLAIFLab() {
         <div className="flex flex-col gap-4 p-6 bg-gray-100 rounded-lg max-w-4xl mx-auto">
             <header className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold flex items-center gap-2">
-                    <Robot className="text-blue-500" />
+                    <Bot className="text-blue-500" />
                     RLAIF Laboratory
                 </h1>
                 <div className="flex gap-2">

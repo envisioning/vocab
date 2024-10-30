@@ -1,3 +1,5 @@
+// /Users/kemi/Documents/GitHub/vocab/src/components/articles/1-ok/ai-winter.tsx
+
 "use client"
 import { useState, useEffect } from "react";
 import { Thermometer, TrendingUp, TrendingDown, Newspaper, Coins, Brain, Users, AlertTriangle } from "lucide-react";

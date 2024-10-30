@@ -1,8 +1,8 @@
 "use client"
 import { useState, useEffect } from "react";
-import { Shield, ShieldAlert, Lock, Unlock, Robot, Star, AlertTriangle, ThumbsUp } from "lucide-react";
+import { Shield, ShieldAlert, Lock, Unlock, Bot, Star, AlertTriangle, ThumbsUp } from "lucide-react";
 
-interface GuardBreakerProps {}
+interface GuardBreakerProps { }
 
 type Level = {
   id: number;
@@ -36,7 +36,7 @@ const LEVELS: Level[] = [
   }
 ];
 
-const GuardBreaker = ({}: GuardBreakerProps) => {
+const GuardBreaker = ({ }: GuardBreakerProps) => {
   const [currentLevel, setCurrentLevel] = useState<number>(1);
   const [score, setScore] = useState<number>(0);
   const [selectedApproach, setSelectedApproach] = useState<string>("");
@@ -55,12 +55,12 @@ const GuardBreaker = ({}: GuardBreakerProps) => {
     if (!level) return;
 
     setSelectedApproach(approach);
-    
+
     if (approach === level.correctApproach) {
       setScore(prev => prev + 100);
       setFeedback(level.feedback);
       setIsGuardBroken(true);
-      
+
       setTimeout(() => {
         if (currentLevel < LEVELS.length) {
           setCurrentLevel(prev => prev + 1);
@@ -101,7 +101,7 @@ const GuardBreaker = ({}: GuardBreakerProps) => {
             className="p-4 bg-white rounded-lg shadow hover:bg-blue-50 transition duration-300"
             aria-label="Try roleplay approach"
           >
-            <Robot className="w-6 h-6 mx-auto mb-2" />
+            <Bot className="w-6 h-6 mx-auto mb-2" />
             <span>Roleplay</span>
           </button>
           <button
