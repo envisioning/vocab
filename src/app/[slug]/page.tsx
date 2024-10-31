@@ -262,9 +262,7 @@ export default async function ArticlePage({
           <Suspense
             fallback={
               <div className="mt-8 pt-8 animate-pulse max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-4">
-                  Related to {frontmatter.title}
-                </h2>
+                <h2 className="text-2xl font-bold mb-4">Related</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {[1, 2, 3].map((i) => (
                     <div key={i} className="h-32 bg-gray-200 rounded-lg" />

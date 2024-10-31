@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import { Article } from "@/types/article";
 import FilterBar from "./FilterBar";
@@ -76,6 +76,29 @@ export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
     return 2;
   }, []);
 
+  // Memoize filtered articles
+  const filteredArticles = useMemo(() => {
+    if (!searchTerm) return articles;
+
+    const searchLower = searchTerm.toLowerCase();
+    return articles
+      .filter((article) => {
+        const titleLower = article.title.toLowerCase();
+        return titleLower.includes(searchLower);
+      })
+      .sort((a, b) => {
+        const priorityA = getSearchPriority(a.title, searchTerm);
+        const priorityB = getSearchPriority(b.title, searchTerm);
+
+        // First sort by priority
+        if (priorityA !== priorityB) {
+          return priorityA - priorityB;
+        }
+        // Then alphabetically
+        return a.title.localeCompare(b.title);
+      });
+  }, [articles, searchTerm, getSearchPriority]);
+
   return (
     <FilterBar
       searchTerm={searchTerm}
@@ -83,8 +106,9 @@ export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
       sortOption={sortOption}
       onSortChange={handleSort}
       allArticles={articles}
+      filteredArticles={filteredArticles}
       isHomeRoute={pathname === "/"}
-      getSearchPriority={getSearchPriority} // Pass the new function
+      getSearchPriority={getSearchPriority}
     />
   );
 }

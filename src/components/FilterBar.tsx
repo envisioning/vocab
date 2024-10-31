@@ -15,6 +15,7 @@ interface FilterBarProps {
   allArticles: Article[];
   isHomeRoute: boolean;
   getSearchPriority: (title: string, searchTerm: string) => number;
+  filteredArticles: Article[];
 }
 
 export default function FilterBar({
@@ -25,6 +26,7 @@ export default function FilterBar({
   allArticles = [], // Provide default empty array
   isHomeRoute,
   getSearchPriority,
+  filteredArticles,
 }: FilterBarProps) {
   const router = useRouter();
   const pathname = usePathname();
@@ -43,30 +45,7 @@ export default function FilterBar({
     return false;
   };
 
-  // Modified matching articles logic with smarter acronym prioritization
-  const matchingArticles =
-    allArticles
-      ?.filter((article) =>
-        article.title.toLowerCase().includes(searchTerm.toLowerCase())
-      )
-      .sort((a, b) => {
-        // Check if search term matches the acronym part exactly
-        const aTitle = a.title.split("(")[0].trim().toLowerCase();
-        const bTitle = b.title.split("(")[0].trim().toLowerCase();
-        const searchLower = searchTerm.toLowerCase();
-
-        const aIsMatchingAcronym = aTitle === searchLower && isAcronym(a.title);
-        const bIsMatchingAcronym = bTitle === searchLower && isAcronym(b.title);
-
-        // Prioritize matching acronyms
-        if (aIsMatchingAcronym && !bIsMatchingAcronym) return -1;
-        if (!aIsMatchingAcronym && bIsMatchingAcronym) return 1;
-
-        // For all other cases, sort alphabetically
-        return a.title.localeCompare(b.title);
-      }) || [];
-
-  const hitCount = matchingArticles.length;
+  const hitCount = filteredArticles.length;
   const totalCount = allArticles?.length || 0;
   const isFiltered = searchTerm;
 
@@ -77,13 +56,11 @@ export default function FilterBar({
   };
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (!searchTerm) return;
-
     switch (e.key) {
       case "ArrowDown":
         e.preventDefault();
         setSelectedIndex((prev) =>
-          prev < matchingArticles.length - 1 ? prev + 1 : prev
+          prev < filteredArticles.length - 1 ? prev + 1 : prev
         );
         setShowResults(true);
         break;
@@ -93,28 +70,32 @@ export default function FilterBar({
         break;
       case "Enter":
         e.preventDefault();
-        if (selectedIndex >= 0 && matchingArticles[selectedIndex]) {
-          const selected = matchingArticles[selectedIndex];
-          onSearchChange(selected.title); // Set the search term to the selected article's title
-          router.push(`/${selected.slug}`);
-          setShowResults(false);
+        if (selectedIndex >= 0 && filteredArticles[selectedIndex]) {
+          const selected = filteredArticles[selectedIndex];
+          handleSelection(selected);
         }
         break;
       case "Escape":
+        e.preventDefault();
         setShowResults(false);
         setSelectedIndex(-1);
         break;
     }
   };
 
-  // Reset selection when search term changes
-  useEffect(() => {
+  // Separate the selection handling from the search
+  const handleSelection = (article: Article) => {
+    setShowResults(false);
     setSelectedIndex(-1);
-    setShowResults(!!searchTerm);
-  }, [searchTerm]);
+    // Only navigate after a final selection
+    router.push(`/${article.slug}`);
+  };
 
+  // Keep search purely local
   const handleSearchChange = (value: string) => {
     onSearchChange(value);
+    setShowResults(!!value);
+    setSelectedIndex(-1);
   };
 
   // Add keyboard shortcut to focus search
@@ -163,7 +144,10 @@ export default function FilterBar({
           </Link>
 
           {/* Show search on all routes */}
-          <div className="relative flex-grow min-w-[200px]">
+          <form
+            className="relative flex-grow min-w-[200px]"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <input
               ref={inputRef}
               type="text"
@@ -173,6 +157,7 @@ export default function FilterBar({
               onChange={(e) => handleSearchChange(e.target.value)}
               onKeyDown={handleKeyDown}
               aria-label="Search"
+              autoComplete="off"
             />
 
             <div className="absolute right-12 top-1/2 -translate-y-1/2 text-sm text-gray-500">
@@ -208,16 +193,16 @@ export default function FilterBar({
             {/* Search Results Dropdown */}
             {showResults && searchTerm && (
               <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
-                {matchingArticles.map((article, index) => (
+                {filteredArticles.map((article, index) => (
                   <Link
                     key={article.slug}
                     href={`/${article.slug}`}
                     className={`block px-4 py-2 hover:bg-gray-100 ${
                       index === selectedIndex ? "bg-blue-50" : ""
                     }`}
-                    onClick={() => {
-                      onSearchChange(article.title); // Set the search term to the clicked article's title
-                      setShowResults(false);
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleSelection(article);
                     }}
                   >
                     {article.title}
@@ -225,7 +210,7 @@ export default function FilterBar({
                 ))}
               </div>
             )}
-          </div>
+          </form>
 
           <Link
             href="/about"
