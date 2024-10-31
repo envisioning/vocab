@@ -49,7 +49,11 @@ async function getArticleContent(slug: string): Promise<{
   }
 
   const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
-  const imagePath = path.join(process.cwd(), "public/images", `${slug}.webp`);
+  const imagePath = path.join(
+    process.cwd(),
+    "public/images/articles",
+    `${slug}.webp`
+  );
   const hasImage = fs.existsSync(imagePath);
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
@@ -87,8 +91,8 @@ export async function generateMetadata({
       images: [
         {
           url: hasImage
-            ? `${url}/vocab/images/${params.slug}.webp`
-            : `${url}/vocab/default-social.webp`,
+            ? `${url}/images/articles/${params.slug}.webp`
+            : `${url}/default-social.webp`,
           width: 1200,
           height: 630,
         },
@@ -101,8 +105,8 @@ export async function generateMetadata({
       description: frontmatter.summary,
       images: [
         hasImage
-          ? `${url}/vocab/images/${params.slug}.webp`
-          : `${url}/vocab/default-social.webp`,
+          ? `${url}/images/articles/${params.slug}.webp`
+          : `${url}/default-social.webp`,
       ],
     },
   };
@@ -184,6 +188,9 @@ export default async function ArticlePage({ params }: PageProps) {
 
   console.log("Generality calculated as:", generality);
 
+  console.log("Image path:", `/images/articles/${slug}.webp`);
+  console.log("Has image:", hasImage);
+
   return (
     <>
       <div className="min-h-screen bg-gray-100 py-6">
@@ -200,9 +207,10 @@ export default async function ArticlePage({ params }: PageProps) {
                   src={`/vocab/images/articles/${slug}.webp`}
                   alt={frontmatter.title}
                   fill
-                  loading="lazy"
                   className="object-cover"
                   sizes="(max-width: 1200px) 100vw, 1200px"
+                  priority
+                  quality={90}
                 />
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/30" />
