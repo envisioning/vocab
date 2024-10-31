@@ -1,115 +1,181 @@
-// /Users/kemi/Documents/GitHub/vocab/src/components/articles/1-ok/adversarial-debiasing.tsx
+"use client";
 
-"use client"
-import { useState, useEffect } from "react";
-import { Scale, User, Shield, AlertCircle, CheckCircle2, Brain } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Brain, Shield, ArrowLeftRight, RotateCw } from "lucide-react";
 
-interface BiasScenario {
-    id: number;
-    decision: string;
-    biasType: string;
-    correctResponse: boolean;
-}
+const AdversarialDebiasingDemo = () => {
+  const [progress, setProgress] = useState(0);
+  const [biasLevel, setBiasLevel] = useState(80);
+  const [isActive, setIsActive] = useState(true);
+  const [predictions, setPredictions] = useState([
+    {
+      input: "Software Engineer",
+      biasedPrediction: "Male (90%)",
+      debiasedPrediction: "Loading...",
+    },
+    {
+      input: "Nurse",
+      biasedPrediction: "Female (85%)",
+      debiasedPrediction: "Loading...",
+    },
+    {
+      input: "CEO",
+      biasedPrediction: "Male (95%)",
+      debiasedPrediction: "Loading...",
+    },
+  ]);
+  const [trainingSpeed, setTrainingSpeed] = useState(1);
 
-const SCENARIOS: BiasScenario[] = [
-    { id: 1, decision: "Hire candidate with top university degree", biasType: "Educational bias", correctResponse: false },
-    { id: 2, decision: "Approve loan based on neighborhood", biasType: "Geographic bias", correctResponse: false },
-    { id: 3, decision: "Select candidates based on merit only", biasType: "None", correctResponse: true },
-];
+  // Animation loop
+  useEffect(() => {
+    let animationFrame;
+    const animate = () => {
+      if (progress >= 99) {
+        setIsActive(false);
+        setPredictions((prev) =>
+          prev.map((p) => ({
+            ...p,
+            debiasedPrediction: "Gender: Uncertain (50-55%)",
+          }))
+        );
+        return;
+      }
 
-/**
- * AdversarialDebiasing - Interactive component teaching bias detection and correction
- */
-const AdversarialDebiasing = () => {
-    const [score, setScore] = useState<number>(0);
-    const [currentScenario, setCurrentScenario] = useState<number>(0);
-    const [isTraining, setIsTraining] = useState<boolean>(true);
-    const [feedback, setFeedback] = useState<string>("");
-    const [biasDetected, setBiasDetected] = useState<boolean>(false);
-    const [animation, setAnimation] = useState<string>("");
+      setProgress((prev) => prev + 0.5);
+      setBiasLevel((prev) => {
+        const newBias = prev - 0.3;
+        return newBias < 20 ? 20 : newBias;
+      });
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setAnimation(prev => prev === "scale-105" ? "" : "scale-105");
-        }, 1000);
-        return () => clearInterval(timer);
-    }, []);
-
-    const handleBiasCheck = (hasBias: boolean) => {
-        const scenario = SCENARIOS[currentScenario];
-        const isCorrect = (hasBias === !scenario.correctResponse);
-        
-        setFeedback(isCorrect ? "Correct detection!" : "Try again!");
-        setBiasDetected(hasBias);
-        setScore(prev => prev + (isCorrect ? 10 : -5));
-
-        setTimeout(() => {
-            setCurrentScenario(prev => (prev + 1) % SCENARIOS.length);
-            setFeedback("");
-            setBiasDetected(false);
-        }, 2000);
+      if (isActive) {
+        animationFrame = requestAnimationFrame(() => {
+          setTimeout(animate, 50 / trainingSpeed);
+        });
+      }
     };
 
-    return (
-        <div className="max-w-4xl mx-auto p-6 space-y-6" role="main">
-            <div className="flex justify-between items-center mb-8">
-                <h1 className="text-2xl font-bold text-gray-800">Adversarial Debiasing Trainer</h1>
-                <div className="flex items-center gap-2">
-                    <Brain className="w-6 h-6 text-blue-500" />
-                    <span className="text-lg">Score: {score}</span>
-                </div>
-            </div>
+    if (isActive) {
+      animationFrame = requestAnimationFrame(animate);
+    }
 
-            <div className="grid grid-cols-2 gap-6">
-                <div className="p-6 bg-gray-100 rounded-lg">
-                    <h2 className="flex items-center gap-2 mb-4">
-                        <User className="w-5 h-5 text-blue-500" />
-                        <span>Main Model (Decision Maker)</span>
-                    </h2>
-                    <div className={`p-4 border rounded-lg bg-white ${animation}`}>
-                        {SCENARIOS[currentScenario]?.decision}
-                    </div>
-                </div>
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, [isActive, progress, trainingSpeed]);
 
-                <div className="p-6 bg-gray-100 rounded-lg">
-                    <h2 className="flex items-center gap-2 mb-4">
-                        <Shield className="w-5 h-5 text-blue-500" />
-                        <span>Bias Detector</span>
-                    </h2>
-                    <div className="space-y-4">
-                        <button
-                            onClick={() => handleBiasCheck(true)}
-                            className="w-full p-3 bg-red-100 hover:bg-red-200 rounded-lg transition duration-300"
-                            aria-label="Detect bias"
-                        >
-                            <AlertCircle className="w-5 h-5 inline mr-2" />
-                            Bias Detected
-                        </button>
-                        <button
-                            onClick={() => handleBiasCheck(false)}
-                            className="w-full p-3 bg-green-100 hover:bg-green-200 rounded-lg transition duration-300"
-                            aria-label="No bias detected"
-                        >
-                            <CheckCircle2 className="w-5 h-5 inline mr-2" />
-                            No Bias
-                        </button>
-                    </div>
-                </div>
-            </div>
+  const handleRestart = () => {
+    setProgress(0);
+    setBiasLevel(80);
+    setIsActive(true);
+  };
 
-            {feedback && (
-                <div className={`p-4 rounded-lg text-center ${
-                    feedback.includes("Correct") ? "bg-green-100" : "bg-red-100"
-                }`}>
-                    {feedback}
-                </div>
-            )}
+  return (
+    <div className="w-full max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <h2 className="text-2xl font-bold mb-6 text-center">
+        Adversarial Debiasing in Action
+      </h2>
 
-            <div className="flex justify-center">
-                <Scale className={`w-8 h-8 ${biasDetected ? "text-red-500" : "text-green-500"}`} />
-            </div>
+      {/* Control button */}
+      <div className="flex justify-center gap-4 mb-8">
+        <button
+          onClick={handleRestart}
+          className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+          disabled={!progress || progress < 99}
+        >
+          <RotateCw size={20} />
+          Restart
+        </button>
+        <select
+          value={trainingSpeed}
+          onChange={(e) => setTrainingSpeed(Number(e.target.value))}
+          className="px-4 py-2 rounded-lg border"
+        >
+          <option value={0.5}>Slow</option>
+          <option value={1}>Normal</option>
+          <option value={2}>Fast</option>
+        </select>
+      </div>
+
+      {/* Main visualization area */}
+      <div className="relative h-64 mb-8">
+        {/* Main model */}
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
+          <Brain size={48} className="text-blue-500 mb-2" />
+          <span className="text-sm font-medium">Main Model</span>
         </div>
-    );
+
+        {/* Data flow visualization */}
+        <div className="absolute left-20 right-20 top-1/2 transform -translate-y-1/2">
+          <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-blue-500 transition-all duration-300"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
+          <ArrowLeftRight
+            size={24}
+            className="absolute top-4 left-1/2 transform -translate-x-1/2 text-gray-500"
+          />
+        </div>
+
+        {/* Adversarial model */}
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex flex-col items-center">
+          <Shield size={48} className="text-red-500 mb-2" />
+          <span className="text-sm font-medium">Adversarial Model</span>
+        </div>
+
+        {/* Bias meter */}
+        <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 w-48">
+          <div className="text-center mb-2">Bias Level</div>
+          <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
+            <div
+              className="h-full transition-all duration-300"
+              style={{
+                width: `${biasLevel}%`,
+                backgroundColor: `hsl(${120 - biasLevel * 1.2}, 70%, 50%)`,
+              }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Add example predictions */}
+      <div className="mt-8 border rounded-lg p-4">
+        <h3 className="text-lg font-semibold mb-4">Example Predictions</h3>
+        <div className="space-y-4">
+          {predictions.map((pred, idx) => (
+            <div key={idx} className="flex justify-between items-center">
+              <span className="font-medium">{pred.input}:</span>
+              <div className="flex gap-8">
+                <span className="text-red-500">
+                  Before: {pred.biasedPrediction}
+                </span>
+                <span className="text-green-500">
+                  After:{" "}
+                  {progress >= 99 ? pred.debiasedPrediction : "Training..."}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Explanation */}
+      <div className="text-center text-sm text-gray-600 space-y-2">
+        <p>
+          The main model learns to make predictions while the adversarial model
+          tries to detect bias.
+        </p>
+        <p>
+          As training progresses, the main model learns to make predictions that
+          the adversarial model cannot use to determine sensitive attributes.
+        </p>
+        <p>This results in a more fair and unbiased model</p>
+      </div>
+    </div>
+  );
 };
 
-export default AdversarialDebiasing;
+export default AdversarialDebiasingDemo;

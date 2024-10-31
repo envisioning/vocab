@@ -5,15 +5,15 @@ import { RefreshCw, ChevronRight, Brain } from "lucide-react";
 const OverparameterizationDemo = () => {
   const [parameterCount, setParameterCount] = useState(2);
   const [isComplete, setIsComplete] = useState(false);
-
-  // Sample data points (simplified training set)
-  const dataPoints = [
-    { x: 20, y: 30 },
-    { x: 80, y: 45 },
-    { x: 160, y: 65 },
-    { x: 200, y: 70 },
-    { x: 280, y: 90 },
-  ];
+  const [dataPoints, setDataPoints] = useState(() => {
+    // Generate 5 random data points with some reasonable constraints
+    return Array.from({ length: 5 }, (_, i) => {
+      const x = 20 + (i * 260) / 4; // Spread points evenly across x-axis
+      const baseY = 30 + (i * 60) / 4; // Base trend similar to original
+      const randomOffset = Math.random() * 20 - 10; // Random offset ±10
+      return { x, y: baseY + randomOffset };
+    });
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {

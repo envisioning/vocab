@@ -197,7 +197,7 @@ export default async function ArticlePage({ params }: PageProps) {
             <div className="relative h-[400px]">
               {hasImage && (
                 <Image
-                  src={`/vocab/images/${slug}.webp`}
+                  src={`/vocab/images/articles/${slug}.webp`}
                   alt={frontmatter.title}
                   fill
                   loading="lazy"
