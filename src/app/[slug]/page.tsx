@@ -14,6 +14,7 @@ import ClientWrapper from "@/components/ClientWrapper";
 import { notFound } from "next/navigation"; // Import the notFound function
 import { redirect } from "next/navigation"; // Add this import at the top with other imports
 import KeyboardNavigation from "@/components/KeyboardNavigation";
+import hierarchyData from "@/data/ai_terms_hierarchy.json";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -38,28 +39,38 @@ async function getArticleContent(slug: string): Promise<{
   hasImage: boolean;
   slug: string;
 } | null> {
+  // Find the article in hierarchy data
+  const article = hierarchyData.find((item) => item.slug === slug);
+  if (!article) {
+    return null;
+  }
+
+  // Only read markdown for the content
   const filePath = path.join(
     process.cwd(),
     "src/content/articles",
     `${slug}.md`
   );
+  let content = "";
 
-  // Check if the file exists
-  if (!fs.existsSync(filePath)) {
-    return null; // Return null if the file doesn't exist
+  if (fs.existsSync(filePath)) {
+    const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
+    const { content: markdownContent } = matter(markdownWithMeta);
+    content = markdownContent;
   }
 
-  const markdownWithMeta = fs.readFileSync(filePath, "utf-8");
-  const imagePath = path.join(
-    process.cwd(),
-    "public/images/articles",
-    `${slug}.webp`
-  );
-  const hasImage = fs.existsSync(imagePath);
+  // Check for image without fs.existsSync
+  const hasImage = true; // We can assume images exist or handle this differently
 
-  const { data: frontmatter, content } = matter(markdownWithMeta);
   return {
-    frontmatter: frontmatter as Omit<Article, "slug">,
+    frontmatter: {
+      title: article.name,
+      summary: article.summary,
+      generality: Array.isArray(article.generality)
+        ? article.generality
+        : [article.generality],
+      categories: [],
+    },
     content,
     hasImage,
     slug,
@@ -73,7 +84,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const resolvedParams = await params;
   const { slug } = resolvedParams;
-  const article = await getArticleContent(slug);
+
+  // Find article in hierarchy data
+  const article = hierarchyData.find((item) => item.slug === slug);
   const url = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
   if (!article) {
@@ -82,20 +95,16 @@ export async function generateMetadata({
     };
   }
 
-  const { frontmatter, hasImage } = article;
-
   return {
-    title: frontmatter.title,
-    description: frontmatter.summary,
+    title: article.name,
+    description: article.summary,
     openGraph: {
-      title: frontmatter.title,
-      description: frontmatter.summary,
+      title: article.name,
+      description: article.summary,
       url: `${url}/${slug}`,
       images: [
         {
-          url: hasImage
-            ? `${url}/images/articles/${slug}.webp`
-            : `${url}/default-social.webp`,
+          url: `${url}/images/articles/${slug}.webp`,
           width: 1200,
           height: 630,
         },
@@ -104,24 +113,16 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: frontmatter.title,
-      description: frontmatter.summary,
-      images: [
-        hasImage
-          ? `${url}/images/articles/${slug}.webp`
-          : `${url}/default-social.webp`,
-      ],
+      title: article.name,
+      description: article.summary,
+      images: [`${url}/images/articles/${slug}.webp`],
     },
   };
 }
 
 export async function generateStaticParams() {
-  console.log("Generating static params");
-  const files = fs
-    .readdirSync(path.join(process.cwd(), "src/content/articles"))
-    .filter((file) => file.endsWith(".md"));
-  return files.map((filename) => ({
-    slug: filename.replace(".md", ""),
+  return hierarchyData.map((item) => ({
+    slug: item.slug,
   }));
 }
 
