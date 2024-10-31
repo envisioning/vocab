@@ -11,9 +11,6 @@ dependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.15
     version: 0.5.15(tailwindcss@3.4.14)
-  '@types/lodash':
-    specifier: ^4.17.12
-    version: 4.17.12
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
@@ -43,6 +40,9 @@ dependencies:
     version: 2.1.2(typescript@5.6.3)
 
 devDependencies:
+  '@types/lodash':
+    specifier: ^4.17.12
+    version: 4.17.12
   '@types/node':
     specifier: ^20.17.1
     version: 20.17.1
@@ -777,7 +777,7 @@ packages:
 
   /@types/lodash@4.17.12:
     resolution: {integrity: sha512-sviUmCE8AYdaF/KIHLDJBQgeYzPBI0vf/17NaYehBJfYD1j6/L95Slh07NlyK2iNyBNaEkb3En2jRt+a8y3xZQ==}
-    dev: false
+    dev: true
 
   /@types/node@20.17.1:
     resolution: {integrity: sha512-j2VlPv1NnwPJbaCNv69FO/1z4lId0QmGvpT41YxitRtWlg96g/j8qcv2RKsLKe2F6OJgyXhupN1Xo17b2m139Q==}
