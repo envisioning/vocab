@@ -5,7 +5,7 @@ import ClientWrapper from "@/components/ClientWrapper";
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const initialArticles = await getArticles(24);
+  const initialArticles = await getArticles(48);
 
   if (!initialArticles) {
     return <div>Error loading articles</div>;
