@@ -70,7 +70,8 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const article = await getArticleContent(params.slug);
+  const { slug } = await params;
+  const article = await getArticleContent(slug);
   const url = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
   if (!article) {
@@ -87,11 +88,11 @@ export async function generateMetadata({
     openGraph: {
       title: frontmatter.title,
       description: frontmatter.summary,
-      url: `${url}/${params.slug}`,
+      url: `${url}/${slug}`,
       images: [
         {
           url: hasImage
-            ? `${url}/images/articles/${params.slug}.webp`
+            ? `${url}/images/articles/${slug}.webp`
             : `${url}/default-social.webp`,
           width: 1200,
           height: 630,
@@ -105,7 +106,7 @@ export async function generateMetadata({
       description: frontmatter.summary,
       images: [
         hasImage
-          ? `${url}/images/articles/${params.slug}.webp`
+          ? `${url}/images/articles/${slug}.webp`
           : `${url}/default-social.webp`,
       ],
     },
@@ -123,7 +124,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticlePage({ params }: PageProps) {
-  const { slug } = params;
+  const { slug } = await params;
 
   // Add redirect for /vocab
   if (slug === "vocab") {
