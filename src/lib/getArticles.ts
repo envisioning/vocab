@@ -3,8 +3,8 @@
 import hierarchyData from '@/data/ai_terms_hierarchy.json';
 import { Article } from "@/types/article";
 
-export async function getArticles(): Promise<Article[]> {
-  return hierarchyData
+export async function getArticles(limit?: number): Promise<Article[]> {
+  const allArticles = hierarchyData
     .map(item => ({
       slug: item.slug,
       title: item.name,
@@ -27,4 +27,10 @@ export async function getArticles(): Promise<Article[]> {
       // Sort descending (higher generality first)
       return avgB - avgA;
     });
+
+  if (limit) {
+    return allArticles.slice(0, limit);
+  }
+  
+  return allArticles;
 }
