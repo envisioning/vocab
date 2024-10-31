@@ -87,7 +87,6 @@ export default function FilterBar({
   const handleSelection = (article: Article) => {
     setShowResults(false);
     setSelectedIndex(-1);
-    // Only navigate after a final selection
     router.push(`/${article.slug}`);
   };
 
