@@ -4,7 +4,8 @@ import { Article } from "@/types/article";
 import ArticleCard from "./ArticleCard";
 
 interface ArticleListProps {
-  articles: Article[]; // Changed from initialArticles to articles
+  articles: Article[];
+  displayMode: "full" | "suggestions";
 }
 
 export default function ArticleList({ articles }: ArticleListProps) {
