@@ -13,6 +13,7 @@ import { getArticles } from "@/lib/getArticles";
 import ClientWrapper from "@/components/ClientWrapper";
 import { notFound } from "next/navigation"; // Import the notFound function
 import { redirect } from "next/navigation"; // Add this import at the top with other imports
+import KeyboardNavigation from "@/components/KeyboardNavigation";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -68,9 +69,10 @@ async function getArticleContent(slug: string): Promise<{
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
   const article = await getArticleContent(slug);
   const url = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -123,8 +125,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ArticlePage({ params }: PageProps) {
-  const { slug } = await params;
+export default async function ArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
 
   // Add redirect for /vocab
   if (slug === "vocab") {
@@ -133,6 +140,8 @@ export default async function ArticlePage({ params }: PageProps) {
 
   // Fetch the article content
   const articleContent = await getArticleContent(slug);
+  const articles = await getArticles();
+  const slugs = articles.map((article) => article.slug).sort();
 
   if (!articleContent) {
     // If the article doesn't exist, trigger the 404 page
@@ -194,13 +203,9 @@ export default async function ArticlePage({ params }: PageProps) {
 
   return (
     <>
+      <KeyboardNavigation availableSlugs={slugs} />
       <div className="min-h-screen bg-gray-100 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ClientWrapper
-            articles={await getArticles()}
-            displayMode="suggestions"
-            showList={false}
-          />
           <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
             <div className="relative h-[400px]">
               {hasImage && (

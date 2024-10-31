@@ -28,7 +28,7 @@ const AdversarialDebiasingDemo = () => {
 
   // Animation loop
   useEffect(() => {
-    let animationFrame;
+    let animationFrame: number;
     const animate = () => {
       if (progress >= 99) {
         setIsActive(false);
