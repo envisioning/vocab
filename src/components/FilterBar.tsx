@@ -14,6 +14,7 @@ interface FilterBarProps {
   onSortChange: (value: string) => void;
   allArticles: Article[];
   isHomeRoute: boolean;
+  getSearchPriority: (title: string, searchTerm: string) => number;
 }
 
 export default function FilterBar({
@@ -23,6 +24,7 @@ export default function FilterBar({
   onSortChange,
   allArticles = [], // Provide default empty array
   isHomeRoute,
+  getSearchPriority,
 }: FilterBarProps) {
   const router = useRouter();
   const pathname = usePathname();
@@ -113,10 +115,6 @@ export default function FilterBar({
 
   const handleSearchChange = (value: string) => {
     onSearchChange(value);
-    // Update URL with search term
-    const params = new URLSearchParams();
-    if (value) params.set("q", value);
-    router.push(`${pathname}?${params.toString()}`);
   };
 
   // Add keyboard shortcut to focus search
@@ -191,15 +189,18 @@ export default function FilterBar({
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gray-400"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
               </button>
             )}
