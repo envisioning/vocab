@@ -9,8 +9,7 @@ generality:
   - 0.44
 slug: io-influence-operations
 summary:
-  Strategic actions designed to affect the perceptions, attitudes, and behaviors
-  of target audiences to achieve specific objectives.
+  Strategic actions designed to affect the perceptions, attitudes, and behaviors of target audiences to achieve specific objectives.
 title: IO (Influence Operations)
 ---
 

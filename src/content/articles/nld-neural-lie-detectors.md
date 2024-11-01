@@ -9,8 +9,7 @@ generality:
   - 0.45
 slug: nld-neural-lie-detectors
 summary:
-  AI systems designed to identify dishonesty or inconsistencies in the outputs
-  or decisions of other AI models by analyzing their responses or behavior.
+  AI systems designed to identify dishonesty or inconsistencies in the outputs or decisions of other AI models by analyzing their responses or behavior.
 title: NLD (Neural Lie Detectors)
 ---
 

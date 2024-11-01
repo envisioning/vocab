@@ -9,8 +9,7 @@ generality:
   - 0.785
 slug: ait-algorithmic-information-theory
 summary:
-  Studies the complexity of strings and the amount of information they contain,
-  using algorithms and computational methods.
+  Studies the complexity of strings and the amount of information they contain, using algorithms and computational methods.
 title: AIT (Algorithmic Information Theory)
 ---
 

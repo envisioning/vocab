@@ -9,9 +9,7 @@ generality:
   - 0.59
 slug: irl-inverse-reinforcement-learning
 summary:
-  Technique in which an algorithm learns the underlying reward function of
-  an environment based on observed behavior from an agent, essentially inferring the
-  goals an agent is trying to achieve.
+  Technique in which an algorithm learns the underlying reward function of an environment based on observed behavior from an agent, essentially inferring the goals an agent is trying to achieve.
 title: IRL (Inverse Reinforcement Learning)
 ---
 

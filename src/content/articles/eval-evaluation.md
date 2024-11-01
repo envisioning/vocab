@@ -9,8 +9,7 @@ generality:
   - 0.74
 slug: eval-evaluation
 summary:
-  Process of assessing the performance and effectiveness of an AI model or
-  algorithm based on specified criteria and datasets.
+  Process of assessing the performance and effectiveness of an AI model or algorithm based on specified criteria and datasets.
 title: Eval (Evaluation)
 ---
 

@@ -9,8 +9,7 @@ generality:
   - 0.81
 slug: relu-rectified-linear-unit
 summary:
-  Activation function commonly used in neural networks which outputs the input
-  directly if it is positive, otherwise, it outputs zero.
+  Activation function commonly used in neural networks which outputs the input directly if it is positive, otherwise, it outputs zero.
 title: ReLU (Rectified Linear Unit)
 ---
 

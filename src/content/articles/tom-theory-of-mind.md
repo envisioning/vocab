@@ -9,9 +9,7 @@ generality:
   - 0.67
 slug: tom-theory-of-mind
 summary:
-  Cognitive ability to attribute mental states—such as beliefs, intentions,
-  desires, and knowledge—to oneself and others, allowing one to understand that others
-  have perspectives and intentions that differ from one's own.
+  Cognitive ability to attribute mental states—such as beliefs, intentions, desires, and knowledge—to oneself and others, allowing one to understand that others have perspectives and intentions that differ from one's own.
 title: ToM (Theory of Mind)
 ---
 

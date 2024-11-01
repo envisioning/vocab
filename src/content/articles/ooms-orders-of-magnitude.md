@@ -9,8 +9,7 @@ generality:
   - 0.333
 slug: ooms-orders-of-magnitude
 summary:
-  Way to understand and compare quantities in terms of their scale or size,
-  typically using powers of ten.
+  Way to understand and compare quantities in terms of their scale or size, typically using powers of ten.
 title: OOMs (Orders of Magnitude)
 ---
 

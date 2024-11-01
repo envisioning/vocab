@@ -9,8 +9,7 @@ generality:
   - 0.525
 slug: lam-large-action-model
 summary:
-  Advanced AI systems designed to interpret and execute complex tasks by directly
-  modeling human actions within digital applications.
+  Advanced AI systems designed to interpret and execute complex tasks by directly modeling human actions within digital applications.
 title: LAM (Large Action Model)
 ---
 

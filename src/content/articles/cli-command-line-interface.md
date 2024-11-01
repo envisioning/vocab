@@ -9,8 +9,7 @@ generality:
   - 0.845
 slug: cli-command-line-interface
 summary:
-  Text-based user interface used to interact with software or operating systems
-  through commands, rather than graphical elements.
+  Text-based user interface used to interact with software or operating systems through commands, rather than graphical elements.
 title: CLI (Command Line Interface)
 ---
 

@@ -9,8 +9,7 @@ generality:
   - 0.8
 slug: occams-razor
 summary:
-  Principle that, among competing models with similar predictive power, the
-  simplest one should be chosen.
+  Principle that, among competing models with similar predictive power, the simplest one should be chosen.
 title: Occam's Razor
 ---
 

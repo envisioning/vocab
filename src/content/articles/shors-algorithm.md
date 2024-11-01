@@ -8,8 +8,7 @@ generality:
 - 0.73
 - 0.72
 slug: shor-s-algorithm
-summary: A quantum algorithm that efficiently solves integer factorization, potentially
-  threatening classical encryption systems.
+summary: A quantum algorithm that efficiently solves integer factorization, potentially threatening classical encryption systems.
 title: Shor's Algorithm
 ---
 

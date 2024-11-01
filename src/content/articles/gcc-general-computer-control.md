@@ -9,8 +9,7 @@ generality:
   - 0.83
 slug: gcc-general-computer-control
 summary:
-  Ability of an AI system to autonomously manage and utilize a wide range of
-  computer software and systems without specific programming for each individual task.
+  Ability of an AI system to autonomously manage and utilize a wide range of computer software and systems without specific programming for each individual task.
 title: GCC (General Computer Control)
 ---
 

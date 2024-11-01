@@ -9,9 +9,7 @@ generality:
   - 0.625
 slug: trl-transfer-reinforcement-learning
 summary:
-  Subfield of RL focused on leveraging knowledge gained from one or more source
-  tasks to improve learning efficiency and performance in a different, but related,
-  target task.
+  Subfield of RL focused on leveraging knowledge gained from one or more source tasks to improve learning efficiency and performance in a different, but related, target task.
 title: TRL (Transfer Reinforcement Learning)
 ---
 

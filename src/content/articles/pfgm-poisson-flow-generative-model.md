@@ -9,8 +9,7 @@ generality:
   - 0.2
 slug: pfgm-poisson-flow-generative-model
 summary:
-  Generative model that utilizes Poisson processes in its architecture to model
-  and generate complex data distributions.
+  Generative model that utilizes Poisson processes in its architecture to model and generate complex data distributions.
 title: PFGM (Poisson Flow Generative Model)
 ---
 

@@ -9,8 +9,7 @@ generality:
   - 0.74
 slug: ssl-self-supervised-learning
 summary:
-  Type of ML where the system learns to predict part of its input from other
-  parts, using its own data structure as supervision.
+  Type of ML where the system learns to predict part of its input from other parts, using its own data structure as supervision.
 title: SSL (Self-Supervised Learning)
 ---
 

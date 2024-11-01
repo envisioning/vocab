@@ -9,8 +9,7 @@ generality:
   - 0.845
 slug: av-autonomous-vehicles
 summary:
-  Self-driving cars that combine sensors, algorithms, and software to navigate
-  and drive without human intervention.
+  Self-driving cars that combine sensors, algorithms, and software to navigate and drive without human intervention.
 title: AV (Autonomous Vehicles)
 ---
 

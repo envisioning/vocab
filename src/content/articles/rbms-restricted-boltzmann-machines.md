@@ -9,8 +9,7 @@ generality:
   - 0.74
 slug: rbms-restricted-boltzmann-machines
 summary:
-  Type of generative stochastic artificial neural network that can learn a
-  probability distribution over its set of inputs.
+  Type of generative stochastic artificial neural network that can learn a probability distribution over its set of inputs.
 title: RBMs (Restricted Boltzmann Machines)
 ---
 

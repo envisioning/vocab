@@ -9,8 +9,7 @@ generality:
   - 0.64
 slug: aeo-answer-engine-optimization
 summary:
-  Process of optimizing content to improve its chances of being selected as
-  the direct response by search engines or voice assistants to user queries.
+  Process of optimizing content to improve its chances of being selected as the direct response by search engines or voice assistants to user queries.
 title: AEO (Answer Engine Optimization)
 ---
 

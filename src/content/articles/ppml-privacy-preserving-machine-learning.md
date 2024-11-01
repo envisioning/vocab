@@ -9,8 +9,7 @@ generality:
   - 0.7
 slug: ppml-privacy-preserving-machine-learning
 summary:
-  Techniques that protect user data privacy during the machine learning process,
-  without compromising the utility of the models.
+  Techniques that protect user data privacy during the machine learning process, without compromising the utility of the models.
 title: PPML (Privacy-Preserving Machine Learning)
 ---
 

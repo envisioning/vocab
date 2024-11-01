@@ -8,8 +8,7 @@ generality:
 - 0.795
 - 0.78
 slug: sequence-prediction
-summary: Involves forecasting the next item(s) in a sequence based on the observed
-  pattern of prior sequences.
+summary: Involves forecasting the next item(s) in a sequence based on the observed pattern of prior sequences.
 title: Sequence Prediction
 ---
 

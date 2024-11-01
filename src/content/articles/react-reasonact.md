@@ -9,8 +9,7 @@ generality:
   - 0.52
 slug: react-reasonact
 summary:
-  AI framework for integrating reasoning and acting capabilities, enabling
-  models to make decisions based on both logic and learned actions.
+  AI framework for integrating reasoning and acting capabilities, enabling models to make decisions based on both logic and learned actions.
 title: ReAct (Reason+Act)
 ---
 

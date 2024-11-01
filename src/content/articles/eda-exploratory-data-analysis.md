@@ -9,8 +9,7 @@ generality:
   - 0.785
 slug: eda-exploratory-data-analysis
 summary:
-  Technique used to analyze data sets to summarize their main characteristics,
-  often with visual methods, before applying more formal modeling.
+  Technique used to analyze data sets to summarize their main characteristics, often with visual methods, before applying more formal modeling.
 title: EDA (Exploratory Data Analysis)
 ---
 

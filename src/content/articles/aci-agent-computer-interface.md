@@ -9,8 +9,7 @@ generality:
   - 0.65
 slug: aci-agent-computer-interface
 summary:
-  Systems and methods that enable interactive communication between autonomous
-  agents and computer programs.
+  Systems and methods that enable interactive communication between autonomous agents and computer programs.
 title: ACI (Agent-Computer Interface)
 ---
 

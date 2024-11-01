@@ -9,8 +9,7 @@ generality:
   - 0.82
 slug: gan-generative-adversarial-network
 summary:
-  Class of AI algorithms used in unsupervised ML, implemented by a system of
-  two neural networks contesting with each other in a game.
+  Class of AI algorithms used in unsupervised ML, implemented by a system of two neural networks contesting with each other in a game.
 title: GAN (Generative Adversarial Network)
 ---
 

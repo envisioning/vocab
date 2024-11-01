@@ -9,9 +9,7 @@ generality:
   - 0.76
 slug: em-expectation-maximization
 summary:
-  Statistical technique used to find the maximum likelihood estimates of parameters
-  in probabilistic models, specifically when the model depends on unobserved latent
-  variables.
+  Statistical technique used to find the maximum likelihood estimates of parameters in probabilistic models, specifically when the model depends on unobserved latent variables.
 title: EM (Expectation-Maximization)
 ---
 

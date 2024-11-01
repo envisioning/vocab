@@ -9,8 +9,7 @@ generality:
   - 0.76
 slug: k-nn-k-nearest-neighbors
 summary:
-  Simple, non-parametric algorithm used in ML for classification and regression
-  tasks by assigning labels based on the majority vote of the nearest neighbors.
+  Simple, non-parametric algorithm used in ML for classification and regression tasks by assigning labels based on the majority vote of the nearest neighbors.
 title: k-NN (k-Nearest Neighbors)
 ---
 

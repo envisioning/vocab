@@ -8,9 +8,7 @@ generality:
 - 0.275
 - 0.25
 slug: shoggoth
-summary: A meme in AI discourse highlighting the potential uncontrollable, alien nature
-  of advanced AI systems, often embodying concerns about opaque decision processes
-  and unanticipated outcomes.
+summary: A meme in AI discourse highlighting the potential uncontrollable, alien nature of advanced AI systems, often embodying concerns about opaque decision processes and unanticipated outcomes.
 title: Shoggoth
 ---
 

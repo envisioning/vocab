@@ -9,8 +9,7 @@ generality:
   - 0.55
 slug: gat-graph-attention-network
 summary:
-  Type of neural network that applies attention mechanisms directly to graphs
-  to dynamically prioritize information from different nodes in the graph.
+  Type of neural network that applies attention mechanisms directly to graphs to dynamically prioritize information from different nodes in the graph.
 title: GAT (Graph Attention Network)
 ---
 

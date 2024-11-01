@@ -9,8 +9,7 @@ generality:
   - 0.67
 slug: edl-experimentation-driven-learning
 summary:
-  AI approach where learning algorithms improve their performance through systematic
-  experimentation and feedback from the environment.
+  AI approach where learning algorithms improve their performance through systematic experimentation and feedback from the environment.
 title: EDL (Experimentation Driven Learning)
 ---
 

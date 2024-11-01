@@ -9,9 +9,7 @@ generality:
   - 0.36
 slug: emt-extended-mind-transformer
 summary:
-  Transformer model architecture that integrates external memory systems to
-  enhance the model's ability to handle long-range dependencies and maintain relevant
-  information over extended inputs.
+  Transformer model architecture that integrates external memory systems to enhance the model's ability to handle long-range dependencies and maintain relevant information over extended inputs.
 title: EMT (Extended Mind Transformer)
 ---
 

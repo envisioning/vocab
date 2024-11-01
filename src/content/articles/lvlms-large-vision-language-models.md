@@ -9,8 +9,7 @@ generality:
   - 0.6
 slug: lvlms-large-vision-language-models
 summary:
-  Advanced AI systems designed to integrate and interpret both visual and textual
-  data, enabling more sophisticated understanding and generation based on both modalities.
+  Advanced AI systems designed to integrate and interpret both visual and textual data, enabling more sophisticated understanding and generation based on both modalities.
 title: LVLMs (Large Vision Language Models)
 ---
 

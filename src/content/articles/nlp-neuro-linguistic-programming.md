@@ -9,8 +9,7 @@ generality:
   - 0.83
 slug: nlp-neuro-linguistic-programming
 summary:
-  Techniques and methodologies for understanding and generating human language
-  by computers.
+  Techniques and methodologies for understanding and generating human language by computers.
 title: NLP (Neuro-Linguistic Programming)
 ---
 

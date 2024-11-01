@@ -9,8 +9,7 @@ generality:
   - 0.785
 slug: mlops-machine-learning-operations
 summary:
-  Practice of collaboratively combining ML system development and ML system
-  operation, aiming for faster deployment and reliable management.
+  Practice of collaboratively combining ML system development and ML system operation, aiming for faster deployment and reliable management.
 title: MLOps (Machine Learning Operations)
 ---
 

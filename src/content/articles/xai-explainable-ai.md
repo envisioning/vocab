@@ -9,8 +9,7 @@ generality:
   - 0.7
 slug: xai-explainable-ai
 summary:
-  AI systems designed to provide insights into their behavior and decisions,
-  making them transparent and understandable to humans.
+  AI systems designed to provide insights into their behavior and decisions, making them transparent and understandable to humans.
 title: XAI (Explainable AI)
 ---
 

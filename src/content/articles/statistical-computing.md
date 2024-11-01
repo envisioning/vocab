@@ -8,8 +8,7 @@ generality:
 - 0.835
 - 0.83
 slug: statistical-computing
-summary: Utilization of computational algorithms and statistical techniques to model,
-  analyze, and interpret complex data effectively.
+summary: Utilization of computational algorithms and statistical techniques to model, analyze, and interpret complex data effectively.
 title: Statistical Computing
 ---
 

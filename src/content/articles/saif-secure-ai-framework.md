@@ -9,8 +9,7 @@ generality:
   - 0.535
 slug: saif-secure-ai-framework
 summary:
-  Set of guidelines and best practices developed by Google to enhance the security
-  of AI systems across various applications.
+  Set of guidelines and best practices developed by Google to enhance the security of AI systems across various applications.
 title: SAIF (Secure AI Framework)
 ---
 

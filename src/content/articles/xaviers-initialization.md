@@ -9,9 +9,7 @@ generality:
   - 0.6
 slug: xaviers-initialization
 summary:
-  Weight initialization technique designed to keep the variance of the outputs
-  of a neuron approximately equal to the variance of its inputs across layers in a
-  deep neural network.
+  Weight initialization technique designed to keep the variance of the outputs of a neuron approximately equal to the variance of its inputs across layers in a deep neural network.
 title: Xavier's Initialization
 ---
 

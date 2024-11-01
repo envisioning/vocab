@@ -9,8 +9,7 @@ generality:
   - 0.795
 slug: gigo-garbage-in-garbage-out
 summary:
-  Concept that emphasizes the quality of output is determined by the quality
-  of input data.
+  Concept that emphasizes the quality of output is determined by the quality of input data.
 title: GIGO (Garbage In, Garbage Out)
 ---
 

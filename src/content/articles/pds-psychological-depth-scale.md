@@ -9,8 +9,7 @@ generality:
   - 0.16
 slug: pds-psychological-depth-scale
 summary:
-  Tool used to measure the complexity and depth of an individual's psychological
-  experiences and inner life.
+  Tool used to measure the complexity and depth of an individual's psychological experiences and inner life.
 title: PDS (Psychological Depth Scale)
 ---
 

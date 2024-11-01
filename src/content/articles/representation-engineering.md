@@ -8,8 +8,7 @@ generality:
 - 0.745
 - 0.72
 slug: representation-engineering
-summary: The process of designing and selecting the most effective data representations
-  to improve the performance of AI models.
+summary: The process of designing and selecting the most effective data representations to improve the performance of AI models.
 title: Representation Engineering
 ---
 

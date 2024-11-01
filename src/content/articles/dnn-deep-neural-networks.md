@@ -9,8 +9,7 @@ generality:
   - 0.885
 slug: dnn-deep-neural-networks
 summary:
-  Advanced neural network architectures with multiple layers that enable complex
-  pattern recognition and learning from large amounts of data.
+  Advanced neural network architectures with multiple layers that enable complex pattern recognition and learning from large amounts of data.
 title: DNN (Deep Neural Networks)
 ---
 

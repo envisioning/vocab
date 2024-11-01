@@ -9,8 +9,7 @@ generality:
   - 0.83
 slug: matmul-matrix-multiplication
 summary:
-  Fundamental operation in linear algebra and essential in various applications,
-  including neural networks and machine learning algorithms.
+  Fundamental operation in linear algebra and essential in various applications, including neural networks and machine learning algorithms.
 title: MatMul (Matrix Multiplication)
 ---
 

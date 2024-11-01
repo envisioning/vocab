@@ -9,8 +9,7 @@ generality:
   - 0.719
 slug: hpc-high-performance-compute
 summary:
-  A practice of aggregating computing power in a way that delivers significantly
-  higher performance than an average desktop or workstation.
+  A practice of aggregating computing power in a way that delivers significantly higher performance than an average desktop or workstation.
 title: HPC (High Performance Compute)
 ---
 

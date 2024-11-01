@@ -9,9 +9,7 @@ generality:
   - 0.632
 slug: gail-generative-adversarial-imitation-learning
 summary:
-  Advanced ML technique that uses adversarial training to enable an agent to
-  learn behaviors directly from expert demonstrations without requiring explicit reward
-  signals.
+  Advanced ML technique that uses adversarial training to enable an agent to learn behaviors directly from expert demonstrations without requiring explicit reward signals.
 title: GAIL (Generative Adversarial Imitation Learning)
 ---
 

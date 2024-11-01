@@ -9,8 +9,7 @@ generality:
   - 0.625
 slug: tcn-temporal-convolutional-networks
 summary:
-  Type of neural network designed to handle sequential data by applying convolutional
-  operations over time.
+  Type of neural network designed to handle sequential data by applying convolutional operations over time.
 title: TCN (Temporal Convolutional Networks)
 ---
 

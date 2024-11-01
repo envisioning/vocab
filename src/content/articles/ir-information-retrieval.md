@@ -9,8 +9,7 @@ generality:
   - 0.84
 slug: ir-information-retrieval
 summary:
-  Process of obtaining relevant information from a large repository based on
-  user queries.
+  Process of obtaining relevant information from a large repository based on user queries.
 title: IR (Information Retrieval)
 ---
 

@@ -9,9 +9,7 @@ generality:
   - 0.55
 slug: dnc-differential-neural-computer
 summary:
-  Advanced type of artificial neural network that integrates an external memory
-  module, enabling it to store and retrieve information similar to a computer, enhancing
-  its capability to solve complex tasks requiring long-term dependencies.
+  Advanced type of artificial neural network that integrates an external memory module, enabling it to store and retrieve information similar to a computer, enhancing its capability to solve complex tasks requiring long-term dependencies.
 title: DNC (Differential Neural Computer)
 ---
 

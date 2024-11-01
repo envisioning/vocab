@@ -8,8 +8,7 @@ generality:
 - 0.84
 - 0.83
 slug: tree-of-thought
-summary: A cognitive framework within AI that models decision-making processes using
-  tree-like structures to simulate human-like reasoning and planning.
+summary: A cognitive framework within AI that models decision-making processes using tree-like structures to simulate human-like reasoning and planning.
 title: Tree of Thought
 ---
 

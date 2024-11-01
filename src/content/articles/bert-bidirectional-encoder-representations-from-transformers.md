@@ -9,8 +9,7 @@ generality:
   - 0.73
 slug: bert-bidirectional-encoder-representations-from-transformers
 summary:
-  Deep Learning model for NLP that significantly improves the understanding
-  of context and the meaning of words in sentences by analyzing text bidirectionally.
+  Deep Learning model for NLP that significantly improves the understanding of context and the meaning of words in sentences by analyzing text bidirectionally.
 title: BERT (Bidirectional Encoder Representations from Transformers)
 ---
 

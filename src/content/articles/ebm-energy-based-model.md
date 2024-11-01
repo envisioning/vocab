@@ -9,8 +9,7 @@ generality:
   - 0.55
 slug: ebm-energy-based-model
 summary:
-  Class of deep learning models that learn to associate lower energy levels
-  with more probable configurations of the input data.
+  Class of deep learning models that learn to associate lower energy levels with more probable configurations of the input data.
 title: EBM (Energy-Based Model)
 ---
 

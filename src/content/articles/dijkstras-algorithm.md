@@ -8,8 +8,7 @@ generality:
 - 0.75
 - 0.73
 slug: dijkstras-algorithm
-summary: An algorithm designed to find the shortest path between nodes in a graph,
-  which is widely used in AI for optimizing traversals across networks and structures.
+summary: An algorithm designed to find the shortest path between nodes in a graph, which is widely used in AI for optimizing traversals across networks and structures.
 title: Dijkstra's Algorithm
 ---
 

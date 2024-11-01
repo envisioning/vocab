@@ -9,8 +9,7 @@ generality:
   - 0.55
 slug: mllms-multimodal-large-language-models
 summary:
-  Advanced AI systems capable of understanding and generating information across
-  different forms of data, such as text, images, and audio.
+  Advanced AI systems capable of understanding and generating information across different forms of data, such as text, images, and audio.
 title: MLLMs (Multimodal Large Language Models)
 ---
 

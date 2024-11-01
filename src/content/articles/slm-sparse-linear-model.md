@@ -9,8 +9,7 @@ generality:
   - 0.635
 slug: slm-sparse-linear-model
 summary:
-  Predictive model that uses a sparse representation of the underlying data
-  to make accurate predictions.
+  Predictive model that uses a sparse representation of the underlying data to make accurate predictions.
 title: SLM (Sparse Linear Model)
 ---
 

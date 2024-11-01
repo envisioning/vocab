@@ -8,8 +8,7 @@ generality:
 - 0.635
 - 0.62
 slug: irreducibility
-summary: A characteristic of certain complex systems or models where they cannot be
-  simplified further without losing essential properties or predictive power.
+summary: A characteristic of certain complex systems or models where they cannot be simplified further without losing essential properties or predictive power.
 title: Irreducibility
 ---
 

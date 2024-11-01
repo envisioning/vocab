@@ -8,8 +8,7 @@ generality:
 - 0.47
 - 0.455
 slug: sparse-coupling
-summary: Refers to the concept of using a reduced number of connections between components
-  or nodes in a system to enhance computational efficiency and scalability.
+summary: Refers to the concept of using a reduced number of connections between components or nodes in a system to enhance computational efficiency and scalability.
 title: Sparse Coupling
 ---
 

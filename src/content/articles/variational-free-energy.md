@@ -8,8 +8,7 @@ generality:
 - 0.745
 - 0.72
 slug: variational-free-energy
-summary: A mathematical framework used to approximate complex probability distributions,
-  commonly employed in AI to optimize models and infer latent variables.
+summary: A mathematical framework used to approximate complex probability distributions, commonly employed in AI to optimize models and infer latent variables.
 title: Variational Free Energy
 ---
 

@@ -9,8 +9,7 @@ generality:
   - 0.6
 slug: zsl-zero-shot-learning
 summary:
-  ML technique where a model learns to recognize objects, tasks, or concepts
-  it has never seen during training.
+  ML technique where a model learns to recognize objects, tasks, or concepts it has never seen during training.
 title: ZSL (Zero-Shot Learning)
 ---
 

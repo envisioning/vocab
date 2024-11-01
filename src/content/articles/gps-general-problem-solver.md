@@ -9,8 +9,7 @@ generality:
   - 0.75
 slug: gps-general-problem-solver
 summary:
-  Early AI program designed to simulate human problem-solving processes through
-  a heuristic-based approach.
+  Early AI program designed to simulate human problem-solving processes through a heuristic-based approach.
 title: GPS (General Problem Solver)
 ---
 

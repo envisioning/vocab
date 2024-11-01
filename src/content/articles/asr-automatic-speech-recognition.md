@@ -9,8 +9,7 @@ generality:
   - 0.8
 slug: asr-automatic-speech-recognition
 summary:
-  Translates spoken language into written text, enabling computers to understand
-  and process human speech.
+  Translates spoken language into written text, enabling computers to understand and process human speech.
 title: ASR (Automatic Speech Recognition)
 ---
 

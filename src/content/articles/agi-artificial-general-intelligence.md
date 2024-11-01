@@ -9,8 +9,7 @@ generality:
   - 0.86
 slug: agi-artificial-general-intelligence
 summary:
-  AI capable of understanding, learning, and applying knowledge across a wide
-  range of tasks, matching or surpassing human intelligence.
+  AI capable of understanding, learning, and applying knowledge across a wide range of tasks, matching or surpassing human intelligence.
 title: AGI (Artificial General Intelligence)
 ---
 

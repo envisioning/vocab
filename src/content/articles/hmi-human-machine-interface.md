@@ -9,8 +9,7 @@ generality:
   - 0.77
 slug: hmi-human-machine-interface
 summary:
-  Hardware or software through which humans interact with machines, facilitating
-  clear and effective communication between humans and computer systems.
+  Hardware or software through which humans interact with machines, facilitating clear and effective communication between humans and computer systems.
 title: HMI (Human-Machine Interface)
 ---
 

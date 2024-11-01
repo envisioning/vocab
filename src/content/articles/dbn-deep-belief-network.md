@@ -9,8 +9,7 @@ generality:
   - 0.855
 slug: dbn-deep-belief-network
 summary:
-  A type of artificial neural network that is deeply structured with multiple
-  layers of latent variables, or hidden units.
+  A type of artificial neural network that is deeply structured with multiple layers of latent variables, or hidden units.
 title: DBN (Deep Belief Network)
 ---
 

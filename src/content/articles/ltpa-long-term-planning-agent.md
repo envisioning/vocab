@@ -9,8 +9,7 @@ generality:
   - 0.55
 slug: ltpa-long-term-planning-agent
 summary:
-  AI system designed to make decisions over extended periods, considering future
-  consequences and outcomes.
+  AI system designed to make decisions over extended periods, considering future consequences and outcomes.
 title: LTPA (Long-Term Planning Agent)
 ---
 

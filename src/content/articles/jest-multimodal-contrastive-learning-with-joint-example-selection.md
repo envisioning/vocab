@@ -9,8 +9,7 @@ generality:
   - 0.2
 slug: jest-multimodal-contrastive-learning-with-joint-example-selection
 summary:
-  AI technique that enhances the learning of shared representations across
-  different modalities by jointly selecting and leveraging relevant examples.
+  AI technique that enhances the learning of shared representations across different modalities by jointly selecting and leveraging relevant examples.
 title: JEST (Multimodal Contrastive Learning with Joint Example Selection)
 ---
 

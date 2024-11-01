@@ -8,8 +8,7 @@ generality:
 - 0.8
 - 0.79
 slug: inductive-bias
-summary: Assumptions integrated into a learning algorithm to enable it to generalize
-  from specific instances to broader patterns or concepts.
+summary: Assumptions integrated into a learning algorithm to enable it to generalize from specific instances to broader patterns or concepts.
 title: Inductive Bias
 ---
 

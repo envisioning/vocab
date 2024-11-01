@@ -8,8 +8,7 @@ generality:
 - 0.645
 - 0.63
 slug: negation-problem
-summary: Challenges in handling and interpreting negations correctly in AI systems,
-  affecting model predictions and natural language understanding.
+summary: Challenges in handling and interpreting negations correctly in AI systems, affecting model predictions and natural language understanding.
 title: Negation Problem
 ---
 

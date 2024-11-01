@@ -9,9 +9,7 @@ generality:
   - 0.23
 slug: laq-locally-adaptive-quantization
 summary:
-  Technique used in data compression and neural network optimization that adjusts
-  quantization levels based on local data characteristics to improve accuracy and
-  efficiency.
+  Technique used in data compression and neural network optimization that adjusts quantization levels based on local data characteristics to improve accuracy and efficiency.
 title: LAQ (Locally-Adaptive Quantization)
 ---
 

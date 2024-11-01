@@ -9,8 +9,7 @@ generality:
   - 0.6
 slug: cd-contrastive-divergence
 summary:
-  Algorithm used to approximate the gradient of the log-likelihood for training
-  probabilistic models.
+  Algorithm used to approximate the gradient of the log-likelihood for training probabilistic models.
 title: CD (Contrastive Divergence)
 ---
 

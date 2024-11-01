@@ -8,8 +8,7 @@ generality:
 - 0.792
 - 0.768
 slug: generative-model
-summary: A type of AI model that learns to generate new data instances that mimic
-  the training data distribution.
+summary: A type of AI model that learns to generate new data instances that mimic the training data distribution.
 title: Generative Model
 ---
 

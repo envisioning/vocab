@@ -9,8 +9,7 @@ generality:
   - 0.3
 slug: lmn-large-nature-model
 summary:
-  Open-source model focused on nature, using a vast, ethically sourced dataset
-  of natural world elements.
+  Open-source model focused on nature, using a vast, ethically sourced dataset of natural world elements.
 title: LMN (Large Nature Model)
 ---
 

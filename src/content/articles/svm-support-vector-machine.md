@@ -9,9 +9,7 @@ generality:
   - 0.785
 slug: svm-support-vector-machine
 summary:
-  Supervised ML model used primarily for classification and regression tasks,
-  which finds the optimal hyperplane that best separates different classes in the
-  data.
+  Supervised ML model used primarily for classification and regression tasks, which finds the optimal hyperplane that best separates different classes in the data.
 title: SVM (Support Vector Machine)
 ---
 

@@ -9,8 +9,7 @@ generality:
   - 0.5
 slug: qml-quantum-machine-learning
 summary:
-  Integration of quantum algorithms within ML models to improve computational
-  speed and data handling abilities.
+  Integration of quantum algorithms within ML models to improve computational speed and data handling abilities.
 title: QML (Quantum Machine Learning)
 ---
 

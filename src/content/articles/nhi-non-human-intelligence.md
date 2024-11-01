@@ -9,9 +9,7 @@ generality:
   - 0.78
 slug: nhi-non-human-intelligence
 summary:
-  Intelligence systems that operate independently of human intelligence, encompassing
-  a broad range of entities and origins, emphasizing capabilities that may surpass
-  human cognitive processes.
+  Intelligence systems that operate independently of human intelligence, encompassing a broad range of entities and origins, emphasizing capabilities that may surpass human cognitive processes.
 title: NHI (Non-Human Intelligence)
 ---
 

@@ -8,8 +8,7 @@ generality:
 - 0.745
 - 0.72
 slug: symbolic-computing
-summary: A paradigm in AI that uses symbolic representations of problems and logic-based
-  reasoning to perform computational tasks and solve complex problems.
+summary: A paradigm in AI that uses symbolic representations of problems and logic-based reasoning to perform computational tasks and solve complex problems.
 title: Symbolic Computing
 ---
 

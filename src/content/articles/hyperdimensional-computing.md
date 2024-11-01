@@ -8,8 +8,7 @@ generality:
 - 0.525
 - 0.5
 slug: hyperdimensional-computing
-summary: An approach leveraging high-dimensional vector spaces and random hypervectors
-  to build robust and efficient models for AI tasks.
+summary: An approach leveraging high-dimensional vector spaces and random hypervectors to build robust and efficient models for AI tasks.
 title: Hyperdimensional Computing
 ---
 

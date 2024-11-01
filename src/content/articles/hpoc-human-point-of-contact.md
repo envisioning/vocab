@@ -9,8 +9,7 @@ generality:
   - 0.31
 slug: hpoc-human-point-of-contact
 summary:
-  Designated person responsible for overseeing and managing interactions between
-  an AI system and its users or other systems.
+  Designated person responsible for overseeing and managing interactions between an AI system and its users or other systems.
 title: HPOC (Human Point of Contact)
 ---
 

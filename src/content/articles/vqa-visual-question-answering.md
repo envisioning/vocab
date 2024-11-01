@@ -9,8 +9,7 @@ generality:
   - 0.55
 slug: vqa-visual-question-answering
 summary:
-  Field of AI where systems are designed to answer questions about visual content,
-  such as images or videos.
+  Field of AI where systems are designed to answer questions about visual content, such as images or videos.
 title: VQA (Visual Question Answering)
 ---
 

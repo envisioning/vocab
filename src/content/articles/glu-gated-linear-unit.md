@@ -9,8 +9,7 @@ generality:
   - 0.59
 slug: glu-gated-linear-unit
 summary:
-  Neural network component that uses a gating mechanism to control information
-  flow, improving model efficiency and performance.
+  Neural network component that uses a gating mechanism to control information flow, improving model efficiency and performance.
 title: GLU (Gated Linear Unit)
 ---
 

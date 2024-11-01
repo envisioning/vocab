@@ -9,8 +9,7 @@ generality:
   - 0.28
 slug: fsdp-fully-sharded-data-parallel
 summary:
-  Distributed training method in deep learning that divides both model parameters
-  and optimizer states across multiple devices to improve efficiency and scalability.
+  Distributed training method in deep learning that divides both model parameters and optimizer states across multiple devices to improve efficiency and scalability.
 title: FSDP (Fully Sharded Data Parallel)
 ---
 

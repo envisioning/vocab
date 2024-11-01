@@ -9,8 +9,7 @@ generality:
   - 0.65
 slug: a-life-artificial-life
 summary:
-  Studies the simulation of life processes within computers or synthetic systems
-  to gain insights into biological phenomena.
+  Studies the simulation of life processes within computers or synthetic systems to gain insights into biological phenomena.
 title: A-Life (Artificial Life)
 ---
 

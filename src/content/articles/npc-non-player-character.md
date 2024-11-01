@@ -9,8 +9,7 @@ generality:
   - 0.56
 slug: npc-non-player-character
 summary:
-  Character in a virtual environment that operates under AI control, exhibiting
-  behaviors or responses not directed by human players.
+  Character in a virtual environment that operates under AI control, exhibiting behaviors or responses not directed by human players.
 title: NPC (Non-Player Character)
 ---
 
