@@ -1,7 +1,8 @@
 "use client";
-import { useRef, useEffect, useMemo } from "react";
+import { useRef, useEffect, useMemo, useState } from "react";
 import * as d3 from "d3";
 import { Node } from "@/types/article";
+import { useRouter } from "next/navigation";
 
 interface ArticleMapProps {
   nodes: Node[];
@@ -13,8 +14,23 @@ interface Link {
   type: "parent" | "child";
 }
 
-export default function ArticleMap({ nodes }: ArticleMapProps) {
+export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
+  const router = useRouter();
   const svgRef = useRef<SVGSVGElement>(null);
+  const [isFullyLoaded, setIsFullyLoaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [hoveredNode, setHoveredNode] = useState<string | null>(null);
+
+  // Deduplicate nodes based on slug
+  const nodes = useMemo(() => {
+    const uniqueNodes = new Map();
+    rawNodes.forEach((node) => {
+      if (!uniqueNodes.has(node.slug)) {
+        uniqueNodes.set(node.slug, node);
+      }
+    });
+    return Array.from(uniqueNodes.values());
+  }, [rawNodes]);
 
   // Define helper functions first
   const calculateNodeSizes = (nodes: Node[], links: Link[]) => {
@@ -35,13 +51,13 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
       );
     });
 
-    // Scale node sizes between 20 and 60 based on connection count
+    // Scale node sizes between 30 and 80 based on connection count
     const minConnections = Math.min(...connectionCounts.values());
     const maxConnections = Math.max(...connectionCounts.values());
     const scale = d3
       .scaleLinear()
       .domain([minConnections, maxConnections])
-      .range([20, 60]); // min and max radius
+      .range([30, 80]); // increased from [20, 60]
 
     // Return a function that gets the scaled size for a node
     return (slug: string) => {
@@ -100,6 +116,7 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
   );
 
   useEffect(() => {
+    setIsLoading(true);
     if (!svgRef.current || !nodes.length) return;
 
     // Debounce resize handling
@@ -114,13 +131,13 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
         d3
           .forceLink(links)
           .id((d: any) => d.slug)
-          .distance(35)
+          .distance(10)
       )
-      .force("charge", d3.forceManyBody().strength(-100)) // Reduced strength
+      .force("charge", d3.forceManyBody().strength(-300))
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force(
         "collision",
-        d3.forceCollide().radius((d) => getNodeSize((d as Node).slug))
+        d3.forceCollide().radius((d) => getNodeSize((d as Node).slug) * 1.5)
       );
 
     // Reduce simulation ticks while maintaining stability
@@ -164,7 +181,11 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
       .attr("x1", (d: any) => d.source.x)
       .attr("y1", (d: any) => d.source.y)
       .attr("x2", (d: any) => d.target.x)
-      .attr("y2", (d: any) => d.target.y);
+      .attr("y2", (d: any) => d.target.y)
+      .attr(
+        "class",
+        (d) => `link-${(d.source as Node).slug} link-${(d.target as Node).slug}`
+      );
 
     // Create nodes with pre-calculated positions
     const nodeElements = g
@@ -174,8 +195,64 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
       .data(nodes)
       .enter()
       .append("g")
-      .attr("class", "node")
-      .attr("transform", (d: any) => `translate(${d.x},${d.y})`);
+      .attr("class", (d) => `node cursor-pointer node-${d.slug}`)
+      .attr("transform", (d: any) => `translate(${d.x},${d.y})`)
+      .on("click", (event, d: Node) => {
+        event.stopPropagation();
+        router.push(`/${d.slug}`);
+      })
+      .on("mouseenter", (event, d: Node) => {
+        setHoveredNode(d.slug);
+
+        // Highlight connected links
+        d3.selectAll("line")
+          .attr("stroke-opacity", 0.2)
+          .attr("stroke", "#94A3B8");
+
+        d3.selectAll(`.link-${d.slug}`)
+          .attr("stroke-opacity", 1)
+          .attr("stroke", "#2563EB")
+          .attr("stroke-width", 3);
+
+        // Highlight connected nodes
+        d3.selectAll("circle")
+          .attr("stroke", "#94A3B8")
+          .attr("stroke-width", 2);
+
+        // Find connected nodes through links
+        const connectedSlugs = links
+          .filter(
+            (link) =>
+              (link.source as Node).slug === d.slug ||
+              (link.target as Node).slug === d.slug
+          )
+          .flatMap((link) => [
+            (link.source as Node).slug,
+            (link.target as Node).slug,
+          ]);
+
+        // Highlight the hovered node and its connections
+        d3.selectAll(
+          connectedSlugs.map((slug) => `.node-${slug} circle`).join(", ")
+        )
+          .attr("stroke", "#2563EB")
+          .attr("stroke-width", 3);
+      })
+      .on("mouseleave", () => {
+        setHoveredNode(null);
+
+        // Reset all elements to original state
+        d3.selectAll("line")
+          .attr("stroke", (d: any) =>
+            d.type === "parent" ? "#3B82F6" : "#93C5FD"
+          )
+          .attr("stroke-width", 2)
+          .attr("stroke-opacity", 0.6);
+
+        d3.selectAll("circle")
+          .attr("stroke", "#3B82F6")
+          .attr("stroke-width", 2);
+      });
 
     // Add circles with dynamic radius
     nodeElements
@@ -194,17 +271,19 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
       .attr("fill", "#1E3A8A")
       .attr("font-size", (d) => {
         const radius = getNodeSize(d.slug);
-        return `${Math.max(8, radius / 3)}px`; // Scale text with node, min 8px
+        return `${Math.max(12, radius / 2.5)}px`; // increased from 8px min and adjusted ratio
       })
-      .attr("font-weight", "500")
-      .text((d) => d.title);
+      .attr("font-weight", "500");
 
     // Add title with line breaks if needed
     textElements.each(function (d: any) {
       const text = d3.select(this);
-      const title = d.title || d.name || d.slug || "";
+      const title = (d.title || d.name || d.slug || "").replace(
+        /\s*\([^)]*\)/g,
+        ""
+      ); // Remove text in parentheses
       const words = title.split(/\s+/);
-      const lineHeight = 12;
+      const lineHeight = 16; // increased from 12
 
       if (words.length === 1) {
         text.append("tspan").attr("x", 0).attr("y", 0).text(words[0]);
@@ -228,7 +307,7 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
     });
 
     // Initial zoom to fit
-    const initialScale = 0.75;
+    const initialScale = 0.6; // decreased from 0.75 to show more of the graph
     svg.call(
       zoom.transform as any,
       d3.zoomIdentity
@@ -236,10 +315,26 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
         .scale(initialScale)
         .translate(-width / 2, -height / 2)
     );
-  }, [nodes, links, getNodeSize]);
+
+    requestAnimationFrame(() => {
+      // Restore full visual quality
+      linkElements
+        .transition()
+        .duration(500)
+        .attr("stroke-width", 2)
+        .attr("stroke-opacity", 0.6);
+      setIsFullyLoaded(true);
+      setIsLoading(false);
+    });
+  }, [nodes, links, getNodeSize, router]);
 
   return (
     <div className="flex flex-col h-full">
+      {isLoading && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80">
+          Loading...
+        </div>
+      )}
       <svg
         ref={svgRef}
         className="w-full flex-1 bg-gray-50"

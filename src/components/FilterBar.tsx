@@ -214,6 +214,13 @@ export default function FilterBar({
               </div>
             )}
           </form>
+          <Link
+            href="/map"
+            className="px-0 py-2 text-gray-600 hover:text-gray-900 transition-colors"
+            aria-label="Map"
+          >
+            Map
+          </Link>
 
           <Link
             href="/about"

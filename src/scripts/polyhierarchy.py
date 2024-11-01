@@ -104,7 +104,7 @@ def calculate_similarity(terms):
     tfidf_matrix = vectorizer.fit_transform(combined_texts)
     return cosine_similarity(tfidf_matrix)
 
-def create_graph(terms, similarity_matrix, threshold=0.4):
+def create_graph(terms, similarity_matrix, threshold=0.35):
     G = nx.Graph()
     term_list = list(terms.keys())
     for term in term_list:
