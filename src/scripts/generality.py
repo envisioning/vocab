@@ -73,6 +73,9 @@ def calculate_importance_score(title: str, summary: str) -> list[float]:
         
         logging.info(f"Scores: {scores}")
         return scores
+    except KeyboardInterrupt:
+        logging.info("\nScript interrupted by user. Shutting down gracefully...")
+        sys.exit(0)
     except Exception as e:
         logging.error(f"Error during scoring: {e}")
         return [0.5] * 7  # Default middle score array in case of error
@@ -84,7 +87,8 @@ def update_frontmatter_with_score(md_file: Path, post, scores: list[float]):
     
     try:
         # Convert the Post object to a string with frontmatter
-        content_with_frontmatter = frontmatter.dumps(post)
+        # Use a very large integer instead of infinity for width
+        content_with_frontmatter = frontmatter.dumps(post, sort_keys=False, width=999)
         
         # Write back to the same file
         with md_file.open('w', encoding='utf-8') as f:

@@ -7,9 +7,9 @@ generality:
   - 0.66
   - 0.65
   - 0.64
-slug: text-to-action
+slug: text-to-action-model
 summary: Process of interpreting and converting written or spoken language into executable actions by a system or application.
-title: Text to Action
+title: Text to Action Model
 ---
 
 In AI, "text to action" systems leverage natural language processing (NLP) to understand user commands or statements and translate them into specific actions. These systems often integrate with other AI technologies such as machine learning and contextual understanding to accurately interpret intent and perform the desired tasks. Applications include virtual assistants like Siri or Alexa, customer service bots, and automated workflow systems in business environments. The underlying AI must be capable of parsing syntax, semantics, and context to effectively translate text inputs into accurate actions.
