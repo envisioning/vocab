@@ -17,6 +17,7 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
   const [error, setError] = useState<string | null>(null);
   const articlesPerPage = 24;
   const pathname = usePathname();
+  const [hasTrackedEnd, setHasTrackedEnd] = useState(false);
 
   useEffect(() => {
     if (initialArticles) {
@@ -72,13 +73,25 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
       ) {
         if (!isLoading && hasMore && !error) {
           loadMoreArticles();
+        } else if (!hasMore && !hasTrackedEnd) {
+          const eventData = {
+            props: {
+              totalArticles: articles.length,
+            },
+          };
+
+          if (typeof plausible !== "undefined") {
+            plausible("Reached Bottom", eventData);
+          }
+
+          setHasTrackedEnd(true);
         }
       }
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLoading, hasMore, error]);
+  }, [isLoading, hasMore, error, hasTrackedEnd, articles.length]);
 
   return (
     <>

@@ -1,6 +1,7 @@
 import { getArticles } from "@/lib/getArticles";
 import { Suspense } from "react";
 import ClientWrapper from "@/components/ClientWrapper";
+import ReportMissingButton from "@/components/ReportMissingButton";
 
 export const dynamic = "force-dynamic";
 
@@ -12,12 +13,17 @@ export default async function Home() {
   }
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <ClientWrapper
-        articles={initialArticles}
-        displayMode="full"
-        showList={true}
-      />
-    </Suspense>
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ClientWrapper
+          articles={initialArticles}
+          displayMode="full"
+          showList={true}
+        />
+      </Suspense>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center">
+        <ReportMissingButton />
+      </div>
+    </div>
   );
 }
