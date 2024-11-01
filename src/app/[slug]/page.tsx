@@ -15,6 +15,7 @@ import { notFound } from "next/navigation"; // Import the notFound function
 import { redirect } from "next/navigation"; // Add this import at the top with other imports
 import KeyboardNavigation from "@/components/KeyboardNavigation";
 import hierarchyData from "@/data/ai_terms_hierarchy.json";
+import ReportErrorButton from "@/components/ReportErrorButton";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -252,9 +253,7 @@ export default async function ArticlePage({
               <div className="text-gray-500">
                 <div className="block">Generality: {generality}</div>
                 <div className="block">
-                  <a href="#" className="text-gray-500 hover:underline">
-                    Report Content Error
-                  </a>
+                  <ReportErrorButton slug={slug} title={frontmatter.title} />
                 </div>
               </div>
             </div>
