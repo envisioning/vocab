@@ -12,8 +12,8 @@ export default async function MapPage() {
   }
 
   return (
-    <main className="w-screen h-screen overflow-hidden">
-      <Suspense fallback={<div>Loading...</div>}>
+    <main className="w-screen h-screen overflow-hidden bg-gray-50">
+      <Suspense fallback={<div>Loading Map...</div>}>
         <ArticleMap nodes={nodes} />
       </Suspense>
     </main>

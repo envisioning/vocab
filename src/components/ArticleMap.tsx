@@ -352,7 +352,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
   }, [nodes, links, getNodeSize, router]);
 
   return (
-    <div className="flex flex-col h-full relative">
+    <div className="absolute inset-0">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80">
           Loading...
@@ -360,7 +360,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       )}
       <svg
         ref={svgRef}
-        className="w-full flex-1 bg-gray-50"
+        className="w-full h-full bg-gray-50"
         style={{ cursor: "grab" }}
       />
       {tooltipContent && (
@@ -375,7 +375,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
           {tooltipContent.content && <div>{tooltipContent.content}</div>}
         </div>
       )}
-      <div className="p-4 text-sm text-gray-500">
+      <div className="absolute bottom-0 left-0 p-4 text-sm text-gray-500">
         {`Nodes: ${nodes.length} | Connections: ${links.length}`}
       </div>
     </div>
