@@ -127,108 +127,135 @@ export default function FilterBar({
       aria-label="Filter articles"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap gap-4 items-center relative">
-          <Link
-            href="https://envisioning.io"
-            className="flex items-center gap-2"
-          >
-            <Image
-              src="/vocab/envisioning.svg"
-              alt="Envisioning Logo"
-              width={24}
-              height={24}
-              className="w-6 h-6"
-            />
-            <span className="font-medium text-gray-900">Envisioning /</span>
-          </Link>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Link
+                href="https://envisioning.io"
+                className="flex items-center gap-2"
+              >
+                <Image
+                  src="/vocab/envisioning.svg"
+                  alt="Envisioning Logo"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+                <span className="font-medium text-gray-900">Envisioning /</span>
+              </Link>
 
-          <Link href="/vocab" className="flex items-center gap-2">
-            <span className="font-medium text-gray-900 underline">Vocab</span>
-          </Link>
-
-          {/* Show search on all routes */}
-          <form
-            className="relative flex-grow min-w-[200px]"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <input
-              ref={inputRef}
-              type="text"
-              placeholder="Search..."
-              className="px-4 py-2 border rounded-lg w-full pr-24"
-              value={searchTerm}
-              onChange={(e) => handleSearchChange(e.target.value)}
-              onKeyDown={handleKeyDown}
-              aria-label="Search"
-              autoComplete="off"
-            />
-
-            <div className="absolute right-12 top-1/2 -translate-y-1/2 text-sm text-gray-500">
-              {isFiltered
-                ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
-                : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
+              <Link href="/vocab" className="flex items-center gap-2">
+                <span className="font-medium text-gray-900 underline">
+                  Vocab
+                </span>
+              </Link>
             </div>
 
-            {searchTerm && (
-              <button
-                onClick={handleClear}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
-                aria-label="Clear filters"
+            <div className="flex items-center gap-4 sm:hidden">
+              <Link
+                href="/map"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label="Map"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-gray-400"
-                >
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-              </button>
-            )}
+                Map
+              </Link>
 
-            {/* Search Results Dropdown */}
-            {showResults && searchTerm && (
-              <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
-                {filteredArticles.map((article, index) => (
-                  <Link
-                    key={article.slug}
-                    href={`/${article.slug}`}
-                    className={`block px-4 py-2 hover:bg-gray-100 ${
-                      index === selectedIndex ? "bg-blue-50" : ""
-                    }`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleSelection(article);
-                    }}
-                  >
-                    {article.title}
-                  </Link>
-                ))}
+              <Link
+                href="/about"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label="About"
+              >
+                About
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4 flex-1">
+            <form
+              className="relative flex-1 min-w-[300px]"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input
+                ref={inputRef}
+                type="text"
+                placeholder="Search..."
+                className="px-4 py-2 border rounded-lg w-full pr-24"
+                value={searchTerm}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                onKeyDown={handleKeyDown}
+                aria-label="Search"
+                autoComplete="off"
+              />
+
+              <div className="absolute right-12 top-1/2 -translate-y-1/2 text-sm text-gray-500">
+                {isFiltered
+                  ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
+                  : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
               </div>
-            )}
-          </form>
-          <Link
-            href="/map"
-            className="px-0 py-2 text-gray-600 hover:text-gray-900 transition-colors"
-            aria-label="Map"
-          >
-            Map
-          </Link>
 
-          <Link
-            href="/about"
-            className="px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors"
-            aria-label="About"
-          >
-            About
-          </Link>
+              {searchTerm && (
+                <button
+                  onClick={handleClear}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
+                  aria-label="Clear filters"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-gray-400"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              )}
+
+              {showResults && searchTerm && (
+                <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
+                  {filteredArticles.map((article, index) => (
+                    <Link
+                      key={article.slug}
+                      href={`/${article.slug}`}
+                      className={`block px-4 py-2 hover:bg-gray-100 ${
+                        index === selectedIndex ? "bg-blue-50" : ""
+                      }`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleSelection(article);
+                      }}
+                    >
+                      {article.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </form>
+
+            <div className="hidden sm:flex items-center gap-4">
+              <Link
+                href="/map"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label="Map"
+              >
+                Map
+              </Link>
+
+              <Link
+                href="/about"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label="About"
+              >
+                About
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
