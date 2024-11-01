@@ -158,7 +158,7 @@ export default async function ArticlePage({
       .readdirSync(path.join(process.cwd(), "src/components/articles"))
       .filter(
         (dir) =>
-          (dir.startsWith("0") || dir.startsWith("1") || dir.startsWith("2")) &&
+          (dir.startsWith("0") || dir.startsWith("1")) &&
           fs
             .statSync(path.join(process.cwd(), "src/components/articles", dir))
             .isDirectory()
