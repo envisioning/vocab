@@ -48,9 +48,7 @@ export default async function RootLayout({
             <Suspense fallback={<div>Loading...</div>}>
               <FilterBarWrapper articles={articles} />
             </Suspense>
-            <main className="flex-grow container mx-auto px-4 py-8">
-              {children}
-            </main>
+            <main className="flex-grow container mx-auto">{children}</main>
           </div>
         </PlausibleProvider>
       </body>

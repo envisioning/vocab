@@ -12,10 +12,10 @@ export default async function MapPage() {
   }
 
   return (
-    <div className="w-full h-screen">
+    <main className="w-screen h-screen overflow-hidden">
       <Suspense fallback={<div>Loading...</div>}>
         <ArticleMap nodes={nodes} />
       </Suspense>
-    </div>
+    </main>
   );
 }

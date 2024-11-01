@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect, useMemo, useState } from "react";
+import { useRef, useEffect, useMemo, useState, useCallback } from "react";
 import * as d3 from "d3";
 import { Node } from "@/types/article";
 import { useRouter } from "next/navigation";
@@ -20,6 +20,12 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
   const [isFullyLoaded, setIsFullyLoaded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
+  const [tooltipContent, setTooltipContent] = useState<{
+    title: string;
+    content: string;
+    x: number;
+    y: number;
+  } | null>(null);
 
   // Deduplicate nodes based on slug
   const nodes = useMemo(() => {
@@ -51,17 +57,24 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       );
     });
 
-    // Scale node sizes between 30 and 80 based on connection count
-    const minConnections = Math.min(...connectionCounts.values());
+    // Ensure all nodes have at least 1 connection in the count
+    nodes.forEach((node) => {
+      if (!connectionCounts.has(node.slug)) {
+        connectionCounts.set(node.slug, 1);
+      }
+    });
+
+    // Scale node sizes proportionally based on connection count
     const maxConnections = Math.max(...connectionCounts.values());
     const scale = d3
       .scaleLinear()
-      .domain([minConnections, maxConnections])
-      .range([30, 80]); // increased from [20, 60]
+      .domain([1, maxConnections]) // Changed minimum to 1
+      .range([30, 80]) // Base size of 30 for 1 connection, max 80
+      .clamp(true); // Ensure we don't go below minimum size
 
     // Return a function that gets the scaled size for a node
     return (slug: string) => {
-      const connections = connectionCounts.get(slug) || 0;
+      const connections = connectionCounts.get(slug) || 1;
       return scale(connections);
     };
   };
@@ -204,6 +217,15 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .on("mouseenter", (event, d: Node) => {
         setHoveredNode(d.slug);
 
+        // Show tooltip
+        const [x, y] = d3.pointer(event, svg.node());
+        setTooltipContent({
+          title: d.title || d.name || d.slug,
+          content: d.summary || "",
+          x: x + 10,
+          y: y + 10,
+        });
+
         // Highlight connected links
         d3.selectAll("line")
           .attr("stroke-opacity", 0.2)
@@ -240,6 +262,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       })
       .on("mouseleave", () => {
         setHoveredNode(null);
+        setTooltipContent(null);
 
         // Reset all elements to original state
         d3.selectAll("line")
@@ -329,7 +352,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
   }, [nodes, links, getNodeSize, router]);
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full relative">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80">
           Loading...
@@ -340,6 +363,18 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
         className="w-full flex-1 bg-gray-50"
         style={{ cursor: "grab" }}
       />
+      {tooltipContent && (
+        <div
+          className="absolute z-10 max-w-sm p-2 text-sm bg-white border border-gray-200 rounded-lg shadow-lg pointer-events-none"
+          style={{
+            left: `${tooltipContent.x}px`,
+            top: `${tooltipContent.y}px`,
+          }}
+        >
+          <div className="font-bold mb-1">{tooltipContent.title}</div>
+          {tooltipContent.content && <div>{tooltipContent.content}</div>}
+        </div>
+      )}
       <div className="p-4 text-sm text-gray-500">
         {`Nodes: ${nodes.length} | Connections: ${links.length}`}
       </div>
