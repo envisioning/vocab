@@ -5,7 +5,7 @@ import frontmatter
 import requests
 from config import API_KEY
 
-# Configure logging
+# Configure logging ...
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
