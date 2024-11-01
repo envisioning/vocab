@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useMemo } from "react";
 import * as d3 from "d3";
 import { Node } from "@/types/article";
 
@@ -92,15 +92,21 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
     return links;
   };
 
+  // Memoize expensive calculations
+  const links = useMemo(() => createLinks(nodes), [nodes]);
+  const getNodeSize = useMemo(
+    () => calculateNodeSizes(nodes, links),
+    [nodes, links]
+  );
+
   useEffect(() => {
     if (!svgRef.current || !nodes.length) return;
 
+    // Debounce resize handling
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const links = createLinks(nodes);
-    const getNodeSize = calculateNodeSizes(nodes, links);
 
-    // Pre-calculate positions using force simulation
+    // Optimize force simulation
     const simulation = d3
       .forceSimulation(nodes)
       .force(
@@ -109,22 +115,17 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
           .forceLink(links)
           .id((d: any) => d.slug)
           .distance(35)
-          .strength(1.5)
       )
-      .force("charge", d3.forceManyBody().strength(-150))
+      .force("charge", d3.forceManyBody().strength(-100)) // Reduced strength
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force(
         "collision",
-        d3
-          .forceCollide()
-          .radius((d) => getNodeSize((d as Node).slug) + 2)
-          .strength(1)
-          .iterations(4)
+        d3.forceCollide().radius((d) => getNodeSize((d as Node).slug))
       );
 
-    // Increase simulation ticks for better stabilization
+    // Reduce simulation ticks while maintaining stability
     simulation.stop();
-    simulation.tick(500);
+    simulation.tick(300); // Reduced from 500
     simulation.stop();
 
     // Setup SVG with zoom support
@@ -133,8 +134,8 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
       .attr("width", width)
       .attr("height", height);
 
-    // Clear previous content
-    svg.selectAll("*").remove();
+    // Clear previous content but keep the stats text
+    svg.selectAll("*:not(.stats-text)").remove();
 
     // Create container group for zoom
     const g = svg.append("g");
@@ -235,13 +236,18 @@ export default function ArticleMap({ nodes }: ArticleMapProps) {
         .scale(initialScale)
         .translate(-width / 2, -height / 2)
     );
-  }, [nodes]);
+  }, [nodes, links, getNodeSize]);
 
   return (
-    <svg
-      ref={svgRef}
-      className="w-full h-full bg-gray-50"
-      style={{ cursor: "grab" }}
-    />
+    <div className="flex flex-col h-full">
+      <svg
+        ref={svgRef}
+        className="w-full flex-1 bg-gray-50"
+        style={{ cursor: "grab" }}
+      />
+      <div className="p-4 text-sm text-gray-500">
+        {`Nodes: ${nodes.length} | Connections: ${links.length}`}
+      </div>
+    </div>
   );
 }
