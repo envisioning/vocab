@@ -12,6 +12,7 @@
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.15",
+    "d3": "^7.9.0",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
     "lucide-react": "^0.453.0",

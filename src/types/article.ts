@@ -18,3 +18,20 @@ export interface RelatedArticle {
   similarity?: number;
   generality: number[];
 }
+
+
+export interface Node {
+  slug: string;
+  title: string;
+  summary?: string;
+  generality?: number;
+  children: NodeRelation[];
+  parents?: NodeRelation[];
+  x?: number;
+  y?: number;
+}
+
+export interface NodeRelation {
+  slug: string;
+  similarity: number;
+}
