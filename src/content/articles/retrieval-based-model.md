@@ -8,9 +8,8 @@ generality:
   - 0.595
   - 0.57
 slug: retrieval-based-model
-summary:
-  Algorithms that generate responses by selecting them from a predefined set of responses, based on the input they receive.
-title: Retrieval-Based (Model)
+summary: Algorithms that generate responses by selecting them from a predefined set of responses, based on the input they receive.
+title: Retrieval-Based Model
 ---
 
 Retrieval-based models operate by searching through a database of previously stored interactions (questions and answers, for instance) and finding the best match
