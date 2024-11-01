@@ -10,8 +10,13 @@ export const useKeyboardNavigation = (availableSlugs: string[]) => {
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      // Ignore if user is typing in an input or textarea
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+      // Ignore if user is typing in an input, textarea, or holding cmd/ctrl key
+      if (
+        e.target instanceof HTMLInputElement || 
+        e.target instanceof HTMLTextAreaElement ||
+        e.metaKey ||  // Command key on Mac
+        e.ctrlKey     // Control key on Windows
+      ) {
         return;
       }
 

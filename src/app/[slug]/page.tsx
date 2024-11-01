@@ -10,7 +10,6 @@ import { Suspense } from "react";
 import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
 import { getArticles } from "@/lib/getArticles";
-import ClientWrapper from "@/components/ClientWrapper";
 import { notFound } from "next/navigation"; // Import the notFound function
 import { redirect } from "next/navigation"; // Add this import at the top with other imports
 import KeyboardNavigation from "@/components/KeyboardNavigation";
