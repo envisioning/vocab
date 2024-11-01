@@ -43,39 +43,29 @@ export default function ArticleCard({
   return (
     <Link
       href={`/${article.slug}`}
-      className="transform transition duration-500 hover:scale-105"
+      className="transform transition duration-500 hover:scale-105 block w-full"
     >
-      <div
-        className={`relative rounded-lg overflow-hidden ${
-          size === "compact" ? "h-[20rem]" : "h-[32rem]"
-        }`}
-      >
-        <Image
-          src={`/vocab/images/articles/small/${article.slug}.webp`}
-          alt={article.title}
-          fill
-          loading="lazy"
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0" />
-        <div className="absolute bottom-0 p-6 w-full">
-          <h2
-            className={`${
-              size === "compact" ? "text-xl" : "text-2xl"
-            } font-semibold mb-3 text-white`}
-            dangerouslySetInnerHTML={{ __html: parseAcronyms(article.title) }}
+      <div className="relative w-full pt-[133%]">
+        <div className="absolute inset-0 rounded-lg overflow-hidden">
+          <Image
+            src={`/vocab/images/articles/small/${article.slug}.webp`}
+            alt={article.title}
+            fill
+            loading="lazy"
+            className="object-cover"
+            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
           />
-          <p
-            className={`text-gray-200 mb-3 ${
-              size === "compact" ? "text-sm" : "text-base"
-            }`}
-          >
-            {article.summary}
-          </p>
-          <p className="text-gray-400 text-sm">
-            {metricLabel}: {metricValue}
-          </p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0" />
+          <div className="absolute bottom-0 p-3 w-full">
+            <h2
+              className="text-sm font-semibold mb-1.5 text-white"
+              dangerouslySetInnerHTML={{ __html: parseAcronyms(article.title) }}
+            />
+            <p className="text-gray-200 text-xs mb-1.5">{article.summary}</p>
+            <p className="text-gray-400 text-xs">
+              {metricLabel}: {metricValue}
+            </p>
+          </div>
         </div>
       </div>
     </Link>
