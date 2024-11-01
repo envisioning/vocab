@@ -89,7 +89,7 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
       </div>
       {isLoading && <div className="text-center py-4">Loading...</div>}
       {error && <div className="text-center py-4 text-red-500">{error}</div>}
-      {!hasMore && !error && <div className="text-center py-4">End</div>}
+      {!hasMore && !error && <div className="text-center py-4">&nbsp;</div>}
     </>
   );
 }
