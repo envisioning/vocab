@@ -150,7 +150,9 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force(
         "collision",
-        d3.forceCollide().radius((d) => getNodeSize((d as Node).slug) * 1.5)
+        d3
+          .forceCollide()
+          .radius((d: unknown) => getNodeSize((d as Node).slug) * 1.5)
       );
 
     // Reduce simulation ticks while maintaining stability
@@ -174,7 +176,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
     const zoom = d3
       .zoom()
       .scaleExtent([0.1, 4])
-      .on("zoom", (event) => {
+      .on("zoom", (event: d3.D3ZoomEvent<any, any>) => {
         g.attr("transform", event.transform);
       });
 
@@ -188,7 +190,9 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .data(links)
       .enter()
       .append("line")
-      .attr("stroke", (d) => (d.type === "parent" ? "#3B82F6" : "#93C5FD"))
+      .attr("stroke", (d: Link) =>
+        d.type === "parent" ? "#3B82F6" : "#93C5FD"
+      )
       .attr("stroke-width", 2)
       .attr("stroke-opacity", 0.6)
       .attr("x1", (d: any) => d.source.x)
@@ -197,7 +201,8 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .attr("y2", (d: any) => d.target.y)
       .attr(
         "class",
-        (d) => `link-${(d.source as Node).slug} link-${(d.target as Node).slug}`
+        (d: Link) =>
+          `link-${(d.source as Node).slug} link-${(d.target as Node).slug}`
       );
 
     // Create nodes with pre-calculated positions
@@ -208,19 +213,19 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .data(nodes)
       .enter()
       .append("g")
-      .attr("class", (d) => `node cursor-pointer node-${d.slug}`)
-      .attr("transform", (d: any) => `translate(${d.x},${d.y})`)
-      .on("click", (event, d: Node) => {
+      .attr("class", (d: Node) => `node cursor-pointer node-${d.slug}`)
+      .attr("transform", (d: Node) => `translate(${d.x},${d.y})`)
+      .on("click", (event: MouseEvent, d: Node) => {
         event.stopPropagation();
         router.push(`/${d.slug}`);
       })
-      .on("mouseenter", (event, d: Node) => {
+      .on("mouseenter", (event: MouseEvent, d: Node) => {
         setHoveredNode(d.slug);
 
         // Show tooltip
         const [x, y] = d3.pointer(event, svg.node());
         setTooltipContent({
-          title: d.title || d.name || d.slug,
+          title: d.title || d.slug,
           content: d.summary || "",
           x: x + 10,
           y: y + 10,
@@ -266,7 +271,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
 
         // Reset all elements to original state
         d3.selectAll("line")
-          .attr("stroke", (d: any) =>
+          .attr("stroke", (d: Link) =>
             d.type === "parent" ? "#3B82F6" : "#93C5FD"
           )
           .attr("stroke-width", 2)
@@ -280,7 +285,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
     // Add circles with dynamic radius
     nodeElements
       .append("circle")
-      .attr("r", (d) => getNodeSize(d.slug))
+      .attr("r", (d: Node) => getNodeSize(d.slug))
       .attr("fill", "#93C5FD")
       .attr("stroke", "#3B82F6")
       .attr("stroke-width", 2)
@@ -292,19 +297,16 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .attr("text-anchor", "middle")
       .attr("dominant-baseline", "middle")
       .attr("fill", "#1E3A8A")
-      .attr("font-size", (d) => {
+      .attr("font-size", (d: Node) => {
         const radius = getNodeSize(d.slug);
-        return `${Math.max(12, radius / 2.5)}px`; // increased from 8px min and adjusted ratio
+        return `${Math.max(12, radius / 2.5)}px`;
       })
       .attr("font-weight", "500");
 
     // Add title with line breaks if needed
-    textElements.each(function (d: any) {
+    textElements.each(function (this: SVGTextElement, d: any) {
       const text = d3.select(this);
-      const title = (d.title || d.name || d.slug || "").replace(
-        /\s*\([^)]*\)/g,
-        ""
-      ); // Remove text in parentheses
+      const title = (d.title || d.slug || "").replace(/\s*\([^)]*\)/g, ""); // Remove text in parentheses
       const words = title.split(/\s+/);
       const lineHeight = 16; // increased from 12
 
