@@ -190,9 +190,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .data(links)
       .enter()
       .append("line")
-      .attr("stroke", (d: Link) =>
-        d.type === "parent" ? "#3B82F6" : "#93C5FD"
-      )
+      .attr("stroke", "#ddd")
       .attr("stroke-width", 2)
       .attr("stroke-opacity", 0.6)
       .attr("x1", (d: any) => d.source.x)
@@ -271,9 +269,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
 
         // Reset all elements to original state
         d3.selectAll("line")
-          .attr("stroke", (d: Link) =>
-            d.type === "parent" ? "#3B82F6" : "#93C5FD"
-          )
+          .attr("stroke", "#94A3B8")
           .attr("stroke-width", 2)
           .attr("stroke-opacity", 0.6);
 
@@ -357,7 +353,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
     <div className="absolute inset-0">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80">
-          Loading...
+          Loading Map...
         </div>
       )}
       <svg
