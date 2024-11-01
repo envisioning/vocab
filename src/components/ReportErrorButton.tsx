@@ -97,6 +97,7 @@ export default function ReportErrorButton({
                       onChange={(e) => setName(e.target.value)}
                       className="w-full p-2 border rounded-lg"
                       required
+                      disabled={status === "sending" || status === "success"}
                     />
                   </div>
                   <div>
@@ -113,6 +114,7 @@ export default function ReportErrorButton({
                       onChange={(e) => setEmail(e.target.value)}
                       className="w-full p-2 border rounded-lg"
                       required
+                      disabled={status === "sending" || status === "success"}
                     />
                   </div>
                 </div>
@@ -131,12 +133,13 @@ export default function ReportErrorButton({
                     placeholder="Describe the error or issue..."
                     className="w-full h-32 p-3 border rounded-lg resize-none"
                     required
+                    disabled={status === "sending" || status === "success"}
                   />
                 </div>
 
                 <button
                   type="submit"
-                  disabled={status === "sending"}
+                  disabled={status === "sending" || status === "success"}
                   className="w-full bg-blue-500 text-white rounded-lg py-2 flex items-center justify-center gap-2 hover:bg-blue-600 disabled:bg-blue-300"
                 >
                   {status === "sending" ? (
