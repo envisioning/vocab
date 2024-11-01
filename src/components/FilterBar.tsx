@@ -70,8 +70,12 @@ export default function FilterBar({
         break;
       case "Enter":
         e.preventDefault();
-        if (selectedIndex >= 0 && filteredArticles[selectedIndex]) {
-          const selected = filteredArticles[selectedIndex];
+        if (filteredArticles.length > 0) {
+          // If no item is selected, use the first item
+          const selected =
+            selectedIndex >= 0
+              ? filteredArticles[selectedIndex]
+              : filteredArticles[0];
           handleSelection(selected);
         }
         break;
