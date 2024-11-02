@@ -1,6 +1,7 @@
 ---
   slug: gradient-descent
-  summary: Optimization algorithm used to find the minimum of a function by iteratively moving towards the steepest descent direction. title: Gradient Descent year_origin: 1847
+  summary: Optimization algorithm used to find the minimum of a function by iteratively moving towards the steepest descent direction
+  title: Gradient Descent
 ---
 
 Gradient Descent is pivotal in the field of machine learning for optimizing the parameters of models such as neural networks. It works by calculating the gradient (or derivative) of the cost function with respect to each parameter in the model, which indicates the direction in which the function has the steepest rate of increase. By moving in the opposite direction, the algorithm iteratively adjusts the parameters to minimize the cost function. This process is repeated until the algorithm converges to the minimum. Gradient Descent is crucial for training models efficiently and effectively, especially in high-dimensional spaces where analytical solutions are infeasible.

@@ -38,7 +38,7 @@ def identify_key_names(title: str, summary: str) -> Union[list[str], None]:
     }
     
     data = {
-        "model": "gpt-4",
+        "model": "gpt-4o-mini",
         "messages": [
             {"role": "system", "content": "You are a helpful AI historian. Respond only with 1-7 full names separated by commas, or 'unknown'. List only the most significant primary contributors."},
             {"role": "user", "content": prompt}

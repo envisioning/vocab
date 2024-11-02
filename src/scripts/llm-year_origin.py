@@ -35,7 +35,7 @@ def estimate_year_origin(title: str, summary: str) -> Union[int, None]:
     }
     
     data = {
-        "model": "gpt-4",
+        "model": "gpt-4o-mini",
         "messages": [
             {"role": "system", "content": "You are a helpful AI historian. Respond only with a year (YYYY) or 'unknown'."},
             {"role": "user", "content": prompt}

@@ -14,6 +14,7 @@ import urllib.parse
 from datetime import datetime, timedelta
 import signal
 import sys
+from fake_useragent import UserAgent
 
 # Set up logging
 console_handler = logging.StreamHandler()
@@ -29,9 +30,8 @@ class ScholarScraper:
     def __init__(self, delay_range: Tuple[float, float] = (3.0, 7.0)):
         self.base_url = "https://scholar.google.com/scholar"
         self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        })
+        self.ua = UserAgent()
+        self.update_user_agent()
         self.delay_range = delay_range
         self.request_count = 0
         self.MAX_REASONABLE_CITATIONS = 1000000
@@ -42,6 +42,12 @@ class ScholarScraper:
         self.max_backoff = 10800    # 180 minutes max
         self.current_backoff = self.base_backoff
         self.last_error_time = None
+
+    def update_user_agent(self):
+        """Update the session's User-Agent with a new random one"""
+        self.session.headers.update({
+            'User-Agent': self.ua.random
+        })
 
     def _random_delay(self):
         delay = random.uniform(*self.delay_range)
@@ -124,12 +130,13 @@ class ScholarScraper:
 
     def _make_request(self, query: str, params: Dict) -> Tuple[Optional[BeautifulSoup], Optional[str]]:
         """Make request with rate limit handling"""
-        max_retries = 3  # Reduced since we're waiting longer
+        max_retries = 3
         retry_count = 0
         
         while retry_count < max_retries:
             try:
                 self._random_delay()
+                self.update_user_agent()
                 response = self.session.get(self.base_url, params=params)
                 
                 if response.status_code == 429:  # Too Many Requests
