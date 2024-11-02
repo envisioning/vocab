@@ -84,13 +84,15 @@ def save_years(years_dict: dict):
 def process_markdown_files(directory: Path):
     """Process all markdown files in the directory."""
     years_dict = load_existing_years()
-    md_files = list(directory.glob('**/*.md'))
-    print(f"Found {len(md_files)} Markdown files to process\n")
+    logging.info(f"Found {len(years_dict)} existing terms in years.json\n")
     
-    for md_file in md_files:
-        if 'src/content/articles/' in str(md_file):
-            continue
-            
+    md_files = list(directory.glob('**/*.md'))
+    filtered_files = [f for f in md_files if 'src/content/articles/' not in str(f)]
+    
+    logging.info(f"Found {len(filtered_files)} total Markdown files")
+    logging.info(f"Terms left to process: {len(filtered_files) - len(years_dict)}\n")
+    
+    for md_file in filtered_files:
         try:
             post = frontmatter.load(md_file)
             title = post.metadata.get('title', '')
