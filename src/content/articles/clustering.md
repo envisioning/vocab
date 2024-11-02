@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.93
-  - 0.92
-  - 0.91
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
 slug: clustering
-summary: Unsupervised learning method used to group a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups.
+summary: Unsupervised learning method used to group a set of objects in such a way
+  that objects in the same group (called a cluster) are more similar to each other
+  than to those in other groups.
 title: Clustering
+year_origin: 1936
 ---
 
 Clustering is fundamental in data analysis and pattern recognition, serving as a method for discovering structure in data. It's widely used in various domains, such as market research, image segmentation, social network analysis, and bioinformatics, to partition data sets into subsets or clusters. The goal is to maximize the similarity of objects within a cluster and maximize the dissimilarity between objects in different clusters. Key algorithms include K-means, hierarchical clustering, and DBSCAN, each with unique approaches to defining clusters and assessing data points' membership within those clusters.

@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.86
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
-  - 0.76
-  - 0.74
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
+- 0.74
 slug: gating-mechanism
-summary: Control function that regulates the flow of information through the model, deciding what information to keep, discard, or update.
+summary: Control function that regulates the flow of information through the model,
+  deciding what information to keep, discard, or update.
 title: Gating Mechanism
+year_origin: 1997
 ---
 
 Gating mechanisms are essential components in various neural network architectures, particularly in recurrent neural networks (RNNs) and their variants like Long Short-Term Memory (LSTM) networks and Gated Recurrent Units (GRUs). These mechanisms manage the information flow to help the network retain relevant data over time and mitigate issues like vanishing or exploding gradients. For example, in LSTMs, gates are used to control the input, output, and forget operations within each cell, ensuring that the model can remember long-term dependencies and discard irrelevant information. This selective updating process allows the network to learn temporal sequences more effectively and has broad applications in tasks like language modeling, machine translation, and time-series forecasting.

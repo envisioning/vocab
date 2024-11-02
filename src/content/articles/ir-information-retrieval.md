@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.9
-  - 0.875
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.845
-  - 0.84
+- 0.9
+- 0.875
+- 0.87
+- 0.86
+- 0.85
+- 0.845
+- 0.84
 slug: ir-information-retrieval
-summary:
-  Process of obtaining relevant information from a large repository based on user queries.
+summary: Process of obtaining relevant information from a large repository based on
+  user queries.
 title: IR (Information Retrieval)
+year_origin: 1950
 ---
 
 Information Retrieval is a foundational aspect of NLP that focuses on the extraction of relevant data from large datasets or document collections in response to specific queries. This process involves indexing, searching, and ranking documents or data to find matches that satisfy user needs. The significance of IR extends across search engines, digital libraries, and information systems, where the ability to accurately retrieve information is crucial. Techniques such as vector space models, Boolean search, and more recently, deep learning approaches have significantly improved the efficiency and accuracy of IR systems.

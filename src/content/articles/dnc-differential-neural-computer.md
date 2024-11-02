@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: dnc-differential-neural-computer
-summary:
-  Advanced type of artificial neural network that integrates an external memory module, enabling it to store and retrieve information similar to a computer, enhancing its capability to solve complex tasks requiring long-term dependencies.
+summary: Advanced type of artificial neural network that integrates an external memory
+  module, enabling it to store and retrieve information similar to a computer, enhancing
+  its capability to solve complex tasks requiring long-term dependencies.
 title: DNC (Differential Neural Computer)
+year_origin: 2016
 ---
 
 A DNC is designed to address limitations of traditional neural networks in handling tasks requiring memory retention and complex reasoning over long sequences. It combines a neural network controller with an external memory bank, which the controller can read from and write to through differentiable operations. This setup allows the DNC to efficiently learn and use dynamic data structures, making it suitable for problems like graph traversal, language modeling, and complex planning. By integrating memory, DNCs enhance the neural network's ability to remember and manipulate large sets of data, enabling it to perform sophisticated tasks that conventional neural networks struggle with.

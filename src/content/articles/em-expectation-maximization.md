@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
-  - 0.76
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
+- 0.76
 slug: em-expectation-maximization
-summary:
-  Statistical technique used to find the maximum likelihood estimates of parameters in probabilistic models, specifically when the model depends on unobserved latent variables.
+summary: Statistical technique used to find the maximum likelihood estimates of parameters
+  in probabilistic models, specifically when the model depends on unobserved latent
+  variables.
 title: EM (Expectation-Maximization)
+year_origin: 1977
 ---
 
 In the context of Gaussian Mixture Models (GMM), the EM algorithm iteratively improves estimates of the unknown parameters, which include the means, variances, and mixture weights of different Gaussian components within the model. The algorithm consists of two main steps: the expectation (E) step, which calculates the probability that each data point belongs to each Gaussian component based on current parameter estimates; and the maximization (M) step, which updates the parameters to maximize the likelihood of the data given these probabilities. This process repeats until convergence, effectively allowing the model to fit complex datasets by finding clusters of data modeled as mixtures of multiple Gaussians.

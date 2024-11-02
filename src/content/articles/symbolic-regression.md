@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.67
-  - 0.645
-  - 0.62
-  - 0.595
-  - 0.57
-  - 0.545
-  - 0.52
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
 slug: symbolic-regression
-summary: Type of regression analysis that searches for mathematical expressions to best fit a given set of data points.
+summary: Type of regression analysis that searches for mathematical expressions to
+  best fit a given set of data points.
 title: Symbolic Regression
+year_origin: 1989
 ---
 
 Symbolic regression differs from traditional regression methods by not assuming a predefined model structure. Instead, it uses algorithms, often evolutionary algorithms like genetic programming, to explore a wide range of mathematical expressions and operations. The goal is to find the simplest and most accurate model that describes the underlying data relationships. This approach can discover both the form and the parameters of the model simultaneously, making it highly flexible and capable of revealing complex, non-linear patterns that traditional methods might miss. Applications of symbolic regression span various fields, including physics, biology, finance, and engineering, where it helps uncover fundamental laws and relationships directly from empirical data.

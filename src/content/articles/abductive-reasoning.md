@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.825
-  - 0.8
-  - 0.815
-  - 0.83
-  - 0.81
-  - 0.805
-  - 0.82
+- 0.825
+- 0.8
+- 0.815
+- 0.83
+- 0.81
+- 0.805
+- 0.82
 slug: abductive-reasoning
-summary: Form of logical inference that starts with an observation and seeks the simplest and most likely explanation for it.
+summary: Form of logical inference that starts with an observation and seeks the simplest
+  and most likely explanation for it.
 title: Abductive Reasoning
+year_origin: 1878
 ---
 
 Abductive reasoning, often referred to as "inference to the best explanation," involves generating and evaluating hypotheses to explain given observations. Unlike deductive reasoning, which derives conclusions necessarily from premises, or inductive reasoning, which generalizes from specific instances, abduction focuses on finding the most plausible explanation for incomplete or ambiguous data. In AI, abductive reasoning is crucial for diagnostics, hypothesis formation, and problem-solving, where systems must operate with incomplete information. This reasoning process enables AI systems to make educated guesses and is employed in fields like medical diagnosis, fault detection, and natural language understanding.

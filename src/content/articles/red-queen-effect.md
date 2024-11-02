@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.73
-  - 0.72
-  - 0.705
-  - 0.7
-  - 0.685
-  - 0.68
-  - 0.67
+- 0.73
+- 0.72
+- 0.705
+- 0.7
+- 0.685
+- 0.68
+- 0.67
 slug: red-queen-effect
-summary: The continuous need for systems or agents to adapt and evolve just to maintain their relative performance in a competitive or dynamic environment.
+summary: The continuous need for systems or agents to adapt and evolve just to maintain
+  their relative performance in a competitive or dynamic environment.
 title: Red Queen Effect
+year_origin: 1973
 ---
 
 - In computational AI, the Red Queen Effect describes a scenario where competing agents or systems must constantly improve their algorithms, models, or strategies merely to keep pace with their opponents or environmental changes. This concept is particularly relevant in evolutionary algorithms, adversarial learning, and game theory, where the progress of one agent forces the other to evolve rapidly to avoid falling behind. The metaphor comes from Lewis Carroll's *Through the Looking-Glass*, where the Red Queen tells Alice that it takes all the running one can do to stay in the same place, symbolizing the relentless race for innovation in competitive domains like AI. For example, in adversarial AI, where one agent develops defenses and another creates attacks, both must continually evolve or risk obsolescence.

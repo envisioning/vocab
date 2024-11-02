@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.6
-  - 0.585
-  - 0.57
-  - 0.555
-  - 0.54
-  - 0.525
-  - 0.51
+- 0.6
+- 0.585
+- 0.57
+- 0.555
+- 0.54
+- 0.525
+- 0.51
 slug: straight-through-estimator
-summary: Technique used in training neural networks to enable the backpropagation of gradients through non-differentiable functions or operations.
+summary: Technique used in training neural networks to enable the backpropagation
+  of gradients through non-differentiable functions or operations.
 title: Straight-Through Estimator
+year_origin: 2013
 ---
 
 The straight-through estimator (STE) is a method primarily used for handling non-differentiable operations within neural networks during the backpropagation process. Typically, neural network training relies on the differentiability of activation functions to compute gradients and update weights. However, certain functions like the threshold function or operations involving discrete values are inherently non-differentiable. The STE tackles this by simply passing the gradient from the output directly to the input, essentially 'ignoring' the non-differentiability of the function. This allows for effective training of models incorporating discrete elements or hard non-linearities, such as binary neural networks where neurons output discrete values instead of continuous activations.

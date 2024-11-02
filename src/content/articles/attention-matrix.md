@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.78
-  - 0.765
-  - 0.75
-  - 0.735
-  - 0.72
-  - 0.705
-  - 0.69
+- 0.78
+- 0.765
+- 0.75
+- 0.735
+- 0.72
+- 0.705
+- 0.69
 slug: attention-matrix
-summary: Component in attention mechanisms of neural networks that determines the importance of each element in a sequence relative to others, allowing the model to focus on relevant parts of the input when generating outputs.
+summary: Component in attention mechanisms of neural networks that determines the
+  importance of each element in a sequence relative to others, allowing the model
+  to focus on relevant parts of the input when generating outputs.
 title: Attention Matrix
+year_origin: 2014
 ---
 
 The attention matrix is crucial in models like the Transformer, where it facilitates the weighting of different elements in a sequence. By assigning higher weights to more relevant elements, the attention matrix helps the model focus on the most pertinent parts of the input, improving performance in tasks like machine translation, summarization, and question answering. The matrix is computed using the dot-product attention mechanism, which calculates the compatibility between queries and keys, generating a set of attention scores. These scores are then normalized to produce the attention weights, which are used to create a weighted sum of values. This selective focus allows models to capture long-range dependencies and relationships within the data more effectively than traditional recurrent neural networks.

@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.85
-  - 0.835
-  - 0.82
-  - 0.805
-  - 0.79
-  - 0.775
-  - 0.76
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: federated-training
-summary: Decentralized machine learning approach where multiple devices or nodes collaboratively train a shared model while keeping their data localized, rather than aggregating it centrally.
+summary: Decentralized machine learning approach where multiple devices or nodes collaboratively
+  train a shared model while keeping their data localized, rather than aggregating
+  it centrally.
 title: Federated Training
+year_origin: 2016
 ---
 
 \_\_ In federated training, the model is trained across many decentralized devices or servers, each holding its own data samples. Instead of sending raw data to a central server, each device trains the model locally and then only shares the model updates (e.g., gradients) with a central server, which aggregates these updates to improve the global model. This approach enhances privacy, as sensitive data never leaves the local devices, and it also reduces bandwidth usage and latency. Federated training is especially significant in environments where data privacy is crucial, such as in healthcare or finance, and is often used in edge computing scenarios like mobile devices, where user data is private and distributed.

@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.95
-  - 0.925
-  - 0.9
-  - 0.875
-  - 0.85
-  - 0.825
-  - 0.8
+- 0.95
+- 0.925
+- 0.9
+- 0.875
+- 0.85
+- 0.825
+- 0.8
 slug: ann-artificial-neural-networks
-summary:
-  Computing systems inspired by the biological neural networks that constitute animal brains, designed to progressively improve their performance on tasks by considering examples.
+summary: Computing systems inspired by the biological neural networks that constitute
+  animal brains, designed to progressively improve their performance on tasks by considering
+  examples.
 title: ANN (Artificial Neural Networks)
+year_origin: 1943
 ---
 
 Artificial Neural Networks (ANNs) represent a foundational framework in artificial intelligence and machine learning, mirroring aspects of human brain structure and function to process information. Comprising interconnected units or nodes (analogous to neurons), these networks execute computations through layers that include input, hidden, and output layers. The connections between these units carry weights that adjust as the network learns from data, employing algorithms to minimize error between actual and predicted outcomes. This enables ANNs to handle complex tasks like pattern recognition, language processing, and decision-making, with applications spanning across fields such as finance, healthcare, and autonomous systems. Their flexibility and capacity for learning from unstructured data make them a pivotal tool in advancing AI technologies.

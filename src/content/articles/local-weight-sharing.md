@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.72
-  - 0.71
-  - 0.7
-  - 0.69
-  - 0.68
-  - 0.67
-  - 0.66
+- 0.72
+- 0.71
+- 0.7
+- 0.69
+- 0.68
+- 0.67
+- 0.66
 slug: local-weight-sharing
-summary: Technique where the same weights are used across different positions in an input, enhancing the network's ability to recognize patterns irrespective of their spatial location.
+summary: Technique where the same weights are used across different positions in an
+  input, enhancing the network's ability to recognize patterns irrespective of their
+  spatial location.
 title: Local Weight Sharing
+year_origin: 1980
 ---
 
 Local weight sharing is fundamental to the design of convolutional neural networks, which are particularly effective for tasks that involve image and video processing. By using the same set of weights across different parts of an input image (i.e., sharing weights locally), CNNs significantly reduce the number of parameters compared to fully connected networks. This not only helps in making the training process more efficient but also improves the network's generalization abilities. The local receptive fields formed by this technique allow the network to detect specific features like edges, corners, and textures, no matter where they appear in the image.

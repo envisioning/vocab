@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.91
-  - 0.89
-  - 0.87
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
+- 0.91
+- 0.89
+- 0.87
+- 0.85
+- 0.83
+- 0.81
+- 0.79
 slug: structured-data
-summary: Information that is highly organized and formatted in a way that is easily searchable and accessible by computer systems, typically stored in databases.
+summary: Information that is highly organized and formatted in a way that is easily
+  searchable and accessible by computer systems, typically stored in databases.
 title: Structured Data
+year_origin: 1960
 ---
 
 Structured data is essential in the field of AI as it allows for efficient storage, retrieval, and analysis, which are foundational for machine learning models and data-driven decision-making processes. It is characterized by its organization into predefined models, such as tables with rows and columns in relational databases, where each data field is discrete and adheres to a specific data type and constraints. This high level of organization and predictability makes structured data ideal for tasks that require precision and speed in data processing, enabling algorithms to perform complex queries and analyses with relative ease. Structured data formats are widely used in various applications, including financial records, inventory management, and customer relationship management systems, where consistency and accuracy in data handling are paramount.

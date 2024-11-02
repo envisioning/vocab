@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: csps-constraint-satisfaction-problems
-summary:
-  Mathematical problems defined by a set of variables, a domain of values for each variable, and a set of constraints specifying allowable combinations of values.
+summary: Mathematical problems defined by a set of variables, a domain of values for
+  each variable, and a set of constraints specifying allowable combinations of values.
 title: CSPs (Constraint Satisfaction Problems)
+year_origin: 1976
 ---
 
 CSPs are foundational in artificial intelligence and operations research, where they involve finding a solution that satisfies all given constraints. Each variable in a CSP has a domain of possible values, and constraints define which combinations of variable assignments are valid. CSPs are utilized in various applications, including scheduling, planning, resource allocation, and solving puzzles like Sudoku. Efficient algorithms for solving CSPs include backtracking, constraint propagation techniques like arc consistency, and heuristic methods such as local search and genetic algorithms. The goal is to explore the solution space systematically to either find a solution that meets all constraints or prove that no such solution exists.

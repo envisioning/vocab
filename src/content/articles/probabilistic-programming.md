@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.85
-  - 0.84
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
 slug: probabilistic-programming
-summary: Programming paradigm designed to handle uncertainty and probabilistic models, allowing for the creation of programs that can make inferences about data by incorporating statistical methods directly into the code.
+summary: Programming paradigm designed to handle uncertainty and probabilistic models,
+  allowing for the creation of programs that can make inferences about data by incorporating
+  statistical methods directly into the code.
 title: Probabilistic Programming
+year_origin: 1974
 ---
 
 Probabilistic programming facilitates the development of models that can reason under uncertainty by integrating probabilistic reasoning directly within the programming framework. It allows developers to define complex probabilistic models using a higher-level language, abstracting the underlying statistical computations. These models can capture uncertainties in data and make inferences based on observed evidence. Tools such as PyMC3, Stan, and TensorFlow Probability are examples of probabilistic programming frameworks that enable Bayesian inference and other statistical techniques. Probabilistic programming is significant in fields like machine learning, artificial intelligence, and data science, as it simplifies the creation and manipulation of sophisticated statistical models that are crucial for predictive analytics, decision making, and automated reasoning.

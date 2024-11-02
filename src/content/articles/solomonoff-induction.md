@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: solomonoff-induction
-summary: Theory of prediction that combines elements of algorithmic information theory and Bayesian inference to create a universal framework for inferring future data from past observations.
+summary: Theory of prediction that combines elements of algorithmic information theory
+  and Bayesian inference to create a universal framework for inferring future data
+  from past observations.
 title: Solomonoff Induction
+year_origin: 1964
 ---
 
 Solomonoff Induction is rooted in the concept of algorithmic probability, which suggests that the best hypothesis for a given set of observations is the one that can be most succinctly described by the shortest computer program producing them. This approach is inherently Bayesian as it involves updating probabilities based on new evidence. However, unlike traditional Bayesian inference, which requires a predefined hypothesis space and prior probabilities, Solomonoff Induction generates these automatically by considering all possible computable hypotheses. This method is considered semi-computable, as it theoretically provides a mechanism to predict future events given past data, but in practice, calculating the exact predictions is unfeasible due to its computational complexity.

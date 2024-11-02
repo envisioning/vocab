@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.84
-  - 0.82
-  - 0.815
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
+- 0.84
+- 0.82
+- 0.815
+- 0.81
+- 0.8
+- 0.79
+- 0.78
 slug: dropout
-summary: Regularization technique used in neural networks to prevent overfitting by randomly omitting a subset of neurons during training.
+summary: Regularization technique used in neural networks to prevent overfitting by
+  randomly omitting a subset of neurons during training.
 title: Dropout
+year_origin: 2012
 ---
 
 Dropout works by randomly setting a fraction of the input units to 0 at each update during training time, which helps in preventing overfitting by reducing the neural network's reliance on any single neuron. This technique effectively simulates a sparse network with a reduced number of neurons and, as a result, each neural network update is performed with a different "view" of the configured network. Dropout has been particularly effective in training deep neural networks, contributing to significant performance improvements in tasks such as image recognition, natural language processing, and more by enhancing the network's ability to generalize from the training data to unseen data.

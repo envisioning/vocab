@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.825
-  - 0.81
-  - 0.8
-  - 0.795
-  - 0.785
-  - 0.765
-  - 0.75
+- 0.825
+- 0.81
+- 0.8
+- 0.795
+- 0.785
+- 0.765
+- 0.75
 slug: boltzmann-machine
-summary: Stochastic recurrent neural network used to learn and represent complex probability distributions over binary variables.
+summary: Stochastic recurrent neural network used to learn and represent complex probability
+  distributions over binary variables.
 title: Boltzmann Machine
+year_origin: 1985
 ---
 
 A Boltzmann Machine consists of a network of symmetrically connected, neuron-like units that make stochastic decisions about whether to be on or off. It is designed to learn internal representations of data by minimizing the difference between the input data distribution and the distribution produced by the network. The machine uses a process of simulated annealing, which involves gradually reducing the randomness in the system to find low-energy states that correspond to the best fit for the observed data. Boltzmann Machines are particularly significant in the context of unsupervised learning and form the foundation for more advanced models like Restricted Boltzmann Machines (RBMs) and Deep Belief Networks (DBNs). They are applied in various domains, including feature learning, dimensionality reduction, and collaborative filtering.

@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.85
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
+- 0.85
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
 slug: gpt-generative-pre-trained-transformer
-summary:
-  Type of neural network architecture that excels in generating human-like text based on the input it receives.
+summary: Type of neural network architecture that excels in generating human-like
+  text based on the input it receives.
 title: GPT (Generative Pre-Trained Transformer)
+year_origin: 2018
 ---
 
 GPT, specifically its iterations like GPT-3, represents a landmark in the field of natural language processing (NLP), employing a transformer-based architecture to process and generate text. This model is pre-trained on a vast corpus of text data, enabling it to understand and generate human-like text across a wide range of topics and styles. GPT models are characterized by their deep learning approach, utilizing layers of attention mechanisms to weigh the significance of different words in relation to each other within a text. This allows for highly coherent and contextually relevant text generation, making GPT models versatile tools for applications such as content creation, conversation simulation, and even coding assistance.

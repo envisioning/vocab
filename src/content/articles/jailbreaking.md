@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.45
-  - 0.435
-  - 0.42
-  - 0.405
-  - 0.39
-  - 0.375
-  - 0.36
+- 0.45
+- 0.435
+- 0.42
+- 0.405
+- 0.39
+- 0.375
+- 0.36
 slug: jailbreaking
-summary: Exploiting vulnerabilities in AI systems to bypass restrictions and unlock otherwise inaccessible functionalities.
+summary: Exploiting vulnerabilities in AI systems to bypass restrictions and unlock
+  otherwise inaccessible functionalities.
 title: Jailbreaking
+year_origin: 2007
 ---
 
 The concept of jailbreaking AI emerges as a direct consequence of the advanced capabilities of large language models (LLMs) and their potential limitations imposed by developers. By "jailbreaking," individuals can make these models perform tasks or generate content beyond their intended scope, challenging both ethical guidelines and technical constraints. This exploration raises significant concerns about privacy, security, and the potential for generating harmful content, while also pushing the boundaries of what AI can achieve outside of regulated confines. The mechanics of jailbreaking involve sophisticated understanding and manipulation of the AI's prompting system, finding and exploiting loopholes that allow for unrestricted operation.

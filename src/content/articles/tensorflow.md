@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.975
-  - 0.95
-  - 0.945
-  - 0.93
-  - 0.925
-  - 0.92
-  - 0.915
+- 0.975
+- 0.95
+- 0.945
+- 0.93
+- 0.925
+- 0.92
+- 0.915
 slug: tensorflow
-summary: Open-source software library for machine learning, developed by Google, used for designing, building, and training deep learning models.
+summary: Open-source software library for machine learning, developed by Google, used
+  for designing, building, and training deep learning models.
 title: TensorFlow
+year_origin: 2015
 ---
 
 TensorFlow offers a comprehensive, flexible ecosystem of tools, libraries, and community resources that allows researchers to push the boundaries of current thinking and developers to build and deploy machine learning applications more easily. The core of TensorFlow is designed to provide a scalable environment for computationally intensive operations typically required in neural networks. TensorFlow executes tasks efficiently by using data flow graphs where nodes represent mathematical operations and edges represent the multidimensional data arrays (tensors) communicated between these operations. Its versatility supports experimentation with novel architectures, making it a popular choice for both academia and industry in areas ranging from natural language processing to computer vision.

@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.86
-  - 0.845
-  - 0.83
-  - 0.815
-  - 0.8
-  - 0.785
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: ait-algorithmic-information-theory
-summary:
-  Studies the complexity of strings and the amount of information they contain, using algorithms and computational methods.
+summary: Studies the complexity of strings and the amount of information they contain,
+  using algorithms and computational methods.
 title: AIT (Algorithmic Information Theory)
+year_origin: 1965
 ---
 
 Algorithmic Information Theory (AIT) is a branch of information theory and computer science that deals with the quantification and classification of information in data structures through algorithms. At its core, AIT seeks to understand the complexity of data by examining the length of the shortest possible program (in a fixed programming language) that can produce a given string as output, known as the Kolmogorov complexity of the string. This theory provides a robust framework for understanding randomness, compressibility, and the intrinsic informational content of data. AIT has significant implications for various fields, including data compression, cryptography, machine learning, and the philosophy of information.

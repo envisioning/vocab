@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.62
-  - 0.595
-  - 0.57
-  - 0.545
-  - 0.52
-  - 0.495
-  - 0.47
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
+- 0.495
+- 0.47
 slug: lle-locally-linear-embedding
-summary:
-  Nonlinear dimensionality reduction technique that preserves local neighborhood information to reduce high-dimensional data to a lower-dimensional space.
+summary: Nonlinear dimensionality reduction technique that preserves local neighborhood
+  information to reduce high-dimensional data to a lower-dimensional space.
 title: LLE (Locally Linear Embedding)
+year_origin: 2000
 ---
 
 Locally Linear Embedding (LLE) is an unsupervised learning algorithm primarily used for dimensionality reduction, which is critical in dealing with high-dimensional data in machine learning and data visualization. LLE operates by mapping high-dimensional data points to a lower-dimensional space while preserving the relationships between neighboring points. It achieves this by assuming that each data point and its neighbors lie on or close to a locally linear patch of the manifold. The process involves two main steps: first, finding the weights that best reconstruct each data point from its neighbors; second, using these weights to construct the lower-dimensional embedding. LLE is particularly useful for visualizing complex data structures and discovering intrinsic low-dimensional manifolds within high-dimensional data.

@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.879
-  - 0.86
-  - 0.845
-  - 0.828
-  - 0.81
-  - 0.795
-  - 0.78
+- 0.879
+- 0.86
+- 0.845
+- 0.828
+- 0.81
+- 0.795
+- 0.78
 slug: graph-theory
-summary: Field of mathematics and computer science focusing on the properties of graphs, which are structures made up of vertices (or nodes) connected by edges.
+summary: Field of mathematics and computer science focusing on the properties of graphs,
+  which are structures made up of vertices (or nodes) connected by edges.
 title: Graph Theory
+year_origin: 1736
 ---
 
 Graph theory plays a crucial role in AI for modeling relationships and interactions in complex systems, including networks of information, social networks, biological networks, and more. Its significance in AI stems from its ability to provide a framework for solving problems related to routing, connectivity, and optimization. In machine learning, graphs are used in various algorithms that operate on data represented as graphs, such as graph neural networks (GNNs), to capture the relationships between entities in a way that enhances predictive modeling and classification tasks.

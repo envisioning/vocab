@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
-  - 0.75
-  - 0.73
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
 slug: naive-bayesian-model
-summary: Probabilistic classifier that assumes strong (naive) independence between the features of a dataset.
+summary: Probabilistic classifier that assumes strong (naive) independence between
+  the features of a dataset.
 title: Naive Bayesian Model
+year_origin: 1960
 ---
 
 The Naive Bayesian model is based on Bayes' theorem, which describes the probability of an event based on prior knowledge of conditions that might be related to the event. In the context of machine learning, this model is used to predict the probability that a given instance belongs to a particular class, based on the conditional probabilities of the input features. The assumption of feature independence dramatically simplifies the computation, allowing the model to perform well with a small amount of data and making it particularly effective for applications such as spam filtering and document classification.

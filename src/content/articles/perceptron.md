@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.872
-  - 0.845
-  - 0.82
-  - 0.798
-  - 0.776
-  - 0.752
-  - 0.73
+- 0.872
+- 0.845
+- 0.82
+- 0.798
+- 0.776
+- 0.752
+- 0.73
 slug: perceptron
-summary: Model in neural networks designed to perform binary classification tasks by mimicking the decision-making process of a single neuron.
+summary: Model in neural networks designed to perform binary classification tasks
+  by mimicking the decision-making process of a single neuron.
 title: Perceptron
+year_origin: 1957
 ---
 
 The perceptron algorithm, introduced by Frank Rosenblatt in 1957, is foundational for understanding neural networks. It is a type of linear classifier, meaning it makes its predictions based on a linear predictor function combining a set of weights with the feature vector. The concept relies on adjusting these weights based on the input features to predict whether the input belongs to one class or another. If the output is above a certain threshold, the perceptron predicts one class; otherwise, it predicts another. This mechanism closely mimics the biological processes of neurons in the human brain, which fire (activate) or don't fire based on the strength of incoming signals. Despite its simplicity, the perceptron laid the groundwork for more complex neural networks by demonstrating how machines could learn from data and make decisions.

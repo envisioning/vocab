@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.55
-  - 0.525
-  - 0.5
-  - 0.475
-  - 0.45
-  - 0.425
-  - 0.4
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
+- 0.425
+- 0.4
 slug: nerf-neural-radiance-fields
-summary:
-  Technique for creating high-quality 3D models from a set of 2D images using deep learning.
+summary: Technique for creating high-quality 3D models from a set of 2D images using
+  deep learning.
 title: NeRF (Neural Radiance Fields)
+year_origin: 2020
 ---
 
 Neural Radiance Fields (NeRF) represents a groundbreaking approach in computer vision, leveraging the power of deep neural networks to synthesize highly detailed 3D scenes from a collection of 2D photographs. Unlike traditional 3D reconstruction methods that often require manual intervention or fail to capture intricate details, NeRF models the volumetric scene as a continuous function. This function maps spatial coordinates and viewing directions to color and density, using a neural network to predict the radiance emitted in any direction from any point in space. When integrated over a camera's view, this method can produce photorealistic 3D renderings. NeRF's capability to handle complex light interactions like reflections and shadows has opened new avenues in virtual reality, augmented reality, and visual effects industries.

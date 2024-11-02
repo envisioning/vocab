@@ -1,15 +1,16 @@
 ---
 generality:
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
-  - 0.75
-  - 0.73
-  - 0.71
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
+- 0.71
 slug: neurogenesis
 summary: Process by which new neurons are formed in the brain.
 title: Neurogenesis
+year_origin: 1962
 ---
 
 Neurogenesis is a critical aspect of brain plasticity, involving the generation of new neurons from neural stem cells. This process primarily occurs in specific regions of the brain, such as the hippocampus, which is crucial for learning, memory, and emotional regulation. Neurogenesis is influenced by various factors, including environmental stimuli, physical exercise, stress, and aging. Understanding neurogenesis has significant implications for treating neurological diseases, brain injuries, and cognitive disorders, as it offers potential pathways for enhancing brain repair and function.

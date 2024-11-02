@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.735
-  - 0.715
-  - 0.69
-  - 0.67
-  - 0.645
-  - 0.625
-  - 0.6
+- 0.735
+- 0.715
+- 0.69
+- 0.67
+- 0.645
+- 0.625
+- 0.6
 slug: xaviers-initialization
-summary:
-  Weight initialization technique designed to keep the variance of the outputs of a neuron approximately equal to the variance of its inputs across layers in a deep neural network.
+summary: Weight initialization technique designed to keep the variance of the outputs
+  of a neuron approximately equal to the variance of its inputs across layers in a
+  deep neural network.
 title: Xavier's Initialization
+year_origin: 2010
 ---
 
 Xavier's initialization addresses the problem of vanishing and exploding gradients in deep neural networks by maintaining a balance in the variance of the activations and gradients throughout the network. This method sets the initial weights of the network by drawing them from a distribution with zero mean and a specific variance that depends on the number of input and output neurons. The variance is typically set as the reciprocal of the average of the number of input and output units for each layer, ensuring that the signal neither diminishes nor becomes too large as it propagates forward through the layers during training. This method is crucial for effective learning in deep networks, especially when using activation functions like hyperbolic tangent (tanh) or logistic sigmoid.

@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.672
-  - 0.649
-  - 0.625
-  - 0.602
-  - 0.578
-  - 0.555
-  - 0.531
+- 0.672
+- 0.649
+- 0.625
+- 0.602
+- 0.578
+- 0.555
+- 0.531
 slug: triple
-summary: Data structure in the form of a three-part entity consisting of a subject, predicate, and object, commonly used in semantic web technologies and knowledge graphs.
+summary: Data structure in the form of a three-part entity consisting of a subject,
+  predicate, and object, commonly used in semantic web technologies and knowledge
+  graphs.
 title: Triple
+year_origin: 1999
 ---
 
 A triple is a fundamental unit in semantic web technologies and RDF (Resource Description Framework) data models. It consists of three components: the subject, which denotes the resource; the predicate, which expresses the relationship; and the object, which can be another resource or a literal value. This structure allows for the creation of complex graphs of interconnected data, enabling machines to understand and infer relationships between different data points. Triples are instrumental in constructing knowledge graphs, facilitating tasks such as data integration, querying, and inference in AI applications. For example, in a triple like "Alice (subject) knows (predicate) Bob (object)", it is clear that there is a relationship of 'knowing' between 'Alice' and 'Bob'.

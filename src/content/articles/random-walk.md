@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: random-walk
-summary: Mathematical concept representing a path consisting of a succession of random steps on some mathematical space.
+summary: Mathematical concept representing a path consisting of a succession of random
+  steps on some mathematical space.
 title: Random Walk
+year_origin: 1900
 ---
 
 A random walk is significant in various fields, including physics, economics, and computer science, particularly in algorithms and AI for modeling randomness in processes. It's a stochastic or random process that describes a path that consists of a series of random steps on a space such as the integers, a grid, or more complex structures like networks. In AI, random walks are used in algorithms to solve optimization problems, model natural processes, and in machine learning for exploring the state space of models, among other applications. Its properties, like the expected distance from the start point and the likelihood of returning to the starting point, are studied to understand and predict the behavior of complex systems and processes.

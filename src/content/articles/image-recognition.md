@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.9
-  - 0.875
-  - 0.86
-  - 0.85
-  - 0.84
-  - 0.83
-  - 0.82
+- 0.9
+- 0.875
+- 0.86
+- 0.85
+- 0.84
+- 0.83
+- 0.82
 slug: image-recognition
-summary: Ability of AI to identify objects, places, people, writing, and actions in images.
+summary: Ability of AI to identify objects, places, people, writing, and actions in
+  images.
 title: Image Recognition
+year_origin: 1960
 ---
 
 Image recognition technology uses algorithms and models to understand and categorize the content of images. It involves techniques that allow computers to process and interpret visual information similarly to the way humans do. The process typically involves the extraction of features from images and the use of machine learning or deep learning models, like convolutional neural networks (CNNs), to classify these features into various categories or labels. Image recognition is foundational in numerous applications, including facial recognition systems, autonomous vehicles, medical image analysis, and surveillance systems, highlighting its significance in both enhancing user experiences and addressing complex societal challenges.

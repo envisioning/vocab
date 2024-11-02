@@ -1,15 +1,16 @@
 ---
 generality:
-  - 0.95
-  - 0.92
-  - 0.9
-  - 0.89
-  - 0.87
-  - 0.86
-  - 0.84
+- 0.95
+- 0.92
+- 0.9
+- 0.89
+- 0.87
+- 0.86
+- 0.84
 slug: turing-completeness
 summary: Systems that can simulate a Turing machine's computational abilities.
 title: Turing Completeness
+year_origin: 1936
 ---
 
 Turing Completeness refers to a system's ability in computer science that can simulate a Turing machine, implying it possesses the computational power to solve any problem that a Turing machine can, given enough time and resources. This is the most basic kind of computing machine that is assumed in the theory of computation. A programming language or a cellular automaton, if Turing complete, can theoretically solve any computational problem, given sufficient resources. However, it doesn't provide any guarantees on efficiency or feasibility, such as runtime or memory usage.

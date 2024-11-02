@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.85
-  - 0.825
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
+- 0.875
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
+- 0.725
 slug: boosting
-summary: ML ensemble technique that combines multiple weak learners to form a strong learner, aiming to improve the accuracy of predictions.
+summary: ML ensemble technique that combines multiple weak learners to form a strong
+  learner, aiming to improve the accuracy of predictions.
 title: Boosting
+year_origin: 1989
 ---
 
 Boosting is a significant ensemble method in machine learning that focuses on converting a collection of weak learners into a strong one. A weak learner is defined as a classifier that performs slightly better than random guessing. The core idea behind boosting is to iteratively train weak classifiers with respect to a distribution and to add them to a final model where they vote on the final prediction. The distribution of data points is adjusted at each iteration so that the weights of incorrectly classified instances are increased, thereby forcing subsequent classifiers to focus more on difficult cases. This process reduces bias and variance, leading to improved model accuracy. AdaBoost (Adaptive Boosting) is one of the most well-known boosting algorithms, which adjusts the weights of incorrectly classified data points at each iteration and combines many weak learners to improve performance.

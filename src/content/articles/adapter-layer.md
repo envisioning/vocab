@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: adapter-layer
-summary: Neural network layer used to enable transfer learning by adding small, trainable modules to a pre-trained model, allowing it to adapt to new tasks with minimal additional training.
+summary: Neural network layer used to enable transfer learning by adding small, trainable
+  modules to a pre-trained model, allowing it to adapt to new tasks with minimal additional
+  training.
 title: Adapter Layer
+year_origin: 2019
 ---
 
 Adapter layers are specialized components in neural networks that facilitate the fine-tuning of pre-trained models for new tasks. These layers are typically small and introduced between existing layers of a pre-trained model, allowing the model to adapt to new data with only a few additional parameters to train. The primary advantage of adapter layers is their efficiency; they allow the reuse of large pre-trained models without the need for extensive retraining or significant computational resources. Adapter layers work by learning task-specific adjustments while keeping the original model's weights mostly unchanged, which helps in maintaining the benefits of the pre-trained features and reduces the risk of overfitting.

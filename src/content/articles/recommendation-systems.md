@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.85
-  - 0.855
-  - 0.86
-  - 0.865
-  - 0.87
-  - 0.875
-  - 0.88
+- 0.85
+- 0.855
+- 0.86
+- 0.865
+- 0.87
+- 0.875
+- 0.88
 slug: recommendation-systems
-summary: Algorithms designed to suggest relevant items to users (such as movies, books, products, etc.) based on their preferences and behaviors.
+summary: Algorithms designed to suggest relevant items to users (such as movies, books,
+  products, etc.) based on their preferences and behaviors.
 title: Recommendation Systems
+year_origin: 1992
 ---
 
 Recommendation systems play a pivotal role in enhancing user experience on various platforms by personalizing content delivery to match individual preferences. These systems analyze large volumes of data, including user interactions, item attributes, and contextual information, to predict and present the most relevant items to each user. They utilize a variety of machine learning techniques, such as collaborative filtering, content-based filtering, and hybrid methods, to achieve this. Collaborative filtering focuses on finding users who have similar preferences and recommends items that like-minded users have liked. Content-based filtering, on the other hand, recommends items similar to those a user has liked in the past based on item features. Hybrid approaches combine these methods to leverage their respective strengths and mitigate their weaknesses. The efficacy of recommendation systems is critical for user engagement, satisfaction, and retention in e-commerce, streaming services, and social media platforms.

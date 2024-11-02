@@ -1,15 +1,17 @@
 ---
-title: SNARC (Stochastic Neural Analog Reinforcement Calculator)
-summary: Recognized as one of the earliest electronic neural network machines, SNARC simulated a rat navigating a maze using analog components and probabilistic logic.
-slug: snarc-stochastic-neural-analog-reinforcement-calculator
 generality:
-  - 0.72
-  - 0.695
-  - 0.67
-  - 0.645
-  - 0.62
-  - 0.595
-  - 0.57
+- 0.72
+- 0.695
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
+slug: snarc-stochastic-neural-analog-reinforcement-calculator
+summary: Recognized as one of the earliest electronic neural network machines, SNARC
+  simulated a rat navigating a maze using analog components and probabilistic logic.
+title: SNARC (Stochastic Neural Analog Reinforcement Calculator)
+year_origin: 1950
 ---
 
 SNARC holds significant historical importance in the evolution of AI, as it was the first computational model to employ principles resembling those found in modern neural networks. Built in 1951, it employed analog circuitry to simulate learning behavior, specifically designed to mimic a rat's trial-and-error process when navigating a maze. The SNARC was foundational in demonstrating the potential for machines to exhibit adaptive behavior through reinforcement learning using stochastic processes. It introduced concepts that would later underpin the development of more sophisticated neural network models, serving as a practical testbed for ideas that were theoretical at the time. Despite its rudimentary nature compared to contemporary neural networks, SNARC illustrated the applicability of biological learning processes to computational systems and set the stage for future developments in connected, multi-node systems that operate on probabilistic feedback to optimize their actions.

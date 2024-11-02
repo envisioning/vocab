@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.355
-  - 0.365
-  - 0.375
-  - 0.385
-  - 0.395
-  - 0.405
-  - 0.415
+- 0.355
+- 0.365
+- 0.375
+- 0.385
+- 0.395
+- 0.405
+- 0.415
 slug: fast-weights
-summary: Fast weights are temporary, rapidly changing parameters in neural networks designed to capture transient patterns or short-term dependencies in data.
+summary: Fast weights are temporary, rapidly changing parameters in neural networks
+  designed to capture transient patterns or short-term dependencies in data.
 title: Fast Weights
+year_origin: 2016
 ---
 
 Fast weights are a type of adaptive parameter in neural networks that update quickly, in contrast to the slower, more stable conventional weights. They enable the network to dynamically adjust to new information or context within a single task or sequence, allowing for the capture of transient dependencies that standard weights might miss. This concept is particularly useful in recurrent neural networks (RNNs) and transformer models, where capturing short-term interactions between data points can significantly improve performance on tasks like language modeling, sequence prediction, and attention mechanisms. By facilitating rapid adaptation within a specific context, fast weights contribute to more flexible and responsive learning systems.

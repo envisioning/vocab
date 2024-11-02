@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.71
-  - 0.685
-  - 0.66
-  - 0.635
-  - 0.61
-  - 0.585
-  - 0.56
+- 0.71
+- 0.685
+- 0.66
+- 0.635
+- 0.61
+- 0.585
+- 0.56
 slug: npc-non-player-character
-summary:
-  Character in a virtual environment that operates under AI control, exhibiting behaviors or responses not directed by human players.
+summary: Character in a virtual environment that operates under AI control, exhibiting
+  behaviors or responses not directed by human players.
 title: NPC (Non-Player Character)
+year_origin: 1974
 ---
 
 NPCs in video games and simulations are designed to interact with players or the environment in a way that mimics human or lifelike behavior, making the virtual world more engaging and realistic. The creation and behavior of NPCs often leverage AI techniques such as finite state machines, behavior trees, and more recently, machine learning models to simulate intelligence, decision-making, and social interactions. This application of AI allows NPCs to adapt to player actions, exhibit complex behaviors, and contribute to dynamic storytelling and immersive gameplay experiences.

@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.72
-  - 0.698
-  - 0.675
-  - 0.652
-  - 0.63
-  - 0.608
-  - 0.585
+- 0.72
+- 0.698
+- 0.675
+- 0.652
+- 0.63
+- 0.608
+- 0.585
 slug: rejection-sampling
-summary: Method used to generate samples from a probability distribution by proposing candidates from a simpler distribution and accepting or rejecting them based on a criterion related to the target distribution.
+summary: Method used to generate samples from a probability distribution by proposing
+  candidates from a simpler distribution and accepting or rejecting them based on
+  a criterion related to the target distribution.
 title: Rejection Sampling
+year_origin: 1953
 ---
 
 Rejection sampling is a technique in probabilistic modeling and computational statistics where samples are drawn from a target distribution by using a proposal distribution that is easier to sample from. The algorithm works by sampling a candidate from the proposal distribution and then accepting or rejecting this candidate based on a comparison of the target and proposal distributions. Specifically, a candidate \( x \) is accepted with a probability proportional to the ratio of the target density \( f(x) \) to the scaled proposal density \( c \cdot g(x) \), where \( c \) is a constant ensuring that \( f(x) \leq c \cdot g(x) \) for all \( x \). This method is particularly useful in scenarios where direct sampling from the target distribution is challenging. Rejection sampling ensures that the accepted samples conform to the desired target distribution, making it valuable for tasks like Bayesian inference and other statistical modeling processes.

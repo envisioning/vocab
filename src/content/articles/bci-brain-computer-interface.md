@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.775
-  - 0.76
-  - 0.745
-  - 0.73
-  - 0.715
-  - 0.7
-  - 0.685
+- 0.775
+- 0.76
+- 0.745
+- 0.73
+- 0.715
+- 0.7
+- 0.685
 slug: bci-brain-computer-interface
-summary:
-  Enables direct communication pathways between the brain and external devices, allowing for control of computers or prosthetics with neural activity.
+summary: Enables direct communication pathways between the brain and external devices,
+  allowing for control of computers or prosthetics with neural activity.
 title: BCI (Brain Computer Interface)
+year_origin: 1973
 ---
 
 Brain-Computer Interface (BCI) technology is a groundbreaking field that focuses on developing direct communication pathways between a user's brain and external devices, bypassing conventional neuromuscular channels. This technology has significant applications in assisting individuals with disabilities, enhancing human-computer interaction, and even in entertainment and gaming. BCIs work by interpreting patterns of brain activity, which can be captured through various methods such as electroencephalography (EEG), and translating them into commands that control external devices or software. The technology is not only a testament to the advances in understanding neural signals but also a step towards integrating artificial intelligence in augmenting human capabilities and rehabilitation.

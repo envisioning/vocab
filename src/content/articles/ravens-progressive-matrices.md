@@ -8,8 +8,10 @@ generality:
 - 0.706
 - 0.7
 slug: ravens-progressive-matrices
-summary: A non-verbal assessment tool commonly used to measure abstract reasoning, which is often regarded as a component of general intelligence.
+summary: A non-verbal assessment tool commonly used to measure abstract reasoning,
+  which is often regarded as a component of general intelligence.
 title: Raven's Progressive Matrices
+year_origin: 1936
 ---
 
 Raven's Progressive Matrices are a standardized test designed to measure an individual's abstract reasoning ability, assuming no linguistic or specific topic knowledge, thereby evaluating the general intelligence quotient in an environment free from cultural biases. This assessment tool is essential in AI research for evaluating and developing models that attempt to mimic human cognitive abilities, such as pattern recognition and visual reasoning. AI systems employing computational models to solve Raven's Progressive Matrices test their capabilities concerning human-level reasoning, offering insights into the development of more advanced and autonomous AI systems.

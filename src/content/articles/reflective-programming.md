@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.762
-  - 0.745
-  - 0.721
-  - 0.7
-  - 0.681
-  - 0.66
-  - 0.642
+- 0.762
+- 0.745
+- 0.721
+- 0.7
+- 0.681
+- 0.66
+- 0.642
 slug: reflective-programming
-summary: Programming paradigm that allows a program to inspect and modify its own structure and behavior at runtime.
+summary: Programming paradigm that allows a program to inspect and modify its own
+  structure and behavior at runtime.
 title: Reflective Programming
+year_origin: 1983
 ---
 
 Reflective programming is significant in AI and software development because it enables systems to adapt to new circumstances, self-optimize, or modify their behavior based on introspection and external conditions without needing explicit instructions for every possible scenario. This capability is particularly valuable in AI for implementing systems that can adjust their algorithms or strategies based on their performance or changing environments, enhancing their autonomy and effectiveness. It underpins dynamic modification of code, which can be used for optimization, customization, or adapting AI models to specific tasks dynamically.

@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.91
-  - 0.885
-  - 0.86
-  - 0.835
-  - 0.81
-  - 0.785
-  - 0.76
+- 0.91
+- 0.885
+- 0.86
+- 0.835
+- 0.81
+- 0.785
+- 0.76
 slug: foundation-model
-summary: Type of large-scale pre-trained model that can be adapted to a wide range of tasks without needing to be trained from scratch each time.
+summary: Type of large-scale pre-trained model that can be adapted to a wide range
+  of tasks without needing to be trained from scratch each time.
 title: Foundation Model
+year_origin: 2021
 ---
 
 Foundation models, epitomized by models like GPT (Generative Pre-trained Transformer) and BERT (Bidirectional Encoder Representations from Transformers), are transformative in AI for their ability to leverage vast amounts of data to learn general representations that are applicable across many domains. These models are characterized by their large scale, both in terms of the data they are trained on and their parameter count, allowing them to achieve state-of-the-art performance on a variety of tasks with minimal task-specific tuning. The concept of foundation models introduces a shift in AI development towards more efficient, scalable, and flexible models that serve as a base for further specialization through techniques such as fine-tuning or transfer learning.

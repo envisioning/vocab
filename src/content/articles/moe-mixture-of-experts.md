@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.78
-  - 0.755
-  - 0.73
-  - 0.705
-  - 0.68
-  - 0.655
-  - 0.63
+- 0.78
+- 0.755
+- 0.73
+- 0.705
+- 0.68
+- 0.655
+- 0.63
 slug: moe-mixture-of-experts
-summary:
-  ML architecture that utilizes multiple specialist models (experts) to handle different parts of the input space, coordinated by a gating mechanism that decides which expert to use for each input.
+summary: ML architecture that utilizes multiple specialist models (experts) to handle
+  different parts of the input space, coordinated by a gating mechanism that decides
+  which expert to use for each input.
 title: MoE (Mixture of Experts)
+year_origin: 1991
 ---
 
 In the Mixture of Experts model, the overall prediction task is divided among a set of expert neural networks, each trained to specialize in a specific type of input data. This division is managed by a gating network which learns to assign different parts of the input space to the most competent experts. The experts and the gating network are trained simultaneously, allowing the system to dynamically allocate the computational focus depending on the complexity and nature of the input. MoE models are particularly useful in scenarios where different kinds of data or tasks are present, offering a scalable and efficient approach to handling large and diverse datasets by focusing on utilizing the expertise of individual models where they perform best.

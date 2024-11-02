@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.95
-  - 0.925
-  - 0.9
-  - 0.88
-  - 0.86
-  - 0.84
-  - 0.82
+- 0.95
+- 0.925
+- 0.9
+- 0.88
+- 0.86
+- 0.84
+- 0.82
 slug: supervised-learning
-summary: ML approach where models are trained on labeled data to predict outcomes or classify data into categories.
+summary: ML approach where models are trained on labeled data to predict outcomes
+  or classify data into categories.
 title: Supervised Learning
+year_origin: 1959
 ---
 
 Supervised Learning is foundational to many applications of artificial intelligence, where the goal is to learn a mapping from inputs to outputs based on example input-output pairs. It involves training a model on a dataset that contains both the input features and the corresponding target outputs. The model learns to make predictions or decisions by generalizing from the training data to unseen situations. This learning paradigm is central to numerous AI tasks, including classification, where the output is a label (e.g., spam or not spam), and regression, where the output is a continuous value (e.g., house prices). Supervised learning algorithms optimize their parameters to minimize the difference between the predicted output and the actual output in the training data, typically using methods like gradient descent.

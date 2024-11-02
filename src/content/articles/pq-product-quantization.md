@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
-  - 0.475
-  - 0.45
+- 0.6
+- 0.575
+- 0.55
+- 0.525
+- 0.5
+- 0.475
+- 0.45
 slug: pq-product-quantization
-summary:
-  Technique used in large-scale vector quantization for efficient similarity search and data compression by decomposing high-dimensional vectors into smaller sub-vectors and quantizing each sub-vector separately.
+summary: Technique used in large-scale vector quantization for efficient similarity
+  search and data compression by decomposing high-dimensional vectors into smaller
+  sub-vectors and quantizing each sub-vector separately.
 title: PQ (Product Quantization)
+year_origin: 2010
 ---
 
 Product quantization (PQ) is pivotal in the realm of similarity search and large-scale machine learning. It addresses the challenge of searching through massive datasets by breaking down high-dimensional vectors into smaller, more manageable sub-vectors. Each sub-vector is quantized independently, and the combination of these quantized sub-vectors approximates the original high-dimensional vector. This approach drastically reduces the memory footprint and computational complexity, enabling faster similarity searches. PQ is particularly effective in applications such as image retrieval, where it allows for approximate nearest neighbor (ANN) searches that are both computationally efficient and memory-conservative. The sub-vector quantization results in a significant reduction of the search space, thus expediting the retrieval process without substantial loss of accuracy.

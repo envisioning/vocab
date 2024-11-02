@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.893
-  - 0.879
-  - 0.865
-  - 0.851
-  - 0.837
-  - 0.823
-  - 0.81
+- 0.893
+- 0.879
+- 0.865
+- 0.851
+- 0.837
+- 0.823
+- 0.81
 slug: cross-entropy-loss
-summary: Loss function used to measure the difference between two probability distributions for a given random variable or set of events.
+summary: Loss function used to measure the difference between two probability distributions
+  for a given random variable or set of events.
 title: Cross entropy loss
+year_origin: 1991
 ---
 
 Cross entropy loss is crucial in machine learning, particularly in classification problems. It quantifies how well a predicted probability distribution matches the target distribution (the true labels), making it especially useful in training models like neural networks. By minimizing this loss, models can improve their accuracy in predicting outcomes. Cross entropy loss is effective because it penalizes incorrect classifications more heavily when the model is confident about its wrong predictions, accelerating learning and convergence by guiding the model to adjust significant weights.

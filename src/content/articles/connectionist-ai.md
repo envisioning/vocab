@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.93
-  - 0.92
-  - 0.91
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
 slug: connectionist-ai
-summary: Set of computational models in AI that simulate the human brain's network of neurons to process information and learn from data.
+summary: Set of computational models in AI that simulate the human brain's network
+  of neurons to process information and learn from data.
 title: Connectionist AI
+year_origin: 1943
 ---
 
 Connectionist AI, primarily encompassed by neural networks, represents an approach to AI that emphasizes the creation and use of artificial neural networks (ANNs) for processing data and making decisions. Unlike symbolic AI, which relies on explicit rules and logic, connectionist models learn patterns and relationships directly from data. This learning process is inspired by the biological processes of the human brain, where a vast network of neurons fires in response to stimuli, strengthening or weakening connections based on experience. In the context of AI, this translates to algorithms adjusting the weights of connections between artificial neurons during training to minimize error and improve performance on tasks such as classification, prediction, and pattern recognition. Connectionist models are particularly notable for their ability to learn representations of data in an unsupervised manner, making them versatile and powerful tools for a wide range of applications, including speech recognition, image processing, and natural language understanding.

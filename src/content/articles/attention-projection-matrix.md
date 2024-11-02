@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: attention-projection-matrix
-summary: Matrix used in attention mechanisms within neural networks, particularly in transformer models, to project input vectors into query, key, and value vectors.
+summary: Matrix used in attention mechanisms within neural networks, particularly
+  in transformer models, to project input vectors into query, key, and value vectors.
 title: Attention Projection Matrix
+year_origin: 2017
 ---
 
 In transformer models, the attention mechanism allows the network to weigh the importance of different parts of the input sequence when making predictions. The Attention Projection Matrix is critical in this process, as it transforms the input embeddings into three distinct vectors: queries (Q), keys (K), and values (V). These vectors are then used to calculate the attention scores, which determine how much focus each part of the input should receive. The query, key, and value vectors are derived through matrix multiplications with their respective learned projection matrices (W_q, W_k, W_v). The effectiveness of this transformation is pivotal for the model to capture and leverage relationships within the data, enabling sophisticated understanding and generation tasks in natural language processing.

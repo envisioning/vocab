@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
-  - 0.75
-  - 0.73
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
+- 0.73
 slug: object-detection
-summary: Computer vision technique that identifies and locates objects within an image or video frame.
+summary: Computer vision technique that identifies and locates objects within an image
+  or video frame.
 title: Object Detection
+year_origin: 2001
 ---
 
 Object detection combines elements of image classification and object localization. It not only categorizes what objects are present in an image (classification) but also provides information about where those objects are located (localization) through bounding boxes. This technology is crucial for various applications, including autonomous vehicles, security surveillance, and augmented reality, as it allows machines to understand and interact with their environment by recognizing objects and their spatial positions. Advanced object detection models leverage deep learning, particularly convolutional neural networks (CNNs), to achieve high accuracy in identifying and locating multiple objects within complex scenes.

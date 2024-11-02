@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: ssm-state-space-model
-summary:
-  Mathematical frameworks used to model dynamic systems by describing their states in space and how these states evolve over time under the influence of inputs, disturbances, and noise.
+summary: Mathematical frameworks used to model dynamic systems by describing their
+  states in space and how these states evolve over time under the influence of inputs,
+  disturbances, and noise.
 title: SSM (State-Space Model)
+year_origin: 1960
 ---
 
 State-space models are integral to control theory and signal processing, representing systems as a set of input, output, and state variables related by first-order differential equations. In these models, the system's current state is described by a set of state variables, and the evolution of these states is determined by linear or nonlinear equations. SSMs are particularly powerful for dealing with multi-variable systems where the interactions between variables may be complex and hidden. They are used extensively for system identification, time series analysis, forecasting, and control systems design, allowing for the accommodation of noise and other uncertainties in the modeling process.

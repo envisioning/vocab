@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.901
-  - 0.892
-  - 0.879
-  - 0.865
-  - 0.853
-  - 0.839
-  - 0.827
+- 0.901
+- 0.892
+- 0.879
+- 0.865
+- 0.853
+- 0.839
+- 0.827
 slug: quantum-computing
-summary: An area of computing focused on developing computer technology centered around the principles of quantum theory, which explains the behavior of energy and material on the quantum level.
+summary: An area of computing focused on developing computer technology centered around
+  the principles of quantum theory, which explains the behavior of energy and material
+  on the quantum level.
 title: Quantum Computing
+year_origin: 1980
 ---
 
 Quantum computing is a rapidly growing field that leverages the principles of quantum mechanics to execute computations. Unlike traditional computers which use bits (0s and 1s) to process information, quantum computers use quantum bits, or "qubits", which can exist in multiple states at once. This attribute, known as superposition, combined with the concept of "entanglement", a phenomenon where particles become interconnected and the state of one instantly influences the others, allows quantum computers to process large amounts of data at exponentially higher speeds than traditional computers. It has significant implications for AI and ML, because the power of quantum computing could potentially expedite data processing and complex computations, thereby accelerating the learning process of AI models and enabling breakthroughs in areas such as natural language processing, image recognition, and predictive analytics.

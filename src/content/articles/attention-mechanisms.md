@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.86
-  - 0.845
-  - 0.83
-  - 0.815
-  - 0.8
-  - 0.785
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: attention-mechanisms
-summary: Dynamically prioritize certain parts of input data over others, enabling models to focus on relevant information when processing complex data sequences.
+summary: Dynamically prioritize certain parts of input data over others, enabling
+  models to focus on relevant information when processing complex data sequences.
 title: Attention Mechanisms
+year_origin: 2014
 ---
 
 Attention mechanisms were introduced to improve the performance of neural networks by mimicking cognitive attention in human learning. They allow models to weigh the importance of different inputs differently, which is particularly useful in sequence-to-sequence tasks such as language translation, where the relevance of input elements can vary significantly. By focusing on the most relevant parts of the input data at each step of the computation, attention mechanisms can effectively handle long-range dependencies and improve the interpretability of model decisions. They are a cornerstone in state-of-the-art architectures, including Transformer models, which have revolutionized fields like Natural Language Processing (NLP) and Computer Vision (CV).

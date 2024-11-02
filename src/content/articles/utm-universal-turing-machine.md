@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.96
-  - 0.935
-  - 0.91
-  - 0.885
-  - 0.86
-  - 0.835
-  - 0.81
+- 0.96
+- 0.935
+- 0.91
+- 0.885
+- 0.86
+- 0.835
+- 0.81
 slug: utm-universal-turing-machine
-summary:
-  Theoretical construct in computer science that can simulate any other Turing machine's computing process given the appropriate input and its own machine's description.
+summary: Theoretical construct in computer science that can simulate any other Turing
+  machine's computing process given the appropriate input and its own machine's description.
 title: UTM (Universal Turing Machine)
+year_origin: 1936
 ---
 
 Universal Turing Machines (UTMs) are fundamental to the theory of computation and are used to demonstrate the ability of a single machine to perform any computation that any other Turing machine can execute. A UTM receives as input the description of an arbitrary Turing machine and a string that machine would process. It then effectively simulates that Turing machine’s behavior. This concept is central to understanding the principles of how modern computers operate, as it shows that a single machine can be general-purpose, capable of running any algorithm, assuming no limitations on time or memory. UTMs are also crucial in the study of decidability and computability, illustrating limitations such as those described by the Halting Problem.

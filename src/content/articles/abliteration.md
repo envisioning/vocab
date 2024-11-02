@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.21
-  - 0.22
-  - 0.23
-  - 0.24
-  - 0.25
-  - 0.26
-  - 0.27
+- 0.21
+- 0.22
+- 0.23
+- 0.24
+- 0.25
+- 0.26
+- 0.27
 slug: abliteration
-summary: Technique that uncensors language models by removing alignment restrictions without requiring retraining.
+summary: Technique that uncensors language models by removing alignment restrictions
+  without requiring retraining.
 title: Abliteration
+year_origin: 2022
 ---
 
 Abliteration involves fine-tuning a language model to bypass built-in refusal mechanisms that prevent the model from generating responses to potentially harmful or sensitive prompts. This is achieved by analyzing and manipulating the model's activations to distinguish between "harmful" and "harmless" prompts. By calculating and applying refusal directions at intermediate layers of the model, abliteration effectively removes these restrictions, enabling the model to generate responses to previously filtered content. The process requires caching and comparing activations, computing mean differences, and applying intervention hooks during inference to ensure the model responds to a wider range of inputs. This method has been shown to produce high-quality, uncensored models that maintain their performance on standard benchmarks​ ([Hugging Face](https://huggingface.co/blog/mlabonne/abliteration))​​ ([Hugging Face](https://huggingface.co/posts/mlabonne/866788930457283))​.

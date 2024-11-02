@@ -46,7 +46,7 @@ def calculate_importance_score(title: str, summary: str) -> list[float]:
     }
     
     data = {
-        "model": "gpt-4",
+        "model": "gpt-4o",
         "messages": [
             {"role": "system", "content": "You are an AI expert that scores terms based on their fundamental importance and generality. Always return exactly 7 scores in a JSON array."},
             {"role": "user", "content": prompt}

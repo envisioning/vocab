@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.5
-  - 0.475
-  - 0.45
-  - 0.425
-  - 0.4
-  - 0.375
-  - 0.35
+- 0.5
+- 0.475
+- 0.45
+- 0.425
+- 0.4
+- 0.375
+- 0.35
 slug: adapter
-summary: Lightweight, modular component added to a pre-trained model to fine-tune it for specific tasks without altering the original model's parameters significantly.
+summary: Lightweight, modular component added to a pre-trained model to fine-tune
+  it for specific tasks without altering the original model's parameters significantly.
 title: Adapter
+year_origin: 2019
 ---
 
 Adapters are a method of transfer learning that allow large pre-trained models to adapt to various downstream tasks efficiently. Instead of retraining the entire model, adapters introduce small additional layers or modules that are trained on the specific task while keeping the original model's parameters frozen. This approach significantly reduces the computational cost and resources required for fine-tuning, making it easier to leverage powerful pre-trained models across diverse applications. Adapters enable rapid customization and adaptability, making them particularly useful in settings where computational resources are limited or where frequent model updates are necessary.

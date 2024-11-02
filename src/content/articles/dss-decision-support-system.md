@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.8
-  - 0.785
-  - 0.775
-  - 0.76
-  - 0.74
-  - 0.73
-  - 0.72
+- 0.8
+- 0.785
+- 0.775
+- 0.76
+- 0.74
+- 0.73
+- 0.72
 slug: dss-decision-support-system
-summary:
-  A computerized program used to support determinations, judgments, and courses of action in an organization or a business.
+summary: A computerized program used to support determinations, judgments, and courses
+  of action in an organization or a business.
 title: DSS (Decision Support System)
+year_origin: 1965
 ---
 
 A Decision Support System (DSS) is an interactive, flexible, and adaptable computer-based information system that utilizes analytical models and data to assist in the decision-making process. It is typically employed for strategic and management level decisions. It helps to evaluate complex alternatives based on different variables. DSS can incorporate various types of models and data, including descriptive models, what-if analysis, optimization algorithms, and AI elements.

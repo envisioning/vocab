@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.62
-  - 0.6
-  - 0.585
-  - 0.57
-  - 0.555
-  - 0.54
-  - 0.525
+- 0.62
+- 0.6
+- 0.585
+- 0.57
+- 0.555
+- 0.54
+- 0.525
 slug: aco-ant-colony-optimization
-summary:
-  Probabilistic technique for solving computational problems which can be reduced to finding good paths through graphs, inspired by the behavior of ants seeking paths between their colony and food sources.
+summary: Probabilistic technique for solving computational problems which can be reduced
+  to finding good paths through graphs, inspired by the behavior of ants seeking paths
+  between their colony and food sources.
 title: ACO (Ant Colony Optimization)
+year_origin: 1992
 ---
 
 Ant Colony Optimization (ACO) is a nature-inspired algorithm that mimics the foraging behavior of ants to solve optimization problems, particularly those involving finding optimal paths or solutions in graphs. In the ACO, a number of artificial ants traverse a graph representing the problem, depositing pheromones on edges, which influence the path choice of subsequent ants. The amount of pheromone deposit is typically proportional to the quality of the solution found. Over time, paths that lead to better solutions become more attractive due to higher pheromone concentration, guiding more ants along those routes and iteratively improving the solutions. ACO has been effectively applied to various NP-hard problems like the Traveling Salesman Problem (TSP), vehicle routing, and network routing, showcasing its versatility and robustness in combinatorial optimization.

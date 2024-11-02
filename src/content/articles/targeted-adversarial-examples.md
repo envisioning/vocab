@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.315
-  - 0.295
-  - 0.275
-  - 0.255
-  - 0.235
-  - 0.215
-  - 0.195
+- 0.315
+- 0.295
+- 0.275
+- 0.255
+- 0.235
+- 0.215
+- 0.195
 slug: targeted-adversarial-examples
-summary: Inputs intentionally designed to cause a machine learning model to misclassify them into a specific, incorrect category.
+summary: Inputs intentionally designed to cause a machine learning model to misclassify
+  them into a specific, incorrect category.
 title: Targeted Adversarial Examples
+year_origin: 2014
 ---
 
 Targeted adversarial examples exploit vulnerabilities in machine learning models by introducing subtle perturbations to input data, such as images, text, or audio, to deceive the model into making a specific, incorrect prediction. Unlike untargeted adversarial examples, which only aim to cause a misclassification, targeted adversarial examples have a precise misclassification goal. For instance, modifying an image of a cat so that a neural network incorrectly classifies it as a dog. These examples highlight weaknesses in model robustness and security, serving as critical tools for testing and improving the resilience of AI systems against malicious attacks.

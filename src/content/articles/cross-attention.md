@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.72
-  - 0.705
-  - 0.69
-  - 0.675
-  - 0.66
-  - 0.645
-  - 0.63
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
+- 0.645
+- 0.63
 slug: cross-attention
-summary: Mechanism in neural networks that allows the model to weigh and integrate information from different input sources dynamically.
+summary: Mechanism in neural networks that allows the model to weigh and integrate
+  information from different input sources dynamically.
 title: Cross-Attention
+year_origin: 2017
 ---
 
 Cross-attention is primarily used in models where there are distinct but related input streams that need to be processed in relation to each other, such as in machine translation where the model must consider both the source and target text. The mechanism works by computing attention scores based on one set of inputs (e.g., a query from a decoder) against another set of inputs (e.g., keys and values from an encoder), enabling the model to focus on relevant parts of the input data when generating each part of the output. This selective attention enhances the model’s ability to handle complex tasks that involve relationships between different types of data, such as correlating visual regions with textual descriptions in image captioning.

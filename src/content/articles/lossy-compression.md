@@ -8,8 +8,10 @@ generality:
 - 0.6
 - 0.58
 slug: lossy-compression
-summary: A data encoding method that reduces file size by eliminating some information deemed less important, resulting in a loss of data quality.
+summary: A data encoding method that reduces file size by eliminating some information
+  deemed less important, resulting in a loss of data quality.
 title: Lossy Compression
+year_origin: 1972
 ---
 
 Lossy Compression plays a crucial role in the efficient storage and transmission of data, particularly where perfect accuracy is not necessary, such as in audio, image, and video files where human perception tolerates a degree of data loss. For AI applications, it proves significant by reducing the size of datasets needed for training models without a proportional impact on performance, facilitating faster processing and lessening computational load. This technique leverages psychoacoustic or visual models to identify and discard parts of data that are least perceptible to humans, thus preserving as much meaningful information as possible. While lossy compression may result in minor quality degradation, it is essential in many ML workflows where resource constraints and speed are prioritized over precision.

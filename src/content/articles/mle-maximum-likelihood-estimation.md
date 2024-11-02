@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.82
-  - 0.81
-  - 0.79
-  - 0.78
-  - 0.77
-  - 0.75
-  - 0.74
+- 0.82
+- 0.81
+- 0.79
+- 0.78
+- 0.77
+- 0.75
+- 0.74
 slug: mle-maximum-likelihood-estimation
-summary:
-  Statistical method used to estimate the parameters of a probability distribution by maximizing a likelihood function.
+summary: Statistical method used to estimate the parameters of a probability distribution
+  by maximizing a likelihood function.
 title: MLE (Maximum Likelihood Estimation)
+year_origin: 1912
 ---
 
 Maximum Likelihood Estimation (MLE) is a cornerstone in statistical inference, widely used in machine learning and data science for parameter estimation. The core idea of MLE is to find the set of parameters that make the observed data most probable under the assumed statistical model. Given a dataset and a parameterized probability model, the likelihood function is constructed as the joint probability of the observed data as a function of the parameters. The parameters that maximize this likelihood function are the MLE estimates. Mathematically, this involves taking the derivative of the likelihood function with respect to the parameters, setting it to zero, and solving for the parameters. MLE is particularly favored for its asymptotic properties, such as consistency (estimates converge to the true parameters as sample size increases) and efficiency (achieving the lowest possible variance among unbiased estimators in large samples).

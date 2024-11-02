@@ -8,8 +8,10 @@ generality:
 - 0.63
 - 0.62
 slug: surprisal
-summary: Measures the amount of unexpectedness or information content associated with a specific outcome in a probabilistic event.
+summary: Measures the amount of unexpectedness or information content associated with
+  a specific outcome in a probabilistic event.
 title: Surprisal
+year_origin: 1948
 ---
 
 Surprisal quantifies how surprising an event is by computing the negative logarithm of the probability of an event occurring, derived from information theory. This concept is significant in AI as it offers a mathematical way to assess and interpret the unpredictability inherent in model predictions, especially when dealing with probabilistic models and decision-making under uncertainty. In the context of AI, surprisal is often applied in fields such as natural language processing (NLP) and reinforcement learning to ascertain the informativeness or rarity of specific data points. By considering surprisal, algorithms can prioritize learning from less predictable data, thereby potentially increasing efficiency in model convergence and optimizing resource allocation during training processes.

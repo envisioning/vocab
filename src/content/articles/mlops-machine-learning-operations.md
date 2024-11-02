@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.86
-  - 0.845
-  - 0.83
-  - 0.815
-  - 0.8
-  - 0.785
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: mlops-machine-learning-operations
-summary:
-  Practice of collaboratively combining ML system development and ML system operation, aiming for faster deployment and reliable management.
+summary: Practice of collaboratively combining ML system development and ML system
+  operation, aiming for faster deployment and reliable management.
 title: MLOps (Machine Learning Operations)
+year_origin: 2018
 ---
 
 MLOps (Machine Learning Operations) is a multidisciplinary practice that bridges the gap between ML development and operations. It aims to streamline the process of designing, developing, deploying and managing ML solutions in the real world. MLOps involves a myriad of techniques such as continuous integration, continuous delivery, and automated ML. These practices are derived from DevOps, a set of practices aimed at shortening the system development lifecycle, and are now tailored to meet the specific demands of Machine Learning.

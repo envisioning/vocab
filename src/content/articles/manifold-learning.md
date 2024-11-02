@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.855
-  - 0.835
-  - 0.82
-  - 0.81
-  - 0.795
-  - 0.78
-  - 0.765
+- 0.855
+- 0.835
+- 0.82
+- 0.81
+- 0.795
+- 0.78
+- 0.765
 slug: manifold-learning
-summary: Type of non-linear dimensionality reduction technique used to uncover the underlying structure of high-dimensional data by assuming it lies on a lower-dimensional manifold.
+summary: Type of non-linear dimensionality reduction technique used to uncover the
+  underlying structure of high-dimensional data by assuming it lies on a lower-dimensional
+  manifold.
 title: Manifold Learning
+year_origin: 2000
 ---
 
 Manifold learning operates on the premise that high-dimensional data can often be represented in a more compact form without significant loss of information, by mapping it onto a lower-dimensional manifold embedded within the higher-dimensional space. This approach is particularly useful for understanding the intrinsic geometry of data, which traditional linear methods like PCA (Principal Component Analysis) might fail to capture. Techniques such as Isomap, Locally Linear Embedding (LLE), and t-SNE (t-distributed Stochastic Neighbor Embedding) are commonly used manifold learning algorithms. These methods seek to preserve local or global geometric properties of the data, making them powerful tools in fields like computer vision, bioinformatics, and natural language processing, where complex, high-dimensional data is prevalent.

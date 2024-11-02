@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.85
-  - 0.825
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
+- 0.875
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
+- 0.725
 slug: monte-carlo-estimation
-summary: A technique used within AI to approximate the probability of an event by running several simulations and observations.
+summary: A technique used within AI to approximate the probability of an event by
+  running several simulations and observations.
 title: Monte Carlo Estimation
+year_origin: 1949
 ---
 
 Monte Carlo estimation is a process often used within the sphere of AI, specifically in the areas of Machine Learning (ML) and reinforcement learning. This method is employed to approximate the probability or expectation of an event by running a number of random simulations, or Monte Carlo experiments, and then taking the mean of those outcomes. The result is an average estimation that gets more accurate the more iterations are performed. Despite the computational cost, they are preferred for problems where analytical solutions are inconvenient or impossible to achieve.

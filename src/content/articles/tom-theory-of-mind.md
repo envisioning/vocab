@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.67
-  - 0.66
-  - 0.675
-  - 0.685
-  - 0.68
-  - 0.665
-  - 0.67
+- 0.67
+- 0.66
+- 0.675
+- 0.685
+- 0.68
+- 0.665
+- 0.67
 slug: tom-theory-of-mind
-summary:
-  Cognitive ability to attribute mental states—such as beliefs, intentions, desires, and knowledge—to oneself and others, allowing one to understand that others have perspectives and intentions that differ from one's own.
+summary: Cognitive ability to attribute mental states—such as beliefs, intentions,
+  desires, and knowledge—to oneself and others, allowing one to understand that others
+  have perspectives and intentions that differ from one's own.
 title: ToM (Theory of Mind)
+year_origin: 1978
 ---
 
 - In AI, Theory of Mind refers to the effort to model systems capable of understanding and predicting human mental states, enabling machines to interpret and respond to the intentions, goals, and emotions of human users. This concept is essential for advancing human-AI interaction, as it underpins machines' ability to engage in more natural, adaptive communication and collaboration. ToM is particularly relevant in contexts like autonomous agents, social robotics, and virtual assistants, where understanding human behavior and anticipating responses is crucial for effective interaction. Developing AI with Theory of Mind capabilities is an ongoing challenge, involving advancements in both machine learning and cognitive science, as it requires models capable of reasoning about both explicit and implicit human intentions and beliefs.

@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.67
-  - 0.645
-  - 0.62
-  - 0.595
-  - 0.57
-  - 0.545
-  - 0.52
+- 0.67
+- 0.645
+- 0.62
+- 0.595
+- 0.57
+- 0.545
+- 0.52
 slug: kl-kullbackleibler-divergence
-summary:
-  Measure of how one probability distribution diverges from a second, reference probability distribution.
+summary: Measure of how one probability distribution diverges from a second, reference
+  probability distribution.
 title: KL (Kullback–Leibler) Divergence
+year_origin: 1951
 ---
 
 KL divergence quantifies the difference between two probability distributions P and Q, typically representing the "true" distribution and an approximation, respectively. It is a fundamental concept in information theory, often used in machine learning for tasks like optimizing models in probabilistic frameworks, such as in variational inference and Bayesian machine learning. It is always non-negative and zero only when P and Q are identical, making it a valuable tool for model comparison and improving predictive performance.

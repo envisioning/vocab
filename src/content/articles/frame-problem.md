@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: frame-problem
-summary: Challenge in AI of representing and updating the effects of actions in a dynamic world without having to explicitly state all conditions that remain unchanged.
+summary: Challenge in AI of representing and updating the effects of actions in a
+  dynamic world without having to explicitly state all conditions that remain unchanged.
 title: Frame Problem
+year_origin: 1969
 ---
 
 The frame problem arises in AI when trying to model how actions affect the state of the world. It deals with the difficulty of specifying what remains constant in a given situation when certain actions are performed. For example, if a robot picks up an object, the frame problem involves ensuring that the world model correctly updates to reflect this change without needing to re-specify all the unchanged facts, such as the color of the walls or the position of other objects. This problem is significant because it challenges the efficiency and scalability of logical systems in AI, particularly in planning and reasoning tasks. It underscores the complexity of creating systems that can handle real-world dynamics flexibly and efficiently.

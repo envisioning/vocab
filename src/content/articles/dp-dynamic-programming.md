@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.8
-  - 0.81
-  - 0.82
-  - 0.83
-  - 0.84
-  - 0.85
-  - 0.86
+- 0.8
+- 0.81
+- 0.82
+- 0.83
+- 0.84
+- 0.85
+- 0.86
 slug: dp-dynamic-programming
-summary:
-  Method used in computer science and mathematics to solve complex problems by breaking them down into simpler subproblems and solving each of these subproblems just once, storing their solutions.
+summary: Method used in computer science and mathematics to solve complex problems
+  by breaking them down into simpler subproblems and solving each of these subproblems
+  just once, storing their solutions.
 title: DP (Dynamic Programming)
+year_origin: 1952
 ---
 
 Dynamic programming (DP) is an algorithmic technique used for optimizing the calculation of recursive functions, based on the principle of dividing a problem into overlapping subproblems, solving each subproblem only once, and storing their solutions in a table for future reference. This approach is particularly useful in scenarios where many subproblems recur multiple times during the computation, such as in calculating the Fibonacci sequence, optimizing decision processes, or in algorithms for sequence alignment in bioinformatics. The key advantage of DP is its ability to transform exponential-time recursive algorithms into polynomial-time algorithms by trading computation for memory.

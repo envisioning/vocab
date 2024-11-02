@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: neuromorphic-chips
-summary: Specialized hardware designed to mimic the neural structures and functioning of the human brain to enhance computational efficiency and speed in processing AI algorithms.
+summary: Specialized hardware designed to mimic the neural structures and functioning
+  of the human brain to enhance computational efficiency and speed in processing AI
+  algorithms.
 title: Neuromorphic Chips
+year_origin: 1989
 ---
 
 Neuromorphic chips represent a significant shift in hardware architecture, designed specifically to emulate the neuro-biological architectures present in the nervous system. Unlike traditional CPUs that process tasks sequentially, neuromorphic chips integrate memory and processing in a manner akin to neurons and synapses, facilitating parallel processing and dynamic reconfiguration. This design allows for lower power consumption and faster processing of complex neural networks, making them particularly advantageous for tasks involving pattern recognition, sensory data interpretation, and real-time decision-making in AI systems. Their architecture supports a more natural integration with AI models that are inspired by biological processes, particularly those in cognitive and perceptual computing.

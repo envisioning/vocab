@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.805
-  - 0.79
-  - 0.775
-  - 0.76
-  - 0.745
-  - 0.73
-  - 0.715
+- 0.805
+- 0.79
+- 0.775
+- 0.76
+- 0.745
+- 0.73
+- 0.715
 slug: fcn-fully-convolutional-networks
-summary:
-  Neural network architecture designed specifically for image segmentation tasks, where the goal is to classify each pixel of an image into a category.
+summary: Neural network architecture designed specifically for image segmentation
+  tasks, where the goal is to classify each pixel of an image into a category.
 title: FCN (Fully Convolutional Networks)
+year_origin: 2015
 ---
 
 FCNs are pivotal in computer vision for their ability to output spatial maps instead of classification scores. This characteristic makes them ideal for tasks like semantic segmentation, where the objective is to understand an image at the pixel level. Unlike traditional convolutional neural networks (CNNs) that include fully connected layers and are thus constrained to input images of fixed dimensions, FCNs can process images of any size because they replace fully connected layers with convolutional layers. This modification allows the network to maintain spatial information throughout its layers, leading to more detailed and precise predictions. FCNs have been instrumental in advancing fields that require detailed image analysis, such as autonomous driving, medical image diagnosis, and satellite image interpretation.

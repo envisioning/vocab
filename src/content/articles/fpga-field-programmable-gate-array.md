@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: fpga-field-programmable-gate-array
-summary:
-  Type of integrated circuit that can be configured by the customer or designer after manufacturing.
+summary: Type of integrated circuit that can be configured by the customer or designer
+  after manufacturing.
 title: FPGA (Field-Programmable Gate Array)
+year_origin: 1985
 ---
 
 FPGA technology plays a crucial role in AI and machine learning due to its unique blend of flexibility and performance. Unlike fixed-function silicon chips, FPGAs can be reprogrammed to execute different tasks, making them adaptable for various AI algorithms and models. This ability to reconfigure provides significant advantages in AI applications where evolving algorithms and the need for hardware acceleration are common. FPGAs offer a balance between the general-purpose versatility of CPUs and the high-performance specialization of GPUs, enabling efficient processing for tasks like deep learning inference, signal processing, and data analysis with lower latency and power consumption.

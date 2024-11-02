@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.72
-  - 0.7
-  - 0.685
-  - 0.665
-  - 0.64
-  - 0.625
-  - 0.605
+- 0.72
+- 0.7
+- 0.685
+- 0.665
+- 0.64
+- 0.625
+- 0.605
 slug: secure-enclave
-summary: Hardware-based security feature designed to protect sensitive data by isolating it in a dedicated and secure area of a processor.
+summary: Hardware-based security feature designed to protect sensitive data by isolating
+  it in a dedicated and secure area of a processor.
 title: Secure Enclave
+year_origin: 2013
 ---
 
 A Secure Enclave is a specialized security component embedded within a processor, providing a secure area for executing sensitive tasks and storing confidential information, such as encryption keys, biometric data, and other personal identifiers. This enclave operates independently of the main operating system and its memory space, reducing the risk of attacks from malware or unauthorized access. By isolating critical data and cryptographic operations, the Secure Enclave ensures that even if the main system is compromised, the sensitive information remains protected. This technology is widely used in modern computing devices, including smartphones and laptops, to enhance security in authentication processes, secure boot sequences, and encrypted data storage.

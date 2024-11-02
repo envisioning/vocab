@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.85
-  - 0.825
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
-  - 0.7
+- 0.85
+- 0.825
+- 0.8
+- 0.775
+- 0.75
+- 0.725
+- 0.7
 slug: mlp-multilayer-perceptron
-summary:
-  Type of artificial neural network comprised of multiple layers of neurons, with each layer fully connected to the next, commonly used for tasks involving classification and regression.
+summary: Type of artificial neural network comprised of multiple layers of neurons,
+  with each layer fully connected to the next, commonly used for tasks involving classification
+  and regression.
 title: MLP (Multilayer Perceptron)
+year_origin: 1986
 ---
 
 The MLP operates through multiple layers, including an input layer, one or more hidden layers, and an output layer. Each neuron in these layers, except for the input nodes, applies a nonlinear activation function, typically sigmoid, hyperbolic tangent, or ReLU, to its weighted input to produce an output. MLPs use a method known as backpropagation for learning, which involves adjusting the weights of the network based on the error rate obtained in the previous epoch (i.e., the difference between the actual output and the predicted output). This makes MLPs highly effective for complex pattern recognition tasks, such as speech recognition, image classification, and predictive analytics, by capturing non-linear relationships in data.

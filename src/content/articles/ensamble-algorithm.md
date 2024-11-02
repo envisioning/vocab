@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
-  - 0.83
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
+- 0.83
 slug: ensamble-algorithm
-summary: Combines multiple machine learning models to improve overall performance by reducing bias, variance, or noise.
+summary: Combines multiple machine learning models to improve overall performance
+  by reducing bias, variance, or noise.
 title: Ensamble Algorithm
+year_origin: 1992
 ---
 
 Ensemble algorithms are designed to leverage the collective strengths of several models, often of different types, to improve predictive accuracy and robustness. This approach helps address limitations that individual models might have, such as overfitting, underfitting, or sensitivity to noise. Common techniques include bagging, which builds multiple versions of a model on different subsets of the data (e.g., Random Forest), and boosting, which sequentially trains models to correct errors from previous ones (e.g., AdaBoost, Gradient Boosting). By aggregating the predictions of multiple models, ensemble methods tend to outperform single-model approaches, especially in complex, high-dimensional datasets or noisy environments.

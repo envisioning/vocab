@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.84
-  - 0.815
-  - 0.79
-  - 0.765
-  - 0.74
-  - 0.715
-  - 0.69
+- 0.84
+- 0.815
+- 0.79
+- 0.765
+- 0.74
+- 0.715
+- 0.69
 slug: expert-system
-summary: Computer program designed to mimic the decision-making abilities of a human expert in a specific domain.
+summary: Computer program designed to mimic the decision-making abilities of a human
+  expert in a specific domain.
 title: Expert System
+year_origin: 1965
 ---
 
 Expert systems are a branch of artificial intelligence that leverage databases of knowledge and inference rules to simulate the expertise and decision-making skills of human specialists in particular fields. These systems are primarily composed of a knowledge base containing domain-specific facts and heuristics, and an inference engine that applies logical rules to the knowledge base to deduce new information or make decisions. They are designed to perform complex problem-solving and decision-making tasks, often in areas where human expertise is scarce, expensive, or difficult to access. Expert systems have been applied across various domains, including medicine for diagnostic purposes, finance for investment analysis, and engineering for design and troubleshooting.

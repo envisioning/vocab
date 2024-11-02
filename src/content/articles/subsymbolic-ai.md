@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.93
-  - 0.92
-  - 0.91
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
 slug: subsymbolic-ai
-summary: AI approaches that do not use explicit symbolic representation of knowledge but instead rely on distributed, often neural network-based methods to process and learn from data.
+summary: AI approaches that do not use explicit symbolic representation of knowledge
+  but instead rely on distributed, often neural network-based methods to process and
+  learn from data.
 title: Subsymbolic AI
+year_origin: 1986
 ---
 
 Subsymbolic AI encompasses techniques such as neural networks, genetic algorithms, and connectionist models that process information at a granular, sub-symbolic level. Unlike symbolic AI, which manipulates high-level human-readable symbols and rules, subsymbolic methods operate through interactions of many small, interconnected units. These units, often neurons in neural networks, collectively encode information in a distributed fashion, allowing for adaptive learning, pattern recognition, and generalization from large datasets. Subsymbolic AI excels in tasks where pattern recognition, sensory data processing, and prediction are required, such as image and speech recognition, autonomous driving, and natural language processing.

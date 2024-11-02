@@ -1,7 +1,4 @@
 ---
-title: Distillation Method
-summary: A technique used to streamline complex AI models by transferring the knowledge of a large model into a smaller, more efficient model without significant loss in performance.
-slug: distillation-method
 generality:
 - 0.76
 - 0.735
@@ -10,6 +7,12 @@ generality:
 - 0.66
 - 0.635
 - 0.61
+slug: distillation-method
+summary: A technique used to streamline complex AI models by transferring the knowledge
+  of a large model into a smaller, more efficient model without significant loss in
+  performance.
+title: Distillation Method
+year_origin: 2015
 ---
 
 In AI, the Distillation Method focuses on compressing large and complex models into simpler versions while retaining essential functionalities and efficiency. This method is particularly vital in contexts where computational resources are limited, such as deploying AI applications on edge devices or mobile systems. The process involves training a smaller model, termed the 'student', using the predictions of a larger, pre-trained 'teacher' model, leveraging soft labels to capture more information than hard labels would. By approximating the behavior of the cumbersome teacher model, the student model aims to replicate the original model's capabilities with significantly reduced memory and computation needs, thus facilitating more extensive real-world applications of AI models.

@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.75
-  - 0.735
-  - 0.72
-  - 0.705
-  - 0.69
-  - 0.675
-  - 0.66
+- 0.75
+- 0.735
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
 slug: ngpt-normalized-transformer
-summary:
-  Model architecture used in NLP, bringing significant efficiency in training and improvements in model robustness.
+summary: Model architecture used in NLP, bringing significant efficiency in training
+  and improvements in model robustness.
 title: nGPT (Normalized Transformer)
+year_origin: 2021
 ---
 
 The Normalized Transformer (nGPT) is a new twist on the transformer architecture that normalizes the input before it's processed by the model. This tweak substantially enhances training efficiency and improves the robustness of the model. Normalized transformers are especially valuable in Natural Language Processing (NLP) tasks where large-scale, high-dimensional data is typical. They contribute to more accurate translations, more coherent text generation and better context understanding among other applications.

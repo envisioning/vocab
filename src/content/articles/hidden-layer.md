@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.92
-  - 0.9
-  - 0.885
-  - 0.865
-  - 0.84
-  - 0.82
-  - 0.8
+- 0.92
+- 0.9
+- 0.885
+- 0.865
+- 0.84
+- 0.82
+- 0.8
 slug: hidden-layer
-summary: Layer of neurons in an artificial neural network that processes inputs from the previous layer, transforming the data before passing it on to the next layer, without direct exposure to the input or output data.
+summary: Layer of neurons in an artificial neural network that processes inputs from
+  the previous layer, transforming the data before passing it on to the next layer,
+  without direct exposure to the input or output data.
 title: Hidden Layer
+year_origin: 1986
 ---
 
 Hidden layers are pivotal components of neural networks, situated between the input and output layers, performing nonlinear transformations of the inputs into something that the output layer can use. Each neuron in these layers applies a set of weights to the inputs, adds a bias, and typically passes the result through a nonlinear activation function. This allows the network to learn complex patterns and relationships within the data, facilitating tasks such as image and speech recognition, natural language processing, and more. The architecture, including the number and size of hidden layers, significantly influences the network's capacity to model complex functions and generalize from the data.

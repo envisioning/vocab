@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: transfer-learning
-summary: ML method where a model developed for a task is reused as the starting point for a model on a second task, leveraging the knowledge gained from the first task to improve performance on the second.
+summary: ML method where a model developed for a task is reused as the starting point
+  for a model on a second task, leveraging the knowledge gained from the first task
+  to improve performance on the second.
 title: Transfer Learning
+year_origin: 1995
 ---
 
 Transfer learning is a powerful technique in machine learning that addresses the problem of having a limited amount of data for training models on a new task. It involves taking a pre-trained model (a model trained on a large dataset for a task that is related, but not identical, to the target task) and repurposing it for a different but related problem. By reusing the weights and architecture of the pre-trained model, transfer learning allows for significant improvements in learning efficiency and prediction accuracy for the new task, especially when the new task has relatively little data available for training. This is particularly useful in deep learning, where large models can be fine-tuned for specific tasks with comparatively less computational cost and time.

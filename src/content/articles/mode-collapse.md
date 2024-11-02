@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.45
-  - 0.425
-  - 0.4
-  - 0.375
-  - 0.35
-  - 0.325
-  - 0.3
+- 0.45
+- 0.425
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
 slug: mode-collapse
-summary: Phenomenon in Generative Adversarial Networks (GANs) where the generator produces limited, highly similar outputs, ignoring the diversity of the target data distribution.
+summary: Phenomenon in Generative Adversarial Networks (GANs) where the generator
+  produces limited, highly similar outputs, ignoring the diversity of the target data
+  distribution.
 title: Mode Collapse
+year_origin: 2014
 ---
 
 Mode collapse occurs when the generator in a GAN overfits to certain patterns in the training data, producing a narrow set of outputs while ignoring other possible variations (modes) in the data distribution. In essence, instead of generating diverse samples that reflect the variety in the input data, the generator collapses into producing nearly identical outputs. This is a critical issue because the goal of GANs is to create outputs that represent the full diversity of the underlying data distribution. Mode collapse can severely hinder the performance of GANs, especially in tasks like image synthesis, where diversity and variety are essential. Researchers have proposed various techniques to mitigate this issue, including modifying the loss function, using ensemble techniques, or improving the balance between the generator and discriminator training.

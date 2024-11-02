@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.87
-  - 0.865
-  - 0.86
-  - 0.855
-  - 0.85
-  - 0.845
+- 0.875
+- 0.87
+- 0.865
+- 0.86
+- 0.855
+- 0.85
+- 0.845
 slug: scientific-computing
-summary: Computational methods and tools to solve complex scientific and engineering problems.
+summary: Computational methods and tools to solve complex scientific and engineering
+  problems.
 title: Scientific Computing
+year_origin: 1946
 ---
 
 Scientific computing is an interdisciplinary field that utilizes advanced computing capabilities to understand and solve complex problems in science and engineering. This involves the development and application of mathematical models, numerical algorithms, and the use of computer simulations to analyze and predict the behavior of natural and engineered systems. It encompasses areas such as computational physics, chemistry, biology, and engineering, and often requires high-performance computing (HPC) resources to handle large-scale computations. The field is critical for tasks like climate modeling, computational fluid dynamics, molecular modeling, and the analysis of large data sets from experiments and simulations.

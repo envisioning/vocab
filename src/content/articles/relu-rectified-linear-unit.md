@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.9
-  - 0.885
-  - 0.87
-  - 0.855
-  - 0.84
-  - 0.825
-  - 0.81
+- 0.9
+- 0.885
+- 0.87
+- 0.855
+- 0.84
+- 0.825
+- 0.81
 slug: relu-rectified-linear-unit
-summary:
-  Activation function commonly used in neural networks which outputs the input directly if it is positive, otherwise, it outputs zero.
+summary: Activation function commonly used in neural networks which outputs the input
+  directly if it is positive, otherwise, it outputs zero.
 title: ReLU (Rectified Linear Unit)
+year_origin: 2000
 ---
 
 The ReLU function plays a crucial role in deep learning models by introducing non-linearity without affecting the positive inputs, which helps prevent the vanishing gradient problem often encountered with other activation functions like sigmoid or tanh. Its simplicity leads to better performance and faster convergence in many deep learning tasks, as it allows the network to learn complex patterns more effectively. ReLU is particularly beneficial because it does not activate all neurons at the same time, meaning that only a subset of neurons is active, providing sparse representations that are computationally efficient.

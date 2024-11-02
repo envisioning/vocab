@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.35
-  - 0.325
-  - 0.3
-  - 0.275
-  - 0.25
-  - 0.225
-  - 0.2
+- 0.35
+- 0.325
+- 0.3
+- 0.275
+- 0.25
+- 0.225
+- 0.2
 slug: c2pa-coalition-for-content-provenance-and-authenticity
-summary:
-  Initiative focused on establishing industry standards for authenticating digital media content to combat misinformation and ensure content provenance.
+summary: Initiative focused on establishing industry standards for authenticating
+  digital media content to combat misinformation and ensure content provenance.
 title: C2PA (Coalition for Content Provenance and Authenticity)
+year_origin: 2021
 ---
 
 The Coalition for Content Provenance and Authenticity (C2PA) addresses a growing concern in the digital age: the ease with which digital content can be manipulated and disseminated without clear origins, contributing to misinformation and eroding trust in digital media. By developing technical standards and specifications, C2PA aims to enable content creators, publishers, and distributors to provide end-users with metadata that certifies the source of content and details of any modifications made. This initiative is significant as it supports efforts to authenticate content across images, videos, documents, and more, thereby enhancing trust and transparency online. The C2PA's work is crucial in the context of AI and machine learning technologies, which are increasingly used to generate sophisticated deepfakes and other forms of synthetic media.

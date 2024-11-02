@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.87
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
-  - 0.75
+- 0.87
+- 0.85
+- 0.83
+- 0.81
+- 0.79
+- 0.77
+- 0.75
 slug: gps-general-problem-solver
-summary:
-  Early AI program designed to simulate human problem-solving processes through a heuristic-based approach.
+summary: Early AI program designed to simulate human problem-solving processes through
+  a heuristic-based approach.
 title: GPS (General Problem Solver)
+year_origin: 1957
 ---
 
 The General Problem Solver (GPS) was developed to demonstrate that a general-purpose problem-solving machine could tackle a wide variety of issues by using heuristics—rules of thumb that guide the search for solutions. GPS operates by representing problems in a formalized structure of goals and subgoals, transforming the initial state into the goal state through a sequence of operators. Its significance lies in pioneering the concept of problem-solving as a search process, influencing later AI research and development, particularly in areas like automated reasoning, planning, and cognitive simulation.

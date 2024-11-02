@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.86
-  - 0.85
-  - 0.84
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
+- 0.86
+- 0.85
+- 0.84
+- 0.83
+- 0.82
+- 0.81
+- 0.8
 slug: asr-automatic-speech-recognition
-summary:
-  Translates spoken language into written text, enabling computers to understand and process human speech.
+summary: Translates spoken language into written text, enabling computers to understand
+  and process human speech.
 title: ASR (Automatic Speech Recognition)
+year_origin: 1952
 ---
 
 ASR systems utilize a combination of acoustic and language modeling to interpret the audio signals of speech. Acoustic modeling maps audio signals to phonetic units or speech sounds, while language modeling uses statistical techniques to predict word sequences, improving the system's accuracy by considering the context and the likelihood of certain word combinations. This technology underpins a wide array of applications, from voice-activated assistants and dictation software to real-time transcription and automated customer service systems. Advances in deep learning and neural network architectures have significantly improved ASR accuracy and efficiency, making it a cornerstone of accessible and natural human-computer interaction.

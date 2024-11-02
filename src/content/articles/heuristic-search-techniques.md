@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.92
-  - 0.905
-  - 0.89
-  - 0.88
-  - 0.865
-  - 0.85
-  - 0.835
+- 0.92
+- 0.905
+- 0.89
+- 0.88
+- 0.865
+- 0.85
+- 0.835
 slug: heuristic-search-techniques
-summary: Methods used in AI to find solutions or make decisions more efficiently by using rules of thumb or informed guesses to guide the search process.
+summary: Methods used in AI to find solutions or make decisions more efficiently by
+  using rules of thumb or informed guesses to guide the search process.
 title: Heuristic Search Techniques
+year_origin: 1959
 ---
 
 Heuristic search techniques are critical in AI for optimizing problem-solving processes, particularly in complex or large search spaces where exhaustive search is impractical. These techniques rely on heuristics—strategies derived from experience or domain-specific knowledge—that help prioritize which paths to explore first. Common heuristic search methods include A\* search, which combines the cost to reach a node and an estimated cost to the goal, and greedy best-first search, which selects paths based on immediate benefits. Heuristics help reduce the search space, making it feasible to solve problems like pathfinding in navigation systems, game playing (e.g., chess), and optimizing operations in logistics.

@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.91
-  - 0.89
-  - 0.87
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
+- 0.91
+- 0.89
+- 0.87
+- 0.85
+- 0.83
+- 0.81
+- 0.79
 slug: superintelligence
-summary: A form of AI that surpasses the cognitive performance of humans in virtually all domains of interest, including creativity, general wisdom, and problem-solving.
+summary: A form of AI that surpasses the cognitive performance of humans in virtually
+  all domains of interest, including creativity, general wisdom, and problem-solving.
 title: Superintelligence
+year_origin: 1998
 ---
 
 The concept of superintelligence embodies an AI that can outperform the best human brains in every field, including scientific creativity, general wisdom, and social skills. This level of intelligence involves machines that are not only adept at understanding and processing vast amounts of information far beyond human capabilities but also capable of self-improvement and recursive learning, leading to an intelligence explosion. The implications of achieving superintelligence are profound, raising questions about ethics, societal impacts, control, and safety. The transition from AGI (Artificial General Intelligence) to superintelligence is considered a critical point, often referred to as the "singularity," where predicting the behavior and outcomes of such AI becomes increasingly difficult, if not impossible.

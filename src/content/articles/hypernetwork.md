@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.75
-  - 0.735
-  - 0.72
-  - 0.705
-  - 0.69
-  - 0.675
-  - 0.66
+- 0.75
+- 0.735
+- 0.72
+- 0.705
+- 0.69
+- 0.675
+- 0.66
 slug: hypernetwork
-summary: Neural network that generates the weights for another neural network, enabling dynamic adaptation and increased flexibility in learning and generalization.
+summary: Neural network that generates the weights for another neural network, enabling
+  dynamic adaptation and increased flexibility in learning and generalization.
 title: Hypernetwork
+year_origin: 2016
 ---
 
 Hypernetworks serve as auxiliary networks that produce the parameters for a target neural network, rather than using static parameters learned during traditional training processes. This architecture allows for more flexible and adaptive models, as the weights of the target network can change based on the input or other external conditions. Hypernetworks can help with tasks such as few-shot learning, where rapid adaptation to new data is crucial, and can improve the efficiency of neural network training by potentially reducing the number of parameters that need to be learned directly. By generating weights dynamically, hypernetworks can facilitate better generalization and handle a wider range of variations in data, making them a powerful tool for advanced AI applications.

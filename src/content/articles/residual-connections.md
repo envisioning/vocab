@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.825
-  - 0.815
-  - 0.81
-  - 0.805
-  - 0.8
-  - 0.795
-  - 0.785
+- 0.825
+- 0.815
+- 0.81
+- 0.805
+- 0.8
+- 0.795
+- 0.785
 slug: residual-connections
-summary: DL architecture feature designed to help alleviate the vanishing gradient problem by allowing gradients to flow through a network more effectively.
+summary: DL architecture feature designed to help alleviate the vanishing gradient
+  problem by allowing gradients to flow through a network more effectively.
 title: Residual Connections
+year_origin: 2015
 ---
 
 Residual connections are primarily utilized in the construction of deep neural networks, particularly in models known as Residual Networks (ResNets). They work by creating shortcuts that skip one or more layers, typically adding the output from an earlier layer to the output of a later layer. This approach helps to preserve the integrity of the information as it passes through the network, reducing the risk of information loss and making it possible to train much deeper networks effectively. The introduction of residual connections marked a significant advancement in deep learning, enabling the development of networks that are deeper and more complex than was previously possible without encountering severe training challenges.

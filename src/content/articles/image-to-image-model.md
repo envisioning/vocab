@@ -1,7 +1,4 @@
 ---
-title: Image-to-Image Model
-summary: A neural network framework that transforms an input image into an output image, maintaining the semantic context of visual data.
-slug: image-to-image-model
 generality:
 - 0.72
 - 0.695
@@ -10,6 +7,11 @@ generality:
 - 0.62
 - 0.595
 - 0.57
+slug: image-to-image-model
+summary: A neural network framework that transforms an input image into an output
+  image, maintaining the semantic context of visual data.
+title: Image-to-Image Model
+year_origin: 2016
 ---
 
 Image-to-Image models are a class of neural networks that facilitate various visual transformations by converting an input image into a different output image, while preserving semantic context. These models have gained significance in applications such as style transfer, where artistic styles from one image are applied to another, and in generating photorealistic images from sketches or segmentation maps. Image-to-Image models use techniques like convolutional neural networks (CNNs) and generative adversarial networks (GANs), leveraging their ability to capture spatial hierarchies in visual data. A prominent example of these models is the Pix2Pix framework, which utilizes paired datasets to learn a mapping between images. These models have become an essential part of computer vision and AI research due to their versatility in handling diverse image processing tasks.

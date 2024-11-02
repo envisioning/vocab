@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.8
-  - 0.805
-  - 0.81
-  - 0.815
-  - 0.82
-  - 0.825
-  - 0.83
+- 0.8
+- 0.805
+- 0.81
+- 0.815
+- 0.82
+- 0.825
+- 0.83
 slug: asi-artificial-super-intelligence
-summary:
-  Hypothetical form of AI that surpasses human intelligence across all domains, including creativity, general wisdom, and problem-solving capabilities.
+summary: Hypothetical form of AI that surpasses human intelligence across all domains,
+  including creativity, general wisdom, and problem-solving capabilities.
 title: ASI (Artificial Super Intelligence)
+year_origin: 1965
 ---
 
 ASI represents an advanced stage of AI development, where machines not only mimic but significantly exceed human cognitive abilities. This form of intelligence is characterized by its capacity to outperform the best human brains in practically every field, including scientific creativity, general wisdom, and social skills. The concept of ASI is central to discussions about the singularity—a theoretical point when AI's cognitive speed and effectiveness surpass human control. The emergence of ASI raises both opportunities and significant ethical concerns, as such intelligence could lead to unforeseen changes in technology, governance, and human life itself, prompting debates on control mechanisms and the moral implications of advanced autonomous systems.

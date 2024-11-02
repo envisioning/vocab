@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
+- 0.75
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
 slug: mpc-model-predictive-control
-summary:
-  Control algorithm that uses a model of the system to predict future states and optimizes control actions over a future time horizon.
+summary: Control algorithm that uses a model of the system to predict future states
+  and optimizes control actions over a future time horizon.
 title: MPC (Model-Predictive Control)
+year_origin: 1970
 ---
 
 Model-Predictive Control (MPC) is an advanced method of process control that has become essential in many areas of automation and robotics. It involves the use of a mathematical model of the process to predict the future states of a system over a specified horizon and then optimizes the control inputs to achieve desired outcomes while respecting constraints. MPC is known for its ability to handle multivariable systems with constraints and has applications ranging from chemical process control to automotive engineering and power systems. Its predictive nature allows for anticipatory control actions, making it highly effective in managing complex dynamics and disturbances.

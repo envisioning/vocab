@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.945
-  - 0.93
-  - 0.92
-  - 0.915
-  - 0.91
-  - 0.9
-  - 0.89
+- 0.945
+- 0.93
+- 0.92
+- 0.915
+- 0.91
+- 0.9
+- 0.89
 slug: cnn-convolutional-neural-network
-summary:
-  Deep learning algorithm that can capture spatial hierarchies in data, particularly useful for image and video recognition tasks.
+summary: Deep learning algorithm that can capture spatial hierarchies in data, particularly
+  useful for image and video recognition tasks.
 title: CNN (Convolutional Neural Network)
+year_origin: 1980
 ---
 
 CNNs represent a foundational breakthrough in computer vision, enabling machines to automatically and adaptively learn spatial hierarchies of features from images. This capability stems from the CNN's architecture, which is designed to mimic the human visual system's way of recognizing patterns and structures. A typical CNN architecture consists of convolutional layers, pooling layers, and fully connected layers. Convolutional layers apply a series of learnable filters to the input data, which helps the network identify various features such as edges or shapes. Pooling layers reduce the dimensionality of the data, simplifying the information without losing essential features. Finally, fully connected layers compile the data into a form that can be used for classification. This layered approach allows CNNs to handle complex image recognition tasks with high accuracy, making them integral to applications in facial recognition, autonomous vehicles, medical imaging analysis, and many areas of artificial intelligence where visual data is critical.

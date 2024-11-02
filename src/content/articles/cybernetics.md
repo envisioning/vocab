@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.93
-  - 0.92
-  - 0.91
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
+- 0.93
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
 slug: cybernetics
-summary: Interdisciplinary study of control and communication in living organisms and machines.
+summary: Interdisciplinary study of control and communication in living organisms
+  and machines.
 title: Cybernetics
+year_origin: 1948
 ---
 
 Cybernetics, coined by Norbert Wiener in the 1940s, encompasses the study of regulatory and feedback mechanisms in biological, mechanical, and electronic systems. It examines how systems self-regulate, adapt, and process information, using principles such as feedback loops, stability, and communication. This field has profoundly influenced areas like robotics, artificial intelligence, systems theory, and cognitive science, driving advancements in how we understand and design complex, adaptive systems. Cybernetics integrates knowledge from various disciplines, including biology, computer science, engineering, and philosophy, to explore the parallels and interactions between machines and living organisms.

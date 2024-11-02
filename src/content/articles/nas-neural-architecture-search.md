@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.86
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
-  - 0.76
-  - 0.74
+- 0.86
+- 0.84
+- 0.82
+- 0.8
+- 0.78
+- 0.76
+- 0.74
 slug: nas-neural-architecture-search
-summary:
-  Automated process that designs optimal neural network architectures for specific tasks.
+summary: Automated process that designs optimal neural network architectures for specific
+  tasks.
 title: NAS (Neural Architecture Search)
+year_origin: 2017
 ---
 
 Neural Architecture Search (NAS) represents a significant shift towards automating the design of neural networks, aiming to identify the most efficient architecture for a given task without human intervention. It employs various search strategies, such as reinforcement learning, evolutionary algorithms, and gradient-based methods, to explore the vast space of possible network architectures. NAS optimizes for multiple objectives, including accuracy, computational efficiency, and memory usage, tailoring the neural network design to specific requirements of applications ranging from image recognition to natural language processing. This automated process significantly reduces the time and expertise required to develop high-performing AI models, making advanced AI more accessible and customizable to a wide range of applications.

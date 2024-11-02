@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.77
-  - 0.76
-  - 0.75
-  - 0.74
-  - 0.73
-  - 0.72
-  - 0.71
+- 0.77
+- 0.76
+- 0.75
+- 0.74
+- 0.73
+- 0.72
+- 0.71
 slug: adam-adaptive-moment-estimation
-summary:
-  Algorithm for gradient-based optimization of stochastic objective functions, widely used in training DL models.
+summary: Algorithm for gradient-based optimization of stochastic objective functions,
+  widely used in training DL models.
 title: ADAM (Adaptive Moment Estimation)
+year_origin: 2015
 ---
 
 ADAM, an acronym for "Adaptive Moment Estimation," is a method that computes adaptive learning rates for each parameter. It combines the advantages of two other extensions of stochastic gradient descent: AdaGrad, which works well with sparse gradients, and RMSProp, which handles non-stationary objectives effectively. ADAM stores an exponentially decaying average of past squared gradients (v) and an exponentially decaying average of past gradients (m). These moments are estimates of the first (the mean) and second (the uncentered variance) moments of the gradients. The optimizer then uses these moments to update the model weights in a way that is particularly effective across many different types of machine learning problems and architectures, contributing to its popularity in the field.

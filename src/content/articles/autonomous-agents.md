@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.89
-  - 0.885
-  - 0.88
-  - 0.875
-  - 0.87
-  - 0.865
-  - 0.86
+- 0.89
+- 0.885
+- 0.88
+- 0.875
+- 0.87
+- 0.865
+- 0.86
 slug: autonomous-agents
-summary: Systems capable of independent action in dynamic, unpredictable environments to achieve designated objectives.
+summary: Systems capable of independent action in dynamic, unpredictable environments
+  to achieve designated objectives.
 title: Autonomous Agents
+year_origin: 1959
 ---
 
 Autonomous agents are integral to both theoretical and practical AI, embodying systems or software entities that act independently to perform tasks, make decisions, or achieve goals without constant human guidance. These agents are designed to perceive their environment through sensors, interpret the sensory information, and act upon the environment using actuators to achieve specific objectives. The significance of autonomous agents lies in their ability to adapt to changes, learn from interactions, and make autonomous decisions, which are crucial for applications ranging from autonomous vehicles and industrial robotics to intelligent software agents in complex simulations and virtual environments. Their development involves a multidisciplinary approach, incorporating insights from computer science, robotics, cognitive science, and artificial intelligence, focusing on aspects like decision-making, learning, adaptation, and interaction with humans and other agents.

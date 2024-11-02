@@ -8,8 +8,10 @@ generality:
 - 0.24
 - 0.22
 slug: indirect-manipulation
-summary: An interaction technique where users influence system tasks and behaviors through intermediary or abstract operations, deviating from direct interaction.
+summary: An interaction technique where users influence system tasks and behaviors
+  through intermediary or abstract operations, deviating from direct interaction.
 title: Indirect Manipulation
+year_origin: 1982
 ---
 
 Indirect manipulation in AI and user interface design refers to the method where users operate on data or systems not by directly engaging with them but through commands or actions that abstract or mediate the intended outcome. Its significance lies in scenarios where direct interaction is not feasible or optimal, leveraging automation, scripting, or higher-level commands to achieve desired results. Such techniques are pivotal in complex systems where users handle high-level functions that necessitate intermediary actions, such as in large-scale data processing, AI model training, or sophisticated software environments where users command certain responses through predefined interfaces without direct, granular control over the computational processes. This approach can enhance usability by simplifying interactions and reducing cognitive load, allowing users to focus on broader objectives without delving into technical specifics.

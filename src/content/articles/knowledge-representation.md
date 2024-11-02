@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.92
-  - 0.91
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
+- 0.92
+- 0.91
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
 slug: knowledge-representation
-summary: Method by which AI systems formalize and utilize the knowledge necessary to solve complex tasks.
+summary: Method by which AI systems formalize and utilize the knowledge necessary
+  to solve complex tasks.
 title: Knowledge Representation
+year_origin: 1956
 ---
 
 Knowledge Representation is crucial in AI for creating models that can simulate human understanding and reasoning. It encompasses the theories, techniques, and practices used to model the world for machines in a way that they can make sense of it, reason about it, and make decisions based on this understanding. This involves the use of various symbolic and non-symbolic approaches to encode information so that it is accessible and useful for AI processes. Effective knowledge representation enables the system to exhibit intelligent behavior, such as diagnosing problems, understanding natural language, planning, and learning. It relies on logic, ontologies, graphs, and schemas to structure and infer new knowledge, making it a foundational component in developing sophisticated AI systems.

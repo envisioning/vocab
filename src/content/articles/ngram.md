@@ -1,15 +1,16 @@
 ---
 generality:
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
+- 0.83
+- 0.82
+- 0.81
+- 0.8
+- 0.79
+- 0.78
+- 0.77
 slug: ngram
 summary: Contiguous sequence of N items from a given sample of text or speech.
 title: Ngram
+year_origin: 1980
 ---
 
 N-grams are crucial in computational linguistics and natural language processing (NLP) for modeling the likelihood of sequences of words or phonemes occurring in a given language. They serve as the building blocks for various applications, such as text prediction, speech recognition, and statistical machine translation. An n-gram model predicts the occurrence of an element based on the occurrences of the previous n-1 elements, thus providing a simple but effective way to capture linguistic context and dependencies. The effectiveness of an n-gram model usually depends on the size of n, where larger n provides more context but requires more computational resources and larger datasets to achieve accurate predictions.

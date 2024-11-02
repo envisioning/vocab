@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
+- 0.725
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
 slug: confusion-matrix
-summary: Table used to evaluate the performance of a classification model by visualizing its true versus predicted values.
+summary: Table used to evaluate the performance of a classification model by visualizing
+  its true versus predicted values.
 title: Confusion Matrix
+year_origin: 1954
 ---
 
 The confusion matrix is a fundamental tool in machine learning for assessing the accuracy of classification algorithms. It is particularly useful for binary classification tasks but can be extended to multi-class classification as well. The matrix compares the actual target values with those predicted by the model, offering insights into not just the overall accuracy but also more nuanced performance metrics such as precision, recall, and F1 score. By breaking down the instances of true positives, false positives, true negatives, and false negatives, it provides a clear visualization of the model's strengths and weaknesses in differentiating between classes. This granularity helps in refining models by highlighting areas where the model may be confusing one class for another, thereby guiding efforts to improve classification accuracy through feature engineering, model selection, or parameter tuning.

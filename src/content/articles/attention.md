@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: attention
-summary: Refers to mechanisms that allow models to dynamically focus on specific parts of input data, enhancing the relevance and context-awareness of the processing.
+summary: Refers to mechanisms that allow models to dynamically focus on specific parts
+  of input data, enhancing the relevance and context-awareness of the processing.
 title: Attention
+year_origin: 2014
 ---
 
 Attention mechanisms in AI are critical for improving the performance of neural networks by selectively concentrating on certain areas of input while ignoring others. This approach mimics the way human attention works, allowing the model to allocate its processing resources more efficiently. It is particularly influential in fields like natural language processing and computer vision, where it helps in tasks such as translation, text summarization, and image recognition by providing a means to handle long sequences or detailed images without loss of information. The versatility of attention mechanisms has led to significant improvements in the depth and subtlety with which models can interpret complex data.

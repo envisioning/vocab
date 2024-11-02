@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
+- 0.9
+- 0.89
+- 0.88
+- 0.87
+- 0.86
+- 0.85
+- 0.84
 slug: speech-processing
-summary: Technology that enables computers to recognize, interpret, and generate human speech.
+summary: Technology that enables computers to recognize, interpret, and generate human
+  speech.
 title: Speech Processing
+year_origin: 1952
 ---
 
 Speech Processing is a critical area in artificial intelligence that bridges the gap between human communication and computer understanding, encompassing a range of technologies such as speech recognition, speech synthesis (text-to-speech), and voice verification. Its significance lies not only in enabling seamless human-computer interaction through natural language but also in its applications across various fields, including automated customer service, voice-activated devices, language translation services, and assistive technologies for the visually impaired or those with speech and language disorders. The field combines knowledge from linguistics, computer science, and electrical engineering to develop algorithms that can process, understand, and generate human speech accurately.

@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.67
-  - 0.655
-  - 0.64
-  - 0.625
-  - 0.61
-  - 0.595
-  - 0.58
+- 0.67
+- 0.655
+- 0.64
+- 0.625
+- 0.61
+- 0.595
+- 0.58
 slug: active-inference
-summary: Theoretical framework in neuroscience and artificial intelligence that describes how agents infer and act to minimize their prediction errors about the state of the world.
+summary: Theoretical framework in neuroscience and artificial intelligence that describes
+  how agents infer and act to minimize their prediction errors about the state of
+  the world.
 title: Active Inference
+year_origin: 2006
 ---
 
 Active inference is based on the principle that both perception and action are driven by the minimization of free energy, which is a measure of the difference between expected and actual sensory inputs. This framework extends the predictive coding model, where the brain is seen as a prediction machine, constantly updating its beliefs about the environment to reduce discrepancies between predictions and sensory inputs. In AI, active inference models agents that engage in actions not just to achieve specific goals but to refine their models of the world, effectively learning by reducing uncertainty. This approach integrates perception, action, and learning in a unified theory, providing a robust model for understanding cognitive processes and developing adaptive artificial agents.

@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.89
-  - 0.865
-  - 0.84
-  - 0.815
-  - 0.79
-  - 0.765
-  - 0.74
+- 0.89
+- 0.865
+- 0.84
+- 0.815
+- 0.79
+- 0.765
+- 0.74
 slug: gofai-good-old-fashioned-ai
-summary:
-  Traditional approach to AI that relies on symbolic reasoning, logic, and rule-based systems to simulate intelligent behavior.
+summary: Traditional approach to AI that relies on symbolic reasoning, logic, and
+  rule-based systems to simulate intelligent behavior.
 title: GOFAI (Good Old-Fashioned AI)
+year_origin: 1965
 ---
 
 GOFAI, or Good Old-Fashioned AI, is a term often used to describe the classical approach to artificial intelligence that emerged in the mid-20th century. This approach emphasizes the use of symbolic representations of problems and logical inference as the primary mechanisms for simulating intelligent behavior. GOFAI systems are built on a foundation of predefined rules, where the world is represented through symbols (such as words or numbers), and the AI manipulates these symbols according to formal logic to draw conclusions or make decisions. These systems excel in areas where problems can be clearly defined and rules can be explicitly programmed, such as in expert systems or theorem proving. However, GOFAI has limitations in handling more complex, real-world environments where tasks require learning, perception, or dealing with uncertainty, which are better addressed by modern AI techniques like machine learning and neural networks.

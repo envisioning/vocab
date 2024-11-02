@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.8
-  - 0.805
-  - 0.81
-  - 0.815
-  - 0.82
-  - 0.825
-  - 0.83
+- 0.8
+- 0.805
+- 0.81
+- 0.815
+- 0.82
+- 0.825
+- 0.83
 slug: tts-text-to-speech
-summary:
-  Converts written text into spoken voice output, enabling computers to read text aloud.
+summary: Converts written text into spoken voice output, enabling computers to read
+  text aloud.
 title: TTS (Text-to-Speech)
+year_origin: 1968
 ---
 
 Text-to-Speech technology is pivotal in making digital content accessible to individuals who are visually impaired, as well as in applications where reading text might not be possible or practical, such as in driving or when hands-free interaction is required. It involves the use of deep learning models, particularly those trained on large datasets of spoken language, to generate speech that sounds similar to human voices. These models understand text inputs, including language idiosyncrasies and contextual pronunciation rules, to produce audio output that is increasingly natural and human-like. The development of TTS has seen significant advancements with the adoption of neural networks, leading to improvements in speech quality, naturalness, and the ability to convey emotions or intonations effectively.

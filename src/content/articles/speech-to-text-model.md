@@ -1,7 +1,4 @@
 ---
-title: Speech-to-Text Model
-summary: A computational model designed to convert spoken language into written text using AI and linguistic pattern recognition.
-slug: speech-to-text-model
 generality:
 - 0.85
 - 0.835
@@ -10,6 +7,11 @@ generality:
 - 0.79
 - 0.775
 - 0.76
+slug: speech-to-text-model
+summary: A computational model designed to convert spoken language into written text
+  using AI and linguistic pattern recognition.
+title: Speech-to-Text Model
+year_origin: 1980
 ---
 
 Speech-to-Text models are critical in AI, transforming audio input into textual data by leveraging advanced algorithms, including neural networks. These models typically employ techniques from ASR (Automatic Speech Recognition) systems, which have evolved from statistical models to deep learning-based approaches. The architecture often involves sequence prediction tasks, typically using RNNs (Recurrent Neural Networks), LSTMs (Long Short-Term Memory networks), or the more recent Transformers architecture. Their significance lies in providing a foundation for developing virtual assistants, transcription services, and accessibility tools, making voice data computable for further processing, analysis, or interaction.

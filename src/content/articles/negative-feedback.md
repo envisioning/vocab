@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.875
-  - 0.86
-  - 0.845
-  - 0.83
-  - 0.815
-  - 0.8
-  - 0.785
+- 0.875
+- 0.86
+- 0.845
+- 0.83
+- 0.815
+- 0.8
+- 0.785
 slug: negative-feedback
-summary: Control mechanism where the output of a system is fed back into the system in a way that counteracts fluctuations from a setpoint, thereby promoting stability.
+summary: Control mechanism where the output of a system is fed back into the system
+  in a way that counteracts fluctuations from a setpoint, thereby promoting stability.
 title: Negative Feedback
+year_origin: 1868
 ---
 
 In the context of artificial intelligence and machine learning, negative feedback is crucial for algorithms that adapt and learn over time. It plays a significant role in reinforcement learning and other adaptive systems, where the feedback loop is used to adjust parameters in the opposite direction of the deviation from a desired outcome. This mechanism helps in minimizing errors and optimizing the performance of algorithms. It is akin to the way biological systems maintain homeostasis and has been applied in AI to create systems that can adjust their behavior based on the outcomes of their actions, leading to more stable and accurate learning processes.

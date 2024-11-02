@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.8
-  - 0.805
-  - 0.81
-  - 0.815
-  - 0.82
-  - 0.825
-  - 0.83
+- 0.8
+- 0.805
+- 0.81
+- 0.815
+- 0.82
+- 0.825
+- 0.83
 slug: autoencoder
-summary: Type of artificial neural network used to learn efficient codings of unlabeled data, typically for the purpose of dimensionality reduction or feature learning.
+summary: Type of artificial neural network used to learn efficient codings of unlabeled
+  data, typically for the purpose of dimensionality reduction or feature learning.
 title: Autoencoder
+year_origin: 1987
 ---
 
 Autoencoders are designed to automatically learn representations (encodings) for a set of data, by training the network to ignore signal "noise." This is achieved by encoding inputs into a latent-space representation, and then decoding them back to the original inputs. The process aims to capture the most salient features of the data. Autoencoders consist of an encoder, a decoder, and a loss function that measures the information loss between the original input and its reconstruction. They are widely used in applications such as data denoising, dimensionality reduction for data visualization, generative models, and even in pretraining of neural networks for deep learning tasks.

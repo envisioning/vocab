@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.82
-  - 0.81
-  - 0.805
-  - 0.8
-  - 0.795
-  - 0.79
-  - 0.785
+- 0.82
+- 0.81
+- 0.805
+- 0.8
+- 0.795
+- 0.79
+- 0.785
 slug: multi-headed-attention
-summary: Mechanism in neural networks that allows the model to jointly attend to information from different representation subspaces at different positions.
+summary: Mechanism in neural networks that allows the model to jointly attend to information
+  from different representation subspaces at different positions.
 title: Multi-headed Attention
+year_origin: 2017
 ---
 
 Multi-headed attention is a core component of the transformer architecture, widely used in natural language processing and other AI tasks. This mechanism involves dividing the model's attention into multiple heads, each of which processes the input data independently across different subsets of dimensions, allowing the model to capture various aspects of the data simultaneously. This parallel processing enhances the model's ability to learn complex patterns and relationships within the data, leading to better performance on tasks like translation, text summarization, and contextual understanding. The outputs of these multiple heads are then combined to form a single attention output, providing a comprehensive representation of the input features.

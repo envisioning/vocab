@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: gat-graph-attention-network
-summary:
-  Type of neural network that applies attention mechanisms directly to graphs to dynamically prioritize information from different nodes in the graph.
+summary: Type of neural network that applies attention mechanisms directly to graphs
+  to dynamically prioritize information from different nodes in the graph.
 title: GAT (Graph Attention Network)
+year_origin: 2017
 ---
 
 GATs introduce an attention-based architecture to the field of graph neural networks (GNNs), allowing for node features to be aggregated in a way that is weighted by the importance of their neighbors, thus enabling more nuanced feature learning. Each node in a graph computes a coefficient that indicates the importance of its neighboring nodes, using a self-attention strategy. This attention mechanism is particularly useful in graph-structured data because it can manage varying node degrees and capture complex inter-node relationships in large-scale networks. GATs have been found effective in tasks such as node classification, link prediction, and graph classification, adapting well to both transductive and inductive learning problems.

@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.67
-  - 0.65
-  - 0.63
-  - 0.61
-  - 0.59
-  - 0.57
-  - 0.55
+- 0.67
+- 0.65
+- 0.63
+- 0.61
+- 0.59
+- 0.57
+- 0.55
 slug: alexnet
-summary: Deep convolutional neural network that significantly advanced the field of computer vision by winning the ImageNet Large Scale Visual Recognition Challenge in 2012.
+summary: Deep convolutional neural network that significantly advanced the field of
+  computer vision by winning the ImageNet Large Scale Visual Recognition Challenge
+  in 2012.
 title: AlexNet
+year_origin: 2012
 ---
 
 AlexNet is recognized as a pivotal development in the AI community, marking a resurgence of interest in neural networks, particularly in the domain of deep learning. It is structured as a deep convolutional neural network and was designed to process high-dimensional image data with remarkable accuracy. AlexNet consists of five convolutional layers followed by three fully connected layers, and it employs techniques such as ReLU (Rectified Linear Unit) activations, dropout for regularization, and overlapping pooling, which were innovative at the time. This architecture allowed AlexNet to achieve superior performance on complex image classification tasks, demonstrating the potential of deep neural networks in processing visual data at scale and with nuanced hierarchical feature extraction.

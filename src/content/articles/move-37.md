@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.11
-  - 0.12
-  - 0.13
-  - 0.14
-  - 0.15
-  - 0.16
-  - 0.17
+- 0.11
+- 0.12
+- 0.13
+- 0.14
+- 0.15
+- 0.16
+- 0.17
 slug: move-37
-summary: Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol, which showcased the superior strategic capabilities of AI in the game of Go.
+summary: Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol,
+  which showcased the superior strategic capabilities of AI in the game of Go.
 title: Move 37
+year_origin: 2016
 ---
 
 Move 37 in the context of AlphaGo vs. Lee Sedol signifies a landmark event in artificial intelligence, demonstrating the advanced problem-solving and intuitive capabilities of AI systems. This move was initially deemed unconventional and questionable by human experts but later revealed its strategic depth, leading to AlphaGo's victory. It exemplified how AI could transcend traditional human approaches in complex decision-making environments. The move underscored the potential of neural networks and deep reinforcement learning to master intricate tasks by learning from vast amounts of data and simulations, thus reshaping our understanding of AI's potential in strategic reasoning and its application beyond board games.

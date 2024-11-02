@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.725
-  - 0.71
-  - 0.695
-  - 0.68
-  - 0.665
-  - 0.65
-  - 0.635
+- 0.725
+- 0.71
+- 0.695
+- 0.68
+- 0.665
+- 0.65
+- 0.635
 slug: information-gap
-summary: Discrepancy between the information needed to solve a problem or make a decision and the information that is actually available.
+summary: Discrepancy between the information needed to solve a problem or make a decision
+  and the information that is actually available.
 title: Information Gap
+year_origin: 1989
 ---
 
 In the context of AI and data science, an information gap can significantly impact the accuracy and effectiveness of models and analyses. Information gaps arise due to incomplete, missing, or inaccessible data, and they can lead to biases, incorrect conclusions, and suboptimal decisions. Addressing these gaps often involves data collection, data imputation techniques, or leveraging auxiliary data sources to fill in missing pieces. Understanding and managing information gaps is crucial for building robust AI systems and ensuring the integrity of insights derived from data.

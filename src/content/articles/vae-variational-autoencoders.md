@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.793
-  - 0.769
-  - 0.745
-  - 0.721
-  - 0.697
-  - 0.673
-  - 0.649
+- 0.793
+- 0.769
+- 0.745
+- 0.721
+- 0.697
+- 0.673
+- 0.649
 slug: vae-variational-autoencoders
-summary:
-  Class of generative models that use neural networks to encode inputs into a latent space and then decode from this space to reconstruct the input or generate new data that resemble the input data.
+summary: Class of generative models that use neural networks to encode inputs into
+  a latent space and then decode from this space to reconstruct the input or generate
+  new data that resemble the input data.
 title: VAE (Variational Autoencoders)
+year_origin: 2013
 ---
 
 Variational Autoencoders stand out for their foundation in probability theory and their approach to generative modeling. They encode input data into a latent (hidden) space using a neural network, capturing the essence of the data in a compressed form. Another neural network then decodes these latent representations to reconstruct the input data or generate new data points. VAEs are distinguished by their use of a variational approach for latent representation learning, which involves optimizing the encoder and decoder simultaneously to minimize the difference between the original and reconstructed data, while also ensuring that the latent space has good properties (e.g., continuity, completeness) that allow for the generation of meaningful new data. This is achieved through a loss function that combines reconstruction loss with a regularization term based on the Kullback-Leibler divergence, ensuring the encoded data points are distributed in a manner conducive to generative processes.

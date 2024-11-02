@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
+- 0.7
+- 0.675
+- 0.65
+- 0.625
+- 0.6
+- 0.575
+- 0.55
 slug: vqa-visual-question-answering
-summary:
-  Field of AI where systems are designed to answer questions about visual content, such as images or videos.
+summary: Field of AI where systems are designed to answer questions about visual content,
+  such as images or videos.
 title: VQA (Visual Question Answering)
+year_origin: 2015
 ---
 
 VQA combines techniques from computer vision and natural language processing to interpret both the visual content of images or videos and the textual content of questions, providing relevant answers. This interdisciplinary challenge involves understanding the visual elements within a context, parsing the question to determine what information is being sought, and correlating the two to generate accurate and contextually appropriate answers. It exemplifies the intersection of understanding visual data and linguistic queries, requiring models to possess a deep understanding of both domains. Applications of VQA span from aiding visually impaired individuals to understand their surroundings better, to enhancing user interactions with digital content across various platforms.

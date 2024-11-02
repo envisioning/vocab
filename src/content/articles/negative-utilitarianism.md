@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.425
-  - 0.4
-  - 0.375
-  - 0.35
-  - 0.325
-  - 0.3
-  - 0.275
+- 0.425
+- 0.4
+- 0.375
+- 0.35
+- 0.325
+- 0.3
+- 0.275
 slug: negative-utilitarianism
-summary: Ethical theory that prioritizes minimizing suffering and negative experiences over maximizing happiness and positive experiences.
+summary: Ethical theory that prioritizes minimizing suffering and negative experiences
+  over maximizing happiness and positive experiences.
 title: Negative Utilitarianism
+year_origin: 1958
 ---
 
 Negative utilitarianism, a branch of utilitarian ethics, suggests that the primary moral obligation is to reduce suffering rather than to increase happiness. This philosophy argues that preventing pain and harm should take precedence over promoting pleasure and well-being. It provides a distinct perspective on moral decision-making, emphasizing the importance of alleviating suffering in situations where choices must be made. In AI ethics, negative utilitarianism can inform approaches to developing and deploying technology, prioritizing the minimization of harm to users and stakeholders, and addressing potential risks and negative impacts of AI systems.

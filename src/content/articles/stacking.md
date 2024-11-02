@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.81
-  - 0.805
-  - 0.8
-  - 0.795
-  - 0.79
-  - 0.785
-  - 0.78
+- 0.81
+- 0.805
+- 0.8
+- 0.795
+- 0.79
+- 0.785
+- 0.78
 slug: stacking
-summary: ML ensemble technique that combines multiple classification or regression models via a meta-classifier or meta-regressor to improve prediction accuracy.
+summary: ML ensemble technique that combines multiple classification or regression
+  models via a meta-classifier or meta-regressor to improve prediction accuracy.
 title: Stacking
+year_origin: 1992
 ---
 
 Stacking, or stacked generalization, involves training a new model to aggregate the predictions of several base models. The base models are typically different machine learning algorithms, and their predictions are used as inputs for the final model to make the final prediction. This approach leverages the strengths of each base model and mitigates their weaknesses, aiming to achieve better performance than any single model could on its own.

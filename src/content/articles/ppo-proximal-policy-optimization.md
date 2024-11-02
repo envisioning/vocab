@@ -1,16 +1,18 @@
 ---
 generality:
-  - 0.745
-  - 0.72
-  - 0.695
-  - 0.67
-  - 0.645
-  - 0.62
-  - 0.595
+- 0.745
+- 0.72
+- 0.695
+- 0.67
+- 0.645
+- 0.62
+- 0.595
 slug: ppo-proximal-policy-optimization
-summary:
-  RL algorithm that aims to balance ease of implementation, sample efficiency, and reliable performance by using a simpler but effective update method for policy optimization.
+summary: RL algorithm that aims to balance ease of implementation, sample efficiency,
+  and reliable performance by using a simpler but effective update method for policy
+  optimization.
 title: PPO (Proximal Policy Optimization)
+year_origin: 2017
 ---
 
 PPO stands out among reinforcement learning algorithms for its effectiveness and simplicity. It addresses the limitations of previous methods, such as Trust Region Policy Optimization (TRPO), by introducing a surrogate objective function that allows multiple updates per data sample while maintaining policy stability. This is achieved by clipping the probability ratio between the new and old policies, preventing excessive changes that could destabilize learning. PPO's design ensures that the policy updates stay within a trusted region without the computational complexity of calculating second-order derivatives or solving complex optimization problems. As a result, PPO has become a popular choice for training agents in various continuous and discrete action spaces, achieving competitive performance in benchmarks like Atari games and simulated robotics tasks.

@@ -1,15 +1,18 @@
 ---
 generality:
-  - 0.76
-  - 0.735
-  - 0.71
-  - 0.685
-  - 0.66
-  - 0.635
-  - 0.61
+- 0.76
+- 0.735
+- 0.71
+- 0.685
+- 0.66
+- 0.635
+- 0.61
 slug: replaced-token-detection
-summary: Method used in self-supervised learning where the task involves identifying or predicting tokens that have been intentionally altered or replaced in a given sequence.
+summary: Method used in self-supervised learning where the task involves identifying
+  or predicting tokens that have been intentionally altered or replaced in a given
+  sequence.
 title: Replaced Token Detection
+year_origin: 2020
 ---
 
 In natural language processing (NLP), replaced token detection is typically used to train models by providing them with a sequence of text where certain tokens (words or subwords) have been replaced by other tokens. The model's objective is to detect which tokens in the sequence are incorrect, leveraging the context provided by the surrounding tokens. This approach forces the model to understand the semantics and syntax of the language, improving its ability to generate coherent and contextually appropriate text. It is a variation of the masked language modeling (MLM) strategy, where instead of masking, tokens are replaced, requiring the model to distinguish between plausible but incorrect replacements and the correct tokens.

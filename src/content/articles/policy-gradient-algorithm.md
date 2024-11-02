@@ -1,15 +1,17 @@
 ---
 generality:
-  - 0.85
-  - 0.835
-  - 0.82
-  - 0.805
-  - 0.79
-  - 0.775
-  - 0.76
+- 0.85
+- 0.835
+- 0.82
+- 0.805
+- 0.79
+- 0.775
+- 0.76
 slug: policy-gradient-algorithm
-summary: Type of RL algorithm that optimizes the policy directly by computing gradients of expected rewards with respect to policy parameters.
+summary: Type of RL algorithm that optimizes the policy directly by computing gradients
+  of expected rewards with respect to policy parameters.
 title: Policy Gradient Algorithm
+year_origin: 1992
 ---
 
 Policy gradient algorithms aim to find the best policy, a strategy that defines the agent's actions based on its states, by optimizing it directly. Unlike value-based methods that estimate the value of actions or states, policy gradient methods adjust the parameters of the policy to maximize expected rewards. This is done by calculating the gradient of the expected reward concerning the policy parameters and using this gradient to update the policy parameters. This approach is advantageous in high-dimensional action spaces and for problems requiring stochastic policies. Algorithms like REINFORCE, Actor-Critic, and Proximal Policy Optimization (PPO) fall under this category, where the objective is to improve the policy iteratively based on the feedback from the environment.

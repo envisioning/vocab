@@ -1,16 +1,17 @@
 ---
 generality:
-  - 0.34
-  - 0.325
-  - 0.31
-  - 0.295
-  - 0.28
-  - 0.265
-  - 0.25
+- 0.34
+- 0.325
+- 0.31
+- 0.295
+- 0.28
+- 0.265
+- 0.25
 slug: findreplace-transformers
-summary:
-  Novel architectural extension of traditional transformers, designed to achieve Turing completeness and enhance model performance on complex tasks.
+summary: Novel architectural extension of traditional transformers, designed to achieve
+  Turing completeness and enhance model performance on complex tasks.
 title: Find+Replace Transformers
+year_origin: 2021
 ---
 
 Find+Replace Transformers represent an advancement in transformer technology, addressing the limitation of traditional transformers which are not Turing complete. This architecture integrates multiple transformers in a manner that allows for the execution of more complex, programmable operations that a single transformer cannot perform. The key feature is its ability to emulate arbitrary computational functionalities by decomposing them into simpler transformer-executable tasks. This capability is essential for tasks requiring higher-order reasoning and generalization beyond fixed pattern recognition, making them particularly valuable for tasks that benefit from deep semantic understanding and flexible adaptation.
