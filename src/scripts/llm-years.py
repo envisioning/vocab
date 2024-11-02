@@ -112,60 +112,40 @@ def process_markdown_files(directory: Path):
     years_dict = load_existing_years()
     logging.info(f"Found {len(years_dict)} existing terms in years.json\n")
     
-    # First pass - process all terms normally
+    # Get all markdown files
     md_files = list(directory.glob('**/*.md'))
     filtered_files = [f for f in md_files if 'src/content/articles/' not in str(f)]
     
-    logging.info(f"Found {len(filtered_files)} total Markdown files")
-    logging.info(f"Terms left to process: {len(filtered_files) - len(years_dict)}\n")
+    # Only process terms that have a year of 0
+    zero_terms = {slug: year for slug, year in years_dict.items() if year == 0}
+    logging.info(f"Found {len(zero_terms)} terms with year 0 to process\n")
     
-    total_files = len(filtered_files)
     processed = 0
+    total_files = len(zero_terms)
     
-    for md_file in filtered_files:
+    for slug in zero_terms:
         processed += 1
         logging.info(f"\nProgress: {processed}/{total_files} files")
         
         try:
+            # Find the corresponding markdown file
+            md_file = next(f for f in filtered_files if slug in str(f))
             post = frontmatter.load(md_file)
             title = post.metadata.get('title', '')
             summary = post.metadata.get('summary', '')
-            slug = post.metadata.get('slug', '')
             
-            if not title or not slug:
+            if not title:
                 continue
                 
-            # Skip if we already have this entry with a non-zero year
-            if slug in years_dict and years_dict[slug] != 0:
-                continue
-                
-            year = estimate_year_origin(title, summary)
-            years_dict[slug] = year
-            save_years(years_dict)
+            # Try to get the year with retry logic
+            year = estimate_year_origin(title, summary, retry=True)
+            if year != 0:  # Only update if we got a non-zero result
+                years_dict[slug] = year
+                save_years(years_dict)
                     
         except Exception as e:
-            print(f"Error processing {md_file}: {str(e)}")
+            print(f"Error processing {slug}: {str(e)}")
             continue
-    
-    # Second pass - retry terms that returned 0
-    zero_terms = {slug: title for slug, year in years_dict.items() if year == 0}
-    if zero_terms:
-        logging.info(f"\nRetrying {len(zero_terms)} terms that returned 0...")
-        
-        for slug, title in zero_terms.items():
-            try:
-                md_file = next(f for f in filtered_files if slug in str(f))
-                post = frontmatter.load(md_file)
-                summary = post.metadata.get('summary', '')
-                
-                year = estimate_year_origin(title, summary, retry=True)
-                if year != 0:  # Only update if we got a non-zero result
-                    years_dict[slug] = year
-                    save_years(years_dict)
-                    
-            except Exception as e:
-                print(f"Error retrying {slug}: {str(e)}")
-                continue
 
 def main():
     vocab_dir = Path('../content/articles/')
