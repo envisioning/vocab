@@ -634,8 +634,7 @@
     "yoshua bengio",
     "jürgen schmidhuber",
     "david ha",
-    "richard sutton",
-    "unknown"
+    "richard sutton"
   ],
   "next-word-prediction": [
     "geoffrey hinton",
@@ -691,8 +690,7 @@
     "yoshua bengio",
     "jun-yan zhu",
     "chelsea finn",
-    "jörg k.h. franke",
-    "unknown"
+    "jörg k.h. franke"
   ],
   "self-reasoning-token": [
     "unknown"
@@ -754,8 +752,7 @@
     "leo breiman",
     "peter hall",
     "jerome friedman",
-    "robert tibshirani",
-    "unknown"
+    "robert tibshirani"
   ],
   "shared-awareness": [
     "herbert simon",
@@ -802,8 +799,7 @@
     "george e. p. box",
     "david r. cox",
     "john von neumann",
-    "thomas bayes",
-    "unknown"
+    "thomas bayes"
   ],
   "full-sequence-diffusion": [
     "unknown"
@@ -958,8 +954,7 @@
     "bruce schneier",
     "john boyd",
     "michael j. mcguire",
-    "chris hables gray",
-    "unknown"
+    "chris hables gray"
   ],
   "attestation": [
     "david chaum",
@@ -994,8 +989,7 @@
     "tinghui zhou",
     "alexei a. efros",
     "richard zhang",
-    "taesung park",
-    "unknown"
+    "taesung park"
   ],
   "policy-parameters": [
     "unknown"
@@ -1015,8 +1009,7 @@
     "stephen wolfram",
     "david deutsch",
     "ilya prigogine",
-    "alan turing",
-    "unknown"
+    "alan turing"
   ],
   "mlp-multilayer-perceptron": [
     "geoffrey hinton",
@@ -1072,8 +1065,7 @@
     "john l. mcclelland",
     "peter whittle",
     "jan c. willems",
-    "h. vincent poor",
-    "unknown"
+    "h. vincent poor"
   ],
   "search": [
     "alan turing",
@@ -1135,8 +1127,7 @@
     "lillian lee",
     "peter turney",
     "theresa wilson",
-    "janyce wiebe",
-    "unknown"
+    "janyce wiebe"
   ],
   "joint-embedding-architecture": [
     "unknown"
@@ -1201,8 +1192,7 @@
     "nati srebro",
     "michael kearns",
     "aaron roth",
-    "jennifer wortman vaughan",
-    "unknown"
+    "jennifer wortman vaughan"
   ],
   "kaggle-effect": [
     "unknown"
@@ -1234,8 +1224,7 @@
     "daniel jackson",
     "michael ernst",
     "rajeev alur",
-    "hannes payer",
-    "unknown"
+    "hannes payer"
   ],
   "teacher-model": [
     "geoffrey hinton",
@@ -1243,8 +1232,7 @@
     "yoshua bengio",
     "baidu research team",
     "distillation team at google",
-    "jörg k.h. franke",
-    "unknown"
+    "jörg k.h. franke"
   ],
   "generative": [
     "ian goodfellow",
@@ -1288,8 +1276,7 @@
     "yann lecun",
     "ian goodfellow",
     "david ha",
-    "ruslan salakhutdinov",
-    "unknown"
+    "ruslan salakhutdinov"
   ],
   "xlstm": [
     "yoshua bengio",
@@ -1297,8 +1284,7 @@
     "jürgen schmidhuber",
     "sepp hochreiter",
     "alex graves",
-    "klaus greff",
-    "unknown"
+    "klaus greff"
   ],
   "assistant-model": [
     "unknown"
@@ -1309,8 +1295,7 @@
     "ramsey campbell",
     "brian lumley",
     "caitlín r. kiernan",
-    "thomas ligotti",
-    "unknown"
+    "thomas ligotti"
   ],
   "discount-factor": [
     "richard bellman",
@@ -1375,8 +1360,7 @@
     "john schulman",
     "julian schrittwieser",
     "thore graepel",
-    "michael johanson",
-    "unknown"
+    "michael johanson"
   ],
   "orchestration": [
     "gordon bell",
@@ -1417,8 +1401,7 @@
     "ilya prigogine",
     "herbert simon",
     "brian arthur",
-    "steven johnson",
-    "unknown"
+    "steven johnson"
   ],
   "agglomerative-clustering": [
     "eleanor r. mcgowan",
@@ -1474,8 +1457,7 @@
     "yann lecun",
     "alex krizhevsky",
     "david ha",
-    "chelsea finn",
-    "unknown"
+    "chelsea finn"
   ],
   "sparse-coupling": [
     "unknown"
@@ -1501,8 +1483,7 @@
     "david b. dunson",
     "richard l. smith",
     "peter j. bickel",
-    "david a. freedman",
-    "unknown"
+    "david a. freedman"
   ],
   "random-walk": [
     "karl pearson",
@@ -1604,8 +1585,7 @@
     "terence tao",
     "michael wainwright",
     "john d. hartigan",
-    "robert tibshirani",
-    "unknown"
+    "robert tibshirani"
   ],
   "blind-alley": [
     "unknown"
@@ -1616,8 +1596,7 @@
     "sivan sabato",
     "sanjeev arora",
     "shai shalev-shwartz",
-    "nati srebro",
-    "unknown"
+    "nati srebro"
   ],
   "gpu-graphics-processing-unit": [
     "nvidia corporation",
@@ -1679,8 +1658,7 @@
     "edvard i. moser",
     "may-britt moser",
     "richard f. thompson",
-    "michael a. arbib",
-    "unknown"
+    "michael a. arbib"
   ],
   "denoising-autoencoder": [
     "geoffrey hinton",
@@ -1758,10 +1736,7 @@
     "jacob devlin",
     "ming-wei chang",
     "kenton lee",
-    "kristina toutanova",
-    "unknown",
-    "unknown",
-    "unknown"
+    "kristina toutanova"
   ],
   "cot-chain-of-thought": [
     "unknown"
@@ -1874,8 +1849,7 @@
     "john langford",
     "thorsten joachims",
     "richard s. sutton",
-    "andrew y. ng",
-    "unknown"
+    "andrew y. ng"
   ],
   "softmax": [
     "unknown"
@@ -1991,8 +1965,7 @@
     "yann lecun",
     "ronald j. williams",
     "judea pearl",
-    "michael i. jordan",
-    "unknown"
+    "michael i. jordan"
   ],
   "task-environment": [
     "herbert a. simon",
@@ -2105,8 +2078,7 @@
     "jitendra malik",
     "richard szeliski",
     "ramin zabih",
-    "andrew y. ng",
-    "unknown"
+    "andrew y. ng"
   ],
   "lora-low-rank-adaptation": [
     "emilio k."
@@ -2126,8 +2098,7 @@
     "dan schultz",
     "hany farid",
     "francesca tripodi",
-    "kate starbird",
-    "unknown"
+    "kate starbird"
   ],
   "compute": [
     "alan turing",
@@ -2153,8 +2124,7 @@
     "david b. kirk",
     "wen-mei w. hwu",
     "jeffers d. a.",
-    "mark harris",
-    "unknown"
+    "mark harris"
   ],
   "inverse-problems": [
     "andrey tikhonov",
@@ -2204,8 +2174,7 @@
     "julian f. miller",
     "peter nordin",
     "riccardo poli",
-    "david b. fogel",
-    "unknown"
+    "david b. fogel"
   ],
   "generative-workflow": [
     "unknown"
@@ -2279,8 +2248,7 @@
     "diego j. gonzalez",
     "manfred morari",
     "frank l. lewis",
-    "j. karl hedrick",
-    "unknown"
+    "j. karl hedrick"
   ],
   "mdpo-mirror-descent-policy-optimization": [
     "unknown"
@@ -2348,8 +2316,7 @@
     "matthew tancik",
     "j. todd barron",
     "ravi ramamoorthi",
-    "ren ng",
-    "unknown"
+    "ren ng"
   ],
   "router": [
     "unknown"
@@ -2585,8 +2552,7 @@
     "yann lecun",
     "david silver",
     "richard sutton",
-    "jürgen schmidhuber",
-    "unknown"
+    "jürgen schmidhuber"
   ],
   "structured-data": [
     "edgar f. codd",
@@ -2666,8 +2632,7 @@
     "david silver",
     "john langford",
     "satinder singh",
-    "michael littman",
-    "unknown"
+    "michael littman"
   ],
   "early-exit-loss": [
     "unknown"
@@ -2678,8 +2643,7 @@
     "michael j. pazzani",
     "r. agerri",
     "david m. pennock",
-    "peter g. brown",
-    "unknown"
+    "peter g. brown"
   ],
   "information-integration": [
     "david maier",
@@ -2696,8 +2660,7 @@
     "pieter abbeel",
     "john schulman",
     "chelsea finn",
-    "igor mordatch",
-    "unknown"
+    "igor mordatch"
   ],
   "matryoshka-embedding": [
     "unknown"
@@ -2738,8 +2701,7 @@
     "james hendler",
     "tom heath",
     "peter mika",
-    "jennifer golbeck",
-    "unknown"
+    "jennifer golbeck"
   ],
   "a-life-artificial-life": [
     "john holland",
@@ -2804,8 +2766,7 @@
     "judea pearl",
     "josh tenenbaum",
     "leslie valiant",
-    "barbara grosz",
-    "unknown"
+    "barbara grosz"
   ],
   "confidential-computing": [
     "unknown"
@@ -2855,8 +2816,7 @@
     "james bergstra",
     "frank hutter",
     "lars kotthoff",
-    "kevin murphy",
-    "unknown"
+    "kevin murphy"
   ],
   "teacher-guided-rejection-sampling": [
     "unknown"
@@ -2870,8 +2830,7 @@
     "yann lecun",
     "zoubin ghahramani",
     "trevor darrell",
-    "dan hendrycks",
-    "unknown"
+    "dan hendrycks"
   ],
   "autocomplete": [
     "unknown"
@@ -2906,8 +2865,7 @@
     "kevin jamieson",
     "michael jordan",
     "philipp moritz",
-    "eric s. d. tang",
-    "unknown"
+    "eric s. d. tang"
   ],
   "hierarchical-planning": [
     "allen newell",
@@ -2924,8 +2882,7 @@
     "michael kearns",
     "satinder singh",
     "david silver",
-    "john langford",
-    "unknown"
+    "john langford"
   ],
   "bias-variance-dilemma": [
     "leo breiman",
@@ -3210,8 +3167,7 @@
     "kenton lee",
     "kristina toutanova",
     "ashish vaswani",
-    "noam shazeer",
-    "unknown"
+    "noam shazeer"
   ],
   "self-correction": [
     "john mccarthy",
@@ -3281,9 +3237,7 @@
     "david w. stow",
     "david l. s. h. lee",
     "david j. m. smith",
-    "robert a. p. s. h. k. wong",
-    "unknown",
-    "unknown"
+    "robert a. p. s. h. k. wong"
   ],
   "classification": [
     "john tukey",
@@ -3393,8 +3347,7 @@
     "ivan titov",
     "konstantin knyazev",
     "andriy mnih",
-    "david k. duvenaud",
-    "unknown"
+    "david k. duvenaud"
   ],
   "deterministic": [
     "isaac newton",
@@ -3483,8 +3436,7 @@
     "trevor darrell",
     "jake snell",
     "tsung-yi lin",
-    "andrea vedaldi",
-    "unknown"
+    "andrea vedaldi"
   ],
   "biocomputer": [
     "leonard adleman",
@@ -3516,8 +3468,7 @@
     "geoffrey e. hinton",
     "zoubin ghahramani",
     "christopher m. bishop",
-    "michael i. jordan",
-    "unknown"
+    "michael i. jordan"
   ],
   "video-to-3d-model": [
     "unknown"
@@ -3603,8 +3554,7 @@
     "yuxin chen",
     "abhinav gupta",
     "trevor darrell",
-    "zeynep akata",
-    "unknown"
+    "zeynep akata"
   ],
   "control-vector": [
     "unknown"
@@ -3633,8 +3583,7 @@
     "jakob hohwy",
     "thomas parr",
     "samir a. zohar",
-    "daniel h. wolpert",
-    "unknown"
+    "daniel h. wolpert"
   ],
   "csps-constraint-satisfaction-problems": [
     "john mccarthy",
@@ -3759,8 +3708,7 @@
     "yann lecun",
     "ilya sutskever",
     "richard sutton",
-    "jürgen schmidhuber",
-    "unknown"
+    "jürgen schmidhuber"
   ],
   "semi-supervised-learning": [
     "yoshua bengio",
@@ -3807,8 +3755,7 @@
     "kobbi nissim",
     "adam smith",
     "salil vadhan",
-    "shalmali joshi",
-    "unknown"
+    "shalmali joshi"
   ],
   "ppo-proximal-policy-optimization": [
     "john schulman",
@@ -3831,8 +3778,7 @@
     "andrew ng",
     "ilya sutskever",
     "google brain team",
-    "baidu research team",
-    "unknown"
+    "baidu research team"
   ],
   "lam-large-action-model": [
     "unknown"
@@ -3981,8 +3927,7 @@
     "yoshua bengio",
     "ilya sutskever",
     "alex krizhevsky",
-    "jürgen schmidhuber",
-    "unknown"
+    "jürgen schmidhuber"
   ],
   "negative-references": [
     "unknown"
@@ -4026,8 +3971,7 @@
     "peter norvig",
     "steven pinker",
     "jon kleinberg",
-    "google inc. team",
-    "unknown"
+    "google inc. team"
   ],
   "instrumentation": [
     "unknown"
@@ -4140,8 +4084,7 @@
     "chris burges",
     "yiming yang",
     "jianfeng gao",
-    "david heckerman",
-    "unknown"
+    "david heckerman"
   ],
   "eval-evaluation": [
     "unknown"
@@ -4239,8 +4182,7 @@
     "yann lecun",
     "stuart russell",
     "jürgen schmidhuber",
-    "richard sutton",
-    "unknown"
+    "richard sutton"
   ],
   "graph-theory": [
     "leonhard euler",
@@ -4257,8 +4199,7 @@
     "david g. luenberger",
     "peter s. maybeck",
     "jan c. willems",
-    "h. vincent poor",
-    "unknown"
+    "h. vincent poor"
   ],
   "foundation-model": [
     "geoffrey hinton",
@@ -4302,8 +4243,7 @@
     "william james",
     "herbert simon",
     "richard rorty",
-    "paul thagard",
-    "unknown"
+    "paul thagard"
   ],
   "pdoom": [
     "eliezer yudkowsky",
@@ -4335,8 +4275,7 @@
     "michael i. jordan",
     "trevor hastie",
     "robert tibshirani",
-    "jerome friedman",
-    "unknown"
+    "jerome friedman"
   ],
   "learnability": [
     "geoffrey hinton",
@@ -4371,8 +4310,7 @@
     "john r. anderson",
     "roger schank",
     "david l. pritchard",
-    "herbert a. simon",
-    "unknown"
+    "herbert a. simon"
   ],
   "reasoning-path": [
     "unknown"
@@ -4383,8 +4321,7 @@
     "yoshua bengio",
     "andrew ng",
     "dmitry vetrov",
-    "ali farhadi",
-    "unknown"
+    "ali farhadi"
   ],
   "rl-reinforcement-learning": [
     "richard sutton",
@@ -4470,8 +4407,7 @@
     "shai shalev-shwartz",
     "shalmali joshi",
     "raluca ada popa",
-    "rishabh singh",
-    "unknown"
+    "rishabh singh"
   ],
   "mtl-multi-task-learning": [
     "rich caruana",
@@ -4479,8 +4415,7 @@
     "yoshua bengio",
     "geoffrey hinton",
     "andrew y. ng",
-    "zhi-hua zhou",
-    "unknown"
+    "zhi-hua zhou"
   ],
   "3d-to-3d-model": [
     "unknown"
@@ -4622,8 +4557,7 @@
     "gail ross",
     "lev vygotsky",
     "barbara rogoff",
-    "richard e. mayer",
-    "unknown"
+    "richard e. mayer"
   ],
   "mmlu-massive-multitask-language-understanding": [
     "unknown"
@@ -4673,8 +4607,7 @@
     "piotr indyk",
     "rajeev motwani",
     "andrew yao",
-    "michael steinbach",
-    "unknown"
+    "michael steinbach"
   ],
   "dimension-returns": [
     "unknown"
@@ -4694,8 +4627,7 @@
     "fred glover",
     "john holland",
     "rainer storn",
-    "kenneth price",
-    "unknown"
+    "kenneth price"
   ],
   "uncertainty-reduction": [
     "claude shannon",
@@ -4712,11 +4644,7 @@
   "flash-attention": [
     "nikita kitaev",
     "łukasz kaiser",
-    "google research team",
-    "unknown",
-    "unknown",
-    "unknown",
-    "unknown"
+    "google research team"
   ],
   "masking": [
     "yoshua bengio",
@@ -4805,11 +4733,7 @@
   "straight-through-estimator": [
     "yuxin chen",
     "yann lecun",
-    "jörg k.h. franke",
-    "unknown",
-    "unknown",
-    "unknown",
-    "unknown"
+    "jörg k.h. franke"
   ],
   "god-in-a-box": [
     "unknown"
@@ -4865,8 +4789,7 @@
     "wulfram gerstner",
     "thomas p. lillicrap",
     "yoshua bengio",
-    "terrence j. sejnowski",
-    "unknown"
+    "terrence j. sejnowski"
   ],
   "sparse-autoencoder": [
     "geoffrey hinton",
@@ -4874,8 +4797,7 @@
     "andrew ng",
     "hugo larochelle",
     "pascal vincent",
-    "david wipf",
-    "unknown"
+    "david wipf"
   ],
   "feature-extraction": [
     "david marr",
@@ -4892,8 +4814,7 @@
     "andreas veit",
     "alexey dosovitskiy",
     "kevin gimpel",
-    "shalmali joshi",
-    "unknown"
+    "shalmali joshi"
   ],
   "acps-access-control-policies": [
     "unknown"
@@ -5123,8 +5044,7 @@
     "leslie valiant",
     "andrew yao",
     "richard m. karp",
-    "michael i. jordan",
-    "unknown"
+    "michael i. jordan"
   ],
   "token-speculation-techniques": [
     "unknown"
@@ -5135,8 +5055,7 @@
     "thomas k. landauer",
     "george w. furnas",
     "thomas a. holt",
-    "michael a. harshman",
-    "unknown"
+    "michael a. harshman"
   ],
   "stochastic": [
     "andrey kolmogorov",
@@ -5201,8 +5120,7 @@
     "yoshua bengio",
     "jürgen schmidhuber",
     "david silver",
-    "richard sutton",
-    "unknown"
+    "richard sutton"
   ],
   "assistant": [
     "unknown"
