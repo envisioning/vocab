@@ -34,7 +34,7 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
     start_time = time.time()
     
     if retry:
-        prompt = f"When was '{title}' first introduced or defined in AI? Return ONLY a year (YYYY) or 'unknown'. Context: {summary}"
+        prompt = f"When was '{title}' first introduced or defined in AI? Return ONLY a year (YYYY) with best estimate or 'unknown'. Context: {summary}"
     else:
         prompt = f"When was '{title}' first introduced or defined in AI? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
     
