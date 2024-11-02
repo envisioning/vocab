@@ -34,9 +34,9 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
     start_time = time.time()
     
     if retry:
-        prompt = f"In what year did the concept of '{title}' first appear in computer science, mathematics, or AI literature? Consider early foundational papers, books, or implementations. Return ONLY a year (YYYY) or 'unknown'. Context: {summary}"
+        prompt = f"When was '{title}' first introduced or defined in AI? Return ONLY a year (YYYY) or 'unknown'. Context: {summary}"
     else:
-        prompt = f"When was '{title}' first formally introduced or defined in computer science or AI? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
+        prompt = f"When was '{title}' first introduced or defined in AI? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
     
     logging.info(f"Prompt: {prompt}")
     
@@ -48,7 +48,7 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
     data = {
         "model": "gpt-4o-mini",  # Change to standard OpenAI model
         "messages": [
-            {"role": "system", "content": "You are a helpful AI historian focused on computer science, mathematics, and artificial intelligence. Respond only with a year (YYYY) or 'unknown'."},
+            {"role": "system", "content": "You are a helpful AI historian. Respond only with a year (YYYY) or 'unknown'."},
             {"role": "user", "content": prompt}
         ],
         "max_tokens": 50,
