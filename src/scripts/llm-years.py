@@ -30,12 +30,15 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
     """Estimate the year when an AI concept was first introduced."""
     logging.info(f"\nProcessing: {title}")
     logging.info("Sending API request..." + (" (retry attempt)" if retry else ""))
+    logging.info("-" * 50)
     start_time = time.time()
     
     if retry:
-        prompt = f"When did the concept or term '{title}' first emerge or become commonly used in AI/ML? Return ONLY a year (YYYY) or 'unknown'. Be less strict - if you're reasonably confident about a timeframe, provide your best estimate. Context: {summary}"
+        prompt = f"In what year did the concept of '{title}' first appear in computer science, mathematics, or AI literature? Consider early foundational papers, books, or implementations. Return ONLY a year (YYYY) or 'unknown'. Context: {summary}"
     else:
-        prompt = f"What year was the concept of '{title}' first introduced or formally defined? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
+        prompt = f"When was '{title}' first formally introduced or defined in computer science or AI? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
+    
+    logging.info(f"Prompt: {prompt}")
     
     headers = {
         'Authorization': f'Bearer {API_KEY}',
@@ -43,14 +46,16 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
     }
     
     data = {
-        "model": "gpt-4o-mini",
+        "model": "gpt-4o-mini",  # Change to standard OpenAI model
         "messages": [
-            {"role": "system", "content": "You are a helpful AI historian. Respond only with a year (YYYY) or 'unknown'."},
+            {"role": "system", "content": "You are a helpful AI historian focused on computer science, mathematics, and artificial intelligence. Respond only with a year (YYYY) or 'unknown'."},
             {"role": "user", "content": prompt}
         ],
         "max_tokens": 50,
         "temperature": 0.3
     }
+    
+    logging.info(f"Request data: {json.dumps(data, indent=2)}")
     
     try:
         response = requests.post(API_ENDPOINT, headers=headers, json=data)
@@ -59,7 +64,10 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
         elapsed_time = time.time() - start_time
         logging.info(f"API response received in {elapsed_time:.2f} seconds")
         
-        year_str = response.json()['choices'][0]['message']['content'].strip().lower()
+        response_json = response.json()
+        logging.info(f"Full API response: {json.dumps(response_json, indent=2)}")
+        
+        year_str = response_json['choices'][0]['message']['content'].strip().lower()
         logging.info(f"Raw response: {year_str}")
         
         try:
@@ -78,7 +86,10 @@ def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union
             
     except Exception as e:
         logging.error(f"API Error: {str(e)} (storing as 0)")
+        logging.error(f"Response content: {response.text if 'response' in locals() else 'No response'}")
         return 0
+    finally:
+        logging.info("-" * 50)
 
 def load_existing_years() -> dict:
     """Load existing year mappings from years.json."""
