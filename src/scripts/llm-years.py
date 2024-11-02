@@ -7,6 +7,7 @@ from typing import Union
 import signal
 from config import API_KEY
 import json
+import time
 
 logging.basicConfig(
     level=logging.INFO,
@@ -25,9 +26,16 @@ def signal_handler(signum, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
-def estimate_year_origin(title: str, summary: str) -> Union[int, None]:
+def estimate_year_origin(title: str, summary: str, retry: bool = False) -> Union[int, None]:
     """Estimate the year when an AI concept was first introduced."""
-    prompt = f"What year was the concept of '{title}' first introduced or formally defined? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
+    logging.info(f"\nProcessing: {title}")
+    logging.info("Sending API request..." + (" (retry attempt)" if retry else ""))
+    start_time = time.time()
+    
+    if retry:
+        prompt = f"When did the concept or term '{title}' first emerge or become commonly used in AI/ML? Return ONLY a year (YYYY) or 'unknown'. Be less strict - if you're reasonably confident about a timeframe, provide your best estimate. Context: {summary}"
+    else:
+        prompt = f"What year was the concept of '{title}' first introduced or formally defined? Return ONLY the year (YYYY) or 'unknown'. Context: {summary}"
     
     headers = {
         'Authorization': f'Bearer {API_KEY}',
@@ -48,22 +56,29 @@ def estimate_year_origin(title: str, summary: str) -> Union[int, None]:
         response = requests.post(API_ENDPOINT, headers=headers, json=data)
         response.raise_for_status()
         
+        elapsed_time = time.time() - start_time
+        logging.info(f"API response received in {elapsed_time:.2f} seconds")
+        
         year_str = response.json()['choices'][0]['message']['content'].strip().lower()
+        logging.info(f"Raw response: {year_str}")
         
         try:
             if year_str == 'unknown':
-                return None
+                logging.info("Result: unknown year (storing as 0)")
+                return 0
             year = int(year_str)
             if 1700 <= year <= 2025:
-                print(f"{title} → {year}")
+                logging.info(f"Result: {year}")
                 return year
-            return None
+            logging.info(f"Result: year {year} out of valid range (storing as 0)")
+            return 0
         except ValueError:
-            return None
+            logging.info(f"Result: could not parse year from response (storing as 0)")
+            return 0
             
     except Exception as e:
-        print(f"Error processing {title}: {str(e)}")
-        return None
+        logging.error(f"API Error: {str(e)} (storing as 0)")
+        return 0
 
 def load_existing_years() -> dict:
     """Load existing year mappings from years.json."""
@@ -86,13 +101,20 @@ def process_markdown_files(directory: Path):
     years_dict = load_existing_years()
     logging.info(f"Found {len(years_dict)} existing terms in years.json\n")
     
+    # First pass - process all terms normally
     md_files = list(directory.glob('**/*.md'))
     filtered_files = [f for f in md_files if 'src/content/articles/' not in str(f)]
     
     logging.info(f"Found {len(filtered_files)} total Markdown files")
     logging.info(f"Terms left to process: {len(filtered_files) - len(years_dict)}\n")
     
+    total_files = len(filtered_files)
+    processed = 0
+    
     for md_file in filtered_files:
+        processed += 1
+        logging.info(f"\nProgress: {processed}/{total_files} files")
+        
         try:
             post = frontmatter.load(md_file)
             title = post.metadata.get('title', '')
@@ -102,20 +124,37 @@ def process_markdown_files(directory: Path):
             if not title or not slug:
                 continue
                 
-            # Skip if we already have this entry
-            if slug in years_dict:
+            # Skip if we already have this entry with a non-zero year
+            if slug in years_dict and years_dict[slug] != 0:
                 continue
                 
             year = estimate_year_origin(title, summary)
-            
-            if year is not None:
-                years_dict[slug] = year
-                # Save after each successful addition
-                save_years(years_dict)
+            years_dict[slug] = year
+            save_years(years_dict)
                     
         except Exception as e:
             print(f"Error processing {md_file}: {str(e)}")
             continue
+    
+    # Second pass - retry terms that returned 0
+    zero_terms = {slug: title for slug, year in years_dict.items() if year == 0}
+    if zero_terms:
+        logging.info(f"\nRetrying {len(zero_terms)} terms that returned 0...")
+        
+        for slug, title in zero_terms.items():
+            try:
+                md_file = next(f for f in filtered_files if slug in str(f))
+                post = frontmatter.load(md_file)
+                summary = post.metadata.get('summary', '')
+                
+                year = estimate_year_origin(title, summary, retry=True)
+                if year != 0:  # Only update if we got a non-zero result
+                    years_dict[slug] = year
+                    save_years(years_dict)
+                    
+            except Exception as e:
+                print(f"Error retrying {slug}: {str(e)}")
+                continue
 
 def main():
     vocab_dir = Path('../content/articles/')

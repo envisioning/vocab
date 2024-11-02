@@ -72,7 +72,7 @@ def classify_content(title: str, summary: str) -> str:
     }
     
     data = {
-        "model": "gpt-4",
+        "model": "gpt-4o-mini",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant that classifies content into predefined categories."},
             {"role": "user", "content": prompt}

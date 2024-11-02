@@ -30,6 +30,8 @@ signal.signal(signal.SIGINT, signal_handler)
 
 def identify_key_names(title: str, summary: str) -> Union[list[str], None]:
     """Identify 1-7 key people associated with an AI concept."""
+    logging.info(f"\nProcessing: {title}")
+    
     prompt = f"Who are the 1-7 MOST significant people (researchers, inventors, creators) associated with developing or pioneering '{title}'? Return ONLY a comma-separated list of full names (maximum 7 names), or 'unknown' if uncertain. Focus on the primary inventors/creators only. Context: {summary}"
     
     headers = {
@@ -48,23 +50,35 @@ def identify_key_names(title: str, summary: str) -> Union[list[str], None]:
     }
     
     try:
+        logging.info("Making API request...")
         response = requests.post(API_ENDPOINT, headers=headers, json=data)
         response.raise_for_status()
         
+        logging.info(f"API Response Status: {response.status_code}")
+        logging.debug(f"API Response: {response.json()}")
+        
         names_str = response.json()['choices'][0]['message']['content'].strip().lower()
+        logging.info(f"Raw API response: {names_str}")
         
         if names_str == 'unknown':
-            return None
+            logging.info("Result: unknown")
+            return ['unknown']
             
         names = [name.strip() for name in names_str.split(',')]
-        if 1 <= len(names) <= 3:
-            print(f"{title} → {', '.join(names)}")
+        if 1 <= len(names) <= 7:
+            logging.info(f"Result: {', '.join(names)}")
             return names
-        return None
+        logging.info("Result: unknown (invalid number of names)")
+        return ['unknown']
             
+    except requests.exceptions.RequestException as e:
+        logging.error(f"API request failed: {str(e)}")
+        if hasattr(e.response, 'json'):
+            logging.error(f"API error details: {e.response.json()}")
+        return ['unknown']
     except Exception as e:
-        print(f"Error processing {title}: {str(e)}")
-        return None
+        logging.error(f"Unexpected error: {str(e)}")
+        return ['unknown']
 
 def process_markdown_files(directory: Path):
     """Process all markdown files and collect results in a dictionary."""
@@ -124,12 +138,11 @@ def save_results_atomic(results: dict):
         raise
 
 def main():
-    vocab_dir = Path('../content/articles/')
-    if not vocab_dir.exists():
-        logging.error(f"Directory not found: {vocab_dir}")
+    if not VOCAB_DIR.exists():
+        logging.error(f"Directory not found: {VOCAB_DIR}")
         return
         
-    results = process_markdown_files(vocab_dir)
+    results = process_markdown_files(VOCAB_DIR)
     save_results_atomic(results)
     
     logging.info(f"\nFinal results written to {OUTPUT_FILE}")

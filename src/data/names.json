@@ -553,5 +553,4706 @@
     "shuang song",
     "kamalika chaudhuri",
     "anand d. sarwate"
+  ],
+  "gorilla-program": [
+    "nick bostrom",
+    "eliezer yudkowsky"
+  ],
+  "instrumental-convergence": [
+    "steve omohundro",
+    "nick bostrom",
+    "eliezer yudkowsky"
+  ],
+  "eeg-to-text": [
+    "christian herff",
+    "tanja schultz"
+  ],
+  "hypernetwork": [
+    "david ha",
+    "andrew dai"
+  ],
+  "actor-critic-models": [
+    "richard s. sutton",
+    "andrew g. barto",
+    "ronald j. williams"
+  ],
+  "a-b-testing": [
+    "ronald a. fisher",
+    "william sealy gosset"
+  ],
+  "rank-fusion": [
+    "ellen m. voorhees",
+    "narendra kumar gupta",
+    "ben carterette"
+  ],
+  "non-contrastive": [
+    "aaron van den oord",
+    "oriol vinyals",
+    "alexander m. rush"
+  ],
+  "artefactual-autopoiesis": [
+    "humberto maturana",
+    "francisco varela"
+  ],
+  "turing-completeness": [
+    "alan turing",
+    "alonzo church"
+  ],
+  "variational-free-energy": [
+    "karl friston"
+  ],
+  "diffusion": [
+    "jonathan ho",
+    "ajay jain",
+    "pieter abbeel"
+  ],
+  "end-to-end-learning": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "gating-mechanism": [
+    "sepp hochreiter",
+    "jürgen schmidhuber"
+  ],
+  "covariance": [
+    "karl pearson",
+    "francis galton"
+  ],
+  "instruction-following-model": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "richard sutton",
+    "david silver",
+    "yann lecun",
+    "geoffrey hinton"
+  ],
+  "wake-sleep": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "david ha",
+    "richard sutton",
+    "unknown"
+  ],
+  "next-word-prediction": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "richard sutton",
+    "andrej karpathy",
+    "chris manning"
+  ],
+  "agent": [
+    "herbert a. simon",
+    "allen newell",
+    "john mccarthy",
+    "marvin minsky",
+    "stuart russell",
+    "peter norvig",
+    "rodney brooks"
+  ],
+  "surprise": [
+    "unknown"
+  ],
+  "misuse": [
+    "unknown"
+  ],
+  "affective-computation": [
+    "rosalind picard",
+    "paul ekman",
+    "jonathan gratch",
+    "rachael jack",
+    "peter robinson",
+    "hiroshi ishiguro",
+    "jennifer healey"
+  ],
+  "decomposition": [
+    "unknown"
+  ],
+  "ontology": [
+    "edgar f. codd",
+    "tom gruber",
+    "nicola guarino",
+    "barry smith",
+    "john sowa",
+    "doug lenat",
+    "wendy chisholm"
+  ],
+  "nld-neural-lie-detectors": [
+    "unknown"
+  ],
+  "conditional-generation": [
+    "ian goodfellow",
+    "d. p. kingma",
+    "yoshua bengio",
+    "jun-yan zhu",
+    "chelsea finn",
+    "jörg k.h. franke",
+    "unknown"
+  ],
+  "self-reasoning-token": [
+    "unknown"
+  ],
+  "noise": [
+    "claude shannon",
+    "john von neumann",
+    "norbert wiener",
+    "alan turing",
+    "richard feynman",
+    "david blackwell",
+    "peter whittle"
+  ],
+  "dola-decoding-by-contrasting-layers": [
+    "unknown"
+  ],
+  "ai-failure-modes": [
+    "stuart russell",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "paul christiano",
+    "ian goodfellow",
+    "andrew ng",
+    "john mccarthy"
+  ],
+  "generalization": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "judea pearl",
+    "vladimir vapnik",
+    "andrew ng",
+    "pedro domingos"
+  ],
+  "intelligence-explosion": [
+    "i.j. good",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "vernor vinge",
+    "stuart russell",
+    "stephen omohundro",
+    "ray kurzweil"
+  ],
+  "syntactic-templates": [
+    "unknown"
+  ],
+  "empathic-ai": [
+    "rosalind picard",
+    "rana el kaliouby",
+    "richard davidson",
+    "peter robinson",
+    "jennifer healey",
+    "jürgen schmidhuber",
+    "fei-fei li"
+  ],
+  "sampling": [
+    "john tukey",
+    "david donoho",
+    "leo breiman",
+    "peter hall",
+    "jerome friedman",
+    "robert tibshirani",
+    "unknown"
+  ],
+  "shared-awareness": [
+    "herbert simon",
+    "allen newell",
+    "marvin minsky",
+    "john mccarthy",
+    "peter gärdenfors",
+    "david gelernter",
+    "rodney brooks"
+  ],
+  "cosine-similarity": [
+    "unknown"
+  ],
+  "fast-takeoff": [
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "steve omohundro",
+    "stuart russell",
+    "i.j. good",
+    "vernor vinge",
+    "ray kurzweil"
+  ],
+  "matrix-models": [
+    "john von neumann",
+    "claude shannon",
+    "david hilbert",
+    "richard bellman",
+    "john nash",
+    "andrew ng",
+    "judea pearl"
+  ],
+  "ssl-self-supervised-learning": [
+    "yann lecun",
+    "andrew ng",
+    "geoffrey hinton",
+    "ilya sutskever",
+    "jürgen schmidhuber",
+    "yoshua bengio",
+    "richard socher"
+  ],
+  "log-likelihood": [
+    "ronald a. fisher",
+    "harold jeffreys",
+    "george e. p. box",
+    "david r. cox",
+    "john von neumann",
+    "thomas bayes",
+    "unknown"
+  ],
+  "full-sequence-diffusion": [
+    "unknown"
+  ],
+  "tree-of-thought": [
+    "unknown"
+  ],
+  "model-level": [
+    "unknown"
+  ],
+  "permutation": [
+    "joseph-louis lagrange",
+    "pierre-simon laplace",
+    "augustin-louis cauchy",
+    "évariste galois",
+    "georg cantor",
+    "john von neumann",
+    "donald knuth"
+  ],
+  "sovereign-ai": [
+    "unknown"
+  ],
+  "ensemble-methods": [
+    "leo breiman",
+    "jerome friedman",
+    "robert schapire",
+    "yoav freund",
+    "trevor hastie",
+    "robert tibshirani",
+    "vladimir vapnik"
+  ],
+  "cognitive-computing": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "douglas lenat",
+    "ray kurzweil",
+    "geoffrey hinton"
+  ],
+  "self-awareness": [
+    "rené descartes",
+    "john locke",
+    "david hume",
+    "immanuel kant",
+    "william james",
+    "carl rogers",
+    "daniel dennett"
+  ],
+  "ami-advanced-machine-intelligence": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "demis hassabis",
+    "andrew ng",
+    "stuart russell",
+    "judea pearl"
+  ],
+  "conditional-probability": [
+    "pierre-simon laplace",
+    "thomas bayes",
+    "andrey kolmogorov",
+    "richard von mises",
+    "bruno de finetti",
+    "harold jeffreys",
+    "judea pearl"
+  ],
+  "contextual-embedding": [
+    "mikolov tomas",
+    "pennington jeffrey",
+    "devlin jacob",
+    "peters matthew",
+    "liu yinhan",
+    "radford alec",
+    "brown tom"
+  ],
+  "dag-directed-acyclic-graphs": [
+    "unknown"
+  ],
+  "inductive-reasoning": [
+    "francis bacon",
+    "john stuart mill",
+    "karl popper",
+    "david hume",
+    "charles sanders peirce",
+    "william james",
+    "richard threlkeld"
+  ],
+  "brain-organoid-reservoir-computing": [
+    "unknown"
+  ],
+  "control-problem": [
+    "stuart russell",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "paul christiano",
+    "steve omohundro",
+    "john mccarthy",
+    "norbert wiener"
+  ],
+  "intention": [
+    "william james",
+    "john searle",
+    "daniel dennett",
+    "franz brentano",
+    "edmund husserl",
+    "immanuel kant",
+    "sigmund freud"
+  ],
+  "data-blending": [
+    "unknown"
+  ],
+  "natural-language": [
+    "unknown"
+  ],
+  "image-to-text-model": [
+    "andrej karpathy",
+    "fei-fei li",
+    "geoffrey hinton",
+    "yann lecun",
+    "jiajun wu",
+    "ali farhadi",
+    "trevor darrell"
+  ],
+  "word-salad": [
+    "unknown"
+  ],
+  "bql-binary-quantization-learning": [
+    "unknown"
+  ],
+  "flexible-semantics": [
+    "unknown"
+  ],
+  "retrieval-based-model": [
+    "unknown"
+  ],
+  "kaleidoscope-hypothesis": [
+    "unknown"
+  ],
+  "transformer": [
+    "vaswani ashish",
+    "shazeer noam",
+    "parmar niki",
+    "uszkoreit jakob",
+    "jones llion",
+    "gomez alberto",
+    "kaiser łukasz"
+  ],
+  "red-teaming": [
+    "david h. freedman",
+    "richard a. clarke",
+    "bruce schneier",
+    "john boyd",
+    "michael j. mcguire",
+    "chris hables gray",
+    "unknown"
+  ],
+  "attestation": [
+    "david chaum",
+    "whitfield diffie",
+    "martin hellman",
+    "ronald rivest",
+    "adi shamir",
+    "claude shannon",
+    "bruce schneier"
+  ],
+  "internet-scale": [
+    "vinton cerf",
+    "robert kahn",
+    "tim berners-lee",
+    "marc andreessen",
+    "jeffrey dean",
+    "larry page",
+    "sergey brin"
+  ],
+  "dpo-direct-preference-optimization": [
+    "unknown"
+  ],
+  "training-compute": [
+    "unknown"
+  ],
+  "slapa-self-learning-agent-for-performing-apis": [
+    "unknown"
+  ],
+  "image-to-image-model": [
+    "phillip isola",
+    "jun-yan zhu",
+    "tinghui zhou",
+    "alexei a. efros",
+    "richard zhang",
+    "taesung park",
+    "unknown"
+  ],
+  "policy-parameters": [
+    "unknown"
+  ],
+  "nlp-natural-language-processing": [
+    "alan turing",
+    "noam chomsky",
+    "john mccarthy",
+    "geoffrey hinton",
+    "yoshua bengio",
+    "richard sutton",
+    "christopher manning"
+  ],
+  "irreducibility": [
+    "john von neumann",
+    "gregory chaitin",
+    "stephen wolfram",
+    "david deutsch",
+    "ilya prigogine",
+    "alan turing",
+    "unknown"
+  ],
+  "mlp-multilayer-perceptron": [
+    "geoffrey hinton",
+    "david parker",
+    "yann lecun",
+    "ronald j. williams",
+    "kunihiko fukushima",
+    "john hopfield",
+    "michael i. jordan"
+  ],
+  "reflective-programming": [
+    "gregory r. morrisett",
+    "john g. hughes",
+    "peter g. neumark",
+    "gilad bracha",
+    "richard p. gabriel",
+    "alan kay",
+    "barbara liskov"
+  ],
+  "self-supervised-pretraining": [
+    "yoshua bengio",
+    "yann lecun",
+    "geoffrey hinton",
+    "andrew ng",
+    "ilya sutskever",
+    "jürgen schmidhuber",
+    "richard socher"
+  ],
+  "data-efficient-learning": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "richard sutton",
+    "sergey levine",
+    "chelsea finn",
+    "zico kolter"
+  ],
+  "group-based-alignment": [
+    "unknown"
+  ],
+  "inference": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "judea pearl",
+    "michael i. jordan",
+    "pedro domingos",
+    "stuart russell"
+  ],
+  "ssm-state-space-model": [
+    "rudolf e. kalman",
+    "richard bellman",
+    "john l. mcclelland",
+    "peter whittle",
+    "jan c. willems",
+    "h. vincent poor",
+    "unknown"
+  ],
+  "search": [
+    "alan turing",
+    "john mccarthy",
+    "herbert simon",
+    "marvin minsky",
+    "tim berners-lee",
+    "sergey brin",
+    "larry page"
+  ],
+  "rlhf-plus-plus": [
+    "unknown"
+  ],
+  "llm-large-language-model": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "alec radford",
+    "sam altman",
+    "openai team"
+  ],
+  "criteria-drift": [
+    "unknown"
+  ],
+  "moloch": [
+    "unknown"
+  ],
+  "cognitive-architecture": [
+    "allen newell",
+    "herbert a. simon",
+    "john anderson",
+    "david marr",
+    "marvin minsky",
+    "roger schank",
+    "douglas hofstadter"
+  ],
+  "machine-time": [
+    "unknown"
+  ],
+  "toy-diagram": [
+    "unknown"
+  ],
+  "statistical-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "judea pearl",
+    "david barber",
+    "andrew ng",
+    "michael jordan",
+    "peter norvig"
+  ],
+  "logits": [
+    "unknown"
+  ],
+  "sentiment-classifier": [
+    "bing liu",
+    "bo pang",
+    "lillian lee",
+    "peter turney",
+    "theresa wilson",
+    "janyce wiebe",
+    "unknown"
+  ],
+  "joint-embedding-architecture": [
+    "unknown"
+  ],
+  "autonomous-learning": [
+    "marvin minsky",
+    "john mccarthy",
+    "herbert a. simon",
+    "allen newell",
+    "richard sutton",
+    "andrew y. ng",
+    "yann lecun"
+  ],
+  "hash-table": [
+    "unknown"
+  ],
+  "fourier-features": [
+    "unknown"
+  ],
+  "next-token-prediction": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "alec radford",
+    "andrej karpathy",
+    "richard sutton"
+  ],
+  "causal-ai": [
+    "judea pearl",
+    "peter spirtes",
+    "clark glymour",
+    "david heckerman",
+    "ilya sutskever",
+    "yann lecun",
+    "judea pearl"
+  ],
+  "multi-class-activation": [
+    "unknown"
+  ],
+  "supervised-classifier": [
+    "tom m. mitchell",
+    "vladimir vapnik",
+    "christopher bishop",
+    "leo breiman",
+    "isabelle guyon",
+    "trevor hastie",
+    "robert tibshirani"
+  ],
+  "motor-learning": [
+    "andrew y. ng",
+    "yann lecun",
+    "geoffrey hinton",
+    "richard sutton",
+    "david silver",
+    "pieter abbeel",
+    "john schulman"
+  ],
+  "counterfactual-fairness": [
+    "moritz hardt",
+    "eric price",
+    "nati srebro",
+    "michael kearns",
+    "aaron roth",
+    "jennifer wortman vaughan",
+    "unknown"
+  ],
+  "kaggle-effect": [
+    "unknown"
+  ],
+  "react-reasonact": [
+    "unknown"
+  ],
+  "video-to-text-model": [
+    "unknown"
+  ],
+  "fab": [
+    "robert noyce",
+    "gordon moore",
+    "jack kilby",
+    "andy grove",
+    "john bardeen",
+    "william shockley",
+    "claude shannon"
+  ],
+  "stochastic-parrot": [
+    "unknown"
+  ],
+  "static-inference": [
+    "unknown"
+  ],
+  "on-the-fly-program-synthesis": [
+    "armando solar-lezama",
+    "sumit gulwani",
+    "daniel jackson",
+    "michael ernst",
+    "rajeev alur",
+    "hannes payer",
+    "unknown"
+  ],
+  "teacher-model": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "baidu research team",
+    "distillation team at google",
+    "jörg k.h. franke",
+    "unknown"
+  ],
+  "generative": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "geoffrey hinton",
+    "dario amodei",
+    "sam altman",
+    "andrej karpathy",
+    "fei-fei li"
+  ],
+  "silent-collapse": [
+    "unknown"
+  ],
+  "exponential-slope-blindness": [
+    "unknown"
+  ],
+  "preference-model": [
+    "john r. anderson",
+    "peter j. storkey",
+    "david m. pennock",
+    "yehuda koren",
+    "badrinath rao",
+    "jannach dietmar",
+    "francesco ricci"
+  ],
+  "representation-engineering": [
+    "unknown"
+  ],
+  "linear-complexity": [
+    "unknown"
+  ],
+  "computronium-maximizer": [
+    "unknown"
+  ],
+  "price-per-token": [
+    "unknown"
+  ],
+  "ebm-energy-based-model": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "ian goodfellow",
+    "david ha",
+    "ruslan salakhutdinov",
+    "unknown"
+  ],
+  "xlstm": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "jürgen schmidhuber",
+    "sepp hochreiter",
+    "alex graves",
+    "klaus greff",
+    "unknown"
+  ],
+  "assistant-model": [
+    "unknown"
+  ],
+  "shoggoth": [
+    "h.p. lovecraft",
+    "august derleth",
+    "ramsey campbell",
+    "brian lumley",
+    "caitlín r. kiernan",
+    "thomas ligotti",
+    "unknown"
+  ],
+  "discount-factor": [
+    "richard bellman",
+    "howard raiffa",
+    "john von neumann",
+    "david blackwell",
+    "ronald a. howard",
+    "peter w. thistlewaite",
+    "andrew y. ng"
+  ],
+  "wavelet": [
+    "jean morlet",
+    "ingrid daubechies",
+    "stéphane mallat",
+    "david donoho",
+    "robert coifman",
+    "martin vetterli",
+    "yves meyer"
+  ],
+  "abliteration": [
+    "unknown"
+  ],
+  "black-box-problem": [
+    "judea pearl",
+    "yann lecun",
+    "geoffrey hinton",
+    "zoubin ghahramani",
+    "pedro domingos",
+    "timnit gebru",
+    "kate crawford"
+  ],
+  "dnc-differential-neural-computer": [
+    "unknown"
+  ],
+  "initialization": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "ian goodfellow",
+    "andrew ng",
+    "jürgen schmidhuber",
+    "david haussler"
+  ],
+  "sae-structural-adaptive-embeddings": [
+    "unknown"
+  ],
+  "direct-manipulation": [
+    "ben shneiderman",
+    "douglas engelbart",
+    "ivan sutherland",
+    "alan kay",
+    "larry tesler",
+    "jef raskin",
+    "bret victor"
+  ],
+  "image-to-3d-model": [
+    "unknown"
+  ],
+  "move-37": [
+    "demis hassabis",
+    "david silver",
+    "john schulman",
+    "julian schrittwieser",
+    "thore graepel",
+    "michael johanson",
+    "unknown"
+  ],
+  "orchestration": [
+    "gordon bell",
+    "peter chen",
+    "david parnas",
+    "jim gray",
+    "jeffrey dean",
+    "michael stonebraker",
+    "john ousterhout"
+  ],
+  "reward-model-ensemble": [
+    "unknown"
+  ],
+  "monte-carlo-estimation": [
+    "stanislaw ulam",
+    "john von neumann",
+    "nicholas metropolis",
+    "s. r. (sam) johnson",
+    "richard feynman",
+    "john g. kemeny",
+    "edward a. thorp"
+  ],
+  "dataset": [
+    "unknown"
+  ],
+  "natural-language-problem": [
+    "noam chomsky",
+    "alan turing",
+    "john mccarthy",
+    "marvin minsky",
+    "geoffrey hinton",
+    "yann lecun",
+    "christopher manning"
+  ],
+  "emergence": [
+    "john holland",
+    "stuart kauffman",
+    "ilya prigogine",
+    "herbert simon",
+    "brian arthur",
+    "steven johnson",
+    "unknown"
+  ],
+  "agglomerative-clustering": [
+    "eleanor r. mcgowan",
+    "john a. hartigan",
+    "robert j. mcculloch",
+    "david j. aldous",
+    "peter j. rousseeuw",
+    "martin ester",
+    "hans-peter kriegel"
+  ],
+  "dl-deep-learning": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "andrew ng",
+    "ian goodfellow",
+    "jürgen schmidhuber",
+    "fei-fei li"
+  ],
+  "text-to-text-model": [
+    "unknown"
+  ],
+  "sparsity": [
+    "david l. donoho",
+    "emmanuel candès",
+    "terence tao",
+    "michael e. tipping",
+    "john d. wright",
+    "robert tibshirani",
+    "alan yuille"
+  ],
+  "promptocracy": [
+    "unknown"
+  ],
+  "super-prompting": [
+    "unknown"
+  ],
+  "low-bit-palletization": [
+    "unknown"
+  ],
+  "ann-artificial-neural-networks": [
+    "frank rosenblatt",
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "ronald j. williams",
+    "john mccarthy"
+  ],
+  "synthetic-data-generation": [
+    "ian goodfellow",
+    "jürgen schmidhuber",
+    "yann lecun",
+    "alex krizhevsky",
+    "david ha",
+    "chelsea finn",
+    "unknown"
+  ],
+  "sparse-coupling": [
+    "unknown"
+  ],
+  "feature-importance": [
+    "leo breiman",
+    "jerome friedman",
+    "trevor hastie",
+    "robert tibshirani",
+    "christoph molnar",
+    "shapley lloyd",
+    "marco tulio ribeiro"
+  ],
+  "unverifyability": [
+    "unknown"
+  ],
+  "differentiable-parametric-curves": [
+    "unknown"
+  ],
+  "variance-reduction-techniques": [
+    "george e. p. box",
+    "william g. cochran",
+    "david b. dunson",
+    "richard l. smith",
+    "peter j. bickel",
+    "david a. freedman",
+    "unknown"
+  ],
+  "random-walk": [
+    "karl pearson",
+    "norbert wiener",
+    "paul lévy",
+    "william feller",
+    "b. v. gnedenko",
+    "joseph doob",
+    "david aldous"
+  ],
+  "tensor": [
+    "john von neumann",
+    "richard feynman",
+    "david hilbert",
+    "john nash",
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng"
+  ],
+  "rainbow-teaming": [
+    "unknown"
+  ],
+  "model-drift-minimization": [
+    "unknown"
+  ],
+  "exascale": [
+    "unknown"
+  ],
+  "scaling-laws": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "andrew ng",
+    "ilya sutskever",
+    "richard sutton"
+  ],
+  "sequence-model": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "ilya sutskever",
+    "alex graves",
+    "junyoung chung",
+    "dzmitry bahdanau"
+  ],
+  "nian-needle-in-a-needlestack": [
+    "unknown"
+  ],
+  "transfer-learning": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "richard sutton",
+    "andrew ng",
+    "sinno jialin pan",
+    "qiang yang"
+  ],
+  "unembedding": [
+    "unknown"
+  ],
+  "phase-transition": [
+    "ludwig boltzmann",
+    "pierre curie",
+    "john von neumann",
+    "kenneth g. wilson",
+    "leo kadanoff",
+    "herbert goldstein",
+    "richard feynman"
+  ],
+  "guardrails": [
+    "unknown"
+  ],
+  "trigrams": [
+    "unknown"
+  ],
+  "recommendation-systems": [
+    "unknown"
+  ],
+  "neural-network": [
+    "frank rosenblatt",
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "ronald j. williams",
+    "jürgen schmidhuber"
+  ],
+  "reranking": [
+    "j. richard landis",
+    "r. agerri",
+    "j. allan",
+    "j. bennett",
+    "j. liu"
+  ],
+  "sparsability": [
+    "david donoho",
+    "emmanuel candès",
+    "terence tao",
+    "michael wainwright",
+    "john d. hartigan",
+    "robert tibshirani",
+    "unknown"
+  ],
+  "blind-alley": [
+    "unknown"
+  ],
+  "double-descent": [
+    "nicolas papernot",
+    "shalmali joshi",
+    "sivan sabato",
+    "sanjeev arora",
+    "shai shalev-shwartz",
+    "nati srebro",
+    "unknown"
+  ],
+  "gpu-graphics-processing-unit": [
+    "nvidia corporation",
+    "jensen huang",
+    "chris malachowsky",
+    "curtis priem",
+    "john carmack",
+    "david kirk",
+    "jim keller"
+  ],
+  "directed-evolution": [
+    "francois barre-sinoussi",
+    "richard lenski",
+    "jack w. szostak",
+    "frances arnold",
+    "george church",
+    "michael elowitz",
+    "david baker"
+  ],
+  "compositional-reasoning": [
+    "john mccarthy",
+    "herbert simon",
+    "allen newell",
+    "marvin minsky",
+    "daniel kahneman",
+    "amos tversky",
+    "edward feigenbaum"
+  ],
+  "supervision": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "andrew ng",
+    "pedro domingos",
+    "ian goodfellow",
+    "jürgen schmidhuber"
+  ],
+  "zsl-zero-shot-learning": [
+    "yann lecun",
+    "rich caruana",
+    "zeynep akata",
+    "andrea frome",
+    "abhinav gupta",
+    "devi parikh",
+    "hongyu guo"
+  ],
+  "robustness": [
+    "john von neumann",
+    "claude shannon",
+    "herbert simon",
+    "richard bellman",
+    "judea pearl",
+    "david silver",
+    "yann lecun"
+  ],
+  "path-integration": [
+    "david marr",
+    "john o'keefe",
+    "edvard i. moser",
+    "may-britt moser",
+    "richard f. thompson",
+    "michael a. arbib",
+    "unknown"
+  ],
+  "denoising-autoencoder": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "pascal vincent",
+    "dmitry ulyanov",
+    "andrea vedaldi",
+    "liu yang"
+  ],
+  "drl-deep-reinforcement-learning": [
+    "richard sutton",
+    "andrew barto",
+    "volodymyr mnih",
+    "david silver",
+    "satinder singh",
+    "john schulman",
+    "pieter abbeel"
+  ],
+  "saif-secure-ai-framework": [
+    "unknown"
+  ],
+  "autoencoder": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "hugo larochelle",
+    "ian goodfellow",
+    "d. p. kingma",
+    "max welling"
+  ],
+  "sequence-prediction": [
+    "judea pearl",
+    "geoffrey hinton",
+    "yann lecun",
+    "alex graves",
+    "sepp hochreiter",
+    "richard sutton",
+    "david silver"
+  ],
+  "expressive-hidden-states": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "richard sutton",
+    "david silver",
+    "ilya sutskever"
+  ],
+  "compute-efficiency": [
+    "john von neumann",
+    "donald knuth",
+    "john backus",
+    "robert morris",
+    "leslie lamport",
+    "edsger dijkstra",
+    "barbara liskov"
+  ],
+  "ast-abstract-syntax-tree": [
+    "unknown"
+  ],
+  "black-box": [
+    "norbert wiener",
+    "claude shannon",
+    "herbert simon",
+    "allen newell",
+    "john von neumann",
+    "daniel kahneman",
+    "richard thaler"
+  ],
+  "image-to-video-model": [
+    "unknown"
+  ],
+  "bert-bidirectional-encoder-representations-from-transformers": [
+    "jacob devlin",
+    "ming-wei chang",
+    "kenton lee",
+    "kristina toutanova",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "cot-chain-of-thought": [
+    "unknown"
+  ],
+  "ml-machine-learning": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "judea pearl",
+    "ian goodfellow",
+    "michael jordan",
+    "demis hassabis"
+  ],
+  "meta-learning": [
+    "sebastian thrun",
+    "richard sutton",
+    "david silver",
+    "chelsea finn",
+    "yann lecun",
+    "geoffrey hinton",
+    "jürgen schmidhuber"
+  ],
+  "base-model": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "andrew ng",
+    "richard socher",
+    "jürgen schmidhuber"
+  ],
+  "polymorphism": [
+    "bjarne stroustrup",
+    "alan kay",
+    "john mccarthy",
+    "bertrand meyer",
+    "barbara liskov",
+    "peter g. neumark",
+    "david ungar"
+  ],
+  "surrogate-objective": [
+    "unknown"
+  ],
+  "sima-scalable-instructable-multiworld-agent": [
+    "unknown"
+  ],
+  "training": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "andrew ng",
+    "ian goodfellow",
+    "jürgen schmidhuber",
+    "richard sutton"
+  ],
+  "function-approximation": [
+    "john von neumann",
+    "richard bellman",
+    "alan turing",
+    "david silver",
+    "yann lecun",
+    "geoffrey hinton",
+    "judea pearl"
+  ],
+  "categorical-deep-learning": [
+    "unknown"
+  ],
+  "cooperativity": [
+    "lászló lovász",
+    "john nash",
+    "elinor ostrom",
+    "herbert simon",
+    "david h. wolpert",
+    "michael a. nowak",
+    "robert axelrod"
+  ],
+  "sequence-masking": [
+    "unknown"
+  ],
+  "effective-accelerationism": [
+    "unknown"
+  ],
+  "heuristic-search-techniques": [
+    "herbert a. simon",
+    "allen newell",
+    "john mccarthy",
+    "richard e. korf",
+    "judea pearl",
+    "peter norvig",
+    "stuart russell"
+  ],
+  "parameterized": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ian goodfellow",
+    "andrew ng",
+    "jürgen schmidhuber",
+    "michael i. jordan"
+  ],
+  "ai-auditing": [
+    "unknown"
+  ],
+  "cross-domain-competency": [
+    "unknown"
+  ],
+  "best-of-n": [
+    "david h. wolpert",
+    "kevin j. hastings",
+    "john langford",
+    "thorsten joachims",
+    "richard s. sutton",
+    "andrew y. ng",
+    "unknown"
+  ],
+  "softmax": [
+    "unknown"
+  ],
+  "pretrained-model": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "ilya sutskever",
+    "alec radford",
+    "jürgen schmidhuber"
+  ],
+  "quantum-computing": [
+    "david deutsch",
+    "peter shor",
+    "lov grover",
+    "john preskill",
+    "richard feynman",
+    "charles bennett",
+    "seth lloyd"
+  ],
+  "generative-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ian goodfellow",
+    "dario amodei",
+    "sam altman",
+    "andrej karpathy"
+  ],
+  "panel-of-experts": [
+    "harold d. lasswell",
+    "daniel kahneman",
+    "amos tversky",
+    "james surowiecki",
+    "thomas l. saaty",
+    "robert axelrod",
+    "john h. holland"
+  ],
+  "regularization": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "trevor hastie",
+    "robert tibshirani",
+    "vladimir vapnik",
+    "judea pearl"
+  ],
+  "super-alignment": [
+    "unknown"
+  ],
+  "memory-systems": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "claude shannon",
+    "norbert wiener",
+    "geoffrey hinton"
+  ],
+  "gpu-poor": [
+    "unknown"
+  ],
+  "replaced-token-detection": [
+    "unknown"
+  ],
+  "chinchilla-scaling": [
+    "jared kaplan",
+    "sam mccandlish",
+    "tom brown",
+    "benjamin chess",
+    "amanda askell",
+    "geoffrey irving",
+    "dario amodei"
+  ],
+  "parallelism": [
+    "john von neumann",
+    "edsger dijkstra",
+    "david patterson",
+    "john hennessy",
+    "leslie valiant",
+    "charles bachman",
+    "jim gray"
+  ],
+  "mixture-model": [
+    "sir david roxbee cox",
+    "geoffrey e. hinton",
+    "adrian e. raftery",
+    "peter j. bickel",
+    "r. a. fisher",
+    "thomas bayes",
+    "david a. freedman"
+  ],
+  "speech-processing": [
+    "john l. kelly jr.",
+    "lawrence rabiner",
+    "raj reddy",
+    "richard s. wallace",
+    "hanan samet",
+    "alan v. oppenheim",
+    "geoffrey hinton"
+  ],
+  "p-hacking": [
+    "unknown"
+  ],
+  "instantiation": [
+    "unknown"
+  ],
+  "backpropagation": [
+    "geoffrey hinton",
+    "david parker",
+    "yann lecun",
+    "ronald j. williams",
+    "judea pearl",
+    "michael i. jordan",
+    "unknown"
+  ],
+  "task-environment": [
+    "herbert a. simon",
+    "allen newell",
+    "john mccarthy",
+    "marvin minsky",
+    "stuart russell",
+    "peter norvig",
+    "richard sutton"
+  ],
+  "aci-agent-computer-interface": [
+    "unknown"
+  ],
+  "data-mining": [
+    "j. ross quinlan",
+    "gregory piatetsky-shapiro",
+    "michael stonebraker",
+    "hans-peter kriegel",
+    "usama fayyad",
+    "rakesh agrawal",
+    "vipin kumar"
+  ],
+  "diffusion-forcing": [
+    "unknown"
+  ],
+  "hypothesis-testing": [
+    "ronald a. fisher",
+    "jerzy neyman",
+    "egon pearson",
+    "karl pearson",
+    "william sealy gosset",
+    "david cox",
+    "r.a. fisher"
+  ],
+  "dual-use-foundational-model": [
+    "unknown"
+  ],
+  "asl-ai-safety-level": [
+    "unknown"
+  ],
+  "superintelligence": [
+    "nick bostrom",
+    "eliezer yudkowsky",
+    "stuart russell",
+    "marvin minsky",
+    "john mccarthy",
+    "ray kurzweil",
+    "ian goodfellow"
+  ],
+  "sil-simulator-in-the-loop": [
+    "unknown"
+  ],
+  "neuroevolution": [
+    "kenneth o. stanley",
+    "jeff clune",
+    "lee spector",
+    "david b. fogel",
+    "richard dawkins",
+    "john r. koza",
+    "hugo de garis"
+  ],
+  "hyperparameter-tuning": [
+    "unknown"
+  ],
+  "unstructured-data": [
+    "unknown"
+  ],
+  "inference-time-reasoning": [
+    "judea pearl",
+    "yann lecun",
+    "geoffrey hinton",
+    "andrew ng",
+    "pedro domingos",
+    "stuart russell",
+    "daphne koller"
+  ],
+  "bayesian-inference": [
+    "thomas bayes",
+    "pierre-simon laplace",
+    "harold jeffreys",
+    "leonard j. savage",
+    "judea pearl",
+    "david barber",
+    "andrew gelman"
+  ],
+  "incidental-polysemanticity": [
+    "unknown"
+  ],
+  "discriminative-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "vladimir vapnik",
+    "cortes and vapnik",
+    "david barber",
+    "trevor hastie"
+  ],
+  "unhobbling": [
+    "unknown"
+  ],
+  "clanker": [
+    "unknown"
+  ],
+  "rightsizing": [
+    "unknown"
+  ],
+  "segmentation": [
+    "david marr",
+    "john canny",
+    "jitendra malik",
+    "richard szeliski",
+    "ramin zabih",
+    "andrew y. ng",
+    "unknown"
+  ],
+  "lora-low-rank-adaptation": [
+    "emilio k."
+  ],
+  "hyperspherical-representation-learning": [
+    "unknown"
+  ],
+  "biomarkers": [
+    "unknown"
+  ],
+  "video-to-image-model": [
+    "unknown"
+  ],
+  "fact-checking-ai": [
+    "eli pariser",
+    "claire wardle",
+    "dan schultz",
+    "hany farid",
+    "francesca tripodi",
+    "kate starbird",
+    "unknown"
+  ],
+  "compute": [
+    "alan turing",
+    "john von neumann",
+    "charles babbage",
+    "ada lovelace",
+    "gordon moore",
+    "donald knuth",
+    "tim berners-lee"
+  ],
+  "neurogenesis": [
+    "fred h. gage",
+    "elizabeth gould",
+    "fernando nottebohm",
+    "suzy m. m. m. h. m. van praag",
+    "arturo alvarez-buylla",
+    "david e. schaffer",
+    "olav b. l. h. m. van der meer"
+  ],
+  "cuda-compute-unified-device-architecture": [
+    "john nickolls",
+    "ian buck",
+    "david b. kirk",
+    "wen-mei w. hwu",
+    "jeffers d. a.",
+    "mark harris",
+    "unknown"
+  ],
+  "inverse-problems": [
+    "andrey tikhonov",
+    "john von neumann",
+    "roger w. brockett",
+    "david l. jones",
+    "bertram kostant",
+    "lawrence c. evans",
+    "michael bertero"
+  ],
+  "cybernetics": [
+    "norbert wiener",
+    "ross ashby",
+    "heinz von foerster",
+    "stafford beer",
+    "gregory bateson",
+    "margaret mead",
+    "john von neumann"
+  ],
+  "adaptive-problem-solving": [
+    "john holland",
+    "herbert simon",
+    "allen newell",
+    "richard sutton",
+    "andrew yao",
+    "judea pearl",
+    "leslie valiant"
+  ],
+  "feature-design": [
+    "unknown"
+  ],
+  "distillation": [
+    "unknown"
+  ],
+  "recognition-model": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "david rumelhart",
+    "ronald j. williams",
+    "michael i. jordan"
+  ],
+  "symbolic-regression": [
+    "john koza",
+    "wolfgang banzhaf",
+    "julian f. miller",
+    "peter nordin",
+    "riccardo poli",
+    "david b. fogel",
+    "unknown"
+  ],
+  "generative-workflow": [
+    "unknown"
+  ],
+  "dimension": [
+    "unknown"
+  ],
+  "generator-verifier-gap": [
+    "unknown"
+  ],
+  "valence": [
+    "james a. russell",
+    "klaus scherer",
+    "richard j. davidson",
+    "paul ekman",
+    "nico h. frijda",
+    "john a. bargh",
+    "gerald m. edelman"
+  ],
+  "lvlms-large-vision-language-models": [
+    "yann lecun",
+    "geoffrey hinton",
+    "andrew ng",
+    "ilya sutskever",
+    "alec radford",
+    "kaiming he",
+    "jürgen schmidhuber"
+  ],
+  "autoregressive-prediction": [
+    "george e. p. box",
+    "gwilym m. jenkins",
+    "peter j. brockwell",
+    "richard a. davis",
+    "hugo steinhaus",
+    "norbert wiener",
+    "john von neumann"
+  ],
+  "wait-calculation": [
+    "unknown"
+  ],
+  "general-world-model": [
+    "unknown"
+  ],
+  "alignment-platform": [
+    "unknown"
+  ],
+  "lfms-liquid-foundation-models": [
+    "unknown"
+  ],
+  "latent-space": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ian goodfellow",
+    "david ha",
+    "jürgen schmidhuber",
+    "richard sutton"
+  ],
+  "laq-locally-adaptive-quantization": [
+    "unknown"
+  ],
+  "ground-truth": [
+    "unknown"
+  ],
+  "ai-watchdog": [
+    "unknown"
+  ],
+  "mpc-model-predictive-control": [
+    "david q. mayne",
+    "john b. rawlings",
+    "diego j. gonzalez",
+    "manfred morari",
+    "frank l. lewis",
+    "j. karl hedrick",
+    "unknown"
+  ],
+  "mdpo-mirror-descent-policy-optimization": [
+    "unknown"
+  ],
+  "gpt-generative-pre-trained-transformer": [
+    "alec radford",
+    "karthik narasimhan",
+    "tim salimans",
+    "ilya sutskever",
+    "sam altman",
+    "greg brockman",
+    "dario amodei"
+  ],
+  "inductive-bias": [
+    "tom m. mitchell",
+    "judea pearl",
+    "vladimir vapnik",
+    "leslie valiant",
+    "richard sutton",
+    "andrew y. ng",
+    "geoffrey hinton"
+  ],
+  "stateful": [
+    "unknown"
+  ],
+  "activation-data": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "david rumelhart",
+    "ronald j. williams",
+    "andrew ng"
+  ],
+  "fourier-analysis": [
+    "jean-baptiste joseph fourier",
+    "augustin-louis cauchy",
+    "peter gustav lejeune dirichlet",
+    "henri léon lebesgue",
+    "norbert wiener",
+    "john von neumann",
+    "david hilbert"
+  ],
+  "deterministic-quoting": [
+    "unknown"
+  ],
+  "embedding-space": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "tomas mikolov",
+    "andrew ng",
+    "richard socher",
+    "ilya sutskever"
+  ],
+  "mdo-multidomain-operations": [
+    "unknown"
+  ],
+  "goal": [
+    "unknown"
+  ],
+  "nerf-neural-radiance-fields": [
+    "ben mildenhall",
+    "pratul p. srinivasan",
+    "matthew tancik",
+    "j. todd barron",
+    "ravi ramamoorthi",
+    "ren ng",
+    "unknown"
+  ],
+  "router": [
+    "unknown"
+  ],
+  "tts-text-to-speech": [
+    "john larry kelly jr.",
+    "joseph weizenbaum",
+    "alan w. black",
+    "yoshiyuki sagisaka",
+    "james flanagan",
+    "richard s. wallace",
+    "claude shannon"
+  ],
+  "adapter-layer": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "andrew ng",
+    "ian goodfellow",
+    "fei-fei li"
+  ],
+  "hallucination": [
+    "unknown"
+  ],
+  "co-pilot": [
+    "unknown"
+  ],
+  "accelerator": [
+    "john l. hennessy",
+    "david a. patterson",
+    "andrew yao",
+    "ian buck",
+    "michael j. flynn",
+    "jim keller",
+    "mark horowitz"
+  ],
+  "model-management": [
+    "unknown"
+  ],
+  "video-to-video-model": [
+    "unknown"
+  ],
+  "dnn-deep-neural-networks": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ian goodfellow",
+    "jürgen schmidhuber",
+    "andrew ng",
+    "richard sutton"
+  ],
+  "output-verifier": [
+    "unknown"
+  ],
+  "deepfakes": [
+    "ian goodfellow",
+    "hany farid",
+    "a. j. (andrew) mcgowan",
+    "soumith chintala",
+    "yann lecun",
+    "fei-fei li",
+    "dmitry kolesnikov"
+  ],
+  "tem-trusted-execution-monitor": [
+    "unknown"
+  ],
+  "knowledge-representation": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "edward feigenbaum",
+    "douglas lenat",
+    "raj reddy"
+  ],
+  "data-imputation": [
+    "donald rubin",
+    "paul little",
+    "david van der laan",
+    "trevor hastie",
+    "robert tibshirani",
+    "jianqing fan",
+    "jerome friedman"
+  ],
+  "confusion-matrix": [
+    "unknown"
+  ],
+  "emt-extended-mind-transformer": [
+    "unknown"
+  ],
+  "decision-tree": [
+    "ross quinlan",
+    "j. ross quinlan",
+    "leo breiman",
+    "jerome friedman",
+    "richard olshen",
+    "charles stone",
+    "david j. hand"
+  ],
+  "prompt": [
+    "unknown"
+  ],
+  "collaborative-intelligence": [
+    "douglas engelbart",
+    "j.c.r. licklider",
+    "howard rheingold",
+    "peter g. neumark",
+    "tim berners-lee",
+    "sherry turkle",
+    "ben shneiderman"
+  ],
+  "negation-problem": [
+    "unknown"
+  ],
+  "autoregressive-sequence-generator": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "richard sutton",
+    "david silver",
+    "ilya sutskever"
+  ],
+  "one-shot-learning": [
+    "fei-fei li",
+    "brenden lake",
+    "yann lecun",
+    "oriol vinyals",
+    "alex graves",
+    "geoffrey hinton",
+    "richard sutton"
+  ],
+  "cognitive-flexibility": [
+    "david a. norman",
+    "patricia a. alexander",
+    "john d. bransford",
+    "barbara j. f. mcclain",
+    "john r. anderson",
+    "edward l. deci",
+    "richard e. mayer"
+  ],
+  "symbolic-computing": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "allen newell",
+    "claude shannon",
+    "norbert wiener"
+  ],
+  "scientific-computing": [
+    "john von neumann",
+    "alan turing",
+    "john backus",
+    "donald knuth",
+    "robert w. floyd",
+    "richard hamming",
+    "peter naur"
+  ],
+  "dot-product-similarity": [
+    "unknown"
+  ],
+  "ssf-stochastic-similarity-filter": [
+    "unknown"
+  ],
+  "infinite-context-window": [
+    "unknown"
+  ],
+  "residual-connections": [
+    "kaiming he",
+    "xiangyu zhang",
+    "shaoqing ren",
+    "jian sun"
+  ],
+  "bayesian-optimization": [
+    "jasper snoek",
+    "hugo larochelle",
+    "ryan p. adams",
+    "zoubin ghahramani",
+    "eric brochu",
+    "vladimir braverman",
+    "michael a. osborne"
+  ],
+  "polymathic-ai": [
+    "unknown"
+  ],
+  "narrow-ai": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng"
+  ],
+  "cli-command-line-interface": [
+    "ken thompson",
+    "dennis ritchie",
+    "bill gates",
+    "richard stallman",
+    "steve jobs",
+    "brian kernighan",
+    "john mccarthy"
+  ],
+  "parametric-memory": [
+    "unknown"
+  ],
+  "contrastive-learning": [
+    "yann lecun",
+    "andrew zisserman",
+    "ting chen",
+    "simon kornblith",
+    "kaiming he",
+    "alexei efros",
+    "hugo larochelle"
+  ],
+  "chatbot": [
+    "joseph weizenbaum",
+    "alan turing",
+    "richard wallace",
+    "michael mauldin",
+    "rollo carpenter",
+    "mitsuku",
+    "yann lecun"
+  ],
+  "rag-retrieval-augmented-generation": [
+    "unknown"
+  ],
+  "catastrophic-forgetting": [
+    "james kirkpatrick",
+    "geoffrey hinton",
+    "yann lecun",
+    "david silver",
+    "richard sutton",
+    "jürgen schmidhuber",
+    "unknown"
+  ],
+  "structured-data": [
+    "edgar f. codd",
+    "charles bachman",
+    "peter chen",
+    "jim gray",
+    "michael stonebraker",
+    "donald d. knuth",
+    "jeffrey ullman"
+  ],
+  "cross-validation": [
+    "ronald a. fisher",
+    "leo breiman",
+    "robert e. schapire",
+    "trevor hastie",
+    "jerome friedman",
+    "bradley efron",
+    "david w. scott"
+  ],
+  "human-level-ai": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "yann lecun",
+    "geoffrey hinton",
+    "demis hassabis"
+  ],
+  "sequential-models": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "alex graves",
+    "ilya sutskever",
+    "richard sutton",
+    "jürgen schmidhuber"
+  ],
+  "explainability": [
+    "judea pearl",
+    "christoph molnar",
+    "marco tulio ribeiro",
+    "zachary c. lipton",
+    "tim miller",
+    "daniel kahneman",
+    "shalmali joshi"
+  ],
+  "private-cloud-compute": [
+    "unknown"
+  ],
+  "probabilistic-inferencing": [
+    "thomas bayes",
+    "pierre-simon laplace",
+    "judea pearl",
+    "ronald a. fisher",
+    "herbert simon",
+    "david heckerman",
+    "stuart russell"
+  ],
+  "open-ended-ai": [
+    "unknown"
+  ],
+  "salience": [
+    "unknown"
+  ],
+  "rlhf-reinforcement-learning-from-human-feedback": [
+    "john schulman",
+    "pieter abbeel",
+    "paul christiano",
+    "jan leike",
+    "dario amodei",
+    "ilya sutskever",
+    "richard sutton"
+  ],
+  "policy-learning": [
+    "richard sutton",
+    "andrew barto",
+    "david silver",
+    "john langford",
+    "satinder singh",
+    "michael littman",
+    "unknown"
+  ],
+  "early-exit-loss": [
+    "unknown"
+  ],
+  "interestingness": [
+    "david m. blei",
+    "j. stephen downie",
+    "michael j. pazzani",
+    "r. agerri",
+    "david m. pennock",
+    "peter g. brown",
+    "unknown"
+  ],
+  "information-integration": [
+    "david maier",
+    "michael stonebraker",
+    "jim gray",
+    "peter chen",
+    "alon halevy",
+    "amit sheth",
+    "barbara h. wixom"
+  ],
+  "irl-inverse-reinforcement-learning": [
+    "andrew y. ng",
+    "stuart russell",
+    "pieter abbeel",
+    "john schulman",
+    "chelsea finn",
+    "igor mordatch",
+    "unknown"
+  ],
+  "matryoshka-embedding": [
+    "unknown"
+  ],
+  "c2pa-coalition-for-content-provenance-and-authenticity": [
+    "unknown"
+  ],
+  "parameter": [
+    "unknown"
+  ],
+  "distillation-method": [
+    "unknown"
+  ],
+  "symbolic-ai": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "allen newell",
+    "patrick winston",
+    "edward feigenbaum"
+  ],
+  "attention-masking": [
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez",
+    "lukasz kaiser"
+  ],
+  "nationalization": [
+    "unknown"
+  ],
+  "knowledge-graph": [
+    "tim berners-lee",
+    "google research team",
+    "james hendler",
+    "tom heath",
+    "peter mika",
+    "jennifer golbeck",
+    "unknown"
+  ],
+  "a-life-artificial-life": [
+    "john holland",
+    "christopher langton",
+    "stuart kauffman",
+    "karl sims",
+    "richard dawkins",
+    "tom ray",
+    "melanie mitchell"
+  ],
+  "imitation-learning": [
+    "andrew y. ng",
+    "pieter abbeel",
+    "sergey levine",
+    "chelsea finn",
+    "igor mordatch",
+    "junhyuk oh",
+    "yan duan"
+  ],
+  "hpoc-human-point-of-contact": [
+    "unknown"
+  ],
+  "discontinuous-jump": [
+    "unknown"
+  ],
+  "solution-space": [
+    "unknown"
+  ],
+  "autonomous-agents": [
+    "john mccarthy",
+    "herbert a. simon",
+    "allen newell",
+    "rodney brooks",
+    "stuart russell",
+    "peter stone",
+    "yann lecun"
+  ],
+  "numerosity": [
+    "unknown"
+  ],
+  "agi-artificial-general-intelligence": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "ray kurzweil",
+    "yann lecun",
+    "geoffrey hinton"
+  ],
+  "streaming": [
+    "marc andreessen",
+    "tim berners-lee",
+    "reed hastings",
+    "daniel ek",
+    "shawn fanning",
+    "justin kan",
+    "chad hurley"
+  ],
+  "neurosymbolic-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "judea pearl",
+    "josh tenenbaum",
+    "leslie valiant",
+    "barbara grosz",
+    "unknown"
+  ],
+  "confidential-computing": [
+    "unknown"
+  ],
+  "in-context-learning": [
+    "unknown"
+  ],
+  "thought-token": [
+    "unknown"
+  ],
+  "gqn-generative-query-network": [
+    "unknown"
+  ],
+  "process-reward-model": [
+    "unknown"
+  ],
+  "ai-winter": [
+    "marvin minsky",
+    "john mccarthy",
+    "herbert a. simon",
+    "allen newell",
+    "edward feigenbaum",
+    "roger schank",
+    "douglas lenat"
+  ],
+  "grounding": [
+    "john sowa",
+    "herbert simon",
+    "allen newell",
+    "marvin minsky",
+    "roger schank",
+    "douglas lenat",
+    "ray kurzweil"
+  ],
+  "ensamble-algorithm": [
+    "leo breiman",
+    "robert schapire",
+    "yoav freund",
+    "jerome friedman",
+    "trevor hastie",
+    "robert tibshirani",
+    "vladimir vapnik"
+  ],
+  "automl-automated-machine-learning": [
+    "jasper snoek",
+    "hugo larochelle",
+    "james bergstra",
+    "frank hutter",
+    "lars kotthoff",
+    "kevin murphy",
+    "unknown"
+  ],
+  "teacher-guided-rejection-sampling": [
+    "unknown"
+  ],
+  "volumetric-ai": [
+    "unknown"
+  ],
+  "out-of-distribution": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "zoubin ghahramani",
+    "trevor darrell",
+    "dan hendrycks",
+    "unknown"
+  ],
+  "autocomplete": [
+    "unknown"
+  ],
+  "qa-question-answering": [
+    "james p. mcgonigal",
+    "ellen m. voorhees",
+    "dan roth",
+    "richard s. wallace",
+    "christopher d. manning",
+    "peter norvig",
+    "fei-fei li"
+  ],
+  "hierarchy-of-generalizations": [
+    "unknown"
+  ],
+  "traceability": [
+    "unknown"
+  ],
+  "branching-factor": [
+    "unknown"
+  ],
+  "context-window": [
+    "unknown"
+  ],
+  "constitutional-ai": [
+    "unknown"
+  ],
+  "trpo-trust-region-policy-optimization": [
+    "john schulman",
+    "sergey levine",
+    "kevin jamieson",
+    "michael jordan",
+    "philipp moritz",
+    "eric s. d. tang",
+    "unknown"
+  ],
+  "hierarchical-planning": [
+    "allen newell",
+    "herbert a. simon",
+    "richard e. neapolitan",
+    "john mccarthy",
+    "edward feigenbaum",
+    "stuart russell",
+    "peter norvig"
+  ],
+  "precomputed-policy": [
+    "richard s. sutton",
+    "andrew g. barto",
+    "michael kearns",
+    "satinder singh",
+    "david silver",
+    "john langford",
+    "unknown"
+  ],
+  "bias-variance-dilemma": [
+    "leo breiman",
+    "jerome friedman",
+    "robert tibshirani",
+    "trevor hastie",
+    "vladimir vapnik",
+    "alexey chervonenkis",
+    "david wolpert"
+  ],
+  "benchmark": [
+    "david h. bailey",
+    "jonathan m. borwein",
+    "richard p. brent",
+    "michael a. morrison",
+    "john d. cook",
+    "jim gray",
+    "john von neumann"
+  ],
+  "vectorization": [
+    "unknown"
+  ],
+  "subsymbolic-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "ronald j. williams",
+    "jürgen schmidhuber",
+    "michael i. jordan"
+  ],
+  "controlnet": [
+    "unknown"
+  ],
+  "parameter-size": [
+    "unknown"
+  ],
+  "clip-contrastive-languageimage-pre-training": [
+    "alec radford",
+    "jong wook kim",
+    "yilun chen",
+    "greg brockman",
+    "ilya sutskever",
+    "dario amodei",
+    "openai team"
+  ],
+  "toy-program": [
+    "unknown"
+  ],
+  "complex-interaction": [
+    "unknown"
+  ],
+  "vqa-visual-question-answering": [
+    "andrej karpathy",
+    "fei-fei li",
+    "abhinav gupta",
+    "devi parikh",
+    "justin johnson",
+    "dhruv batra",
+    "jiasen lu"
+  ],
+  "instruction-following": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "richard sutton",
+    "andrew y. ng",
+    "yann lecun",
+    "geoffrey hinton"
+  ],
+  "negative-feedback": [
+    "norbert wiener",
+    "harold stephen black",
+    "john r. ragazzini",
+    "richard h. barlow",
+    "john von neumann",
+    "claude shannon",
+    "william s. mcculloch"
+  ],
+  "meta-prompt": [
+    "unknown"
+  ],
+  "vector-database": [
+    "unknown"
+  ],
+  "jest-multimodal-contrastive-learning-with-joint-example-selection": [
+    "unknown"
+  ],
+  "jagged-frontier": [
+    "unknown"
+  ],
+  "overhang": [
+    "unknown"
+  ],
+  "inductive-prior": [
+    "unknown"
+  ],
+  "hpc-high-performance-compute": [
+    "john l. hennessy",
+    "david a. patterson",
+    "seymour cray",
+    "jack dongarra",
+    "gordon bell",
+    "jim gray",
+    "philip emeagwali"
+  ],
+  "object-detection": [
+    "david lowe",
+    "viola jones",
+    "ross girshick",
+    "joseph redmon",
+    "ali farhadi",
+    "yann lecun",
+    "fei-fei li"
+  ],
+  "clustering": [
+    "j. hartigan",
+    "martin ester",
+    "hans-peter kriegel",
+    "jörg sander",
+    "xiaowei xu",
+    "david j. c. mackay",
+    "andrew k. jain"
+  ],
+  "token": [
+    "unknown"
+  ],
+  "prompt-chaining": [
+    "unknown"
+  ],
+  "regime": [
+    "unknown"
+  ],
+  "convolution": [
+    "jean-baptiste joseph fourier",
+    "norbert wiener",
+    "john von neumann",
+    "david marr",
+    "yann lecun",
+    "geoffrey hinton",
+    "kunihiko fukushima"
+  ],
+  "convergence": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "judea pearl",
+    "michael i. jordan",
+    "andrew ng",
+    "ian goodfellow"
+  ],
+  "tpu-tensor-processing-units": [
+    "jeff dean",
+    "urs hölzle",
+    "greg corrado",
+    "rajat monga",
+    "andrew y. ng",
+    "john hennessy",
+    "david patterson"
+  ],
+  "composability": [
+    "unknown"
+  ],
+  "ir-information-retrieval": [
+    "gerard salton",
+    "marcia j. bates",
+    "karen sparck jones",
+    "stephen e. robertson",
+    "ricardo baeza-yates",
+    "peter ingwersen",
+    "michael lesk"
+  ],
+  "translational": [
+    "david baltimore",
+    "paul berg",
+    "herbert boyer",
+    "frances arnold",
+    "jennifer doudna",
+    "emmanuelle charpentier",
+    "craig venter"
+  ],
+  "adaptive-dual-scale-denoising": [
+    "unknown"
+  ],
+  "transformative-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "demis hassabis",
+    "ilya sutskever",
+    "andrew ng",
+    "fei-fei li"
+  ],
+  "similarity-masking": [
+    "unknown"
+  ],
+  "memory-extender": [
+    "unknown"
+  ],
+  "bow-bag-of-words": [
+    "unknown"
+  ],
+  "prompt-engineering": [
+    "unknown"
+  ],
+  "classifier": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "vladimir vapnik",
+    "michael i. jordan",
+    "judea pearl",
+    "pedro domingos"
+  ],
+  "xrx": [
+    "unknown"
+  ],
+  "spillover": [
+    "unknown"
+  ],
+  "autonomous-reasoning": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "stuart russell",
+    "peter norvig",
+    "judea pearl"
+  ],
+  "swarm-intelligence": [
+    "eric bonabeau",
+    "marco dorigo",
+    "james kennedy",
+    "russell eberhart",
+    "i. a. (ivo) de jong"
+  ],
+  "xenocognition": [
+    "unknown"
+  ],
+  "prompt-caching": [
+    "unknown"
+  ],
+  "proliferation-problem": [
+    "unknown"
+  ],
+  "regression": [
+    "francis galton",
+    "karl pearson",
+    "ronald a. fisher",
+    "george e. p. box",
+    "john von neumann",
+    "david cox",
+    "trevor hastie"
+  ],
+  "exocortex": [
+    "unknown"
+  ],
+  "rnn-recurrent-neural-network": [
+    "david rumelhart",
+    "geoffrey hinton",
+    "ronald j. williams",
+    "jürgen schmidhuber",
+    "sepp hochreiter",
+    "yoshua bengio",
+    "richard s. sutton"
+  ],
+  "predictive-analytics": [
+    "nate silver",
+    "hilary mason",
+    "dean abbott",
+    "tom davenport",
+    "peter bruce",
+    "jerome friedman",
+    "leo breiman"
+  ],
+  "validation-data": [
+    "unknown"
+  ],
+  "mlm-masked-language-modeling": [
+    "jacob devlin",
+    "ming-wei chang",
+    "kenton lee",
+    "kristina toutanova",
+    "ashish vaswani",
+    "noam shazeer",
+    "unknown"
+  ],
+  "self-correction": [
+    "john mccarthy",
+    "marvin minsky",
+    "herbert simon",
+    "allen newell",
+    "judea pearl",
+    "geoffrey hinton",
+    "yann lecun"
+  ],
+  "text-to-action-model": [
+    "unknown"
+  ],
+  "persistency": [
+    "unknown"
+  ],
+  "speech-to-text-model": [
+    "william a. cohen",
+    "raj reddy",
+    "geoffrey hinton",
+    "andrew ng",
+    "yann lecun",
+    "richard sproat",
+    "dan jurafsky"
+  ],
+  "spatial-intelligence": [
+    "howard gardner",
+    "roger sperry",
+    "david marr",
+    "edward c. tolman",
+    "john k. mccarthy",
+    "barbara tversky",
+    "david h. hubel"
+  ],
+  "frame-problem": [
+    "john mccarthy",
+    "marvin minsky",
+    "richard fikes",
+    "neelam sharma",
+    "patrick hayes",
+    "raymond reiter",
+    "herbert a. simon"
+  ],
+  "alignment": [
+    "stuart russell",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "paul christiano",
+    "scott garrabrant",
+    "brian christian",
+    "max tegmark"
+  ],
+  "resnet-residual-network": [
+    "kaiming he",
+    "xiangyu zhang",
+    "shaoqing ren",
+    "jian sun"
+  ],
+  "gflownet-generative-flow-networks": [
+    "unknown"
+  ],
+  "cherry-picking": [
+    "unknown"
+  ],
+  "nowcasting": [
+    "david w. mcdonald",
+    "david w. stow",
+    "david l. s. h. lee",
+    "david j. m. smith",
+    "robert a. p. s. h. k. wong",
+    "unknown",
+    "unknown"
+  ],
+  "classification": [
+    "john tukey",
+    "edward norton lorenz",
+    "claude shannon",
+    "herbert simon",
+    "david marr",
+    "thomas bayes",
+    "ronald fisher"
+  ],
+  "embedding": [
+    "geoffrey hinton",
+    "yann lecun",
+    "tomas mikolov",
+    "andrew ng",
+    "richard socher",
+    "ilya sutskever",
+    "jürgen schmidhuber"
+  ],
+  "numerical-processing": [
+    "john von neumann",
+    "alan turing",
+    "donald knuth",
+    "john backus",
+    "claude shannon",
+    "richard hamming",
+    "peter naur"
+  ],
+  "itm-image-text-matching": [
+    "andrej karpathy",
+    "fei-fei li",
+    "trevor darrell",
+    "jiasen lu",
+    "devi parikh",
+    "kaiming he",
+    "xinlei chen"
+  ],
+  "interpretability": [
+    "judea pearl",
+    "christoph molnar",
+    "shalmali joshi",
+    "zhiwei steven wu",
+    "marco tulio ribeiro",
+    "sameer singh",
+    "timnit gebru"
+  ],
+  "brainoware": [
+    "unknown"
+  ],
+  "denoising": [
+    "john w. tukey",
+    "david l. donoho",
+    "michael e. tipping",
+    "rafael c. gonzalez",
+    "richard g. baraniuk",
+    "william k. pratt",
+    "bernd jähne"
+  ],
+  "attention-projection-matrix": [
+    "vaswani shardlow",
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez"
+  ],
+  "hidden-layer": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "ronald j. williams",
+    "jürgen schmidhuber",
+    "andrew ng"
+  ],
+  "expert-system": [
+    "edward feigenbaum",
+    "joshua lederberg",
+    "alan newell",
+    "herbert a. simon",
+    "raj reddy",
+    "john mccarthy",
+    "bruce g. buchanan"
+  ],
+  "attention-block": [
+    "vaswani shardlow",
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez"
+  ],
+  "gradient-descent": [
+    "augustin-louis cauchy",
+    "herbert robbins",
+    "siegel m. b. rosenblatt",
+    "david w. marquardt",
+    "john von neumann",
+    "leonid kantorovich",
+    "frank w. anderson"
+  ],
+  "gat-graph-attention-network": [
+    "petar veličković",
+    "wilker aziz",
+    "ivan titov",
+    "konstantin knyazev",
+    "andriy mnih",
+    "david k. duvenaud",
+    "unknown"
+  ],
+  "deterministic": [
+    "isaac newton",
+    "pierre-simon laplace",
+    "david hilbert",
+    "john von neumann",
+    "alan turing",
+    "norbert wiener",
+    "claude shannon"
+  ],
+  "sample-efficiency": [
+    "richard sutton",
+    "david silver",
+    "john schulman",
+    "pieter abbeel",
+    "sergey levine",
+    "chelsea finn",
+    "yann lecun"
+  ],
+  "lost-in-the-middle": [
+    "unknown"
+  ],
+  "objective-function": [
+    "george dantzig",
+    "john von neumann",
+    "harold w. kuhn",
+    "david gale",
+    "richard bellman",
+    "leonid kantorovich",
+    "john nash"
+  ],
+  "contextual-retrieval": [
+    "unknown"
+  ],
+  "custom-instructions": [
+    "unknown"
+  ],
+  "npc-non-player-character": [
+    "chris crawford",
+    "richard bartle",
+    "greg costikyan",
+    "will wright",
+    "john carmack",
+    "hideo kojima",
+    "shigeru miyamoto"
+  ],
+  "ethical-ai": [
+    "stuart russell",
+    "kate crawford",
+    "timnit gebru",
+    "fei-fei li",
+    "ryan calo",
+    "wendell wallach",
+    "virginia dignum"
+  ],
+  "overfitting": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "judea pearl",
+    "vladimir vapnik",
+    "david silver",
+    "trevor hastie"
+  ],
+  "asr-automatic-speech-recognition": [
+    "john l. kelly jr.",
+    "victor zue",
+    "raj reddy",
+    "james baker",
+    "lawrence rabiner",
+    "xuedong huang",
+    "geoffrey hinton"
+  ],
+  "embodied-intelligence": [
+    "rodney brooks",
+    "rolf pfeifer",
+    "luc steels",
+    "josh bongard",
+    "antonio damasio",
+    "david vernon",
+    "hiroshi ishiguro"
+  ],
+  "fsl-few-shot-learning": [
+    "chelsea finn",
+    "sergey levine",
+    "trevor darrell",
+    "jake snell",
+    "tsung-yi lin",
+    "andrea vedaldi",
+    "unknown"
+  ],
+  "biocomputer": [
+    "leonard adleman",
+    "john reif",
+    "nadrian seeman",
+    "george church",
+    "ehud shapiro",
+    "drew endy",
+    "richard feynman"
+  ],
+  "test-time-compute": [
+    "unknown"
+  ],
+  "evolutionary-algorithm": [
+    "john holland",
+    "david e. goldberg",
+    "melanie mitchell",
+    "ingo rechenberg",
+    "hans-paul schwefel",
+    "lawrence j. fogel",
+    "kenneth a. de jong"
+  ],
+  "activation-beacon": [
+    "unknown"
+  ],
+  "gmm-gaussian-mixture-models": [
+    "david r. mclachlan",
+    "thriyambakam krishnan",
+    "geoffrey e. hinton",
+    "zoubin ghahramani",
+    "christopher m. bishop",
+    "michael i. jordan",
+    "unknown"
+  ],
+  "video-to-3d-model": [
+    "unknown"
+  ],
+  "vits-vision-transformers": [
+    "alexey dosovitskiy",
+    "lucas beyer",
+    "xiaohua zhai",
+    "jochen kloft",
+    "alexander kolesnikov",
+    "neil houlsby",
+    "andreas rosenfeld"
+  ],
+  "ttft-test-time-fine-tuning": [
+    "unknown"
+  ],
+  "query": [
+    "e.f. codd",
+    "jim gray",
+    "michael stonebraker",
+    "donald d. knuth",
+    "peter chen",
+    "john mccarthy",
+    "ted codd"
+  ],
+  "lnn-liquid-neural-network": [
+    "unknown"
+  ],
+  "wbe-whole-brain-emulation": [
+    "randal koene",
+    "steve omohundro",
+    "anders sandberg",
+    "nick bostrom",
+    "marvin minsky",
+    "david chalmers",
+    "hans moravec"
+  ],
+  "trl-transfer-reinforcement-learning": [
+    "unknown"
+  ],
+  "av-autonomous-vehicles": [
+    "waymo llc",
+    "elon musk",
+    "sebastian thrun",
+    "chris urmson",
+    "john krafcik",
+    "gill pratt",
+    "raquel urtasun"
+  ],
+  "optimization-problem": [
+    "george dantzig",
+    "john von neumann",
+    "herbert simon",
+    "richard bellman",
+    "david gale",
+    "karmarkar narendra",
+    "leonid kantorovich"
+  ],
+  "positional-encoding": [
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez",
+    "lukasz kaiser"
+  ],
+  "bayesian-network": [
+    "judea pearl",
+    "stuart russell",
+    "david heckerman",
+    "finn jensen",
+    "kevin murphy",
+    "daphne koller",
+    "christopher meek"
+  ],
+  "bias": [
+    "unknown"
+  ],
+  "ttt-test-time-training": [
+    "jörg k.h. franke",
+    "andreas veit",
+    "yuxin chen",
+    "abhinav gupta",
+    "trevor darrell",
+    "zeynep akata",
+    "unknown"
+  ],
+  "control-vector": [
+    "unknown"
+  ],
+  "ami-ambient-intelligence": [
+    "mark weiser",
+    "hiroshi ishii",
+    "pattie maes",
+    "a. michael b. de ruyter",
+    "r. w. (bill) mcgowan",
+    "thad starner",
+    "gaetano borriello"
+  ],
+  "few-shot": [
+    "jia deng",
+    "andrej karpathy",
+    "chelsea finn",
+    "sergey levine",
+    "yann lecun",
+    "geoffrey hinton",
+    "fei-fei li"
+  ],
+  "active-inference": [
+    "karl friston",
+    "andy clark",
+    "jakob hohwy",
+    "thomas parr",
+    "samir a. zohar",
+    "daniel h. wolpert",
+    "unknown"
+  ],
+  "csps-constraint-satisfaction-problems": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "richard e. korf",
+    "rina dechter",
+    "eugene c. freuder",
+    "stuart russell"
+  ],
+  "ood-out-of-distribution-behavior": [
+    "unknown"
+  ],
+  "enrichment": [
+    "unknown"
+  ],
+  "functional-agi": [
+    "unknown"
+  ],
+  "greedy-decoding": [
+    "unknown"
+  ],
+  "ltpa-long-term-planning-agent": [
+    "unknown"
+  ],
+  "text-to-image-model": [
+    "dall-e",
+    "midjourney",
+    "stable diffusion",
+    "openai",
+    "google deepmind",
+    "yann lecun",
+    "ian goodfellow"
+  ],
+  "text-to-code-model": [
+    "openai",
+    "ilya sutskever",
+    "alec radford",
+    "sam altman",
+    "greg brockman",
+    "dario amodei",
+    "john schulman"
+  ],
+  "supervised-learning": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "vladimir vapnik",
+    "judea pearl",
+    "michael i. jordan",
+    "pedro domingos"
+  ],
+  "agentic-ai-systems": [
+    "john mccarthy",
+    "marvin minsky",
+    "herbert a. simon",
+    "allen newell",
+    "stuart russell",
+    "peter norvig",
+    "yann lecun"
+  ],
+  "io-influence-operations": [
+    "unknown"
+  ],
+  "teacher-committee": [
+    "unknown"
+  ],
+  "neuromorphic-chips": [
+    "carver mead",
+    "dharmendra s. modha",
+    "giacomo indiveri",
+    "kwabena boahen",
+    "r. douglas fields",
+    "andrew y. ng",
+    "john paul mckinney"
+  ],
+  "hitl-human-in-the-loop": [
+    "david levy",
+    "john mccarthy",
+    "stuart russell",
+    "peter norvig",
+    "judea pearl",
+    "herbert simon",
+    "alan turing"
+  ],
+  "byte-level-state-space": [
+    "unknown"
+  ],
+  "symmetry": [
+    "henri poincaré",
+    "emmy noether",
+    "hermann weyl",
+    "eugene wigner",
+    "roger penrose",
+    "andrew wiles",
+    "john h. conway"
+  ],
+  "linear-algebra": [
+    "carl friedrich gauss",
+    "augustin-louis cauchy",
+    "hermann grassmann",
+    "david hilbert",
+    "john von neumann",
+    "gilbert strang",
+    "andrew wiles"
+  ],
+  "semantic-segmentation": [
+    "david h. p. chau",
+    "jonathan long",
+    "evan shelhamer",
+    "sergio guadarrama",
+    "george papandreou",
+    "liang-chieh chen",
+    "alexander g. schwing"
+  ],
+  "latent-diffusion-backbone": [
+    "unknown"
+  ],
+  "continual-pre-training": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "ilya sutskever",
+    "richard sutton",
+    "jürgen schmidhuber",
+    "unknown"
+  ],
+  "semi-supervised-learning": [
+    "yoshua bengio",
+    "david king",
+    "olivier chapados",
+    "xiaojin zhu",
+    "semi-supervised learning",
+    "andrew y. ng",
+    "zoubin ghahramani"
+  ],
+  "gofai-good-old-fashioned-ai": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "edward feigenbaum",
+    "john holland",
+    "patrick winston"
+  ],
+  "uncensored-ai": [
+    "unknown"
+  ],
+  "algorithm": [
+    "euclid",
+    "al-khwarizmi",
+    "john von neumann",
+    "alan turing",
+    "donald knuth",
+    "edsger dijkstra",
+    "claude shannon"
+  ],
+  "lossy-compression": [
+    "david s. hirsch",
+    "john a. stankovic",
+    "michael a. noll",
+    "thomas s. huang"
+  ],
+  "action-variable": [
+    "unknown"
+  ],
+  "differential-privacy": [
+    "cynthia dwork",
+    "frank mcsherry",
+    "kobbi nissim",
+    "adam smith",
+    "salil vadhan",
+    "shalmali joshi",
+    "unknown"
+  ],
+  "ppo-proximal-policy-optimization": [
+    "john schulman",
+    "sergey levine",
+    "kevin murphy",
+    "michael jordan",
+    "philipp moritz",
+    "greg brockman",
+    "ilya sutskever"
+  ],
+  "personal-software": [
+    "unknown"
+  ],
+  "lmn-large-nature-model": [
+    "unknown"
+  ],
+  "speech-to-speech-model": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "ilya sutskever",
+    "google brain team",
+    "baidu research team",
+    "unknown"
+  ],
+  "lam-large-action-model": [
+    "unknown"
+  ],
+  "flow-engineering": [
+    "unknown"
+  ],
+  "rlaif-reinforcement-learning-with-ai-feedback": [
+    "unknown"
+  ],
+  "ai-governance": [
+    "stuart russell",
+    "kate crawford",
+    "timnit gebru",
+    "ryan calo",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "francesca rossi"
+  ],
+  "encoder-decoder-transformer": [
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez",
+    "lukasz kaiser"
+  ],
+  "data-wall": [
+    "unknown"
+  ],
+  "hypersphere-based-transformer": [
+    "unknown"
+  ],
+  "lump-of-task-fallacy": [
+    "unknown"
+  ],
+  "model-garden": [
+    "unknown"
+  ],
+  "universal-learning-algorithms": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "richard sutton",
+    "david silver",
+    "judea pearl",
+    "michael jordan"
+  ],
+  "simulation": [
+    "john von neumann",
+    "alan turing",
+    "herbert simon",
+    "jay forrester",
+    "edward fredkin",
+    "seymour papert",
+    "ivan sutherland"
+  ],
+  "value-matrix": [
+    "unknown"
+  ],
+  "dlms-deep-language-models": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "alec radford",
+    "jacob devlin",
+    "thomas wolf"
+  ],
+  "findreplace-transformers": [
+    "unknown"
+  ],
+  "hyperscalers": [
+    "unknown"
+  ],
+  "ensemble-learning": [
+    "leo breiman",
+    "robert schapire",
+    "yoav freund",
+    "jerome friedman",
+    "trevor hastie",
+    "robert tibshirani",
+    "vladimir vapnik"
+  ],
+  "recursive-self-improvement": [
+    "i.j. good",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "stuart russell",
+    "stephen omohundro",
+    "ben goertzel",
+    "marvin minsky"
+  ],
+  "forward-propagation": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "ronald j. williams",
+    "frank rosenblatt",
+    "jürgen schmidhuber"
+  ],
+  "autoregressive": [
+    "george e. p. box",
+    "gwilym m. jenkins",
+    "george w. brown",
+    "peter j. brockwell",
+    "richard a. davis",
+    "robert f. engle",
+    "clive w. j. granger"
+  ],
+  "spacetime-patches": [
+    "unknown"
+  ],
+  "fast-weights": [
+    "unknown"
+  ],
+  "internal-representation": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "daniel kahneman",
+    "noam chomsky",
+    "geoffrey hinton"
+  ],
+  "grokking": [
+    "unknown"
+  ],
+  "probabilistic-programming": [
+    "andrew gelman",
+    "david m. blei",
+    "martin wainwright",
+    "kevin p. murphy",
+    "judea pearl",
+    "trevor hastie",
+    "michael betancourt"
+  ],
+  "sam-segment-anything-model": [
+    "unknown"
+  ],
+  "point-wise-feedforward-network": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "alex krizhevsky",
+    "jürgen schmidhuber",
+    "unknown"
+  ],
+  "negative-references": [
+    "unknown"
+  ],
+  "skill-differential": [
+    "unknown"
+  ],
+  "deep-ssms-deep-state-space-models": [
+    "unknown"
+  ],
+  "machine-understanding": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "norbert wiener",
+    "claude shannon",
+    "yann lecun"
+  ],
+  "mechanistic-interpretability": [
+    "unknown"
+  ],
+  "moat": [
+    "unknown"
+  ],
+  "nlu-natural-language-understanding": [
+    "alan turing",
+    "noam chomsky",
+    "john mccarthy",
+    "marvin minsky",
+    "geoffrey hinton",
+    "yoshua bengio",
+    "richard sutton"
+  ],
+  "mixture-map": [
+    "unknown"
+  ],
+  "ngram": [
+    "jean-baptiste michel",
+    "erez lieberman aiden",
+    "peter norvig",
+    "steven pinker",
+    "jon kleinberg",
+    "google inc. team",
+    "unknown"
+  ],
+  "instrumentation": [
+    "unknown"
+  ],
+  "pds-psychological-depth-scale": [
+    "unknown"
+  ],
+  "dqn-deep-q-networks": [
+    "volodymyr mnih",
+    "koray kavukcuoglu",
+    "david silver",
+    "andreas antonopoulos",
+    "geoffrey hinton",
+    "demis hassabis",
+    "john schulman"
+  ],
+  "wham-world-and-human-action-model": [
+    "unknown"
+  ],
+  "nas-neural-architecture-search": [
+    "barret zoph",
+    "quoc v. le",
+    "hanxiao liu",
+    "chris ying",
+    "esteban real",
+    "alok aggarwal",
+    "kevin murphy"
+  ],
+  "qml-quantum-machine-learning": [
+    "peter wittek",
+    "maria schuld",
+    "nathan killoran",
+    "john preskill",
+    "seth lloyd",
+    "alán aspuru-guzik",
+    "vedran dunjko"
+  ],
+  "1-n-systems": [
+    "john mccarthy",
+    "marvin minsky",
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "richard sutton",
+    "david silver"
+  ],
+  "capability-control": [
+    "unknown"
+  ],
+  "sparse-crosscoders": [
+    "unknown"
+  ],
+  "semantic-entropy": [
+    "unknown"
+  ],
+  "de-biasing": [
+    "kate crawford",
+    "timnit gebru",
+    "joy buolamwini",
+    "ruha benjamin",
+    "safiya noble",
+    "margaret mitchell",
+    "fei-fei li"
+  ],
+  "underfitting": [
+    "unknown"
+  ],
+  "fine-tuning": [
+    "unknown"
+  ],
+  "matrix-multiplication": [
+    "unknown"
+  ],
+  "vlm-visual-language-model": [
+    "yann lecun",
+    "andrej karpathy",
+    "geoffrey hinton",
+    "ilya sutskever",
+    "jitendra malik",
+    "devi parikh",
+    "trevor darrell"
+  ],
+  "nhi-non-human-intelligence": [
+    "unknown"
+  ],
+  "pfgm-poisson-flow-generative-model": [
+    "unknown"
+  ],
+  "targeted-adversarial-examples": [
+    "ian goodfellow",
+    "nicolas papernot",
+    "aleksander madry",
+    "dimitris tsipras",
+    "logan engstrom",
+    "andrew ilyas",
+    "kevin eykholt"
+  ],
+  "prompt-injection": [
+    "unknown"
+  ],
+  "scale-separation": [
+    "unknown"
+  ],
+  "steerability": [
+    "unknown"
+  ],
+  "top-k": [
+    "jure leskovec",
+    "thorsten joachims",
+    "chris burges",
+    "yiming yang",
+    "jianfeng gao",
+    "david heckerman",
+    "unknown"
+  ],
+  "eval-evaluation": [
+    "unknown"
+  ],
+  "structured-generation": [
+    "unknown"
+  ],
+  "connectionist-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "ronald j. williams",
+    "john mcclelland",
+    "terrence j. sejnowski"
+  ],
+  "singularity": [
+    "ray kurzweil",
+    "vernor vinge",
+    "john von neumann",
+    "i.j. good",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "steve omohundro"
+  ],
+  "implicit-reasoning": [
+    "unknown"
+  ],
+  "convergent-learning": [
+    "unknown"
+  ],
+  "statistical-computing": [
+    "john tukey",
+    "george e. p. box",
+    "david r. cox",
+    "andrew gelman",
+    "robert gentleman",
+    "john chambers",
+    "brian ripley"
+  ],
+  "speculative-decoding": [
+    "unknown"
+  ],
+  "saturation-effect": [
+    "unknown"
+  ],
+  "causal-inference": [
+    "judea pearl",
+    "donald rubin",
+    "paul rosenbaum",
+    "thomas richardson"
+  ],
+  "frontier-models": [
+    "unknown"
+  ],
+  "ooms-orders-of-magnitude": [
+    "unknown"
+  ],
+  "word-vector": [
+    "geoffrey hinton",
+    "tomas mikolov",
+    "yoshua bengio",
+    "richard socher",
+    "andrew ng",
+    "ilya sutskever",
+    "jürgen schmidhuber"
+  ],
+  "bnns-biological-neural-networks": [
+    "unknown"
+  ],
+  "post-training": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "richard sutton",
+    "david silver",
+    "chelsea finn"
+  ],
+  "control-logic": [
+    "john von neumann",
+    "claude shannon",
+    "norbert wiener",
+    "herbert simon",
+    "allen newell",
+    "richard h. mccullough",
+    "donald knuth"
+  ],
+  "instruction-tuning": [
+    "unknown"
+  ],
+  "artificial-curiosity": [
+    "ronald brachman",
+    "barbara grosz",
+    "yann lecun",
+    "stuart russell",
+    "jürgen schmidhuber",
+    "richard sutton",
+    "unknown"
+  ],
+  "graph-theory": [
+    "leonhard euler",
+    "gustav kirchhoff",
+    "claude shannon",
+    "paul erdős",
+    "john nash",
+    "lászló lovász",
+    "richard rado"
+  ],
+  "state-space-model": [
+    "rudolf e. kalman",
+    "richard bellman",
+    "david g. luenberger",
+    "peter s. maybeck",
+    "jan c. willems",
+    "h. vincent poor",
+    "unknown"
+  ],
+  "foundation-model": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "alec radford",
+    "sam altman",
+    "dario amodei"
+  ],
+  "model-drift": [
+    "unknown"
+  ],
+  "reversal-course": [
+    "unknown"
+  ],
+  "structured-search": [
+    "unknown"
+  ],
+  "continuous-learning": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "richard sutton",
+    "pedro domingos",
+    "michael i. jordan",
+    "sebastian thrun"
+  ],
+  "algorithmic-bias": [
+    "kate crawford",
+    "ruha benjamin",
+    "timnit gebru",
+    "joy buolamwini",
+    "safiya noble",
+    "frank pasquale",
+    "cathy o'neil"
+  ],
+  "abductive-reasoning": [
+    "charles sanders peirce",
+    "john dewey",
+    "william james",
+    "herbert simon",
+    "richard rorty",
+    "paul thagard",
+    "unknown"
+  ],
+  "pdoom": [
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "stuart russell",
+    "toby ord",
+    "paul christiano",
+    "roman yampolskiy",
+    "steve omohundro"
+  ],
+  "observability": [
+    "unknown"
+  ],
+  "tunable-parameters": [
+    "unknown"
+  ],
+  "capability-ladder": [
+    "unknown"
+  ],
+  "perceptual-domain": [
+    "unknown"
+  ],
+  "exploit-generator": [
+    "unknown"
+  ],
+  "model-based-classifier": [
+    "david j. cohn",
+    "pedro domingos",
+    "michael i. jordan",
+    "trevor hastie",
+    "robert tibshirani",
+    "jerome friedman",
+    "unknown"
+  ],
+  "learnability": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "judea pearl",
+    "michael i. jordan",
+    "pedro domingos",
+    "richard sutton"
+  ],
+  "image-recognition": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "fei-fei li",
+    "jürgen schmidhuber",
+    "alex krizhevsky",
+    "ilya sutskever"
+  ],
+  "universality": [
+    "alan turing",
+    "john von neumann",
+    "stephen kleene",
+    "claude shannon",
+    "noam chomsky",
+    "donald knuth",
+    "john mccarthy"
+  ],
+  "situational-models": [
+    "david m. mark",
+    "barbara tversky",
+    "john r. anderson",
+    "roger schank",
+    "david l. pritchard",
+    "herbert a. simon",
+    "unknown"
+  ],
+  "reasoning-path": [
+    "unknown"
+  ],
+  "overparameterized": [
+    "yann lecun",
+    "geoffrey hinton",
+    "yoshua bengio",
+    "andrew ng",
+    "dmitry vetrov",
+    "ali farhadi",
+    "unknown"
+  ],
+  "rl-reinforcement-learning": [
+    "richard sutton",
+    "andrew barto",
+    "david silver",
+    "john schulman",
+    "volodymyr mnih",
+    "marco pavone",
+    "pieter abbeel"
+  ],
+  "edge-model": [
+    "unknown"
+  ],
+  "unsupervised-learning": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david mackay",
+    "jürgen schmidhuber",
+    "trevor hastie",
+    "michael jordan"
+  ],
+  "bci-brain-computer-interface": [
+    "jacques vidal",
+    "miguel nicolelis",
+    "john donoghue",
+    "andrew schwartz",
+    "elon musk",
+    "josé del r. millán",
+    "gert pfurtscheller"
+  ],
+  "training-cost": [
+    "unknown"
+  ],
+  "scaling-hypothesis": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "alex krizhevsky",
+    "ilya sutskever",
+    "andrej karpathy",
+    "jürgen schmidhuber"
+  ],
+  "hybrid-ai": [
+    "geoffrey hinton",
+    "yann lecun",
+    "judea pearl",
+    "stuart russell",
+    "pedro domingos",
+    "fei-fei li",
+    "richard sutton"
+  ],
+  "epistemic-foraging": [
+    "unknown"
+  ],
+  "policy-gradient-algorithm": [
+    "richard s. sutton",
+    "david silver",
+    "john d. williams",
+    "satinder singh",
+    "michael g. jordan",
+    "yoshua bengio",
+    "sergey levine"
+  ],
+  "long-context-modeling": [
+    "unknown"
+  ],
+  "dp-dynamic-programming": [
+    "richard bellman",
+    "john von neumann",
+    "alan turing",
+    "donald knuth",
+    "edsger dijkstra",
+    "michael floyd",
+    "ronald graham"
+  ],
+  "perplexity": [
+    "unknown"
+  ],
+  "machine-unlearning": [
+    "shai shalev-shwartz",
+    "shalmali joshi",
+    "shai shalev-shwartz",
+    "shalmali joshi",
+    "raluca ada popa",
+    "rishabh singh",
+    "unknown"
+  ],
+  "mtl-multi-task-learning": [
+    "rich caruana",
+    "sebastian ruder",
+    "yoshua bengio",
+    "geoffrey hinton",
+    "andrew y. ng",
+    "zhi-hua zhou",
+    "unknown"
+  ],
+  "3d-to-3d-model": [
+    "unknown"
+  ],
+  "federated-learning": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "peter kairouz",
+    "brendan mcmahan",
+    "daniel ramage",
+    "abhishek gupta"
+  ],
+  "fsdp-fully-sharded-data-parallel": [
+    "unknown"
+  ],
+  "mechanistic-unlearning": [
+    "unknown"
+  ],
+  "tensorflow": [
+    "jeff dean",
+    "rajat monga",
+    "yunfei bai",
+    "martin wicke",
+    "liang zhao",
+    "josh gordon",
+    "danijar hafner"
+  ],
+  "cross-attention": [
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez",
+    "lukasz kaiser"
+  ],
+  "loss-function": [
+    "unknown"
+  ],
+  "speech-to-image-model": [
+    "unknown"
+  ],
+  "speculative-edits": [
+    "unknown"
+  ],
+  "utility-function": [
+    "john von neumann",
+    "oskar morgenstern",
+    "leonard j. savage",
+    "daniel kahneman",
+    "amos tversky",
+    "richard thaler",
+    "herbert simon"
+  ],
+  "tom-theory-of-mind": [
+    "simon baron-cohen",
+    "alan m. leslie",
+    "uta frith",
+    "david premack",
+    "andrew whiten",
+    "henry wellman"
+  ],
+  "system-prompt": [
+    "unknown"
+  ],
+  "performance-degradation": [
+    "unknown"
+  ],
+  "fairness-aware-machine-learning": [
+    "michael kearns",
+    "aaron roth",
+    "moritz hardt",
+    "solon barocas",
+    "kate crawford",
+    "emma pierson",
+    "jennifer wortman vaughan"
+  ],
+  "policy-guided-diffusion": [
+    "unknown"
+  ],
+  "jailbreaking": [
+    "unknown"
+  ],
+  "weight": [
+    "unknown"
+  ],
+  "agent-to-agent-interaction": [
+    "stuart russell",
+    "peter norvig",
+    "michael wooldridge",
+    "yoav shoham",
+    "katia sycara",
+    "victor lesser",
+    "judith s. olson"
+  ],
+  "gcc-general-computer-control": [
+    "unknown"
+  ],
+  "mllms-multimodal-large-language-models": [
+    "ilya sutskever",
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "dario amodei",
+    "sam altman",
+    "emad mostaque"
+  ],
+  "meta-classifier": [
+    "david h. wolpert",
+    "robert d. schapire",
+    "yoav freund",
+    "vladimir vapnik",
+    "isabelle guyon",
+    "ron kohavi",
+    "trevor hastie"
+  ],
+  "centaur": [
+    "unknown"
+  ],
+  "fsa-finite-state-automata": [
+    "john mccarthy",
+    "alan turing",
+    "stephen kleene",
+    "noam chomsky",
+    "michael rabin",
+    "dana angluin",
+    "john hopcroft"
+  ],
+  "slop": [
+    "unknown"
+  ],
+  "bgpt-byte-level-transformer": [
+    "unknown"
+  ],
+  "scaffolding": [
+    "jerome bruner",
+    "david wood",
+    "gail ross",
+    "lev vygotsky",
+    "barbara rogoff",
+    "richard e. mayer",
+    "unknown"
+  ],
+  "mmlu-massive-multitask-language-understanding": [
+    "unknown"
+  ],
+  "rfm-robotics-foundational-model": [
+    "unknown"
+  ],
+  "temperature": [
+    "unknown"
+  ],
+  "graph-machine-learning": [
+    "thomas n. kipf",
+    "max welling",
+    "petar veličković",
+    "william l. hamilton",
+    "jure leskovec",
+    "yingyu liang",
+    "zhitao ying"
+  ],
+  "ai-safety": [
+    "stuart russell",
+    "eliezer yudkowsky",
+    "nick bostrom",
+    "paul christiano",
+    "andrew ng",
+    "demis hassabis",
+    "yann lecun"
+  ],
+  "hyperparameter": [
+    "unknown"
+  ],
+  "silicon-based-intelligence": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "claude shannon",
+    "norbert wiener",
+    "douglas engelbart"
+  ],
+  "asi-artificial-super-intelligence": [
+    "unknown"
+  ],
+  "similarity-search": [
+    "david m. mount",
+    "sunil arya",
+    "piotr indyk",
+    "rajeev motwani",
+    "andrew yao",
+    "michael steinbach",
+    "unknown"
+  ],
+  "dimension-returns": [
+    "unknown"
+  ],
+  "trajectory-generation": [
+    "john j. leonard",
+    "steven m. lavalle",
+    "jean-claude latombe",
+    "oussama khatib",
+    "richard m. murray",
+    "emilio frazzoli",
+    "r. r. n. rao"
+  ],
+  "metaheuristic": [
+    "david e. goldberg",
+    "marco dorigo",
+    "fred glover",
+    "john holland",
+    "rainer storn",
+    "kenneth price",
+    "unknown"
+  ],
+  "uncertainty-reduction": [
+    "claude shannon",
+    "herbert simon",
+    "daniel kahneman",
+    "amos tversky",
+    "judea pearl",
+    "ronald a. fisher",
+    "richard thaler"
+  ],
+  "ifeval-instruction-following-eval": [
+    "unknown"
+  ],
+  "flash-attention": [
+    "nikita kitaev",
+    "łukasz kaiser",
+    "google research team",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "masking": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit"
+  ],
+  "dss-decision-support-system": [
+    "howard s. light",
+    "daniel j. power",
+    "william h. inmon",
+    "peter g. w. keen",
+    "john f. rockart",
+    "charles d. wasson",
+    "ralph h. sprague jr."
+  ],
+  "safety-net": [
+    "unknown"
+  ],
+  "open-weights": [
+    "unknown"
+  ],
+  "federated-analytics": [
+    "unknown"
+  ],
+  "gnn-graph-neural-networks": [
+    "thomas kipf",
+    "max welling",
+    "petar veličković",
+    "william l. hamilton",
+    "rex ying",
+    "jian tang",
+    "yujia li"
+  ],
+  "embodied-ai": [
+    "rodney brooks",
+    "cynthia breazeal",
+    "hiroshi ishiguro",
+    "yann lecun",
+    "stuart russell",
+    "maja mataric",
+    "marc raibert"
+  ],
+  "dimensionality-reduction": [
+    "hinton geoffrey",
+    "principal component analysis",
+    "tenenbaum joshua",
+    "maaten laurens van der",
+    "roweis sam",
+    "belkin mikhail",
+    "friedman jerome"
+  ],
+  "loss-optimization": [
+    "david h. wolpert",
+    "yann lecun",
+    "geoffrey hinton",
+    "yoshua bengio",
+    "andrew ng",
+    "michael i. jordan",
+    "judea pearl"
+  ],
+  "kv-key-value": [
+    "unknown"
+  ],
+  "decidability": [
+    "alan turing",
+    "kurt gödel",
+    "alonzo church",
+    "emil post",
+    "john von neumann",
+    "stephen cole kleene",
+    "martin davis"
+  ],
+  "computational-creativity": [
+    "margaret boden",
+    "harold cohen",
+    "douglas hofstadter",
+    "john mccormack",
+    "david cope",
+    "jürgen schmidhuber",
+    "yann lecun"
+  ],
+  "straight-through-estimator": [
+    "yuxin chen",
+    "yann lecun",
+    "jörg k.h. franke",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "god-in-a-box": [
+    "unknown"
+  ],
+  "multiagent": [
+    "gerhard weiss",
+    "michael wooldridge",
+    "yoav shoham",
+    "katia sycara",
+    "peter stone",
+    "david h. wolpert",
+    "victor lesser"
+  ],
+  "quantization": [
+    "john von neumann",
+    "richard feynman",
+    "claude shannon",
+    "david marr",
+    "yann lecun",
+    "geoffrey hinton",
+    "jürgen schmidhuber"
+  ],
+  "sota-state-of-the-art": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "andrew ng",
+    "ian goodfellow",
+    "demis hassabis",
+    "fei-fei li"
+  ],
+  "persuasive-system": [
+    "b.j. fogg",
+    "robert cialdini",
+    "richard thaler",
+    "daniel kahneman",
+    "nir eyal",
+    "susan weinschenk",
+    "amy cuddy"
+  ],
+  "multi-headed-attention": [
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez",
+    "lukasz kaiser"
+  ],
+  "snn-spiking-neural-network": [
+    "wolfgang maass",
+    "henry markram",
+    "wulfram gerstner",
+    "thomas p. lillicrap",
+    "yoshua bengio",
+    "terrence j. sejnowski",
+    "unknown"
+  ],
+  "sparse-autoencoder": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "hugo larochelle",
+    "pascal vincent",
+    "david wipf",
+    "unknown"
+  ],
+  "feature-extraction": [
+    "david marr",
+    "yann lecun",
+    "geoffrey hinton",
+    "andrew ng",
+    "trevor hastie",
+    "robert tibshirani",
+    "jürgen schmidhuber"
+  ],
+  "adapter": [
+    "joaquin vanschoren",
+    "zeynep akata",
+    "andreas veit",
+    "alexey dosovitskiy",
+    "kevin gimpel",
+    "shalmali joshi",
+    "unknown"
+  ],
+  "acps-access-control-policies": [
+    "unknown"
+  ],
+  "query-flock": [
+    "unknown"
+  ],
+  "ngpt-normalized-transformer": [
+    "unknown"
+  ],
+  "generative-model": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "geoffrey hinton",
+    "d. p. kingma",
+    "max welling",
+    "jun-yan zhu",
+    "chelsea finn"
+  ],
+  "boosting": [
+    "yoav freund",
+    "robert schapire",
+    "jerome friedman",
+    "trevor hastie",
+    "robert tibshirani",
+    "leo breiman",
+    "vladimir vapnik"
+  ],
+  "jepa-joint-embedding-predictive-architecture": [
+    "unknown"
+  ],
+  "sample-difficulty": [
+    "unknown"
+  ],
+  "hyperplane": [
+    "unknown"
+  ],
+  "program-induction": [
+    "john mccarthy",
+    "alan turing",
+    "judea pearl",
+    "peter norvig",
+    "leslie valiant",
+    "richard sutton",
+    "geoffrey hinton"
+  ],
+  "xai-explainable-ai": [
+    "judea pearl",
+    "timnit gebru",
+    "yann lecun",
+    "zhi-hua zhou",
+    "marco tulio ribeiro",
+    "cynthia rudin",
+    "been kim"
+  ],
+  "local-pooling": [
+    "unknown"
+  ],
+  "mortal-computation": [
+    "unknown"
+  ],
+  "scm-continuous-time-consistency-model": [
+    "unknown"
+  ],
+  "foom": [
+    "unknown"
+  ],
+  "inference-acceleration": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "demis hassabis",
+    "ilya sutskever",
+    "jürgen schmidhuber"
+  ],
+  "adversarial-attacks": [
+    "ian goodfellow",
+    "nicolas papernot",
+    "aleksander madry",
+    "danilo jimenez rezende",
+    "yuxin wu",
+    "christian szegedy",
+    "zico kolter"
+  ],
+  "tescreal": [
+    "unknown"
+  ],
+  "mims-multiple-instance-learning-for-missing-annotations": [
+    "unknown"
+  ],
+  "mrl-matryoshka-representation-learning": [
+    "unknown"
+  ],
+  "secure-enclave": [
+    "unknown"
+  ],
+  "training-data": [
+    "unknown"
+  ],
+  "multimodal": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "ilya sutskever",
+    "jürgen schmidhuber",
+    "fei-fei li",
+    "richard socher"
+  ],
+  "scalable-matmul-free-language-modeling": [
+    "unknown"
+  ],
+  "policy-gradient": [
+    "richard s. sutton",
+    "david silver",
+    "john schulman",
+    "sergey levine",
+    "marcin andrychowicz",
+    "chelsea finn",
+    "pieter abbeel"
+  ],
+  "hmi-human-machine-interface": [
+    "douglas engelbart",
+    "ivan sutherland",
+    "jef raskin",
+    "ben shneiderman",
+    "sherry turkle",
+    "steve jobs",
+    "mark weiser"
+  ],
+  "thermodynamic-bayesian-inference": [
+    "unknown"
+  ],
+  "model-compression": [
+    "geoffrey hinton",
+    "yann lecun",
+    "andrew ng",
+    "jürgen schmidhuber",
+    "song han",
+    "mohammad rastegari",
+    "trevor darrell"
+  ],
+  "autoformalization": [
+    "unknown"
+  ],
+  "dual-use": [
+    "unknown"
+  ],
+  "image-synthesis": [
+    "ivan sutherland",
+    "john whitney",
+    "harold cohen",
+    "ed catmull",
+    "david h. salesin",
+    "craig reynolds",
+    "michael deering"
+  ],
+  "responsible-ai": [
+    "timnit gebru",
+    "kate crawford",
+    "stuart russell",
+    "fei-fei li",
+    "geoffrey hinton",
+    "yann lecun",
+    "pedro domingos"
+  ],
+  "anomaly-detection": [
+    "j. ross quinlan",
+    "david j. hand",
+    "chandola v.",
+    "hodge v. j.",
+    "paul l. b. de vries",
+    "andrew y. ng",
+    "i. h. witten"
+  ],
+  "multi-token-prediction": [
+    "unknown"
+  ],
+  "aeo-answer-engine-optimization": [
+    "unknown"
+  ],
+  "groundedness": [
+    "unknown"
+  ],
+  "function-approximator": [
+    "david rumelhart",
+    "geoffrey hinton",
+    "ronald j. williams",
+    "john mccarthy",
+    "judea pearl",
+    "yann lecun",
+    "andrew ng"
+  ],
+  "self-speculative-decoding": [
+    "unknown"
+  ],
+  "bnn-bispectral-neural-networks": [
+    "unknown"
+  ],
+  "federated-training": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "peter kairouz",
+    "jakub konečný",
+    "h. brendan mcmahan",
+    "abhradeep thakurta"
+  ],
+  "horizon": [
+    "unknown"
+  ],
+  "spatial-autoencoder": [
+    "unknown"
+  ],
+  "search-optimization": [
+    "david hart",
+    "jon kleinberg",
+    "sergey brin",
+    "larry page",
+    "peter norvig",
+    "andrey kolmogorov",
+    "michael stonebraker"
+  ],
+  "sampling-algorithm": [
+    "david aldous",
+    "persi diaconis",
+    "leslie valiant",
+    "andrew yao",
+    "richard m. karp",
+    "michael i. jordan",
+    "unknown"
+  ],
+  "token-speculation-techniques": [
+    "unknown"
+  ],
+  "semantic-indexing": [
+    "david deerwester",
+    "susan t. dumais",
+    "thomas k. landauer",
+    "george w. furnas",
+    "thomas a. holt",
+    "michael a. harshman",
+    "unknown"
+  ],
+  "stochastic": [
+    "andrey kolmogorov",
+    "norbert wiener",
+    "john von neumann",
+    "claude shannon",
+    "richard feynman",
+    "paul samuelson",
+    "daniel kahneman"
+  ],
+  "self-attention": [
+    "ashish vaswani",
+    "noam shazeer",
+    "niki parmar",
+    "jakob uszkoreit",
+    "llion jones",
+    "aidan n. gomez",
+    "lukasz kaiser"
+  ],
+  "dualism": [
+    "john mccarthy",
+    "marvin minsky",
+    "allen newell",
+    "herbert a. simon",
+    "david rumelhart",
+    "geoffrey hinton",
+    "yann lecun"
+  ],
+  "negative-utilitarianism": [
+    "j. j. c. smart",
+    "david pearce",
+    "karl popper",
+    "peter singer",
+    "thomas nagel",
+    "richard routley",
+    "derek parfit"
+  ],
+  "feed-forward": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "frank rosenblatt",
+    "david rumelhart",
+    "ronald j. williams",
+    "jürgen schmidhuber"
+  ],
+  "model-stability": [
+    "unknown"
+  ],
+  "geometric-deep-learning": [
+    "michael bronstein",
+    "joan bruna",
+    "taco cohen",
+    "petar veličković",
+    "thomas kipf",
+    "federico monti",
+    "justin solomon"
+  ],
+  "ablation": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "david silver",
+    "richard sutton",
+    "unknown"
+  ],
+  "assistant": [
+    "unknown"
+  ],
+  "mlops-machine-learning-operations": [
+    "jesse davis",
+    "chris albon",
+    "andrew ng",
+    "dan becker",
+    "emil wallner",
+    "mlops community",
+    "google cloud ai team"
+  ],
+  "meta-regressor": [
+    "unknown"
+  ],
+  "ai-effect": [
+    "john mccarthy",
+    "alan turing",
+    "herbert simon",
+    "allen newell",
+    "marvin minsky",
+    "ray kurzweil",
+    "stuart russell"
+  ],
+  "parameter-space": [
+    "unknown"
+  ],
+  "edl-experimentation-driven-learning": [
+    "unknown"
+  ],
+  "speed-of-light-issues": [
+    "albert einstein",
+    "james clerk maxwell",
+    "hendrik lorentz",
+    "hermann minkowski",
+    "nikola tesla",
+    "michael faraday",
+    "richard feynman"
+  ],
+  "mas-multi-agent-system": [
+    "gerhard weiss",
+    "michael wooldridge",
+    "nicholas r. jennings",
+    "yoav shoham",
+    "katia sycara",
+    "peter stone",
+    "david kinny"
+  ],
+  "scalar": [
+    "unknown"
   ]
 }

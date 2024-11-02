@@ -140,6 +140,8 @@ class ScholarScraper:
                 response = self.session.get(self.base_url, params=params)
                 
                 if response.status_code == 429:  # Too Many Requests
+                    logging.warning(f"Rate limit response: {response.text}")
+                    logging.warning(f"Response headers: {dict(response.headers)}")
                     self._handle_rate_limit()
                     retry_count += 1
                     continue
@@ -154,6 +156,11 @@ class ScholarScraper:
                 
             except requests.exceptions.RequestException as e:
                 if "429" in str(e):
+                    logging.warning(f"Rate limit exception: {str(e)}")
+                    if hasattr(e.response, 'text'):
+                        logging.warning(f"Response content: {e.response.text}")
+                    if hasattr(e.response, 'headers'):
+                        logging.warning(f"Response headers: {dict(e.response.headers)}")
                     self._handle_rate_limit()
                     retry_count += 1
                     continue
