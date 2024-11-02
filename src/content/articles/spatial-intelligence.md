@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.83
-- 0.81
-- 0.79
-- 0.77
-- 0.75
-- 0.73
 slug: spatial-intelligence
 summary: Ability of a system to understand, reason, and manipulate spatial relationships
   and properties within its environment.
 title: Spatial Intelligence
-year_origin: 1973
 ---
 
 Spatial intelligence in AI involves the development of algorithms and models that can interpret and process spatial data, allowing machines to understand and navigate three-dimensional spaces. This capability is crucial for applications such as robotics, autonomous vehicles, and geographic information systems (GIS). Spatial intelligence encompasses tasks like object recognition, scene reconstruction, and spatial reasoning, enabling AI systems to interact with the physical world more effectively. Techniques such as convolutional neural networks (CNNs), point cloud processing, and spatial-temporal modeling are often employed to enhance an AI system's spatial understanding and decision-making capabilities.

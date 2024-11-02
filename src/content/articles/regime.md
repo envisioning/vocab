@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
 slug: regime
 summary: Distinct operational or behavioral mode in which an AI system functions, characterized by specific patterns or properties of data, parameters, or algorithms.
 title: Regime

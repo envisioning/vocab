@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.75
-- 0.735
-- 0.72
-- 0.705
-- 0.69
-- 0.675
-- 0.66
 slug: vits-vision-transformers
 summary: Class of DL models that apply the transformer architecture, originally designed
   for natural language processing, to computer vision tasks.
 title: ViTs (Vision Transformers)
-year_origin: 2020
 ---
 
 Vision Transformers are an innovative adaptation of the transformer architecture to the domain of image analysis. Instead of relying on the convolutional layers typically used in image processing, ViTs divide an image into patches and treat these patches as sequences of input data, similar to words in a sentence. This approach allows ViTs to leverage the self-attention mechanism of transformers, enabling the model to focus on the most informative parts of an image across all patches. ViTs are particularly noted for their scalability and ability to perform well with larger datasets and increased computational power, achieving state-of-the-art results on many benchmark image recognition tasks.

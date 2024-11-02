@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.81
-- 0.79
-- 0.77
-- 0.76
-- 0.75
-- 0.73
-- 0.72
 slug: mtl-multi-task-learning
 summary: ML approach where a single model is trained simultaneously on multiple related
   tasks, leveraging commonalities and differences across tasks to improve generalization.
 title: MTL (Multi-Task Learning)
-year_origin: 1993
 ---
 
 Multi-Task Learning (MTL) is a strategic approach in machine learning where a single model learns to perform multiple tasks at the same time, rather than learning each task in isolation. This technique is rooted in the premise that by sharing representations between related tasks, the model can generalize better on each task. MTL aims to improve learning efficiency and prediction accuracy by exploiting the intrinsic relationships among the tasks. For instance, in natural language processing (NLP), an MTL model might simultaneously learn to predict part-of-speech tags, named entities, and syntactic dependencies. This shared learning process encourages the model to identify and leverage common features across tasks, which can lead to more robust and versatile models. MTL has been applied across various domains, including computer vision, speech recognition, and NLP, demonstrating its versatility and effectiveness in enhancing model performance and reducing overfitting by sharing knowledge across tasks.

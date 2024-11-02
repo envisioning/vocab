@@ -1,16 +1,7 @@
 ---
-generality:
-- 0.9
-- 0.905
-- 0.91
-- 0.915
-- 0.92
-- 0.925
-- 0.93
 slug: compute
 summary: Processing power and resources required to run AI algorithms and models.
 title: Compute
-year_origin: 1946
 ---
 
 Compute is a critical component in AI development and deployment, encompassing the CPU (Central Processing Unit), GPU (Graphics Processing Unit), and other hardware resources like TPUs (Tensor Processing Units) that execute computations. The amount and efficiency of compute directly affect the speed, scalability, and complexity of AI systems. High-performance computing enables more sophisticated algorithms, larger datasets, and faster training times, which are essential for tasks such as deep learning, natural language processing, and real-time analytics. Innovations in cloud computing and specialized hardware have significantly lowered the barriers to access high-level compute resources, democratizing the ability to deploy advanced AI applications across industries.

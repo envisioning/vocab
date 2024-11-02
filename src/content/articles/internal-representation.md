@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.89
-  - 0.875
-  - 0.86
-  - 0.845
-  - 0.83
-  - 0.815
-  - 0.8
 slug: internal-representation
 summary: The way information or knowledge is structured and stored within an AI or computational system, enabling the system to process, reason, or make decisions based on that information.
 title: Internal Representation

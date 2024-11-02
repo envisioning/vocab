@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.67
-  - 0.645
-  - 0.62
-  - 0.595
-  - 0.57
-  - 0.545
-  - 0.52
 slug: kaleidoscope-hypothesis
 summary: Approach in AI that focuses on the dynamic and context-specific evaluation of machine learning models, particularly in settings where model behavior must adapt to varying real-world conditions.
 title: Kaleidoscope Hypothesis

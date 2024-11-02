@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.84
-- 0.835
-- 0.83
-- 0.825
-- 0.82
-- 0.815
-- 0.81
 slug: cuda-compute-unified-device-architecture
 summary: Parallel computing platform and application programming interface (API) that
   allows software developers and software engineers to use a graphics processing unit
   (GPU) for general purpose processing.
 title: CUDA (Compute Unified Device Architecture)
-year_origin: 2007
 ---
 
 CUDA is significant for its ability to dramatically increase computing performance by harnessing the power of GPUs for non-graphical computing tasks. This technology is crucial in the field of AI, particularly for training deep neural networks, where the parallel processing capabilities of GPUs can be leveraged to handle the vast amounts of data and complex calculations required more efficiently than traditional CPUs. CUDA enables developers to direct C, C++, and Fortran code to be executed on the GPU, significantly accelerating computational tasks related to machine learning, scientific simulations, and graphics. Its widespread adoption in AI research and applications is due to the significant speedup it provides in the execution of parallel algorithms, a cornerstone in the training and inference phases of deep learning models.

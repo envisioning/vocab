@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.89
-  - 0.87
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
 slug: compute-efficiency
 summary: Effective use of computational resources to maximize performance and minimize waste.
 title: Compute Efficiency

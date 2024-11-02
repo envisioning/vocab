@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
 slug: speculative-decoding
 summary: AI technique that generates multiple potential outputs simultaneously to improve efficiency and accuracy in tasks like language modeling and neural network inference.
 title: Speculative Decoding

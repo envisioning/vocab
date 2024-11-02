@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.57
-  - 0.56
-  - 0.55
-  - 0.54
-  - 0.53
-  - 0.52
-  - 0.51
 slug: autoformalization
 summary: Process of automatically converting natural language descriptions or informal mathematical ideas into formal mathematical or logical expressions using AI.
 title: Autoformalization

@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.75
-  - 0.735
-  - 0.72
-  - 0.705
-  - 0.69
-  - 0.675
-  - 0.66
 slug: acps-access-control-policies
-summary:
-  Guidelines that regulates who or what can view or use resources in a computing environment.
+summary: Guidelines that regulates who or what can view or use resources in a computing environment.
 title: ACPs (Access Control Policies)
 ---
 

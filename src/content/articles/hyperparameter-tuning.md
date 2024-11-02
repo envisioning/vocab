@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
-  - 0.83
 slug: hyperparameter-tuning
 summary: Process of optimizing the parameters of a ML model that are not learned from data, aiming to improve model performance.
 title: Hyperparameter Tuning

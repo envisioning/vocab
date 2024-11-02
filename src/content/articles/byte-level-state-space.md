@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.425
-  - 0.41
-  - 0.4
-  - 0.385
-  - 0.37
-  - 0.35
-  - 0.325
 slug: byte-level-state-space
 summary: Representation of the state space of a system or model at the granularity of individual bytes, capturing every possible state a byte can assume within a computational context.
 title: Byte-Level State Space

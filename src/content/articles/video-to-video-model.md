@@ -2,14 +2,6 @@
 title: Video-to-Video Model
 summary: A model that transforms input videos into an output video with altered or enhanced visual characteristics while retaining the temporal coherence of the original.
 slug: video-to-video-model
-generality:
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
-- 0.425
-- 0.4
 ---
 
 Video-to-video models are significant in AI for tasks that require modifying video content while preserving its sequential integrity. These models apply neural network architectures, such as Generative Adversarial Networks (GANs) and Convolutional Neural Networks (CNNs), to carry out tasks like style transfer, where the visual style of a video is altered, or video synthesis, where new video content is generated based on an initial sequence. Applications of video-to-video models span diverse fields, including film production, virtual reality, autonomous driving simulations, and augmented reality, as they can create consistent, realistic transformations by learning from large datasets. This transformation relies on deep learning techniques that leverage temporal and spatial information, maintaining the continuity essential for high-quality video outputs. 

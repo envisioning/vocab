@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
 slug: rlaif-reinforcement-learning-with-ai-feedback
-summary:
-  A method that combines reinforcement learning techniques with feedback derived from AI models to enhance decision-making or control tasks efficiently.
+summary: A method that combines reinforcement learning techniques with feedback derived from AI models to enhance decision-making or control tasks efficiently.
 title: RLAIF (Reinforcement Learning with AI Feedback)
 ---
 

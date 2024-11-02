@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.71
-- 0.705
-- 0.7
-- 0.695
-- 0.69
-- 0.685
-- 0.68
 slug: max-pooling
 summary: Downsampling technique that reduces the dimensionality of input data by selecting
   the maximum value from a specified subset of the data.
 title: Max Pooling
-year_origin: 1990
 ---
 
 Max pooling is employed within convolutional neural networks to progressively reduce the spatial size of the representation, thereby decreasing the amount of parameters and computation in the network. This operation works by sliding a window (often 2x2) over the input data (typically the output of convolutional layers) and taking the maximum value within that window as the output for that region. This process not only helps in reducing data dimensions but also introduces translational invariance, enhancing the model's ability to generalize from local to broader features, and effectively concentrating on the most salient features within the receptive field.

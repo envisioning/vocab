@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.68
-  - 0.66
-  - 0.64
-  - 0.62
-  - 0.6
-  - 0.58
-  - 0.56
 slug: mdo-multidomain-operations
-summary:
-  Strategic and tactical integration of capabilities across multiple domains—such as land, sea, air, space, and cyberspace—enabled and enhanced by artificial intelligence and advanced technologies.
+summary: Strategic and tactical integration of capabilities across multiple domains—such as land, sea, air, space, and cyberspace—enabled and enhanced by artificial intelligence and advanced technologies.
 title: MDO (Multidomain Operations)
 ---
 

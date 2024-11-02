@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.6
-  - 0.585
-  - 0.57
-  - 0.555
-  - 0.54
-  - 0.525
-  - 0.51
 slug: tem-trusted-execution-monitor
 summary: Security component that ensures the integrity and confidentiality of code and data within a computer system by managing and protecting execution environments.
 title: TEM (Trusted Execution Monitor)

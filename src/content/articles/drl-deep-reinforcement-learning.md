@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
-- 0.84
 slug: drl-deep-reinforcement-learning
 summary: Combines neural networks with a reinforcement learning framework, enabling
   AI systems to learn optimal actions through trial and error to maximize a cumulative
   reward.
 title: DRL (Deep Reinforcement Learning)
-year_origin: 2013
 ---
 
 Deep Reinforcement Learning is pivotal for teaching machines to make sequences of decisions. By integrating the perception capabilities of deep learning (where neural networks can interpret complex inputs such as images or speech) with the goal-oriented approach of reinforcement learning (which focuses on maximizing an agent's reward in an environment), DRL allows AI systems to learn from direct interaction with their environment without needing predefined labels. This approach has been fundamental in achieving state-of-the-art performances in complex tasks such as playing video games at superhuman levels, autonomous driving, robotic manipulation, and strategic game playing like Go or Chess. It underscores the capacity of AI to learn policies that map observations to actions, aiming to achieve long-term objectives, and it highlights the significance of exploration and exploitation in learning.

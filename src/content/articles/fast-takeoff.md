@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.5
-- 0.525
-- 0.55
-- 0.475
-- 0.5
-- 0.525
-- 0.45
 slug: fast-takeoff
 summary: Rapid transition from human-level to superintelligent AI, occurring in a
   very short period of time.
 title: Fast Takeoff
-year_origin: 1998
 ---
 
 In the context of artificial intelligence, "fast takeoff" describes a scenario where an AI system rapidly advances from a state of being roughly as intelligent as a human to one that vastly exceeds human intelligence. This acceleration could happen in a matter of days, weeks, or even hours, leading to significant and potentially uncontrollable changes in technology, society, and the balance of power. The idea stems from the notion that once an AI reaches a level where it can improve its own algorithms and hardware autonomously, the improvements would compound at an exponential rate, creating a feedback loop of accelerating intelligence. This concept is crucial in discussions about AI safety and ethics, as a fast takeoff could pose substantial risks if not properly managed.

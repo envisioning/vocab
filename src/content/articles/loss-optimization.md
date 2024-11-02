@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.95
-  - 0.925
-  - 0.9
-  - 0.89
-  - 0.86
-  - 0.85
-  - 0.83
 slug: loss-optimization
 summary: Process of adjusting a model's parameters to minimize the difference between the predicted outputs and the actual outputs, measured by a loss function.
 title: Loss Optimization

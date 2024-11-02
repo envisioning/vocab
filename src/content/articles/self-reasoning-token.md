@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.4
-  - 0.375
-  - 0.35
-  - 0.325
-  - 0.3
-  - 0.275
-  - 0.25
 slug: self-reasoning-token
 summary: AI mechanism designed to enhance the planning capabilities of language models by allowing them to anticipate and prepare for future outputs.
 title: Self-Reasoning Token

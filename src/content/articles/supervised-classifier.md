@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
 slug: supervised-classifier
 summary: Algorithm that, given a set of labeled training data, learns to predict the labels of new, unseen data.
 title: Supervised Classifier

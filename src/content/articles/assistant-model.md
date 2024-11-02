@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.8
-- 0.81
-- 0.82
-- 0.83
-- 0.84
-- 0.85
-- 0.86
 slug: assistant-model
 summary: An AI model designed to assist users by providing responses, recommendations, or information based on natural language input.
 title: Assistant Model

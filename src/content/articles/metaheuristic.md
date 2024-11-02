@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.865
-- 0.855
-- 0.845
-- 0.835
-- 0.825
-- 0.815
-- 0.805
 slug: metaheuristic
 summary: High-level problem-independent algorithmic framework that provides a set
   of guidelines or strategies to develop heuristic optimization algorithms.
 title: Metaheuristic
-year_origin: 1986
 ---
 
 Metaheuristics are designed to solve complex optimization problems by guiding subordinate heuristics to explore the solution space efficiently. Unlike exact algorithms that guarantee finding the optimal solution, metaheuristics aim to find good enough solutions within a reasonable timeframe, often where traditional methods fail due to problem size or complexity. Common examples include Genetic Algorithms, Simulated Annealing, and Ant Colony Optimization. These methods balance exploration and exploitation through mechanisms such as mutation, crossover, local search, and pheromone trails, allowing them to escape local optima and approach global optima.

@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.86
-- 0.855
-- 0.85
-- 0.825
-- 0.82
-- 0.815
-- 0.81
 slug: state-space-model
 summary: Mathematical frameworks used to represent systems that are governed by a
   set of latent (hidden) variables evolving over time, observed through another set
   of variables.
 title: State Space Model
-year_origin: 1960
 ---
 
 State space models are essential in the fields of control engineering, econometrics, and time series analysis. They provide a structured way to model the dynamic behavior of a system as a set of input, output, and state variables. These models are comprised of two main equations: the state equation, which describes how the current state of the system evolves into the next state, influenced by inputs and a stochastic process; and the observation equation, which relates the observed data to the state of the system, often with some noise. This framework is particularly powerful for designing controllers in engineering, forecasting in economics, and filtering signals from noisy data.

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.71
-  - 0.705
-  - 0.7
-  - 0.695
-  - 0.69
-  - 0.685
-  - 0.68
 slug: nowcasting
 summary: Immediate forecast of economic or environmental conditions based on real-time data evolution using AI models.
 title: Nowcasting

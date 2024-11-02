@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.4
-  - 0.375
-  - 0.35
-  - 0.325
-  - 0.3
-  - 0.275
-  - 0.25
 slug: discontinuous-jump
 summary: Sudden, significant leap in the performance or capability of an AI system, deviating sharply from its previous trajectory of incremental improvements.
 title: Discontinuous Jump

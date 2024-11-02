@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.83
-  - 0.815
-  - 0.8
-  - 0.78
-  - 0.76
-  - 0.74
 slug: parameterized
 summary: Model or function in AI that utilizes parameters to make predictions or decisions.
 title: Parameterized

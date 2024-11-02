@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.543
-  - 0.511
-  - 0.489
-  - 0.467
-  - 0.445
-  - 0.423
-  - 0.401
 slug: flow-engineering
 summary: Structured process of improving problem-solving in tasks like code generation by guiding a model through systematic, iterative refinements based on feedback loops.
 title: Flow Engineering

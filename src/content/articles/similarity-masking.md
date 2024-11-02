@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.74
-  - 0.725
-  - 0.71
-  - 0.695
-  - 0.68
-  - 0.665
-  - 0.65
 slug: similarity-masking
 summary: Technique used to filter or obscure less important features in data based on their similarity to other features, enhancing the focus on distinct or more relevant aspects for tasks like ML or pattern recognition.
 title: Similarity Masking

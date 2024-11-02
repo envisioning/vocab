@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.41
-  - 0.385
-  - 0.36
-  - 0.335
-  - 0.31
-  - 0.285
-  - 0.26
 slug: skill-differential
 summary: Variation in performance levels between individuals or groups due to differences in skills, experience, or knowledge, particularly within the same task or profession.
 title: Skill Differential

@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
 slug: ai-winter
 summary: Periods of reduced funding and interest in AI research and development, often
   due to unmet expectations and lack of significant progress.
 title: AI Winter
-year_origin: 1984
 ---
 
 AI Winter describes the cyclical downturns in the field of artificial intelligence when the high expectations set by initial breakthroughs are not met, leading to diminished enthusiasm and investment. During these periods, AI research faces significant setbacks as public and private sector funding dries up, media coverage wanes, and academic interest shifts elsewhere. These downturns often follow periods of intense hype and promise, where the limitations of current technologies become apparent, and the gap between ambition and practical application leads to disillusionment. AI Winters have significantly impacted the pace of AI development, causing delays in advancements and shifting the focus towards more feasible projects.

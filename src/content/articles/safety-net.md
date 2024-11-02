@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.81
-  - 0.8
-  - 0.78
-  - 0.77
-  - 0.76
-  - 0.75
-  - 0.74
 slug: safety-net
 summary: Measures, policies, and technologies designed to prevent, detect, and mitigate adverse outcomes or ethical issues stemming from AI systems' operation.
 title: Safety Net

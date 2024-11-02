@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.45
-  - 0.425
-  - 0.4
-  - 0.375
-  - 0.35
-  - 0.325
-  - 0.3
 slug: kaggle-effect
 summary: Phenomenon where ML models developed on Kaggle competitions perform well on specific datasets but may not generalize as effectively to real-world applications due to the unique constraints and optimizations used in these competitions.
 title: Kaggle Effect

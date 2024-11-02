@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.91
-  - 0.89
-  - 0.87
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
 slug: polymathic-ai
 summary: AI systems that possess a wide range of skills and knowledge, enabling them to perform tasks across various domains, much like a human polymath.
 title: Polymathic AI

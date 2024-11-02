@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.79
-- 0.77
-- 0.75
-- 0.73
-- 0.71
-- 0.69
-- 0.67
 slug: autopoiesis
 summary: Systems capable of reproducing and maintaining themselves by regulating their
   internal environment in response to external conditions.
 title: Autopoiesis
-year_origin: 1972
 ---
 
 Originating from biology and later adopted into systems theory and cognitive science, autopoiesis refers to the self-creating and self-maintaining nature of living systems. It emphasizes how these systems can produce the components necessary for their operation and survival, establishing a clear boundary between themselves and their environment. In AI, the concept of autopoiesis has inspired research into developing systems that can adapt, learn, and maintain their integrity in changing environments autonomously. This involves complex interactions between the system's components, requiring sophisticated algorithms that enable self-regulation, adaptation, and evolution, drawing parallels with biological organisms' resilience and adaptability.

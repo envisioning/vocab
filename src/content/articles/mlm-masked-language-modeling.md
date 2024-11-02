@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.78
-- 0.765
-- 0.75
-- 0.735
-- 0.72
-- 0.705
-- 0.69
 slug: mlm-masked-language-modeling
 summary: Training technique where random words in a sentence are replaced with a special
   token, and the model learns to predict these masked words based on their context.
 title: MLM (Masked-Language Modeling)
-year_origin: 2018
 ---
 
 Masked Language Modeling is a fundamental approach used in the pre-training of large language models, such as BERT (Bidirectional Encoder Representations from Transformers). The technique involves hiding (masking) part of the input data and training the model to predict the masked words or tokens. This approach enables the model to understand and capture deep contextual relationships between words in a sentence. Unlike traditional language modeling, which predicts the next word in a sequence, MLM requires the model to understand the entire context on both sides of the masked word, leading to more robust representations of language understanding. MLM is crucial for developing models that understand the nuances of language, including syntax, semantics, and grammar, and it has significantly contributed to advancements in natural language processing (NLP) tasks such as sentiment analysis, question-answering, and text summarization.

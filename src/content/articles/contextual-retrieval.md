@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.735
-  - 0.712
-  - 0.69
-  - 0.67
-  - 0.65
-  - 0.63
-  - 0.61
 slug: contextual-retrieval
 summary: AI-driven search technique that retrieves information based on the broader context of a query, rather than relying solely on exact keywords or phrases.
 title: Contextual Retrieval

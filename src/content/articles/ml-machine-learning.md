@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.98
-- 0.975
-- 0.97
-- 0.965
-- 0.96
-- 0.955
-- 0.95
 slug: ml-machine-learning
 summary: Development of algorithms and statistical models that enable computers to
   perform tasks without being explicitly programmed for each one.
 title: ML (Machine Learning)
-year_origin: 1959
 ---
 
 Machine Learning represents a fundamental shift in how computers are programmed, moving away from explicit instructions to a data-driven approach where algorithms learn patterns and make decisions based on input data. This field encompasses a variety of methods, including supervised learning (where models are trained on labeled data), unsupervised learning (where models identify patterns in data without labels), and reinforcement learning (where models learn to make sequences of decisions). ML is crucial for applications ranging from natural language processing and computer vision to predicting consumer behavior and developing autonomous systems.

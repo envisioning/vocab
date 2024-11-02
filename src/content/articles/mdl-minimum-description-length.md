@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.86
-- 0.855
-- 0.85
-- 0.845
-- 0.84
-- 0.835
-- 0.83
 slug: mdl-minimum-description-length
 summary: Principle formalization of Occam's Razor in information theory, advocating
   that the best hypothesis for a given set of data is the one that leads to the shortest
   total description of the data and the hypothesis.
 title: MDL (Minimum Description Length)
-year_origin: 1978
 ---
 
 The MDL principle, rooted in information theory, posits that the best model for a dataset is the one that compresses the data the most effectively. It aims to balance model complexity and data fitting by minimizing the sum of the length of the description of the model and the length of the description of the data when encoded with the model. This approach prevents overfitting by penalizing overly complex models that might fit the noise in the data rather than the underlying structure. In practice, MDL is used in model selection and various machine learning tasks to ensure that chosen models generalize well to unseen data. It connects deeply with concepts such as Kolmogorov complexity and Bayesian inference, where shorter descriptions correspond to higher prior probabilities.

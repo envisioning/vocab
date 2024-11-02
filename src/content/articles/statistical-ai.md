@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.92
-- 0.91
-- 0.9
-- 0.89
-- 0.88
-- 0.87
-- 0.86
 slug: statistical-ai
 summary: Utilizes statistical methods to analyze data and make probabilistic inferences, aimed at emulating aspects of human intelligence through quantitative models.
 title: Statistical AI

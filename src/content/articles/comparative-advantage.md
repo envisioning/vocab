@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.62
-  - 0.598
-  - 0.576
-  - 0.554
-  - 0.532
-  - 0.51
-  - 0.488
 slug: comparative-advantage
 summary: Strategic advantage that a particular AI model, system, or approach has over others in performing specific tasks more efficiently or effectively due to unique strengths or capabilities.
 title: Comparative Advantage

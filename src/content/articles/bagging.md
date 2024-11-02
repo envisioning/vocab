@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.88
-- 0.865
-- 0.85
-- 0.835
-- 0.82
-- 0.805
-- 0.79
 slug: bagging
 summary: ML ensemble technique that improves the stability and accuracy of machine
   learning algorithms by combining multiple models trained on different subsets of
   the same data set.
 title: Bagging
-year_origin: 1994
 ---
 
 Bagging is a powerful ensemble learning method used to reduce variance and help prevent overfitting in predictive models, particularly in decision tree algorithms and their ensemble versions like Random Forests. It involves creating multiple versions of a predictor and using these to get an aggregated predictor. The method works by randomly selecting subsets of the training data with replacement, training a model on each subset, and then averaging the predictions for regression tasks or taking a majority vote for classification tasks. This approach allows the ensemble model to capture various aspects of the data's distribution, leading to a more robust and accurate prediction model.

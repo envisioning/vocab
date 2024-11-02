@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
-  - 0.475
-  - 0.45
 slug: socratic-model
 summary: Conversational AI that is designed to engage in dialogue in a manner akin to Socratic questioning, aiming to stimulate critical thinking and draw out ideas and underlying presuppositions.
 title: Socratic Model

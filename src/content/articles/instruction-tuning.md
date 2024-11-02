@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.63
-  - 0.605
-  - 0.58
-  - 0.555
-  - 0.53
-  - 0.505
-  - 0.48
 slug: instruction-tuning
 summary: Process used in ML to optimize a language model’s responses for specific tasks by fine-tuning it on a curated set of instructions and examples.
 title: Instruction Tuning

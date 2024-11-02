@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.89
-- 0.88
-- 0.87
-- 0.86
-- 0.85
-- 0.84
-- 0.83
 slug: regression
 summary: Statistical method used in ML to predict a continuous outcome variable based
   on one or more predictor variables.
 title: Regression
-year_origin: 1805
 ---
 
 Regression analysis is fundamental in the field of machine learning and statistics, serving as a predictive modeling technique that analyzes the relationship between a dependent (target) variable and one or more independent (predictor) variables. The goal is to model the expected value of the dependent variable as a function of the independent variables, allowing for the prediction of outcomes based on new, unseen data. Regression techniques are varied, including linear regression, which assumes a linear relationship between variables, and non-linear regression, which can model more complex relationships. These methods are crucial in fields like finance for predicting stock prices, in meteorology for weather forecasting, and in marketing for sales forecasting.

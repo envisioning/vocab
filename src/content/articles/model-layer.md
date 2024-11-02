@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.835
-  - 0.82
-  - 0.805
-  - 0.79
-  - 0.775
-  - 0.76
 slug: model-layer
 summary: Discrete level in a neural network where specific computations or transformations are applied to the input data, progressively abstracting and refining the information as it moves through the network.
 title: Model Layer

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.78
-  - 0.76
-  - 0.74
-  - 0.72
-  - 0.7
-  - 0.68
-  - 0.66
 slug: cosine-similarity
 summary: Measures the cosine of the angle between two vectors in a multidimensional space, often used to determine how similar two items are.
 title: Cosine Similarity

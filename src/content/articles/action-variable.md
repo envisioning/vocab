@@ -2,14 +2,6 @@
 title: Action Variable
 summary: Represents a control mechanism within an environment used by AI systems to influence outcomes or states.
 slug: action-variable
-generality:
-- 0.62
-- 0.65
-- 0.615
-- 0.63
-- 0.645
-- 0.66
-- 0.625
 ---
 
 In the context of AI, an action variable is a critical element used by agents in decision-making processes, particularly within reinforcement learning models, to interact with and alter the state of their environment to achieve specific goals or maximize rewards. Such variables are integral to defining the range and type of actions an agent can take, thus heavily influencing the agent's ability to learn optimal strategies or policies through experimentation and feedback. The ability to effectively manipulate these variables is essential for simulating real-world decision-making scenarios in autonomous systems, robotics, and complex problem-solving tasks.

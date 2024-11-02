@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.93
-- 0.92
-- 0.905
-- 0.895
-- 0.88
-- 0.87
-- 0.86
 slug: nlu-natural-language-understanding
 summary: Subfield of NLP focused on enabling machines to understand and interpret
   human language in a way that is both meaningful and contextually relevant.
 title: NLU (Natural Language Understanding)
-year_origin: 1970
 ---
 
 NLU involves the application of computational techniques to analyze and understand the meaning of natural language texts. This includes understanding the intent behind a user's message, the sentiment expressed, and the extraction of relevant entities and relationships within the text. It's a crucial component for various applications such as chatbots, virtual assistants, and information retrieval systems, enabling them to process human language in a way that mirrors human understanding. Unlike simpler forms of NLP, which might only parse text or recognize speech, NLU requires a deeper semantic analysis, involving aspects of linguistics and cognitive science to grasp the nuances and complexities of language.

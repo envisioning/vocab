@@ -6,6 +6,7 @@ import requests
 from typing import Union
 import signal
 from config import API_KEY
+import json
 
 logging.basicConfig(
     level=logging.INFO,
@@ -64,8 +65,25 @@ def estimate_year_origin(title: str, summary: str) -> Union[int, None]:
         print(f"Error processing {title}: {str(e)}")
         return None
 
+def load_existing_years() -> dict:
+    """Load existing year mappings from years.json."""
+    try:
+        with open('../data/years.json', 'r', encoding='utf-8') as f:
+            content = f.read().strip()
+            if not content:  # If file is empty
+                return {}
+            return json.loads(content)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+def save_years(years_dict: dict):
+    """Save year mappings to years.json."""
+    with open('../data/years.json', 'w', encoding='utf-8') as f:
+        json.dump(years_dict, f, sort_keys=True, indent=2)
+
 def process_markdown_files(directory: Path):
     """Process all markdown files in the directory."""
+    years_dict = load_existing_years()
     md_files = list(directory.glob('**/*.md'))
     print(f"Found {len(md_files)} Markdown files to process\n")
     
@@ -77,16 +95,21 @@ def process_markdown_files(directory: Path):
             post = frontmatter.load(md_file)
             title = post.metadata.get('title', '')
             summary = post.metadata.get('summary', '')
+            slug = post.metadata.get('slug', '')
             
-            if not title:
+            if not title or not slug:
+                continue
+                
+            # Skip if we already have this entry
+            if slug in years_dict:
                 continue
                 
             year = estimate_year_origin(title, summary)
             
             if year is not None:
-                post.metadata['year_origin'] = year
-                with open(md_file, 'w', encoding='utf-8') as f:
-                    f.write(frontmatter.dumps(post))
+                years_dict[slug] = year
+                # Save after each successful addition
+                save_years(years_dict)
                     
         except Exception as e:
             print(f"Error processing {md_file}: {str(e)}")

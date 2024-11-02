@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.825
-- 0.82
-- 0.8
-- 0.79
-- 0.78
-- 0.775
 slug: vc-dimension-vapnik-chervonenkis
 summary: Measure of the capacity of a statistical classification algorithm, quantifying
   how complex the model is in terms of its ability to fit varied sets of data.
 title: VC Dimension (Vapnik-Chervonenkis)
-year_origin: 1971
 ---
 
 The VC dimension specifically quantifies the maximum number of training examples that a learning algorithm can shatter, where "shattering" refers to the algorithm's ability to correctly classify all possible label configurations for a given set of points, regardless of the actual labels. This measure is crucial in computational learning theory because it helps in understanding the trade-off between model complexity and the risk of overfitting. A model with a high VC dimension can represent a wide variety of functions and is capable of learning more complex patterns, but it may also require more data to generalize well and avoid fitting noise in the training data.

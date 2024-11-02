@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
 slug: reward-model-ensemble
 summary: Combination of multiple reward models used together to evaluate and guide the learning process of reinforcement learning agents, aiming to improve robustness, accuracy, and generalization of the reward signal.
 title: Reward Model Ensemble

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
 slug: fact-checking-ai
 summary: An application of AI designed to authenticate and validate the truthfulness of information.
 title: Fact-Checking AI

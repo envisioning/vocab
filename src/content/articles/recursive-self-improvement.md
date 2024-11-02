@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.865
-- 0.84
-- 0.815
-- 0.79
-- 0.765
-- 0.74
-- 0.715
 slug: recursive-self-improvement
 summary: Process by which an AI system iteratively improves itself, enhancing its
   intelligence and capabilities without human intervention.
 title: Recursive Self-Improvement
-year_origin: 1965
 ---
 
 The concept of recursive self-improvement is central to discussions about AGI because it posits a scenario where an AI system can make successive improvements to its own design or algorithms, leading to exponential growth in its capabilities. This process involves an AI system analyzing its own architecture and performance, identifying potential upgrades, and implementing these improvements autonomously. The significance of recursive self-improvement lies in its potential to reach a "singularity" point—where AI surpasses human intelligence, becoming capable of solving problems that are currently beyond human ability. Critics and proponents debate its feasibility and ethical implications, focusing on control, safety measures, and the unpredictability of a rapidly self-improving AI's trajectory.

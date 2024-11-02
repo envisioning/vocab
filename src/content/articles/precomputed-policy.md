@@ -2,14 +2,6 @@
 title: Precomputed Policy
 summary: A strategy computed in advance for decision-making processes in AI systems, particularly within reinforcement learning, to optimize future actions.
 slug: precomputed-policy
-generality:
-- 0.625
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
-- 0.475
 ---
 
 Precomputed Policy refers to the predetermined strategy derived for decision-making systems, especially within the realm of reinforcement learning. In this context, policies define the behavior of an agent, specifying the action to be taken in each state to maximize cumulative rewards. By precomputing a policy, the system leverages offline computations, often using methods like dynamic programming or Monte Carlo simulations, to evaluate and optimize actions before real-time deployment. This approach is crucial in scenarios where immediate, computationally expensive decision-making is required, and latency must be minimized. Utilization of precomputed policies enables complex AI systems to function efficiently by having a ready-to-use action plan that requires minimal further computation during execution.

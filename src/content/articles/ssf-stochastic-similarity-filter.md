@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.35
-  - 0.325
-  - 0.3
-  - 0.275
-  - 0.25
-  - 0.225
-  - 0.2
 slug: ssf-stochastic-similarity-filter
-summary:
-  Moderates GPU usage by skipping processing of similar consecutive input images, thereby improving computational efficiency in real-time image and video generation tasks.
+summary: Moderates GPU usage by skipping processing of similar consecutive input images, thereby improving computational efficiency in real-time image and video generation tasks.
 title: SSF (Stochastic Similarity Filter)
 ---
 

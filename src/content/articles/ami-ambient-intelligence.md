@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.72
-- 0.705
-- 0.69
-- 0.675
-- 0.66
-- 0.645
-- 0.63
 slug: ami-ambient-intelligence
 summary: Electronic environments that are sensitive, adaptive, and responsive to the
   presence of people, aiming to enhance the quality of life through seamless integration
   of technology.
 title: AmI (Ambient Intelligence)
-year_origin: 1998
 ---
 
 Ambient Intelligence encompasses the development of smart environments that use pervasive computing, ubiquitous sensors, and artificial intelligence to create interactive, context-aware systems. These systems can anticipate users' needs, personalize experiences, and provide relevant services without explicit interaction. The core components of AmI include context awareness, ubiquitous computing, and natural interaction, facilitating environments that can autonomously respond to human presence and behavior. Applications of AmI are extensive, ranging from smart homes and healthcare to urban planning and environmental monitoring, where the goal is to create more intuitive and supportive living and working spaces.

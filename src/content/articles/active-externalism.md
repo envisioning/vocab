@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.725
-- 0.71
-- 0.7
-- 0.69
-- 0.675
-- 0.66
-- 0.645
 slug: active-externalism
 summary: Theory that cognitive processes can extend beyond the human mind to include
   external devices or environments as integral components of thinking.
 title: Active Externalism
-year_origin: 1998
 ---
 
 Active externalism posits that cognitive processes are not confined within the boundaries of the individual but can extend into the external world, incorporating tools, devices, and even social environments as part of the cognitive system. This concept challenges traditional views of cognition by suggesting that external elements, such as a notebook or a smartphone, can function as extensions of the mind, actively participating in the cognitive process. These external resources are not merely aids but are integral to cognitive functions, dynamically interacting with the brain to perform tasks that would otherwise be more demanding or impossible. The theory emphasizes the active role of the external environment in shaping cognitive processes and supports the idea that cognition is distributed across both internal neural mechanisms and external tools.

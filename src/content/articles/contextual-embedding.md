@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.86
-- 0.84
-- 0.82
-- 0.8
-- 0.78
-- 0.76
-- 0.74
 slug: contextual-embedding
 summary: Vector representations of words or tokens in a sentence that capture their
   meanings based on the surrounding context, enabling dynamic and context-sensitive
   understanding of language.
 title: Contextual Embedding
-year_origin: 2018
 ---
 
 Contextual embeddings address the limitation of traditional word embeddings (e.g., Word2Vec, GloVe) by creating word representations that vary depending on the context in which the word appears. In models like BERT (Bidirectional Encoder Representations from Transformers), each word or token is represented as a multi-dimensional vector, which is dynamically adjusted according to the words around it. This allows for deeper understanding of polysemy (words with multiple meanings) and improves performance in tasks like language modeling, translation, and question-answering. Unlike static embeddings, contextual embeddings enable models to capture nuances of meaning, such as the difference between "bank" in "river bank" and "financial bank" based on surrounding words. They are foundational to state-of-the-art natural language processing (NLP) systems, providing more accurate and human-like language comprehension.

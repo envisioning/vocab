@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.32
-- 0.345
-- 0.37
-- 0.395
-- 0.42
-- 0.445
-- 0.47
 slug: mechanistic-unlearning
 summary: A process in AI where specific information is selectively removed from trained models to prevent specific outputs or behaviors.
 title: Mechanistic Unlearning

@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.605
-- 0.59
-- 0.575
-- 0.56
-- 0.545
-- 0.53
-- 0.515
 slug: gabor-function
 summary: Mathematical tool used in image processing and signal analysis, known for
   its ability to localize information in both the spatial and frequency domains simultaneously.
 title: Gabor Function
-year_origin: 1946
 ---
 
 The Gabor function, or Gabor filter, is particularly valued in image processing and computer vision for texture analysis, feature extraction, and edge detection. It combines Gaussian functions and complex exponentials, enabling it to capture both spatial and frequency information with high precision. This dual localization makes Gabor filters ideal for analyzing non-stationary signals, such as textures in images, where frequency components vary across space. Their application extends to fields like biometrics, where they aid in fingerprint and iris recognition by highlighting specific patterns and features in image data.

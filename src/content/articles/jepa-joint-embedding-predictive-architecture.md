@@ -2,14 +2,6 @@
 title: JEPA (Joint Embedding Predictive Architecture)
 summary: An approach that involves jointly embedding and predicting spatial or temporal correlations within data to improve model performance in tasks like prediction and understanding.
 slug: jepa-joint-embedding-predictive-architecture
-generality:
-- 0.31
-- 0.295
-- 0.28
-- 0.265
-- 0.25
-- 0.235
-- 0.22
 ---
 
 JEPA (Joint Embedding Predictive Architecture) leverages the concept of jointly embedding data points and their target predictions into a unified space, which helps in capturing implicit relationships within the data, making it particularly effective in scenarios that require a nuanced understanding of contextual or sequential dependencies, such as in natural language processing, computer vision, and time-series analysis. This architecture facilitates more accurate predictions by aligning both input data and targets into a common predictive framework, allowing for better generalization and robust model training in various complex data environments, including unsupervised and self-supervised learning paradigms.

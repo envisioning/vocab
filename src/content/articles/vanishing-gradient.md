@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.85
-- 0.825
-- 0.8
-- 0.78
-- 0.73
-- 0.725
-- 0.7
 slug: vanishing-gradient
 summary: Phenomenon in neural networks where gradients of the network's parameters
   become very small, effectively preventing the weights from changing their values
   during training.
 title: Vanishing Gradient
-year_origin: 1991
 ---
 
 In the context of training deep neural networks, the vanishing gradient problem occurs when the derivatives of the network's loss function with respect to the weights decrease exponentially as we move backward through the hidden layers during backpropagation. This leads to extremely small gradients, which means that the weights in the earlier layers of the network barely change, stalling the learning process. This issue is particularly prevalent in networks using sigmoid or hyperbolic tangent activation functions, where the gradients can be squashed into very small numbers. As a result, networks fail to converge to a good solution, or take a very long time to train.

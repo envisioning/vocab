@@ -2,14 +2,6 @@
 title: Spatial Autoencoder
 summary: A variant of autoencoder networks that leverages spatial information within data for efficient feature learning, often used in processing image and spatial data.
 slug: spatial-autoencoder
-generality:
-- 0.71
-- 0.685
-- 0.66
-- 0.635
-- 0.61
-- 0.585
-- 0.56
 ---
 
 Spatial autoencoders are specialized neural network architectures designed to exploit the inherent spatial structure within data, such as images or volumetric data, facilitating the learning of compact and representative features without labeled input. They employ the traditional autoencoder framework, consisting of an encoder to compress data into a latent space and a decoder to reconstruct the input, but are specifically adapted to preserve and emphasize spatial relationships present within the dataset. This approach is particularly beneficial in computer vision and robot perception tasks, where understanding spatial arrangements is crucial. By utilizing convolutional layers and leveraging spatial hierarchies, these autoencoders enhance the model's ability to extract meaningful spatial features, enabling applications in unsupervised representation learning, anomaly detection, and dimensionality reduction of complex spatial datasets.

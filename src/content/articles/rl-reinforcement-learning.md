@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.95
-- 0.93
-- 0.91
-- 0.89
-- 0.87
-- 0.85
-- 0.83
 slug: rl-reinforcement-learning
 summary: Type of ML where an agent learns to make decisions by performing actions
   in an environment to achieve a goal, guided by rewards.
 title: RL (Reinforcement Learning)
-year_origin: 1952
 ---
 
 Reinforcement Learning is a crucial branch of machine learning that focuses on training models to make a sequence of decisions. It operates on the principle of agents interacting with an environment to achieve certain objectives, with their actions guided by rewards or punishments. Unlike supervised learning, where models learn from a dataset containing input-output pairs, RL agents learn from trial and error, continuously improving their strategy to maximize cumulative rewards over time. This approach enables RL to solve complex problems where explicit programming or direct teaching is infeasible, including dynamic decision-making and adaptive control systems. Key concepts in RL include the state, which represents the current situation of the environment; the action, which is any decision the agent makes; the reward, a feedback from the environment to assess the value of an action; and the policy, which is a strategy that the agent follows to decide actions based on states.

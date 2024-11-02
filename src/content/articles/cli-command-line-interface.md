@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.875
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
 slug: cli-command-line-interface
 summary: Text-based user interface used to interact with software or operating systems
   through commands, rather than graphical elements.
 title: CLI (Command Line Interface)
-year_origin: 1964
 ---
 
 In the context of AI, CLI tools are crucial for many tasks including data processing, model training, and deployment of AI models. They allow developers and researchers to execute complex operations through simple commands, providing efficiency and flexibility that can be essential in experimental or production environments. CLI tools are particularly valued in AI for their scriptability, enabling automation of repetitive tasks and integration into larger workflows or pipelines.

@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.78
-- 0.755
-- 0.73
-- 0.705
-- 0.68
-- 0.655
-- 0.63
 slug: fhe-fully-homomorphic-encryption
 summary: Type of encryption that allows computation on ciphertexts, producing an encrypted
   result that, when decrypted, matches the result of operations performed on the plaintext.
 title: FHE (Fully Homomorphic Encryption)
-year_origin: 2009
 ---
 
 FHE is a breakthrough in the field of cryptography, allowing for arbitrary computations to be performed on encrypted data without ever needing to decrypt it. This capability is crucial for privacy-preserving data analysis, secure cloud computing, and enhancing the security of AI systems in environments where sensitive data cannot be exposed. It enables the outsourcing of computation tasks to third-party servers while ensuring that the data remains confidential. Despite its potential, FHE has been challenging to implement in practice due to its computational complexity. However, ongoing research is focused on optimizing its efficiency and making it more practical for real-world applications.

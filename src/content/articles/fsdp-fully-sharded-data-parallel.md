@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.465
-- 0.42
-- 0.38
-- 0.35
-- 0.325
-- 0.31
-- 0.28
 slug: fsdp-fully-sharded-data-parallel
 summary: Distributed training method in deep learning that divides both model parameters
   and optimizer states across multiple devices to improve efficiency and scalability.
 title: FSDP (Fully Sharded Data Parallel)
-year_origin: 2020
 ---
 
 Fully Sharded Data Parallel (FSDP) is designed to address the memory bottlenecks and communication overhead associated with training large-scale deep learning models. Unlike traditional data parallelism, which duplicates model parameters across all devices, FSDP shards both the model parameters and optimizer states among the devices. This allows for more efficient use of memory and reduces the communication load by only exchanging the necessary gradients and parameters between devices. FSDP leverages advanced communication techniques like all-reduce and broadcast to synchronize updates, ensuring consistent training results while significantly lowering memory usage and speeding up training times. It is particularly useful for training very large models that cannot fit into the memory of a single device.

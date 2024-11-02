@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.82
-- 0.81
-- 0.8
-- 0.79
-- 0.78
-- 0.77
-- 0.76
 slug: direct-manipulation
 summary: An interaction style in user interfaces where users can directly interact
   with objects on the screen in a continuous and immediate manner.
 title: Direct Manipulation
-year_origin: 1983
 ---
 
 Direct manipulation in AI interfaces emphasizes a user-friendly interactive experience, allowing users to interact directly with on-screen objects, receiving immediate visual feedback, which is crucial for intuitiveness and enhanced user engagement. This interaction style is vital for AI applications that demand high usability and user satisfaction, such as virtual reality systems, data visualization tools, and interactive AI models that benefit from intuitive controls. Direct manipulation's role in AI is to bridge the gap between complex underlying processes and user-friendly interfaces, ensuring that AI systems are accessible to both novice and expert users. The theoretical basis lies in facilitating user empowerment by minimizing intermediary commands, thus allowing users to manipulate data or AI models in real-time effectively. It is significant in designing AI tools aimed at those who may not have in-depth technical expertise, making AI technologies more inclusive and widely adopted.

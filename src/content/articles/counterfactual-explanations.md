@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.62
-- 0.605
-- 0.59
-- 0.575
-- 0.56
-- 0.545
-- 0.53
 slug: counterfactual-explanations
 summary: Statements or scenarios that explain how a different outcome could have been
   achieved by altering specific inputs or conditions in an AI system.
 title: Counterfactual Explanations
-year_origin: 2017
 ---
 
 Counterfactual explanations play a crucial role in enhancing the transparency and interpretability of AI systems, particularly in decision-making applications. These explanations help users understand not just how the AI model arrived at a particular decision, but also how changes to the input data could lead to a different outcome. This is particularly valuable in contexts where decisions need to be fair, explainable, and transparent, such as in finance for loan approvals, in HR for recruitment decisions, and in healthcare diagnostics. By presenting alternative scenarios that could have changed the decision of an AI system, counterfactual explanations help demystify the model's reasoning process, making AI systems more accessible and trustworthy to users.

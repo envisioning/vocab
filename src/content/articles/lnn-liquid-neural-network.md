@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.72
-  - 0.695
-  - 0.67
-  - 0.645
-  - 0.62
-  - 0.595
-  - 0.57
 slug: lnn-liquid-neural-network
-summary:
-  Type of artificial neural network designed to process data that changes over time, such as time series data, by simulating a more dynamic and fluid-like behavior.
+summary: Type of artificial neural network designed to process data that changes over time, such as time series data, by simulating a more dynamic and fluid-like behavior.
 title: LNN (Liquid Neural Network)
 ---
 

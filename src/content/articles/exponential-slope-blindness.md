@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.32
-  - 0.305
-  - 0.29
-  - 0.275
-  - 0.26
-  - 0.245
-  - 0.23
 slug: exponential-slope-blindness
 summary: Human cognitive bias that makes it difficult to perceive and understand the implications of exponential growth accurately.
 title: Exponential Slope Blindness

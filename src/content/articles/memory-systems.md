@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
-  - 0.75
-  - 0.73
 slug: memory-systems
 summary: Mechanisms and structures designed to store, manage, and recall information, enabling machines to learn from past experiences and perform complex tasks.
 title: Memory Systems

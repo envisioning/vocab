@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.875
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
 slug: forward-propagation
 summary: Process in a neural network where input data is passed through layers of
   the network to generate output.
 title: Forward Propagation
-year_origin: 1986
 ---
 
 In the context of artificial intelligence and machine learning, forward propagation is a fundamental mechanism used in neural networks to predict output based on input data. The process begins at the input layer and proceeds sequentially through hidden layers towards the output layer. At each layer, the input is multiplied by the layer’s weights, added to a bias (if any), and passed through a non-linear activation function to determine the neuron’s output. This output becomes the input for the next layer. The final output of forward propagation is then used for tasks like classification or regression, and this output is further utilized in backpropagation to adjust the weights of the network based on error gradients.

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.87
-  - 0.86
-  - 0.85
-  - 0.84
-  - 0.83
-  - 0.82
-  - 0.81
 slug: universal-learning-algorithms
 summary: Theoretical frameworks aimed at creating systems capable of learning any task to human-level competency, leveraging principles that could allow for generalization across diverse domains.
 title: Universal Learning Algorithms

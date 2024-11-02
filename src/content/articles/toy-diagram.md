@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.72
-- 0.7
-- 0.68
-- 0.66
-- 0.64
-- 0.62
-- 0.6
 slug: toy-diagram
 summary: A simplified visual representation used to illustrate complex AI concepts or models in an accessible and comprehensible manner.
 title: Toy Diagram

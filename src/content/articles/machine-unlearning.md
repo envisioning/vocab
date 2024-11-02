@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.775
-- 0.76
-- 0.745
-- 0.73
-- 0.715
-- 0.7
-- 0.685
 slug: machine-unlearning
 summary: Process by which an ML model is systematically modified to forget specific
   data, ensuring that the data no longer influences the model's behavior or decisions.
 title: Machine Unlearning
-year_origin: 2015
 ---
 
 Machine unlearning addresses the challenge of removing the influence of specific data points from a trained model without necessitating a complete retraining from scratch. This concept is particularly significant in contexts where data privacy laws, such as the GDPR, mandate the right to erasure ("right to be forgotten"), requiring that personal data be removable from models upon request. The process involves identifying and quantifying the contributions of the data to be forgotten to the model's parameters and subsequently adjusting these parameters to negate the data's impact. Efficient machine unlearning techniques aim to preserve the performance of the model while ensuring compliance with privacy requirements and reducing computational costs.

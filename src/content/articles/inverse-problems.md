@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.812
-  - 0.798
-  - 0.775
-  - 0.763
-  - 0.751
-  - 0.732
-  - 0.721
 slug: inverse-problems
 summary: Determining the underlying causes or parameters from observed data, essentially reversing the usual process of predicting effects from known causes.
 title: Inverse Problems

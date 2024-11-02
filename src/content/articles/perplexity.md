@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.74
-  - 0.715
-  - 0.69
-  - 0.665
-  - 0.64
-  - 0.615
-  - 0.59
 slug: perplexity
 summary: Measure used in language modeling to evaluate how well a model predicts a sample of text, quantifying the model's uncertainty in its predictions.
 title: Perplexity

@@ -1,16 +1,7 @@
 ---
-generality:
-- 0.78
-- 0.79
-- 0.8
-- 0.81
-- 0.82
-- 0.83
-- 0.84
 slug: covariance
 summary: How much two random variables change together
 title: Covariance
-year_origin: 1893
 ---
 
 In statistical terms, covariance is a measure that indicates the extent to which two variables change in tandem. If the greater values of one variable correspond to the greater values of the other variable, the covariance is positive. Conversely, if the greater values of one variable correspond to the lesser values of the other variable, the covariance is negative. Covariance is crucial in various fields such as finance (for portfolio optimization), signal processing, and machine learning (especially in algorithms like PCA—Principal Component Analysis), as it helps in understanding the relationship and dependency between variables.

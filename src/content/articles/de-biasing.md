@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.825
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
-  - 0.7
 slug: de-biasing
 summary: Methods and practices used to reduce or eliminate biases in AI systems, aiming to make the systems more fair, equitable, and representative of diverse populations.
 title: De-Biasing

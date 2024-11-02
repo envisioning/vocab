@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.32
-  - 0.295
-  - 0.28
-  - 0.265
-  - 0.24
-  - 0.225
-  - 0.2
 slug: brain-organoid-reservoir-computing
 summary: Combines the use of brain organoids—3D cultures of human brain cells—with reservoir computing principles to create advanced computational models for studying neural dynamics and intelligence.
 title: Brain Organoid Reservoir Computing

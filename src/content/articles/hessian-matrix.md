@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.87
-- 0.86
-- 0.85
-- 0.84
-- 0.83
-- 0.82
-- 0.81
 slug: hessian-matrix
 summary: Square matrix of second-order partial derivatives of a scalar-valued function,
   crucial in optimization, particularly for understanding the curvature of multidimensional
   functions.
 title: Hessian Matrix
-year_origin: 1841
 ---
 
 The Hessian matrix plays a vital role in optimization and machine learning, especially in methods involving Newton's algorithm, where it is used to find the minima or maxima of functions. By providing a concise description of the curvature of a function's graph in multiple dimensions, the Hessian helps in determining the nature of stationary points: a positive definite Hessian indicates a local minimum, a negative definite Hessian indicates a local maximum, and an indefinite Hessian points to a saddle point. Its determinant and eigenvalues are especially useful in assessing the convexity properties of functions, which are essential for ensuring the convergence of algorithms in optimization problems.

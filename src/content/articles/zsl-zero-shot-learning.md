@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.72
-- 0.7
-- 0.68
-- 0.66
-- 0.64
-- 0.62
-- 0.6
 slug: zsl-zero-shot-learning
 summary: ML technique where a model learns to recognize objects, tasks, or concepts
   it has never seen during training.
 title: ZSL (Zero-Shot Learning)
-year_origin: 2009
 ---
 
 Zero-Shot Learning represents a significant leap towards creating more general and adaptable AI systems, challenging the traditional paradigm where machine learning models require extensive labeled datasets to learn a task. In ZSL, the model leverages semantic relationships between known and unknown categories, often using attributes or descriptions that encapsulate the essence of each category. This approach enables models to infer about unseen classes without direct experience, relying on a rich, abstract understanding of how entities or concepts are interlinked. It's particularly valuable in situations where collecting extensive labeled data is impractical or impossible, such as identifying rare species or objects in images, or understanding novel words in text. The essence of ZSL lies in its ability to generalize from prior knowledge to new, unencountered situations, a fundamental step towards achieving human-like flexibility and adaptability in AI.

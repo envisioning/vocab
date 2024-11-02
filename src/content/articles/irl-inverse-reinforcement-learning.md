@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.72
-- 0.695
-- 0.68
-- 0.665
-- 0.64
-- 0.615
-- 0.59
 slug: irl-inverse-reinforcement-learning
 summary: Technique in which an algorithm learns the underlying reward function of
   an environment based on observed behavior from an agent, essentially inferring the
   goals an agent is trying to achieve.
 title: IRL (Inverse Reinforcement Learning)
-year_origin: 2000
 ---
 
 Inverse Reinforcement Learning contrasts with traditional reinforcement learning by focusing on learning what to achieve (the reward function) rather than how to achieve it (the policy). This approach is powerful for situations where specifying a reward function is challenging but examples of optimal or near-optimal behavior are available. IRL algorithms analyze the behaviors of expert agents within an environment to deduce the rewards that those agents are presumably optimizing for. This inferred reward function can then be used to train other agents to perform the task with similar proficiency. IRL has significant applications in areas such as autonomous driving, where understanding human driving behavior can inform the development of better autonomous driving policies, and in robotics, for learning from demonstration.

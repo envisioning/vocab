@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.73
-  - 0.71
-  - 0.69
-  - 0.67
-  - 0.65
-  - 0.63
-  - 0.61
 slug: gorilla-program
 summary: Concept in AI that illustrates the potential risk of superintelligent machines surpassing human control.
 title: Gorilla Program

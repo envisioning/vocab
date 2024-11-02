@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.84
-- 0.832
-- 0.825
-- 0.812
-- 0.81
-- 0.805
 slug: swarm-intelligence
 summary: Form of AI inspired by the collective behavior of social insects and animals,
   used to solve complex problems through decentralized, self-organized systems.
 title: Swarm Intelligence
-year_origin: 1989
 ---
 
 Swarm intelligence models the collective behavior of decentralized, self-organized systems found in nature, such as ant colonies, bird flocking, fish schooling, and bee hives, to develop algorithms that solve complex problems. In AI, these models are applied to optimize functions, search and rescue operations, robotic coordination, and network optimization. The key principles involve simple agents following basic rules without central control, resulting in the emergence of complex, intelligent behavior through local interactions and positive feedback mechanisms. Algorithms like Ant Colony Optimization (ACO) and Particle Swarm Optimization (PSO) are prominent examples, leveraging mechanisms such as pheromone trails and velocity adjustments to explore and exploit search spaces efficiently.

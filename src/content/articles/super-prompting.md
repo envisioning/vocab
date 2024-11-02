@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
 slug: super-prompting
 summary: Method in AI where specific, carefully crafted input prompts are used to guide a model towards generating more accurate or contextually appropriate outputs.
 title: Super Prompting

@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.64
-- 0.615
-- 0.59
-- 0.565
-- 0.54
-- 0.515
-- 0.49
 slug: logits
 summary: Raw, unnormalized outputs of the last layer in a neural network before applying
   the softmax function in classification tasks.
 title: Logits
-year_origin: 1958
 ---
 
 Logits represent the vector of raw predictions that a classification model generates, which are then transformed through the softmax function to produce probabilities. The term is significant because logits directly reflect the model's internal decision values for each class, before any normalization to make these outputs interpretable as probabilities. In neural networks, especially those designed for classification, understanding and analyzing logits can provide insights into the model's confidence and decision-making process. They are crucial for loss calculations in training, where functions like the softmax cross-entropy loss directly work with logits to compute gradients for model optimization.

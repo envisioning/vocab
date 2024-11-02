@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
 slug: flexible-semantics
 summary: Ability of a system to adapt and interpret meaning in a dynamic, context-sensitive manner, particularly within language processing and understanding.
 title: Flexible Semantics

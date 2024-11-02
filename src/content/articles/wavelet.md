@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.8
-- 0.78
-- 0.77
-- 0.76
-- 0.74
-- 0.72
-- 0.7
 slug: wavelet
 summary: Mathematical function used for analyzing localized variations of power within
   a time series or signal, providing a multi-resolution analysis.
 title: Wavelet
-year_origin: 1982
 ---
 
 Wavelets are crucial in signal processing, allowing for the decomposition of signals into components at various scales. This multi-resolution capability makes wavelets highly effective in analyzing non-stationary signals where frequency components vary over time. Unlike traditional Fourier transforms, which use sinusoidal functions, wavelets use basis functions that can be stretched and translated, enabling detailed time-frequency localization. This adaptability makes wavelets ideal for applications like image compression, denoising, and feature extraction in machine learning, where the preservation of both time and frequency information is vital.

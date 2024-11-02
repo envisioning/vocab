@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.865
-  - 0.86
-  - 0.855
-  - 0.85
-  - 0.845
-  - 0.84
-  - 0.835
 slug: imitation-learning
 summary: AI technique where models learn to perform tasks by mimicking human behavior or strategies demonstrated in training data.
 title: Imitation Learning

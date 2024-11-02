@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.52
-  - 0.505
-  - 0.49
-  - 0.475
-  - 0.46
-  - 0.445
-  - 0.43
 slug: hyperspherical-representation-learning
 summary: Technique of learning representations within a multidimensional sphere to leverage inherent geometric properties.
 title: Hyperspherical Representation Learning

@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.52
-  - 0.515
-  - 0.5
-  - 0.495
-  - 0.49
-  - 0.485
-  - 0.48
 slug: mdpo-mirror-descent-policy-optimization
-summary:
-  Optimization algorithm used in reinforcement learning to update policies by leveraging the mirror descent technique, which balances exploration and exploitation more effectively than traditional gradient descent methods.
+summary: Optimization algorithm used in reinforcement learning to update policies by leveraging the mirror descent technique, which balances exploration and exploitation more effectively than traditional gradient descent methods.
 title: MDPO (Mirror Descent Policy Optimization)
 ---
 

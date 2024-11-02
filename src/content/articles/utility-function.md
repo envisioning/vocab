@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.875
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
 slug: utility-function
 summary: Mathematical tool utilized in AI to model preferences and calculate the best
   decision based on expected outcomes.
 title: Utility Function
-year_origin: 1944
 ---
 
 A Utility Function in the context of Artificial Intelligence (AI) is a measurement of the satisfaction or preference of an agent. In basic terms, it is a mathematical function that allows a machine to rank various outcomes or state of the world based on the level of 'utility' or satisfaction they provide. This function is key to making decisions in AI, used to predict and calculate the best possible action that an AI system or agent should take based on expected outcomes. It's through this function that AI agents are trained to choose actions that maximize the expected utility.

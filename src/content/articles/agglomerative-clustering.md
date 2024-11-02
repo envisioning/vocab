@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.725
-  - 0.71
-  - 0.7
-  - 0.685
-  - 0.67
-  - 0.655
-  - 0.64
 slug: agglomerative-clustering
 summary: A type of hierarchical clustering method in AI used to merge data points into clusters based on similarity measures.
 title: Agglomerative Clustering

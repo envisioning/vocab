@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.68
-- 0.665
-- 0.65
-- 0.635
-- 0.62
-- 0.605
-- 0.59
 slug: reversal-course
 summary: A practiced approach in AI training where learning direction is strategically changed to optimize model performance and mitigate issues like vanishing gradients.
 title: Reversal Course

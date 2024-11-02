@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.54
-  - 0.53
-  - 0.52
-  - 0.51
-  - 0.5
-  - 0.49
-  - 0.48
 slug: teacher-committee
 summary: Group of expert models that collaboratively guide the training process of a student model to improve its performance.
 title: Teacher Committee

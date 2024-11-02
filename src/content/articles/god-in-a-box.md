@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.78
-  - 0.76
-  - 0.74
-  - 0.72
-  - 0.7
-  - 0.68
-  - 0.66
 slug: god-in-a-box
 summary: AI systems or models that are so powerful and advanced that they could theoretically solve any problem or fulfill any command, but are contained within strict controls to prevent unintended consequences.
 title: God in a Box

@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.95
-- 0.93
-- 0.91
-- 0.89
-- 0.87
-- 0.85
-- 0.83
 slug: backpropagation
 summary: Algorithm used for training artificial neural networks, crucial for optimizing
   the weights to minimize error between predicted and actual outcomes.
 title: Backpropagation
-year_origin: 1986
 ---
 
 Backpropagation, short for "backward propagation of errors," is a cornerstone in the training of artificial neural networks. It operates on the principle of gradient descent, where the algorithm calculates the gradient (or derivative) of the loss function (a measure of the difference between the network's prediction and the actual data) with respect to each weight in the network by propagating the error backward through the layers. This process allows the algorithm to adjust the weights in a way that minimizes the overall error. Backpropagation's efficiency in training deep neural networks has been pivotal for advancements in fields like computer vision, natural language processing, and beyond, making it a critical technique in modern AI systems.

@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.88
-- 0.86
-- 0.84
-- 0.82
-- 0.8
-- 0.78
-- 0.76
 slug: hyperplane
 summary: Mathematical concept that represents a subspace in n-dimensional space, with
   one dimension less than the space itself, used extensively to separate data points
   in various dimensions.
 title: Hyperplane
-year_origin: 1902
 ---
 
 In geometry and machine learning, a hyperplane is essentially a flat, affine subspace of dimension n−1 within n-dimensional space. For instance, in a three-dimensional space, a hyperplane is a two-dimensional plane. In the context of machine learning, hyperplanes are critical in classification algorithms, particularly in support vector machines (SVMs), where they are used to define the decision boundary between different classes of data. The optimal hyperplane is the one that maximizes the margin between the nearest data points of each class, often leading to better generalization on unseen data.

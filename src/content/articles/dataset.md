@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.92
-- 0.915
-- 0.91
-- 0.905
-- 0.9
-- 0.895
-- 0.89
 slug: dataset
 summary: Collection of related data points organized in a structured format, often
   used for training and testing machine learning models.
 title: Dataset
-year_origin: 1962
 ---
 
 Datasets play a crucial role in the development and evaluation of machine learning models, serving as the foundation upon which algorithms learn and make predictions. They can range from simple, tabular formats to complex, multimodal collections involving text, images, and audio. The quality, diversity, and size of a dataset significantly impact the performance of machine learning models. Datasets are often split into training, validation, and testing subsets to facilitate model training, tuning, and evaluation, respectively. The process of preparing a dataset, including cleaning, normalization, and augmentation, is critical for removing biases and ensuring that the model learns relevant patterns.

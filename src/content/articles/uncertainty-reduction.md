@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.875
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
 slug: uncertainty-reduction
 summary: A process in AI by which systems manage and diminish uncertainty in predictions and decisions to improve performance and reliability.
 title: Uncertainty Reduction

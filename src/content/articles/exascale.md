@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.83
-  - 0.81
-  - 0.805
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
 slug: exascale
 summary: Computing systems capable of performing at least one exaflop, or a billion billion (quintillion) calculations per second.
 title: Exascale

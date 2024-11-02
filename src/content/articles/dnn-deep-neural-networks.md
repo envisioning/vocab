@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.95
-- 0.935
-- 0.925
-- 0.915
-- 0.905
-- 0.895
-- 0.885
 slug: dnn-deep-neural-networks
 summary: Advanced neural network architectures with multiple layers that enable complex
   pattern recognition and learning from large amounts of data.
 title: DNN (Deep Neural Networks)
-year_origin: 1986
 ---
 
 Deep Neural Networks represent a cornerstone of modern artificial intelligence, particularly in tasks requiring the extraction of intricate patterns and features from data. Unlike shallow neural networks that might have just one hidden layer, DNNs consist of many layers, each capable of learning different levels of abstraction. This hierarchical learning approach allows DNNs to effectively handle high-dimensional data across various domains, including image and speech recognition, natural language processing, and even playing complex games. The depth of these networks significantly enhances their learning capacity, enabling the capture of complex representations without manual feature engineering. Training DNNs often involves backpropagation and requires substantial computational resources, especially for adjusting the large number of parameters involved.

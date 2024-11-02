@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.72
-  - 0.705
-  - 0.69
-  - 0.675
-  - 0.66
-  - 0.645
-  - 0.63
 slug: sparsability
 summary: Ability of algorithms to effectively handle and process data matrices where most elements are zero (sparse), improving computational efficiency and memory usage.
 title: Sparsability

@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.54
-  - 0.52
-  - 0.5
-  - 0.48
-  - 0.46
-  - 0.44
-  - 0.42
 slug: itm-image-text-matching
-summary:
-  AI technique that involves automatically identifying correspondences between textual descriptions and visual elements within images.
+summary: AI technique that involves automatically identifying correspondences between textual descriptions and visual elements within images.
 title: ITM (Image-Text Matching)
 ---
 

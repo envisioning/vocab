@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.7
-  - 0.68
-  - 0.66
-  - 0.64
-  - 0.62
-  - 0.6
-  - 0.58
 slug: trigrams
 summary: Specific type of n-gram where n is 3, commonly used in language modeling and predicting the next item in NLP.
 title: Trigrams

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.45
-  - 0.43
-  - 0.41
-  - 0.39
-  - 0.37
-  - 0.35
-  - 0.33
 slug: stochastic-parrot
 summary: Language models that generate text based on probabilistic predictions, often criticized for parroting information without understanding.
 title: Stochastic Parrot

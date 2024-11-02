@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.9
-  - 0.88
-  - 0.86
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
 slug: discriminative-ai
 summary: Algorithms that learn the boundary between classes of data, focusing on distinguishing between different outputs given an input.
 title: Discriminative AI

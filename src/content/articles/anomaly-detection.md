@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.92
-- 0.9
-- 0.88
-- 0.86
-- 0.84
-- 0.82
-- 0.8
 slug: anomaly-detection
 summary: Process of identifying unusual patterns that deviate from expected behavior,
   often used to detect fraud, network intrusions, or unusual transactions.
 title: Anomaly Detection
-year_origin: 1969
 ---
 
 Anomaly detection involves identifying data points, events, or observations that raise suspicions by differing significantly from the majority of the data. This technique is critical in various domains, including fraud detection in banking and finance, intrusion detection in network security, system health monitoring, and fault detection in manufacturing processes. It employs statistical, machine learning, and deep learning methods to model the normal behavior of a system and flag deviations from this norm. The effectiveness of anomaly detection depends on the definition of what constitutes normal behavior, which can be challenging given the complexity and dynamic nature of data in real-world applications.

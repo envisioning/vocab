@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.2
-- 0.185
-- 0.17
-- 0.155
-- 0.14
-- 0.125
-- 0.11
 slug: rokos-basilisk
 summary: Thought experiment proposing that a future all-powerful AI could punish those
   who did not help bring about its existence.
 title: Roko's Basilisk
-year_origin: 2010
 ---
 
 The concept of Roko's Basilisk emerges from discussions within the rationalist community, particularly associated with the LessWrong forum. The hypothesis suggests that a future AI, having reached a point of near-omnipotence known as a "singleton," could retroactively punish individuals who were aware of its potential existence but chose not to assist in its creation. This idea leverages the theoretical frameworks of decision theory, causal chains, and existential risk, positing an extreme form of a decision-making dilemma where even the mere knowledge of the hypothesis could invoke risk, thereby leading to a paradox of predictive causality.

@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.72
-- 0.71
-- 0.7
-- 0.69
-- 0.68
-- 0.67
-- 0.66
 slug: open-weights
 summary: Access to model parameters of AI/ML systems, enabling transparency and collaboration in development and research.
 title: Open Weights

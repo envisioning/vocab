@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.825
-- 0.81
-- 0.79
-- 0.775
-- 0.76
-- 0.74
-- 0.72
 slug: evolutionary-algorithm
 summary: Optimization methods inspired by the process of natural selection where potential
   solutions evolve over generations to optimize a given objective function.
 title: Evolutionary Algorithm
-year_origin: 1960
 ---
 
 Evolutionary algorithms (EAs) are a subset of evolutionary computation, a family of algorithms for global optimization inspired by biological evolution. They work by iteratively improving a population of candidate solutions with respect to a given measure of quality or fitness. This process involves selection (choosing the best-fit individuals for reproduction), crossover (combining parts of two or more solutions to create a new solution), and mutation (randomly altering parts of a solution to explore the solution space). EAs are particularly useful for problems where the solution space is complex, multimodal, or poorly understood, as they do not require gradient information and can escape local optima. Applications range from engineering design optimization to machine learning model tuning.

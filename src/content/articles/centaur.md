@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.84
-- 0.835
-- 0.83
-- 0.825
-- 0.82
-- 0.815
 slug: centaur
 summary: Collaborative system where humans and AI work together, combining human intuition
   and expertise with AI's computational power and data processing capabilities.
 title: Centaur
-year_origin: 1983
 ---
 
 The concept of a centaur in AI embodies the synergy between human cognitive skills and artificial intelligence technologies to achieve superior problem-solving capabilities, decision-making, and innovation. This hybrid approach leverages the strengths of both humans and machines, where AI handles tasks involving data analysis, pattern recognition, and computational speed, while humans contribute with strategic thinking, creativity, and ethical considerations. Centaur systems are particularly prevalent in fields such as chess, medical diagnostics, and financial analysis, demonstrating that the collaboration between human intuition and AI can outperform either humans or AI working independently.

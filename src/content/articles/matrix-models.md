@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.75
-  - 0.742
-  - 0.735
-  - 0.728
-  - 0.721
-  - 0.714
-  - 0.707
 slug: matrix-models
 summary: Mathematical frameworks that use matrices with parameters to represent and solve complex problems, often in ML, statistics, and systems theory.
 title: Matrix Models

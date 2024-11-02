@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.79
-  - 0.76
-  - 0.73
-  - 0.7
-  - 0.67
-  - 0.64
-  - 0.61
 slug: embedding-space
 summary: Mathematical representation where high-dimensional vectors of data points, such as text, images, or other complex data types, are transformed into a lower-dimensional space that captures their essential properties.
 title: Embedding Space

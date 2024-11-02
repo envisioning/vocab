@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
 slug: xlstm
 summary: Extended form of Long Short-Term Memory (LSTM), integrating enhancements for scalability and efficiency in DL models.
 title: xLSTM

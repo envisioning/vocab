@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.48
-- 0.455
-- 0.43
-- 0.405
-- 0.38
-- 0.355
-- 0.33
 slug: controlnet
 summary: Neural network architecture designed to add spatial conditioning controls
   to diffusion models, enabling precise manipulation without altering the original
   model's integrity.
 title: ControlNet
-year_origin: 2021
 ---
 
 ControlNet introduces a method to augment diffusion models, such as Stable Diffusion, by incorporating additional, task-specific conditions through a unique structure. It achieves this by duplicating the weights of neural network blocks into two copies: a "locked" copy that remains unchanged, preserving the model's pre-trained capabilities, and a "trainable" copy that learns the new conditions. This approach is facilitated by "zero convolution" layers, where both weights and biases are initialized to zero, ensuring that the network's initial state does not distort the output. This architecture allows for efficient and targeted fine-tuning on even small datasets, making advanced image manipulation and generation accessible on lower-end hardware without compromising the production model's quality .

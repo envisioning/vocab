@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.565
-  - 0.54
-  - 0.515
-  - 0.49
-  - 0.465
-  - 0.44
-  - 0.415
 slug: custom-instructions
 summary: Directives or rules provided by users to AI systems, tailoring the AI's responses or behaviors to specific needs or contexts.
 title: Custom Instructions

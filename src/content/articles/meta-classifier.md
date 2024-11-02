@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
 slug: meta-classifier
 summary: Algorithm that combines multiple ML models to improve prediction accuracy over individual models.
 title: Meta-Classifier

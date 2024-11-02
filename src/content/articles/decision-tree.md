@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.9
-- 0.875
-- 0.86
-- 0.855
-- 0.84
-- 0.82
-- 0.805
 slug: decision-tree
 summary: Flowchart-like tree structure where each internal node represents a "test"
   on an attribute, each branch represents the outcome of the test, and each leaf node
   represents a class label (decision taken after computing all attributes).
 title: Decision Tree
-year_origin: 1966
 ---
 
 Decision Trees are a popular method used in machine learning for both classification and regression tasks. They mimic human decision-making processes by sequentially asking yes/no questions or making decisions based on certain values of input features, leading to a final prediction at the leaf nodes. Their structure allows for easy visualization and interpretation, making them particularly appealing for analytical purposes. Decision Trees work by selecting the best feature at each step to split the data into subsets, using metrics like Gini impurity or entropy for classification tasks, and variance reduction for regression. They can handle both numerical and categorical data but are prone to overfitting, especially with complex data or without proper pruning techniques.

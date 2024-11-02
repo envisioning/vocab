@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.95
-- 0.935
-- 0.92
-- 0.905
-- 0.89
-- 0.875
-- 0.86
 slug: agi-artificial-general-intelligence
 summary: AI capable of understanding, learning, and applying knowledge across a wide
   range of tasks, matching or surpassing human intelligence.
 title: AGI (Artificial General Intelligence)
-year_origin: 1956
 ---
 
 Artificial General Intelligence represents the future milestone in AI research where machines will possess the ability to perform any intellectual task that a human being can do. Unlike narrow AI, which is designed to perform specific tasks with expertise (e.g., facial recognition, playing chess), AGI would be capable of generalizing learning and understanding across domains without being explicitly programmed for each task. This involves not only mastering a vast range of skills and knowledge areas but also possessing attributes such as emotional understanding, social intelligence, and general wisdom. The development of AGI promises significant advancements but also poses ethical, security, and societal challenges that need to be addressed comprehensively.

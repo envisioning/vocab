@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.825
-- 0.83
-- 0.835
-- 0.845
-- 0.85
-- 0.855
-- 0.86
 slug: knowledge-graph
 summary: Organizes and represents data as an interconnected network of entities (such
   as objects, events, concepts) and their relationships.
 title: Knowledge Graph
-year_origin: 2012
 ---
 
 Knowledge graphs are a powerful way to represent and store information in a graph format, where nodes represent entities (such as people, places, things, concepts) and edges represent the relationships between these entities. This structure allows for efficient querying, linking, and analysis of data across different domains, enabling more sophisticated and context-aware applications in AI. Knowledge graphs underpin many modern AI systems, providing a structured framework to enhance search engines, recommendation systems, natural language processing tasks, and semantic analysis by offering a comprehensive view of relationships and entities. They facilitate the integration of heterogeneous data sources and support inferencing, allowing AI systems to derive new insights and knowledge.

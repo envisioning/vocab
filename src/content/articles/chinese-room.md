@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
-- 0.475
-- 0.45
 slug: chinese-room
 summary: Thought experiment by philosopher John Searle that challenges the notion
   that a computer running a program can truly "understand" language or exhibit consciousness,
   despite appearing to do so.
 title: Chinese Room
-year_origin: 1980
 ---
 
 The Chinese Room argument questions whether artificial intelligence can ever possess true understanding or consciousness, regardless of how intelligently it behaves. In this scenario, Searle imagines himself inside a room, following a set of syntactic rules to manipulate Chinese symbols, despite not understanding Chinese. Even if his responses to Chinese inputs are indistinguishable from a fluent speaker, Searle argues that he still doesn't "understand" the language—he is simply processing symbols. This analogy is used to critique strong AI, the view that a computer program could have a mind, understanding, or consciousness just by executing algorithms. It suggests that while AI can simulate understanding, it does not actually grasp meaning (semantics), thus distinguishing between syntax (rule-following) and true understanding (semantics).

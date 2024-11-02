@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.875
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
 slug: av-autonomous-vehicles
 summary: Self-driving cars that combine sensors, algorithms, and software to navigate
   and drive without human intervention.
 title: AV (Autonomous Vehicles)
-year_origin: 1939
 ---
 
 Autonomous vehicles (AVs) represent a revolutionary integration of robotics, artificial intelligence, and computer vision technologies, designed to navigate and operate vehicles with minimal or no human oversight. These systems rely on an array of sensors such as LiDAR, radar, and cameras to perceive their surroundings. Advanced machine learning algorithms interpret this sensory information to make real-time decisions about navigation, obstacle avoidance, and adherence to traffic laws. The development and deployment of AVs promise to reduce traffic accidents caused by human error, increase transportation efficiency, and transform urban mobility. However, the technology also presents challenges, including ethical considerations in decision-making processes, ensuring safety in unpredictable environments, and legal and regulatory compliance.

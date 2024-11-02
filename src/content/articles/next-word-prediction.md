@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.825
-- 0.81
-- 0.795
-- 0.78
-- 0.765
-- 0.75
-- 0.735
 slug: next-word-prediction
 summary: Enables language models to predict the most probable subsequent word in a text sequence using generative AI techniques.
 title: Next Word Prediction

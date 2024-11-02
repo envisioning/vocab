@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.92
-  - 0.9
-  - 0.88
-  - 0.86
-  - 0.84
-  - 0.82
-  - 0.8
 slug: validation-data
 summary: Subset of data used to assess the performance of a model during the training phase, separate from the training data itself.
 title: Validation Data

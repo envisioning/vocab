@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.86
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
-  - 0.76
-  - 0.74
 slug: feature-importance
 summary: Techniques used to identify and rank the significance of input variables (features) in contributing to the predictive power of a ML model.
 title: Feature Importance

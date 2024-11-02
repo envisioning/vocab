@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.68
-  - 0.665
-  - 0.65
-  - 0.635
-  - 0.62
-  - 0.605
-  - 0.59
 slug: thought-token
 summary: Computational abstraction used in NLP models to represent and manipulate complex ideas or concepts within sequences of text.
 title: Thought Token

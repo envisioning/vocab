@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
 slug: sparse-autoencoder
 summary: Type of neural network designed to learn efficient data representations by
   enforcing sparsity on the hidden layer activations.
 title: Sparse Autoencoder
-year_origin: 2008
 ---
 
 Sparse autoencoders are a specialized form of autoencoders that incorporate a sparsity constraint on the hidden layer. This constraint forces most of the hidden units to be inactive (i.e., have zero or near-zero output), leading to a more efficient and compact representation of the input data. The objective is to minimize the reconstruction error while also maintaining the sparsity of the hidden layer activations, typically achieved through regularization techniques such as L1 regularization or KL divergence. Sparse autoencoders are particularly useful in scenarios where the goal is to extract meaningful features from high-dimensional data, such as in image and speech recognition, where the hidden units capture essential structures and patterns.

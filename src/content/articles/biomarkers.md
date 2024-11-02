@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.51
-- 0.495
-- 0.48
-- 0.465
-- 0.45
-- 0.435
-- 0.42
 slug: biomarkers
 summary: Identifiable biological indicators that offer valuable insights into the
   health or disease status of an individual in the context of AI.
 title: Biomarkers
-year_origin: 1950
 ---
 
 Biomarkers, in the realm of AI, are quantifiable, measurable data points that offer crucial insights into the health or disease status of an individual. They are incorporated into AI algorithms to create predictive models and drive decision making processes in various fields, predominately healthcare. They enable AI technologies to detect early signs of disease, track disease progress, and even anticipate response to treatment. Biomarkers can range from proteins measured in the blood, to complex imaging characteristics, to genetic sequences, to behavioral patterns, all of which can be analyzed by AI to improve healthcare outcomes.

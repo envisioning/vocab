@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.8
-- 0.79
-- 0.78
-- 0.77
-- 0.76
-- 0.75
-- 0.74
 slug: bayesian-optimization
 summary: Strategy for optimizing complex, expensive-to-evaluate functions by building
   a probabilistic model of the function and using it to select the most promising
   points to evaluate.
 title: Bayesian Optimization
-year_origin: 1978
 ---
 
 Bayesian Optimization leverages Bayesian inference to build a surrogate model, typically a Gaussian Process, of an objective function. This surrogate is cheaper to evaluate than the objective function itself and provides a measure of uncertainty about the function's values at unsampled points. The optimization process involves iteratively selecting new points to evaluate based on an acquisition function, which balances exploration (reducing uncertainty about the function) and exploitation (focusing on areas likely to yield better results). This approach is particularly useful for hyperparameter tuning in machine learning, optimizing engineering designs, and other scenarios where function evaluations are costly.

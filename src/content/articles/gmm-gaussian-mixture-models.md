@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
 slug: gmm-gaussian-mixture-models
-summary:
-  Probabilistic models that assume all data points are generated from a mixture of a finite number of Gaussian distributions with unknown parameters.
+summary: Probabilistic models that assume all data points are generated from a mixture of a finite number of Gaussian distributions with unknown parameters.
 title: GMM (Gaussian Mixture Models)
 ---
 

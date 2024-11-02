@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.63
-  - 0.615
-  - 0.6
-  - 0.585
-  - 0.57
-  - 0.555
-  - 0.54
 slug: router
 summary: Mechanism that directs queries to the most suitable model or sub-component within a multi-model or multi-component architecture to optimize performance and accuracy.
 title: Router

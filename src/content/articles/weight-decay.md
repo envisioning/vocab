@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.78
-- 0.76
-- 0.75
-- 0.73
-- 0.71
-- 0.7
-- 0.68
 slug: weight-decay
 summary: Regularization technique used in training neural networks to prevent overfitting
   by penalizing large weights.
 title: Weight Decay
-year_origin: 1987
 ---
 
 Weight decay works by adding a penalty term to the loss function used to train a neural network. This penalty term is proportional to the sum of the squares of the weights of the network, encouraging the learning algorithm to keep the weights small. This approach is particularly effective in combating overfitting, a common problem where a model learns the noise in the training data too well, negatively impacting its performance on unseen data. By keeping the weights small, weight decay limits the complexity of the model, helping to improve its generalization capabilities. It's a foundational technique in machine learning and deep learning, applicable across various types of neural networks, including convolutional and recurrent neural networks.

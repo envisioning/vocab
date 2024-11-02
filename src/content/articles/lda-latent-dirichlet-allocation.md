@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.82
-- 0.81
-- 0.805
-- 0.79
-- 0.785
-- 0.78
-- 0.77
 slug: lda-latent-dirichlet-allocation
 summary: Generative statistical model often used in natural language processing to
   discover hidden (or latent) topics within a collection of documents.
 title: LDA (Latent Dirichlet Allocation)
-year_origin: 2003
 ---
 
 Latent Dirichlet Allocation (LDA) is a type of probabilistic model utilized in the field of natural language processing (NLP) for topic discovery or topic modeling. This model essentially helps in identifying latent or unseen topics that are present in a collection of documents (corpus). In practice, LDA assumes that each document in the corpus is created by a mixture of different topics, and each topic is characterized by a distribution over the corpus's words. This makes LDA a powerful tool for text analytics, where it's used for document classification, summarization, personal recommendation engines, and more.

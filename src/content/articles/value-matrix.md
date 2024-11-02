@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
 slug: value-matrix
 summary: Structured format for organizing and displaying data, often used in machine learning to represent input data and their corresponding outputs or labels.
 title: Value Matrix

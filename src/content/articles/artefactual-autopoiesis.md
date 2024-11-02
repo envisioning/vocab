@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.325
-  - 0.35
-  - 0.375
-  - 0.4
-  - 0.425
-  - 0.45
-  - 0.475
 slug: artefactual-autopoiesis
 summary: Design and creation of artificial systems capable of self-maintenance and reproduction, mirroring the autopoietic characteristics of living organisms.
 title: Artefactual Autopoiesis

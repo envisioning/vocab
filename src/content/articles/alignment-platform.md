@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
-  - 0.76
-  - 0.75
-  - 0.74
 slug: alignment-platform
 summary: Framework designed to ensure that AI operates in ways that are aligned with human values, ethics, and objectives.
 title: Alignment Platform

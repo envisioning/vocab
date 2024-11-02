@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.315
-  - 0.3
-  - 0.29
-  - 0.275
-  - 0.26
-  - 0.25
-  - 0.235
 slug: adaptive-dual-scale-denoising
 summary: Denoising approach designed to balance both local and global feature extraction in models, particularly in the context of diffusion-based generative models.
 title: Adaptive Dual-Scale Denoising

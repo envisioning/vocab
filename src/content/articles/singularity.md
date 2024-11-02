@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.83
-- 0.82
-- 0.81
-- 0.8
-- 0.79
-- 0.78
-- 0.77
 slug: singularity
 summary: Hypothetical future point at which technological growth becomes uncontrollable
   and irreversible, resulting in unforeseeable changes to human civilization.
 title: Singularity
-year_origin: 1958
 ---
 
 In the context of artificial intelligence, the singularity refers to a future scenario where AI systems surpass human intelligence in all domains, leading to a runaway effect of technological growth. This concept often includes the notion that AI could improve itself recursively or could be used to create even more intelligent entities, potentially leading to exponential growth in intelligence that humans cannot predict or control. The implications of such an event are debated among experts, ranging from transformative advances in science and technology to existential risks for humanity.

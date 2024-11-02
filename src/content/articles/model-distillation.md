@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
 slug: model-distillation
 summary: ML technique where a larger, more complex model (teacher) is used to train
   a smaller, simpler model (student) to approximate the teacher's predictions while
   maintaining similar performance.
 title: Model Distillation
-year_origin: 2015
 ---
 
 Model distillation is a form of model compression that aims to reduce the size and computational requirements of a neural network while preserving its predictive capabilities. During distillation, the knowledge of a large pre-trained model (teacher) is transferred to a smaller model (student) by training the student to mimic the teacher's outputs rather than the original training data labels. The process often involves using the soft labels produced by the teacher—probabilities assigned to each class—rather than the hard labels, which helps the student model learn the nuanced patterns captured by the teacher. This approach is particularly useful in deploying models in resource-constrained environments like mobile devices or edge computing, where memory and processing power are limited. It also facilitates faster inference times and can contribute to better generalization by preventing overfitting.

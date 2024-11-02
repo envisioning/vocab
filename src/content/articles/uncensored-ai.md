@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.675
-  - 0.66
-  - 0.655
-  - 0.63
-  - 0.625
-  - 0.6
-  - 0.58
 slug: uncensored-ai
 summary: AI systems that operate without restrictions on the content they generate or the decisions they make.
 title: Uncensored AI

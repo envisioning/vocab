@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.8
-  - 0.785
-  - 0.77
-  - 0.755
-  - 0.74
-  - 0.725
-  - 0.71
 slug: grounding
 summary: Process of linking abstract symbols or data representations to real-world meanings or experiences, enabling the system to understand and act based on those symbols in a meaningful way.
 title: Grounding

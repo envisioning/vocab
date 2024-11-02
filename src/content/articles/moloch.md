@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.3
-  - 0.275
-  - 0.25
-  - 0.225
-  - 0.2
-  - 0.175
-  - 0.15
 slug: moloch
 summary: Metaphorical force or systemic dynamic that leads groups or individuals to pursue short-term goals at the expense of long-term well-being or optimal outcomes.
 title: Moloch

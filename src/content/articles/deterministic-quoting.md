@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.32
-  - 0.315
-  - 0.31
-  - 0.305
-  - 0.3
-  - 0.295
-  - 0.29
 slug: deterministic-quoting
 summary: Method ensuring that AI-generated quotations from source materials are verbatim and not subject to AI-induced hallucinations.
 title: Deterministic Quoting

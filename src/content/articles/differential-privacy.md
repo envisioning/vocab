@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.825
-- 0.81
-- 0.805
-- 0.8
-- 0.79
-- 0.785
-- 0.78
 slug: differential-privacy
 summary: System for publicly sharing information about a dataset by describing the
   patterns of groups within the dataset while withholding information about individuals
   in the dataset.
 title: Differential Privacy
-year_origin: 2006
 ---
 
 Differential Privacy is a framework designed to ensure that the privacy of individuals in a dataset is protected when statistical analyses are published. It works by adding a certain amount of noise to the data or to the statistical queries made on the data, such that the output does not significantly compromise any individual's privacy. This approach allows researchers and companies to glean useful insights from data and share them without risking the exposure of sensitive individual information. It's especially significant in fields where data privacy is crucial, such as healthcare and finance, enabling the use of data while adhering to privacy regulations like GDPR in Europe.

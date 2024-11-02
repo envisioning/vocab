@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.4
-- 0.385
-- 0.37
-- 0.355
-- 0.34
-- 0.325
-- 0.31
 slug: fabless
 summary: Company which designs and markets hardware while outsourcing the manufacturing
   of silicon wafers and chips to specialized semiconductor foundries.
 title: Fabless
-year_origin: 1984
 ---
 
 Fabless companies represent a business model in the semiconductor industry where the company focuses on the design and development of integrated circuits (ICs) and other semiconductor products, but does not own or operate its own semiconductor fabrication facilities (fabs). This model allows such companies to minimize capital investment and overhead costs associated with running a fab, which are typically very high due to the sophisticated equipment and technology required. Instead, fabless companies rely on foundry partners to manufacture the chips, enabling them to concentrate on innovation in chip design, efficiency improvements, and quick adaptation to market demands. This approach not only reduces the entry barriers for new companies but also accelerates the pace of technological advancement within the industry.

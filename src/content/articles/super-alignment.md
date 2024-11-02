@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.875
-  - 0.86
-  - 0.85
-  - 0.84
-  - 0.83
-  - 0.82
-  - 0.81
 slug: super-alignment
 summary: Theoretical concept in AI, primarily focusing on ensuring that advanced AI systems or AGI align closely with human values and ethics to prevent negative outcomes.
 title: Super Alignment

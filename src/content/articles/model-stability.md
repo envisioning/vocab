@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.9
-- 0.89
-- 0.88
-- 0.87
-- 0.86
-- 0.85
-- 0.84
 slug: model-stability
 summary: Refers to the consistency and reliability of a machine learning model's performance when exposed to different subsets of data or slight variations in input.
 title: Model Stability

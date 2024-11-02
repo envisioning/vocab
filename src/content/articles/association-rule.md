@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.8
-- 0.785
-- 0.77
-- 0.755
-- 0.74
-- 0.725
-- 0.71
 slug: association-rule
 summary: Method in data mining for discovering interesting relationships, patterns,
   or correlations among a large set of data items.
 title: Association Rule
-year_origin: 1993
 ---
 
 Association rule learning is a critical technique in data mining aimed at identifying frequent patterns, correlations, or causal structures among sets of items in large datasets. This technique is especially valuable in market basket analysis, where it helps in understanding the co-occurrence of items purchased together. An association rule is often expressed in the form "If A, then B," where A and B are itemsets, and the rule's strength is measured by support and confidence metrics. Support indicates the frequency of the itemsets appearing together, while confidence measures the likelihood of B occurring when A occurs. More advanced metrics like lift and conviction are also used to refine the assessment of rule strength. This method has extensive applications in various domains, including retail, bioinformatics, and web usage mining.

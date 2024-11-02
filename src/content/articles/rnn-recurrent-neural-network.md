@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.93
-- 0.915
-- 0.91
-- 0.895
-- 0.88
-- 0.865
-- 0.85
 slug: rnn-recurrent-neural-network
 summary: Class of neural networks where connections between nodes form a directed
   graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior
   for a sequence of inputs.
 title: RNN (Recurrent Neural Network)
-year_origin: 1986
 ---
 
 Recurrent Neural Networks (RNNs) are designed to recognize patterns in sequences of data, such as text, genomes, handwriting, or spoken words. Unlike traditional neural networks, which assume that all inputs (and outputs) are independent of each other, RNNs are characterized by their ability to maintain a form of memory by using their internal state (or hidden layers) to process sequences of inputs. This makes them particularly useful for tasks where context or the order of data points is important. RNNs can be used in applications like language modeling, speech recognition, and machine translation. However, they often suffer from problems like vanishing and exploding gradients, which make training deep RNNs challenging.

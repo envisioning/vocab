@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.78
-  - 0.76
-  - 0.74
-  - 0.72
-  - 0.7
-  - 0.68
-  - 0.66
 slug: sota-state-of-the-art
-summary:
-  The highest level of performance achieved in a specific field, particularly in AI, where it denotes the most advanced model or algorithm.
+summary: The highest level of performance achieved in a specific field, particularly in AI, where it denotes the most advanced model or algorithm.
 title: SotA (State of the Art)
 ---
 

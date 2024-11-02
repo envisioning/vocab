@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.78
-- 0.765
-- 0.745
-- 0.73
-- 0.71
-- 0.695
-- 0.675
 slug: godel-code
 summary: Method of encoding mathematical and logical statements as unique natural
   numbers, introduced by Kurt Gödel as part of his proof of the incompleteness theorems.
 title: Gödel Code
-year_origin: 1931
 ---
 
 Gödel code, or Gödel numbering, is a technique in mathematical logic that assigns a unique natural number to each symbol, sequence of symbols, or formal expression within a formal system. This encoding allows statements about the system to be expressed within the system itself, forming the basis for Gödel's incompleteness theorems. By encoding statements and proofs as numbers, Gödel demonstrated that in any sufficiently powerful formal system, there exist true statements that cannot be proven within the system, thereby proving that the system is inherently incomplete. Gödel numbering facilitates the mapping of complex logical operations into arithmetic, enabling the profound insights of Gödel’s theorems about the limitations of formal systems.

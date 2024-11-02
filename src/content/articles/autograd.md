@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.88
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
 slug: autograd
 summary: Automatic differentiation system embedded within various ML frameworks that
   facilitates the computation of gradients, which are crucial for optimizing models
   during training.
 title: Autograd
-year_origin: 2015
 ---
 
 Autograd is pivotal in the field of machine learning, particularly in training neural networks. It simplifies the process of calculating derivatives, which are essential for the backpropagation algorithm used to update model weights. By automatically computing the gradients of complex functions with respect to given inputs, autograd eliminates the need for manual differentiation and reduces the risk of computational errors. This automation is achieved through a technique known as reverse mode automatic differentiation, which is particularly efficient for functions with a large number of inputs and fewer outputs, making it ideal for deep learning applications where models often have thousands to millions of parameters.

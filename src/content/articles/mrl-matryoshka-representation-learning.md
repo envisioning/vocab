@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.275
-  - 0.3
-  - 0.325
-  - 0.35
-  - 0.375
-  - 0.4
-  - 0.425
 slug: mrl-matryoshka-representation-learning
-summary:
-  ML approach under the umbrella of representation learning, which aims to construct hierarchical representations of data, akin to the nesting structure of Russian matryoshka dolls.
+summary: ML approach under the umbrella of representation learning, which aims to construct hierarchical representations of data, akin to the nesting structure of Russian matryoshka dolls.
 title: MRL (Matryoshka Representation Learning)
 ---
 

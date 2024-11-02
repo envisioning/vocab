@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.855
-  - 0.86
-  - 0.865
-  - 0.87
-  - 0.875
-  - 0.88
 slug: initialization
 summary: Process of setting the initial values of the parameters (weights and biases) of a model before training begins.
 title: Initialization

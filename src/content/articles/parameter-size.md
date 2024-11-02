@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
-  - 0.76
-  - 0.74
-  - 0.72
 slug: parameter-size
 summary: Count of individual weights in a ML model that are learned from data during training.
 title: Parameter Size

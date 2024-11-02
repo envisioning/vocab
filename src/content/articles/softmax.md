@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.86
-- 0.84
-- 0.82
-- 0.8
-- 0.78
-- 0.76
-- 0.74
 slug: softmax
 summary: Function that converts a vector of numerical values into a vector of probabilities,
   where the probabilities of each value are proportional to the exponentials of the
   input numbers.
 title: SoftMax
-year_origin: 1982
 ---
 
 SoftMax function plays a crucial role in neural networks, particularly in classification problems where the output can be one of several classes. It is commonly used in the final layer of a neural network model to ensure that the output values are in a probability distribution format, meaning that each output value is between 0 and 1, and the sum of all the output values equals 1. This characteristic makes SoftMax particularly useful for multi-class classification problems, as it allows the model to give a probabilistic interpretation to the outputs, indicating the confidence level of the model in its prediction. The function computes the exponential (e^) of each input value, divides each by the sum of the exponentials of all the input values, thereby normalizing these values to range between 0 and 1.

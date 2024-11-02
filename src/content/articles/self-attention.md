@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.83
-- 0.82
-- 0.81
-- 0.8
-- 0.79
-- 0.78
-- 0.77
 slug: self-attention
 summary: Mechanism in neural networks that allows models to weigh the importance of
   different parts of the input data differently.
 title: Self-Attention
-year_origin: 2017
 ---
 
 Self-attention, a critical component of transformer models, revolutionized the field of natural language processing (NLP) and beyond by enabling models to dynamically focus on different parts of the input sequence when processing each word or subcomponent. Unlike traditional attention mechanisms that require a separate context for each input (such as in sequence-to-sequence models), self-attention computes relevance scores across all parts of the input sequence itself. This allows the model to capture intricate dependencies and relationships within the data, regardless of their positional distances. The self-attention mechanism computes a weighted sum of all input representations, with the weights determined by the similarity between inputs. This approach significantly improves the model's ability to understand and generate language, handle long-range dependencies, and improve parallelization in training, making it foundational for models like GPT (Generative Pre-trained Transformer) and BERT (Bidirectional Encoder Representations from Transformers).

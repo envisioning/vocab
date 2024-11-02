@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.975
-  - 0.97
-  - 0.965
-  - 0.96
-  - 0.955
-  - 0.95
-  - 0.945
 slug: algorithm
 summary: Step-by-step procedure or formula for solving a problem or performing a task.
 title: Algorithm

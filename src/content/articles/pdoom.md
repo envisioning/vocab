@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.61
-  - 0.59
-  - 0.57
-  - 0.55
-  - 0.53
-  - 0.51
-  - 0.49
 slug: pdoom
-summary:
-  Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.
+summary: Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.
 title: P(Doom)
 ---
 

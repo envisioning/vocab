@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.875
-  - 0.85
-  - 0.825
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
 slug: model-drift
 summary: Change in the underlying data patterns that a ML model was trained on, leading to a decrease in the model's accuracy and effectiveness over time.
 title: Model Drift

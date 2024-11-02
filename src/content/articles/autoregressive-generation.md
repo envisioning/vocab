@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.8
-  - 0.787
-  - 0.773
-  - 0.76
-  - 0.747
-  - 0.733
-  - 0.72
 slug: autoregressive-generation
 summary: Method where the prediction of the next output in a sequence is based on the previously generated outputs.
 title: Autoregressive Generation

@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.62
-- 0.595
-- 0.57
-- 0.545
-- 0.52
-- 0.495
-- 0.47
 slug: sparse-crosscoders
 summary: A technique in AI aimed at improving the efficiency of model training and inference by using sparse connections between layers rather than dense connections.
 title: Sparse Crosscoders

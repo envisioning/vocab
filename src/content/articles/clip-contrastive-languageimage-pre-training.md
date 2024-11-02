@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.4
-- 0.375
-- 0.42
-- 0.385
-- 0.415
-- 0.395
-- 0.405
 slug: clip-contrastive-languageimage-pre-training
 summary: Machine learning model developed by OpenAI that learns visual concepts from
   natural language descriptions, enabling it to understand images in a manner aligned
   with textual descriptions.
 title: CLIP (Contrastive Language–Image Pre-training)
-year_origin: 2021
 ---
 
 CLIP, which stands for Contrastive Language–Image Pre-training, is designed to bridge the gap between visual data and textual information by training on a diverse range of images paired with textual descriptions. This model employs a contrastive learning approach where it optimizes the compatibility between the text and the images that correspond with it. Unlike traditional computer vision models that require specific labels for each image, CLIP learns from a broad set of internet-collected data, allowing it to generalize well across a wide variety of visual tasks without needing task-specific training data.

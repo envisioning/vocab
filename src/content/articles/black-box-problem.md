@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.925
-  - 0.9
-  - 0.875
-  - 0.85
-  - 0.825
-  - 0.8
-  - 0.775
 slug: black-box-problem
 summary: The difficulty in understanding and interpreting how an AI system, particularly ML models, makes decisions.
 title: Black Box Problem

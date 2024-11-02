@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.15
-  - 0.165
-  - 0.18
-  - 0.195
-  - 0.21
-  - 0.225
-  - 0.24
 slug: word-salad
 summary: Disorganized and nonsensical sequence of words or letters, often making it difficult or impossible to derive coherent meaning from the text.
 title: Word Salad

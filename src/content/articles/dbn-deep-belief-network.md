@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.845
-- 0.865
-- 0.84
-- 0.87
-- 0.83
-- 0.855
 slug: dbn-deep-belief-network
 summary: A type of artificial neural network that is deeply structured with multiple
   layers of latent variables, or hidden units.
 title: DBN (Deep Belief Network)
-year_origin: 2006
 ---
 
 A Deep Belief Network (DBN) is associated with advancements in AI and forms the backbone for many applications including computer vision, speech recognition, and natural language processing. These networks utilize a stack of Restricted Boltzmann Machines (RBM), or auto-encoders to create a generative, probabilistic model. The primary advantage of DBNs lies in their ability to perform unsupervised learning -- they can learn from unlabelled data, discover intricate data structure, and generate new data that is similar to the input data.

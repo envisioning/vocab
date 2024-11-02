@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.81
-- 0.79
-- 0.77
-- 0.75
-- 0.73
-- 0.71
-- 0.69
 slug: encoder-decoder-models
 summary: Class of deep learning architectures that process an input to generate a
   corresponding output.
 title: Encoder-Decoder Models
-year_origin: 2014
 ---
 
 Encoder-decoder models, often integral to natural language processing (NLP), consist of two main components: an encoder that processes the input data and converts it into a fixed-dimensional context vector, and a decoder that takes this vector to generate the output data. This architecture is especially effective in managing the sequence-to-sequence tasks where the input and output lengths can vary. For example, in machine translation, the encoder processes a sentence in the source language and the decoder generates a translation in the target language. The success of these models largely hinges on their ability to capture contextual information and dependencies within the data, which is critical for generating coherent and contextually appropriate outputs.

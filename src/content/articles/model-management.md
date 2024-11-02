@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.825
-  - 0.81
-  - 0.8
-  - 0.78
-  - 0.77
-  - 0.76
 slug: model-management
 summary: Practices and technologies used to handle various lifecycle stages of machine learning models including development, deployment, monitoring, and maintenance.
 title: Model Management

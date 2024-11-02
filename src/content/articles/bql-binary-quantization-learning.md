@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.38
-  - 0.36
-  - 0.35
-  - 0.34
-  - 0.33
-  - 0.32
-  - 0.31
 slug: bql-binary-quantization-learning
-summary:
-  ML method that aims to reduce model complexity and computational cost by quantizing weights and activations to binary values.
+summary: ML method that aims to reduce model complexity and computational cost by quantizing weights and activations to binary values.
 title: BQL (Binary Quantization Learning)
 ---
 

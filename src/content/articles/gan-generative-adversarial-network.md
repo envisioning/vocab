@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.91
-- 0.895
-- 0.88
-- 0.865
-- 0.85
-- 0.835
-- 0.82
 slug: gan-generative-adversarial-network
 summary: Class of AI algorithms used in unsupervised ML, implemented by a system of
   two neural networks contesting with each other in a game.
 title: GAN (Generative Adversarial Network)
-year_origin: 2014
 ---
 
 Generative Adversarial Networks (GANs) are a revolutionary approach in AI that involve two neural networks, a generator and a discriminator, which are trained simultaneously through adversarial processes. The generator learns to create data resembling the input data, while the discriminator learns to distinguish genuine data from the generator's data. This competition drives both networks to improve their performance, with the generator producing increasingly realistic data over time. GANs have widespread applications in image generation, style transfer, image super-resolution, and more, significantly impacting the fields of computer vision, art, and even drug discovery by enabling the generation of novel data samples.

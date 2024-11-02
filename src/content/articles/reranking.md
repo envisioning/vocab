@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.68
-  - 0.665
-  - 0.65
-  - 0.635
-  - 0.62
-  - 0.605
-  - 0.59
 slug: reranking
 summary: Process in which an initial set of items retrieved by a search algorithm is resorted using a secondary criterion or algorithm to better match user expectations or specific criteria.
 title: Reranking

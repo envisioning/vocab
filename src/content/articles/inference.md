@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.91
-  - 0.89
-  - 0.875
-  - 0.86
-  - 0.845
-  - 0.83
-  - 0.815
 slug: inference
 summary: Process by which a trained neural network applies learned patterns to new, unseen data to make predictions or decisions.
 title: Inference

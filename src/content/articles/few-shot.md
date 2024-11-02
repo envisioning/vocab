@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
-  - 0.625
-  - 0.6
 slug: few-shot
 summary: ML technique designed to recognize patterns and make predictions based on a very limited amount of training data.
 title: Few Shot

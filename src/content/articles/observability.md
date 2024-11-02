@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.86
-- 0.84
-- 0.82
-- 0.8
-- 0.78
-- 0.76
-- 0.74
 slug: observability
 summary: Capability to monitor and understand the internal states of an AI system
   through its outputs.
 title: Observability
-year_origin: 1961
 ---
 
 Observability within the context of AI systems is crucial for maintaining transparency, reliability, and trustworthiness. It involves the implementation of tools and processes that enable developers, operators, and stakeholders to gain insights into the AI's performance, decision-making processes, and behaviors by analyzing the system's outputs, logs, and other external indications. This is particularly important in complex systems, such as deep learning models, where the internal workings can be opaque. Effective observability helps in diagnosing issues, understanding model predictions, ensuring compliance with ethical standards, and enhancing overall system governance.

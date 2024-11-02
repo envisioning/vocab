@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.87
-- 0.85
-- 0.835
-- 0.82
-- 0.805
-- 0.79
-- 0.775
 slug: tpu-tensor-processing-units
 summary: Specialized hardware accelerators designed to significantly speed up the
   calculations required for ML tasks.
 title: TPU (Tensor Processing Units)
-year_origin: 2016
 ---
 
 Tensor Processing Units (TPUs) represent a leap forward in accelerating machine learning workflows, offering specialized architecture that optimizes the processing of tensor operations, which are foundational to many AI algorithms, particularly deep learning. Developed by Google, TPUs are engineered to execute operations in parallel and at high speeds, dramatically reducing the time required for training and inference phases of deep learning models. Unlike general-purpose CPUs or even GPUs (Graphics Processing Units), which can handle a broad range of computations, TPUs are specifically optimized for the high-volume, low-precision arithmetic that is often sufficient and preferable for machine learning tasks. This focus allows TPUs to achieve higher throughput and efficiency for tasks such as neural network training and execution, translating into faster model development and deployment cycles.

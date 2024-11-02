@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.8
-  - 0.775
-  - 0.75
-  - 0.725
-  - 0.7
-  - 0.675
-  - 0.65
 slug: self-supervised-pretraining
 summary: ML approach where a model learns to predict parts of the input data from other parts without requiring labeled data, which is then fine-tuned on downstream tasks.
 title: Self-Supervised Pretraining

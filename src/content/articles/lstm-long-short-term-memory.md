@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
-- 0.77
 slug: lstm-long-short-term-memory
 summary: Type of recurrent neural network architecture designed to learn long-term
   dependencies in sequential data.
 title: LSTM (Long Short-Term Memory)
-year_origin: 1997
 ---
 
 LSTMs are crucial for tasks involving sequences, such as time series analysis, natural language processing, and speech recognition. Unlike traditional RNNs, which struggle to capture long-term dependencies due to the vanishing gradient problem, LSTMs tackle this issue with their unique structure. They incorporate memory cells that can maintain information in memory for long periods, and three types of gates (input, output, and forget) that regulate the flow of information into and out of the cell, making them adept at learning from data where the gap between relevant information and where it is needed can be large.

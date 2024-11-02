@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.93
-  - 0.925
-  - 0.92
-  - 0.915
-  - 0.91
-  - 0.905
-  - 0.9
 slug: scalar
 summary: Single numerical value, typically representing a quantity or magnitude in mathematical or computational models.
 title: Scalar

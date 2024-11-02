@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.88
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
 slug: eda-exploratory-data-analysis
 summary: Technique used to analyze data sets to summarize their main characteristics,
   often with visual methods, before applying more formal modeling.
 title: EDA (Exploratory Data Analysis)
-year_origin: 1977
 ---
 
 Exploratory Data Analysis (EDA) is a critical step in the data preprocessing phase, involving various statistical and graphical techniques to uncover underlying patterns, spot anomalies, test hypotheses, and check assumptions. EDA is not just about generating summary statistics but also about visualizing data distributions, relationships, and trends using plots like histograms, scatter plots, box plots, and pair plots. This process helps data scientists and analysts to understand the data's structure, identify variables of interest, detect outliers, and decide on the appropriate data transformation or modeling strategies. By providing insights that guide the selection of modeling techniques and the tuning of parameters, EDA lays the groundwork for accurate predictive models and robust statistical analyses.

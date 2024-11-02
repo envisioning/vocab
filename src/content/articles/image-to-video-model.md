@@ -2,14 +2,6 @@
 title: Image-to-Video Model
 summary: Transforms static images into dynamic videos by using advanced AI algorithms to generate plausible temporal information.
 slug: image-to-video-model
-generality:
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
 ---
 
 Image-to-Video models convert still images into moving sequences by predicting and synthesizing motion and temporal dynamics that can naturally transform a single frame into a convincing video. These models leverage techniques from AI and ML, such as Generative Adversarial Networks (GANs) and variational methods, to fill in temporal gaps by learning patterns from vast datasets of paired images and videos. This capability is significant in fields like content creation, film post-production, and visual effects, allowing for the creation of realistic animations and enhancing virtual reality experiences by adding depth and motion to otherwise static scenes.

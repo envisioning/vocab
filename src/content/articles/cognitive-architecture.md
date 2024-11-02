@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.925
-- 0.9
-- 0.875
-- 0.85
-- 0.825
-- 0.8
-- 0.775
 slug: cognitive-architecture
 summary: A theory or model that outlines the underlying structure and mechanisms of
   the human mind or AI systems, guiding the integration of various cognitive processes.
 title: Cognitive Architecture
-year_origin: 1976
 ---
 
 Cognitive architecture plays a crucial role in the field of artificial intelligence by providing a structured framework for the development of AI systems that mimic human thought processes. These architectures are designed to emulate how humans perform tasks such as perception, memory recall, problem-solving, and decision-making. By integrating principles from psychology, neuroscience, and computer science, cognitive architectures aim to create AI systems capable of complex behavior, learning, and adaptation. They serve as the foundation for creating more sophisticated and versatile AI models, contributing to advancements in areas such as human-computer interaction, autonomous agents, and the understanding of human cognition itself.

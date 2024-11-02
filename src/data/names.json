@@ -1,0 +1,557 @@
+{
+  "invariance": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "capsule-networks": [
+    "geoffrey hinton",
+    "sara sabour",
+    "nicholas frosst"
+  ],
+  "association-rule": [
+    "rakesh agrawal",
+    "tomasz imieliński",
+    "arun swami"
+  ],
+  "slm-sparse-linear-model": [
+    "david l. donoho",
+    "michael elad",
+    "michal aharon"
+  ],
+  "model-distillation": [
+    "geoffrey hinton",
+    "oriol vinyals",
+    "jeff dean"
+  ],
+  "shors-algorithm": [
+    "peter shor"
+  ],
+  "counterfactual-explanations": [
+    "sandra wachter",
+    "brent mittelstadt",
+    "chris russell"
+  ],
+  "seq2seq-sequence-to-sequence": [
+    "ilya sutskever",
+    "oriol vinyals",
+    "quoc v. le"
+  ],
+  "mdl-minimum-description-length": [
+    "ray solomonoff",
+    "andrey kolmogorov",
+    "jorma rissanen"
+  ],
+  "fabless": [
+    "morris chang"
+  ],
+  "xaviers-initialization": [
+    "xavier glorot",
+    "yoshua bengio"
+  ],
+  "equivariance": [
+    "max welling",
+    "taco cohen"
+  ],
+  "svm-support-vector-machine": [
+    "vladimir n. vapnik",
+    "alexey ya. chervonenkis",
+    "corinna cortes"
+  ],
+  "model-layer": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "gcn-graph-convolutional-networks": [
+    "thomas n. kipf",
+    "max welling"
+  ],
+  "moe-mixture-of-experts": [
+    "michael i. jordan",
+    "robert a. jacobs",
+    "geoffrey hinton"
+  ],
+  "utm-universal-turing-machine": [
+    "alan turing"
+  ],
+  "ait-algorithmic-information-theory": [
+    "ray solomonoff",
+    "andrey kolmogorov",
+    "gregory chaitin"
+  ],
+  "tfidf-term-frequency-inverse-document-frequency": [
+    "karen spärck jones"
+  ],
+  "aco-ant-colony-optimization": [
+    "marco dorigo",
+    "luca maria gambardella"
+  ],
+  "occams-razor": [
+    "william of ockham"
+  ],
+  "pq-product-quantization": [
+    "hervé jégou",
+    "matthijs douze",
+    "cordelia schmid"
+  ],
+  "active-externalism": [
+    "andy clark",
+    "david chalmers"
+  ],
+  "max-pooling": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "dbn-deep-belief-network": [
+    "geoffrey hinton",
+    "yoshua bengio",
+    "yann lecun"
+  ],
+  "paperclip-maximizer": [
+    "nick bostrom"
+  ],
+  "gps-general-problem-solver": [
+    "herbert a. simon",
+    "allen newell",
+    "cliff shaw"
+  ],
+  "lstm-long-short-term-memory": [
+    "sepp hochreiter",
+    "jürgen schmidhuber"
+  ],
+  "turing-test": [
+    "alan turing"
+  ],
+  "hessian-matrix": [
+    "carl friedrich gauss",
+    "otto hesse"
+  ],
+  "cd-contrastive-divergence": [
+    "geoffrey hinton"
+  ],
+  "adversarial-instructions": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "aaron courville"
+  ],
+  "lle-locally-linear-embedding": [
+    "sam t. roweis",
+    "lawrence k. saul"
+  ],
+  "autograd": [
+    "dougal maclaurin",
+    "david duvenaud",
+    "matthew johnson"
+  ],
+  "markov-blanket": [
+    "andrey markov",
+    "judea pearl"
+  ],
+  "fhe-fully-homomorphic-encryption": [
+    "craig gentry"
+  ],
+  "attention-matrix": [
+    "dzmitry bahdanau",
+    "kyunghyun cho",
+    "yoshua bengio"
+  ],
+  "logistic-regression": [
+    "pierre françois verhulst",
+    "david cox",
+    "ronald a. fisher"
+  ],
+  "dtw-dynamic-time-warping": [
+    "hiroaki sakoe",
+    "seibi chiba"
+  ],
+  "rbms-restricted-boltzmann-machines": [
+    "geoffrey hinton",
+    "terry sejnowski"
+  ],
+  "alexnet": [
+    "alex krizhevsky",
+    "ilya sutskever",
+    "geoffrey hinton"
+  ],
+  "discriminator": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "aaron courville"
+  ],
+  "chinese-room": [
+    "john searle"
+  ],
+  "fpga-field-programmable-gate-array": [
+    "ross freeman",
+    "bernard vonderschmitt",
+    "stephen trimberger"
+  ],
+  "ln-layer-normalization": [
+    "jimmy lei ba",
+    "jamie ryan kiros",
+    "geoffrey e. hinton"
+  ],
+  "algorithmic-probability": [
+    "ray solomonoff",
+    "andrey kolmogorov",
+    "gregory chaitin"
+  ],
+  "vanishing-gradient": [
+    "sepp hochreiter",
+    "yoshua bengio",
+    "paul j. werbos"
+  ],
+  "rokos-basilisk": [
+    "roko mijic",
+    "eliezer yudkowsky"
+  ],
+  "lda-latent-dirichlet-allocation": [
+    "david m. blei",
+    "andrew y. ng",
+    "michael i. jordan"
+  ],
+  "mle-maximum-likelihood-estimation": [
+    "ronald a. fisher",
+    "carl friedrich gauss"
+  ],
+  "dropout": [
+    "geoffrey hinton",
+    "nitish srivastava",
+    "ilya sutskever"
+  ],
+  "random-forest": [
+    "leo breiman",
+    "adele cutler"
+  ],
+  "lovelace-test": [
+    "mark riedl",
+    "brent harrison"
+  ],
+  "verifier-theory": [
+    "shafi goldwasser",
+    "silvio micali",
+    "charles rackoff"
+  ],
+  "attention-pattern": [
+    "dzmitry bahdanau",
+    "kyunghyun cho",
+    "yoshua bengio"
+  ],
+  "parametric-knowledge": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun"
+  ],
+  "information-gap": [
+    "uriel g. foa"
+  ],
+  "fcn-fully-convolutional-networks": [
+    "jonathan long",
+    "evan shelhamer",
+    "trevor darrell"
+  ],
+  "transposed-convolutional-layer": [
+    "matthew d. zeiler",
+    "rob fergus"
+  ],
+  "triple": [
+    "tim berners-lee",
+    "james hendler",
+    "ora lassila"
+  ],
+  "causal-transformer": [
+    "rosemary ke",
+    "aniruddh raghu",
+    "yan liu"
+  ],
+  "socratic-model": [
+    "socrates"
+  ],
+  "markov-chain": [
+    "andrey markov"
+  ],
+  "gan-generative-adversarial-network": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "aaron courville"
+  ],
+  "stacking": [
+    "david h. wolpert"
+  ],
+  "model-collapse": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "aaron courville"
+  ],
+  "glu-gated-linear-unit": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "k-nn-k-nearest-neighbors": [
+    "evelyn fix",
+    "joseph hodges"
+  ],
+  "vc-dimension-vapnik-chervonenkis": [
+    "vladimir vapnik",
+    "alexey chervonenkis"
+  ],
+  "nlp-neuro-linguistic-programming": [
+    "richard bandler",
+    "john grinder"
+  ],
+  "eda-exploratory-data-analysis": [
+    "john w. tukey"
+  ],
+  "ravens-progressive-matrices": [
+    "john carlyle raven"
+  ],
+  "siamese-network": [
+    "sumit chopra",
+    "raia hadsell",
+    "yann lecun"
+  ],
+  "brute-force": [
+    "alan turing"
+  ],
+  "hebbian-learning": [
+    "donald o. hebb"
+  ],
+  "snarc-stochastic-neural-analog-reinforcement-calculator": [
+    "marvin minsky",
+    "dean edmonds"
+  ],
+  "red-queen-effect": [
+    "leigh van valen"
+  ],
+  "privileged-instructions": [
+    "maurice wilkes",
+    "david wheeler",
+    "stanley gill"
+  ],
+  "q-learning": [
+    "christopher watkins",
+    "peter dayan"
+  ],
+  "relu-rectified-linear-unit": [
+    "vinod nair",
+    "geoffrey hinton"
+  ],
+  "autopoiesis": [
+    "humberto maturana",
+    "francisco varela"
+  ],
+  "cnn-convolutional-neural-network": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "stride-length": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "kl-kullbackleibler-divergence": [
+    "solomon kullback",
+    "richard leibler"
+  ],
+  "layer-normalization": [
+    "jimmy lei ba",
+    "jamie ryan kiros",
+    "geoffrey hinton"
+  ],
+  "em-expectation-maximization": [
+    "arthur dempster",
+    "nan laird",
+    "donald rubin"
+  ],
+  "nmf-non-negative-matrix-factorization": [
+    "daniel d. lee",
+    "h. sebastian seung"
+  ],
+  "attention-mechanisms": [
+    "dzmitry bahdanau",
+    "kyunghyun cho",
+    "yoshua bengio"
+  ],
+  "boltzmann-machine": [
+    "geoffrey hinton",
+    "terrence j. sejnowski"
+  ],
+  "system-1-system-2": [
+    "daniel kahneman",
+    "amos tversky"
+  ],
+  "godel-code": [
+    "kurt gödel"
+  ],
+  "three-laws-of-robotics": [
+    "isaac asimov"
+  ],
+  "perceptron": [
+    "frank rosenblatt"
+  ],
+  "surprisal": [
+    "claude shannon",
+    "edwin thompson jaynes"
+  ],
+  "encoder-decoder-models": [
+    "ilya sutskever",
+    "oriol vinyals",
+    "quoc v. le"
+  ],
+  "chunking": [
+    "george a. miller",
+    "herbert simon",
+    "allen newell"
+  ],
+  "attention-network": [
+    "dzmitry bahdanau",
+    "kyunghyun cho",
+    "yoshua bengio"
+  ],
+  "comparative-advantage": [
+    "david ricardo"
+  ],
+  "chunking-strategy": [
+    "george a. miller",
+    "herbert simon",
+    "allen newell"
+  ],
+  "indirect-manipulation": [
+    "ben shneiderman"
+  ],
+  "attention": [
+    "dzmitry bahdanau",
+    "kyunghyun cho",
+    "yoshua bengio"
+  ],
+  "attention-seeking": [
+    "dzmitry bahdanau",
+    "kyunghyun cho",
+    "yoshua bengio"
+  ],
+  "dijkstras-algorithm": [
+    "edsger w. dijkstra"
+  ],
+  "moravec-s-paradox": [
+    "hans moravec"
+  ],
+  "rejection-sampling": [
+    "stanislaw ulam",
+    "john von neumann"
+  ],
+  "gabor-function": [
+    "dennis gabor"
+  ],
+  "perceptual-hash-algorithm": [
+    "ahmet emir dirik",
+    "nasir memon",
+    "bolivar torres"
+  ],
+  "bellman-equation": [
+    "richard bellman"
+  ],
+  "adversarial-debiasing": [
+    "brian hu zhang",
+    "blake lemoine",
+    "margaret mitchell"
+  ],
+  "vae-variational-autoencoders": [
+    "diederik p. kingma",
+    "max welling"
+  ],
+  "local-weight-sharing": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "saturating-non-linearities": [
+    "yann lecun",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "weight-decay": [
+    "geoffrey hinton",
+    "yoshua bengio",
+    "yann lecun"
+  ],
+  "naive-bayesian-model": [
+    "thomas bayes",
+    "pierre-simon laplace"
+  ],
+  "tcn-temporal-convolutional-networks": [
+    "shaojie bai",
+    "j. zico kolter",
+    "vladlen koltun"
+  ],
+  "q-value": [
+    "richard s. sutton",
+    "andrew g. barto",
+    "christopher watkins"
+  ],
+  "manifold-learning": [
+    "joshua b. tenenbaum",
+    "vin de silva",
+    "john c. platt"
+  ],
+  "gail-generative-adversarial-imitation-learning": [
+    "jonathan ho",
+    "stefano ermon"
+  ],
+  "data-augmentation": [
+    "alex krizhevsky",
+    "ilya sutskever",
+    "geoffrey hinton"
+  ],
+  "gigo-garbage-in-garbage-out": [
+    "george fuechsel"
+  ],
+  "overparameterization-regime": [
+    "sanjeev arora",
+    "nadav cohen",
+    "wei hu"
+  ],
+  "solomonoff-induction": [
+    "ray solomonoff"
+  ],
+  "world-model": [
+    "david ha",
+    "jürgen schmidhuber"
+  ],
+  "mode-collapse": [
+    "ian goodfellow",
+    "yoshua bengio",
+    "aaron courville"
+  ],
+  "bagging": [
+    "leo breiman"
+  ],
+  "contextual-bm25": [
+    "stephen e. robertson",
+    "karen spärck jones"
+  ],
+  "autoregressive-generation": [
+    "ilya sutskever",
+    "oriol vinyals",
+    "quoc v. le"
+  ],
+  "hyperdimensional-computing": [
+    "pentti kanerva"
+  ],
+  "adam-adaptive-moment-estimation": [
+    "diederik p. kingma",
+    "jimmy ba"
+  ],
+  "cross-entropy-loss": [
+    "richard bellman",
+    "claude shannon"
+  ],
+  "ppml-privacy-preserving-machine-learning": [
+    "shuang song",
+    "kamalika chaudhuri",
+    "anand d. sarwate"
+  ]
+}

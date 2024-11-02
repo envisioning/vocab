@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.72
-- 0.7
-- 0.68
-- 0.66
-- 0.64
-- 0.62
-- 0.6
 slug: capsule-networks
 summary: Type of artificial neural network designed to improve the processing of spatial
   hierarchical information by encoding data into small groups of neurons called capsules.
 title: Capsule Networks
-year_origin: 2017
 ---
 
 Capsule Networks aim to address limitations of traditional convolutional neural networks (CNNs), particularly in recognizing spatial hierarchies between features. A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity, such as an object or an object part, within the network. Unlike CNNs, which might lose spatial relationships between high-level features due to pooling layers, CapsNets retain this information through dynamic routing mechanisms. This process ensures that the network can recognize objects in various positions and orientations, making it robust to spatial transformations. CapsNets are especially significant for tasks requiring detailed understanding of scene composition, like image recognition and 3D modeling, demonstrating superior capabilities in handling complex spatial relationships.

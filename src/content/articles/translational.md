@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.845
-  - 0.84
-  - 0.835
-  - 0.83
-  - 0.825
-  - 0.82
 slug: translational
 summary: Process or approach of converting scientific research into practical applications.
 title: Translational

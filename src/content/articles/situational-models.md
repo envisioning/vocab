@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.72
-  - 0.7
-  - 0.68
-  - 0.66
-  - 0.64
-  - 0.62
-  - 0.6
 slug: situational-models
 summary: Cognitive frameworks that allow AI systems to understand and predict dynamic environments by continuously integrating contextual information.
 title: Situational Models

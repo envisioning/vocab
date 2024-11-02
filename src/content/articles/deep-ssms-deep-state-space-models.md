@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.725
-- 0.715
-- 0.7
-- 0.685
-- 0.675
-- 0.66
-- 0.645
 slug: deep-ssms-deep-state-space-models
 summary: Advanced methodologies combining deep learning with state-space models to model complex dynamic systems characterized by sequences of observations.
 title: Deep SSMs (Deep State-Space Models)

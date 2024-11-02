@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.51
-- 0.485
-- 0.46
-- 0.435
-- 0.41
-- 0.385
-- 0.36
 slug: rag-retrieval-augmented-generation
 summary: Combines the retrieval of informative documents from a large corpus with
   the generative capabilities of neural models to enhance language model responses
   with real-world knowledge.
 title: RAG (Retrieval-Augmented Generation)
-year_origin: 2020
 ---
 
 Retrieval-Augmented Generation (RAG) is a methodology in NLP that bridges the gap between traditional language models and information retrieval systems to produce more informed and contextually relevant text outputs. By integrating a document retrieval step into the generation process, RAG models can access a broad repository of texts during the generation phase, allowing them to pull in factual details or diverse perspectives that are not contained within the model's parameters. This approach leverages the strengths of both generative models, which can compose coherent and fluent text, and database-query mechanisms, which can provide specific, up-to-date information. The key innovation behind RAG is its ability to dynamically query a database based on the input query or context and use the retrieved documents to inform the generation process, enabling more accurate, informative, and context-aware responses.

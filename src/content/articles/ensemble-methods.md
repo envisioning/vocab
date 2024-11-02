@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.875
-- 0.87
-- 0.865
-- 0.86
-- 0.855
-- 0.85
-- 0.845
 slug: ensemble-methods
 summary: ML technique where multiple models are trained and used collectively to solve
   a problem.
 title: Ensemble Methods
-year_origin: 1996
 ---
 
 Ensemble Methods in ML involve the process of combining several models to solve a single prediction problem. It works by producing multiple models, each working on the same learning task, and then strategically combining their outcomes. Its philosophy is rooted in the idea that a group of weak learners can be combined to form a strong learner. Several methods fall under this category, including Bagging, Boosting and Stacking. Bagging helps to decrease the model’s variance, Boosting helps to decrease the model’s bias, and Stacking combines the prediction of multiple different models together to reduce both bias and variance.

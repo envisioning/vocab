@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.64
-- 0.615
-- 0.59
-- 0.565
-- 0.54
-- 0.515
-- 0.49
 slug: causal-transformer
 summary: A neural network model that utilizes causality to improve sequence prediction
   tasks.
 title: Causal Transformer
-year_origin: 2020
 ---
 
 The Causal Transformer is a cutting-edge development in the field of AI, specifically in Natural Language Processing (NLP) and time series forecasting. It is a type of Transformer, a popular model in deep learning, that is designed to understand the causality in sequences of data. Instead of treating data as independent or randomly ordered, it probes the information for cause-effect relationships, which can significantly improve performance on tasks that involve predicting future events based on past data. Its applications range from language translation, text summarization, and speech recognition to financial forecasting and music generation.

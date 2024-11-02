@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.845
-  - 0.83
-  - 0.81
-  - 0.795
-  - 0.78
-  - 0.765
-  - 0.75
 slug: graph-machine-learning
 summary: AI field that applies ML techniques to graph-structured data, enabling the analysis and prediction of relationships and behaviors among interconnected nodes.
 title: Graph Machine Learning

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
 slug: unhobbling
 summary: Process of unlocking latent capabilities in AI models by addressing limitations and inefficiencies, thus significantly enhancing their practical utility.
 title: Unhobbling

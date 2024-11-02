@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.6
-  - 0.585
-  - 0.57
-  - 0.555
-  - 0.54
-  - 0.525
-  - 0.51
 slug: bnn-bispectral-neural-networks
-summary:
-  Utilize higher-order spectral features for improved signal processing and pattern recognition tasks, enhancing traditional neural network capabilities.
+summary: Utilize higher-order spectral features for improved signal processing and pattern recognition tasks, enhancing traditional neural network capabilities.
 title: BNN (Bispectral Neural Networks)
 ---
 

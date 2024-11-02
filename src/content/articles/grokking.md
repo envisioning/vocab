@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
 slug: grokking
 summary: Refers to the process of deeply understanding something intuitively and completely,
   often used in AI to describe achieving a profound comprehension of complex concepts
   or systems.
 title: Grokking
-year_origin: 1961
 ---
 
 In the context of AI and machine learning, grokking involves not just learning or memorizing information, but attaining a level of understanding where the knowledge is deeply internalized and can be applied fluidly and creatively. This concept is particularly relevant when discussing how AI models, such as neural networks, learn and generalize from data. Grokking implies that the AI has moved beyond mere pattern recognition and is capable of grasping the underlying principles and nuances of the data it is trained on. This level of understanding allows AI systems to make more accurate predictions, exhibit more human-like reasoning, and adapt to new, unforeseen situations more effectively.

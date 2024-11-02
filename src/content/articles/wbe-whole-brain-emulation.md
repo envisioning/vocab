@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.6
-- 0.58
-- 0.56
-- 0.54
-- 0.52
-- 0.5
-- 0.48
 slug: wbe-whole-brain-emulation
 summary: Hypothetical process of scanning a biological brain in detail and replicating
   its state and processes in a computational system to achieve functional and experiential
   equivalence.
 title: WBE (Whole Brain Emulation)
-year_origin: 2008
 ---
 
 Whole Brain Emulation represents a theoretical bridge between neuroscience and artificial intelligence, aiming to create a functional duplicate of a human brain's processes and consciousness within a computer. This entails mapping the vast network of neurons and their connections, understanding the complex interplay of biochemical processes, and translating this information into a computational model that can emulate the brain's functionality. Achieving WBE would not only revolutionize understanding of the human mind but also represent a monumental leap towards artificial general intelligence (AGI), as it would imply the ability to replicate human-like thought, decision-making, and learning processes within artificial systems. Moreover, WBE raises profound questions about identity, consciousness, and the nature of human experience when mediated through artificial substrates.

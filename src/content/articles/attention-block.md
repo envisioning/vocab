@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.85
-- 0.845
-- 0.84
-- 0.835
-- 0.83
-- 0.825
-- 0.82
 slug: attention-block
 summary: Core component in neural networks, particularly in transformers, designed
   to selectively focus on the most relevant parts of an input sequence when making
   predictions.
 title: Attention Block
-year_origin: 2017
 ---
 
 Attention blocks are critical for tasks involving sequences, such as language translation and image analysis, where understanding dependencies between distant elements is crucial. These blocks use a mechanism that assigns different importance (or "attention") to different parts of the input, enabling the model to weigh some parts of the sequence more heavily when producing its output. In a transformer architecture, attention blocks typically compute three key elements—query, key, and value—and use them to determine which positions in the input sequence should be attended to for each output. By enabling parallel computation and avoiding the need for sequential processing, attention blocks significantly improve efficiency and performance in tasks like natural language processing (NLP) and computer vision.

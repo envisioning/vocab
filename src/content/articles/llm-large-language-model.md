@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.85
-  - 0.84
-  - 0.835
-  - 0.83
-  - 0.82
-  - 0.81
-  - 0.805
 slug: llm-large-language-model
-summary:
-  Advanced AI systems trained on extensive datasets to understand, generate, and interpret human language.
+summary: Advanced AI systems trained on extensive datasets to understand, generate, and interpret human language.
 title: LLM (Large Language Model)
 ---
 

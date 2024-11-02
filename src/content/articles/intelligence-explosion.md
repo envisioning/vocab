@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
-- 0.525
-- 0.5
 slug: intelligence-explosion
 summary: Hypothetical scenario where an AI system rapidly improves its own capabilities
   and intelligence, leading to a superintelligent AI far surpassing human intelligence.
 title: Intelligence Explosion
-year_origin: 1965
 ---
 
 The concept of Intelligence Explosion is pivotal in discussions about the future of artificial intelligence and the potential path towards artificial general intelligence (AGI). It is based on the idea that an AI system, once reaching a certain threshold of intelligence, could continuously and autonomously enhance its own design or algorithms, leading to exponential growth in its capabilities. This process could theoretically result in the creation of an AI with intelligence far beyond human levels, posing both incredible opportunities and significant risks. The central concern is the alignment problem: ensuring such a superintelligent AI's goals are aligned with human values and interests.

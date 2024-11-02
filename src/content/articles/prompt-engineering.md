@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.65
-  - 0.625
-  - 0.6
-  - 0.575
-  - 0.55
-  - 0.525
-  - 0.5
 slug: prompt-engineering
 summary: Process of carefully designing input prompts to elicit desired outputs from language models.
 title: Prompt Engineering

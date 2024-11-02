@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
-  - 0.76
-  - 0.74
-  - 0.72
 slug: negative-references
 summary: Mechanisms that prevent or mitigate undesirable, biased, or harmful outputs from AI models during text generation, aligned with ethical AI practices.
 title: Negative References

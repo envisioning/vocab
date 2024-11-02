@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.91
-- 0.885
-- 0.86
-- 0.835
-- 0.81
-- 0.785
-- 0.76
 slug: markov-chain
 summary: Stochastic model describing a sequence of possible events in which the probability
   of each event depends only on the state attained in the previous event.
 title: Markov Chain
-year_origin: 1906
 ---
 
 Markov chains are fundamental to the theory of stochastic processes, used extensively in various fields such as statistics, economics, and engineering. The model is characterized by its lack of memory, meaning the next state depends only on the current state and not on the sequence of events that preceded it. This simplicity allows Markov chains to model random processes where future states are independent of past states, given the present state. They are widely utilized in areas ranging from predicting stock market trends to natural language processing, where they help in understanding and predicting sequences of words or phrases.

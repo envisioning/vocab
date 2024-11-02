@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.95
-- 0.935
-- 0.92
-- 0.905
-- 0.89
-- 0.875
-- 0.86
 slug: dl-deep-learning
 summary: Subset of machine learning that involves neural networks with many layers,
   enabling the modeling of complex patterns in data.
 title: DL (Deep Learning)
-year_origin: 1986
 ---
 
 Deep Learning represents the cutting edge in the ability of machines to analyze, learn from, and interpret data. By utilizing artificial neural networks with multiple layers (hence "deep"), it allows for the automatic learning of representations and features from data without explicit programming for specific tasks. This methodology has been revolutionary in fields such as computer vision, natural language processing, and audio recognition, by providing a means for computers to learn complex patterns in large datasets, improving accuracy and efficiency in tasks like image recognition, language translation, and even playing complex games.

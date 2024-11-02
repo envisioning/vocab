@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.7
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
 slug: point-wise-feedforward-network
 summary: Neural network layer that applies a series of linear and non-linear transformations
   to each position (or "point") in the input sequence independently.
 title: Point-wise Feedforward Network
-year_origin: 2017
 ---
 
 Point-wise feedforward networks are used extensively in transformer architectures. These networks consist of two linear transformations with a ReLU activation in between. The first linear transformation expands the dimensionality of each input position and the second reduces it back to the original dimension. This layer operates independently on each position within the input sequence, which allows it to efficiently process long sequences in parallel. Its significance lies in its ability to introduce non-linearity and increase the model's capacity to capture complex features, improving the performance of tasks like language modeling, translation, and more.

@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.615
-- 0.6
-- 0.585
-- 0.57
-- 0.555
-- 0.54
-- 0.525
 slug: exocortex
 summary: External artificial extension of the human brain, designed to augment cognitive
   functions through advanced computing technologies.
 title: Exocortex
-year_origin: 2003
 ---
 
 The concept of an exocortex envisions a system where external digital devices, such as neural implants or sophisticated AI, interface directly with the human brain to enhance memory, decision-making, problem-solving, and other cognitive processes. It functions as an "external cortex," supporting the brain by offloading complex computations, storing vast amounts of information, and even providing access to AI-driven insights. This idea has deep implications for human intelligence, potentially blurring the line between biological and artificial thinking, and is tied to transhumanist goals of overcoming cognitive limits through technology. In practice, exocortex systems could integrate with neural networks and brain-machine interfaces, potentially enabling humans to interact more seamlessly with machines and data in real time.

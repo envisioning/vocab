@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.825
-  - 0.81
-  - 0.8
-  - 0.785
-  - 0.77
-  - 0.755
-  - 0.74
 slug: misuse
 summary: Application of AI technologies in ways that are unethical, illegal, or harmful to individuals or society.
 title: Misuse

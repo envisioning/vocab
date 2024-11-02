@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.8
-- 0.785
-- 0.77
-- 0.755
-- 0.74
-- 0.725
-- 0.71
 slug: chunking-strategy
 summary: Method of grouping similar pieces of information together to simplify processing
   and enhance memory performance.
 title: Chunking Strategy
-year_origin: 1956
 ---
 
 In AI, chunking strategy is predominantly utilized within natural language processing (NLP) and machine learning to handle and simplify large datasets or complex information streams. By breaking down data into manageable, coherent chunks, systems can more effectively process, analyze, and retrieve information. This technique mirrors cognitive psychology, where human memory is understood to benefit from organizing information into chunks. In AI, chunking helps in tasks such as parsing text, where sentences are broken into meaningful phrases, or in pattern recognition, where inputs are segmented into recognizable groups before being fed into learning algorithms.

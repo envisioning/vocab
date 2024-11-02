@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.85
-- 0.835
-- 0.82
-- 0.805
-- 0.79
-- 0.775
-- 0.76
 slug: resnet-residual-network
 summary: Type of CNN (Convolutional Neural Network) architecture that introduces residual
   learning to facilitate the training of much deeper networks by utilizing shortcut
   connections or skip connections that allow the gradient to bypass some layers.
 title: ResNet (Residual Network)
-year_origin: 2015
 ---
 
 ResNet revolutionized deep learning by addressing the vanishing gradient problem that occurs in traditional deep neural networks as their depth increases. By integrating skip connections, which are essentially shortcuts that allow the input to a layer to be added directly to its output, ResNet allows gradients to flow through the network without attenuation during backpropagation. This innovation supports training significantly deeper networks—versions of ResNet have been successfully trained with over 100 layers—enhancing performance on complex tasks like image recognition. The architecture is widely adopted in various applications including image and video recognition, object detection, and semantic segmentation.

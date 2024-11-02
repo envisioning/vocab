@@ -1,12 +1,4 @@
 ---
-generality:
-  - 1.0
-  - 0.98
-  - 0.96
-  - 0.94
-  - 0.92
-  - 0.9
-  - 0.88
 slug: training
 summary: Process of teaching a ML model to make accurate predictions or decisions, by adjusting its parameters based on data.
 title: Training

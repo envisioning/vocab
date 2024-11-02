@@ -2,14 +2,6 @@
 title: Process Reward Model
 summary: A framework used to assess and guide AI systems by providing feedback mechanisms that evaluate and reinforce desired outcomes within a given process.
 slug: process-reward-model
-generality:
-- 0.81
-- 0.785
-- 0.765
-- 0.745
-- 0.72
-- 0.7
-- 0.68
 ---
 
 Process reward models in AI often use multi-agent systems or reinforcement learning to establish environments where agents learn optimal behaviors by receiving rewards or penalties based on their actions. This concept emphasizes the evaluation of an AI’s performance within a defined task, aligning the agents' objectives with human-defined goals. The significance of such models lies in their ability to guide AI behavior effectively, facilitating advancements in areas like autonomous systems, where the interpretability of agent behavior and adherence to expected outcomes are crucial. By influencing the decision-making logic of AI through structured feedback, these models enable adaptive learning in complex, dynamic environments. As AI systems grow in complexity, developing robust process reward models is critical for ensuring ethical and practical alignment of AI technologies with societal values and user expectations.

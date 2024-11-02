@@ -1,12 +1,4 @@
 ---
-generality:
-- 0.95
-- 0.93
-- 0.91
-- 0.89
-- 0.87
-- 0.85
-- 0.83
 slug: search
 summary: The process within AI of exploring possible actions or solutions in order to achieve goals or solve problems.
 title: Search

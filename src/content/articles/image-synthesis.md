@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.85
-  - 0.83
-  - 0.81
-  - 0.79
-  - 0.77
-  - 0.75
-  - 0.73
 slug: image-synthesis
 summary: Use of AI models to generate new, unique images based on learned patterns and features from a dataset.
 title: Image Synthesis

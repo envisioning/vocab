@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.875
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
 slug: seq2seq-sequence-to-sequence
 summary: Neural network architecture designed to transform sequences of data, such
   as converting a sentence from one language to another or translating speech into
   text.
 title: Seq2Seq (Sequence to Sequence)
-year_origin: 2014
 ---
 
 The Seq2Seq model is foundational in tasks requiring input and output data to be in sequential order but potentially differing in length. It typically comprises two key components: an encoder and a decoder. The encoder processes the input sequence and compresses it into a fixed-size context vector, capturing the essence of the sequence. This context vector is then fed into the decoder, which generates the output sequence. Crucially, Seq2Seq models have been the backbone of machine translation, conversational agents, and text summarization. The introduction of attention mechanisms, like those found in Transformer models, has further enhanced Seq2Seq by allowing the model to focus on specific parts of the input sequence when generating each part of the output.

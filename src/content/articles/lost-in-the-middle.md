@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.285
-  - 0.275
-  - 0.265
-  - 0.255
-  - 0.245
-  - 0.235
-  - 0.225
 slug: lost-in-the-middle
 summary: Issue in LLMs where they tend to struggle with retaining and processing information from the middle parts of long input sequences.
 title: Lost-in-the-Middle

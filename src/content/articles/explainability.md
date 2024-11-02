@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.88
-  - 0.86
-  - 0.84
-  - 0.82
-  - 0.8
-  - 0.78
-  - 0.76
 slug: explainability
 summary: Ability of a system to transparently convey how it arrived at a decision, making its operations understandable to humans.
 title: Explainability

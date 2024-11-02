@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.7
-  - 0.72
-  - 0.73
-  - 0.74
-  - 0.75
-  - 0.76
-  - 0.77
 slug: prompt
 summary: User-generated input or question designed to elicit a specific response or output from the model.
 title: Prompt

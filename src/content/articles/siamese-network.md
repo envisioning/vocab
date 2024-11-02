@@ -1,18 +1,9 @@
 ---
-generality:
-- 0.675
-- 0.65
-- 0.625
-- 0.6
-- 0.575
-- 0.55
-- 0.525
 slug: siamese-network
 summary: Type of neural network architecture that involves two or more identical subnetworks
   sharing the same parameters and weights, typically used for tasks like similarity
   learning and verification.
 title: Siamese Network
-year_origin: 1994
 ---
 
 Siamese networks consist of two or more identical neural networks that process two different inputs to produce outputs, which are then compared. The architecture is particularly effective for tasks where determining the similarity or difference between two inputs is crucial, such as face verification, signature verification, and image similarity tasks. Each subnetwork processes one input independently, but because they share the same parameters, the features they extract are directly comparable. A common loss function used in Siamese networks is the contrastive loss, which helps in minimizing the distance between similar pairs and maximizing the distance between dissimilar pairs. This architecture leverages the concept of parameter sharing to ensure that the same feature extraction process is applied to both inputs, enhancing consistency and efficiency.

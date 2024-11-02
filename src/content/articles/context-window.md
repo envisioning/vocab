@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.67
-  - 0.645
-  - 0.63
-  - 0.605
-  - 0.59
-  - 0.575
-  - 0.55
 slug: context-window
 summary: Predefined span of text surrounding a specific word or phrase that algorithms analyze to determine its meaning, relevance, or relationship with other words.
 title: Context Window

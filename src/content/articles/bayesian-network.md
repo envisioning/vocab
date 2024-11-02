@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.84
-- 0.83
-- 0.82
-- 0.81
-- 0.8
-- 0.79
 slug: bayesian-network
 summary: Graphical model that represents probabilistic relationships among variables
   using directed acyclic graphs (DAGs).
 title: Bayesian Network
-year_origin: 1985
 ---
 
 Bayesian Networks, also known as Belief Networks or Bayes Nets, are a class of statistical models that use graph theory to represent and solve problems in a wide range of fields including machine learning, statistics, and artificial intelligence. Each node in the graph represents a random variable, while the edges between these nodes denote conditional dependencies. By quantifying the relationships between variables, Bayesian Networks enable the computation of probabilities for a set of variables, facilitating both inference and decision-making processes under uncertainty. They are particularly useful for tasks such as diagnostic problem solving, risk analysis, and prediction, offering a structured way to incorporate prior knowledge and observed data.

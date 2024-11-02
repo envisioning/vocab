@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.85
-- 0.83
-- 0.81
-- 0.79
-- 0.77
-- 0.75
-- 0.73
 slug: automl-automated-machine-learning
 summary: Streamlines the process of applying ML by automating the tasks of selecting
   the appropriate algorithms and tuning their hyperparameters.
 title: AutoML (Automated Machine Learning)
-year_origin: 2015
 ---
 
 Automated Machine Learning (AutoML) is significant for its ability to democratize machine learning, making it accessible to non-experts and significantly reducing the time and expertise required to deploy machine learning models. By automating the end-to-end process of applying machine learning models, including data preprocessing, feature selection, algorithm selection, and hyperparameter tuning, AutoML tools can efficiently produce models that rival or surpass manually developed models in terms of performance. This technology is particularly valuable in applications where rapid development and deployment of machine learning models are crucial, such as in predictive analytics, natural language processing, and computer vision tasks. AutoML aims to provide a high level of automation in ML workflows, which can be especially beneficial for organizations lacking in-depth machine learning expertise.

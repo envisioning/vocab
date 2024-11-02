@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.95
-  - 0.93
-  - 0.91
-  - 0.9
-  - 0.88
-  - 0.86
-  - 0.84
 slug: goal
 summary: Desired outcome or objective that an AI system is programmed to achieve.
 title: Goal

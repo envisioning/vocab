@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.935
-- 0.93
-- 0.925
-- 0.92
-- 0.915
-- 0.91
-- 0.905
 slug: tensor
 summary: Multi-dimensional array used in mathematics and computer science, serving
   as a fundamental data structure in neural networks for representing data and parameters.
 title: Tensor
-year_origin: 1900
 ---
 
 In the context of neural networks, tensors are pivotal for encapsulating data with various dimensions—scalars (0D tensors), vectors (1D tensors), matrices (2D tensors), and higher-dimensional arrays (3D, 4D, ..., nD tensors). They enable the efficient representation and manipulation of complex datasets and model parameters. Tensors are extensively used in deep learning libraries such as TensorFlow and PyTorch, facilitating operations like convolution, transformation, and backpropagation by efficiently handling computations on large-scale data. The multidimensional nature of tensors allows for the representation of complex data structures like images, videos, and text, where each dimension can signify different aspects of the data, such as time, space, channels, or features, making tensors indispensable in training and deploying neural network models.

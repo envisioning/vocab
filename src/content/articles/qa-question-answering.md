@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.875
-- 0.86
-- 0.845
-- 0.83
-- 0.815
-- 0.8
-- 0.785
 slug: qa-question-answering
 summary: Field of natural language processing focused on building systems that automatically
   answer questions posed by humans in a natural language.
 title: QA (Question Answering)
-year_origin: 1960
 ---
 
 Question Answering systems aim to comprehend a query presented in natural language, retrieve relevant information from a vast collection of documents or databases, and present answers in a concise, understandable format for the user. These systems leverage a combination of linguistic, statistical, and machine learning techniques to understand the context and semantics of questions, identify pertinent information, and generate accurate and relevant responses. QA technology has significant applications in virtual assistants, customer service bots, information retrieval systems, and educational tools, facilitating efficient access to knowledge and support across various domains.

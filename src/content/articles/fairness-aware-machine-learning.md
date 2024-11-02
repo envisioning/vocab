@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.795
-  - 0.79
-  - 0.785
-  - 0.78
 slug: fairness-aware-machine-learning
 summary: Focuses on developing algorithms that ensure equitable treatment and outcomes across different demographic groups.
 title: Fairness-Aware Machine Learning

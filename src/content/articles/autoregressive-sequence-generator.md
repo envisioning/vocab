@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.71
-  - 0.69
-  - 0.67
-  - 0.65
-  - 0.63
-  - 0.61
-  - 0.59
 slug: autoregressive-sequence-generator
 summary: A predictive model harnessed in AI tasks, particularly involving times series, which leverages its own prior outputs as inputs in subsequent predictions.
 title: Autoregressive Sequence Generator

@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.7
-  - 0.69
-  - 0.68
-  - 0.67
-  - 0.66
-  - 0.65
-  - 0.64
 slug: continual-pre-training
 summary: Process of incrementally training a pre-trained ML model on new data or tasks to update its knowledge without forgetting previously learned information.
 title: Continual Pre-Training

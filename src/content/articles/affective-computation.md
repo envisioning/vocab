@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.65
-- 0.635
-- 0.62
-- 0.605
-- 0.59
-- 0.575
-- 0.56
 slug: affective-computation
 summary: Field within AI that focuses on the design of systems and devices capable
   of recognizing, interpreting, processing, and simulating human emotions.
 title: Affective Computation
-year_origin: 1995
 ---
 
 Affective computation seeks to bridge the gap between human emotions and machine interactions, enabling computers to respond to users' emotional states in a more intuitive and human-like manner. This involves emotion detection through various inputs like facial expressions, voice tone, physiological signals, and text, followed by appropriate reactions or adjustments in system behavior. Applications include human-computer interaction (HCI), mental health assessment tools, personalized learning systems, and customer service bots that adjust based on user sentiment. By incorporating emotional intelligence into machines, affective computation enhances the user experience and allows for more personalized, empathetic interactions.

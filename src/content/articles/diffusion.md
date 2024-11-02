@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.76
-- 0.745
-- 0.73
-- 0.715
-- 0.7
-- 0.685
-- 0.67
 slug: diffusion
 summary: Class of generative models used to create high-quality, diverse samples of
   data by iteratively adding and then reversing noise.
 title: Diffusion
-year_origin: 2020
 ---
 
 Diffusion models work by gradually introducing noise to a data sample until it is transformed into a random noise distribution, then learning to reverse this process to generate new data samples from noise. This technique is especially prominent in generating realistic images, audio, and other forms of multimedia content. The process involves training a neural network to denoise data, essentially teaching it the distribution of the original dataset. Through this, diffusion models can generate new samples that are remarkably similar to the original data. Their flexibility and capacity to produce high-fidelity outputs have made them a popular choice for tasks requiring high levels of detail and creativity, such as text-to-image synthesis, enhancing image resolution, and creating art or music.

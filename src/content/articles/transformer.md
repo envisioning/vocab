@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.922
-- 0.897
-- 0.885
-- 0.864
-- 0.843
-- 0.821
-- 0.799
 slug: transformer
 summary: Deep learning model architecture designed for handling sequential data, especially
   effective in natural language processing tasks.
 title: Transformer
-year_origin: 2017
 ---
 
 The transformer model, introduced in the paper "Attention Is All You Need" by Vaswani et al. in 2017, represents a paradigm shift in how sequential data is processed by neural networks. Unlike its predecessors, which relied on recurrent or convolutional layers, the transformer utilizes a mechanism called self-attention to weigh the importance of different parts of the input data differently. This approach allows the model to process all parts of the input simultaneously (in parallel), significantly improving efficiency and performance on tasks such as language translation, text summarization, and content generation. The architecture is made up of an encoder and decoder, each consisting of multiple layers of self-attention and position-wise fully connected feed-forward networks. Transformers have become the foundation for many state-of-the-art natural language processing models, including BERT, GPT (Generative Pre-trained Transformer), and T5.

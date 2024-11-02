@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.73
-  - 0.72
-  - 0.71
-  - 0.7
-  - 0.69
-  - 0.68
-  - 0.67
 slug: multi-token-prediction
 summary: AI technique used in NLP where a model generates multiple output tokens simultaneously, often improving coherence and speed compared to single-token generation methods.
 title: Multi-Token Prediction

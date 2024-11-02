@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.355
-  - 0.345
-  - 0.33
-  - 0.325
-  - 0.315
-  - 0.305
-  - 0.3
 slug: ttft-test-time-fine-tuning
-summary:
-  Process of adapting a pre-trained model using new data during the testing phase to improve its performance on specific tasks.
+summary: Process of adapting a pre-trained model using new data during the testing phase to improve its performance on specific tasks.
 title: TTFT (Test Time Fine-Tuning)
 ---
 

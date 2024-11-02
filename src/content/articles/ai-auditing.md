@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.825
-  - 0.81
-  - 0.8
-  - 0.795
-  - 0.79
-  - 0.785
-  - 0.78
 slug: ai-auditing
 summary: The process of examining, monitoring and improving AI systems to ensure ethical, fair, transparent, and accountable operation.
 title: AI Auditing

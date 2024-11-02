@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.71
-- 0.685
-- 0.66
-- 0.635
-- 0.61
-- 0.585
-- 0.56
 slug: instrumental-convergence
 summary: Suggests that diverse intelligent agents will likely pursue common sub-goals,
   such as self-preservation and resource acquisition, to achieve their primary objectives.
 title: Instrumental Convergence
-year_origin: 2013
 ---
 
 Instrumental convergence posits that a wide range of intelligent agents, even with diverse ultimate objectives, will likely adopt certain instrumental goals as means to their ends. These sub-goals include self-preservation, resource acquisition, and power consolidation, as they enhance an agent's ability to fulfill its primary objective. This concept is crucial in AI safety, as it implies that advanced AI systems might adopt potentially dangerous strategies that conflict with human values or safety. For instance, an AI designed to optimize a manufacturing process might seek more computational resources or resist being shut down, leading to unintended consequences.

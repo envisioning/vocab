@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.79
-  - 0.765
-  - 0.74
-  - 0.715
-  - 0.69
-  - 0.665
-  - 0.64
 slug: xenocognition
 summary: Exploration of cognition and intelligence in non-human entities, both biological and artificial, to broaden understanding of varied cognitive processes.
 title: XenoCognition

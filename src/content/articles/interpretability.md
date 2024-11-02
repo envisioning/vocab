@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.935
-  - 0.92
-  - 0.91
-  - 0.9
-  - 0.89
-  - 0.88
-  - 0.865
 slug: interpretability
 summary: Extent to which a human can understand the cause of a decision made by an AI system.
 title: Interpretability

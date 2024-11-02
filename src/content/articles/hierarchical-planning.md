@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.87
-- 0.86
-- 0.855
-- 0.84
-- 0.835
-- 0.83
-- 0.825
 slug: hierarchical-planning
 summary: Approach to solving complex problems by breaking them down into more manageable
   sub-problems, organizing these into a hierarchy.
 title: Hierarchical Planning
-year_origin: 1970
 ---
 
 Hierarchical Planning is crucial in both AI and robotics for dealing with complex tasks that can be decomposed into smaller, more manageable components. This approach leverages a hierarchical structure to simplify decision-making processes, where higher levels of the hierarchy define broader goals and lower levels focus on detailed actions required to achieve these goals. In robotics, this means breaking down a complex task like navigating an environment into sub-tasks such as path planning, obstacle avoidance, and motion control. Hierarchical Planning allows for more efficient problem-solving as it reduces the search space for solutions at each level of the hierarchy and facilitates the reuse of solutions for common sub-problems, thereby improving the scalability and efficiency of the planning process.

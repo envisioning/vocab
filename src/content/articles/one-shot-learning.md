@@ -1,17 +1,8 @@
 ---
-generality:
-- 0.6
-- 0.58
-- 0.565
-- 0.545
-- 0.52
-- 0.5
-- 0.485
 slug: one-shot-learning
 summary: ML technique where a model learns information about object categories from
   a single training example.
 title: One-Shot Learning
-year_origin: 2006
 ---
 
 One-shot learning addresses the challenge of training models with very limited data, often just one example per class. This technique is particularly important in fields like computer vision and natural language processing where acquiring extensive labeled datasets can be difficult or impractical. One-shot learning models often rely on methods such as Siamese networks, which use pairs of inputs to learn similarities, or Bayesian networks, which incorporate prior knowledge to make predictions based on minimal data. These models are designed to generalize from the limited examples by leveraging prior knowledge or leveraging tasks that allow them to understand the underlying structure of the data.

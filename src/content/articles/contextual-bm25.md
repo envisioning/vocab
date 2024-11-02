@@ -1,14 +1,6 @@
 ---
-generality:
-  - 0.32
-  - 0.295
-  - 0.27
-  - 0.245
-  - 0.22
-  - 0.195
-  - 0.17
 slug: contextual-bm25
-summary: "Widely used probabilistic ranking function for assessing document relevance in search queries based on a bag-of-words model."
+summary: Widely used probabilistic ranking function for assessing document relevance in search queries based on a bag-of-words model.
 title: Contextual BM25
 ---
 

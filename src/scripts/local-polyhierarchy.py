@@ -33,9 +33,6 @@ def parse_markdown_files(directory):
                         summary_match = re.search(r'summary:\s*"?(.*?)(?:"|$|\n)', frontmatter)
                         slug_match = re.search(r'slug:\s*"?([^"\n]+)"?', frontmatter)
                         
-                        # Add generality extraction
-                        generality_match = re.search(r'generality:\s*\n((?:\s*-\s*\d+\.?\d*\s*\n*)+)', frontmatter)
-                        
                         # Get the main content after frontmatter
                         main_content = content.split('---', 2)[-1].strip()
                         
@@ -50,22 +47,11 @@ def parse_markdown_files(directory):
                                 duplicate_terms.append((title, filename))
                                 logging.warning(f"Duplicate term found: {title} in {filename}")
                             
-                            # Extract and process generality scores
-                            generality_scores = []
-                            if generality_match:
-                                scores_text = generality_match.group(1)
-                                generality_scores = [float(score.strip()) for score in re.findall(r'-\s*(\d+\.?\d*)', scores_text)]
-                                logging.debug(f"Extracted generality scores for {title}: {generality_scores}")
-                            else:
-                                logging.warning(f"No generality scores found for {title}")
-                                generality_scores = []
-                            
                             # Store all metadata and content
                             terms[title] = {
                                 'summary': summary,
                                 'slug': slug,
-                                'content': main_content,
-                                'generality_scores': generality_scores
+                                'content': main_content
                             }
                             
                             logging.info(f"Successfully parsed {filename}")
@@ -177,26 +163,68 @@ def assign_ids(hierarchy, terms):
     
     return id_mapping
 
+def load_additional_data():
+    """Load data from generality.json, years.json, and names.json"""
+    data = {
+        'generality': {},
+        'years': {},
+        'names': {}
+    }
+    
+    try:
+        with open('../data/generality.json', 'r') as f:
+            data['generality'] = json.load(f)
+        logging.info("Successfully loaded generality.json")
+    except Exception as e:
+        logging.error(f"Error loading generality.json: {str(e)}")
+        
+    try:
+        with open('../data/years.json', 'r') as f:
+            data['years'] = json.load(f)
+        logging.info("Successfully loaded years.json")
+    except Exception as e:
+        logging.error(f"Error loading years.json: {str(e)}")
+        
+    try:
+        with open('../data/names.json', 'r') as f:
+            data['names'] = json.load(f)
+        logging.info("Successfully loaded names.json")
+    except Exception as e:
+        logging.error(f"Error loading names.json: {str(e)}")
+    
+    return data
+
 def create_polyhierarchy(hierarchy, id_mapping, terms):
+    additional_data = load_additional_data()
     polyhierarchy = []
+    
     for term, connections in hierarchy.items():
         try:
-            generality_scores = terms[term]['generality_scores']
-            generality_avg = round(sum(generality_scores) / len(generality_scores), 3) if generality_scores else None
-            if generality_avg is None:
-                logging.warning(f"Could not calculate generality for term: {term}")
-        except (KeyError, ZeroDivisionError) as e:
+            # Get generality from generality.json
+            generality_avg = None
+            if id_mapping[term] in additional_data['generality']:
+                json_scores = additional_data['generality'][id_mapping[term]]
+                generality_avg = round(sum(json_scores) / len(json_scores), 3)
+            else:
+                logging.warning(f"No generality found for term: {term}")
+        except Exception as e:
             logging.error(f"Error calculating generality for {term}: {str(e)}")
             generality_avg = None
 
+        # Get year and names if available
+        year = additional_data['years'].get(id_mapping[term])
+        names = additional_data['names'].get(id_mapping[term], [])
+
         node = {
-            "slug": id_mapping[term], 
+            "slug": id_mapping[term],
             "name": term,
             "summary": terms[term]['summary'],
             "generality": generality_avg,
+            "year": year,
+            "names": names,
             "children": [
                 {
-                    "slug": id_mapping[child],  
+                    "slug": id_mapping[child],
                     "similarity": float(score)
                 } for child, score in connections.items()
             ]
@@ -207,19 +235,28 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
     for term in id_mapping.keys():
         if term not in hierarchy:
             try:
-                generality_scores = terms[term]['generality_scores']
-                generality_avg = round(sum(generality_scores) / len(generality_scores), 3) if generality_scores else None
-                if generality_avg is None:
-                    logging.warning(f"Could not calculate generality for leaf term: {term}")
-            except (KeyError, ZeroDivisionError) as e:
+                # Get generality from generality.json
+                generality_avg = None
+                if id_mapping[term] in additional_data['generality']:
+                    json_scores = additional_data['generality'][id_mapping[term]]
+                    generality_avg = round(sum(json_scores) / len(json_scores), 3)
+                else:
+                    logging.warning(f"No generality found for leaf term: {term}")
+            except Exception as e:
                 logging.error(f"Error calculating generality for leaf {term}: {str(e)}")
                 generality_avg = None
 
+            # Get year and names if available
+            year = additional_data['years'].get(id_mapping[term])
+            names = additional_data['names'].get(id_mapping[term], [])
+
             node = {
-                "slug": id_mapping[term],  # Changed from "id" to "slug"
+                "slug": id_mapping[term],
                 "name": term,
                 "summary": terms[term]['summary'],
                 "generality": generality_avg,
+                "year": year,
+                "names": names,
                 "children": []
             }
             polyhierarchy.append(node)

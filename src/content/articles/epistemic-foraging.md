@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.625
-  - 0.61
-  - 0.595
-  - 0.58
-  - 0.565
-  - 0.55
-  - 0.535
 slug: epistemic-foraging
 summary: Process of actively seeking out new information to reduce uncertainty in an agent's understanding of the world, often driven by curiosity or the need to update beliefs about the environment.
 title: Epistemic Foraging

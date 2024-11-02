@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.68
-  - 0.66
-  - 0.645
-  - 0.625
-  - 0.6
-  - 0.58
-  - 0.56
 slug: vlm-visual-language-model
-summary:
-  AI models designed to interpret and generate content by integrating visual and textual information, enabling them to perform tasks like image captioning, visual question answering, and more.
+summary: AI models designed to interpret and generate content by integrating visual and textual information, enabling them to perform tasks like image captioning, visual question answering, and more.
 title: VLM (Visual Language Model)
 ---
 

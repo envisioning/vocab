@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.82
-  - 0.81
-  - 0.8
-  - 0.79
-  - 0.78
-  - 0.77
-  - 0.76
 slug: 1-n-systems
 summary: Architectures where one input or controller manages multiple outputs or agents, applicable in fields like neural networks and robotics.
 title: 1-N Systems

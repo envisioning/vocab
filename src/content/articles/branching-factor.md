@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.8
-  - 0.785
-  - 0.77
-  - 0.755
-  - 0.74
-  - 0.725
-  - 0.71
 slug: branching-factor
 summary: Number of possible actions or moves that can be taken from any given point in a decision-making process, such as in game trees or search algorithms.
 title: Branching Factor

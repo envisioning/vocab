@@ -1,15 +1,6 @@
 ---
-generality:
-  - 0.74
-  - 0.715
-  - 0.69
-  - 0.665
-  - 0.64
-  - 0.615
-  - 0.59
 slug: hitl-human-in-the-loop
-summary:
-  Integration of human judgment into AI systems to improve or guide the decision-making process.
+summary: Integration of human judgment into AI systems to improve or guide the decision-making process.
 title: HITL (Human-in-the-Loop)
 ---
 

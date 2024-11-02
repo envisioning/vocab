@@ -1,12 +1,4 @@
 ---
-generality:
-  - 0.78
-  - 0.76
-  - 0.74
-  - 0.72
-  - 0.7
-  - 0.68
-  - 0.66
 slug: trajectory-generation
 summary: Computational methods for designing the path that an object or agent should follow to reach a destination efficiently and effectively.
 title: Trajectory Generation
