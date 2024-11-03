@@ -8,9 +8,8 @@ export default function ComponentFeedback({ slug }: { slug: string }) {
 
   const handleVote = useCallback(
     (isPositive: boolean) => {
-      const eventName = "Component Feedback";
       if (typeof window !== "undefined" && (window as any).plausible) {
-        (window as any).plausible(eventName, {
+        (window as any).plausible("Feedback", {
           props: {
             slug,
             feedback: isPositive ? "good" : "bad",
