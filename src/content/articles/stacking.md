@@ -1,7 +1,6 @@
 ---
 slug: stacking
-summary: ML ensemble technique that combines multiple classification or regression
-  models via a meta-classifier or meta-regressor to improve prediction accuracy.
+summary: ML ensemble technique that combines multiple classification or regression models via a meta-classifier or meta-regressor to improve prediction accuracy.
 title: Stacking
 ---
 

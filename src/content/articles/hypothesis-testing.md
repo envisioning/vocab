@@ -1,7 +1,6 @@
 ---
 slug: hypothesis-testing
-summary: A statistical method used to make decisions or inferences about one or more
-  data sets.
+summary: A statistical method used to make decisions or inferences about one or more data sets.
 title: Hypothesis Testing
 ---
 

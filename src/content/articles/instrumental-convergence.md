@@ -1,7 +1,6 @@
 ---
 slug: instrumental-convergence
-summary: Suggests that diverse intelligent agents will likely pursue common sub-goals,
-  such as self-preservation and resource acquisition, to achieve their primary objectives.
+summary: Suggests that diverse intelligent agents will likely pursue common sub-goals, such as self-preservation and resource acquisition, to achieve their primary objectives.
 title: Instrumental Convergence
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: centaur
-summary: Collaborative system where humans and AI work together, combining human intuition
-  and expertise with AI's computational power and data processing capabilities.
+summary: Collaborative system where humans and AI work together, combining human intuition and expertise with AI's computational power and data processing capabilities.
 title: Centaur
 ---
 

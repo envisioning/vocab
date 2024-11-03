@@ -1,8 +1,6 @@
 ---
 slug: subsymbolic-ai
-summary: AI approaches that do not use explicit symbolic representation of knowledge
-  but instead rely on distributed, often neural network-based methods to process and
-  learn from data.
+summary: AI approaches that do not use explicit symbolic representation of knowledge but instead rely on distributed, often neural network-based methods to process and learn from data.
 title: Subsymbolic AI
 ---
 

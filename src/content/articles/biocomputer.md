@@ -1,7 +1,6 @@
 ---
 slug: biocomputer
-summary: Computational system that uses biological molecules, such as DNA and proteins,
-  to perform data processing and storage tasks.
+summary: Computational system that uses biological molecules, such as DNA and proteins, to perform data processing and storage tasks.
 title: Biocomputer
 ---
 

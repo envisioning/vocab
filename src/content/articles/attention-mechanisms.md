@@ -1,7 +1,6 @@
 ---
 slug: attention-mechanisms
-summary: Dynamically prioritize certain parts of input data over others, enabling
-  models to focus on relevant information when processing complex data sequences.
+summary: Dynamically prioritize certain parts of input data over others, enabling models to focus on relevant information when processing complex data sequences.
 title: Attention Mechanisms
 ---
 

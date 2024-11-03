@@ -1,7 +1,6 @@
 ---
 slug: federated-learning
-summary: ML approach enabling models to be trained across multiple decentralized devices
-  or servers holding local data samples, without exchanging them.
+summary: ML approach enabling models to be trained across multiple decentralized devices or servers holding local data samples, without exchanging them.
 title: Federated Learning
 ---
 

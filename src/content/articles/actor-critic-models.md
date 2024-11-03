@@ -1,8 +1,6 @@
 ---
 slug: actor-critic-models
-summary: 'Reinforcement learning architecture that includes two components: an actor
-  that determines the actions to take and a critic that evaluates those actions to
-  improve the policy.'
+summary: 'Reinforcement learning architecture that includes two components: an actor that determines the actions to take and a critic that evaluates those actions to improve the policy.'
 title: Actor-Critic Models
 ---
 

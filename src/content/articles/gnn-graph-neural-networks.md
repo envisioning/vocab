@@ -1,7 +1,6 @@
 ---
 slug: gnn-graph-neural-networks
-summary: Type of neural network designed for processing data represented in graph
-  form, capturing relationships and structure within the data.
+summary: Type of neural network designed for processing data represented in graph form, capturing relationships and structure within the data.
 title: GNN (Graph Neural Networks)
 ---
 

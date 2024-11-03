@@ -1,8 +1,6 @@
 ---
 slug: cuda-compute-unified-device-architecture
-summary: Parallel computing platform and application programming interface (API) that
-  allows software developers and software engineers to use a graphics processing unit
-  (GPU) for general purpose processing.
+summary: Parallel computing platform and application programming interface (API) that allows software developers and software engineers to use a graphics processing unit (GPU) for general purpose processing.
 title: CUDA (Compute Unified Device Architecture)
 ---
 

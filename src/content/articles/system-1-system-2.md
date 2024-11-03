@@ -1,7 +1,6 @@
 ---
 slug: system-1-system-2
-summary: 'Two modes of thinking in human cognition: System 1 is fast, automatic, and
-  intuitive, while System 2 is slow, deliberate, and analytical.'
+summary: 'Two modes of thinking in human cognition: System 1 is fast, automatic, and intuitive, while System 2 is slow, deliberate, and analytical.'
 title: System 1 & System 2
 ---
 

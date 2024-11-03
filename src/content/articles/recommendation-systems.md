@@ -1,7 +1,6 @@
 ---
 slug: recommendation-systems
-summary: Algorithms designed to suggest relevant items to users (such as movies, books,
-  products, etc.) based on their preferences and behaviors.
+summary: Algorithms designed to suggest relevant items to users (such as movies, books, products, etc.) based on their preferences and behaviors.
 title: Recommendation Systems
 ---
 

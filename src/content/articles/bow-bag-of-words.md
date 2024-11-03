@@ -1,7 +1,6 @@
 ---
 slug: bow-bag-of-words
-summary: Text representation technique used in NLP to simplify text content by treating
-  it as an unordered set of words.
+summary: Text representation technique used in NLP to simplify text content by treating it as an unordered set of words.
 title: BoW (Bag-of-Words)
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: markov-blanket
-summary: A concept in probabilistic graphical models representing a node's minimal
-  set of dependencies, crucial for inferring the node's behavior in a network.
+summary: A concept in probabilistic graphical models representing a node's minimal set of dependencies, crucial for inferring the node's behavior in a network.
 title: Markov Blanket
 ---
 

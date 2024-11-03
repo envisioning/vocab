@@ -1,8 +1,6 @@
 ---
 slug: autograd
-summary: Automatic differentiation system embedded within various ML frameworks that
-  facilitates the computation of gradients, which are crucial for optimizing models
-  during training.
+summary: Automatic differentiation system embedded within various ML frameworks that facilitates the computation of gradients, which are crucial for optimizing models during training.
 title: Autograd
 ---
 

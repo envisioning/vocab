@@ -1,8 +1,6 @@
 ---
 slug: ssm-state-space-model
-summary: Mathematical frameworks used to model dynamic systems by describing their
-  states in space and how these states evolve over time under the influence of inputs,
-  disturbances, and noise.
+summary: Mathematical frameworks used to model dynamic systems by describing their states in space and how these states evolve over time under the influence of inputs, disturbances, and noise.
 title: SSM (State-Space Model)
 ---
 

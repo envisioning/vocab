@@ -1,7 +1,6 @@
 ---
 slug: cross-entropy-loss
-summary: Loss function used to measure the difference between two probability distributions
-  for a given random variable or set of events.
+summary: Loss function used to measure the difference between two probability distributions for a given random variable or set of events.
 title: Cross entropy loss
 ---
 

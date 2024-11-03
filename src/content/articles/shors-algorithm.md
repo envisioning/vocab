@@ -1,7 +1,6 @@
 ---
 slug: shors-algorithm
-summary: A quantum algorithm that efficiently solves integer factorization, potentially
-  threatening classical encryption systems.
+summary: A quantum algorithm that efficiently solves integer factorization, potentially threatening classical encryption systems.
 title: Shors Algorithm
 ---
 

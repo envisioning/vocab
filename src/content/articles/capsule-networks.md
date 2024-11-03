@@ -1,7 +1,6 @@
 ---
 slug: capsule-networks
-summary: Type of artificial neural network designed to improve the processing of spatial
-  hierarchical information by encoding data into small groups of neurons called capsules.
+summary: Type of artificial neural network designed to improve the processing of spatial hierarchical information by encoding data into small groups of neurons called capsules.
 title: Capsule Networks
 ---
 

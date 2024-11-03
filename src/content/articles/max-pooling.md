@@ -1,7 +1,6 @@
 ---
 slug: max-pooling
-summary: Downsampling technique that reduces the dimensionality of input data by selecting
-  the maximum value from a specified subset of the data.
+summary: Downsampling technique that reduces the dimensionality of input data by selecting the maximum value from a specified subset of the data.
 title: Max Pooling
 ---
 

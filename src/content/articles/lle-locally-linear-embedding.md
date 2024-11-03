@@ -1,7 +1,6 @@
 ---
 slug: lle-locally-linear-embedding
-summary: Nonlinear dimensionality reduction technique that preserves local neighborhood
-  information to reduce high-dimensional data to a lower-dimensional space.
+summary: Nonlinear dimensionality reduction technique that preserves local neighborhood information to reduce high-dimensional data to a lower-dimensional space.
 title: LLE (Locally Linear Embedding)
 ---
 

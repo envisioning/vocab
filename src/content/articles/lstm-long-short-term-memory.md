@@ -1,7 +1,6 @@
 ---
 slug: lstm-long-short-term-memory
-summary: Type of recurrent neural network architecture designed to learn long-term
-  dependencies in sequential data.
+summary: Type of recurrent neural network architecture designed to learn long-term dependencies in sequential data.
 title: LSTM (Long Short-Term Memory)
 ---
 

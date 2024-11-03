@@ -1,7 +1,6 @@
 ---
 slug: nlp-neuro-linguistic-programming
-summary: Techniques and methodologies for understanding and generating human language
-  by computers.
+summary: Techniques and methodologies for understanding and generating human language by computers.
 title: NLP (Neuro-Linguistic Programming)
 ---
 

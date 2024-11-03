@@ -1,8 +1,6 @@
 ---
 slug: attention-network
-summary: Type of neural network that dynamically focuses on specific parts of the
-  input data, enhancing the performance of tasks like language translation, image
-  recognition, and more.
+summary: Type of neural network that dynamically focuses on specific parts of the input data, enhancing the performance of tasks like language translation, image recognition, and more.
 title: Attention Network
 ---
 

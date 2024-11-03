@@ -1,7 +1,6 @@
 ---
 slug: fcn-fully-convolutional-networks
-summary: Neural network architecture designed specifically for image segmentation
-  tasks, where the goal is to classify each pixel of an image into a category.
+summary: Neural network architecture designed specifically for image segmentation tasks, where the goal is to classify each pixel of an image into a category.
 title: FCN (Fully Convolutional Networks)
 ---
 

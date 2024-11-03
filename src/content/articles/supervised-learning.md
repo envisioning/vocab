@@ -1,7 +1,6 @@
 ---
 slug: supervised-learning
-summary: ML approach where models are trained on labeled data to predict outcomes
-  or classify data into categories.
+summary: ML approach where models are trained on labeled data to predict outcomes or classify data into categories.
 title: Supervised Learning
 ---
 

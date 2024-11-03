@@ -1,7 +1,6 @@
 ---
 slug: attention-seeking
-summary: A behavior exhibited by neural networks, where they dynamically focus computational
-  resources on important parts of the input, enhancing learning and performance.
+summary: A behavior exhibited by neural networks, where they dynamically focus computational resources on important parts of the input, enhancing learning and performance.
 title: Attention Seeking
 ---
 

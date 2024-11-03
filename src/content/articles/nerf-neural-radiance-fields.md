@@ -1,7 +1,6 @@
 ---
 slug: nerf-neural-radiance-fields
-summary: Technique for creating high-quality 3D models from a set of 2D images using
-  deep learning.
+summary: Technique for creating high-quality 3D models from a set of 2D images using deep learning.
 title: NeRF (Neural Radiance Fields)
 ---
 

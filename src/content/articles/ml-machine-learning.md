@@ -1,7 +1,6 @@
 ---
 slug: ml-machine-learning
-summary: Development of algorithms and statistical models that enable computers to
-  perform tasks without being explicitly programmed for each one.
+summary: Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.
 title: ML (Machine Learning)
 ---
 

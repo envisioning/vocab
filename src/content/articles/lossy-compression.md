@@ -1,7 +1,6 @@
 ---
 slug: lossy-compression
-summary: A data encoding method that reduces file size by eliminating some information
-  deemed less important, resulting in a loss of data quality.
+summary: A data encoding method that reduces file size by eliminating some information deemed less important, resulting in a loss of data quality.
 title: Lossy Compression
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: vits-vision-transformers
-summary: Class of DL models that apply the transformer architecture, originally designed
-  for natural language processing, to computer vision tasks.
+summary: Class of DL models that apply the transformer architecture, originally designed for natural language processing, to computer vision tasks.
 title: ViTs (Vision Transformers)
 ---
 

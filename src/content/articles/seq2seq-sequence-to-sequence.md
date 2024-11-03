@@ -1,8 +1,6 @@
 ---
 slug: seq2seq-sequence-to-sequence
-summary: Neural network architecture designed to transform sequences of data, such
-  as converting a sentence from one language to another or translating speech into
-  text.
+summary: Neural network architecture designed to transform sequences of data, such as converting a sentence from one language to another or translating speech into text.
 title: Seq2Seq (Sequence to Sequence)
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: gpt-generative-pre-trained-transformer
-summary: Type of neural network architecture that excels in generating human-like
-  text based on the input it receives.
+summary: Type of neural network architecture that excels in generating human-like text based on the input it receives.
 title: GPT (Generative Pre-Trained Transformer)
 ---
 

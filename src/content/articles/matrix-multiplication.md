@@ -1,7 +1,6 @@
 ---
 slug: matrix-multiplication
-summary: An algebraic operation that takes two matrices and produces a new matrix,
-  fundamental in various AI and ML algorithms.
+summary: An algebraic operation that takes two matrices and produces a new matrix, fundamental in various AI and ML algorithms.
 title: Matrix Multiplication
 ---
 

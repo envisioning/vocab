@@ -1,7 +1,6 @@
 ---
 slug: discriminator
-summary: Model that determines the likelihood of a given input being real or fake,
-  typically used in generative adversarial networks (GANs).
+summary: Model that determines the likelihood of a given input being real or fake, typically used in generative adversarial networks (GANs).
 title: Discriminator
 ---
 

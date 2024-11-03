@@ -1,7 +1,6 @@
 ---
 slug: ttt-test-time-training
-summary: ML approach where the model adapts itself during the inference phase using
-  auxiliary tasks and additional training data available at test time to improve performance.
+summary: ML approach where the model adapts itself during the inference phase using auxiliary tasks and additional training data available at test time to improve performance.
 title: TTT (Test-Time Training)
 ---
 

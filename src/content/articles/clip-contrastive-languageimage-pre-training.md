@@ -1,8 +1,6 @@
 ---
 slug: clip-contrastive-languageimage-pre-training
-summary: Machine learning model developed by OpenAI that learns visual concepts from
-  natural language descriptions, enabling it to understand images in a manner aligned
-  with textual descriptions.
+summary: Machine learning model developed by OpenAI that learns visual concepts from natural language descriptions, enabling it to understand images in a manner aligned with textual descriptions.
 title: CLIP (Contrastive Language–Image Pre-training)
 ---
 

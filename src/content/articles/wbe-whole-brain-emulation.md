@@ -1,8 +1,6 @@
 ---
 slug: wbe-whole-brain-emulation
-summary: Hypothetical process of scanning a biological brain in detail and replicating
-  its state and processes in a computational system to achieve functional and experiential
-  equivalence.
+summary: Hypothetical process of scanning a biological brain in detail and replicating its state and processes in a computational system to achieve functional and experiential equivalence.
 title: WBE (Whole Brain Emulation)
 ---
 

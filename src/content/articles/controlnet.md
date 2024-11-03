@@ -1,8 +1,6 @@
 ---
 slug: controlnet
-summary: Neural network architecture designed to add spatial conditioning controls
-  to diffusion models, enabling precise manipulation without altering the original
-  model's integrity.
+summary: Neural network architecture designed to add spatial conditioning controls to diffusion models, enabling precise manipulation without altering the original model's integrity.
 title: ControlNet
 ---
 

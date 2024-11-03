@@ -1,7 +1,6 @@
 ---
 slug: secure-enclave
-summary: Hardware-based security feature designed to protect sensitive data by isolating
-  it in a dedicated and secure area of a processor.
+summary: Hardware-based security feature designed to protect sensitive data by isolating it in a dedicated and secure area of a processor.
 title: Secure Enclave
 ---
 

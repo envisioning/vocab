@@ -1,8 +1,6 @@
 ---
 slug: vanishing-gradient
-summary: Phenomenon in neural networks where gradients of the network's parameters
-  become very small, effectively preventing the weights from changing their values
-  during training.
+summary: Phenomenon in neural networks where gradients of the network's parameters become very small, effectively preventing the weights from changing their values during training.
 title: Vanishing Gradient
 ---
 

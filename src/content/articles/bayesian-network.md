@@ -1,7 +1,6 @@
 ---
 slug: bayesian-network
-summary: Graphical model that represents probabilistic relationships among variables
-  using directed acyclic graphs (DAGs).
+summary: Graphical model that represents probabilistic relationships among variables using directed acyclic graphs (DAGs).
 title: Bayesian Network
 ---
 

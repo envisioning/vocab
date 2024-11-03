@@ -1,8 +1,6 @@
 ---
 slug: neural-network
-summary: Computing system designed to simulate the way human brains analyze and process
-  information, using a network of interconnected nodes that work together to solve
-  specific problems.
+summary: Computing system designed to simulate the way human brains analyze and process information, using a network of interconnected nodes that work together to solve specific problems.
 title: Neural Network
 ---
 

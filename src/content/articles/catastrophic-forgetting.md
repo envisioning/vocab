@@ -1,7 +1,6 @@
 ---
 slug: catastrophic-forgetting
-summary: Phenomenon where a neural network forgets previously learned information
-  upon learning new data.
+summary: Phenomenon where a neural network forgets previously learned information upon learning new data.
 title: Catastrophic Forgetting
 ---
 

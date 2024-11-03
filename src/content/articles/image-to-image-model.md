@@ -1,7 +1,6 @@
 ---
 slug: image-to-image-model
-summary: A neural network framework that transforms an input image into an output
-  image, maintaining the semantic context of visual data.
+summary: A neural network framework that transforms an input image into an output image, maintaining the semantic context of visual data.
 title: Image-to-Image Model
 ---
 

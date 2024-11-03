@@ -1,7 +1,6 @@
 ---
 slug: policy-gradient-algorithm
-summary: Type of RL algorithm that optimizes the policy directly by computing gradients
-  of expected rewards with respect to policy parameters.
+summary: Type of RL algorithm that optimizes the policy directly by computing gradients of expected rewards with respect to policy parameters.
 title: Policy Gradient Algorithm
 ---
 

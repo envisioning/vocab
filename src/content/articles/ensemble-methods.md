@@ -1,7 +1,6 @@
 ---
 slug: ensemble-methods
-summary: ML technique where multiple models are trained and used collectively to solve
-  a problem.
+summary: ML technique where multiple models are trained and used collectively to solve a problem.
 title: Ensemble Methods
 ---
 

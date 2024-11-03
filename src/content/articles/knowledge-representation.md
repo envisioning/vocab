@@ -1,7 +1,6 @@
 ---
 slug: knowledge-representation
-summary: Method by which AI systems formalize and utilize the knowledge necessary
-  to solve complex tasks.
+summary: Method by which AI systems formalize and utilize the knowledge necessary to solve complex tasks.
 title: Knowledge Representation
 ---
 

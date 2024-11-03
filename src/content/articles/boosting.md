@@ -1,7 +1,6 @@
 ---
 slug: boosting
-summary: ML ensemble technique that combines multiple weak learners to form a strong
-  learner, aiming to improve the accuracy of predictions.
+summary: ML ensemble technique that combines multiple weak learners to form a strong learner, aiming to improve the accuracy of predictions.
 title: Boosting
 ---
 

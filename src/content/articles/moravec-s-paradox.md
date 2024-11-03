@@ -1,8 +1,6 @@
 ---
 slug: moravec-s-paradox
-summary: Moravec's Paradox observes that tasks requiring high-level reasoning are
-  easier for computers, while tasks humans find simple, like perception and mobility,
-  are difficult for AI.
+summary: Moravec's Paradox observes that tasks requiring high-level reasoning are easier for computers, while tasks humans find simple, like perception and mobility, are difficult for AI.
 title: Moravec's Paradox
 ---
 
