@@ -32,12 +32,12 @@ export default function TimelineMap({ nodes: rawNodes }: TimelineMapProps) {
     const decades = {
       1950: "#F3722C",
       1960: "#F8961E",
-      1970: "#F9844A",
-      1980: "#F9C74F",
-      1990: "#90BE6D",
-      2000: "#43AA8B",
-      2010: "#4D908E",
-      2020: "#577590",
+      1970: "#F9C74F",
+      1980: "#90BE6D",
+      1990: "#43AA8B",
+      2000: "#4D908E",
+      2010: "#577590",
+      2020: "#277DA1",
     };
 
     const decade = Math.floor(year / 10) * 10;
@@ -126,59 +126,78 @@ export default function TimelineMap({ nodes: rawNodes }: TimelineMapProps) {
       .attr("text-anchor", "middle")
       .attr("dominant-baseline", "middle")
       .attr("fill", "#1F2937")
-      .attr("font-size", "12px") // Increased from 10px
+      .attr("font-size", "8px")
       .attr("font-weight", "500")
       .each(function (d) {
         const text = d3.select(this);
         const words = (d.title || d.slug).split(/\s+/);
-        const lineHeight = 14; // Increased from 12
-        const maxWidth = nodeRadius * 1.8; // This will automatically scale with the new radius
+        const lineHeight = 12;
+        const maxWidth = nodeRadius * 2;
 
         let line: string[] = [];
         let lineNumber = 0;
         let totalLines = 0;
 
         // First pass to count total lines
-        words.forEach((word) => {
+        for (const word of words) {
           line.push(word);
-          if (line.join(" ").length * 5.5 > maxWidth && totalLines < 2) {
+          const testLine = line.join(" ");
+          if (testLine.length * 4.5 > maxWidth) {
             totalLines++;
+            if (totalLines >= 2) break; // Reduced to 2 lines to make room for year
             line = [word];
           }
-        });
+        }
         if (line.length > 0 && totalLines < 2) totalLines++;
 
-        // Calculate starting Y position to center all lines
-        const startY = -((totalLines - 1) * lineHeight) / 2;
+        // Calculate starting Y position to center all lines including the year
+        const startY = -((totalLines + 1 - 1) * lineHeight) / 2; // Added +1 for year line
 
         // Reset for actual text creation
         line = [];
         lineNumber = 0;
 
-        words.forEach((word) => {
+        // Second pass to create the text
+        for (const word of words) {
           line.push(word);
           const testLine = line.join(" ");
 
-          if (testLine.length * 5.5 > maxWidth) {
+          if (testLine.length * 4.5 > maxWidth || lineNumber >= 2) {
             if (lineNumber < 2) {
+              const displayText = line.slice(0, -1).join(" ");
+              const needsEllipsis =
+                lineNumber === 1 || words.length > line.length;
               text
                 .append("tspan")
                 .attr("x", 0)
                 .attr("y", startY + lineNumber * lineHeight)
-                .text(line.slice(0, -1).join(" "));
+                .text(needsEllipsis ? displayText + "..." : displayText);
               line = [word];
               lineNumber++;
             }
+            if (lineNumber >= 2) break;
           }
-        });
+        }
 
+        // Add remaining text if we haven't hit the line limit
         if (lineNumber < 2 && line.length > 0) {
+          const displayText = line.join(" ");
+          const needsEllipsis = words.length > line.length + lineNumber * 2;
           text
             .append("tspan")
             .attr("x", 0)
             .attr("y", startY + lineNumber * lineHeight)
-            .text(line.join(" "));
+            .text(needsEllipsis ? displayText + "..." : displayText);
         }
+
+        // Add year on the last line
+        text
+          .append("tspan")
+          .attr("x", 0)
+          .attr("y", startY + totalLines * lineHeight)
+          .attr("fill", "#1F2937") // Changed to black to match title
+          .attr("font-size", "7px")
+          .text(d.year?.toString()); // Removed parentheses
       });
 
     // Initial zoom to fit
