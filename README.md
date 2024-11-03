@@ -1,6 +1,6 @@
-# Emerging vocabulary to explain AI
+# Envisioning Vocab
 
-Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which explain [ML (Machine Learning)](/vocab/ml-machine-learning).
+Vocab is a knowledge graph for all [ML (Machine Learning)](/vocab/ml-machine-learning) terms and concepts.
 
 ## This will help you:
 
