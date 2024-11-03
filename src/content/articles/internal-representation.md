@@ -1,6 +1,6 @@
 ---
 slug: internal-representation
-summary: The way information or knowledge is structured and stored within an AI or computational system, enabling the system to process, reason, or make decisions based on that information.
+summary: The way information is structured and stored within an AI system, enabling the system to process, reason, or make decisions.
 title: Internal Representation
 ---
 
