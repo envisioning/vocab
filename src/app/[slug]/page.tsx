@@ -248,9 +248,18 @@ export default async function ArticlePage({
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
               <div className="text-gray-500">
-                <div className="block">Generality: {generality}</div>
                 <div className="block">
-                  Year: {frontmatter.year || "Unknown"}
+                  <a
+                    href="/vocab/about/#generality"
+                    className="hover:underline"
+                  >
+                    Generality: {generality}
+                  </a>
+                </div>
+                <div className="block">
+                  <a href="/vocab/about/#year" className="hover:underline">
+                    Year: {frontmatter.year || "Unknown"}
+                  </a>
                 </div>
                 <div className="block">
                   <ReportErrorButton slug={slug} title={frontmatter.title} />

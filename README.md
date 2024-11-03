@@ -1,6 +1,6 @@
 # Emerging vocabulary to explain AI
 
-Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which underpin the development of [ML (Machine Learning)](/ml-machine-learning) and its many derivations.
+Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which explain [ML (Machine Learning)](/ml-machine-learning).
 
 ## This will help you:
 
@@ -18,32 +18,45 @@ Welcome to _Envisioning AI_, a study guide for learning the terms and concepts w
 
 The entire index has been co-created with different AI tools in order to create a comprehensive overview of the field with accurate and useful definitions. If you spot a mistake or want to suggest missing concepts, email us on hello@envisioning.io.
 
-#### Access Envisioning AI:
+---
 
-- http://github.com/envisioning/vocab
-- https://envisioning.io/vocab
+# Methodology
+
+## Definitions
+
+- Vocab articles are created by feeding each term into `GPT-4o` with instructions to create a comprehensive and accurate explanation of the term following a predefined style guide.
+
+## Generality
+
+- Each vocab term is assessed by `GPT-4o` in order to estimate its relative level of importance compared to the whole data set.
+- The language model evaluates each term several times, and an average score is presented here.
+
+## Year
+
+- We estimate the first citation or reference of each article with `GPT-4o-mini` and sometimes `Claude 3.5`.
+- These are manually compared against the time range indicated by article definitions.
+
+## Intersimilarity
+
+- The degree of similarity between each article pair is estimated in order to identify relationships between different concepts.
+
+## Images
+
+- GPT4o: Receives title and summary,
+- Suggests image prompt for `FLUX 1.1 Pro`.
+
+## Explainers
+
+- Created generatively with `Claude 3.5 Sonnet` with significant human intervention.
+
+## Fact Checking
+
+- LLMs have remarkable self-knowledge. This is likely because of the amount of research papers and articles used in the training data. This minimizes the chances of hallucinations or factual mistakes, which has been validated by running most entries through a fact-checking [CustomGPT](https://chat.openai.com/g/g-T87zDPHN1-envisioning-ai).
+
+## Map
+
+- ...
 
 ---
 
-## How is the data fact checked?
-
-LLMs have remarkable self-knowledge. This is likely because of the amount of research papers and articles used in the training data. This minimizes the chances of hallucinations or factual mistakes, which has been validated by running most entries through a fact-checking [CustomGPT](https://chat.openai.com/g/g-T87zDPHN1-envisioning-ai).
-
----
-
-##### Similar:
-
-- [Anatomy of AI](https://anatomyof.ai/img/ai-anatomy-map.pdf) (Kate Crawford)
-- [Automated Futures](https://imperialtechforesight.com/wp-content/uploads/2020/08/Imperial-Tech-Foresight-Automated-Technologies.pdf) (Imperial TechForesight)
-
-## Definition Creation
-
-## Similarity Score
-
-## Image Generation
-
-- GPT4o: Receives title and summary, suggests image prompt for FLUX 1.1 Pro.
-
----
-
-### (cc) 2024 [Envisioning](https://envisioning.io)
+#### (cc) [Envisioning](https://envisioning.io)

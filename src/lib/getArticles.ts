@@ -22,7 +22,7 @@ export async function getArticles(
       generality: Array.isArray(item.generality) ? item.generality : [item.generality],
       year: item.year || 0,
       categories: [],
-      similarity: item.similarity || 0,
+      similarity: 0,
     }));
 
     console.log('Articles before sorting:', articles.length);
