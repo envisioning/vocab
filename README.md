@@ -1,6 +1,6 @@
 # Emerging vocabulary to explain AI
 
-Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which explain [ML (Machine Learning)](/ml-machine-learning).
+Welcome to _Envisioning AI_, a study guide for learning the terms and concepts which explain [ML (Machine Learning)](/vocab/ml-machine-learning).
 
 ## This will help you:
 
@@ -39,6 +39,7 @@ The entire index has been co-created with different AI tools in order to create 
 ## Intersimilarity
 
 - The degree of similarity between each article pair is estimated in order to identify relationships between different concepts.
+- We use [TF-IDF](https://envisioning.io/vocab/tfidf-term-frequency-inverse-document-frequency) [vectorization](https://envisioning.io/vocab/vectorization) followed by [cosine similarity](https://envisioning.io/vocab/cosine-similarity/).
 
 ## Images
 

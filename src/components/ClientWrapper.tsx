@@ -53,56 +53,58 @@ export default function ClientWrapper({
 
   return (
     <div>
-      <div className="flex justify-end mb-4 items-center text-sm">
-        <div className="flex items-center space-x-6">
-          <div className="flex items-center space-x-2">
-            <span className="text-gray-500">Sort:</span>
+      {displayMode === "full" && (
+        <div className="flex justify-end mb-4 items-center text-sm">
+          <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              {["name", "year", "generality"].map((field) => (
+              <span className="text-gray-500">Sort:</span>
+              <div className="flex items-center space-x-2">
+                {["name", "year", "generality"].map((field) => (
+                  <button
+                    key={field}
+                    onClick={() => handleSortFieldChange(field as SortField)}
+                    className={clsx(
+                      "px-2 py-1 rounded transition-colors text-gray-600 hover:text-gray-900",
+                      sortField === field &&
+                        "underline underline-offset-4 font-medium"
+                    )}
+                  >
+                    {field.charAt(0).toUpperCase() + field.slice(1)}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <span className="text-gray-300">•</span>
+
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-500">Order:</span>
+              <div className="flex items-center space-x-1">
                 <button
-                  key={field}
-                  onClick={() => handleSortFieldChange(field as SortField)}
+                  onClick={() => setSortOrder("asc")}
                   className={clsx(
                     "px-2 py-1 rounded transition-colors text-gray-600 hover:text-gray-900",
-                    sortField === field &&
-                      "underline underline-offset-4 font-medium"
+                    sortOrder === "asc" && "underline underline-offset-4"
                   )}
+                  aria-label="Sort Ascending"
                 >
-                  {field.charAt(0).toUpperCase() + field.slice(1)}
+                  ↑
                 </button>
-              ))}
-            </div>
-          </div>
-
-          <span className="text-gray-300">•</span>
-
-          <div className="flex items-center space-x-2">
-            <span className="text-gray-500">Order:</span>
-            <div className="flex items-center space-x-1">
-              <button
-                onClick={() => setSortOrder("asc")}
-                className={clsx(
-                  "px-2 py-1 rounded transition-colors text-gray-600 hover:text-gray-900",
-                  sortOrder === "asc" && "underline underline-offset-4"
-                )}
-                aria-label="Sort Ascending"
-              >
-                ↑
-              </button>
-              <button
-                onClick={() => setSortOrder("desc")}
-                className={clsx(
-                  "px-2 py-1 rounded transition-colors text-gray-600 hover:text-gray-900",
-                  sortOrder === "desc" && "underline underline-offset-4"
-                )}
-                aria-label="Sort Descending"
-              >
-                ↓
-              </button>
+                <button
+                  onClick={() => setSortOrder("desc")}
+                  className={clsx(
+                    "px-2 py-1 rounded transition-colors text-gray-600 hover:text-gray-900",
+                    sortOrder === "desc" && "underline underline-offset-4"
+                  )}
+                  aria-label="Sort Descending"
+                >
+                  ↓
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
 
       {showList && (
         <ArticleList
