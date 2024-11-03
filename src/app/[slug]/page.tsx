@@ -10,11 +10,12 @@ import { Suspense } from "react";
 import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
 import { getArticles } from "@/lib/getArticles";
-import { notFound } from "next/navigation"; // Import the notFound function
-import { redirect } from "next/navigation"; // Add this import at the top with other imports
+import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import KeyboardNavigation from "@/components/KeyboardNavigation";
 import hierarchyData from "@/data/ai_terms_hierarchy.json";
 import ReportErrorButton from "@/components/ReportErrorButton";
+import ComponentFeedback from "@/components/ComponentFeedback";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -24,7 +25,6 @@ interface PageProps {
   };
 }
 
-// Add the parser function at the top level
 const parseAcronyms = (text: string) => {
   const acronymRegex = /(\w+)\s*\(([^)]+)\)/g;
   return text.replace(
@@ -39,13 +39,11 @@ async function getArticleContent(slug: string): Promise<{
   hasImage: boolean;
   slug: string;
 } | null> {
-  // Find the article in hierarchy data
   const article = hierarchyData.find((item) => item.slug === slug);
   if (!article) {
     return null;
   }
 
-  // Only read markdown for the content
   const filePath = path.join(
     process.cwd(),
     "src/content/articles",
@@ -83,7 +81,6 @@ export async function generateMetadata({
   const resolvedParams = await params;
   const { slug } = resolvedParams;
 
-  // Find article in hierarchy data
   const article = hierarchyData.find((item) => item.slug === slug);
   const url = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -132,24 +129,20 @@ export default async function ArticlePage({
   const resolvedParams = await params;
   const { slug } = resolvedParams;
 
-  // Add redirect for /vocab
   if (slug === "vocab") {
     redirect("/");
   }
 
-  // Fetch the article content
   const articleContent = await getArticleContent(slug);
   const articles = await getArticles();
   const slugs = articles.map((article) => article.slug).sort();
 
   if (!articleContent) {
-    // If the article doesn't exist, trigger the 404 page
     notFound();
   }
 
   const { frontmatter, content, hasImage } = articleContent;
 
-  // Check for custom component in root and "1" or "2" subdirectories
   const possiblePaths = [
     path.join(process.cwd(), "src/components/articles", `${slug}.tsx`),
     ...fs
@@ -195,11 +188,6 @@ export default async function ArticlePage({
         )
       : "N/A";
 
-  console.log("Generality calculated as:", generality);
-
-  console.log("Image path:", `/images/articles/${slug}.webp`);
-  console.log("Has image:", hasImage);
-
   return (
     <>
       <KeyboardNavigation availableSlugs={slugs} />
@@ -234,7 +222,12 @@ export default async function ArticlePage({
             </div>
 
             <div className="px-8 py-6">
-              {CustomComponent && <CustomComponent />}
+              {CustomComponent && (
+                <>
+                  <CustomComponent />
+                  <ComponentFeedback slug={slug} />
+                </>
+              )}
 
               <div
                 className="prose max-w-none 
