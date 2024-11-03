@@ -1,8 +1,6 @@
 ---
 slug: state-space-model
-summary: Mathematical frameworks used to represent systems that are governed by a
-  set of latent (hidden) variables evolving over time, observed through another set
-  of variables.
+summary: Mathematical frameworks used to represent systems that are governed by a set of latent (hidden) variables evolving over time, observed through another set of variables.
 title: State Space Model
 ---
 

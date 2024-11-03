@@ -1,8 +1,6 @@
 ---
 slug: cross-validation
-summary: Statistical method used to estimate the skill of ML models on unseen data
-  by partitioning the original dataset into a training set to train the model and
-  a test set to evaluate it.
+summary: Statistical method used to estimate the skill of ML models on unseen data by partitioning the original dataset into a training set to train the model and a test set to evaluate it.
 title: Cross Validation
 ---
 

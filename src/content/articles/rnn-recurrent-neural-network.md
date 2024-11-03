@@ -1,8 +1,6 @@
 ---
 slug: rnn-recurrent-neural-network
-summary: Class of neural networks where connections between nodes form a directed
-  graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior
-  for a sequence of inputs.
+summary: Class of neural networks where connections between nodes form a directed graph along a temporal sequence, enabling them to exhibit temporal dynamic behavior for a sequence of inputs.
 title: RNN (Recurrent Neural Network)
 ---
 

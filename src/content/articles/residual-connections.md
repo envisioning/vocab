@@ -1,7 +1,6 @@
 ---
 slug: residual-connections
-summary: DL architecture feature designed to help alleviate the vanishing gradient
-  problem by allowing gradients to flow through a network more effectively.
+summary: DL architecture feature designed to help alleviate the vanishing gradient problem by allowing gradients to flow through a network more effectively.
 title: Residual Connections
 ---
 

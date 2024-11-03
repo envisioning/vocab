@@ -1,8 +1,6 @@
 ---
 slug: distillation-method
-summary: A technique used to streamline complex AI models by transferring the knowledge
-  of a large model into a smaller, more efficient model without significant loss in
-  performance.
+summary: A technique used to streamline complex AI models by transferring the knowledge of a large model into a smaller, more efficient model without significant loss in performance.
 title: Distillation Method
 ---
 

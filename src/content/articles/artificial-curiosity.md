@@ -1,7 +1,6 @@
 ---
 slug: artificial-curiosity
-summary: Algorithmic mechanism in AI that motivates the system's behavior to learn
-  inquisitively and explore unfamiliar environments.
+summary: Algorithmic mechanism in AI that motivates the system's behavior to learn inquisitively and explore unfamiliar environments.
 title: Artificial Curiosity
 ---
 

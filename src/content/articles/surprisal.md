@@ -1,7 +1,6 @@
 ---
 slug: surprisal
-summary: Measures the amount of unexpectedness or information content associated with
-  a specific outcome in a probabilistic event.
+summary: Measures the amount of unexpectedness or information content associated with a specific outcome in a probabilistic event.
 title: Surprisal
 ---
 

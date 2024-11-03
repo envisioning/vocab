@@ -1,7 +1,6 @@
 ---
 slug: adversarial-attacks
-summary: Manipulating input data to deceive machine learning models, causing them
-  to make incorrect predictions or classifications.
+summary: Manipulating input data to deceive machine learning models, causing them to make incorrect predictions or classifications.
 title: Adversarial Attacks
 ---
 

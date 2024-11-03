@@ -1,7 +1,6 @@
 ---
 slug: rokos-basilisk
-summary: Thought experiment proposing that a future all-powerful AI could punish those
-  who did not help bring about its existence.
+summary: Thought experiment proposing that a future all-powerful AI could punish those who did not help bring about its existence.
 title: Roko's Basilisk
 ---
 

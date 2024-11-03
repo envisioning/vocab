@@ -1,8 +1,6 @@
 ---
 slug: softmax
-summary: Function that converts a vector of numerical values into a vector of probabilities,
-  where the probabilities of each value are proportional to the exponentials of the
-  input numbers.
+summary: Function that converts a vector of numerical values into a vector of probabilities, where the probabilities of each value are proportional to the exponentials of the input numbers.
 title: SoftMax
 ---
 

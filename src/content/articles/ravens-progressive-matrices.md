@@ -1,7 +1,6 @@
 ---
 slug: ravens-progressive-matrices
-summary: A non-verbal assessment tool commonly used to measure abstract reasoning,
-  which is often regarded as a component of general intelligence.
+summary: A non-verbal assessment tool commonly used to measure abstract reasoning, which is often regarded as a component of general intelligence.
 title: Raven's Progressive Matrices
 ---
 

@@ -1,8 +1,6 @@
 ---
 slug: lovelace-test
-summary: Designed to determine a machine's capability to create art or other outputs
-  that it was not explicitly programmed to generate, challenging it to fool a human
-  into believing the outputs were created by a human.
+summary: Designed to determine a machine's capability to create art or other outputs that it was not explicitly programmed to generate, challenging it to fool a human into believing the outputs were created by a human.
 title: Lovelace Test
 ---
 

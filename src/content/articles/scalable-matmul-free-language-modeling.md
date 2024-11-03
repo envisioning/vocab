@@ -1,7 +1,6 @@
 ---
 slug: scalable-matmul-free-language-modeling
-summary: Techniques in natural language processing that avoid matrix multiplication
-  (MatMul) operations to improve scalability and efficiency.
+summary: Techniques in natural language processing that avoid matrix multiplication (MatMul) operations to improve scalability and efficiency.
 title: Scalable MatMul-free Language Modeling
 ---
 

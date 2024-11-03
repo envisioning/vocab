@@ -1,7 +1,6 @@
 ---
 slug: private-cloud-compute
-summary: Dedicated cloud infrastructure to provide cloud computing services exclusively
-  to a single organization, ensuring enhanced control, privacy, and security.
+summary: Dedicated cloud infrastructure to provide cloud computing services exclusively to a single organization, ensuring enhanced control, privacy, and security.
 title: Private Cloud Compute
 ---
 

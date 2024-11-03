@@ -1,7 +1,6 @@
 ---
 slug: ngpt-normalized-transformer
-summary: Model architecture used in NLP, bringing significant efficiency in training
-  and improvements in model robustness.
+summary: Model architecture used in NLP, bringing significant efficiency in training and improvements in model robustness.
 title: nGPT (Normalized Transformer)
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: encoder-decoder-models
-summary: Class of deep learning architectures that process an input to generate a
-  corresponding output.
+summary: Class of deep learning architectures that process an input to generate a corresponding output.
 title: Encoder-Decoder Models
 ---
 

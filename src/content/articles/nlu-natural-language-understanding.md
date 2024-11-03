@@ -1,7 +1,6 @@
 ---
 slug: nlu-natural-language-understanding
-summary: Subfield of NLP focused on enabling machines to understand and interpret
-  human language in a way that is both meaningful and contextually relevant.
+summary: Subfield of NLP focused on enabling machines to understand and interpret human language in a way that is both meaningful and contextually relevant.
 title: NLU (Natural Language Understanding)
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: autopoiesis
-summary: Systems capable of reproducing and maintaining themselves by regulating their
-  internal environment in response to external conditions.
+summary: Systems capable of reproducing and maintaining themselves by regulating their internal environment in response to external conditions.
 title: Autopoiesis
 ---
 

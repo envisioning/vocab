@@ -1,7 +1,6 @@
 ---
 slug: snarc-stochastic-neural-analog-reinforcement-calculator
-summary: Recognized as one of the earliest electronic neural network machines, SNARC
-  simulated a rat navigating a maze using analog components and probabilistic logic.
+summary: Recognized as one of the earliest electronic neural network machines, SNARC simulated a rat navigating a maze using analog components and probabilistic logic.
 title: SNARC (Stochastic Neural Analog Reinforcement Calculator)
 ---
 

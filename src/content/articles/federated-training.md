@@ -1,8 +1,6 @@
 ---
 slug: federated-training
-summary: Decentralized machine learning approach where multiple devices or nodes collaboratively
-  train a shared model while keeping their data localized, rather than aggregating
-  it centrally.
+summary: Decentralized machine learning approach where multiple devices or nodes collaboratively train a shared model while keeping their data localized, rather than aggregating it centrally.
 title: Federated Training
 ---
 

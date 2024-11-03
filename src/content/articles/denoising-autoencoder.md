@@ -1,7 +1,6 @@
 ---
 slug: denoising-autoencoder
-summary: A neural network designed to reconstruct a clean input from a corrupted version,
-  enhancing feature extraction by learning robust data representations.
+summary: A neural network designed to reconstruct a clean input from a corrupted version, enhancing feature extraction by learning robust data representations.
 title: Denoising Autoencoder
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: dag-directed-acyclic-graphs
-summary: Graph that consists of vertices connected by edges, with the directionality
-  from one vertex to another and no possibility of forming a cycle.
+summary: Graph that consists of vertices connected by edges, with the directionality from one vertex to another and no possibility of forming a cycle.
 title: DAG (Directed Acyclic Graphs)
 ---
 

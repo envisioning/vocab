@@ -1,7 +1,6 @@
 ---
 slug: tfidf-term-frequency-inverse-document-frequency
-summary: Numerical statistic used to evaluate the importance of a word within a document
-  relative to a collection of documents.
+summary: Numerical statistic used to evaluate the importance of a word within a document relative to a collection of documents.
 title: TFIDF (Term Frequency-Inverse Document Frequency)
 ---
 

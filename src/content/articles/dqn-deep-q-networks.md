@@ -1,7 +1,6 @@
 ---
 slug: dqn-deep-q-networks
-summary: RL technique that combines Q-learning with deep neural networks to enable
-  agents to learn how to make optimal decisions from high-dimensional sensory inputs.
+summary: RL technique that combines Q-learning with deep neural networks to enable agents to learn how to make optimal decisions from high-dimensional sensory inputs.
 title: DQN (Deep Q-Networks)
 ---
 

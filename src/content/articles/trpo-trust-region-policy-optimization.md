@@ -1,7 +1,6 @@
 ---
 slug: trpo-trust-region-policy-optimization
-summary: Advanced algorithm used in RL to ensure stable and reliable policy updates
-  by optimizing within a trust region, thus preventing drastic policy changes.
+summary: Advanced algorithm used in RL to ensure stable and reliable policy updates by optimizing within a trust region, thus preventing drastic policy changes.
 title: TRPO (Trust Region Policy Optimization)
 ---
 

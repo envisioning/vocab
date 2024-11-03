@@ -1,7 +1,6 @@
 ---
 slug: spatial-intelligence
-summary: Ability of a system to understand, reason, and manipulate spatial relationships
-  and properties within its environment.
+summary: Ability of a system to understand, reason, and manipulate spatial relationships and properties within its environment.
 title: Spatial Intelligence
 ---
 

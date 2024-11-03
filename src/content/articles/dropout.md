@@ -1,7 +1,6 @@
 ---
 slug: dropout
-summary: Regularization technique used in neural networks to prevent overfitting by
-  randomly omitting a subset of neurons during training.
+summary: Regularization technique used in neural networks to prevent overfitting by randomly omitting a subset of neurons during training.
 title: Dropout
 ---
 

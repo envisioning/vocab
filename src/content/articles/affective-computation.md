@@ -1,7 +1,6 @@
 ---
 slug: affective-computation
-summary: Field within AI that focuses on the design of systems and devices capable
-  of recognizing, interpreting, processing, and simulating human emotions.
+summary: Field within AI that focuses on the design of systems and devices capable of recognizing, interpreting, processing, and simulating human emotions.
 title: Affective Computation
 ---
 

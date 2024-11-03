@@ -1,7 +1,6 @@
 ---
 slug: direct-manipulation
-summary: An interaction style in user interfaces where users can directly interact
-  with objects on the screen in a continuous and immediate manner.
+summary: An interaction style in user interfaces where users can directly interact with objects on the screen in a continuous and immediate manner.
 title: Direct Manipulation
 ---
 

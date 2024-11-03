@@ -1,7 +1,6 @@
 ---
 slug: utm-universal-turing-machine
-summary: Theoretical construct in computer science that can simulate any other Turing
-  machine's computing process given the appropriate input and its own machine's description.
+summary: Theoretical construct in computer science that can simulate any other Turing machine's computing process given the appropriate input and its own machine's description.
 title: UTM (Universal Turing Machine)
 ---
 

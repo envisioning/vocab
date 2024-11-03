@@ -1,7 +1,6 @@
 ---
 slug: kl-kullbackleibler-divergence
-summary: Measure of how one probability distribution diverges from a second, reference
-  probability distribution.
+summary: Measure of how one probability distribution diverges from a second, reference probability distribution.
 title: KL (Kullback–Leibler) Divergence
 ---
 

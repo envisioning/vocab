@@ -1,8 +1,6 @@
 ---
 slug: active-inference
-summary: Theoretical framework in neuroscience and artificial intelligence that describes
-  how agents infer and act to minimize their prediction errors about the state of
-  the world.
+summary: Theoretical framework in neuroscience and artificial intelligence that describes how agents infer and act to minimize their prediction errors about the state of the world.
 title: Active Inference
 ---
 

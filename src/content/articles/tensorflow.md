@@ -1,7 +1,6 @@
 ---
 slug: tensorflow
-summary: Open-source software library for machine learning, developed by Google, used
-  for designing, building, and training deep learning models.
+summary: Open-source software library for machine learning, developed by Google, used for designing, building, and training deep learning models.
 title: TensorFlow
 ---
 

@@ -1,8 +1,6 @@
 ---
 slug: algorithmic-probability
-summary: Quantifies the likelihood that a random program will produce a specific output
-  on a universal Turing machine, forming a core component of algorithmic information
-  theory.
+summary: Quantifies the likelihood that a random program will produce a specific output on a universal Turing machine, forming a core component of algorithmic information theory.
 title: Algorithmic Probability
 ---
 

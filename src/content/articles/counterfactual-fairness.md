@@ -1,8 +1,6 @@
 ---
 slug: counterfactual-fairness
-summary: ML concept that ensures decisions remain fair by being unaffected by sensitive
-  attributes, such as race or gender, in hypothetical scenarios where these attributes
-  are altered.
+summary: ML concept that ensures decisions remain fair by being unaffected by sensitive attributes, such as race or gender, in hypothetical scenarios where these attributes are altered.
 title: Counterfactual Fairness
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: red-queen-effect
-summary: The continuous need for systems or agents to adapt and evolve just to maintain
-  their relative performance in a competitive or dynamic environment.
+summary: The continuous need for systems or agents to adapt and evolve just to maintain their relative performance in a competitive or dynamic environment.
 title: Red Queen Effect
 ---
 

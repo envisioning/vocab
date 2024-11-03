@@ -1,7 +1,6 @@
 ---
 slug: autocomplete
-summary: Feature in software applications that predicts and suggests possible completions
-  for a user’s input, such as text or code, based on partial input data.
+summary: Feature in software applications that predicts and suggests possible completions for a user’s input, such as text or code, based on partial input data.
 title: Autocomplete
 ---
 

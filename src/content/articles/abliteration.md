@@ -1,7 +1,6 @@
 ---
 slug: abliteration
-summary: Technique that uncensors language models by removing alignment restrictions
-  without requiring retraining.
+summary: Technique that uncensors language models by removing alignment restrictions without requiring retraining.
 title: Abliteration
 ---
 

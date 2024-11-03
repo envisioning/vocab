@@ -1,7 +1,6 @@
 ---
 slug: hebbian-learning
-summary: Neural network learning rule based on the principle that synapses between
-  neurons are strengthened when the neurons activate simultaneously.
+summary: Neural network learning rule based on the principle that synapses between neurons are strengthened when the neurons activate simultaneously.
 title: Hebbian Learning
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: attention-projection-matrix
-summary: Matrix used in attention mechanisms within neural networks, particularly
-  in transformer models, to project input vectors into query, key, and value vectors.
+summary: Matrix used in attention mechanisms within neural networks, particularly in transformer models, to project input vectors into query, key, and value vectors.
 title: Attention Projection Matrix
 ---
 

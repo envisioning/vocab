@@ -1,7 +1,6 @@
 ---
 slug: model-compression
-summary: Techniques designed to reduce the size of a machine learning model without
-  significantly sacrificing its accuracy.
+summary: Techniques designed to reduce the size of a machine learning model without significantly sacrificing its accuracy.
 title: Model Compression
 ---
 

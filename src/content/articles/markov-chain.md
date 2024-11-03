@@ -1,7 +1,6 @@
 ---
 slug: markov-chain
-summary: Stochastic model describing a sequence of possible events in which the probability
-  of each event depends only on the state attained in the previous event.
+summary: Stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
 title: Markov Chain
 ---
 

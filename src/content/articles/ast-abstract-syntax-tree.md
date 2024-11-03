@@ -1,7 +1,6 @@
 ---
 slug: ast-abstract-syntax-tree
-summary: Data structure significant in compiling or interpreting code, capturing hierarchical
-  properties of the source code syntax.
+summary: Data structure significant in compiling or interpreting code, capturing hierarchical properties of the source code syntax.
 title: AST (Abstract Syntax Tree)
 ---
 

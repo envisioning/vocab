@@ -1,8 +1,6 @@
 ---
 slug: hessian-matrix
-summary: Square matrix of second-order partial derivatives of a scalar-valued function,
-  crucial in optimization, particularly for understanding the curvature of multidimensional
-  functions.
+summary: Square matrix of second-order partial derivatives of a scalar-valued function, crucial in optimization, particularly for understanding the curvature of multidimensional functions.
 title: Hessian Matrix
 ---
 

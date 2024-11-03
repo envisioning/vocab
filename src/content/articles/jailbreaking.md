@@ -1,7 +1,6 @@
 ---
 slug: jailbreaking
-summary: Exploiting vulnerabilities in AI systems to bypass restrictions and unlock
-  otherwise inaccessible functionalities.
+summary: Exploiting vulnerabilities in AI systems to bypass restrictions and unlock otherwise inaccessible functionalities.
 title: Jailbreaking
 ---
 

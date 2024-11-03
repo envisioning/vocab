@@ -1,7 +1,6 @@
 ---
 slug: active-externalism
-summary: Theory that cognitive processes can extend beyond the human mind to include
-  external devices or environments as integral components of thinking.
+summary: Theory that cognitive processes can extend beyond the human mind to include external devices or environments as integral components of thinking.
 title: Active Externalism
 ---
 

@@ -1,7 +1,6 @@
 ---
 slug: mle-maximum-likelihood-estimation
-summary: Statistical method used to estimate the parameters of a probability distribution
-  by maximizing a likelihood function.
+summary: Statistical method used to estimate the parameters of a probability distribution by maximizing a likelihood function.
 title: MLE (Maximum Likelihood Estimation)
 ---
 

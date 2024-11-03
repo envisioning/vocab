@@ -1,7 +1,6 @@
 ---
 slug: indirect-manipulation
-summary: An interaction technique where users influence system tasks and behaviors
-  through intermediary or abstract operations, deviating from direct interaction.
+summary: An interaction technique where users influence system tasks and behaviors through intermediary or abstract operations, deviating from direct interaction.
 title: Indirect Manipulation
 ---
 

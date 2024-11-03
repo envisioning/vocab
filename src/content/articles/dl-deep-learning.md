@@ -1,7 +1,6 @@
 ---
 slug: dl-deep-learning
-summary: Subset of machine learning that involves neural networks with many layers,
-  enabling the modeling of complex patterns in data.
+summary: Subset of machine learning that involves neural networks with many layers, enabling the modeling of complex patterns in data.
 title: DL (Deep Learning)
 ---
 

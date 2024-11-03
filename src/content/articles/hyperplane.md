@@ -1,8 +1,6 @@
 ---
 slug: hyperplane
-summary: Mathematical concept that represents a subspace in n-dimensional space, with
-  one dimension less than the space itself, used extensively to separate data points
-  in various dimensions.
+summary: Mathematical concept that represents a subspace in n-dimensional space, with one dimension less than the space itself, used extensively to separate data points in various dimensions.
 title: Hyperplane
 ---
 

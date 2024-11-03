@@ -1,8 +1,6 @@
 ---
 slug: grokking
-summary: Refers to the process of deeply understanding something intuitively and completely,
-  often used in AI to describe achieving a profound comprehension of complex concepts
-  or systems.
+summary: Refers to the process of deeply understanding something intuitively and completely, often used in AI to describe achieving a profound comprehension of complex concepts or systems.
 title: Grokking
 ---
 

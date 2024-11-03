@@ -1,7 +1,6 @@
 ---
 slug: meta-learning
-summary: Learning to learn involves techniques that enable AI models to learn how
-  to adapt quickly to new tasks with minimal data.
+summary: Learning to learn involves techniques that enable AI models to learn how to adapt quickly to new tasks with minimal data.
 title: Meta-Learning
 ---
 

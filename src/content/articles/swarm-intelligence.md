@@ -1,7 +1,6 @@
 ---
 slug: swarm-intelligence
-summary: Form of AI inspired by the collective behavior of social insects and animals,
-  used to solve complex problems through decentralized, self-organized systems.
+summary: Form of AI inspired by the collective behavior of social insects and animals, used to solve complex problems through decentralized, self-organized systems.
 title: Swarm Intelligence
 ---
 

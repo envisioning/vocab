@@ -1,7 +1,6 @@
 ---
 slug: nlp-natural-language-processing
-summary: Field of AI that focuses on the interaction between computers and humans
-  through natural language.
+summary: Field of AI that focuses on the interaction between computers and humans through natural language.
 title: NLP (Natural Language Processing)
 ---
 

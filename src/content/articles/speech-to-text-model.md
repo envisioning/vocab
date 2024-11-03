@@ -1,7 +1,6 @@
 ---
 slug: speech-to-text-model
-summary: A computational model designed to convert spoken language into written text
-  using AI and linguistic pattern recognition.
+summary: A computational model designed to convert spoken language into written text using AI and linguistic pattern recognition.
 title: Speech-to-Text Model
 ---
 

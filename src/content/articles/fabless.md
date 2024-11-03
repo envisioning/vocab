@@ -1,7 +1,6 @@
 ---
 slug: fabless
-summary: Company which designs and markets hardware while outsourcing the manufacturing
-  of silicon wafers and chips to specialized semiconductor foundries.
+summary: Company which designs and markets hardware while outsourcing the manufacturing of silicon wafers and chips to specialized semiconductor foundries.
 title: Fabless
 ---
 
