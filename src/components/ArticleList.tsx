@@ -7,9 +7,15 @@ import { usePathname } from "next/navigation";
 
 interface ArticleListProps {
   initialArticles: Article[];
+  sortField: "name" | "year" | "generality";
+  sortOrder: "asc" | "desc";
 }
 
-export default function ArticleList({ initialArticles }: ArticleListProps) {
+export default function ArticleList({
+  initialArticles,
+  sortField,
+  sortOrder,
+}: ArticleListProps) {
   const [articles, setArticles] = useState<Article[]>(initialArticles || []);
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,10 +26,12 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
   const [hasTrackedEnd, setHasTrackedEnd] = useState(false);
 
   useEffect(() => {
-    if (initialArticles) {
-      setArticles(initialArticles);
-    }
-  }, [initialArticles]);
+    setArticles(initialArticles);
+    setCurrentPage(1);
+    setHasMore(true);
+    setHasTrackedEnd(false);
+    setError(null);
+  }, [initialArticles, sortField, sortOrder]);
 
   const loadMoreArticles = async () => {
     if (isLoading || !hasMore) return;
@@ -33,22 +41,20 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
       setError(null);
       const nextPage = currentPage + 1;
 
-      const basePath = pathname.startsWith("/vocab") ? "/vocab" : "";
-      const url = new URL(`/vocab/api/articles`, window.location.origin);
+      const url = new URL("/vocab/api/articles", window.location.origin);
       url.searchParams.set("page", nextPage.toString());
       url.searchParams.set("limit", articlesPerPage.toString());
+      url.searchParams.set("sortBy", sortField);
+      url.searchParams.set("sortOrder", sortOrder);
 
-      console.log("Attempting to fetch from:", url.toString());
+      console.log("Fetching more articles:", url.toString());
 
-      const response = await fetch(url);
-
-      if (!response.ok) {
+      const response = await fetch(url.toString());
+      if (!response.ok)
         throw new Error(`HTTP error! status: ${response.status}`);
-      }
 
-      const newArticles = await response.json();
-
-      console.log("Received articles:", newArticles);
+      const newArticles: Article[] = await response.json();
+      console.log("Received new articles:", newArticles);
 
       if (Array.isArray(newArticles) && newArticles.length > 0) {
         setArticles((prev) => [...prev, ...newArticles]);
@@ -59,7 +65,6 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
     } catch (error) {
       console.error("Error loading more articles:", error);
       setError("Failed to load more articles");
-      setHasMore(false);
     } finally {
       setIsLoading(false);
     }
@@ -91,7 +96,15 @@ export default function ArticleList({ initialArticles }: ArticleListProps) {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLoading, hasMore, error, hasTrackedEnd, articles.length]);
+  }, [
+    isLoading,
+    hasMore,
+    error,
+    hasTrackedEnd,
+    articles.length,
+    sortField,
+    sortOrder,
+  ]);
 
   return (
     <>
