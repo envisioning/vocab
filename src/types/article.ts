@@ -4,7 +4,7 @@ export interface Article {
   categories: string[];
   generality: number[];
   summary: string;
-  year: number;
+  year: number | null;
   image?: string;
   content?: string;
   relationship?: "parent" | "child" | "bidirectional";

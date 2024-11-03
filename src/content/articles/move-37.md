@@ -1,7 +1,6 @@
 ---
 slug: move-37
-summary: Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol,
-  which showcased the superior strategic capabilities of AI in the game of Go.
+summary: Pivotal move made by AlphaGo in its second game against Go champion Lee Sedol, which showcased the superior strategic capabilities of AI in the game of Go.
 title: Move 37
 ---
 

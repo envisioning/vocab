@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
-import { marked } from "marked";
+import { marked as markedImport } from "marked";
+const marked = markedImport;
 import ClientWrapper from "@/components/ClientWrapper";
 import { getArticles } from "@/lib/getArticles";
 
@@ -20,7 +21,7 @@ export default async function ReadmePage() {
     <div className="min-h-screen bg-gray-100 py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ClientWrapper
-          articles={await getArticles()}
+          articles={(await getArticles()) ?? []}
           displayMode="suggestions"
           showList={false}
         />

@@ -134,7 +134,7 @@ export default async function ArticlePage({
   }
 
   const articleContent = await getArticleContent(slug);
-  const articles = await getArticles();
+  const articles = (await getArticles()) ?? [];
   const slugs = articles.map((article) => article.slug).sort();
 
   if (!articleContent) {

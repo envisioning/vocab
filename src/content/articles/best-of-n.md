@@ -1,5 +1,5 @@
 ---
-title: best-of-n
+title: Best-of-N
 summary: A strategy in AI that involves generating multiple outputs and selecting the best one based on a predefined criterion or scoring function.
 slug: best-of-n
 ---

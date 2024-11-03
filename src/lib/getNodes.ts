@@ -10,7 +10,8 @@ export const getNodes = cache(async (limit?: number): Promise<Node[] | null> => 
     const nodes = data.default.map((node: any) => ({
       ...node,
       title: node.name,
-      parents: node.parents || []
+      parents: node.parents || [],
+      year: node.year || null
     }))
 
     return limit ? nodes.slice(0, limit) : nodes
