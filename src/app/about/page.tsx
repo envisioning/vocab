@@ -7,6 +7,13 @@ import { getArticles } from "@/lib/getArticles";
 export default async function ReadmePage() {
   const readmePath = path.join(process.cwd(), "README.md");
   const readmeContent = fs.readFileSync(readmePath, "utf-8");
+
+  // Simple configuration without custom renderer
+  marked.use({
+    headerIds: true,
+    headerPrefix: "",
+  });
+
   const htmlContent = marked.parse(readmeContent);
 
   return (

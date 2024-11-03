@@ -1,43 +1,43 @@
 import { getArticles } from "@/lib/getArticles";
 import { NextRequest, NextResponse } from "next/server";
-import yearsData from "@/data/years.json";
 
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;
-    const page = parseInt(searchParams.get('page') || '1');
-    const limit = parseInt(searchParams.get('limit') || '8');
+    
+    // Extract and validate parameters with defaults
+    const page = Math.max(1, parseInt(searchParams.get('page') || '1'));
+    const limit = Math.max(1, parseInt(searchParams.get('limit') || '24'));
+    const sortBy = (searchParams.get('sortBy') || 'name') as "name" | "year" | "generality";
+    const sortOrder = (searchParams.get('sortOrder') || 'asc') as "asc" | "desc";
 
-    console.log('API called with:', { page, limit });
+    console.log('API Request:', { page, limit, sortBy, sortOrder });
 
-    const allArticles = await getArticles();
-    console.log('Total articles fetched:', allArticles?.length || 0);
+    // Get sorted articles without limit (we'll handle pagination after sorting)
+    const allArticles = await getArticles(undefined, sortBy, sortOrder);
     
     if (!allArticles) {
-      console.log('No articles found');
-      return NextResponse.json({ error: 'No articles found' }, { status: 404 });
+      return NextResponse.json({ error: 'Failed to fetch articles' }, { status: 500 });
     }
 
-    const start = (page - 1) * limit;
-    const paginatedArticles = allArticles.slice(start, start + limit);
-    
-    console.log('Pagination details:', {
-      total: allArticles.length,
-      start,
-      end: start + limit,
-      returning: paginatedArticles.length
+    // Calculate pagination
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedArticles = allArticles.slice(startIndex, endIndex);
+
+    console.log('Sending response:', {
+      totalArticles: allArticles.length,
+      pageArticles: paginatedArticles.length,
+      page,
+      sortBy,
+      sortOrder
     });
-
-    if (paginatedArticles.length === 0) {
-      console.log('No articles for this page');
-      return NextResponse.json([], { status: 200 });
-    }
 
     return NextResponse.json(paginatedArticles);
   } catch (error) {
-    console.error('API Route Error:', error);
+    console.error('API Error:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch articles' }, 
+      { error: 'Internal server error' },
       { status: 500 }
     );
   }

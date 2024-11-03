@@ -1,0 +1,11 @@
+---
+title: Curse of Dimensionality
+summary: Phenomenon where the complexity and computational cost of analyzing data increase exponentially with the number of dimensions or features.
+slug: curse-of-dimensionality
+---
+
+The Curse of Dimensionality refers to a situation in AI and ML where the increase in the number of dimensions or features in a dataset leads to exponential growth in the volume necessary for a robust and accurate model, causing challenges in data analysis and processing. In high-dimensional spaces, data points become sparse, complicating statistical analysis and requiring exponentially larger datasets to ensure reliable results. This phenomenon significantly impacts various ML methods such as clustering, classification, and regression, where the distance metrics degrade, often reducing the performance of algorithms like k-Nearest Neighbors and decision trees. Dimensionality reduction techniques, such as Principal Component Analysis and t-Distributed Stochastic Neighbor Embedding, are typically employed to mitigate these effects by simplifying data structures and enhancing model performance, albeit at the cost of potential information loss.
+
+The term "Curse of Dimensionality" was first coined in 1961 by Richard Bellman in the context of dynamic programming, but the concept gained substantial attention and became a core consideration in the development of ML algorithms during the late 20th century as data complexity in AI applications started increasing.
+
+Richard Bellman was pivotal in introducing the Curse of Dimensionality while addressing challenges in dynamic programming, and his work laid the foundation for further exploration and understanding of the implications on ML and data analysis. Subsequent contributions from statisticians and computer scientists, such as Jerome Friedman and Trevor Hastie, have been instrumental in advancing techniques to combat this curse, allowing for more efficient data processing and model development in high dimensions.
