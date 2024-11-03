@@ -4,33 +4,23 @@ import hierarchyData from '@/data/ai_terms_hierarchy.json';
 import { Article } from "@/types/article";
 
 export async function getArticles(limit?: number): Promise<Article[]> {
-  const allArticles = hierarchyData
-    .map(item => ({
+  try {
+    // Convert hierarchy data into article format
+    const articles = hierarchyData.map((item) => ({
       slug: item.slug,
       title: item.name,
       summary: item.summary,
+      generality: Array.isArray(item.generality) ? item.generality : [item.generality],
+      year: item.year || 0, // Include the year from hierarchy data
       categories: [],
-      generality: Array.isArray(item.generality) 
-        ? item.generality 
-        : [item.generality],
-    }))
-    .sort((a, b) => {
-      // Calculate average generality for each article
-      const avgA = Array.isArray(a.generality) 
-        ? a.generality.reduce((sum, val) => sum + val, 0) / a.generality.length 
-        : a.generality;
-      
-      const avgB = Array.isArray(b.generality) 
-        ? b.generality.reduce((sum, val) => sum + val, 0) / b.generality.length 
-        : b.generality;
-      
-      // Sort descending (higher generality first)
-      return avgB - avgA;
-    });
+    }));
 
-  if (limit) {
-    return allArticles.slice(0, limit);
+    // Sort and limit if needed
+    const sortedArticles = articles.sort((a, b) => a.slug.localeCompare(b.slug));
+    return limit ? sortedArticles.slice(0, limit) : sortedArticles;
+
+  } catch (error) {
+    console.error("Error in getArticles:", error);
+    return null;
   }
-  
-  return allArticles;
 }

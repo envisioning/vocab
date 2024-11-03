@@ -59,9 +59,6 @@ async function getArticleContent(slug: string): Promise<{
     content = markdownContent;
   }
 
-  // Check for image without fs.existsSync
-  const hasImage = true; // We can assume images exist or handle this differently
-
   return {
     frontmatter: {
       title: article.name,
@@ -69,10 +66,11 @@ async function getArticleContent(slug: string): Promise<{
       generality: Array.isArray(article.generality)
         ? article.generality
         : [article.generality],
+      year: article.year || 0,
       categories: [],
     },
     content,
-    hasImage,
+    hasImage: true,
     slug,
   };
 }
@@ -158,7 +156,7 @@ export default async function ArticlePage({
       .readdirSync(path.join(process.cwd(), "src/components/articles"))
       .filter(
         (dir) =>
-          (dir.startsWith("0") || dir.startsWith("1")) &&
+          (dir.startsWith("0") || dir.startsWith("1") || dir.startsWith("2")) &&
           fs
             .statSync(path.join(process.cwd(), "src/components/articles", dir))
             .isDirectory()
@@ -251,6 +249,9 @@ export default async function ArticlePage({
               />
               <div className="text-gray-500">
                 <div className="block">Generality: {generality}</div>
+                <div className="block">
+                  Year: {frontmatter.year || "Unknown"}
+                </div>
                 <div className="block">
                   <ReportErrorButton slug={slug} title={frontmatter.title} />
                 </div>

@@ -1,5 +1,6 @@
 import { getArticles } from "@/lib/getArticles";
 import { NextRequest, NextResponse } from "next/server";
+import yearsData from "@/data/years.json";
 
 export async function GET(request: NextRequest) {
   try {

@@ -1,9 +1,10 @@
 export interface Article {
   slug: string;
   title: string;
-  categories: string[]; // Changed from category to categories
+  categories: string[];
   generality: number[];
   summary: string;
+  year: number;
   image?: string;
   content?: string;
   relationship?: "parent" | "child" | "bidirectional";
@@ -13,10 +14,11 @@ export interface RelatedArticle {
   slug: string;
   title: string;
   summary: string;
-  categories: string[]; // Changed from category to categories
+  categories: string[];
   relationship: 'parent' | 'child' | 'bidirectional';
   similarity?: number;
   generality: number[];
+  year?: number;
 }
 
 

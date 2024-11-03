@@ -16,6 +16,7 @@ interface HierarchyItem {
   summary: string;
   categories: string[];
   generality: number | number[];
+  year: number;
   children?: HierarchyChild[];
 }
 
@@ -53,13 +54,23 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
       title: childArticle.name,
       summary: childArticle.summary,
       category: childArticle.categories,
+      year: childArticle.year || 0,
       generality: Array.isArray(childArticle.generality) 
         ? childArticle.generality 
         : childArticle.generality 
           ? [childArticle.generality]
           : DEFAULT_GENERALITY,
     };
-  }).filter((child): child is { slug: string; relationship: "child"; similarity: number; title: string; summary: string; category: string[]; generality: number[] } => child !== null) || [];
+  }).filter((child): child is { 
+    slug: string; 
+    relationship: "child"; 
+    similarity: number; 
+    title: string; 
+    summary: string; 
+    category: string[]; 
+    year: number;
+    generality: number[]; 
+  } => child !== null) || [];
 
   // Find parent articles with proper error handling
   const parentConnections = hierarchyData
@@ -78,6 +89,7 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
         title: parentItem.name,
         summary: parentItem.summary,
         categories: parentItem.categories,
+        year: parentItem.year || 0,
         generality: Array.isArray(parentItem.generality)
           ? parentItem.generality
           : parentItem.generality
