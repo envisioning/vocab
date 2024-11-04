@@ -257,7 +257,9 @@ export default async function ArticlePage({
                       {articleContent.names.map((name, index) => (
                         <Link
                           key={index}
-                          href={`/contributors/${encodeURIComponent(name)}`}
+                          href={`/contributors/${name
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
                           className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
                         >
                           {toTitleCase(name)}

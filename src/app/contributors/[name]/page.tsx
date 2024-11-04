@@ -18,22 +18,23 @@ export function generateStaticParams() {
   Object.values(namesData).forEach((names) => {
     names.forEach((name) => {
       if (name !== "unknown") {
-        uniqueNames.add(name);
+        uniqueNames.add(name.toLowerCase().replace(/\s+/g, "-"));
       }
     });
   });
 
   return Array.from(uniqueNames).map((name) => ({
-    name: encodeURIComponent(name),
+    name: name,
   }));
 }
 
 // Get all articles for a specific contributor
 async function getArticlesForContributor(name: string): Promise<Article[]> {
+  const originalName = name.replace(/-/g, " ");
   const articles: Article[] = [];
 
   Object.entries(namesData).forEach(([slug, contributors]) => {
-    if (contributors.includes(name)) {
+    if (contributors.includes(originalName)) {
       const article = hierarchyData.find((item) => item.slug === slug);
       if (article) {
         articles.push({
@@ -56,8 +57,8 @@ async function getArticlesForContributor(name: string): Promise<Article[]> {
 
 export default async function ContributorPage({ params }: PageProps) {
   const { name } = await params;
-  const decodedName = decodeURIComponent(name);
-  const articles = await getArticlesForContributor(decodedName);
+  const decodedName = name.replace(/-/g, " ");
+  const articles = await getArticlesForContributor(name);
 
   if (articles.length === 0) {
     notFound();

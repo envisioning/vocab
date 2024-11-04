@@ -31,7 +31,9 @@ export default function ContributorsPage() {
               {sortedContributors.map(([name, count]) => (
                 <Link
                   key={name}
-                  href={`/contributors/${encodeURIComponent(name)}`}
+                  href={`/contributors/${name
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}`}
                   className="p-4 hover:bg-gray-50 rounded-lg transition-colors flex justify-between items-center"
                 >
                   <span className="text-lg text-gray-900">
