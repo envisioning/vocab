@@ -37,20 +37,26 @@ async function getArticlesForContributor(name: string): Promise<Article[]> {
     if (contributors.includes(originalName)) {
       const article = hierarchyData.find((item) => item.slug === slug);
       if (article) {
-        articles.push({
-          slug,
-          title: article.name,
-          summary: article.summary,
-          categories: [],
-          generality: Array.isArray(article.generality)
-            ? article.generality
-            : [article.generality],
-          year: article.year || 0,
-          component: false,
-        });
+        // Only add articles with known years (year !== 0)
+        if (article.year) {
+          articles.push({
+            slug,
+            title: article.name,
+            summary: article.summary,
+            categories: [],
+            generality: Array.isArray(article.generality)
+              ? article.generality
+              : [article.generality],
+            year: article.year,
+            component: false,
+          });
+        }
       }
     }
   });
+
+  // Sort articles by year in ascending order (oldest first)
+  articles.sort((a, b) => a.year - b.year);
 
   return articles;
 }
