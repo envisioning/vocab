@@ -54,7 +54,7 @@ function getArticlesForContributor(name: string): Article[] {
   return articles;
 }
 
-export default function ContributorPage({ params }: PageProps) {
+export default async function ContributorPage({ params }: PageProps) {
   const decodedName = decodeURIComponent(params.name);
   const articles = getArticlesForContributor(decodedName);
 
