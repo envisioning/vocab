@@ -67,9 +67,10 @@ export default async function ContributorPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-100 py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
+        {/* Header in a separate card */}
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-6">
           <div className="px-8 py-6">
-            <div className="flex items-baseline gap-3 mb-6">
+            <div className="flex items-baseline gap-3">
               <h1 className="text-3xl font-bold text-gray-900">
                 {toTitleCase(decodedName)}
               </h1>
@@ -77,16 +78,18 @@ export default async function ContributorPage({ params }: PageProps) {
                 ({articles.length} article{articles.length !== 1 ? "s" : ""})
               </span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {articles.map((article) => (
-                <ArticleCard
-                  key={article.slug}
-                  article={article}
-                  metricType="generality"
-                />
-              ))}
-            </div>
           </div>
+        </div>
+
+        {/* Articles grid with more columns */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {articles.map((article) => (
+            <ArticleCard
+              key={article.slug}
+              article={article}
+              metricType="generality"
+            />
+          ))}
         </div>
       </div>
     </div>
