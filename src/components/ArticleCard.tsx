@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Article, RelatedArticle } from "@/types/article";
+import { Zap } from "lucide-react";
 
 interface ArticleCardProps {
   article: Article | RelatedArticle;
@@ -63,12 +64,17 @@ export default function ArticleCard({
               dangerouslySetInnerHTML={{ __html: parseAcronyms(article.title) }}
             />
             <p className="text-gray-200 text-xs mb-1.5">{article.summary}</p>
-            <p className="text-gray-400 text-xs">
-              {metricLabel}: {metricValue} •{" "}
-              {typeof article.year === "number" && article.year > 0
-                ? article.year
-                : "Unknown"}
-            </p>
+            <div className="flex justify-between items-center">
+              <p className="text-gray-400 text-xs">
+                {metricLabel}: {metricValue} •{" "}
+                {typeof article.year === "number" && article.year > 0
+                  ? article.year
+                  : "Unknown"}
+              </p>
+              {article.component && (
+                <Zap className="w-4 h-4 text-white opacity-75" />
+              )}
+            </div>
           </div>
         </div>
       </div>

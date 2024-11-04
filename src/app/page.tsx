@@ -6,7 +6,7 @@ import ReportMissingButton from "@/components/ReportMissingButton";
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const initialArticles = await getArticles(48, "generality", "desc");
+  const initialArticles = await getArticles(48, "generality", "desc", false);
 
   if (!initialArticles) {
     return <div>Error loading articles</div>;

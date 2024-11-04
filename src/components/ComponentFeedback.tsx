@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { ThumbsUp, ThumbsDown } from "lucide-react";
+import { ThumbsUp, ThumbsDown, Zap } from "lucide-react";
 
 export default function ComponentFeedback({ slug }: { slug: string }) {
   const [hasVoted, setHasVoted] = useState(false);
@@ -44,7 +44,14 @@ export default function ComponentFeedback({ slug }: { slug: string }) {
   return (
     <div className="mt-4 flex items-center gap-4">
       <span className="text-sm text-gray-500">
-        Was this visualization helpful?
+        <Zap className="w-4 h-4 inline-block mr-1" /> Was this{" "}
+        <a
+          href="/vocab/about/#explainer"
+          className="underline underline-offset-4"
+        >
+          explainer
+        </a>{" "}
+        helpful?
       </span>
       <button
         onClick={() => handleVote(true)}

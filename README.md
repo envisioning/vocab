@@ -22,7 +22,7 @@ The entire index has been co-created with different AI tools in order to create 
 
 # Methodology
 
-## Definitions
+## Definition
 
 - Vocab articles are created by feeding each term into `GPT-4o` with instructions to create a comprehensive and accurate explanation of the term following a predefined style guide.
 
@@ -41,12 +41,12 @@ The entire index has been co-created with different AI tools in order to create 
 - The degree of similarity between each article pair is estimated in order to identify relationships between different concepts.
 - We use [TF-IDF](https://envisioning.io/vocab/tfidf-term-frequency-inverse-document-frequency) [vectorization](https://envisioning.io/vocab/vectorization) followed by [cosine similarity](https://envisioning.io/vocab/cosine-similarity/).
 
-## Images
+## Image
 
 - GPT4o: Receives title and summary,
 - Suggests image prompt for `FLUX 1.1 Pro`.
 
-## Explainers
+## Explainer
 
 - Created generatively with `Claude 3.5 Sonnet` with significant human intervention.
 

@@ -8,6 +8,7 @@ export interface Article {
   image?: string;
   content?: string;
   relationship?: "parent" | "child" | "bidirectional";
+  component: boolean;
 }
 
 export interface RelatedArticle {

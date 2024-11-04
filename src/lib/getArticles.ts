@@ -9,10 +9,11 @@ type SortOrder = "asc" | "desc";
 export async function getArticles(
   limit?: number,
   sortBy: SortField = "name",
-  sortOrder: SortOrder = "asc"
+  sortOrder: SortOrder = "asc",
+  showComponentsOnly: boolean = false
 ): Promise<Article[] | null> {
   try {
-    console.log('getArticles called with:', { limit, sortBy, sortOrder });
+    console.log('getArticles called with:', { limit, sortBy, sortOrder, showComponentsOnly });
 
     // Convert hierarchy data into article format
     const articles = hierarchyData.map((item) => ({
@@ -23,12 +24,23 @@ export async function getArticles(
       year: item.year || 0,
       categories: [],
       similarity: 0,
+      component: item.component || false,
     }));
 
-    console.log('Articles before sorting:', articles.length);
+    console.log('Articles before filtering:', articles.length);
+    console.log('Component articles:', articles.filter(article => article.component).length);
+
+    // Add component filter before sorting
+    let filteredArticles = showComponentsOnly 
+      ? articles.filter(article => article.component === true)
+      : articles;
+
+    console.log('Articles after filtering:', filteredArticles.length);
+
+    console.log('Articles before sorting:', filteredArticles.length);
 
     // Sorting logic
-    const sortedArticles = articles.sort((a, b) => {
+    const sortedArticles = filteredArticles.sort((a, b) => {
       let compareA: any;
       let compareB: any;
 

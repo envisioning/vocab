@@ -9,14 +9,18 @@ interface ArticleListProps {
   initialArticles: Article[];
   sortField: "name" | "year" | "generality";
   sortOrder: "asc" | "desc";
+  showComponentsOnly: boolean;
 }
 
 export default function ArticleList({
   initialArticles,
   sortField,
   sortOrder,
+  showComponentsOnly,
 }: ArticleListProps) {
-  const [articles, setArticles] = useState<Article[]>(initialArticles || []);
+  const [articles, setArticles] = useState<Article[]>(
+    Array.isArray(initialArticles) ? initialArticles : []
+  );
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
@@ -26,12 +30,14 @@ export default function ArticleList({
   const [hasTrackedEnd, setHasTrackedEnd] = useState(false);
 
   useEffect(() => {
-    setArticles(initialArticles);
-    setCurrentPage(1);
-    setHasMore(true);
-    setHasTrackedEnd(false);
-    setError(null);
-  }, [initialArticles, sortField, sortOrder]);
+    if (Array.isArray(initialArticles)) {
+      setArticles(initialArticles);
+      setCurrentPage(1);
+      setHasMore(true);
+      setHasTrackedEnd(false);
+      setError(null);
+    }
+  }, [initialArticles, sortField, sortOrder, showComponentsOnly]);
 
   const loadMoreArticles = async () => {
     if (isLoading || !hasMore) return;
@@ -46,18 +52,16 @@ export default function ArticleList({
       url.searchParams.set("limit", articlesPerPage.toString());
       url.searchParams.set("sortBy", sortField);
       url.searchParams.set("sortOrder", sortOrder);
-
-      console.log("Fetching more articles:", url.toString());
+      url.searchParams.set("showComponentsOnly", showComponentsOnly.toString());
 
       const response = await fetch(url.toString());
       if (!response.ok)
         throw new Error(`HTTP error! status: ${response.status}`);
 
-      const newArticles: Article[] = await response.json();
-      console.log("Received new articles:", newArticles);
+      const data = await response.json();
 
-      if (Array.isArray(newArticles) && newArticles.length > 0) {
-        setArticles((prev) => [...prev, ...newArticles]);
+      if (Array.isArray(data.pageArticles) && data.pageArticles.length > 0) {
+        setArticles((prev) => [...prev, ...data.pageArticles]);
         setCurrentPage(nextPage);
       } else {
         setHasMore(false);

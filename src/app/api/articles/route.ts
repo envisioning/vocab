@@ -2,43 +2,31 @@ import { getArticles } from "@/lib/getArticles";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
-  try {
-    const searchParams = request.nextUrl.searchParams;
-    
-    // Extract and validate parameters with defaults
-    const page = Math.max(1, parseInt(searchParams.get('page') || '1'));
-    const limit = Math.max(1, parseInt(searchParams.get('limit') || '24'));
-    const sortBy = (searchParams.get('sortBy') || 'name') as "name" | "year" | "generality";
-    const sortOrder = (searchParams.get('sortOrder') || 'asc') as "asc" | "desc";
+  const searchParams = request.nextUrl.searchParams;
+  const page = parseInt(searchParams.get("page") || "1");
+  const limit = parseInt(searchParams.get("limit") || "24");
+  const sortBy = (searchParams.get("sortBy") || "name") as "name" | "year" | "generality";
+  const sortOrder = (searchParams.get("sortOrder") || "asc") as "asc" | "desc";
+  const showComponentsOnly = searchParams.get("showComponentsOnly") === "true";
 
-    console.log('API Request:', { page, limit, sortBy, sortOrder });
+  const articles = await getArticles(
+    undefined,
+    sortBy,
+    sortOrder,
+    showComponentsOnly
+  );
 
-    // Get sorted articles without limit (we'll handle pagination after sorting)
-    const allArticles = await getArticles(undefined, sortBy, sortOrder);
-    
-    if (!allArticles) {
-      return NextResponse.json({ error: 'Failed to fetch articles' }, { status: 500 });
-    }
-
-    // Calculate pagination
-    const startIndex = (page - 1) * limit;
-    const endIndex = startIndex + limit;
-    const paginatedArticles = allArticles.slice(startIndex, endIndex);
-
-    console.log('Sending response:', {
-      totalArticles: allArticles.length,
-      pageArticles: paginatedArticles.length,
-      page,
-      sortBy,
-      sortOrder
-    });
-
-    return NextResponse.json(paginatedArticles);
-  } catch (error) {
-    console.error('API Error:', error);
-    return NextResponse.json(
-      { error: 'Internal server error' },
-      { status: 500 }
-    );
+  if (!articles) {
+    return NextResponse.json({ error: "Failed to fetch articles" }, { status: 500 });
   }
+
+  const startIndex = (page - 1) * limit;
+  const endIndex = startIndex + limit;
+  const pageArticles = articles.slice(startIndex, endIndex);
+
+  return NextResponse.json({
+    totalArticles: articles.length,
+    pageArticles: pageArticles,
+    page,
+  });
 } 
