@@ -1187,5 +1187,1821 @@
         "timestamp": "2024-11-02T08:45:21.959033"
       }
     ]
+  },
+  "log-likelihood": {
+    "title": "Log Likelihood",
+    "last_updated": "2024-11-02T15:05:42.731946",
+    "queries": [
+      {
+        "query": "\"Log Likelihood\"",
+        "weight": 1.0,
+        "count": 2080000,
+        "raw_results": "About 2.080.000 results (0,06 sec)",
+        "timestamp": "2024-11-02T09:51:34.463710"
+      },
+      {
+        "query": "Log Likelihood \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T12:04:42.549092",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Log Likelihood AI",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T12:05:06.370356",
+        "error": "('Connection aborted.', OSError(65, 'No route to host'))"
+      },
+      {
+        "query": "Log Likelihood \"machine learning\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T13:35:22.091994",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Log Likelihood \"computer science\"",
+        "weight": 0.7,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T15:05:42.731812",
+        "error": "Max retries exceeded"
+      }
+    ]
+  },
+  "full-sequence-diffusion": {
+    "title": "Full-Sequence Diffusion",
+    "last_updated": "2024-11-02T23:20:39.478914",
+    "queries": [
+      {
+        "query": "\"Full-Sequence Diffusion\"",
+        "weight": 1.0,
+        "count": null,
+        "raw_results": "14 results (0,16 sec)",
+        "timestamp": "2024-11-02T18:02:01.748789"
+      },
+      {
+        "query": "Full-Sequence Diffusion \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T18:49:47.254268",
+        "error": "('Connection aborted.', OSError(65, 'No route to host'))"
+      },
+      {
+        "query": "Full-Sequence Diffusion AI",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T20:20:02.827722",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Full-Sequence Diffusion \"machine learning\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T21:50:16.823353",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Full-Sequence Diffusion \"computer science\"",
+        "weight": 0.7,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-02T23:20:39.478520",
+        "error": "Max retries exceeded"
+      }
+    ]
+  },
+  "tree-of-thought": {
+    "title": "Tree of Thought",
+    "last_updated": "2024-11-03T09:52:00.820025",
+    "queries": [
+      {
+        "query": "\"Tree of Thought\"",
+        "weight": 1.0,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-03T00:50:56.880326",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Tree of Thought \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-03T02:21:15.572255",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Tree of Thought AI",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-03T04:51:31.270938",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Tree of Thought \"machine learning\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": null,
+        "timestamp": "2024-11-03T07:51:46.807455",
+        "error": "Max retries exceeded"
+      },
+      {
+        "query": "Tree of Thought \"computer science\"",
+        "weight": 0.7,
+        "count": 489000,
+        "raw_results": "About 489.000 results (0,15 sec)",
+        "timestamp": "2024-11-03T09:52:00.819364"
+      }
+    ]
+  },
+  "slm-sparse-linear-model": {
+    "title": "SLM (Sparse Linear Model)",
+    "last_updated": "2024-11-03T09:52:28.608827",
+    "queries": [
+      {
+        "query": "\"SLM\" \"Sparse Linear Model\"",
+        "weight": 1.0,
+        "count": 33,
+        "raw_results": "About 33 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:52:07.093813"
+      },
+      {
+        "query": "SLM Sparse Linear Model \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 6210,
+        "raw_results": "About 6.210 results (0,08 sec)",
+        "timestamp": "2024-11-03T09:52:11.588131"
+      },
+      {
+        "query": "Sparse Linear Model AI",
+        "weight": 0.8,
+        "count": 1630000,
+        "raw_results": "About 1.630.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:52:16.127746"
+      },
+      {
+        "query": "SLM Sparse Linear Model \"machine learning\"",
+        "weight": 0.8,
+        "count": 9400,
+        "raw_results": "About 9.400 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:52:22.558286"
+      },
+      {
+        "query": "Sparse Linear Model \"computer science\"",
+        "weight": 0.7,
+        "count": 991000,
+        "raw_results": "About 991.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:52:28.607769"
+      }
+    ]
+  },
+  "model-level": {
+    "title": "Model Level",
+    "last_updated": "2024-11-03T09:53:00.487912",
+    "queries": [
+      {
+        "query": "\"Model Level\"",
+        "weight": 1.0,
+        "count": 110000,
+        "raw_results": "About 110.000 results (0,42 sec)",
+        "timestamp": "2024-11-03T09:52:34.613908"
+      },
+      {
+        "query": "Model Level \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 4220000,
+        "raw_results": "About 4.220.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:52:39.923221"
+      },
+      {
+        "query": "Model Level AI",
+        "weight": 0.8,
+        "count": 7970000,
+        "raw_results": "About 7.970.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:52:46.500939"
+      },
+      {
+        "query": "Model Level \"machine learning\"",
+        "weight": 0.8,
+        "count": 4710000,
+        "raw_results": "About 4.710.000 results (0,22 sec)",
+        "timestamp": "2024-11-03T09:52:53.809622"
+      },
+      {
+        "query": "Model Level \"computer science\"",
+        "weight": 0.7,
+        "count": 5810000,
+        "raw_results": "About 5.810.000 results (0,21 sec)",
+        "timestamp": "2024-11-03T09:53:00.486797"
+      }
+    ]
+  },
+  "permutation": {
+    "title": "Permutation",
+    "last_updated": "2024-11-03T09:53:25.855844",
+    "queries": [
+      {
+        "query": "\"Permutation\"",
+        "weight": 1.0,
+        "count": 1890000,
+        "raw_results": "About 1.890.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:53:05.113886"
+      },
+      {
+        "query": "Permutation \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 164000,
+        "raw_results": "About 164.000 results (0,08 sec)",
+        "timestamp": "2024-11-03T09:53:09.694104"
+      },
+      {
+        "query": "Permutation AI",
+        "weight": 0.8,
+        "count": 712000,
+        "raw_results": "About 712.000 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:53:14.668482"
+      },
+      {
+        "query": "Permutation \"machine learning\"",
+        "weight": 0.8,
+        "count": 207000,
+        "raw_results": "About 207.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:53:21.126061"
+      },
+      {
+        "query": "Permutation \"computer science\"",
+        "weight": 0.7,
+        "count": 382000,
+        "raw_results": "About 382.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:53:25.855013"
+      }
+    ]
+  },
+  "sovereign-ai": {
+    "title": "Sovereign AI",
+    "last_updated": "2024-11-03T09:53:52.379740",
+    "queries": [
+      {
+        "query": "\"Sovereign AI\"",
+        "weight": 1.0,
+        "count": 95,
+        "raw_results": "About 95 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:53:30.888217"
+      },
+      {
+        "query": "Sovereign AI \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 33000,
+        "raw_results": "About 33.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:53:35.714140"
+      },
+      {
+        "query": "Sovereign AI AI",
+        "weight": 0.8,
+        "count": 336000,
+        "raw_results": "About 336.000 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:53:40.030247"
+      },
+      {
+        "query": "Sovereign AI \"machine learning\"",
+        "weight": 0.8,
+        "count": 23600,
+        "raw_results": "About 23.600 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:53:45.223130"
+      },
+      {
+        "query": "Sovereign AI \"computer science\"",
+        "weight": 0.7,
+        "count": 93700,
+        "raw_results": "About 93.700 results (0,08 sec)",
+        "timestamp": "2024-11-03T09:53:52.379309"
+      }
+    ]
+  },
+  "model-distillation": {
+    "title": "Model Distillation",
+    "last_updated": "2024-11-03T09:54:18.312808",
+    "queries": [
+      {
+        "query": "\"Model Distillation\"",
+        "weight": 1.0,
+        "count": 6460,
+        "raw_results": "About 6.460 results (0,15 sec)",
+        "timestamp": "2024-11-03T09:53:56.520927"
+      },
+      {
+        "query": "Model Distillation \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 116000,
+        "raw_results": "About 116.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:54:01.230143"
+      },
+      {
+        "query": "Model Distillation AI",
+        "weight": 0.8,
+        "count": 736000,
+        "raw_results": "About 736.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:54:07.874321"
+      },
+      {
+        "query": "Model Distillation \"machine learning\"",
+        "weight": 0.8,
+        "count": 134000,
+        "raw_results": "About 134.000 results (0,15 sec)",
+        "timestamp": "2024-11-03T09:54:13.679070"
+      },
+      {
+        "query": "Model Distillation \"computer science\"",
+        "weight": 0.7,
+        "count": 108000,
+        "raw_results": "About 108.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:54:18.312385"
+      }
+    ]
+  },
+  "ensemble-methods": {
+    "title": "Ensemble Methods",
+    "last_updated": "2024-11-03T09:54:44.604069",
+    "queries": [
+      {
+        "query": "\"Ensemble Methods\"",
+        "weight": 1.0,
+        "count": 193000,
+        "raw_results": "About 193.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:54:22.824371"
+      },
+      {
+        "query": "Ensemble Methods \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 1460000,
+        "raw_results": "About 1.460.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:54:28.125006"
+      },
+      {
+        "query": "Ensemble Methods AI",
+        "weight": 0.8,
+        "count": 2760000,
+        "raw_results": "About 2.760.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:54:33.329929"
+      },
+      {
+        "query": "Ensemble Methods \"machine learning\"",
+        "weight": 0.8,
+        "count": 1780000,
+        "raw_results": "About 1.780.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:54:40.055404"
+      },
+      {
+        "query": "Ensemble Methods \"computer science\"",
+        "weight": 0.7,
+        "count": 1140000,
+        "raw_results": "About 1.140.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:54:44.603621"
+      }
+    ]
+  },
+  "shors-algorithm": {
+    "title": "Shors Algorithm",
+    "last_updated": "2024-11-03T09:55:12.460345",
+    "queries": [
+      {
+        "query": "\"Shors Algorithm\"",
+        "weight": 1.0,
+        "count": 317,
+        "raw_results": "About 317 results (0,06 sec)",
+        "timestamp": "2024-11-03T09:54:51.116302"
+      },
+      {
+        "query": "Shors Algorithm \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 1470,
+        "raw_results": "About 1.470 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:54:56.978309"
+      },
+      {
+        "query": "Shors Algorithm AI",
+        "weight": 0.8,
+        "count": 18700,
+        "raw_results": "About 18.700 results (0,22 sec)",
+        "timestamp": "2024-11-03T09:55:01.024218"
+      },
+      {
+        "query": "Shors Algorithm \"machine learning\"",
+        "weight": 0.8,
+        "count": 1810,
+        "raw_results": "About 1.810 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:55:07.881073"
+      },
+      {
+        "query": "Shors Algorithm \"computer science\"",
+        "weight": 0.7,
+        "count": 5240,
+        "raw_results": "About 5.240 results (0,06 sec)",
+        "timestamp": "2024-11-03T09:55:12.459770"
+      }
+    ]
+  },
+  "cognitive-computing": {
+    "title": "Cognitive Computing",
+    "last_updated": "2024-11-03T09:55:42.626080",
+    "queries": [
+      {
+        "query": "\"Cognitive Computing\"",
+        "weight": 1.0,
+        "count": 61900,
+        "raw_results": "About 61.900 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:55:16.316230"
+      },
+      {
+        "query": "Cognitive Computing \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 2160000,
+        "raw_results": "About 2.160.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:55:23.310714"
+      },
+      {
+        "query": "Cognitive Computing AI",
+        "weight": 0.8,
+        "count": 2780000,
+        "raw_results": "About 2.780.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:55:29.320587"
+      },
+      {
+        "query": "Cognitive Computing \"machine learning\"",
+        "weight": 0.8,
+        "count": 1440000,
+        "raw_results": "About 1.440.000 results (0,14 sec)",
+        "timestamp": "2024-11-03T09:55:36.280571"
+      },
+      {
+        "query": "Cognitive Computing \"computer science\"",
+        "weight": 0.7,
+        "count": 2390000,
+        "raw_results": "About 2.390.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:55:42.625068"
+      }
+    ]
+  },
+  "self-awareness": {
+    "title": "Self-Awareness",
+    "last_updated": "2024-11-03T09:56:11.229826",
+    "queries": [
+      {
+        "query": "\"Self-Awareness\"",
+        "weight": 1.0,
+        "count": 2100000,
+        "raw_results": "About 2.100.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:55:47.565299"
+      },
+      {
+        "query": "Self-Awareness \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 46600,
+        "raw_results": "About 46.600 results (0,16 sec)",
+        "timestamp": "2024-11-03T09:55:54.242149"
+      },
+      {
+        "query": "Self-Awareness AI",
+        "weight": 0.8,
+        "count": 183000,
+        "raw_results": "About 183.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:55:57.788072"
+      },
+      {
+        "query": "Self-Awareness \"machine learning\"",
+        "weight": 0.8,
+        "count": 25400,
+        "raw_results": "About 25.400 results (0,18 sec)",
+        "timestamp": "2024-11-03T09:56:05.071415"
+      },
+      {
+        "query": "Self-Awareness \"computer science\"",
+        "weight": 0.7,
+        "count": 81300,
+        "raw_results": "About 81.300 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:56:11.229148"
+      }
+    ]
+  },
+  "ami-advanced-machine-intelligence": {
+    "title": "AMI (Advanced Machine Intelligence)",
+    "last_updated": "2024-11-03T09:56:34.109122",
+    "queries": [
+      {
+        "query": "\"AMI\" \"Advanced Machine Intelligence\"",
+        "weight": 1.0,
+        "count": 23,
+        "raw_results": "About 23 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:56:15.344142"
+      },
+      {
+        "query": "AMI Advanced Machine Intelligence \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 26100,
+        "raw_results": "About 26.100 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:56:20.664066"
+      },
+      {
+        "query": "Advanced Machine Intelligence AI",
+        "weight": 0.8,
+        "count": 2860000,
+        "raw_results": "About 2.860.000 results (0,15 sec)",
+        "timestamp": "2024-11-03T09:56:24.636087"
+      },
+      {
+        "query": "AMI Advanced Machine Intelligence \"machine learning\"",
+        "weight": 0.8,
+        "count": 23000,
+        "raw_results": "About 23.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:56:29.983498"
+      },
+      {
+        "query": "Advanced Machine Intelligence \"computer science\"",
+        "weight": 0.7,
+        "count": 2790000,
+        "raw_results": "About 2.790.000 results (0,16 sec)",
+        "timestamp": "2024-11-03T09:56:34.108126"
+      }
+    ]
+  },
+  "conditional-probability": {
+    "title": "Conditional Probability",
+    "last_updated": "2024-11-03T09:57:00.096116",
+    "queries": [
+      {
+        "query": "\"Conditional Probability\"",
+        "weight": 1.0,
+        "count": 1090000,
+        "raw_results": "About 1.090.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:56:38.922472"
+      },
+      {
+        "query": "Conditional Probability \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 455000,
+        "raw_results": "About 455.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:56:43.019928"
+      },
+      {
+        "query": "Conditional Probability AI",
+        "weight": 0.8,
+        "count": 1530000,
+        "raw_results": "About 1.530.000 results (0,19 sec)",
+        "timestamp": "2024-11-03T09:56:48.520300"
+      },
+      {
+        "query": "Conditional Probability \"machine learning\"",
+        "weight": 0.8,
+        "count": 630000,
+        "raw_results": "About 630.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:56:54.647269"
+      },
+      {
+        "query": "Conditional Probability \"computer science\"",
+        "weight": 0.7,
+        "count": 589000,
+        "raw_results": "About 589.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:57:00.095177"
+      }
+    ]
+  },
+  "contextual-embedding": {
+    "title": "Contextual Embedding",
+    "last_updated": "2024-11-03T09:57:25.764892",
+    "queries": [
+      {
+        "query": "\"Contextual Embedding\"",
+        "weight": 1.0,
+        "count": 8720,
+        "raw_results": "About 8.720 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:57:04.975576"
+      },
+      {
+        "query": "Contextual Embedding \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 264000,
+        "raw_results": "About 264.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:57:09.174781"
+      },
+      {
+        "query": "Contextual Embedding AI",
+        "weight": 0.8,
+        "count": 302000,
+        "raw_results": "About 302.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:57:13.219844"
+      },
+      {
+        "query": "Contextual Embedding \"machine learning\"",
+        "weight": 0.8,
+        "count": 301000,
+        "raw_results": "About 301.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:57:20.178124"
+      },
+      {
+        "query": "Contextual Embedding \"computer science\"",
+        "weight": 0.7,
+        "count": 268000,
+        "raw_results": "About 268.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:57:25.764289"
+      }
+    ]
+  },
+  "dag-directed-acyclic-graphs": {
+    "title": "DAG (Directed Acyclic Graphs)",
+    "last_updated": "2024-11-03T09:57:49.950926",
+    "queries": [
+      {
+        "query": "\"DAG\" \"Directed Acyclic Graphs\"",
+        "weight": 1.0,
+        "count": 30900,
+        "raw_results": "About 30.900 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:57:30.215415"
+      },
+      {
+        "query": "DAG Directed Acyclic Graphs \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 31100,
+        "raw_results": "About 31.100 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:57:33.619926"
+      },
+      {
+        "query": "Directed Acyclic Graphs AI",
+        "weight": 0.8,
+        "count": 99100,
+        "raw_results": "About 99.100 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:57:39.096791"
+      },
+      {
+        "query": "DAG Directed Acyclic Graphs \"machine learning\"",
+        "weight": 0.8,
+        "count": 33500,
+        "raw_results": "About 33.500 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:57:45.422254"
+      },
+      {
+        "query": "Directed Acyclic Graphs \"computer science\"",
+        "weight": 0.7,
+        "count": 141000,
+        "raw_results": "About 141.000 results (0,08 sec)",
+        "timestamp": "2024-11-03T09:57:49.950089"
+      }
+    ]
+  },
+  "inductive-reasoning": {
+    "title": "Inductive Reasoning",
+    "last_updated": "2024-11-03T09:58:15.489920",
+    "queries": [
+      {
+        "query": "\"Inductive Reasoning\"",
+        "weight": 1.0,
+        "count": 133000,
+        "raw_results": "About 133.000 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:57:54.455475"
+      },
+      {
+        "query": "Inductive Reasoning \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 182000,
+        "raw_results": "About 182.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:57:58.039409"
+      },
+      {
+        "query": "Inductive Reasoning AI",
+        "weight": 0.8,
+        "count": 352000,
+        "raw_results": "About 352.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:58:02.931865"
+      },
+      {
+        "query": "Inductive Reasoning \"machine learning\"",
+        "weight": 0.8,
+        "count": 120000,
+        "raw_results": "About 120.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T09:58:10.136597"
+      },
+      {
+        "query": "Inductive Reasoning \"computer science\"",
+        "weight": 0.7,
+        "count": 241000,
+        "raw_results": "About 241.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:58:15.488908"
+      }
+    ]
+  },
+  "brain-organoid-reservoir-computing": {
+    "title": "Brain Organoid Reservoir Computing",
+    "last_updated": "2024-11-03T09:58:39.879356",
+    "queries": [
+      {
+        "query": "\"Brain Organoid Reservoir Computing\"",
+        "weight": 1.0,
+        "count": 65,
+        "raw_results": "About 65 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:58:20.447312"
+      },
+      {
+        "query": "Brain Organoid Reservoir Computing \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": "",
+        "timestamp": "2024-11-03T09:58:26.332571"
+      },
+      {
+        "query": "Brain Organoid Reservoir Computing AI",
+        "weight": 0.8,
+        "count": 2510,
+        "raw_results": "About 2.510 results (0,08 sec)",
+        "timestamp": "2024-11-03T09:58:30.743189"
+      },
+      {
+        "query": "Brain Organoid Reservoir Computing \"machine learning\"",
+        "weight": 0.8,
+        "count": 1190,
+        "raw_results": "About 1.190 results (0,06 sec)",
+        "timestamp": "2024-11-03T09:58:35.595804"
+      },
+      {
+        "query": "Brain Organoid Reservoir Computing \"computer science\"",
+        "weight": 0.7,
+        "count": 364,
+        "raw_results": "About 364 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:58:39.878902"
+      }
+    ]
+  },
+  "control-problem": {
+    "title": "Control Problem",
+    "last_updated": "2024-11-03T09:59:08.248878",
+    "queries": [
+      {
+        "query": "\"Control Problem\"",
+        "weight": 1.0,
+        "count": 1320000,
+        "raw_results": "About 1.320.000 results (0,21 sec)",
+        "timestamp": "2024-11-03T09:58:45.758068"
+      },
+      {
+        "query": "Control Problem \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 3710000,
+        "raw_results": "About 3.710.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:58:51.515742"
+      },
+      {
+        "query": "Control Problem AI",
+        "weight": 0.8,
+        "count": 7020000,
+        "raw_results": "About 7.020.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T09:58:56.765456"
+      },
+      {
+        "query": "Control Problem \"machine learning\"",
+        "weight": 0.8,
+        "count": 4370000,
+        "raw_results": "About 4.370.000 results (0,20 sec)",
+        "timestamp": "2024-11-03T09:59:02.974972"
+      },
+      {
+        "query": "Control Problem \"computer science\"",
+        "weight": 0.7,
+        "count": 5370000,
+        "raw_results": "About 5.370.000 results (0,17 sec)",
+        "timestamp": "2024-11-03T09:59:08.248426"
+      }
+    ]
+  },
+  "intention": {
+    "title": "Intention",
+    "last_updated": "2024-11-03T09:59:34.361872",
+    "queries": [
+      {
+        "query": "\"Intention\"",
+        "weight": 1.0,
+        "count": 4400000,
+        "raw_results": "About 4.400.000 results (0,06 sec)",
+        "timestamp": "2024-11-03T09:59:11.511595"
+      },
+      {
+        "query": "Intention \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 740000,
+        "raw_results": "About 740.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:59:17.288730"
+      },
+      {
+        "query": "Intention AI",
+        "weight": 0.8,
+        "count": 4280000,
+        "raw_results": "About 4.280.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:59:23.485972"
+      },
+      {
+        "query": "Intention \"machine learning\"",
+        "weight": 0.8,
+        "count": 435000,
+        "raw_results": "About 435.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:59:27.135011"
+      },
+      {
+        "query": "Intention \"computer science\"",
+        "weight": 0.7,
+        "count": 1850000,
+        "raw_results": "About 1.850.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T09:59:34.361416"
+      }
+    ]
+  },
+  "data-blending": {
+    "title": "Data Blending",
+    "last_updated": "2024-11-03T10:00:01.842732",
+    "queries": [
+      {
+        "query": "\"Data Blending\"",
+        "weight": 1.0,
+        "count": 2320,
+        "raw_results": "About 2.320 results (0,13 sec)",
+        "timestamp": "2024-11-03T09:59:40.205441"
+      },
+      {
+        "query": "Data Blending \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 138000,
+        "raw_results": "About 138.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:59:45.997435"
+      },
+      {
+        "query": "Data Blending AI",
+        "weight": 0.8,
+        "count": 963000,
+        "raw_results": "About 963.000 results (0,07 sec)",
+        "timestamp": "2024-11-03T09:59:51.201766"
+      },
+      {
+        "query": "Data Blending \"machine learning\"",
+        "weight": 0.8,
+        "count": 98900,
+        "raw_results": "About 98.900 results (0,11 sec)",
+        "timestamp": "2024-11-03T09:59:54.675010"
+      },
+      {
+        "query": "Data Blending \"computer science\"",
+        "weight": 0.7,
+        "count": 260000,
+        "raw_results": "About 260.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:00:01.841731"
+      }
+    ]
+  },
+  "natural-language": {
+    "title": "Natural Language",
+    "last_updated": "2024-11-03T10:00:28.140518",
+    "queries": [
+      {
+        "query": "\"Natural Language\"",
+        "weight": 1.0,
+        "count": 2820000,
+        "raw_results": "About 2.820.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:00:08.348480"
+      },
+      {
+        "query": "Natural Language \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 2990000,
+        "raw_results": "About 2.990.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:00:12.500141"
+      },
+      {
+        "query": "Natural Language AI",
+        "weight": 0.8,
+        "count": 5780000,
+        "raw_results": "About 5.780.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:00:16.347474"
+      },
+      {
+        "query": "Natural Language \"machine learning\"",
+        "weight": 0.8,
+        "count": 2650000,
+        "raw_results": "About 2.650.000 results (0,15 sec)",
+        "timestamp": "2024-11-03T10:00:22.850885"
+      },
+      {
+        "query": "Natural Language \"computer science\"",
+        "weight": 0.7,
+        "count": 3600000,
+        "raw_results": "About 3.600.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T10:00:28.139460"
+      }
+    ]
+  },
+  "image-to-text-model": {
+    "title": "Image-to-Text Model",
+    "last_updated": "2024-11-03T10:00:56.428259",
+    "queries": [
+      {
+        "query": "\"Image-to-Text Model\"",
+        "weight": 1.0,
+        "count": 250,
+        "raw_results": "About 250 results (0,45 sec)",
+        "timestamp": "2024-11-03T10:00:32.114840"
+      },
+      {
+        "query": "Image-to-Text Model \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 5060,
+        "raw_results": "About 5.060 results (0,36 sec)",
+        "timestamp": "2024-11-03T10:00:38.527616"
+      },
+      {
+        "query": "Image-to-Text Model AI",
+        "weight": 0.8,
+        "count": 7150,
+        "raw_results": "About 7.150 results (0,54 sec)",
+        "timestamp": "2024-11-03T10:00:43.654092"
+      },
+      {
+        "query": "Image-to-Text Model \"machine learning\"",
+        "weight": 0.8,
+        "count": 6650,
+        "raw_results": "About 6.650 results (0,40 sec)",
+        "timestamp": "2024-11-03T10:00:50.999930"
+      },
+      {
+        "query": "Image-to-Text Model \"computer science\"",
+        "weight": 0.7,
+        "count": 3950,
+        "raw_results": "About 3.950 results (0,58 sec)",
+        "timestamp": "2024-11-03T10:00:56.427480"
+      }
+    ]
+  },
+  "word-salad": {
+    "title": "Word Salad",
+    "last_updated": "2024-11-03T10:01:27.134922",
+    "queries": [
+      {
+        "query": "\"Word Salad\"",
+        "weight": 1.0,
+        "count": 5900,
+        "raw_results": "About 5.900 results (0,06 sec)",
+        "timestamp": "2024-11-03T10:01:03.274633"
+      },
+      {
+        "query": "Word Salad \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 8730,
+        "raw_results": "About 8.730 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:01:10.041115"
+      },
+      {
+        "query": "Word Salad AI",
+        "weight": 0.8,
+        "count": 40300,
+        "raw_results": "About 40.300 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:01:17.128864"
+      },
+      {
+        "query": "Word Salad \"machine learning\"",
+        "weight": 0.8,
+        "count": 6110,
+        "raw_results": "About 6.110 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:01:22.827373"
+      },
+      {
+        "query": "Word Salad \"computer science\"",
+        "weight": 0.7,
+        "count": 14300,
+        "raw_results": "About 14.300 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:01:27.133838"
+      }
+    ]
+  },
+  "bql-binary-quantization-learning": {
+    "title": "BQL (Binary Quantization Learning)",
+    "last_updated": "2024-11-03T10:01:52.010987",
+    "queries": [
+      {
+        "query": "\"BQL\" \"Binary Quantization Learning\"",
+        "weight": 1.0,
+        "count": null,
+        "raw_results": "1 result (0,07 sec)",
+        "timestamp": "2024-11-03T10:01:32.646058"
+      },
+      {
+        "query": "BQL Binary Quantization Learning \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": "11 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:01:37.451910"
+      },
+      {
+        "query": "Binary Quantization Learning AI",
+        "weight": 0.8,
+        "count": 75700,
+        "raw_results": "About 75.700 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:01:44.453611"
+      },
+      {
+        "query": "BQL Binary Quantization Learning \"machine learning\"",
+        "weight": 0.8,
+        "count": 23,
+        "raw_results": "About 23 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:01:47.858579"
+      },
+      {
+        "query": "Binary Quantization Learning \"computer science\"",
+        "weight": 0.7,
+        "count": 86300,
+        "raw_results": "About 86.300 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:01:52.010499"
+      }
+    ]
+  },
+  "flexible-semantics": {
+    "title": "Flexible Semantics",
+    "last_updated": "2024-11-03T10:02:17.885736",
+    "queries": [
+      {
+        "query": "\"Flexible Semantics\"",
+        "weight": 1.0,
+        "count": 876,
+        "raw_results": "About 876 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:01:57.104860"
+      },
+      {
+        "query": "Flexible Semantics \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 383000,
+        "raw_results": "About 383.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:02:03.300716"
+      },
+      {
+        "query": "Flexible Semantics AI",
+        "weight": 0.8,
+        "count": 472000,
+        "raw_results": "About 472.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:02:08.400648"
+      },
+      {
+        "query": "Flexible Semantics \"machine learning\"",
+        "weight": 0.8,
+        "count": 235000,
+        "raw_results": "About 235.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:02:13.034690"
+      },
+      {
+        "query": "Flexible Semantics \"computer science\"",
+        "weight": 0.7,
+        "count": 672000,
+        "raw_results": "About 672.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:02:17.885195"
+      }
+    ]
+  },
+  "retrieval-based-model": {
+    "title": "Retrieval-Based Model",
+    "last_updated": "2024-11-03T10:02:47.437067",
+    "queries": [
+      {
+        "query": "\"Retrieval-Based Model\"",
+        "weight": 1.0,
+        "count": 963,
+        "raw_results": "About 963 results (0,23 sec)",
+        "timestamp": "2024-11-03T10:02:24.585297"
+      },
+      {
+        "query": "Retrieval-Based Model \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 29100,
+        "raw_results": "About 29.100 results (0,25 sec)",
+        "timestamp": "2024-11-03T10:02:30.641760"
+      },
+      {
+        "query": "Retrieval-Based Model AI",
+        "weight": 0.8,
+        "count": 33200,
+        "raw_results": "About 33.200 results (0,29 sec)",
+        "timestamp": "2024-11-03T10:02:36.887806"
+      },
+      {
+        "query": "Retrieval-Based Model \"machine learning\"",
+        "weight": 0.8,
+        "count": 35300,
+        "raw_results": "About 35.300 results (0,25 sec)",
+        "timestamp": "2024-11-03T10:02:42.259989"
+      },
+      {
+        "query": "Retrieval-Based Model \"computer science\"",
+        "weight": 0.7,
+        "count": 39200,
+        "raw_results": "About 39.200 results (0,25 sec)",
+        "timestamp": "2024-11-03T10:02:47.436436"
+      }
+    ]
+  },
+  "kaleidoscope-hypothesis": {
+    "title": "Kaleidoscope Hypothesis",
+    "last_updated": "2024-11-03T10:03:14.079250",
+    "queries": [
+      {
+        "query": "\"Kaleidoscope Hypothesis\"",
+        "weight": 1.0,
+        "count": null,
+        "raw_results": "7 results (0,06 sec)",
+        "timestamp": "2024-11-03T10:02:53.082977"
+      },
+      {
+        "query": "Kaleidoscope Hypothesis \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 3570,
+        "raw_results": "About 3.570 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:02:57.305090"
+      },
+      {
+        "query": "Kaleidoscope Hypothesis AI",
+        "weight": 0.8,
+        "count": 13600,
+        "raw_results": "About 13.600 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:03:02.989898"
+      },
+      {
+        "query": "Kaleidoscope Hypothesis \"machine learning\"",
+        "weight": 0.8,
+        "count": 1800,
+        "raw_results": "About 1.800 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:03:08.391044"
+      },
+      {
+        "query": "Kaleidoscope Hypothesis \"computer science\"",
+        "weight": 0.7,
+        "count": 4130,
+        "raw_results": "About 4.130 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:03:14.078471"
+      }
+    ]
+  },
+  "transformer": {
+    "title": "Transformer",
+    "last_updated": "2024-11-03T10:03:46.217786",
+    "queries": [
+      {
+        "query": "\"Transformer\"",
+        "weight": 1.0,
+        "count": 3940000,
+        "raw_results": "About 3.940.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:03:21.224718"
+      },
+      {
+        "query": "Transformer \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 453000,
+        "raw_results": "About 453.000 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:03:27.167105"
+      },
+      {
+        "query": "Transformer AI",
+        "weight": 0.8,
+        "count": 1660000,
+        "raw_results": "About 1.660.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:03:33.227481"
+      },
+      {
+        "query": "Transformer \"machine learning\"",
+        "weight": 0.8,
+        "count": 581000,
+        "raw_results": "About 581.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:03:40.340322"
+      },
+      {
+        "query": "Transformer \"computer science\"",
+        "weight": 0.7,
+        "count": 349000,
+        "raw_results": "About 349.000 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:03:46.217220"
+      }
+    ]
+  },
+  "counterfactual-explanations": {
+    "title": "Counterfactual Explanations",
+    "last_updated": "2024-11-03T10:04:11.691407",
+    "queries": [
+      {
+        "query": "\"Counterfactual Explanations\"",
+        "weight": 1.0,
+        "count": 8800,
+        "raw_results": "About 8.800 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:03:49.787971"
+      },
+      {
+        "query": "Counterfactual Explanations \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 36200,
+        "raw_results": "About 36.200 results (0,13 sec)",
+        "timestamp": "2024-11-03T10:03:55.928255"
+      },
+      {
+        "query": "Counterfactual Explanations AI",
+        "weight": 0.8,
+        "count": 56100,
+        "raw_results": "About 56.100 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:04:01.423881"
+      },
+      {
+        "query": "Counterfactual Explanations \"machine learning\"",
+        "weight": 0.8,
+        "count": null,
+        "raw_results": "",
+        "timestamp": "2024-11-03T10:04:05.463536"
+      },
+      {
+        "query": "Counterfactual Explanations \"computer science\"",
+        "weight": 0.7,
+        "count": 25100,
+        "raw_results": "About 25.100 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:04:11.690313"
+      }
+    ]
+  },
+  "red-teaming": {
+    "title": "Red Teaming",
+    "last_updated": "2024-11-03T10:04:38.737392",
+    "queries": [
+      {
+        "query": "\"Red Teaming\"",
+        "weight": 1.0,
+        "count": 8580,
+        "raw_results": "About 8.580 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:04:17.620009"
+      },
+      {
+        "query": "Red Teaming \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 30500,
+        "raw_results": "About 30.500 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:04:24.753018"
+      },
+      {
+        "query": "Red Teaming AI",
+        "weight": 0.8,
+        "count": 35500,
+        "raw_results": "About 35.500 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:04:29.009920"
+      },
+      {
+        "query": "Red Teaming \"machine learning\"",
+        "weight": 0.8,
+        "count": 26200,
+        "raw_results": "About 26.200 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:04:35.120235"
+      },
+      {
+        "query": "Red Teaming \"computer science\"",
+        "weight": 0.7,
+        "count": 28300,
+        "raw_results": "About 28.300 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:04:38.736902"
+      }
+    ]
+  },
+  "attestation": {
+    "title": "Attestation",
+    "last_updated": "2024-11-03T10:05:04.748897",
+    "queries": [
+      {
+        "query": "\"Attestation\"",
+        "weight": 1.0,
+        "count": 218000,
+        "raw_results": "About 218.000 results (0,06 sec)",
+        "timestamp": "2024-11-03T10:04:43.248988"
+      },
+      {
+        "query": "Attestation \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 22600,
+        "raw_results": "About 22.600 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:04:48.301281"
+      },
+      {
+        "query": "Attestation AI",
+        "weight": 0.8,
+        "count": 106000,
+        "raw_results": "About 106.000 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:04:54.570805"
+      },
+      {
+        "query": "Attestation \"machine learning\"",
+        "weight": 0.8,
+        "count": 21200,
+        "raw_results": "About 21.200 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:04:58.760521"
+      },
+      {
+        "query": "Attestation \"computer science\"",
+        "weight": 0.7,
+        "count": 32900,
+        "raw_results": "About 32.900 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:05:04.748321"
+      }
+    ]
+  },
+  "seq2seq-sequence-to-sequence": {
+    "title": "Seq2Seq (Sequence to Sequence)",
+    "last_updated": "2024-11-03T10:05:28.483329",
+    "queries": [
+      {
+        "query": "\"Seq2Seq\" \"Sequence to Sequence\"",
+        "weight": 1.0,
+        "count": 25100,
+        "raw_results": "About 25.100 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:05:10.701956"
+      },
+      {
+        "query": "Seq2Seq Sequence to Sequence \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 22300,
+        "raw_results": "About 22.300 results (0,17 sec)",
+        "timestamp": "2024-11-03T10:05:14.332892"
+      },
+      {
+        "query": "Sequence to Sequence AI",
+        "weight": 0.8,
+        "count": 7740000,
+        "raw_results": "About 7.740.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:05:19.358859"
+      },
+      {
+        "query": "Seq2Seq Sequence to Sequence \"machine learning\"",
+        "weight": 0.8,
+        "count": 25000,
+        "raw_results": "About 25.000 results (0,18 sec)",
+        "timestamp": "2024-11-03T10:05:23.957109"
+      },
+      {
+        "query": "Sequence to Sequence \"computer science\"",
+        "weight": 0.7,
+        "count": 5440000,
+        "raw_results": "About 5.440.000 results (0,16 sec)",
+        "timestamp": "2024-11-03T10:05:28.482316"
+      }
+    ]
+  },
+  "internet-scale": {
+    "title": "Internet Scale",
+    "last_updated": "2024-11-03T10:05:57.098129",
+    "queries": [
+      {
+        "query": "\"Internet Scale\"",
+        "weight": 1.0,
+        "count": 34200,
+        "raw_results": "About 34.200 results (0,18 sec)",
+        "timestamp": "2024-11-03T10:05:34.248271"
+      },
+      {
+        "query": "Internet Scale \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 1690000,
+        "raw_results": "About 1.690.000 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:05:41.311363"
+      },
+      {
+        "query": "Internet Scale AI",
+        "weight": 0.8,
+        "count": 3510000,
+        "raw_results": "About 3.510.000 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:05:46.290907"
+      },
+      {
+        "query": "Internet Scale \"machine learning\"",
+        "weight": 0.8,
+        "count": 1780000,
+        "raw_results": "About 1.780.000 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:05:51.228989"
+      },
+      {
+        "query": "Internet Scale \"computer science\"",
+        "weight": 0.7,
+        "count": 2640000,
+        "raw_results": "About 2.640.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:05:57.094996"
+      }
+    ]
+  },
+  "dpo-direct-preference-optimization": {
+    "title": "DPO (Direct Preference Optimization)",
+    "last_updated": "2024-11-03T10:06:21.542949",
+    "queries": [
+      {
+        "query": "\"DPO\" \"Direct Preference Optimization\"",
+        "weight": 1.0,
+        "count": 1770,
+        "raw_results": "About 1.770 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:06:01.286840"
+      },
+      {
+        "query": "DPO Direct Preference Optimization \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 1880,
+        "raw_results": "About 1.880 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:06:06.399260"
+      },
+      {
+        "query": "Direct Preference Optimization AI",
+        "weight": 0.8,
+        "count": 377000,
+        "raw_results": "About 377.000 results (0,14 sec)",
+        "timestamp": "2024-11-03T10:06:11.355712"
+      },
+      {
+        "query": "DPO Direct Preference Optimization \"machine learning\"",
+        "weight": 0.8,
+        "count": 2140,
+        "raw_results": "About 2.140 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:06:18.121620"
+      },
+      {
+        "query": "Direct Preference Optimization \"computer science\"",
+        "weight": 0.7,
+        "count": 182000,
+        "raw_results": "About 182.000 results (0,14 sec)",
+        "timestamp": "2024-11-03T10:06:21.542516"
+      }
+    ]
+  },
+  "training-compute": {
+    "title": "Training Compute",
+    "last_updated": "2024-11-03T10:06:44.759148",
+    "queries": [
+      {
+        "query": "\"Training Compute\"",
+        "weight": 1.0,
+        "count": 3200,
+        "raw_results": "About 3.200 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:06:27.208645"
+      },
+      {
+        "query": "Training Compute \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 1920000,
+        "raw_results": "About 1.920.000 results (0,16 sec)",
+        "timestamp": "2024-11-03T10:06:30.959035"
+      },
+      {
+        "query": "Training Compute AI",
+        "weight": 0.8,
+        "count": 3800000,
+        "raw_results": "About 3.800.000 results (0,14 sec)",
+        "timestamp": "2024-11-03T10:06:35.926742"
+      },
+      {
+        "query": "Training Compute \"machine learning\"",
+        "weight": 0.8,
+        "count": 3040000,
+        "raw_results": "About 3.040.000 results (0,19 sec)",
+        "timestamp": "2024-11-03T10:06:39.255158"
+      },
+      {
+        "query": "Training Compute \"computer science\"",
+        "weight": 0.7,
+        "count": 1820000,
+        "raw_results": "About 1.820.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T10:06:44.758168"
+      }
+    ]
+  },
+  "slapa-self-learning-agent-for-performing-apis": {
+    "title": "SLAPA (Self-Learning Agent for Performing APIs)",
+    "last_updated": "2024-11-03T10:07:13.293340",
+    "queries": [
+      {
+        "query": "\"SLAPA\" \"Self-Learning Agent for Performing APIs\"",
+        "weight": 1.0,
+        "count": null,
+        "raw_results": "",
+        "timestamp": "2024-11-03T10:06:50.629076"
+      },
+      {
+        "query": "SLAPA Self-Learning Agent for Performing APIs \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 86,
+        "raw_results": "About 86 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:06:56.112684"
+      },
+      {
+        "query": "Self-Learning Agent for Performing APIs AI",
+        "weight": 0.8,
+        "count": 5220,
+        "raw_results": "About 5.220 results (0,13 sec)",
+        "timestamp": "2024-11-03T10:07:03.153778"
+      },
+      {
+        "query": "SLAPA Self-Learning Agent for Performing APIs \"machine learning\"",
+        "weight": 0.8,
+        "count": 86,
+        "raw_results": "About 86 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:07:08.713575"
+      },
+      {
+        "query": "Self-Learning Agent for Performing APIs \"computer science\"",
+        "weight": 0.7,
+        "count": 3730,
+        "raw_results": "About 3.730 results (0,16 sec)",
+        "timestamp": "2024-11-03T10:07:13.292884"
+      }
+    ]
+  },
+  "mdl-minimum-description-length": {
+    "title": "MDL (Minimum Description Length)",
+    "last_updated": "2024-11-03T10:07:39.807443",
+    "queries": [
+      {
+        "query": "\"MDL\" \"Minimum Description Length\"",
+        "weight": 1.0,
+        "count": 28500,
+        "raw_results": "About 28.500 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:07:17.719324"
+      },
+      {
+        "query": "MDL Minimum Description Length \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 13500,
+        "raw_results": "About 13.500 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:07:23.004680"
+      },
+      {
+        "query": "Minimum Description Length AI",
+        "weight": 0.8,
+        "count": 3600000,
+        "raw_results": "About 3.600.000 results (0,19 sec)",
+        "timestamp": "2024-11-03T10:07:30.129478"
+      },
+      {
+        "query": "MDL Minimum Description Length \"machine learning\"",
+        "weight": 0.8,
+        "count": 18900,
+        "raw_results": "About 18.900 results (0,14 sec)",
+        "timestamp": "2024-11-03T10:07:35.734189"
+      },
+      {
+        "query": "Minimum Description Length \"computer science\"",
+        "weight": 0.7,
+        "count": 1230000,
+        "raw_results": "About 1.230.000 results (0,21 sec)",
+        "timestamp": "2024-11-03T10:07:39.806844"
+      }
+    ]
+  },
+  "image-to-image-model": {
+    "title": "Image-to-Image Model",
+    "last_updated": "2024-11-03T10:08:09.028646",
+    "queries": [
+      {
+        "query": "\"Image-to-Image Model\"",
+        "weight": 1.0,
+        "count": 295,
+        "raw_results": "About 295 results (0,43 sec)",
+        "timestamp": "2024-11-03T10:07:46.715215"
+      },
+      {
+        "query": "Image-to-Image Model \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 33400,
+        "raw_results": "About 33.400 results (0,32 sec)",
+        "timestamp": "2024-11-03T10:07:52.273878"
+      },
+      {
+        "query": "Image-to-Image Model AI",
+        "weight": 0.8,
+        "count": 40000,
+        "raw_results": "About 40.000 results (0,46 sec)",
+        "timestamp": "2024-11-03T10:07:59.301799"
+      },
+      {
+        "query": "Image-to-Image Model \"machine learning\"",
+        "weight": 0.8,
+        "count": 42700,
+        "raw_results": "About 42.700 results (0,40 sec)",
+        "timestamp": "2024-11-03T10:08:04.739160"
+      },
+      {
+        "query": "Image-to-Image Model \"computer science\"",
+        "weight": 0.7,
+        "count": 28800,
+        "raw_results": "About 28.800 results (0,59 sec)",
+        "timestamp": "2024-11-03T10:08:09.028166"
+      }
+    ]
+  },
+  "policy-parameters": {
+    "title": "Policy Parameters",
+    "last_updated": "2024-11-03T10:08:39.309089",
+    "queries": [
+      {
+        "query": "\"Policy Parameters\"",
+        "weight": 1.0,
+        "count": 41200,
+        "raw_results": "About 41.200 results (0,20 sec)",
+        "timestamp": "2024-11-03T10:08:15.870112"
+      },
+      {
+        "query": "Policy Parameters \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 2890000,
+        "raw_results": "About 2.890.000 results (0,15 sec)",
+        "timestamp": "2024-11-03T10:08:21.175344"
+      },
+      {
+        "query": "Policy Parameters AI",
+        "weight": 0.8,
+        "count": 5360000,
+        "raw_results": "About 5.360.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T10:08:26.398111"
+      },
+      {
+        "query": "Policy Parameters \"machine learning\"",
+        "weight": 0.8,
+        "count": 2590000,
+        "raw_results": "About 2.590.000 results (0,19 sec)",
+        "timestamp": "2024-11-03T10:08:33.533416"
+      },
+      {
+        "query": "Policy Parameters \"computer science\"",
+        "weight": 0.7,
+        "count": 3130000,
+        "raw_results": "About 3.130.000 results (0,17 sec)",
+        "timestamp": "2024-11-03T10:08:39.308425"
+      }
+    ]
+  },
+  "fabless": {
+    "title": "Fabless",
+    "last_updated": "2024-11-03T10:09:08.535819",
+    "queries": [
+      {
+        "query": "\"Fabless\"",
+        "weight": 1.0,
+        "count": 11600,
+        "raw_results": "About 11.600 results (0,07 sec)",
+        "timestamp": "2024-11-03T10:08:44.797346"
+      },
+      {
+        "query": "Fabless \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 6830,
+        "raw_results": "About 6.830 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:08:51.593587"
+      },
+      {
+        "query": "Fabless AI",
+        "weight": 0.8,
+        "count": 19400,
+        "raw_results": "About 19.400 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:08:55.331473"
+      },
+      {
+        "query": "Fabless \"machine learning\"",
+        "weight": 0.8,
+        "count": 2880,
+        "raw_results": "About 2.880 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:09:02.247608"
+      },
+      {
+        "query": "Fabless \"computer science\"",
+        "weight": 0.7,
+        "count": 9310,
+        "raw_results": "About 9.310 results (0,12 sec)",
+        "timestamp": "2024-11-03T10:09:08.534698"
+      }
+    ]
+  },
+  "xaviers-initialization": {
+    "title": "Xavier's Initialization",
+    "last_updated": "2024-11-03T10:09:35.557223",
+    "queries": [
+      {
+        "query": "\"Xavier's Initialization\"",
+        "weight": 1.0,
+        "count": 55,
+        "raw_results": "About 55 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:09:14.422083"
+      },
+      {
+        "query": "Xavier's Initialization \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 17100,
+        "raw_results": "About 17.100 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:09:20.714741"
+      },
+      {
+        "query": "Xavier's Initialization AI",
+        "weight": 0.8,
+        "count": 17500,
+        "raw_results": "About 17.500 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:09:25.262530"
+      },
+      {
+        "query": "Xavier's Initialization \"machine learning\"",
+        "weight": 0.8,
+        "count": 17100,
+        "raw_results": "About 17.100 results (0,06 sec)",
+        "timestamp": "2024-11-03T10:09:31.280537"
+      },
+      {
+        "query": "Xavier's Initialization \"computer science\"",
+        "weight": 0.7,
+        "count": 17200,
+        "raw_results": "About 17.200 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:09:35.556528"
+      }
+    ]
+  },
+  "nlp-natural-language-processing": {
+    "title": "NLP (Natural Language Processing)",
+    "last_updated": "2024-11-03T10:10:03.166728",
+    "queries": [
+      {
+        "query": "\"NLP\" \"Natural Language Processing\"",
+        "weight": 1.0,
+        "count": 457000,
+        "raw_results": "About 457.000 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:09:40.311290"
+      },
+      {
+        "query": "NLP Natural Language Processing \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 217000,
+        "raw_results": "About 217.000 results (0,11 sec)",
+        "timestamp": "2024-11-03T10:09:44.577284"
+      },
+      {
+        "query": "Natural Language Processing AI",
+        "weight": 0.8,
+        "count": 4510000,
+        "raw_results": "About 4.510.000 results (0,14 sec)",
+        "timestamp": "2024-11-03T10:09:51.089699"
+      },
+      {
+        "query": "NLP Natural Language Processing \"machine learning\"",
+        "weight": 0.8,
+        "count": 293000,
+        "raw_results": "About 293.000 results (0,13 sec)",
+        "timestamp": "2024-11-03T10:09:57.253130"
+      },
+      {
+        "query": "Natural Language Processing \"computer science\"",
+        "weight": 0.7,
+        "count": 3440000,
+        "raw_results": "About 3.440.000 results (0,22 sec)",
+        "timestamp": "2024-11-03T10:10:03.165685"
+      }
+    ]
+  },
+  "equivariance": {
+    "title": "Equivariance",
+    "last_updated": "2024-11-03T10:10:29.535015",
+    "queries": [
+      {
+        "query": "\"Equivariance\"",
+        "weight": 1.0,
+        "count": 42800,
+        "raw_results": "About 42.800 results (0,06 sec)",
+        "timestamp": "2024-11-03T10:10:07.194783"
+      },
+      {
+        "query": "Equivariance \"artificial intelligence\"",
+        "weight": 0.8,
+        "count": 15600,
+        "raw_results": "About 15.600 results (0,10 sec)",
+        "timestamp": "2024-11-03T10:10:12.055687"
+      },
+      {
+        "query": "Equivariance AI",
+        "weight": 0.8,
+        "count": 31400,
+        "raw_results": "About 31.400 results (0,09 sec)",
+        "timestamp": "2024-11-03T10:10:16.125329"
+      },
+      {
+        "query": "Equivariance \"machine learning\"",
+        "weight": 0.8,
+        "count": 21000,
+        "raw_results": "About 21.000 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:10:23.243038"
+      },
+      {
+        "query": "Equivariance \"computer science\"",
+        "weight": 0.7,
+        "count": 17300,
+        "raw_results": "About 17.300 results (0,08 sec)",
+        "timestamp": "2024-11-03T10:10:29.533943"
+      }
+    ]
   }
 }
