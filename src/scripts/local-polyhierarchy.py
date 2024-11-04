@@ -6,6 +6,7 @@ from collections import defaultdict
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import networkx as nx
+import pathlib
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -194,6 +195,11 @@ def load_additional_data():
     
     return data
 
+def check_component_exists(slug):
+    """Check if a component file exists for the given slug"""
+    component_path = pathlib.Path(f"../components/articles/0/{slug}.tsx")
+    return component_path.is_file()
+
 def create_polyhierarchy(hierarchy, id_mapping, terms):
     additional_data = load_additional_data()
     polyhierarchy = []
@@ -207,29 +213,31 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 generality_avg = round(sum(json_scores) / len(json_scores), 3)
             else:
                 logging.warning(f"No generality found for term: {term}")
+
+            # Get year if available
+            year = additional_data['years'].get(id_mapping[term])
+
+            # Check if component exists
+            has_component = check_component_exists(id_mapping[term])
+
+            node = {
+                "slug": id_mapping[term],
+                "name": term,
+                "summary": terms[term]['summary'],
+                "generality": generality_avg,
+                "year": year,
+                "component": has_component,
+                "children": [
+                    {
+                        "slug": id_mapping[child],
+                        "similarity": float(score)
+                    } for child, score in connections.items()
+                ]
+            }
+            polyhierarchy.append(node)
+
         except Exception as e:
-            logging.error(f"Error calculating generality for {term}: {str(e)}")
-            generality_avg = None
-
-        # Get year and names if available
-        year = additional_data['years'].get(id_mapping[term])
-        names = additional_data['names'].get(id_mapping[term], [])
-
-        node = {
-            "slug": id_mapping[term],
-            "name": term,
-            "summary": terms[term]['summary'],
-            "generality": generality_avg,
-            "year": year,
-            "names": names,
-            "children": [
-                {
-                    "slug": id_mapping[child],
-                    "similarity": float(score)
-                } for child, score in connections.items()
-            ]
-        }
-        polyhierarchy.append(node)
+            logging.error(f"Error processing term {term}: {str(e)}")
 
     # Handle leaf nodes
     for term in id_mapping.keys():
@@ -242,24 +250,25 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                     generality_avg = round(sum(json_scores) / len(json_scores), 3)
                 else:
                     logging.warning(f"No generality found for leaf term: {term}")
+
+                # Get year if available
+                year = additional_data['years'].get(id_mapping[term])
+
+                # Check if component exists for leaf nodes
+                has_component = check_component_exists(id_mapping[term])
+
+                node = {
+                    "slug": id_mapping[term],
+                    "name": term,
+                    "summary": terms[term]['summary'],
+                    "generality": generality_avg,
+                    "year": year,
+                    "component": has_component,
+                    "children": []
+                }
+                polyhierarchy.append(node)
             except Exception as e:
-                logging.error(f"Error calculating generality for leaf {term}: {str(e)}")
-                generality_avg = None
-
-            # Get year and names if available
-            year = additional_data['years'].get(id_mapping[term])
-            names = additional_data['names'].get(id_mapping[term], [])
-
-            node = {
-                "slug": id_mapping[term],
-                "name": term,
-                "summary": terms[term]['summary'],
-                "generality": generality_avg,
-                "year": year,
-                "names": names,
-                "children": []
-            }
-            polyhierarchy.append(node)
+                logging.error(f"Error processing leaf term {term}: {str(e)}")
     
     return polyhierarchy
 
