@@ -286,7 +286,7 @@ def main(directory):
     logging.info("Creating polyhierarchy")
     polyhierarchy = create_polyhierarchy(hierarchy, id_mapping, terms)
     
-    output_file = '../data/ai_terms_hierarchy.json'
+    output_file = '../data/polyhierarchy.json'
     logging.info(f"Writing results to {output_file}")
     with open(output_file, 'w') as f:
         json.dump(polyhierarchy, f, indent=2)

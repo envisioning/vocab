@@ -1,4 +1,4 @@
-import aiTermsHierarchy from '@/data/ai_terms_hierarchy.json';
+import aiTermsHierarchy from '@/data/polyhierarchy.json';
 
 export interface AITerm {
   slug: string;

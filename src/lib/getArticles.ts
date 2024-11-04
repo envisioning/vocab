@@ -1,6 +1,6 @@
 "use server";
 
-import hierarchyData from '@/data/ai_terms_hierarchy.json';
+import hierarchyData from '@/data/polyhierarchy.json';
 import { Article } from "@/types/article";
 
 type SortField = "name" | "year" | "generality";

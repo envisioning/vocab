@@ -5,7 +5,7 @@ import { cache } from 'react'
 
 export const getNodes = cache(async (limit?: number): Promise<Node[] | null> => {
   try {
-    const data = await import('@/data/ai_terms_hierarchy.json')
+    const data = await import('@/data/polyhierarchy.json')
     
     const nodes = data.default.map((node: any) => ({
       ...node,

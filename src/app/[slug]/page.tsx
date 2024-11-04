@@ -13,7 +13,7 @@ import { getArticles } from "@/lib/getArticles";
 import { notFound } from "next/navigation";
 import { redirect } from "next/navigation";
 import KeyboardNavigation from "@/components/KeyboardNavigation";
-import hierarchyData from "@/data/ai_terms_hierarchy.json";
+import hierarchyData from "@/data/polyhierarchy.json";
 import ReportErrorButton from "@/components/ReportErrorButton";
 import ComponentFeedback from "@/components/ComponentFeedback";
 

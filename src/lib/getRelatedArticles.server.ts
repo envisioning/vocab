@@ -27,12 +27,12 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
   if (!hierarchyDataCache) {
     try {
       const data = await fsPromises.readFile(
-        path.join(process.cwd(), "src/data/ai_terms_hierarchy.json"),
+        path.join(process.cwd(), "src/data/polyhierarchy.json"),
         "utf-8"
       );
       hierarchyDataCache = JSON.parse(data);
     } catch (error) {
-      console.error("Error reading or parsing ai_terms_hierarchy.json:", error);
+      console.error("Error reading or parsing polyhierarchy.json:", error);
       return [];
     }
   }
