@@ -8,7 +8,7 @@ export default function ContributorsPage() {
 
   Object.values(namesData).forEach((names) => {
     names.forEach((name) => {
-      if (name !== "unknown") {
+      if (name.toLowerCase() !== "unknown") {
         contributorCounts.set(name, (contributorCounts.get(name) || 0) + 1);
       }
     });
@@ -50,4 +50,21 @@ export default function ContributorsPage() {
       </div>
     </div>
   );
+}
+
+// In the getStaticParams and anywhere else we process names
+export function generateStaticParams() {
+  const uniqueNames = new Set<string>();
+
+  Object.values(namesData).forEach((names) => {
+    names.forEach((name) => {
+      if (name.toLowerCase() !== "unknown") {
+        uniqueNames.add(name.toLowerCase().replace(/\s+/g, "-"));
+      }
+    });
+  });
+
+  return Array.from(uniqueNames).map((name) => ({
+    name: name,
+  }));
 }

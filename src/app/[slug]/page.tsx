@@ -248,26 +248,34 @@ export default async function ArticlePage({
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
               <div className="text-gray-500">
-                {articleContent.names && articleContent.names.length > 0 && (
-                  <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-gray-700 mb-2">
-                      Key Contributors
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {articleContent.names.map((name, index) => (
-                        <Link
-                          key={index}
-                          href={`/contributors/${name
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")}`}
-                          className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-                        >
-                          {toTitleCase(name)}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                {articleContent.names &&
+                  articleContent.names.length > 0 &&
+                  (() => {
+                    const visibleContributors = articleContent.names.filter(
+                      (name) => name.toLowerCase() !== "unknown"
+                    );
+
+                    return visibleContributors.length > 0 ? (
+                      <div className="mb-4">
+                        <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                          Key Contributors
+                        </h3>
+                        <div className="flex flex-wrap gap-2">
+                          {visibleContributors.map((name, index) => (
+                            <Link
+                              key={index}
+                              href={`/contributors/${name
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")}`}
+                              className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+                            >
+                              {toTitleCase(name)}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null;
+                  })()}
 
                 <div className="block">
                   <a
