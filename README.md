@@ -54,9 +54,18 @@ The entire index has been co-created with different AI tools in order to create 
 
 - LLMs have remarkable self-knowledge. This is likely because of the amount of research papers and articles used in the training data. This minimizes the chances of hallucinations or factual mistakes, which has been validated by running most entries through a fact-checking [CustomGPT](https://chat.openai.com/g/g-T87zDPHN1-envisioning-ai).
 
-## Map
+---
 
-- ...
+# Visualizations
+
+## [Map](/vocab/map/)
+
+- Generative knowledge graph of all articles. Experimental but fully functional
+- Connections are created based on node similarity, creating a semantic map of the corpus.
+
+## [Timeline](/vocab/timeline/)
+
+- Experimentental timeline view in the shape of a sunflower.
 
 ---
 

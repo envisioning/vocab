@@ -134,14 +134,6 @@
       {
         "slug": "equivariance",
         "similarity": 0.34859716257950474
-      },
-      {
-        "slug": "superintelligence",
-        "similarity": 0.35
-      },
-      {
-        "slug": "affective-computation",
-        "similarity": 0.35
       }
     ]
   },
@@ -188,14 +180,6 @@
       {
         "slug": "valence",
         "similarity": 0.44795797287276984
-      },
-      {
-        "slug": "invariance",
-        "similarity": 0.35
-      },
-      {
-        "slug": "self-speculative-decoding",
-        "similarity": 0.35
       }
     ]
   },
@@ -587,7 +571,7 @@
     "summary": "Method in data mining for discovering interesting relationships, patterns, or correlations among a large set of data items.",
     "generality": 0.755,
     "year": 1993,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "data-mining",
@@ -870,6 +854,14 @@
       {
         "slug": "model-compression",
         "similarity": 0.37924873736148995
+      },
+      {
+        "slug": "speculative-decoding",
+        "similarity": 0.35
+      },
+      {
+        "slug": "spatial-autoencoder",
+        "similarity": 0.35
       }
     ]
   },
@@ -1458,11 +1450,11 @@
         "similarity": 0.285289596107916
       },
       {
-        "slug": "wbe-whole-brain-emulation",
+        "slug": "exocortex",
         "similarity": 0.35
       },
       {
-        "slug": "fhe-fully-homomorphic-encryption",
+        "slug": "private-cloud-compute",
         "similarity": 0.35
       }
     ]
@@ -1510,6 +1502,14 @@
       {
         "slug": "scale-separation",
         "similarity": 0.2140912562031071
+      },
+      {
+        "slug": "private-cloud-compute",
+        "similarity": 0.35
+      },
+      {
+        "slug": "dpo-direct-preference-optimization",
+        "similarity": 0.35
       }
     ]
   },
@@ -1526,11 +1526,11 @@
         "similarity": 0.3358158864767365
       },
       {
-        "slug": "scale-separation",
+        "slug": "internet-scale",
         "similarity": 0.35
       },
       {
-        "slug": "fab",
+        "slug": "fabless",
         "similarity": 0.35
       }
     ]
@@ -1696,6 +1696,14 @@
       {
         "slug": "fab",
         "similarity": 0.3409799300512812
+      },
+      {
+        "slug": "dpo-direct-preference-optimization",
+        "similarity": 0.35
+      },
+      {
+        "slug": "initialization",
+        "similarity": 0.35
       }
     ]
   },
@@ -1710,14 +1718,6 @@
       {
         "slug": "initialization",
         "similarity": 0.6161964705750178
-      },
-      {
-        "slug": "fab",
-        "similarity": 0.35
-      },
-      {
-        "slug": "ssm-state-space-model",
-        "similarity": 0.35
       }
     ]
   },
@@ -1782,6 +1782,14 @@
       {
         "slug": "invariance",
         "similarity": 0.34859716257950474
+      },
+      {
+        "slug": "system-1-system-2",
+        "similarity": 0.35
+      },
+      {
+        "slug": "valence",
+        "similarity": 0.35
       }
     ]
   },
@@ -2060,14 +2068,6 @@
       {
         "slug": "state-space-model",
         "similarity": 0.6718399316127535
-      },
-      {
-        "slug": "xaviers-initialization",
-        "similarity": 0.35
-      },
-      {
-        "slug": "federated-analytics",
-        "similarity": 0.35
       }
     ]
   },
@@ -2224,7 +2224,7 @@
         "similarity": 0.5755324563764527
       },
       {
-        "slug": "federated-analytics",
+        "slug": "federated-learning",
         "similarity": 0.35
       },
       {
@@ -2864,14 +2864,6 @@
       {
         "slug": "fabless",
         "similarity": 0.3409799300512812
-      },
-      {
-        "slug": "dpo-direct-preference-optimization",
-        "similarity": 0.35
-      },
-      {
-        "slug": "xaviers-initialization",
-        "similarity": 0.35
       }
     ]
   },
@@ -2970,14 +2962,6 @@
       {
         "slug": "model-compression",
         "similarity": 0.3660824188280317
-      },
-      {
-        "slug": "self-speculative-decoding",
-        "similarity": 0.35
-      },
-      {
-        "slug": "spatial-autoencoder",
-        "similarity": 0.35
       }
     ]
   },
@@ -3327,7 +3311,7 @@
     "summary": "The difficulty in understanding and interpreting how an AI system, particularly ML models, makes decisions.",
     "generality": 0.85,
     "year": 2016,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "black-box",
@@ -3386,6 +3370,14 @@
       {
         "slug": "xaviers-initialization",
         "similarity": 0.6161964705750178
+      },
+      {
+        "slug": "fabless",
+        "similarity": 0.35
+      },
+      {
+        "slug": "deep-ssms-deep-state-space-models",
+        "similarity": 0.35
       }
     ]
   },
@@ -4036,14 +4028,6 @@
       {
         "slug": "sparse-crosscoders",
         "similarity": 0.4493308381695936
-      },
-      {
-        "slug": "clustering",
-        "similarity": 0.35
-      },
-      {
-        "slug": "feature-extraction",
-        "similarity": 0.35
       }
     ]
   },
@@ -4062,6 +4046,14 @@
       {
         "slug": "feature-extraction",
         "similarity": 0.3791116282280353
+      },
+      {
+        "slug": "sparse-crosscoders",
+        "similarity": 0.35
+      },
+      {
+        "slug": "autoformalization",
+        "similarity": 0.35
       }
     ]
   },
@@ -4076,14 +4068,6 @@
       {
         "slug": "output-verifier",
         "similarity": 0.3881893757769379
-      },
-      {
-        "slug": "feature-extraction",
-        "similarity": 0.35
-      },
-      {
-        "slug": "tensorflow",
-        "similarity": 0.35
       }
     ]
   },
@@ -4396,11 +4380,11 @@
         "similarity": 0.35409335803919895
       },
       {
-        "slug": "a-b-testing",
+        "slug": "chinchilla-scaling",
         "similarity": 0.35
       },
       {
-        "slug": "performance-degradation",
+        "slug": "adversarial-debiasing",
         "similarity": 0.35
       }
     ]
@@ -5030,7 +5014,7 @@
         "similarity": 0.46422135952855154
       },
       {
-        "slug": "fourier-analysis",
+        "slug": "bnn-bispectral-neural-networks",
         "similarity": 0.35
       },
       {
@@ -5045,7 +5029,7 @@
     "summary": "System or model whose internal workings are not visible or understandable to the user, only the input and output are known.",
     "generality": 0.822,
     "year": 1966,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "black-box-problem",
@@ -5072,14 +5056,6 @@
       {
         "slug": "confidential-computing",
         "similarity": 0.20515846411488708
-      },
-      {
-        "slug": "red-teaming",
-        "similarity": 0.35
-      },
-      {
-        "slug": "scale-separation",
-        "similarity": 0.35
       }
     ]
   },
@@ -5346,6 +5322,14 @@
       {
         "slug": "instantiation",
         "similarity": 0.32595683213294296
+      },
+      {
+        "slug": "few-shot",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ln-layer-normalization",
+        "similarity": 0.35
       }
     ]
   },
@@ -5406,6 +5390,14 @@
       {
         "slug": "boltzmann-machine",
         "similarity": 0.5409361249143411
+      },
+      {
+        "slug": "predictive-analytics",
+        "similarity": 0.35
+      },
+      {
+        "slug": "mortal-computation",
+        "similarity": 0.35
       }
     ]
   },
@@ -6216,6 +6208,14 @@
       {
         "slug": "scaling-laws",
         "similarity": 0.36547267699493713
+      },
+      {
+        "slug": "tensorflow",
+        "similarity": 0.35
+      },
+      {
+        "slug": "trigrams",
+        "similarity": 0.35
       }
     ]
   },
@@ -6328,14 +6328,6 @@
       {
         "slug": "polymorphism",
         "similarity": 0.32595683213294296
-      },
-      {
-        "slug": "one-shot-learning",
-        "similarity": 0.35
-      },
-      {
-        "slug": "layer-normalization",
-        "similarity": 0.35
       }
     ]
   },
@@ -6345,7 +6337,7 @@
     "summary": "Algorithm used for training artificial neural networks, crucial for optimizing the weights to minimize error between predicted and actual outcomes.",
     "generality": 0.89,
     "year": 1986,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "mlp-multilayer-perceptron",
@@ -6466,6 +6458,14 @@
       {
         "slug": "layer-normalization",
         "similarity": 0.6602374274980782
+      },
+      {
+        "slug": "polymorphism",
+        "similarity": 0.35
+      },
+      {
+        "slug": "situational-models",
+        "similarity": 0.35
       }
     ]
   },
@@ -6514,14 +6514,6 @@
       {
         "slug": "predictive-analytics",
         "similarity": 0.3221985648185121
-      },
-      {
-        "slug": "spatial-autoencoder",
-        "similarity": 0.35
-      },
-      {
-        "slug": "mle-maximum-likelihood-estimation",
-        "similarity": 0.35
       }
     ]
   },
@@ -6636,10 +6628,6 @@
       {
         "slug": "asi-artificial-super-intelligence",
         "similarity": 0.4746532762329662
-      },
-      {
-        "slug": "invariance",
-        "similarity": 0.35
       }
     ]
   },
@@ -7003,7 +6991,7 @@
     "summary": "Processing power and resources required to run AI algorithms and models.",
     "generality": 0.915,
     "year": 1946,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "training-compute",
@@ -7100,7 +7088,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "fourier-analysis",
+        "slug": "bnn-bispectral-neural-networks",
         "similarity": 0.35
       }
     ]
@@ -7189,7 +7177,7 @@
     "summary": "Process of compressing a larger, complex model (the teacher) into a smaller, simpler model (the student) while retaining much of the original model's performance.",
     "generality": 0.672,
     "year": 2015,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "model-distillation",
@@ -7358,6 +7346,14 @@
       {
         "slug": "empathic-ai",
         "similarity": 0.3559939943326323
+      },
+      {
+        "slug": "equivariance",
+        "similarity": 0.35
+      },
+      {
+        "slug": "speculative-decoding",
+        "similarity": 0.35
       }
     ]
   },
@@ -7524,14 +7520,6 @@
       {
         "slug": "lnn-liquid-neural-network",
         "similarity": 0.31309053188263347
-      },
-      {
-        "slug": "autoregressive",
-        "similarity": 0.35
-      },
-      {
-        "slug": "control-logic",
-        "similarity": 0.35
       }
     ]
   },
@@ -7780,14 +7768,6 @@
       {
         "slug": "bnn-bispectral-neural-networks",
         "similarity": 0.2524422089381821
-      },
-      {
-        "slug": "algorithmic-probability",
-        "similarity": 0.35
-      },
-      {
-        "slug": "ast-abstract-syntax-tree",
-        "similarity": 0.35
       }
     ]
   },
@@ -8050,14 +8030,6 @@
       {
         "slug": "instrumentation",
         "similarity": 0.34208471294397347
-      },
-      {
-        "slug": "io-influence-operations",
-        "similarity": 0.35
-      },
-      {
-        "slug": "deepfakes",
-        "similarity": 0.35
       }
     ]
   },
@@ -8072,14 +8044,6 @@
       {
         "slug": "log-likelihood",
         "similarity": 0.49060638614531094
-      },
-      {
-        "slug": "data-mining",
-        "similarity": 0.35
-      },
-      {
-        "slug": "turing-completeness",
-        "similarity": 0.35
       }
     ]
   },
@@ -8174,7 +8138,7 @@
         "similarity": 0.21136453116169654
       },
       {
-        "slug": "model-management",
+        "slug": "mlops-machine-learning-operations",
         "similarity": 0.35
       },
       {
@@ -8408,14 +8372,6 @@
       {
         "slug": "few-shot",
         "similarity": 0.5507133275902593
-      },
-      {
-        "slug": "performance-degradation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "instantiation",
-        "similarity": 0.35
       }
     ]
   },
@@ -8622,7 +8578,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "open-ended-ai",
+        "slug": "open-weights",
         "similarity": 0.35
       }
     ]
@@ -9124,6 +9080,14 @@
       {
         "slug": "confidential-computing",
         "similarity": 0.3349483606475942
+      },
+      {
+        "slug": "red-teaming",
+        "similarity": 0.35
+      },
+      {
+        "slug": "internet-scale",
+        "similarity": 0.35
       }
     ]
   },
@@ -9168,14 +9132,6 @@
       {
         "slug": "open-weights",
         "similarity": 0.3588809593948653
-      },
-      {
-        "slug": "residual-connections",
-        "similarity": 0.35
-      },
-      {
-        "slug": "artefactual-autopoiesis",
-        "similarity": 0.35
       }
     ]
   },
@@ -9309,7 +9265,7 @@
     "summary": "Measure of how engaging or surprising information is, often used in ML and computational creativity to prioritize novel and useful data.",
     "generality": 0.609,
     "year": 1999,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "data-mining",
@@ -9603,7 +9559,7 @@
     "summary": "Technique used in models based on transformers, where it manipulates the handling of sequence order and irrelevant elements in ML tasks.",
     "generality": 0.645,
     "year": 2017,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "transformer",
@@ -9726,6 +9682,14 @@
       {
         "slug": "artefactual-autopoiesis",
         "similarity": 0.47754043770540855
+      },
+      {
+        "slug": "open-weights",
+        "similarity": 0.35
+      },
+      {
+        "slug": "gail-generative-adversarial-imitation-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -10569,7 +10533,7 @@
     "summary": "Fundamental problem in supervised ML that involves a trade-off between a model\u2019s ability to minimize error due to bias and error due to variance.",
     "generality": 0.893,
     "year": 1992,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "variance-reduction-techniques",
@@ -10966,14 +10930,6 @@
       {
         "slug": "hypothesis-testing",
         "similarity": 0.30117270800282786
-      },
-      {
-        "slug": "tensorflow",
-        "similarity": 0.35
-      },
-      {
-        "slug": "trigrams",
-        "similarity": 0.35
       }
     ]
   },
@@ -10994,7 +10950,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "relu-rectified-linear-unit",
+        "slug": "saturating-non-linearities",
         "similarity": 0.35
       }
     ]
@@ -11080,7 +11036,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "sparse-coupling",
+        "slug": "sparse-crosscoders",
         "similarity": 0.35
       }
     ]
@@ -11686,6 +11642,14 @@
       {
         "slug": "bci-brain-computer-interface",
         "similarity": 0.27935844420928024
+      },
+      {
+        "slug": "qml-quantum-machine-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "red-teaming",
+        "similarity": 0.35
       }
     ]
   },
@@ -11744,6 +11708,14 @@
       {
         "slug": "nowcasting",
         "similarity": 0.227322982051839
+      },
+      {
+        "slug": "spatial-autoencoder",
+        "similarity": 0.35
+      },
+      {
+        "slug": "rbms-restricted-boltzmann-machines",
+        "similarity": 0.35
       }
     ]
   },
@@ -12698,14 +12670,6 @@
       {
         "slug": "autopoiesis",
         "similarity": 0.5295774307353921
-      },
-      {
-        "slug": "open-ended-ai",
-        "similarity": 0.35
-      },
-      {
-        "slug": "gail-generative-adversarial-imitation-learning",
-        "similarity": 0.35
       }
     ]
   },
@@ -12745,7 +12709,7 @@
     "summary": "Straightforward problem-solving approach that systematically enumerates all possible candidates to find a solution.",
     "generality": 0.82,
     "year": 1956,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "search-optimization",
@@ -13246,6 +13210,14 @@
       {
         "slug": "lfms-liquid-foundation-models",
         "similarity": 0.31309053188263347
+      },
+      {
+        "slug": "autoregressive",
+        "similarity": 0.35
+      },
+      {
+        "slug": "control-logic",
+        "similarity": 0.35
       }
     ]
   },
@@ -13260,14 +13232,6 @@
       {
         "slug": "brainoware",
         "similarity": 0.3251001203927626
-      },
-      {
-        "slug": "qml-quantum-machine-learning",
-        "similarity": 0.35
-      },
-      {
-        "slug": "red-teaming",
-        "similarity": 0.35
       }
     ]
   },
@@ -13291,7 +13255,7 @@
     "summary": "Self-driving cars that combine sensors, algorithms, and software to navigate and drive without human intervention.",
     "generality": 0.86,
     "year": 1939,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "autonomous-learning",
@@ -13546,6 +13510,14 @@
       {
         "slug": "fsl-few-shot-learning",
         "similarity": 0.6343944482397673
+      },
+      {
+        "slug": "adversarial-debiasing",
+        "similarity": 0.35
+      },
+      {
+        "slug": "polymorphism",
+        "similarity": 0.35
       }
     ]
   },
@@ -13578,14 +13550,6 @@
       {
         "slug": "saturating-non-linearities",
         "similarity": 0.38622685610658225
-      },
-      {
-        "slug": "jagged-frontier",
-        "similarity": 0.35
-      },
-      {
-        "slug": "bgpt-byte-level-transformer",
-        "similarity": 0.35
       }
     ]
   },
@@ -13886,7 +13850,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "model-management",
+        "slug": "mlops-machine-learning-operations",
         "similarity": 0.35
       }
     ]
@@ -13987,7 +13951,7 @@
     "summary": "Branch of mathematics focusing on vector spaces and linear mappings between these spaces, which is essential for many machine learning algorithms.",
     "generality": 0.95,
     "year": 1843,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "matrix-models",
@@ -14236,14 +14200,6 @@
       {
         "slug": "ln-layer-normalization",
         "similarity": 0.6602374274980782
-      },
-      {
-        "slug": "instantiation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "situational-models",
-        "similarity": 0.35
       }
     ]
   },
@@ -14674,14 +14630,6 @@
       {
         "slug": "algorithm",
         "similarity": 0.32972746017812127
-      },
-      {
-        "slug": "mle-maximum-likelihood-estimation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "qml-quantum-machine-learning",
-        "similarity": 0.35
       }
     ]
   },
@@ -14696,6 +14644,10 @@
       {
         "slug": "cognitive-architecture",
         "similarity": 0.2441147735831158
+      },
+      {
+        "slug": "equivariance",
+        "similarity": 0.35
       }
     ]
   },
@@ -15152,7 +15104,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "lfms-liquid-foundation-models",
+        "slug": "lnn-liquid-neural-network",
         "similarity": 0.35
       }
     ]
@@ -15368,6 +15320,14 @@
       {
         "slug": "ssm-state-space-model",
         "similarity": 0.37878667735519034
+      },
+      {
+        "slug": "initialization",
+        "similarity": 0.35
+      },
+      {
+        "slug": "federated-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -15453,7 +15413,7 @@
     "summary": "Type of neural network that dynamically focuses on specific parts of the input data, enhancing the performance of tasks like language translation, image recognition, and more.",
     "generality": 0.83,
     "year": 2015,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "transformer",
@@ -15585,7 +15545,7 @@
     "summary": "Techniques and tools used to monitor, measure, and analyze the performance and behavior of AI systems.",
     "generality": 0.755,
     "year": 1956,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "model-management",
@@ -15678,11 +15638,11 @@
         "similarity": 0.2609349626014716
       },
       {
-        "slug": "turing-completeness",
+        "slug": "mortal-computation",
         "similarity": 0.35
       },
       {
-        "slug": "wbe-whole-brain-emulation",
+        "slug": "exocortex",
         "similarity": 0.35
       }
     ]
@@ -15788,6 +15748,14 @@
       {
         "slug": "sparse-coupling",
         "similarity": 0.4493308381695936
+      },
+      {
+        "slug": "clustering",
+        "similarity": 0.35
+      },
+      {
+        "slug": "feature-importance",
+        "similarity": 0.35
       }
     ]
   },
@@ -16084,14 +16052,6 @@
       {
         "slug": "internet-scale",
         "similarity": 0.2140912562031071
-      },
-      {
-        "slug": "fhe-fully-homomorphic-encryption",
-        "similarity": 0.35
-      },
-      {
-        "slug": "dpo-direct-preference-optimization",
-        "similarity": 0.35
       }
     ]
   },
@@ -16183,7 +16143,7 @@
     "summary": "Refers to mechanisms that allow models to dynamically focus on specific parts of input data, enhancing the relevance and context-awareness of the processing.",
     "generality": 0.87,
     "year": 2014,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "transformer",
@@ -16498,6 +16458,14 @@
       {
         "slug": "self-speculative-decoding",
         "similarity": 0.448331186006882
+      },
+      {
+        "slug": "valence",
+        "similarity": 0.35
+      },
+      {
+        "slug": "model-distillation",
+        "similarity": 0.35
       }
     ]
   },
@@ -16646,7 +16614,7 @@
         "similarity": 0.3469789399536506
       },
       {
-        "slug": "lfms-liquid-foundation-models",
+        "slug": "lnn-liquid-neural-network",
         "similarity": 0.35
       },
       {
@@ -16683,7 +16651,7 @@
     "summary": "Mathematical tool used in image processing and signal analysis, known for its ability to localize information in both the spatial and frequency domains simultaneously.",
     "generality": 0.56,
     "year": 1946,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "fourier-analysis",
@@ -16737,7 +16705,7 @@
     "summary": "Field of mathematics and computer science focusing on the properties of graphs, which are structures made up of vertices (or nodes) connected by edges.",
     "generality": 0.828,
     "year": 1736,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "dag-directed-acyclic-graphs",
@@ -17232,7 +17200,7 @@
         "similarity": 0.2565588025660716
       },
       {
-        "slug": "layer-normalization",
+        "slug": "ln-layer-normalization",
         "similarity": 0.35
       },
       {
@@ -17634,10 +17602,6 @@
       {
         "slug": "mechanistic-unlearning",
         "similarity": 0.5113281710076975
-      },
-      {
-        "slug": "snn-spiking-neural-network",
-        "similarity": 0.35
       }
     ]
   },
@@ -17726,6 +17690,14 @@
       {
         "slug": "federated-training",
         "similarity": 0.5970482639847492
+      },
+      {
+        "slug": "deep-ssms-deep-state-space-models",
+        "similarity": 0.35
+      },
+      {
+        "slug": "criteria-drift",
+        "similarity": 0.35
       }
     ]
   },
@@ -17758,6 +17730,10 @@
       {
         "slug": "machine-unlearning",
         "similarity": 0.5113281710076975
+      },
+      {
+        "slug": "snn-spiking-neural-network",
+        "similarity": 0.35
       }
     ]
   },
@@ -17774,11 +17750,11 @@
         "similarity": 0.31943577390264455
       },
       {
-        "slug": "unverifyability",
+        "slug": "autoformalization",
         "similarity": 0.35
       },
       {
-        "slug": "a-b-testing",
+        "slug": "chinchilla-scaling",
         "similarity": 0.35
       }
     ]
@@ -18003,11 +17979,19 @@
     "summary": "ML technique aimed at reducing bias in models by using adversarial training, where one network tries to predict sensitive attributes and another tries to prevent it.",
     "generality": 0.659,
     "year": 2016,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "adversarial-instructions",
         "similarity": 0.3601585235908718
+      },
+      {
+        "slug": "trigrams",
+        "similarity": 0.35
+      },
+      {
+        "slug": "few-shot",
+        "similarity": 0.35
       }
     ]
   },
@@ -18092,14 +18076,6 @@
       {
         "slug": "persistency",
         "similarity": 0.2438188366361997
-      },
-      {
-        "slug": "trigrams",
-        "similarity": 0.35
-      },
-      {
-        "slug": "one-shot-learning",
-        "similarity": 0.35
       }
     ]
   },
@@ -18476,7 +18452,7 @@
         "similarity": 0.5492831632818911
       },
       {
-        "slug": "relu-rectified-linear-unit",
+        "slug": "saturating-non-linearities",
         "similarity": 0.35
       },
       {
@@ -18586,6 +18562,14 @@
       {
         "slug": "relu-rectified-linear-unit",
         "similarity": 0.38622685610658225
+      },
+      {
+        "slug": "jagged-frontier",
+        "similarity": 0.35
+      },
+      {
+        "slug": "bgpt-byte-level-transformer",
+        "similarity": 0.35
       }
     ]
   },
@@ -18954,6 +18938,14 @@
       {
         "slug": "open-ended-ai",
         "similarity": 0.3588809593948653
+      },
+      {
+        "slug": "residual-connections",
+        "similarity": 0.35
+      },
+      {
+        "slug": "a-life-artificial-life",
+        "similarity": 0.35
       }
     ]
   },
@@ -18976,14 +18968,6 @@
       {
         "slug": "federated-training",
         "similarity": 0.4500883068071467
-      },
-      {
-        "slug": "ssm-state-space-model",
-        "similarity": 0.35
-      },
-      {
-        "slug": "criteria-drift",
-        "similarity": 0.35
       }
     ]
   },
@@ -19384,7 +19368,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "machine-unlearning",
+        "slug": "mechanistic-unlearning",
         "similarity": 0.35
       }
     ]
@@ -19474,14 +19458,6 @@
       {
         "slug": "feature-design",
         "similarity": 0.4357689869501746
-      },
-      {
-        "slug": "sparse-coupling",
-        "similarity": 0.35
-      },
-      {
-        "slug": "unverifyability",
-        "similarity": 0.35
       }
     ]
   },
@@ -19530,7 +19506,7 @@
         "similarity": 0.41729720802525777
       },
       {
-        "slug": "artefactual-autopoiesis",
+        "slug": "a-life-artificial-life",
         "similarity": 0.35
       },
       {
@@ -19826,6 +19802,14 @@
       {
         "slug": "universality",
         "similarity": 0.22362608980262402
+      },
+      {
+        "slug": "rbms-restricted-boltzmann-machines",
+        "similarity": 0.35
+      },
+      {
+        "slug": "qml-quantum-machine-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -19981,7 +19965,7 @@
     "summary": "Phenomenon in Generative Adversarial Networks (GANs) where the generator produces limited, highly similar outputs, ignoring the diversity of the target data distribution.",
     "generality": 0.375,
     "year": 2014,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "gan-generative-adversarial-network",
@@ -20332,6 +20316,14 @@
       {
         "slug": "output-verifier",
         "similarity": 0.2453160379409037
+      },
+      {
+        "slug": "feature-importance",
+        "similarity": 0.35
+      },
+      {
+        "slug": "tensorflow",
+        "similarity": 0.35
       }
     ]
   },
@@ -20499,7 +20491,7 @@
     "summary": "Process of optimizing content to improve its chances of being selected as the direct response by search engines or voice assistants to user queries.",
     "generality": 0.715,
     "year": 2018,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "search",
@@ -20572,14 +20564,6 @@
       {
         "slug": "speculative-decoding",
         "similarity": 0.448331186006882
-      },
-      {
-        "slug": "affective-computation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "teacher-model",
-        "similarity": 0.35
       }
     ]
   },
@@ -20594,6 +20578,14 @@
       {
         "slug": "fourier-analysis",
         "similarity": 0.2524422089381821
+      },
+      {
+        "slug": "algorithmic-probability",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ast-abstract-syntax-tree",
+        "similarity": 0.35
       }
     ]
   },
@@ -20646,11 +20638,11 @@
         "similarity": 0.6334282646160536
       },
       {
-        "slug": "teacher-model",
+        "slug": "model-distillation",
         "similarity": 0.35
       },
       {
-        "slug": "data-mining",
+        "slug": "predictive-analytics",
         "similarity": 0.35
       }
     ]
@@ -21044,6 +21036,14 @@
       {
         "slug": "instrumentation",
         "similarity": 0.31585224220132607
+      },
+      {
+        "slug": "io-influence-operations",
+        "similarity": 0.35
+      },
+      {
+        "slug": "deepfakes",
+        "similarity": 0.35
       }
     ]
   },
