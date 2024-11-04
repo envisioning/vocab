@@ -116,6 +116,20 @@ def process_markdown_files(directory: Path):
     md_files = list(directory.glob('**/*.md'))
     filtered_files = [f for f in md_files if 'src/content/articles/' not in str(f)]
     
+    # Create a set of slugs from the filenames
+    file_slugs = {f.stem for f in filtered_files}
+    # Create a set of existing slugs from years.json
+    existing_slugs = set(years_dict.keys())
+    
+    # Find files that don't have year data
+    missing_slugs = file_slugs - existing_slugs
+    if missing_slugs:
+        logging.info(f"Found {len(missing_slugs)} files without year data")
+        # Add them to years_dict with 0 value
+        for slug in missing_slugs:
+            years_dict[slug] = 0
+        save_years(years_dict)
+    
     # Only process terms that have a year of 0
     zero_terms = {slug: year for slug, year in years_dict.items() if year == 0}
     logging.info(f"Found {len(zero_terms)} terms with year 0 to process\n")

@@ -4,6 +4,7 @@ from pathlib import Path
 import frontmatter
 import requests
 from config import API_KEY
+import json
 
 # Configure logging ...
 logging.basicConfig(
@@ -14,6 +15,7 @@ logging.basicConfig(
 
 # Constants
 VOCAB_DIR = Path('../content/articles/')
+DATA_FILE = Path('../data/generality.json')
 SCORE_FIELD = 'generality'
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
@@ -97,19 +99,43 @@ def update_frontmatter_with_score(md_file: Path, post, scores: list[float]):
     except Exception as e:
         logging.error(f"Failed to write file '{md_file.name}': {e}")
 
+def load_existing_scores():
+    """Load existing scores from generality.json."""
+    try:
+        if DATA_FILE.exists():
+            with DATA_FILE.open('r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+    except Exception as e:
+        logging.error(f"Error loading generality.json: {e}")
+        return {}
+
+def save_scores(scores_dict):
+    """Save scores to generality.json."""
+    try:
+        with DATA_FILE.open('w', encoding='utf-8') as f:
+            json.dump(scores_dict, f, indent=2)
+        logging.info("Saved scores to generality.json")
+    except Exception as e:
+        logging.error(f"Error saving generality.json: {e}")
+
 def process_files(md_files):
     """Process each Markdown file."""
+    existing_scores = load_existing_scores()
+    
     for md_file in md_files:
+        slug = md_file.stem  # Get filename without extension
         logging.info(f"Processing file: {md_file.name}")
+        
+        # Skip if scores already exist for this slug
+        if slug in existing_scores:
+            logging.info(f"Skipping '{slug}' - already has generality scores")
+            continue
+
         try:
             post = frontmatter.load(md_file)
         except Exception as e:
             logging.error(f"Failed to load frontmatter from '{md_file.name}': {e}")
-            continue
-
-        # Skip if generality scores already exist
-        if SCORE_FIELD in post.metadata:
-            logging.info(f"Skipping '{md_file.name}' - already has generality scores")
             continue
 
         title = post.metadata.get('title', '').strip()
@@ -119,9 +145,12 @@ def process_files(md_files):
             logging.warning(f"Both title and summary are missing in '{md_file.name}'. Skipping scoring.")
             continue
 
-        logging.info(f"Scoring '{md_file.name}'...")
+        logging.info(f"Scoring '{slug}'...")
         scores = calculate_importance_score(title, summary)
-        update_frontmatter_with_score(md_file, post, scores)
+        
+        # Add new scores to the dictionary and save
+        existing_scores[slug] = scores
+        save_scores(existing_scores)
 
 def main():
     """Main function to execute the script."""

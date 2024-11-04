@@ -5172,5 +5172,188 @@
   ],
   "scalar": [
     "unknown"
+  ],
+  "vector-operation": [
+    "john von neumann",
+    "david hilbert",
+    "john mccarthy",
+    "alan turing",
+    "donald knuth",
+    "michael stonebraker",
+    "geoffrey hinton"
+  ],
+  "kernel-method": [
+    "bernhard schölkopf",
+    "alexander j. smola",
+    "vladimir vapnik",
+    "isabelle guyon",
+    "david cohn",
+    "john shawe-taylor",
+    "corinna cortes"
+  ],
+  "bias-variance-trade-off": [
+    "leo breiman",
+    "jerome friedman",
+    "rob tibshirani",
+    "trevor hastie",
+    "vladimir vapnik",
+    "alexey chervonenkis",
+    "richard sutton"
+  ],
+  "perceptron-convergence": [
+    "frank rosenblatt",
+    "marvin minsky",
+    "seymour papert",
+    "bernard widrow",
+    "ted hoff",
+    "david rumelhart",
+    "geoffrey hinton"
+  ],
+  "planetary-scale-system": [
+    "unknown"
+  ],
+  "uncertainty-estimation": [
+    "david j. c. mackay",
+    "judea pearl",
+    "michael e. j. newman",
+    "r. michael alvarez",
+    "r. l. (bob) smith",
+    "christopher k. i. williams",
+    "unknown"
+  ],
+  "lambda-calculus": [
+    "alonzo church",
+    "stephen cole kleene",
+    "john mccarthy",
+    "haskell curry",
+    "william alvin howard",
+    "peter landin",
+    "christopher strachey"
+  ],
+  "bias-variance-curve": [
+    "leo breiman",
+    "jerome friedman",
+    "rob tibshirani",
+    "trevor hastie",
+    "richard d. de veaux",
+    "david w. scott",
+    "unknown"
+  ],
+  "state-representation": [
+    "richard sutton",
+    "andrew barto",
+    "david silver",
+    "john mccarthy",
+    "herbert simon",
+    "marvin minsky",
+    "judea pearl"
+  ],
+  "verification-system": [
+    "unknown"
+  ],
+  "similarity-computation": [
+    "judea pearl",
+    "david j. cohn",
+    "peter norvig",
+    "christopher bishop",
+    "trevor hastie",
+    "robert tibshirani",
+    "michael i. jordan"
+  ],
+  "transformer-block": [
+    "vaswani ashish",
+    "shazeer noam",
+    "parmar niki",
+    "uszkoreit jakob",
+    "jones llion",
+    "gomez alberto",
+    "kaiser łukasz"
+  ],
+  "zero-shot-capability": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "richard sutton",
+    "ilya sutskever",
+    "andrej karpathy",
+    "unknown"
+  ],
+  "variance-scaling": [
+    "xavier glorot",
+    "yoshua bengio",
+    "kaiming he",
+    "sergey ioffe",
+    "christian szegedy",
+    "geoffrey hinton",
+    "jürgen schmidhuber"
+  ],
+  "church-turing-thesis": [
+    "alan turing",
+    "alonzo church",
+    "stephen cole kleene",
+    "john von neumann",
+    "emil post",
+    "martin davis",
+    "claude shannon"
+  ],
+  "church-encoding": [
+    "alonzo church"
+  ],
+  "fourier-transform": [
+    "jean-baptiste joseph fourier",
+    "carl friedrich gauss",
+    "claude shannon",
+    "norbert wiener",
+    "alan v. oppenheim",
+    "ronald n. bracewell",
+    "john w. goodman"
+  ],
+  "transfer-capability": [
+    "john r. anderson",
+    "barbara e. mcclintock",
+    "david h. johnson",
+    "richard s. sutton",
+    "andrew y. ng",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "unified-embedding": [
+    "unknown"
+  ],
+  "token-processing": [
+    "unknown"
+  ],
+  "validation-metric": [
+    "unknown"
+  ],
+  "weight-initialization": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "xavier glorot",
+    "kaiming he",
+    "andrew ng",
+    "jürgen schmidhuber"
+  ],
+  "fuzzy-logic": [
+    "lotfi zadeh",
+    "ronald r. yager",
+    "janusz kacprzyk",
+    "didier dubois",
+    "henri prade",
+    "george j. klir",
+    "ebrahim mamdani"
+  ],
+  "training-objective": [
+    "unknown"
+  ],
+  "curse-of-dimensionality": [
+    "richard bellman",
+    "john von neumann",
+    "david h. wolpert",
+    "pedro domingos",
+    "michael i. jordan",
+    "trevor hastie",
+    "robert tibshirani"
   ]
 }
