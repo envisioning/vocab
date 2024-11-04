@@ -6,9 +6,9 @@ import { notFound } from "next/navigation";
 import { toTitleCase } from "@/lib/formatters";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     name: string;
-  };
+  }>;
 }
 
 // Generate static params for all names
@@ -29,7 +29,7 @@ export function generateStaticParams() {
 }
 
 // Get all articles for a specific contributor
-function getArticlesForContributor(name: string): Article[] {
+async function getArticlesForContributor(name: string): Promise<Article[]> {
   const articles: Article[] = [];
 
   Object.entries(namesData).forEach(([slug, contributors]) => {
@@ -55,8 +55,9 @@ function getArticlesForContributor(name: string): Article[] {
 }
 
 export default async function ContributorPage({ params }: PageProps) {
-  const decodedName = decodeURIComponent(params.name);
-  const articles = getArticlesForContributor(decodedName);
+  const { name } = await params;
+  const decodedName = decodeURIComponent(name);
+  const articles = await getArticlesForContributor(decodedName);
 
   if (articles.length === 0) {
     notFound();
