@@ -3,8 +3,7 @@
 src/scripts/config.py
 /src/scripts/config.py
 
-src/scripts/components-generator-metadata/config.py
-/src/scripts/components-generator-metadata/config.py
+src/scripts/components-generator/config.py
 
 # dependencies
 /node_modules
