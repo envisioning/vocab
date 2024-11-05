@@ -204,7 +204,7 @@
         "similarity": 0.4488678856611911
       },
       {
-        "slug": "equivariance",
+        "slug": "symmetry",
         "similarity": 0.35
       },
       {
@@ -544,6 +544,14 @@
       {
         "slug": "spatial-intelligence",
         "similarity": 0.3461179396281934
+      },
+      {
+        "slug": "model-compression",
+        "similarity": 0.35
+      },
+      {
+        "slug": "enrichment",
+        "similarity": 0.35
       }
     ]
   },
@@ -1840,14 +1848,6 @@
       {
         "slug": "invariance",
         "similarity": 0.3472443243195707
-      },
-      {
-        "slug": "de-biasing",
-        "similarity": 0.35
-      },
-      {
-        "slug": "affective-computation",
-        "similarity": 0.35
       }
     ]
   },
@@ -2422,7 +2422,7 @@
         "similarity": 0.3738114378843486
       },
       {
-        "slug": "model-drift-minimization",
+        "slug": "model-drift",
         "similarity": 0.35
       },
       {
@@ -2872,14 +2872,6 @@
       {
         "slug": "scale-separation",
         "similarity": 0.24851966991573105
-      },
-      {
-        "slug": "secure-enclave",
-        "similarity": 0.35
-      },
-      {
-        "slug": "preference-model",
-        "similarity": 0.35
       }
     ]
   },
@@ -3062,6 +3054,14 @@
       {
         "slug": "program-induction",
         "similarity": 0.2880350456357592
+      },
+      {
+        "slug": "wavelet",
+        "similarity": 0.35
+      },
+      {
+        "slug": "lvlms-large-vision-language-models",
+        "similarity": 0.35
       }
     ]
   },
@@ -3196,7 +3196,7 @@
         "similarity": 0.3365141735478667
       },
       {
-        "slug": "planetary-scale-system",
+        "slug": "hyperscalers",
         "similarity": 0.35
       },
       {
@@ -3444,6 +3444,14 @@
       {
         "slug": "fourier-analysis",
         "similarity": 0.28457923207504865
+      },
+      {
+        "slug": "algorithmic-probability",
+        "similarity": 0.35
+      },
+      {
+        "slug": "on-the-fly-program-synthesis",
+        "similarity": 0.35
       }
     ]
   },
@@ -3540,7 +3548,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "differential-privacy",
+        "slug": "federated-learning",
         "similarity": 0.35
       }
     ]
@@ -3882,14 +3890,6 @@
       {
         "slug": "ai-effect",
         "similarity": 0.36212722134770875
-      },
-      {
-        "slug": "mle-maximum-likelihood-estimation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "speed-of-light-issues",
-        "similarity": 0.35
       }
     ]
   },
@@ -3918,14 +3918,6 @@
       {
         "slug": "clustering",
         "similarity": 0.5034312805365447
-      },
-      {
-        "slug": "emt-extended-mind-transformer",
-        "similarity": 0.35
-      },
-      {
-        "slug": "sparse-crosscoders",
-        "similarity": 0.35
       }
     ]
   },
@@ -4268,6 +4260,14 @@
       {
         "slug": "sparse-crosscoders",
         "similarity": 0.44698016557900366
+      },
+      {
+        "slug": "clustering",
+        "similarity": 0.35
+      },
+      {
+        "slug": "feature-importance",
+        "similarity": 0.35
       }
     ]
   },
@@ -4286,6 +4286,14 @@
       {
         "slug": "feature-extraction",
         "similarity": 0.3783030312970868
+      },
+      {
+        "slug": "sparse-coupling",
+        "similarity": 0.35
+      },
+      {
+        "slug": "godel-code",
+        "similarity": 0.35
       }
     ]
   },
@@ -4358,6 +4366,10 @@
       {
         "slug": "random-forest",
         "similarity": 0.36849866776973245
+      },
+      {
+        "slug": "symmetry",
+        "similarity": 0.35
       }
     ]
   },
@@ -4376,14 +4388,6 @@
       {
         "slug": "tensorflow",
         "similarity": 0.3185730582286186
-      },
-      {
-        "slug": "output-verifier",
-        "similarity": 0.35
-      },
-      {
-        "slug": "scaling-laws",
-        "similarity": 0.35
       }
     ]
   },
@@ -4416,14 +4420,6 @@
       {
         "slug": "model-drift",
         "similarity": 0.6915859525804081
-      },
-      {
-        "slug": "differential-privacy",
-        "similarity": 0.35
-      },
-      {
-        "slug": "toy-diagram",
-        "similarity": 0.35
       }
     ]
   },
@@ -4460,14 +4456,6 @@
       {
         "slug": "three-laws-of-robotics",
         "similarity": 0.2802150873376092
-      },
-      {
-        "slug": "tensor",
-        "similarity": 0.35
-      },
-      {
-        "slug": "ngram",
-        "similarity": 0.35
       }
     ]
   },
@@ -5736,6 +5724,14 @@
       {
         "slug": "few-shot",
         "similarity": 0.42129181711172564
+      },
+      {
+        "slug": "adversarial-debiasing",
+        "similarity": 0.35
+      },
+      {
+        "slug": "instantiation",
+        "similarity": 0.35
       }
     ]
   },
@@ -6083,7 +6079,7 @@
     "summary": "ML technique to prevent certain parts of input sequences from influencing the training process of models, particularly in natural language processing tasks.",
     "generality": 0.575,
     "year": 2017,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "sequence-model",
@@ -6742,11 +6738,11 @@
         "similarity": 0.3256441394052485
       },
       {
-        "slug": "fsl-few-shot-learning",
+        "slug": "zero-shot-capability",
         "similarity": 0.35
       },
       {
-        "slug": "layer-normalization",
+        "slug": "ln-layer-normalization",
         "similarity": 0.35
       }
     ]
@@ -6878,6 +6874,14 @@
       {
         "slug": "layer-normalization",
         "similarity": 0.6600396507464954
+      },
+      {
+        "slug": "instantiation",
+        "similarity": 0.35
+      },
+      {
+        "slug": "unhobbling",
+        "similarity": 0.35
       }
     ]
   },
@@ -6978,6 +6982,14 @@
       {
         "slug": "a-b-testing",
         "similarity": 0.3010586920109761
+      },
+      {
+        "slug": "scalar",
+        "similarity": 0.35
+      },
+      {
+        "slug": "perplexity",
+        "similarity": 0.35
       }
     ]
   },
@@ -7256,7 +7268,7 @@
         "similarity": 0.2564385775837942
       },
       {
-        "slug": "layer-normalization",
+        "slug": "ln-layer-normalization",
         "similarity": 0.35
       },
       {
@@ -7546,7 +7558,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "fourier-analysis",
+        "slug": "wavelet",
         "similarity": 0.35
       }
     ]
@@ -7626,14 +7638,6 @@
       {
         "slug": "feature-extraction",
         "similarity": 0.4343017146138759
-      },
-      {
-        "slug": "sparse-crosscoders",
-        "similarity": 0.35
-      },
-      {
-        "slug": "output-verifier",
-        "similarity": 0.35
       }
     ]
   },
@@ -7834,6 +7838,14 @@
       {
         "slug": "emt-extended-mind-transformer",
         "similarity": 0.34238533445967273
+      },
+      {
+        "slug": "on-the-fly-program-synthesis",
+        "similarity": 0.35
+      },
+      {
+        "slug": "clustering",
+        "similarity": 0.35
       }
     ]
   },
@@ -7986,6 +7998,14 @@
       {
         "slug": "church-turing-thesis",
         "similarity": 0.3901064919946909
+      },
+      {
+        "slug": "boltzmann-machine",
+        "similarity": 0.35
+      },
+      {
+        "slug": "speed-of-light-issues",
+        "similarity": 0.35
       }
     ]
   },
@@ -8000,14 +8020,6 @@
       {
         "slug": "lnn-liquid-neural-network",
         "similarity": 0.31353550812516656
-      },
-      {
-        "slug": "autoregressive-generation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "mpc-model-predictive-control",
-        "similarity": 0.35
       }
     ]
   },
@@ -8102,14 +8114,6 @@
       {
         "slug": "control-logic",
         "similarity": 0.3488286486453967
-      },
-      {
-        "slug": "lfms-liquid-foundation-models",
-        "similarity": 0.35
-      },
-      {
-        "slug": "mdo-multidomain-operations",
-        "similarity": 0.35
       }
     ]
   },
@@ -8276,14 +8280,6 @@
       {
         "slug": "bnn-bispectral-neural-networks",
         "similarity": 0.25395615298841545
-      },
-      {
-        "slug": "algorithmic-probability",
-        "similarity": 0.35
-      },
-      {
-        "slug": "program-induction",
-        "similarity": 0.35
       }
     ]
   },
@@ -8350,14 +8346,6 @@
       {
         "slug": "io-influence-operations",
         "similarity": 0.2767669150007744
-      },
-      {
-        "slug": "mpc-model-predictive-control",
-        "similarity": 0.35
-      },
-      {
-        "slug": "observability",
-        "similarity": 0.35
       }
     ]
   },
@@ -8582,14 +8570,6 @@
       {
         "slug": "log-likelihood",
         "similarity": 0.4904771065403975
-      },
-      {
-        "slug": "interestingness",
-        "similarity": 0.35
-      },
-      {
-        "slug": "turing-test",
-        "similarity": 0.35
       }
     ]
   },
@@ -8672,14 +8652,6 @@
       {
         "slug": "autoformalization",
         "similarity": 0.24418322807179804
-      },
-      {
-        "slug": "feature-design",
-        "similarity": 0.35
-      },
-      {
-        "slug": "tensor",
-        "similarity": 0.35
       }
     ]
   },
@@ -8694,6 +8666,14 @@
       {
         "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
         "similarity": 0.21128352250181812
+      },
+      {
+        "slug": "mlops-machine-learning-operations",
+        "similarity": 0.35
+      },
+      {
+        "slug": "residual-connections",
+        "similarity": 0.35
       }
     ]
   },
@@ -8780,14 +8760,6 @@
       {
         "slug": "lvlms-large-vision-language-models",
         "similarity": 0.34238533445967273
-      },
-      {
-        "slug": "program-induction",
-        "similarity": 0.35
-      },
-      {
-        "slug": "agglomerative-clustering",
-        "similarity": 0.35
       }
     ]
   },
@@ -9162,11 +9134,11 @@
         "similarity": 0.5317533414136699
       },
       {
-        "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
+        "slug": "deepfakes",
         "similarity": 0.35
       },
       {
-        "slug": "open-weights",
+        "slug": "open-ended-ai",
         "similarity": 0.35
       }
     ]
@@ -9712,6 +9684,14 @@
       {
         "slug": "open-weights",
         "similarity": 0.359609086976565
+      },
+      {
+        "slug": "residual-connections",
+        "similarity": 0.35
+      },
+      {
+        "slug": "artefactual-autopoiesis",
+        "similarity": 0.35
       }
     ]
   },
@@ -9850,14 +9830,6 @@
       {
         "slug": "data-mining",
         "similarity": 0.3102594330879863
-      },
-      {
-        "slug": "spatial-autoencoder",
-        "similarity": 0.35
-      },
-      {
-        "slug": "mle-maximum-likelihood-estimation",
-        "similarity": 0.35
       }
     ]
   },
@@ -9930,14 +9902,6 @@
       {
         "slug": "deepfakes",
         "similarity": 0.21128352250181812
-      },
-      {
-        "slug": "observability",
-        "similarity": 0.35
-      },
-      {
-        "slug": "residual-connections",
-        "similarity": 0.35
       }
     ]
   },
@@ -10838,14 +10802,6 @@
       {
         "slug": "ood-out-of-distribution-behavior",
         "similarity": 0.5978470625645264
-      },
-      {
-        "slug": "gail-generative-adversarial-imitation-learning",
-        "similarity": 0.35
-      },
-      {
-        "slug": "jagged-frontier",
-        "similarity": 0.35
       }
     ]
   },
@@ -11614,7 +11570,7 @@
         "similarity": 0.41012086592876534
       },
       {
-        "slug": "out-of-distribution",
+        "slug": "ood-out-of-distribution-behavior",
         "similarity": 0.35
       },
       {
@@ -11698,6 +11654,14 @@
       {
         "slug": "agglomerative-clustering",
         "similarity": 0.5034312805365447
+      },
+      {
+        "slug": "lvlms-large-vision-language-models",
+        "similarity": 0.35
+      },
+      {
+        "slug": "sparse-coupling",
+        "similarity": 0.35
       }
     ]
   },
@@ -12865,7 +12829,7 @@
     "summary": "Technique used to combine multiple ranked lists of items, such as search engine results, into a single aggregated ranking that ideally reflects the consensus or most relevant ordering.",
     "generality": 0.575,
     "year": 2006,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "contextual-retrieval",
@@ -13352,7 +13316,7 @@
         "similarity": 0.5297512793138442
       },
       {
-        "slug": "open-weights",
+        "slug": "open-ended-ai",
         "similarity": 0.35
       },
       {
@@ -13670,14 +13634,6 @@
       {
         "slug": "few-shot",
         "similarity": 0.632869490351363
-      },
-      {
-        "slug": "adversarial-attacks",
-        "similarity": 0.35
-      },
-      {
-        "slug": "instantiation",
-        "similarity": 0.35
       }
     ]
   },
@@ -13906,6 +13862,14 @@
       {
         "slug": "lfms-liquid-foundation-models",
         "similarity": 0.31353550812516656
+      },
+      {
+        "slug": "autoregressive-generation",
+        "similarity": 0.35
+      },
+      {
+        "slug": "acps-access-control-policies",
+        "similarity": 0.35
       }
     ]
   },
@@ -13920,6 +13884,14 @@
       {
         "slug": "brainoware",
         "similarity": 0.32441845888322024
+      },
+      {
+        "slug": "speed-of-light-issues",
+        "similarity": 0.35
+      },
+      {
+        "slug": "red-queen-effect",
+        "similarity": 0.35
       }
     ]
   },
@@ -14036,7 +14008,7 @@
         "similarity": 0.28493320787905424
       },
       {
-        "slug": "bci-brain-computer-interface",
+        "slug": "wbe-whole-brain-emulation",
         "similarity": 0.35
       },
       {
@@ -14304,6 +14276,14 @@
       {
         "slug": "out-of-distribution",
         "similarity": 0.5978470625645264
+      },
+      {
+        "slug": "gail-generative-adversarial-imitation-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "jagged-frontier",
+        "similarity": 0.35
       }
     ]
   },
@@ -14318,6 +14298,14 @@
       {
         "slug": "data-mining",
         "similarity": 0.27417886021338256
+      },
+      {
+        "slug": "capsule-networks",
+        "similarity": 0.35
+      },
+      {
+        "slug": "boltzmann-machine",
+        "similarity": 0.35
       }
     ]
   },
@@ -14370,7 +14358,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "sampling-algorithm",
+        "slug": "model-compression",
         "similarity": 0.35
       }
     ]
@@ -14578,6 +14566,14 @@
       {
         "slug": "persuasive-system",
         "similarity": 0.23017104463626048
+      },
+      {
+        "slug": "acps-access-control-policies",
+        "similarity": 0.35
+      },
+      {
+        "slug": "mlops-machine-learning-operations",
+        "similarity": 0.35
       }
     ]
   },
@@ -14658,14 +14654,6 @@
       {
         "slug": "bgpt-byte-level-transformer",
         "similarity": 0.550032077146159
-      },
-      {
-        "slug": "saturating-non-linearities",
-        "similarity": 0.35
-      },
-      {
-        "slug": "bnns-biological-neural-networks",
-        "similarity": 0.35
       }
     ]
   },
@@ -14680,6 +14668,14 @@
       {
         "slug": "equivariance",
         "similarity": 0.42869640142724336
+      },
+      {
+        "slug": "random-walk",
+        "similarity": 0.35
+      },
+      {
+        "slug": "affective-computation",
+        "similarity": 0.35
       }
     ]
   },
@@ -14964,14 +14960,6 @@
       {
         "slug": "ln-layer-normalization",
         "similarity": 0.6600396507464954
-      },
-      {
-        "slug": "instantiation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "unhobbling",
-        "similarity": 0.35
       }
     ]
   },
@@ -15004,14 +14992,6 @@
       {
         "slug": "ppml-privacy-preserving-machine-learning",
         "similarity": 0.5529745050208479
-      },
-      {
-        "slug": "initialization",
-        "similarity": 0.35
-      },
-      {
-        "slug": "model-drift-minimization",
-        "similarity": 0.35
       }
     ]
   },
@@ -15256,6 +15236,14 @@
       {
         "slug": "dbn-deep-belief-network",
         "similarity": 0.3386091467796707
+      },
+      {
+        "slug": "enrichment",
+        "similarity": 0.35
+      },
+      {
+        "slug": "church-encoding",
+        "similarity": 0.35
       }
     ]
   },
@@ -15397,7 +15385,7 @@
     "summary": "Systems that can simulate a Turing machine's computational abilities.",
     "generality": 0.89,
     "year": 1936,
-    "component": false,
+    "component": true,
     "children": [
       {
         "slug": "utm-universal-turing-machine",
@@ -15486,6 +15474,14 @@
       {
         "slug": "autoformalization",
         "similarity": 0.14682253006910415
+      },
+      {
+        "slug": "feature-importance",
+        "similarity": 0.35
+      },
+      {
+        "slug": "scalar",
+        "similarity": 0.35
       }
     ]
   },
@@ -15704,6 +15700,14 @@
       {
         "slug": "internet-scale",
         "similarity": 0.33997809182812266
+      },
+      {
+        "slug": "secure-enclave",
+        "similarity": 0.35
+      },
+      {
+        "slug": "preference-model",
+        "similarity": 0.35
       }
     ]
   },
@@ -15776,7 +15780,7 @@
     "name": "Perceptron",
     "summary": "Model in neural networks designed to perform binary classification tasks by mimicking the decision-making process of a single neuron.",
     "generality": 0.799,
-    "year": 1957,
+    "year": 1958,
     "component": false,
     "children": [
       {
@@ -16320,14 +16324,6 @@
       {
         "slug": "perplexity",
         "similarity": 0.3412275405731552
-      },
-      {
-        "slug": "scaling-laws",
-        "similarity": 0.35
-      },
-      {
-        "slug": "adversarial-attacks",
-        "similarity": 0.35
       }
     ]
   },
@@ -16550,14 +16546,6 @@
       {
         "slug": "sparse-coupling",
         "similarity": 0.44698016557900366
-      },
-      {
-        "slug": "agglomerative-clustering",
-        "similarity": 0.35
-      },
-      {
-        "slug": "feature-design",
-        "similarity": 0.35
       }
     ]
   },
@@ -16590,10 +16578,6 @@
       {
         "slug": "algorithmic-bias",
         "similarity": 0.298191100028084
-      },
-      {
-        "slug": "equivariance",
-        "similarity": 0.35
       }
     ]
   },
@@ -17396,7 +17380,7 @@
         "similarity": 0.34423790000860993
       },
       {
-        "slug": "byte-level-state-space",
+        "slug": "bgpt-byte-level-transformer",
         "similarity": 0.35
       },
       {
@@ -17610,6 +17594,14 @@
       {
         "slug": "model-drift-minimization",
         "similarity": 0.6915859525804081
+      },
+      {
+        "slug": "federated-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "toy-diagram",
+        "similarity": 0.35
       }
     ]
   },
@@ -17792,14 +17784,6 @@
       {
         "slug": "instrumentation",
         "similarity": 0.3423913798411104
-      },
-      {
-        "slug": "mdo-multidomain-operations",
-        "similarity": 0.35
-      },
-      {
-        "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
-        "similarity": 0.35
       }
     ]
   },
@@ -18206,14 +18190,6 @@
       {
         "slug": "exocortex",
         "similarity": 0.2794992257627314
-      },
-      {
-        "slug": "speed-of-light-issues",
-        "similarity": 0.35
-      },
-      {
-        "slug": "red-queen-effect",
-        "similarity": 0.35
       }
     ]
   },
@@ -18414,6 +18390,14 @@
       {
         "slug": "ngram",
         "similarity": 0.3412275405731552
+      },
+      {
+        "slug": "hypothesis-testing",
+        "similarity": 0.35
+      },
+      {
+        "slug": "adversarial-debiasing",
+        "similarity": 0.35
       }
     ]
   },
@@ -18520,6 +18504,14 @@
       {
         "slug": "federated-training",
         "similarity": 0.597359984681523
+      },
+      {
+        "slug": "initialization",
+        "similarity": 0.35
+      },
+      {
+        "slug": "model-drift",
+        "similarity": 0.35
       }
     ]
   },
@@ -18798,6 +18790,14 @@
       {
         "slug": "adversarial-instructions",
         "similarity": 0.360861226391381
+      },
+      {
+        "slug": "perplexity",
+        "similarity": 0.35
+      },
+      {
+        "slug": "zero-shot-capability",
+        "similarity": 0.35
       }
     ]
   },
@@ -19264,6 +19264,14 @@
       {
         "slug": "byte-level-state-space",
         "similarity": 0.550032077146159
+      },
+      {
+        "slug": "saturating-non-linearities",
+        "similarity": 0.35
+      },
+      {
+        "slug": "bnns-biological-neural-networks",
+        "similarity": 0.35
       }
     ]
   },
@@ -19374,7 +19382,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "byte-level-state-space",
+        "slug": "bgpt-byte-level-transformer",
         "similarity": 0.35
       }
     ]
@@ -19752,14 +19760,6 @@
       {
         "slug": "open-ended-ai",
         "similarity": 0.359609086976565
-      },
-      {
-        "slug": "residual-connections",
-        "similarity": 0.35
-      },
-      {
-        "slug": "artefactual-autopoiesis",
-        "similarity": 0.35
       }
     ]
   },
@@ -20368,6 +20368,14 @@
       {
         "slug": "control-logic",
         "similarity": 0.24773400588843864
+      },
+      {
+        "slug": "lnn-liquid-neural-network",
+        "similarity": 0.35
+      },
+      {
+        "slug": "io-influence-operations",
+        "similarity": 0.35
       }
     ]
   },
@@ -20388,7 +20396,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "out-of-distribution",
+        "slug": "ood-out-of-distribution-behavior",
         "similarity": 0.35
       }
     ]
@@ -20600,14 +20608,6 @@
       {
         "slug": "on-the-fly-program-synthesis",
         "similarity": 0.2880350456357592
-      },
-      {
-        "slug": "fourier-analysis",
-        "similarity": 0.35
-      },
-      {
-        "slug": "emt-extended-mind-transformer",
-        "similarity": 0.35
       }
     ]
   },
@@ -20834,14 +20834,6 @@
       {
         "slug": "targeted-adversarial-examples",
         "similarity": 0.5173580934954126
-      },
-      {
-        "slug": "ngram",
-        "similarity": 0.35
-      },
-      {
-        "slug": "fsl-few-shot-learning",
-        "similarity": 0.35
       }
     ]
   },
@@ -20964,7 +20956,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "planetary-scale-system",
+        "slug": "hyperscalers",
         "similarity": 0.35
       }
     ]
@@ -21200,6 +21192,14 @@
       {
         "slug": "edge-model",
         "similarity": 0.2668334701747634
+      },
+      {
+        "slug": "greedy-decoding",
+        "similarity": 0.35
+      },
+      {
+        "slug": "capsule-networks",
+        "similarity": 0.35
       }
     ]
   },
@@ -21386,7 +21386,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "lfms-liquid-foundation-models",
+        "slug": "lnn-liquid-neural-network",
         "similarity": 0.35
       }
     ]
@@ -21534,14 +21534,6 @@
       {
         "slug": "spatial-intelligence",
         "similarity": 0.6350428312252288
-      },
-      {
-        "slug": "sampling-algorithm",
-        "similarity": 0.35
-      },
-      {
-        "slug": "interestingness",
-        "similarity": 0.35
       }
     ]
   },
@@ -21620,14 +21612,6 @@
       {
         "slug": "monte-carlo-estimation",
         "similarity": 0.3351061124647282
-      },
-      {
-        "slug": "greedy-decoding",
-        "similarity": 0.35
-      },
-      {
-        "slug": "spatial-autoencoder",
-        "similarity": 0.35
       }
     ]
   },
@@ -21968,6 +21952,14 @@
       {
         "slug": "instrumentation",
         "similarity": 0.31519145664206555
+      },
+      {
+        "slug": "io-influence-operations",
+        "similarity": 0.35
+      },
+      {
+        "slug": "deepfakes",
+        "similarity": 0.35
       }
     ]
   },
@@ -22088,11 +22080,11 @@
         "similarity": 0.2604282533253102
       },
       {
-        "slug": "turing-test",
+        "slug": "church-encoding",
         "similarity": 0.35
       },
       {
-        "slug": "bci-brain-computer-interface",
+        "slug": "wbe-whole-brain-emulation",
         "similarity": 0.35
       }
     ]
@@ -22134,6 +22126,14 @@
       {
         "slug": "tensor",
         "similarity": 0.3396780247184259
+      },
+      {
+        "slug": "godel-code",
+        "similarity": 0.35
+      },
+      {
+        "slug": "hypothesis-testing",
+        "similarity": 0.35
       }
     ]
   }
