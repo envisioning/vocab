@@ -11,7 +11,7 @@ interface FilterBarWrapperProps {
 
 export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortOption, setSortOption] = useState("g");
+  const [sortOption, setSortOption] = useState("zap");
   const pathname = usePathname();
   const isHomeRoute = pathname === "/";
 

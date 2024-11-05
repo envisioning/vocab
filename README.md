@@ -41,6 +41,10 @@ The entire index has been co-created with different AI tools in order to create 
 - The degree of similarity between each article pair is estimated in order to identify relationships between different concepts.
 - We use [TF-IDF](https://envisioning.io/vocab/tfidf-term-frequency-inverse-document-frequency) [vectorization](https://envisioning.io/vocab/vectorization) followed by [cosine similarity](https://envisioning.io/vocab/cosine-similarity/).
 
+## Names
+
+- Selected with `GPT-4o-mini`.
+
 ## Image
 
 - GPT4o: Receives title and summary,
