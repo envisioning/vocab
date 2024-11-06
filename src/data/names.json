@@ -5358,5 +5358,53 @@
   ],
   "reversal-curse": [
     "unknown"
+  ],
+  "artificial-neuron": [
+    "warren mcculloch",
+    "walter pitts",
+    "frank rosenblatt",
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart"
+  ],
+  "linear-separability": [
+    "marvin minsky",
+    "frank rosenblatt",
+    "geoffrey hinton",
+    "david rumelhart",
+    "michael i. jordan",
+    "vladimir vapnik",
+    "yann lecun"
+  ],
+  "automaton": [
+    "jacques de vaucanson",
+    "wolfgang von kempelen",
+    "charles babbage",
+    "ada lovelace",
+    "nikola tesla",
+    "george boole",
+    "alan turing"
+  ],
+  "mcp-neuron": [
+    "warren mcculloch",
+    "walter pitts",
+    "frank rosenblatt",
+    "john von neumann",
+    "david rumelhart",
+    "geoffrey hinton",
+    "yann lecun"
+  ],
+  "neurode": [
+    "unknown"
+  ],
+  "boolean": [
+    "george boole",
+    "augustus de morgan",
+    "claude shannon",
+    "john von neumann",
+    "alan turing",
+    "c. edwin baker",
+    "herbert simon"
   ]
 }

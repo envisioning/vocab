@@ -4,12 +4,21 @@ import logging
 from config import API_KEY
 import re
 from unidecode import unidecode  # You'll need to pip install unidecode
+import os
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Example configuration for CustomGPT API
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
+
+# Update the base directory path
+ARTICLES_DIR = "../content/articles/"
+
+def file_exists(slug):
+    """Check if a file with the given slug already exists."""
+    filepath = os.path.join(ARTICLES_DIR, f"{slug}.md")
+    return os.path.exists(filepath)
 
 # Function to get definition from CustomGPT API
 def get_definition_from_gpt(term):
@@ -89,12 +98,21 @@ def main():
         if title:
             # Create slugified filename from the full title
             slug = slugify(title)
-            filename = f"terms/{slug}.md"
+            
+            # Check if file already exists
+            if file_exists(slug):
+                logging.info(f"Article with slug '{slug}' already exists. Skipping.")
+                return
+            
+            filename = os.path.join(ARTICLES_DIR, f"{slug}.md")
             
             # Add slug to the metadata section with proper spacing
             metadata = parts[1].strip()
             definition = f"---\n{metadata}\nslug: {slug}\n---{parts[2]}"
         
+            # Ensure directory exists
+            os.makedirs(ARTICLES_DIR, exist_ok=True)
+            
             logging.info(f"Writing definition to file: {filename}")
             with open(filename, "w") as file:
                 file.write(definition)
