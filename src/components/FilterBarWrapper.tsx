@@ -5,15 +5,55 @@ import { usePathname } from "next/navigation";
 import { Article } from "@/types/article";
 import FilterBar from "./FilterBar";
 
+// Add title case helper at the top of the file
+const toTitleCase = (str: string) => {
+  return str
+    .split(" ")
+    .map((word) => {
+      // Handle special cases like "v." in names like "Quoc V. Le"
+      if (word.toLowerCase() === "v.") return "V.";
+      // Capitalize first letter of each word
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    })
+    .join(" ");
+};
+
+// Helper function to get authors cited in multiple articles
+const getFrequentAuthors = (namesData: Record<string, string[]>) => {
+  const authorFrequency: Record<string, number> = {};
+
+  // Count appearances of each author
+  Object.values(namesData).forEach((authors) => {
+    authors.forEach((author) => {
+      authorFrequency[author] = (authorFrequency[author] || 0) + 1;
+    });
+  });
+
+  // Filter authors with more than 2 citations and sort alphabetically
+  return Object.entries(authorFrequency)
+    .filter(([_, count]) => count > 2)
+    .map(([author]) => toTitleCase(author))
+    .sort((a, b) => a.localeCompare(b));
+};
+
 interface FilterBarWrapperProps {
   articles: Article[];
+  namesData: Record<string, string[]>;
 }
 
-export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
+export default function FilterBarWrapper({
+  articles,
+  namesData,
+}: FilterBarWrapperProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOption, setSortOption] = useState("zap");
   const pathname = usePathname();
   const isHomeRoute = pathname === "/";
+
+  const frequentAuthors = useMemo(
+    () => getFrequentAuthors(namesData),
+    [namesData]
+  );
 
   const handleSearch = (value: string) => {
     setSearchTerm(value);
@@ -51,26 +91,40 @@ export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
     return 0;
   };
 
-  const filteredArticles = useMemo(() => {
-    if (!searchTerm) return articles;
+  const filteredResults = useMemo(() => {
+    if (!searchTerm) return { articles, authors: frequentAuthors };
 
     const searchLower = searchTerm.toLowerCase();
-    return articles
+
+    // Filter articles
+    const filteredArticles = articles
       .filter((article) => {
         const titleLower = article.title.toLowerCase();
         return titleLower.includes(searchLower);
       })
       .sort((a, b) => {
-        // First sort by search priority
         const priorityA = getSearchPriority(a.title, searchTerm);
         const priorityB = getSearchPriority(b.title, searchTerm);
         if (priorityB !== priorityA) {
           return priorityB - priorityA;
         }
-        // If priorities are equal, sort alphabetically
         return a.title.localeCompare(b.title);
       });
-  }, [articles, searchTerm]);
+
+    // Filter authors
+    const filteredAuthors = frequentAuthors
+      .filter((author) => author.toLowerCase().includes(searchLower))
+      .sort((a, b) => {
+        const priorityA = getSearchPriority(a, searchTerm);
+        const priorityB = getSearchPriority(b, searchTerm);
+        if (priorityB !== priorityA) {
+          return priorityB - priorityA;
+        }
+        return a.localeCompare(b);
+      });
+
+    return { articles: filteredArticles, authors: filteredAuthors };
+  }, [articles, searchTerm, frequentAuthors]);
 
   return (
     <FilterBar
@@ -79,7 +133,8 @@ export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
       sortOption={sortOption}
       onSortChange={handleSort}
       allArticles={articles}
-      filteredArticles={filteredArticles}
+      filteredArticles={filteredResults.articles}
+      filteredAuthors={filteredResults.authors}
       isHomeRoute={isHomeRoute}
       getSearchPriority={getSearchPriority}
     />

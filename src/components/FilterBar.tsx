@@ -16,6 +16,7 @@ interface FilterBarProps {
   isHomeRoute: boolean;
   getSearchPriority: (title: string, searchTerm: string) => number;
   filteredArticles: Article[];
+  filteredAuthors: string[];
 }
 
 export default function FilterBar({
@@ -27,6 +28,7 @@ export default function FilterBar({
   isHomeRoute,
   getSearchPriority,
   filteredArticles,
+  filteredAuthors,
 }: FilterBarProps) {
   const router = useRouter();
   const pathname = usePathname();
@@ -55,30 +57,58 @@ export default function FilterBar({
     setShowResults(false);
   };
 
+  // Helper to determine if current selection is an author
+  const isAuthorSelected = (index: number) => {
+    return index >= 0 && index < filteredAuthors.length;
+  };
+
+  // Helper to determine if current selection is an article
+  const isArticleSelected = (index: number) => {
+    return (
+      index >= filteredAuthors.length &&
+      index < filteredAuthors.length + filteredArticles.length
+    );
+  };
+
+  // Get the article index when an article is selected
+  const getArticleIndex = (index: number) => {
+    return index - filteredAuthors.length;
+  };
+
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    const totalItems = filteredAuthors.length + filteredArticles.length;
+
     switch (e.key) {
       case "ArrowDown":
         e.preventDefault();
-        setSelectedIndex((prev) =>
-          prev < filteredArticles.length - 1 ? prev + 1 : prev
-        );
+        setSelectedIndex((prev) => (prev < totalItems - 1 ? prev + 1 : prev));
         setShowResults(true);
         break;
+
       case "ArrowUp":
         e.preventDefault();
         setSelectedIndex((prev) => (prev > -1 ? prev - 1 : -1));
         break;
+
       case "Enter":
         e.preventDefault();
-        if (filteredArticles.length > 0) {
-          // If no item is selected, use the first item
-          const selected =
-            selectedIndex >= 0
-              ? filteredArticles[selectedIndex]
-              : filteredArticles[0];
-          handleSelection(selected);
+        if (selectedIndex >= 0) {
+          if (isAuthorSelected(selectedIndex)) {
+            // Handle author selection
+            const author = filteredAuthors[selectedIndex];
+            router.push(
+              `/contributors/${author.toLowerCase().replace(/\s+/g, "-")}`
+            );
+            setShowResults(false);
+            setSelectedIndex(-1);
+          } else if (isArticleSelected(selectedIndex)) {
+            // Handle article selection
+            const articleIndex = getArticleIndex(selectedIndex);
+            handleSelection(filteredArticles[articleIndex]);
+          }
         }
         break;
+
       case "Escape":
         e.preventDefault();
         setShowResults(false);
@@ -219,21 +249,55 @@ export default function FilterBar({
 
               {showResults && searchTerm && (
                 <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
-                  {filteredArticles.map((article, index) => (
-                    <Link
-                      key={article.slug}
-                      href={`/${article.slug}`}
-                      className={`block px-4 py-2 hover:bg-gray-100 ${
-                        index === selectedIndex ? "bg-blue-50" : ""
-                      }`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        handleSelection(article);
-                      }}
-                    >
-                      {article.title}
-                    </Link>
-                  ))}
+                  {filteredAuthors.length > 0 && (
+                    <div className="border-b">
+                      <div className="px-4 py-2 text-sm text-gray-500">
+                        Authors
+                      </div>
+                      {filteredAuthors.map((author, index) => (
+                        <Link
+                          key={author}
+                          href={`/contributors/${author
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
+                          className={`block px-4 py-2 hover:bg-gray-100 ${
+                            index === selectedIndex ? "bg-blue-50" : ""
+                          }`}
+                          onClick={() => {
+                            setShowResults(false);
+                            setSelectedIndex(-1);
+                          }}
+                        >
+                          {author}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+
+                  {filteredArticles.length > 0 && (
+                    <div>
+                      <div className="px-4 py-2 text-sm text-gray-500">
+                        Articles
+                      </div>
+                      {filteredArticles.map((article, index) => (
+                        <Link
+                          key={article.slug}
+                          href={`/${article.slug}`}
+                          className={`block px-4 py-2 hover:bg-gray-100 ${
+                            index + filteredAuthors.length === selectedIndex
+                              ? "bg-blue-50"
+                              : ""
+                          }`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handleSelection(article);
+                          }}
+                        >
+                          {article.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </form>

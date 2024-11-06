@@ -6,6 +6,7 @@ import { getArticles } from "@/lib/getArticles";
 
 import PlausibleProvider from "next-plausible";
 import { Metadata } from "next";
+import namesData from "@/data/names.json";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,7 +47,7 @@ export default async function RootLayout({
         <PlausibleProvider domain="envisioning.io">
           <div className="flex flex-col min-h-screen">
             <Suspense fallback={<div>Loading...</div>}>
-              <FilterBarWrapper articles={articles} />
+              <FilterBarWrapper articles={articles} namesData={namesData} />
             </Suspense>
             <main className="flex-grow container mx-auto">{children}</main>
           </div>
