@@ -5406,5 +5406,14 @@
     "alan turing",
     "c. edwin baker",
     "herbert simon"
+  ],
+  "loss-landscape": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "james martens",
+    "nitish srivastava",
+    "dmitriy kolesnikov",
+    "unknown"
   ]
 }

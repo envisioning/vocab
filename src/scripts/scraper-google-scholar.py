@@ -137,7 +137,16 @@ class ScholarScraper:
             try:
                 self._random_delay()
                 self.update_user_agent()
-                response = self.session.get(self.base_url, params=params)
+                
+                # Construct the permalink
+                query_string = urllib.parse.urlencode(params)
+                original_url = f"{self.base_url}?{query_string}"
+                
+                # Add the proxy prefix
+                proxied_url = f"https://r.jina.ai/{original_url}"
+                
+                # Make the request to the proxied URL
+                response = self.session.get(proxied_url)
                 
                 if response.status_code == 429:  # Too Many Requests
                     logging.warning(f"Rate limit response: {response.text}")
