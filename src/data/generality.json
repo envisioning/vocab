@@ -8278,5 +8278,41 @@
     0.5,
     0.5,
     0.5
+  ],
+  "mcts-monte-carlo-tree-search": [
+    0.75,
+    0.725,
+    0.7,
+    0.675,
+    0.65,
+    0.625,
+    0.6
+  ],
+  "asic-application-specific-integrated-circuit": [
+    0.72,
+    0.7,
+    0.68,
+    0.66,
+    0.64,
+    0.62,
+    0.6
+  ],
+  "predictive-processing": [
+    0.85,
+    0.825,
+    0.8,
+    0.775,
+    0.75,
+    0.725,
+    0.7
+  ],
+  "consciousness-level": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
   ]
 }

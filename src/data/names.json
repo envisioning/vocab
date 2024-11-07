@@ -5415,5 +5415,41 @@
     "nitish srivastava",
     "dmitriy kolesnikov",
     "unknown"
+  ],
+  "mcts-monte-carlo-tree-search": [
+    "rémi coulom",
+    "martin müller",
+    "cameron browne",
+    "michael johanson",
+    "neil burch",
+    "michael kearns",
+    "michael genesereth"
+  ],
+  "asic-application-specific-integrated-circuit": [
+    "robert h. dennard",
+    "carver mead",
+    "andrew s. grove",
+    "john l. hennessy",
+    "david a. patterson",
+    "mark horowitz",
+    "unknown"
+  ],
+  "predictive-processing": [
+    "karl friston",
+    "andy clark",
+    "jakob hohwy",
+    "thomas metzinger",
+    "hohwy",
+    "clark",
+    "friston"
+  ],
+  "consciousness-level": [
+    "david chalmers",
+    "daniel dennett",
+    "john searle",
+    "thomas metzinger",
+    "marvin minsky",
+    "hubert dreyfus",
+    "roger penrose"
   ]
 }
