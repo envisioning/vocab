@@ -25,7 +25,10 @@ const getFrequentAuthors = (namesData: Record<string, string[]>) => {
   // Count appearances of each author
   Object.values(namesData).forEach((authors) => {
     authors.forEach((author) => {
-      authorFrequency[author] = (authorFrequency[author] || 0) + 1;
+      // Skip 'Unknown' authors
+      if (author.toLowerCase() !== "unknown") {
+        authorFrequency[author] = (authorFrequency[author] || 0) + 1;
+      }
     });
   });
 
