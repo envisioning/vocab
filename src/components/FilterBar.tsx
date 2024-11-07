@@ -174,7 +174,7 @@ export default function FilterBar({
                 <span className="font-medium text-gray-900">Envisioning /</span>
               </Link>
 
-              <Link href="/vocab" className="flex items-center gap-2">
+              <Link href="/" className="flex items-center gap-2">
                 <span className="font-medium text-gray-900 underline">
                   Vocab
                 </span>
