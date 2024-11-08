@@ -5451,5 +5451,38 @@
     "marvin minsky",
     "hubert dreyfus",
     "roger penrose"
+  ],
+  "prediction-error": [
+    "richard sutton",
+    "andrew barto",
+    "david h. wolpert",
+    "peter dayan",
+    "karl friston",
+    "yoshua bengio",
+    "geoffrey hinton"
+  ],
+  "prediction": [
+    "john von neumann",
+    "alan turing",
+    "herbert simon",
+    "george box",
+    "peter w. mccullough",
+    "judea pearl",
+    "nate silver"
+  ],
+  "torment-nexus": [
+    "unknown"
+  ],
+  "gradient-noise-scale": [
+    "unknown"
+  ],
+  "emotional-integrity": [
+    "unknown"
+  ],
+  "cerebral-organoids": [
+    "madeline a. lancaster",
+    "juergen knoblich",
+    "yoshiki sasai",
+    "paul t."
   ]
 }
