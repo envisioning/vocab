@@ -165,12 +165,15 @@ def assign_ids(hierarchy, terms):
     return id_mapping
 
 def load_additional_data():
-    """Load data from generality.json, years.json, names.json, and impact.json"""
+    """Load data from generality.json, years.json, names.json, impact.json, complexity.json, popularity.json, and safety.json"""
     data = {
         'generality': {},
         'years': {},
         'names': {},
-        'impact': {}
+        'impact': {},
+        'complexity': {},  # Added
+        'popularity': {},  # Added
+        'safety': {}      # Added
     }
     
     try:
@@ -200,6 +203,28 @@ def load_additional_data():
         logging.info("Successfully loaded impact.json")
     except Exception as e:
         logging.error(f"Error loading impact.json: {str(e)}")
+
+    # Add new data files
+    try:
+        with open('../data/complexity.json', 'r') as f:
+            data['complexity'] = json.load(f)
+        logging.info("Successfully loaded complexity.json")
+    except Exception as e:
+        logging.error(f"Error loading complexity.json: {str(e)}")
+
+    try:
+        with open('../data/popularity.json', 'r') as f:
+            data['popularity'] = json.load(f)
+        logging.info("Successfully loaded popularity.json")
+    except Exception as e:
+        logging.error(f"Error loading popularity.json: {str(e)}")
+
+    try:
+        with open('../data/safety.json', 'r') as f:
+            data['safety'] = json.load(f)
+        logging.info("Successfully loaded safety.json")
+    except Exception as e:
+        logging.error(f"Error loading safety.json: {str(e)}")
     
     return data
 
@@ -230,6 +255,30 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
             else:
                 logging.warning(f"No impact found for term: {term}")
 
+            # Get complexity if available
+            complexity_avg = None
+            if id_mapping[term] in additional_data['complexity']:
+                json_scores = additional_data['complexity'][id_mapping[term]]
+                complexity_avg = round(sum(json_scores) / len(json_scores), 3)
+            else:
+                logging.warning(f"No complexity found for term: {term}")
+
+            # Get popularity if available
+            popularity_avg = None
+            if id_mapping[term] in additional_data['popularity']:
+                json_scores = additional_data['popularity'][id_mapping[term]]
+                popularity_avg = round(sum(json_scores) / len(json_scores), 3)
+            else:
+                logging.warning(f"No popularity found for term: {term}")
+
+            # Get safety if available
+            safety_avg = None
+            if id_mapping[term] in additional_data['safety']:
+                json_scores = additional_data['safety'][id_mapping[term]]
+                safety_avg = round(sum(json_scores) / len(json_scores), 3)
+            else:
+                logging.warning(f"No safety found for term: {term}")
+
             # Get year if available
             year = additional_data['years'].get(id_mapping[term])
 
@@ -241,7 +290,10 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 "name": term,
                 "summary": terms[term]['summary'],
                 "generality": generality_avg,
-                "impact": impact_avg,  # Added impact field
+                "impact": impact_avg,
+                "complexity": complexity_avg,  # Added
+                "popularity": popularity_avg,  # Added
+                "safety": safety_avg,         # Added
                 "year": year,
                 "component": has_component,
                 "children": [
@@ -256,7 +308,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
         except Exception as e:
             logging.error(f"Error processing term {term}: {str(e)}")
 
-    # Handle leaf nodes
+    # Handle leaf nodes with same updates
     for term in id_mapping.keys():
         if term not in hierarchy:
             try:
@@ -276,6 +328,30 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 else:
                     logging.warning(f"No impact found for leaf term: {term}")
 
+                # Get complexity if available
+                complexity_avg = None
+                if id_mapping[term] in additional_data['complexity']:
+                    json_scores = additional_data['complexity'][id_mapping[term]]
+                    complexity_avg = round(sum(json_scores) / len(json_scores), 3)
+                else:
+                    logging.warning(f"No complexity found for leaf term: {term}")
+
+                # Get popularity if available
+                popularity_avg = None
+                if id_mapping[term] in additional_data['popularity']:
+                    json_scores = additional_data['popularity'][id_mapping[term]]
+                    popularity_avg = round(sum(json_scores) / len(json_scores), 3)
+                else:
+                    logging.warning(f"No popularity found for leaf term: {term}")
+
+                # Get safety if available
+                safety_avg = None
+                if id_mapping[term] in additional_data['safety']:
+                    json_scores = additional_data['safety'][id_mapping[term]]
+                    safety_avg = round(sum(json_scores) / len(json_scores), 3)
+                else:
+                    logging.warning(f"No safety found for leaf term: {term}")
+
                 # Get year if available
                 year = additional_data['years'].get(id_mapping[term])
 
@@ -287,7 +363,10 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                     "name": term,
                     "summary": terms[term]['summary'],
                     "generality": generality_avg,
-                    "impact": impact_avg,  # Added impact field
+                    "impact": impact_avg,
+                    "complexity": complexity_avg,  # Added
+                    "popularity": popularity_avg,  # Added
+                    "safety": safety_avg,         # Added
                     "year": year,
                     "component": has_component,
                     "children": []

@@ -304,11 +304,11 @@ export default function FilterBar({
 
             <div className="hidden sm:flex items-center gap-4">
               <Link
-                href="/map"
+                href="/timeline"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
-                aria-label="Map"
+                aria-label="Timeline"
               >
-                Map
+                Timeline
               </Link>
 
               <Link

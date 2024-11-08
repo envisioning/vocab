@@ -71,9 +71,13 @@ The entire index has been co-created with different AI tools in order to create 
 
 - Experimentental timeline view in the shape of a sunflower.
 
+## [Grid](/vocab/grid/)
+
+- Experimentental quadrant view of metadata.
+
 ---
 
-# Learn more about ML [WIP]
+# Learn more about ML
 
 - https://fleuret.org/public/lbdl.pdf
 - https://youtu.be/h0e2HAPTGF4
