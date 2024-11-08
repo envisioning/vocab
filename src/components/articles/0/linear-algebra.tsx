@@ -51,12 +51,24 @@ const ACCORDION_ITEMS: AccordionItem[] = [
 const LinearAlgebraVisualizer: React.FC<ComponentProps> = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false)
   const [showTooltip, setShowTooltip] = useState<string>("")
+  const [windowWidth, setWindowWidth] = useState<number>(0)
   const [vectors, setVectors] = useState<VectorState[]>([
     { x: 1, y: 0.5, color: "#3B82F6", label: "v₁" },
     { x: 0.5, y: 1, color: "#22C55E", label: "v₂" }
   ]);
   const [frame, setFrame] = useState<number>(0)
   const [openAccordion, setOpenAccordion] = useState<number | null>(null)
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth)
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   useEffect(() => {
     let animationFrame: number
@@ -95,7 +107,6 @@ const LinearAlgebraVisualizer: React.FC<ComponentProps> = () => {
 
   return (
     <div className="flex flex-col items-center p-4 sm:p-8 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl space-y-4 sm:space-y-6 shadow-xl">
-      {/* Previous content remains the same until the helper section */}
       <div className="flex items-center space-x-3">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-500 dark:from-blue-400 dark:to-green-400">
           Vector Transformation Studio
@@ -110,7 +121,6 @@ const LinearAlgebraVisualizer: React.FC<ComponentProps> = () => {
       <div className="relative w-[50vw] h-[50vw] max-w-[400px] max-h-[400px] border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-green-50/30 dark:from-blue-900/20 dark:to-green-900/20" />
         
-        {/* Grid lines */}
         {Array.from({ length: 21 }).map((_, i) => (
           <div key={`grid-${i}`} className="grid-lines">
             <div className="absolute border-gray-100 dark:border-gray-700 h-full" style={{left: `${i * scale}px`, width: '1px'}} />
@@ -118,11 +128,9 @@ const LinearAlgebraVisualizer: React.FC<ComponentProps> = () => {
           </div>
         ))}
 
-        {/* Axes */}
         <div className="absolute top-0 left-1/2 h-full w-[2px] bg-gray-300 dark:bg-gray-600" />
         <div className="absolute left-0 top-1/2 w-full h-[2px] bg-gray-300 dark:bg-gray-600" />
 
-        {/* Vectors with Labels */}
         {transformedVectors.map((vector, index) => (
           <div key={index} className="absolute" style={{
             left: `calc(50% + ${vector.x * scale}px)`,
@@ -130,7 +138,7 @@ const LinearAlgebraVisualizer: React.FC<ComponentProps> = () => {
           }}>
             <div className="absolute h-[3px] origin-left transform shadow-sm"
               style={{
-                width: `${window.innerWidth < 600 ? Math.min(Math.sqrt(Math.pow(vector.x * scale, 2) + Math.pow(vector.y * scale, 2)), 80) : Math.sqrt(Math.pow(vector.x * scale, 2) + Math.pow(vector.y * scale, 2))}px`,
+                width: `${windowWidth < 600 ? Math.min(Math.sqrt(Math.pow(vector.x * scale, 2) + Math.pow(vector.y * scale, 2)), 80) : Math.sqrt(Math.pow(vector.x * scale, 2) + Math.pow(vector.y * scale, 2))}px`,
                 background: vector.color,
                 transform: `rotate(${Math.atan2(-vector.y, vector.x)}rad)`
               }}
@@ -173,9 +181,7 @@ const LinearAlgebraVisualizer: React.FC<ComponentProps> = () => {
         </div>
       </div>
 
-      {/* AI Connection Helper Section with Accordions */}
       <div className="mt-4 sm:mt-6 w-full max-w-2xl px-2 sm:px-4">
-        
         <div className="mt-4 space-y-2 sm:space-y-3">
           {ACCORDION_ITEMS.map((item) => (
             <div 
