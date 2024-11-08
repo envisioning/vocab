@@ -9,7 +9,8 @@ type MetricKey =
   | "impact"
   | "complexity"
   | "popularity"
-  | "safety";
+  | "safety"
+  | "year";
 
 interface GridMapProps {
   nodes: Node[];
@@ -60,10 +61,22 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return colors[decade] || "#aec7e8";
   };
 
-  // Memoize the filtered nodes
+  // Move normalizeYear helper function here, before it's used
+  const normalizeYear = (year: number | null) => {
+    if (!year) return 0;
+    const baseYear = 1940;
+    const currentYear = new Date().getFullYear();
+    if (year <= baseYear) return 0;
+    return Math.min((year - baseYear) / (currentYear - baseYear), 1);
+  };
+
+  // Now the nodes useMemo can use normalizeYear
   const nodes = useMemo(() => {
     return rawNodes
       .filter((node) => {
+        if (xAxis === "year" || yAxis === "year") {
+          return node.year != null;
+        }
         const xValue = node[xAxis];
         const yValue = node[yAxis];
         return (
@@ -74,6 +87,10 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           yValue !== undefined
         );
       })
+      .map((node) => ({
+        ...node,
+        normalizedYear: normalizeYear(node.year),
+      }))
       .sort((a, b) => (a.year || 0) - (b.year || 0));
   }, [rawNodes, xAxis, yAxis]);
 
@@ -95,6 +112,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     "complexity",
     "popularity",
     "safety",
+    "year",
   ];
 
   useEffect(() => {
@@ -266,8 +284,10 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .append("g")
       .attr("class", "node cursor-pointer")
       .attr("transform", (d) => {
-        const x = xScale(d[xAxis] as number);
-        const y = yScale(d[yAxis] as number);
+        const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
+        const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
+        const x = xScale(xValue as number);
+        const y = yScale(yValue as number);
         return `translate(${x},${y})`;
       });
 
@@ -285,13 +305,6 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         if (highlightedDecade === null) return 1;
         const nodeDecade = Math.floor((d.year || 0) / 10) * 10;
         return nodeDecade === highlightedDecade ? 1 : 0.2;
-      });
-
-    // Add tooltip behavior
-    nodeElements
-      .on("click", (event, d) => {
-        event.stopPropagation();
-        router.push(`/${d.slug}`);
       })
       .on("mouseenter", (event, d) => {
         const [x, y] = d3.pointer(event, svg.node());
@@ -305,7 +318,13 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           y,
         });
       })
-      .on("mouseleave", () => setTooltipContent(null));
+      .on("mouseleave", () => {
+        setTooltipContent(null);
+      })
+      .on("click", (event, d) => {
+        event.stopPropagation();
+        router.push(`/${d.slug}`);
+      });
 
     // Apply initial zoom transform
     const initialScale = 0.8;
@@ -316,6 +335,17 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         .scale(initialScale)
         .translate(-width / 2, -height / 2)
     );
+
+    // Add background rect for mouse events
+    svg
+      .append("rect")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("fill", "transparent")
+      .lower()
+      .on("mousemove", () => {
+        setTooltipContent(null);
+      });
 
     setIsLoading(false);
 
@@ -348,7 +378,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           <div className="font-bold mb-1">{tooltipContent.title}</div>
           {tooltipContent.year && (
             <div className="text-gray-600 mb-1">
-              Year: {tooltipContent.year}
+              Year: {Math.round(tooltipContent.year)}
             </div>
           )}
           <div className="text-gray-600 mb-1">
