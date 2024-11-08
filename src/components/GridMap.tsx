@@ -88,6 +88,15 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return decades;
   };
 
+  // Add this array of metrics
+  const metrics: MetricKey[] = [
+    "generality",
+    "impact",
+    "complexity",
+    "popularity",
+    "safety",
+  ];
+
   useEffect(() => {
     if (!svgRef.current || nodes.length === 0) return;
 
@@ -182,19 +191,59 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .attr("transform", `translate(${margin.left},0)`)
       .call(yAxisGen);
 
-    // Add axis labels
-    g.append("text")
-      .attr("x", width / 2)
-      .attr("y", height - 10)
-      .attr("text-anchor", "middle")
-      .text(xAxis.charAt(0).toUpperCase() + xAxis.slice(1));
+    // Update the axis labels to be clickable
+    // Replace the existing axis label code with:
 
-    g.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("x", -height / 2)
-      .attr("y", 15)
+    // X-axis labels
+    g.append("g")
+      .attr("class", "x-axis-labels")
+      .attr("transform", `translate(0,${height - 5})`)
+      .selectAll("text")
+      .data(metrics)
+      .enter()
+      .append("text")
+      .attr(
+        "x",
+        (_, i) =>
+          margin.left +
+          ((width - margin.left - margin.right) * (i + 0.5)) / metrics.length
+      )
       .attr("text-anchor", "middle")
-      .text(yAxis.charAt(0).toUpperCase() + yAxis.slice(1));
+      .attr("class", "cursor-pointer")
+      .style("text-decoration", (d) => (d === xAxis ? "underline" : "none"))
+      .style("fill", (d) => (d === yAxis ? "#9CA3AF" : "#000000"))
+      .style("cursor", (d) => (d === yAxis ? "not-allowed" : "pointer"))
+      .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
+      .on("click", (_, d) => {
+        if (d !== yAxis) {
+          setXAxis(d);
+        }
+      });
+
+    // Y-axis labels - moved further left
+    g.append("g")
+      .attr("class", "y-axis-labels")
+      .selectAll("text")
+      .data(metrics)
+      .enter()
+      .append("text")
+      .attr("transform", (_, i) => {
+        const y =
+          margin.top +
+          ((height - margin.top - margin.bottom) * (i + 0.5)) / metrics.length;
+        return `translate(${10},${y}) rotate(-90)`;
+      })
+      .attr("text-anchor", "middle")
+      .attr("class", "cursor-pointer")
+      .style("text-decoration", (d) => (d === yAxis ? "underline" : "none"))
+      .style("fill", (d) => (d === xAxis ? "#9CA3AF" : "#000000"))
+      .style("cursor", (d) => (d === xAxis ? "not-allowed" : "pointer"))
+      .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
+      .on("click", (_, d) => {
+        if (d !== xAxis) {
+          setYAxis(d);
+        }
+      });
 
     // Create zoom behavior
     const zoom = d3
@@ -274,7 +323,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return () => {
       svg.selectAll("*").remove();
     };
-  }, [nodes, xAxis, yAxis, highlightedDecade, router]);
+  }, [nodes, xAxis, yAxis, highlightedDecade, router, metrics]);
 
   return (
     <div className="absolute inset-0">
@@ -313,39 +362,6 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
 
       {/* Bottom controls container */}
       <div className="absolute bottom-0 left-0 right-0 bg-white/80">
-        {/* Axis selectors */}
-        <div className="p-2 flex justify-center items-center space-x-4 border-b border-gray-200">
-          <div className="flex items-center space-x-2">
-            <label className="text-sm text-gray-600">X Axis:</label>
-            <select
-              value={xAxis}
-              onChange={(e) => setXAxis(e.target.value as MetricKey)}
-              className="text-sm border rounded p-1"
-            >
-              <option value="generality">Generality</option>
-              <option value="impact">Impact</option>
-              <option value="complexity">Complexity</option>
-              <option value="popularity">Popularity</option>
-              <option value="safety">Safety</option>
-            </select>
-          </div>
-          <div className="flex items-center space-x-2">
-            <label className="text-sm text-gray-600">Y Axis:</label>
-            <select
-              value={yAxis}
-              onChange={(e) => setYAxis(e.target.value as MetricKey)}
-              className="text-sm border rounded p-1"
-            >
-              <option value="generality">Generality</option>
-              <option value="impact">Impact</option>
-              <option value="complexity">Complexity</option>
-              <option value="popularity">Popularity</option>
-              <option value="safety">Safety</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Decade Legend */}
         <div className="p-4 flex justify-center items-center">
           <div className="flex items-center space-x-4">
             {getDecades().map((decade) => (
