@@ -183,9 +183,9 @@ export default function FilterBar({
 
             <div className="flex items-center gap-4 sm:hidden">
               <Link
-                href="/map"
+                href="/timeline"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
-                aria-label="Map"
+                aria-label="Timeline"
               >
                 Map
               </Link>
