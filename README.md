@@ -73,4 +73,11 @@ The entire index has been co-created with different AI tools in order to create 
 
 ---
 
+# Learn more about ML [WIP]
+
+- https://fleuret.org/public/lbdl.pdf
+- https://youtu.be/h0e2HAPTGF4
+- https://aman.ai/primers/ai/top-30-papers/
+- https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/
+
 #### (cc) [Envisioning](https://envisioning.io)
