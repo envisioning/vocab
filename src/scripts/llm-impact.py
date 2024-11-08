@@ -36,7 +36,7 @@ def calculate_importance_score(title: str, summary: str) -> list[float]:
         "from 0 to 1, where:\n"
         "- Scores near 1.0 are for concepts with massive potential societal impact (e.g., 'AGI', 'Large Language Models')\n"
         "- Scores near 0.0 are for concepts with minimal direct societal impact (e.g., 'Specific Optimization Techniques')\n"
-        "Consider factors like: economic impact, social changes, ethical implications, and potential risks/benefits to society.\n"
+        "Consider factors like: economic impact, social changes, ethical implications, and potential risks/benefits to society. Avoid responding 0.5 when you don't know - consider how this concept stacks against all other AI concepts in your knowledge.\n"
         "Return exactly 7 scores in a JSON array format with 3 decimal places each, like this: [0.950, 0.925, 0.900, 0.875, 0.850, 0.825, 0.800]\n\n"
         f"Title: {title}\n"
         f"Summary: {summary}\n"
@@ -51,7 +51,7 @@ def calculate_importance_score(title: str, summary: str) -> list[float]:
     data = {
         "model": "gpt-4o-mini",
         "messages": [
-            {"role": "system", "content": "You are an AI expert that scores terms based on their potential societal impact. Always return exactly 7 scores in a JSON array."},
+            {"role": "system", "content": "You are an AI expert that scores terms based on their potential societal impact. Avoid responding 0.5 when you don't know - consider how this concept stacks against all other AI concepts in your knowledge before judging. Always return exactly 7 scores in a JSON array."},
             {"role": "user", "content": prompt}
         ],
         "max_tokens": 50,

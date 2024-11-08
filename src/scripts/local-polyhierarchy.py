@@ -165,11 +165,12 @@ def assign_ids(hierarchy, terms):
     return id_mapping
 
 def load_additional_data():
-    """Load data from generality.json, years.json, and names.json"""
+    """Load data from generality.json, years.json, names.json, and impact.json"""
     data = {
         'generality': {},
         'years': {},
-        'names': {}
+        'names': {},
+        'impact': {}
     }
     
     try:
@@ -192,6 +193,13 @@ def load_additional_data():
         logging.info("Successfully loaded names.json")
     except Exception as e:
         logging.error(f"Error loading names.json: {str(e)}")
+
+    try:
+        with open('../data/impact.json', 'r') as f:
+            data['impact'] = json.load(f)
+        logging.info("Successfully loaded impact.json")
+    except Exception as e:
+        logging.error(f"Error loading impact.json: {str(e)}")
     
     return data
 
@@ -214,6 +222,14 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
             else:
                 logging.warning(f"No generality found for term: {term}")
 
+            # Get impact if available
+            impact_avg = None
+            if id_mapping[term] in additional_data['impact']:
+                json_scores = additional_data['impact'][id_mapping[term]]
+                impact_avg = round(sum(json_scores) / len(json_scores), 3)
+            else:
+                logging.warning(f"No impact found for term: {term}")
+
             # Get year if available
             year = additional_data['years'].get(id_mapping[term])
 
@@ -225,6 +241,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 "name": term,
                 "summary": terms[term]['summary'],
                 "generality": generality_avg,
+                "impact": impact_avg,  # Added impact field
                 "year": year,
                 "component": has_component,
                 "children": [
@@ -251,6 +268,14 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 else:
                     logging.warning(f"No generality found for leaf term: {term}")
 
+                # Get impact if available
+                impact_avg = None
+                if id_mapping[term] in additional_data['impact']:
+                    json_scores = additional_data['impact'][id_mapping[term]]
+                    impact_avg = round(sum(json_scores) / len(json_scores), 3)
+                else:
+                    logging.warning(f"No impact found for leaf term: {term}")
+
                 # Get year if available
                 year = additional_data['years'].get(id_mapping[term])
 
@@ -262,6 +287,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                     "name": term,
                     "summary": terms[term]['summary'],
                     "generality": generality_avg,
+                    "impact": impact_avg,  # Added impact field
                     "year": year,
                     "component": has_component,
                     "children": []

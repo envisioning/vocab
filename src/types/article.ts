@@ -28,6 +28,7 @@ export interface Node {
   title: string;
   summary?: string;
   generality?: number;
+  impact?: number;
   children: NodeRelation[];
   parents?: NodeRelation[];
   x?: number;
