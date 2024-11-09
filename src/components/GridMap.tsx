@@ -169,17 +169,13 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       })
       .attr("text-anchor", "middle")
       .attr("class", (d) =>
-        d === yAxis ? "cursor-not-allowed text-gray-300" : "cursor-pointer"
+        d === yAxis
+          ? "cursor-not-allowed text-gray-300"
+          : "cursor-pointer transition-colors duration-200"
       )
-      .style("text-decoration", (d) => (d === xAxis ? "underline" : "none"))
-      .style("fill", (d) => {
-        if (d === yAxis) return "#d1d5db"; // Disabled gray
-        return d === xAxis ? "#1f2937" : "#6b7280";
-      })
-      .style("font-weight", (d) => (d === xAxis ? "bold" : "normal"))
+      .style("fill", (d) => (d === xAxis ? "#000000" : "#6B7280")) // Black when selected, gray otherwise
       .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
       .on("click", (_, d) => {
-        // Prevent clicking if this metric is the current y-axis
         if (d !== yAxis && d !== xAxis) {
           setXAxis(d);
         }
@@ -200,17 +196,13 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       })
       .attr("text-anchor", "middle")
       .attr("class", (d) =>
-        d === xAxis ? "cursor-not-allowed text-gray-300" : "cursor-pointer"
+        d === xAxis
+          ? "cursor-not-allowed text-gray-300"
+          : "cursor-pointer transition-colors duration-200"
       )
-      .style("text-decoration", (d) => (d === yAxis ? "underline" : "none"))
-      .style("fill", (d) => {
-        if (d === xAxis) return "#d1d5db"; // Disabled gray
-        return d === yAxis ? "#1f2937" : "#6b7280";
-      })
-      .style("font-weight", (d) => (d === yAxis ? "bold" : "normal"))
+      .style("fill", (d) => (d === yAxis ? "#000000" : "#6B7280")) // Black when selected, gray otherwise
       .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
       .on("click", (_, d) => {
-        // Prevent clicking if this metric is the current x-axis
         if (d !== xAxis && d !== yAxis) {
           setYAxis(d);
         }
@@ -442,6 +434,26 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     // Exit Selection
     nodeSelection.exit().remove();
   }, [processedNodes, xAxis, yAxis, selectedDecade, highlightedDecade, router]);
+
+  // Update the color transitions in the update effect
+  useEffect(() => {
+    if (!svgRef.current) return;
+
+    const svg = d3.select(svgRef.current);
+    const g = svg.select<SVGGElement>("g.main-group");
+
+    // Update x-axis label colors
+    g.selectAll("g.x-axis-labels text")
+      .transition()
+      .duration(200)
+      .style("fill", (d) => (d === xAxis ? "#000000" : "#6B7280"));
+
+    // Update y-axis label colors
+    g.selectAll("g.y-axis-labels text")
+      .transition()
+      .duration(200)
+      .style("fill", (d) => (d === yAxis ? "#000000" : "#6B7280"));
+  }, [xAxis, yAxis, processedNodes, selectedDecade, highlightedDecade, router]);
 
   return (
     <div className="absolute inset-0">
