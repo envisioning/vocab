@@ -28,20 +28,23 @@ export default function TimelineMap({ nodes: rawNodes }: TimelineMapProps) {
   }, [rawNodes]);
 
   // Calculate decade colors
-  const getDecadeColor = (year: number) => {
-    const decades = {
-      1950: "#F3722C",
-      1960: "#F8961E",
-      1970: "#F9C74F",
-      1980: "#90BE6D",
-      1990: "#43AA8B",
-      2000: "#4D908E",
-      2010: "#577590",
-      2020: "#277DA1",
-    };
+  const decadeColors = {
+    1940: "#F94144",
+    1950: "#F3722C",
+    1960: "#F8961E",
+    1970: "#F9C74F",
+    1980: "#90BE6D",
+    1990: "#43AA8B",
+    2000: "#4D908E",
+    2010: "#577590",
+    2020: "#277DA1",
+  };
 
+  const getDecadeColor = (year: number) => {
     const decade = Math.floor(year / 10) * 10;
-    return decade < 1950 ? "#F94144" : decades[decade as keyof typeof decades]; // Teal-blue for pre-1950s
+    return decade < 1950
+      ? decadeColors[1940]
+      : decadeColors[decade as keyof typeof decadeColors];
   };
 
   useEffect(() => {
@@ -242,8 +245,23 @@ export default function TimelineMap({ nodes: rawNodes }: TimelineMapProps) {
           {tooltipContent.content && <div>{tooltipContent.content}</div>}
         </div>
       )}
-      <div className="absolute bottom-0 left-0 p-4 text-sm text-gray-500">
-        {`Nodes with dates: ${nodes.length}`}
+      <div className="absolute bottom-0 left-0 right-0 p-4">
+        <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-4">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            {Object.entries(decadeColors).map(([decade, color]) => (
+              <div key={decade} className="flex items-center gap-2">
+                <div
+                  className="w-4 h-4 rounded-full"
+                  style={{ backgroundColor: color }}
+                />
+                <span className="text-sm text-gray-600">{decade}s</span>
+              </div>
+            ))}
+          </div>
+          <div className="text-sm text-gray-500 text-center mt-2">
+            {`Nodes with dates: ${nodes.length}`}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -23,6 +23,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
   const [tooltipContent, setTooltipContent] = useState<{
     title: string;
     content: string;
+    year: number | null;
     x: number;
     y: number;
   } | null>(null);
@@ -128,6 +129,23 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
     [nodes, links]
   );
 
+  // Add this function near the top of the component, similar to TimelineMap
+  const getDecadeColor = (year: number) => {
+    const decades = {
+      1950: "#F3722C",
+      1960: "#F8961E",
+      1970: "#F9C74F",
+      1980: "#90BE6D",
+      1990: "#43AA8B",
+      2000: "#4D908E",
+      2010: "#577590",
+      2020: "#277DA1",
+    };
+
+    const decade = Math.floor(year / 10) * 10;
+    return decade < 1950 ? "#F94144" : decades[decade as keyof typeof decades]; // Teal-blue for pre-1950s
+  };
+
   useEffect(() => {
     setIsLoading(true);
     if (!svgRef.current || !nodes.length) return;
@@ -155,9 +173,9 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
           .radius((d: unknown) => getNodeSize((d as Node).slug) * 1.5)
       );
 
-    // Reduce simulation ticks while maintaining stability
+    // Reduce simulation ticks to speed up initial load
     simulation.stop();
-    simulation.tick(300); // Reduced from 500
+    simulation.tick(150); // Reduced from 300 to 150 ticks
     simulation.stop();
 
     // Setup SVG with zoom support
@@ -192,7 +210,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
       .append("line")
       .attr("stroke", "#ddd")
       .attr("stroke-width", 2)
-      .attr("stroke-opacity", 0.6)
+      .attr("stroke-opacity", 0.3)
       .attr("x1", (d: any) => d.source.x)
       .attr("y1", (d: any) => d.source.y)
       .attr("x2", (d: any) => d.target.x)
@@ -225,22 +243,18 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
         setTooltipContent({
           title: d.title || d.slug,
           content: d.summary || "",
+          year: d.year,
           x: x + 10,
           y: y + 10,
         });
 
-        // Highlight connected links
+        // Highlight connected links with light gray
         d3.selectAll("line")
           .attr("stroke-opacity", 0.2)
           .attr("stroke", "#94A3B8");
 
         d3.selectAll(`.link-${d.slug}`)
-          .attr("stroke-opacity", 1)
-          .attr("stroke", "#2563EB")
-          .attr("stroke-width", 3);
-
-        // Highlight connected nodes
-        d3.selectAll("circle")
+          .attr("stroke-opacity", 0.5)
           .attr("stroke", "#94A3B8")
           .attr("stroke-width", 2);
 
@@ -256,12 +270,13 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
             (link.target as Node).slug,
           ]);
 
-        // Highlight the hovered node and its connections
+        // Highlight the hovered node and its connections with light gray outline
         d3.selectAll(
           connectedSlugs.map((slug) => `.node-${slug} circle`).join(", ")
         )
-          .attr("stroke", "#2563EB")
-          .attr("stroke-width", 3);
+          .attr("stroke", "#94A3B8")
+          .attr("stroke-width", 2)
+          .attr("stroke-opacity", 0.5);
       })
       .on("mouseleave", () => {
         setHoveredNode(null);
@@ -270,29 +285,29 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
         // Reset all elements to original state
         d3.selectAll("line")
           .attr("stroke", "#94A3B8")
-          .attr("stroke-width", 2)
-          .attr("stroke-opacity", 0.6);
+          .attr("stroke-opacity", 0.3);
 
+        // Remove all strokes from circles
         d3.selectAll("circle")
-          .attr("stroke", "#3B82F6")
-          .attr("stroke-width", 2);
+          .attr("stroke", "none")
+          .attr("stroke-width", 0)
+          .attr("stroke-opacity", 0);
       });
 
     // Add circles with dynamic radius
     nodeElements
       .append("circle")
       .attr("r", (d: Node) => getNodeSize(d.slug))
-      .attr("fill", "#93C5FD")
-      .attr("stroke", "#3B82F6")
-      .attr("stroke-width", 2)
-      .attr("class", "hover:stroke-blue-400");
+      .attr("fill", (d: Node) => (d.year ? getDecadeColor(d.year) : "#93C5FD"))
+      .attr("fill-opacity", 0.9)
+      .attr("class", "hover:brightness-110");
 
     // Add text with scaled size
     const textElements = nodeElements
       .append("text")
       .attr("text-anchor", "middle")
       .attr("dominant-baseline", "middle")
-      .attr("fill", "#1E3A8A")
+      .attr("fill", "#000000")
       .attr("font-size", (d: Node) => {
         const radius = getNodeSize(d.slug);
         return `${Math.max(12, radius / 2.5)}px`;
@@ -343,7 +358,7 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
         .transition()
         .duration(500)
         .attr("stroke-width", 2)
-        .attr("stroke-opacity", 0.6);
+        .attr("stroke-opacity", 0.3);
       setIsFullyLoaded(true);
       setIsLoading(false);
     });
@@ -370,11 +385,35 @@ export default function ArticleMap({ nodes: rawNodes }: ArticleMapProps) {
           }}
         >
           <div className="font-bold mb-1">{tooltipContent.title}</div>
+          {tooltipContent.year && (
+            <div className="text-gray-600 mb-1">
+              Year: {tooltipContent.year}
+            </div>
+          )}
           {tooltipContent.content && <div>{tooltipContent.content}</div>}
         </div>
       )}
-      <div className="absolute bottom-0 left-0 p-4 text-sm text-gray-500">
-        {`Nodes: ${nodes.length} | Connections: ${links.length}`}
+      <div className="absolute bottom-0 left-0 right-0 p-4 flex items-center justify-between text-sm">
+        <div className="text-gray-500">
+          {`Nodes: ${nodes.length} | Connections: ${links.length}`}
+        </div>
+
+        <div className="flex items-center gap-4">
+          {[1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020].map(
+            (decade) => (
+              <div key={decade} className="flex items-center gap-1">
+                <div
+                  className="w-3 h-3 rounded-full"
+                  style={{
+                    backgroundColor: getDecadeColor(decade),
+                    opacity: 0.9,
+                  }}
+                />
+                <span className="text-gray-600">{`${decade}s`}</span>
+              </div>
+            )
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,404 @@
+[
+    {
+        "Milestone": "Turing Test",
+        "Year": "1950",
+        "Month": null,
+        "Significance": "Alan Turing proposed a test for machine intelligence, laying foundational ideas for AI."
+    },
+    {
+        "Milestone": "Logic Theorist",
+        "Year": "1956",
+        "Month": null,
+        "Significance": "First AI program that proved mathematical theorems, developed by Allen Newell and Herbert A. Simon."
+    },
+    {
+        "Milestone": "Dartmouth Conference",
+        "Year": "1956",
+        "Month": null,
+        "Significance": "Considered the birth of AI as a field; term Artificial Intelligence coined during this conference."
+    },
+    {
+        "Milestone": "Perceptron",
+        "Year": "1957",
+        "Month": null,
+        "Significance": "Frank Rosenblatt created the first artificial neural network capable of learning, marking the birth of machine learning."
+    },
+    {
+        "Milestone": "ELIZA",
+        "Year": "1964",
+        "Month": null,
+        "Significance": "First chatbot developed at MIT, simulating a psychotherapist and demonstrating early natural language processing."
+    },
+    {
+        "Milestone": "Shakey the Robot",
+        "Year": "1969",
+        "Month": null,
+        "Significance": "First general-purpose mobile robot that could reason about its actions, combining computer vision, language, and planning."
+    },
+    {
+        "Milestone": "Expert Systems Era",
+        "Year": "1970s",
+        "Month": null,
+        "Significance": "Development of XCON, MYCIN, and other expert systems showing practical AI applications in specific domains."
+    },
+    {
+        "Milestone": "Backpropagation Algorithm",
+        "Year": "1986",
+        "Month": null,
+        "Significance": "Rumelhart, Hinton, and Williams published the backpropagation algorithm, crucial for training neural networks."
+    },
+    {
+        "Milestone": "TD-Gammon",
+        "Year": "1992",
+        "Month": null,
+        "Significance": "First successful application of neural networks to backgammon, approaching human expert level through self-play."
+    },
+    {
+        "Milestone": "Deep Blue vs. Kasparov",
+        "Year": "1997",
+        "Month": "May",
+        "Significance": "First computer to defeat a reigning world chess champion under standard tournament conditions."
+    },
+    {
+        "Milestone": "Support Vector Machines",
+        "Year": "1998",
+        "Month": null,
+        "Significance": "Vladimir Vapnik developed SVMs, revolutionizing machine learning with a new approach to classification."
+    },
+    {
+        "Milestone": "iRobot Roomba",
+        "Year": "2002",
+        "Month": null,
+        "Significance": "First mass-market autonomous robot, showing practical applications of robotics and navigation AI."
+    },
+    {
+        "Milestone": "Machine Learning at Scale",
+        "Year": "2003",
+        "Month": null,
+        "Significance": "Google’s large-scale implementation of ML for search ranking, showing industrial applications."
+    },
+    {
+        "Milestone": "Netflix Prize",
+        "Year": "2006-2009",
+        "Month": null,
+        "Significance": "Competition advancing collaborative filtering and recommendation systems."
+    },
+    {
+        "Milestone": "Deep Learning Speech Recognition",
+        "Year": "2009",
+        "Month": null,
+        "Significance": "Geoffrey Hinton’s team demonstrated deep learning’s superior performance in speech recognition."
+    },
+    {
+        "Milestone": "ImageNet Dataset",
+        "Year": "2009",
+        "Month": null,
+        "Significance": "Release of the ImageNet dataset, crucial for advancing computer vision research."
+    },
+    {
+        "Milestone": "IBM Watson wins Jeopardy!",
+        "Year": "2011",
+        "Month": "February",
+        "Significance": "Demonstrated advanced natural language processing by defeating human champions."
+    },
+    {
+        "Milestone": "Siri Release",
+        "Year": "2011",
+        "Month": "October",
+        "Significance": "Apple’s virtual assistant brought AI to mainstream mobile users."
+    },
+    {
+        "Milestone": "Google Brain",
+        "Year": "2011",
+        "Month": null,
+        "Significance": "Large-scale deep learning project showing unsupervised learning from YouTube videos."
+    },
+    {
+        "Milestone": "AlexNet",
+        "Year": "2012",
+        "Month": "September",
+        "Significance": "Revolutionary CNN architecture winning ImageNet competition, sparked deep learning revolution."
+    },
+    {
+        "Milestone": "Word2Vec",
+        "Year": "2013",
+        "Month": null,
+        "Significance": "Google’s breakthrough in word embeddings, transforming NLP applications."
+    },
+    {
+        "Milestone": "Boston Dynamics Atlas",
+        "Year": "2013",
+        "Month": null,
+        "Significance": "Advanced humanoid robot showing sophisticated locomotion and balance."
+    },
+    {
+        "Milestone": "DeepMind Acquisition",
+        "Year": "2014",
+        "Month": null,
+        "Significance": "Google’s $500M acquisition of DeepMind marked AI’s growing commercial importance."
+    },
+    {
+        "Milestone": "DeepFace",
+        "Year": "2014",
+        "Month": null,
+        "Significance": "Facebook’s facial recognition system achieving near-human accuracy."
+    },
+    {
+        "Milestone": "DQN Masters Atari",
+        "Year": "2015",
+        "Month": "February",
+        "Significance": "DeepMind’s reinforcement learning breakthrough in game playing."
+    },
+    {
+        "Milestone": "TensorFlow Release",
+        "Year": "2015",
+        "Month": "November",
+        "Significance": "Google’s open-source ML framework democratized AI development."
+    },
+    {
+        "Milestone": "AlphaGo vs. Lee Sedol",
+        "Year": "2016",
+        "Month": null,
+        "Significance": "Landmark victory in Go, demonstrating AI mastery of complex strategic games."
+    },
+    {
+        "Milestone": "ResNet",
+        "Year": "2016",
+        "Month": null,
+        "Significance": "Microsoft’s deep residual networks breakthrough enabling much deeper neural networks."
+    },
+    {
+        "Milestone": "Transformer Architecture",
+        "Year": "2017",
+        "Month": "June",
+        "Significance": "“Attention is All You Need” paper introduced transformers, revolutionizing NLP."
+    },
+    {
+        "Milestone": "AlphaZero",
+        "Year": "2017",
+        "Month": "December",
+        "Significance": "DeepMind’s AlphaZero mastered chess, shogi, and Go from scratch using reinforcement learning without human data."
+    },
+    {
+        "Milestone": "GPT-1",
+        "Year": "2018",
+        "Month": "June",
+        "Significance": "OpenAI’s first GPT model introduced transformer-based language modeling."
+    },
+    {
+        "Milestone": "BERT",
+        "Year": "2018",
+        "Month": "October",
+        "Significance": "Google’s bidirectional transformer model advancing NLP understanding."
+    },
+    {
+        "Milestone": "GPT-2",
+        "Year": "2019",
+        "Month": "February",
+        "Significance": "Larger-scale language model showing improved text generation."
+    },
+    {
+        "Milestone": "OpenAI Five Defeats Dota 2 Champions",
+        "Year": "2019",
+        "Month": "April",
+        "Significance": "OpenAI’s AI defeated professional Dota 2 players, showcasing advances in AI for complex, real-time strategy games."
+    },
+    {
+        "Milestone": "AlphaFold 1",
+        "Year": "2018",
+        "Month": "December",
+        "Significance": "Major advance in protein structure prediction at the CASP13 competition."
+    },
+    {
+        "Milestone": "GPT-3",
+        "Year": "2020",
+        "Month": null,
+        "Significance": "Demonstrated remarkable few-shot learning and versatile language capabilities."
+    },
+    {
+        "Milestone": "DALL·E",
+        "Year": "2021",
+        "Month": "January",
+        "Significance": "OpenAI’s text-to-image generation breakthrough."
+    },
+    {
+        "Milestone": "OpenAI Codex",
+        "Year": "2021",
+        "Month": "August",
+        "Significance": "OpenAI released Codex, an AI model that translates natural language to code, powering GitHub Copilot."
+    },
+    {
+        "Milestone": "AlphaFold 2",
+        "Year": "2021",
+        "Month": "July",
+        "Significance": "Solved protein folding problem with near-atomic accuracy."
+    },
+    {
+        "Milestone": "CLIP",
+        "Year": "2021",
+        "Month": "January",
+        "Significance": "OpenAI introduced CLIP, a model that understands images and text together, enhancing multimodal AI capabilities."
+    },
+    {
+        "Milestone": "DALL·E 2",
+        "Year": "2022",
+        "Month": "April",
+        "Significance": "OpenAI’s advanced text-to-image generation model producing high-resolution images with improved realism and coherence."
+    },
+    {
+        "Milestone": "PaLM",
+        "Year": "2022",
+        "Month": "April",
+        "Significance": "Google’s Pathways Language Model, a 540-billion parameter model demonstrating advanced understanding across language tasks."
+    },
+    {
+        "Milestone": "Whisper",
+        "Year": "2022",
+        "Month": "September",
+        "Significance": "OpenAI released Whisper, a robust speech recognition model capable of transcribing and translating multiple languages with high accuracy."
+    },
+    {
+        "Milestone": "Stable Diffusion",
+        "Year": "2022",
+        "Month": "August",
+        "Significance": "Open-source text-to-image model democratizing AI art generation."
+    },
+    {
+        "Milestone": "ChatGPT",
+        "Year": "2022",
+        "Month": "November",
+        "Significance": "Conversational AI achieving massive popular adoption."
+    },
+    {
+        "Milestone": "LLaMA Release",
+        "Year": "2023",
+        "Month": "February",
+        "Significance": "Meta AI released LLaMA, a collection of foundation language models open to the research community."
+    },
+    {
+        "Milestone": "GPT-4",
+        "Year": "2023",
+        "Month": "March",
+        "Significance": "Advanced multimodal capabilities and improved reasoning."
+    },
+    {
+        "Milestone": "Bard Announcement",
+        "Year": "2023",
+        "Month": "March",
+        "Significance": "Google introduced Bard, a conversational AI service powered by LaMDA."
+    },
+    {
+        "Milestone": "Claude",
+        "Year": "2023",
+        "Month": "March",
+        "Significance": "Anthropic’s constitutionally-aligned AI assistant."
+    },
+    {
+        "Milestone": "Midjourney V5",
+        "Year": "2023",
+        "Month": "March",
+        "Significance": "Major advancement in AI image generation quality and control."
+    },
+    {
+        "Milestone": "PaLM 2",
+        "Year": "2023",
+        "Month": "May",
+        "Significance": "Google released PaLM 2, an enhanced language model with improved reasoning and multilingual capabilities."
+    },
+    {
+        "Milestone": "Gemini Announced",
+        "Year": "2023",
+        "Month": "June",
+        "Significance": "Google DeepMind announced Gemini, a next-generation AI model integrating advancements in reasoning and efficiency."
+    },
+    {
+        "Milestone": "Tesla Full Self-Driving (FSD) Beta",
+        "Year": "2023",
+        "Month": "October",
+        "Significance": "Tesla rolled out its Full Self-Driving Beta to a wider audience, showcasing advances in autonomous vehicle AI."
+    },
+    {
+        "Milestone": "GPT-4 Vision",
+        "Year": "2023",
+        "Month": "November",
+        "Significance": "OpenAI released GPT-4 with vision capabilities, allowing the model to analyze and respond to image inputs."
+    },
+    {
+        "Milestone": "Anthropic's Claude 2",
+        "Year": "2023",
+        "Month": "July",
+        "Significance": "Anthropic released Claude 2, an advanced AI assistant with improved reasoning and task completion abilities."
+    },
+    {
+        "Milestone": "Meta's Llama 2",
+        "Year": "2023",
+        "Month": "July",
+        "Significance": "Meta released Llama 2 as an open-source large language model, promoting wider AI accessibility and research."
+    },
+    {
+        "Milestone": "Google's PaLM 2",
+        "Year": "2023",
+        "Month": "May",
+        "Significance": "Google announced PaLM 2, a more advanced and efficient language model powering various Google AI services."
+    },
+    {
+        "Milestone": "DeepMind's AlphaFold 3",
+        "Year": "2023",
+        "Month": "October",
+        "Significance": "DeepMind released AlphaFold 3, further improving protein structure prediction and expanding to other biomolecules."
+    },
+    {
+        "Milestone": "NVIDIA's Blackwell GPU Architecture",
+        "Year": "2024",
+        "Month": "March",
+        "Significance": "NVIDIA unveiled its Blackwell GPU architecture, significantly advancing AI training and inference capabilities."
+    },
+    {
+        "Milestone": "Google's Gemini Pro",
+        "Year": "2024",
+        "Month": "February",
+        "Significance": "Google launched Gemini Pro, a more powerful version of its multimodal AI model, rivaling GPT-4 in capabilities."
+    },
+    {
+        "Milestone": "DeepMind's AlphaCode 2",
+        "Year": "2024",
+        "Month": "June",
+        "Significance": "DeepMind released AlphaCode 2, significantly advancing AI's ability to write and understand complex code."
+    },
+    {
+        "Milestone": "Meta's Self-Supervised Learning Breakthrough",
+        "Year": "2024",
+        "Month": "April",
+        "Significance": "Meta announced a major breakthrough in self-supervised learning, allowing AI to learn more efficiently from unlabeled data."
+    },
+    {
+        "Milestone": "Apple Intelligence",
+        "Year": "2024",
+        "Month": "October",
+        "Significance": "Apple introduced advanced on-device AI capabilities in its new iPhone lineup, significantly enhancing privacy and offline AI performance."
+    },
+    {
+        "Milestone": "DALL-E 3",
+        "Year": "2023",
+        "Month": "December",
+        "Significance": "OpenAI released DALL-E 3, featuring more precise image generation and enhanced creative capabilities."
+    },
+    {
+        "Milestone": "DeepMind's AI for Scientific Discovery",
+        "Year": "2024",
+        "Month": "July",
+        "Significance": "DeepMind's AI system made a significant breakthrough in materials science, discovering a new class of superconductors."
+    },
+    {
+        "Milestone": "Nobel Prize in Chemistry 2024",
+        "Year": "2024",
+        "Month": "October",
+        "Significance": "Awarded to David Baker, Demis Hassabis, and John M. Jumper for computational protein design and protein structure prediction."
+    },
+    {
+        "Milestone": "Nobel Prize in Physics 2024",
+        "Year": "2024",
+        "Month": "October",
+        "Significance": "Awarded to Geoffrey Hinton and John J. Hopfield for foundational discoveries and inventions that enable machine learning with artificial neural networks."
+    }
+]

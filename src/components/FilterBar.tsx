@@ -182,21 +182,7 @@ export default function FilterBar({
             </div>
 
             <div className="flex items-center gap-4 sm:hidden">
-              <Link
-                href="/timeline"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-                aria-label="Timeline"
-              >
-                Map
-              </Link>
-
-              <Link
-                href="/about"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-                aria-label="About"
-              >
-                About
-              </Link>
+              <NavLinks />
             </div>
           </div>
 
@@ -303,25 +289,48 @@ export default function FilterBar({
             </form>
 
             <div className="hidden sm:flex items-center gap-4">
-              <Link
-                href="/timeline"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-                aria-label="Timeline"
-              >
-                Timeline
-              </Link>
-
-              <Link
-                href="/about"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-                aria-label="About"
-              >
-                About
-              </Link>
+              <NavLinks />
             </div>
           </div>
         </div>
       </div>
     </div>
+  );
+}
+
+// Extract navigation links to a separate component
+function NavLinks() {
+  return (
+    <>
+      <Link
+        href="/grid"
+        className="text-gray-600 hover:text-gray-900 transition-colors"
+        aria-label="Grid"
+      >
+        Grid
+      </Link>
+      <Link
+        href="/map"
+        className="text-gray-600 hover:text-gray-900 transition-colors"
+        aria-label="Map"
+      >
+        Map
+      </Link>
+      <Link
+        href="/timeline"
+        className="text-gray-600 hover:text-gray-900 transition-colors"
+        aria-label="Timeline"
+      >
+        Timeline
+      </Link>
+      &bull;
+      <Link
+        href="/about"
+        className="text-gray-600 hover:text-gray-900 transition-colors"
+        aria-label="About"
+      >
+        About
+      </Link>
+    </>
   );
 }

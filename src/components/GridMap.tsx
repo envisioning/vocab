@@ -50,17 +50,17 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   const getDecadeColor = (year: number) => {
     const decade = Math.floor(year / 10) * 10;
     const colors: { [key: number]: string } = {
-      1940: "#aec7e8",
-      1950: "#ff7f0e", // Orange
-      1960: "#ffbb78", // Light orange
-      1970: "#ffd92f", // Yellow
-      1980: "#98df8a", // Light green
-      1990: "#2ca02c", // Green
-      2000: "#1f77b4", // Blue
-      2010: "#17becf", // Cyan
-      2020: "#9467bd", // Purple
+      1940: "#F94144", // Pre-1950s red
+      1950: "#F3722C", // Orange
+      1960: "#F8961E", // Light orange
+      1970: "#F9C74F", // Yellow
+      1980: "#90BE6D", // Light green
+      1990: "#43AA8B", // Teal
+      2000: "#4D908E", // Blue-teal
+      2010: "#577590", // Blue
+      2020: "#277DA1", // Deep blue
     };
-    return colors[decade] || "#aec7e8";
+    return colors[decade] || "#F94144"; // Default to pre-1950s color
   };
 
   // Normalize year for scaling
