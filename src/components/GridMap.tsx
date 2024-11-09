@@ -63,7 +63,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return colors[decade] || "#aec7e8";
   };
 
-  // Update the normalizeYear helper function
+  // Normalize year for scaling
   const normalizeYear = (year: number | null) => {
     if (!year) return 0;
     const baseYear = 1940;
@@ -73,8 +73,8 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return Math.min((year - baseYear) / (currentYear - baseYear), 1);
   };
 
-  // Now the nodes useMemo can use normalizeYear
-  const nodes = useMemo(() => {
+  // Processed nodes with normalization
+  const processedNodes = useMemo(() => {
     return rawNodes
       .filter((node) => {
         const xValue = xAxis === "year" ? node.year : node[xAxis];
@@ -99,7 +99,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return decades;
   };
 
-  // Add this array of metrics
+  // Array of metrics
   const metrics: MetricKey[] = [
     "generality",
     "impact",
@@ -109,20 +109,19 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     "year",
   ];
 
+  // Initialize SVG only once
   useEffect(() => {
-    if (!svgRef.current || nodes.length === 0) return;
+    if (!svgRef.current) return;
 
     const svg = d3.select(svgRef.current);
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    const margin = { top: 50, right: 50, bottom: 100, left: 100 }; // Increased bottom margin for x-axis labels
 
-    // Clear existing content
-    svg.selectAll("*").remove();
     svg.attr("width", width).attr("height", height);
 
     // Create the main group element
-    const g = svg.append("g");
+    const g = svg.append("g").attr("class", "main-group");
 
     // Create scales
     const xScale = d3
@@ -137,103 +136,56 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .range([height - margin.bottom, margin.top])
       .nice();
 
-    // Add minor gridlines (0.1 intervals)
-    g.append("g")
-      .attr("class", "grid-minor")
-      .selectAll("line")
-      .data(d3.range(0, 1.1, 0.1))
-      .enter()
-      .append("line")
-      .attr("x1", (d) => xScale(d))
-      .attr("x2", (d) => xScale(d))
-      .attr("y1", margin.top)
-      .attr("y2", height - margin.bottom)
-      .attr("stroke", "#e5e5e5")
-      .attr("stroke-width", (d) => (d % 0.5 === 0 ? 0 : 1));
-
-    g.append("g")
-      .attr("class", "grid-minor")
-      .selectAll("line")
-      .data(d3.range(0, 1.1, 0.1))
-      .enter()
-      .append("line")
-      .attr("x1", margin.left)
-      .attr("x2", width - margin.right)
-      .attr("y1", (d) => yScale(d))
-      .attr("y2", (d) => yScale(d))
-      .attr("stroke", "#e5e5e5")
-      .attr("stroke-width", (d) => (d % 0.5 === 0 ? 0 : 1));
-
-    // Add major gridlines (0.5 intervals)
-    g.append("g")
-      .attr("class", "grid-major")
-      .selectAll("line")
-      .data([0, 0.5, 1])
-      .enter()
-      .append("line")
-      .attr("x1", (d) => xScale(d))
-      .attr("x2", (d) => xScale(d))
-      .attr("y1", margin.top)
-      .attr("y2", height - margin.bottom)
-      .attr("stroke", "#d4d4d4")
-      .attr("stroke-width", 1);
-
-    g.append("g")
-      .attr("class", "grid-major")
-      .selectAll("line")
-      .data([0, 0.5, 1])
-      .enter()
-      .append("line")
-      .attr("x1", margin.left)
-      .attr("x2", width - margin.right)
-      .attr("y1", (d) => yScale(d))
-      .attr("y2", (d) => yScale(d))
-      .attr("stroke", "#d4d4d4")
-      .attr("stroke-width", 1);
+    // **Append Axes After Gridlines**
 
     // Create and add axes
     const xAxisGen = d3.axisBottom(xScale);
     const yAxisGen = d3.axisLeft(yScale);
 
     g.append("g")
+      .attr("class", "x-axis")
       .attr("transform", `translate(0,${height - margin.bottom})`)
       .call(xAxisGen);
 
     g.append("g")
+      .attr("class", "y-axis")
       .attr("transform", `translate(${margin.left},0)`)
       .call(yAxisGen);
 
-    // Update the axis labels to be clickable
-    // Replace the existing axis label code with:
+    // **Append Axis Labels (Ordering Options)**
 
-    // X-axis labels
+    // X-Axis Labels
     g.append("g")
       .attr("class", "x-axis-labels")
-      .attr("transform", `translate(0,${height - 5})`)
       .selectAll("text")
       .data(metrics)
       .enter()
       .append("text")
-      .attr(
-        "x",
-        (_, i) =>
+      .attr("transform", (_, i) => {
+        const xPos =
           margin.left +
-          ((width - margin.left - margin.right) * (i + 0.5)) / metrics.length
-      )
+          ((width - margin.left - margin.right) / metrics.length) * (i + 0.5);
+        return `translate(${xPos},${height - margin.bottom + 40})`;
+      })
       .attr("text-anchor", "middle")
-      .attr("class", "cursor-pointer")
+      .attr("class", (d) =>
+        d === yAxis ? "cursor-not-allowed text-gray-300" : "cursor-pointer"
+      )
       .style("text-decoration", (d) => (d === xAxis ? "underline" : "none"))
-      .style("fill", (d) => (d === yAxis ? "#9CA3AF" : "#000000"))
+      .style("fill", (d) => {
+        if (d === yAxis) return "#d1d5db"; // Disabled gray
+        return d === xAxis ? "#1f2937" : "#6b7280";
+      })
       .style("font-weight", (d) => (d === xAxis ? "bold" : "normal"))
-      .style("cursor", (d) => (d === yAxis ? "not-allowed" : "pointer"))
       .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
       .on("click", (_, d) => {
-        if (d !== yAxis) {
+        // Prevent clicking if this metric is the current y-axis
+        if (d !== yAxis && d !== xAxis) {
           setXAxis(d);
         }
       });
 
-    // Y-axis labels - moved further left
+    // Y-Axis Labels
     g.append("g")
       .attr("class", "y-axis-labels")
       .selectAll("text")
@@ -241,38 +193,146 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .enter()
       .append("text")
       .attr("transform", (_, i) => {
-        const y =
+        const yPos =
           margin.top +
-          ((height - margin.top - margin.bottom) * (i + 0.5)) / metrics.length;
-        return `translate(${10},${y}) rotate(-90)`;
+          ((height - margin.top - margin.bottom) / metrics.length) * (i + 0.5);
+        return `translate(${margin.left - 40},${yPos}) rotate(-90)`;
       })
       .attr("text-anchor", "middle")
-      .attr("class", "cursor-pointer")
+      .attr("class", (d) =>
+        d === xAxis ? "cursor-not-allowed text-gray-300" : "cursor-pointer"
+      )
       .style("text-decoration", (d) => (d === yAxis ? "underline" : "none"))
-      .style("fill", (d) => (d === xAxis ? "#9CA3AF" : "#000000"))
+      .style("fill", (d) => {
+        if (d === xAxis) return "#d1d5db"; // Disabled gray
+        return d === yAxis ? "#1f2937" : "#6b7280";
+      })
       .style("font-weight", (d) => (d === yAxis ? "bold" : "normal"))
-      .style("cursor", (d) => (d === xAxis ? "not-allowed" : "pointer"))
       .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
       .on("click", (_, d) => {
-        if (d !== xAxis) {
+        // Prevent clicking if this metric is the current x-axis
+        if (d !== xAxis && d !== yAxis) {
           setYAxis(d);
         }
       });
 
-    // Add nodes
-    const nodeElements = g
-      .append("g")
-      .attr("class", "nodes")
-      .selectAll("g")
-      .data(
-        nodes.sort((a, b) => {
-          // Sort by size (connection count) in descending order
-          // so larger nodes are rendered first (bottom layer)
-          const sizeA = a.children?.length || 0;
-          const sizeB = b.children?.length || 0;
-          return sizeB - sizeA;
-        })
-      )
+    // **Append Nodes Group After Gridlines and Labels**
+
+    // Add the nodes group here
+    g.append("g").attr("class", "nodes");
+
+    // Responsive handling
+    const handleResize = () => {
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+
+      svg.attr("width", newWidth).attr("height", newHeight);
+
+      // Update scales
+      xScale.range([margin.left, newWidth - margin.right]).nice();
+      yScale.range([newHeight - margin.bottom, margin.top]).nice();
+
+      // Update gridlines
+      g.selectAll(".grid-minor.x-grid line")
+        .attr("x1", (d: number) => xScale(d))
+        .attr("x2", (d: number) => xScale(d));
+
+      g.selectAll(".grid-minor.y-grid line")
+        .attr("x1", margin.left)
+        .attr("x2", newWidth - margin.right)
+        .attr("y1", (d: number) => yScale(d))
+        .attr("y2", (d: number) => yScale(d));
+
+      g.selectAll(".grid-major.x-grid line")
+        .attr("x1", (d: number) => xScale(d))
+        .attr("x2", (d: number) => xScale(d));
+
+      g.selectAll(".grid-major.y-grid line")
+        .attr("x1", margin.left)
+        .attr("x2", newWidth - margin.right)
+        .attr("y1", (d: number) => yScale(d))
+        .attr("y2", (d: number) => yScale(d));
+
+      // Update axes
+      g.select<SVGGElement>(".x-axis")
+        .attr("transform", `translate(0,${newHeight - margin.bottom})`)
+        .call(xAxisGen);
+
+      g.select<SVGGElement>(".y-axis").call(yAxisGen);
+
+      // Update axis labels positions
+      // X-Axis Labels
+      g.selectAll("g.x-axis-labels text").attr("transform", (_, i) => {
+        const xPos =
+          margin.left +
+          ((newWidth - margin.left - margin.right) / metrics.length) *
+            (i + 0.5);
+        return `translate(${xPos},${newHeight - margin.bottom + 40})`;
+      });
+
+      // Y-Axis Labels
+      g.selectAll("g.y-axis-labels text").attr("transform", (_, i) => {
+        const yPos =
+          margin.top +
+          ((newHeight - margin.top - margin.bottom) / metrics.length) *
+            (i + 0.5);
+        return `translate(${margin.left - 40},${yPos}) rotate(-90)`;
+      });
+
+      // Update nodes transition scales
+      g.selectAll("g.nodes g.node").each(function (d: any) {
+        const node = d3.select(this);
+        const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
+        const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
+        const x = xScale(xValue as number);
+        const y = yScale(yValue as number);
+        node
+          .transition()
+          .duration(1000)
+          .attr("transform", `translate(${x},${y})`);
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    setIsLoading(false);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [xAxis, yAxis, metrics]);
+
+  // Update nodes when data or axes change
+  useEffect(() => {
+    if (!svgRef.current) return;
+
+    const svg = d3.select(svgRef.current);
+    const g = svg.select<SVGGElement>("g.main-group");
+    const margin = { top: 50, right: 50, bottom: 100, left: 100 };
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const xScale = d3
+      .scaleLinear()
+      .domain([0, 1])
+      .range([margin.left, width - margin.right])
+      .nice();
+
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, 1])
+      .range([height - margin.bottom, margin.top])
+      .nice();
+
+    // Data Binding
+    const nodeSelection = g
+      .select<SVGGElement>("g.nodes")
+      .selectAll<SVGGElement, Node>("g.node")
+      .data(processedNodes, (d: any) => d.id || d.slug);
+
+    // Enter Selection
+    const nodeEnter = nodeSelection
       .enter()
       .append("g")
       .attr("class", (d) => {
@@ -288,18 +348,15 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         return `translate(${x},${y})`;
       });
 
-    // Add circles
-    nodeElements
+    nodeEnter
       .append("circle")
       .attr("r", (d) => getNodeSize(d))
       .attr("fill", (d) => {
         const year = d.year || 0;
-        // Group pre-1940 with 1940s
         return getDecadeColor(year < 1940 ? 1940 : year);
       })
       .attr("fill-opacity", (d) => {
         const year = d.year || 0;
-        // Treat pre-1940 as part of 1940s decade for filtering
         const nodeDecade = year < 1940 ? 1940 : Math.floor(year / 10) * 10;
         if (selectedDecade !== null) {
           return nodeDecade === selectedDecade ? 0.9 : 0.1;
@@ -340,39 +397,57 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         router.push(`/${d.slug}`);
       });
 
-    // Instead of applying zoom transform, apply a fixed transform
-    const scale = 0.8;
-    g.attr(
-      "transform",
-      `translate(${width / 2},${height / 2}) scale(${scale}) translate(${
-        -width / 2
-      },${-height / 2})`
-    );
-
-    // Add background rect for mouse events
-    svg
-      .append("rect")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("fill", "transparent")
-      .lower()
-      .on("mousemove", () => {
-        setTooltipContent(null);
+    // Merge Enter and Update selections
+    nodeSelection
+      .merge(nodeEnter as any)
+      .transition()
+      .duration(1000)
+      .attr("transform", (d) => {
+        const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
+        const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
+        const x = xScale(xValue as number);
+        const y = yScale(yValue as number);
+        return `translate(${x},${y})`;
       });
 
-    setIsLoading(false);
+    // Update circles if radius or fill changes
+    nodeSelection
+      .select("circle")
+      .transition()
+      .duration(1000)
+      .attr("r", (d) => getNodeSize(d))
+      .attr("fill", (d) => {
+        const year = d.year || 0;
+        return getDecadeColor(year < 1940 ? 1940 : year);
+      })
+      .attr("fill-opacity", (d) => {
+        const year = d.year || 0;
+        const nodeDecade = year < 1940 ? 1940 : Math.floor(year / 10) * 10;
+        if (selectedDecade !== null) {
+          return nodeDecade === selectedDecade ? 0.9 : 0.1;
+        }
+        return 0.5;
+      })
+      .style("opacity", (d) => {
+        const nodeDecade = Math.floor((d.year || 0) / 10) * 10;
+        if (selectedDecade !== null) {
+          return nodeDecade === selectedDecade ? 1 : 0.2;
+        }
+        if (highlightedDecade !== null) {
+          return nodeDecade === highlightedDecade ? 1 : 0.2;
+        }
+        return 1;
+      });
 
-    // Cleanup function
-    return () => {
-      svg.selectAll("*").remove();
-    };
-  }, [nodes, xAxis, yAxis, highlightedDecade, router, metrics]);
+    // Exit Selection
+    nodeSelection.exit().remove();
+  }, [processedNodes, xAxis, yAxis, selectedDecade, highlightedDecade, router]);
 
   return (
     <div className="absolute inset-0">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80">
-          ...
+          Loading...
         </div>
       )}
       <svg ref={svgRef} className="w-full h-full bg-gray-50" />
@@ -414,10 +489,10 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
                       : ""
                   }`}
                 style={{
-                  marginTop: "-1rem", // Extend hover area up
-                  marginBottom: "-1rem", // Extend hover area down
-                  paddingTop: "1rem", // Maintain visual padding
-                  paddingBottom: "1rem", // Maintain visual padding
+                  marginTop: "-1rem",
+                  marginBottom: "-1rem",
+                  paddingTop: "1rem",
+                  paddingBottom: "1rem",
                 }}
                 onMouseEnter={() =>
                   !selectedDecade && setHighlightedDecade(decade)
