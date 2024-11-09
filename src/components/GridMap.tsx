@@ -20,8 +20,8 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   const router = useRouter();
   const svgRef = useRef<SVGSVGElement>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [xAxis, setXAxis] = useState<MetricKey>("generality");
-  const [yAxis, setYAxis] = useState<MetricKey>("impact");
+  const [xAxis, setXAxis] = useState<MetricKey>("year");
+  const [yAxis, setYAxis] = useState<MetricKey>("generality");
   const [tooltipContent, setTooltipContent] = useState<{
     title: string;
     content: string;
@@ -35,9 +35,11 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     null
   );
   const [selectedDecade, setSelectedDecade] = useState<number | null>(null);
+  const [uniformSize, setUniformSize] = useState(true);
 
   // Helper function to get node size
   const getNodeSize = (node: Node) => {
+    if (uniformSize) return 6; // Return base size if uniform mode is enabled
     const baseSize = 6;
     const connectionCount = node.children?.length || 0;
     return Math.max(
@@ -74,19 +76,27 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   };
 
   // Processed nodes with normalization
-  const processedNodes = useMemo(() => {
-    return rawNodes
-      .filter((node) => {
-        const xValue = xAxis === "year" ? node.year : node[xAxis];
-        const yValue = yAxis === "year" ? node.year : node[yAxis];
-        return xValue != null && yValue != null;
-      })
-      .map((node) => ({
-        ...node,
-        normalizedYear: normalizeYear(node.year),
-      }))
-      .sort((a, b) => (a.year || 0) - (b.year || 0));
-  }, [rawNodes, xAxis, yAxis]);
+  const processedNodes = useMemo(
+    () =>
+      rawNodes
+        .filter((node) => {
+          const xValue =
+            xAxis === "year" ? node.year : node[xAxis as keyof Node];
+          const yValue =
+            yAxis === "year" ? node.year : node[yAxis as keyof Node];
+          return xValue != null && yValue != null;
+        })
+        .map((node) => ({
+          ...node,
+          normalizedYear: normalizeYear(node.year),
+        }))
+        .sort((a, b) => {
+          const aConnections = a.children?.length || 0;
+          const bConnections = b.children?.length || 0;
+          return bConnections - aConnections || (a.year || 0) - (b.year || 0);
+        }),
+    [rawNodes, xAxis, yAxis]
+  );
 
   // Helper function to get decades for the legend
   const getDecades = () => {
@@ -226,18 +236,18 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
 
       // Update gridlines
       g.selectAll(".grid-minor.x-grid line")
-        .attr("x1", (d: number) => xScale(d))
-        .attr("x2", (d: number) => xScale(d));
+        .attr("x1", (d: any) => xScale(d))
+        .attr("x2", (d: any) => xScale(d));
 
       g.selectAll(".grid-minor.y-grid line")
         .attr("x1", margin.left)
         .attr("x2", newWidth - margin.right)
-        .attr("y1", (d: number) => yScale(d))
-        .attr("y2", (d: number) => yScale(d));
+        .attr("y1", (d: any) => yScale(d))
+        .attr("y2", (d: any) => yScale(d));
 
       g.selectAll(".grid-major.x-grid line")
-        .attr("x1", (d: number) => xScale(d))
-        .attr("x2", (d: number) => xScale(d));
+        .attr("x1", (d: any) => xScale(d))
+        .attr("x2", (d: any) => xScale(d));
 
       g.selectAll(".grid-major.y-grid line")
         .attr("x1", margin.left)
@@ -321,7 +331,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     const nodeSelection = g
       .select<SVGGElement>("g.nodes")
       .selectAll<SVGGElement, Node>("g.node")
-      .data(processedNodes, (d: any) => d.id || d.slug);
+      .data(processedNodes, (d: Node) => d.slug);
 
     // Enter Selection
     const nodeEnter = nodeSelection
@@ -332,9 +342,11 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         const isActive = !selectedDecade || nodeDecade === selectedDecade;
         return `node ${isActive ? "cursor-pointer" : "pointer-events-none"}`;
       })
-      .attr("transform", (d) => {
-        const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
-        const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
+      .attr("transform", (d: Node) => {
+        const xValue =
+          xAxis === "year" ? d.normalizedYear : d[xAxis as keyof Node];
+        const yValue =
+          yAxis === "year" ? d.normalizedYear : d[yAxis as keyof Node];
         const x = xScale(xValue as number);
         const y = yScale(yValue as number);
         return `translate(${x},${y})`;
@@ -375,8 +387,8 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           title: d.title || "",
           content: d.summary || "",
           year: d.year,
-          generality: d[xAxis] as number,
-          impact: d[yAxis] as number,
+          generality: d[xAxis as keyof Node] as number | null,
+          impact: d[yAxis as keyof Node] as number | null,
           x,
           y,
         });
@@ -394,17 +406,18 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .merge(nodeEnter as any)
       .transition()
       .duration(1000)
-      .attr("transform", (d) => {
-        const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
-        const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
+      .attr("transform", (d: Node) => {
+        const xValue =
+          xAxis === "year" ? d.normalizedYear : d[xAxis as keyof Node];
+        const yValue =
+          yAxis === "year" ? d.normalizedYear : d[yAxis as keyof Node];
         const x = xScale(xValue as number);
         const y = yScale(yValue as number);
         return `translate(${x},${y})`;
       });
 
     // Update circles if radius or fill changes
-    nodeSelection
-      .select("circle")
+    g.selectAll("g.node circle")
       .transition()
       .duration(1000)
       .attr("r", (d) => getNodeSize(d))
@@ -433,7 +446,15 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
 
     // Exit Selection
     nodeSelection.exit().remove();
-  }, [processedNodes, xAxis, yAxis, selectedDecade, highlightedDecade, router]);
+  }, [
+    processedNodes,
+    xAxis,
+    yAxis,
+    selectedDecade,
+    highlightedDecade,
+    router,
+    uniformSize,
+  ]);
 
   // Update the color transitions in the update effect
   useEffect(() => {
@@ -548,6 +569,44 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
                 </span>
               </div>
             ))}
+          </div>
+
+          {/* Size Legend */}
+          <div className="absolute right-4 bottom-4">
+            <button
+              onClick={() => setUniformSize(!uniformSize)}
+              className="flex items-center space-x-2 text-sm text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                viewBox="0 0 100 30"
+                width="100"
+                height="30"
+                className="inline-block"
+              >
+                <circle
+                  cx="25"
+                  cy="15"
+                  r="6"
+                  fill="currentColor"
+                  opacity="0.5"
+                />
+                <circle
+                  cx="50"
+                  cy="15"
+                  r="9"
+                  fill="currentColor"
+                  opacity="0.5"
+                />
+                <circle
+                  cx="75"
+                  cy="15"
+                  r="12"
+                  fill="currentColor"
+                  opacity="0.5"
+                />
+              </svg>
+              <span>{uniformSize ? "Show" : "Hide"}</span>
+            </button>
           </div>
         </div>
       </div>

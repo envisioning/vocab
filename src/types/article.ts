@@ -33,6 +33,8 @@ export interface Node {
   parents?: NodeRelation[];
   x?: number;
   y?: number;
+  year: number | null;
+  normalizedYear?: number;
 }
 
 export interface NodeRelation {

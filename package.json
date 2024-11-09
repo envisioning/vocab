@@ -25,6 +25,7 @@
     "shadcn": "^2.1.4"
   },
   "devDependencies": {
+    "@types/d3": "^7.4.3",
     "@types/lodash": "^4.17.13",
     "@types/node": "^20.17.6",
     "@types/react": "^18.3.12",

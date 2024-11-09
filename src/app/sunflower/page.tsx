@@ -4,6 +4,11 @@ import TimelineMap from "@/components/TimelineMap";
 
 export const dynamic = "force-dynamic";
 
+// Add metadata
+export const metadata = {
+  title: "Sunflower View",
+};
+
 export default async function TimelinePage() {
   const nodes = await getNodes(1000);
 

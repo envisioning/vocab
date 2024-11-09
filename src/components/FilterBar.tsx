@@ -317,11 +317,11 @@ function NavLinks() {
         Map
       </Link>
       <Link
-        href="/timeline"
+        href="/sunflower"
         className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="Timeline"
+        aria-label="Sunflower"
       >
-        Timeline
+        Sunflower
       </Link>
       &bull;
       <Link

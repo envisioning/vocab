@@ -4,6 +4,11 @@ import ArticleMap from "@/components/ArticleMap";
 
 export const dynamic = "force-dynamic";
 
+// Add metadata
+export const metadata = {
+  title: "Article Map",
+};
+
 export default async function MapPage() {
   const nodes = await getNodes(1000);
 
