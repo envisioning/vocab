@@ -77,18 +77,9 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   const nodes = useMemo(() => {
     return rawNodes
       .filter((node) => {
-        if (xAxis === "year" || yAxis === "year") {
-          return node.year != null;
-        }
-        const xValue = node[xAxis];
-        const yValue = node[yAxis];
-        return (
-          node.year != null &&
-          xValue !== null &&
-          xValue !== undefined &&
-          yValue !== null &&
-          yValue !== undefined
-        );
+        const xValue = xAxis === "year" ? node.year : node[xAxis];
+        const yValue = yAxis === "year" ? node.year : node[yAxis];
+        return xValue != null && yValue != null;
       })
       .map((node) => ({
         ...node,
@@ -396,7 +387,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           <div className="font-bold mb-1">{tooltipContent.title}</div>
           {tooltipContent.year && (
             <div className="text-gray-600 mb-1">
-              Year: {Math.round(tooltipContent.year)}
+              Year: {Math.floor(tooltipContent.year)}
             </div>
           )}
           <div className="text-gray-600 mb-1">
