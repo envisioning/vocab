@@ -116,7 +116,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     const svg = d3.select(svgRef.current);
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const margin = { top: 50, right: 50, bottom: 100, left: 100 }; // Increased bottom margin for x-axis labels
+    const margin = { top: 100, right: 50, bottom: 100, left: 100 }; // Increased bottom margin for x-axis labels
 
     svg.attr("width", width).attr("height", height);
 
