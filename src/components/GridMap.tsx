@@ -50,6 +50,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   const getDecadeColor = (year: number) => {
     const decade = Math.floor(year / 10) * 10;
     const colors: { [key: number]: string } = {
+      1940: "#aec7e8",
       1950: "#ff7f0e", // Orange
       1960: "#ffbb78", // Light orange
       1970: "#ffd92f", // Yellow
@@ -62,12 +63,13 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return colors[decade] || "#aec7e8";
   };
 
-  // Move normalizeYear helper function here, before it's used
+  // Update the normalizeYear helper function
   const normalizeYear = (year: number | null) => {
     if (!year) return 0;
     const baseYear = 1940;
     const currentYear = new Date().getFullYear();
-    if (year <= baseYear) return 0;
+    // Pre-1940 terms get mapped to 0
+    if (year < baseYear) return 0;
     return Math.min((year - baseYear) / (currentYear - baseYear), 1);
   };
 
@@ -97,7 +99,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
 
   // Helper function to get decades for the legend
   const getDecades = () => {
-    const startYear = 1950;
+    const startYear = 1940;
     const endYear = 2024;
     const decades: number[] = [];
     for (let year = startYear; year <= endYear; year += 10) {
@@ -231,6 +233,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .attr("class", "cursor-pointer")
       .style("text-decoration", (d) => (d === xAxis ? "underline" : "none"))
       .style("fill", (d) => (d === yAxis ? "#9CA3AF" : "#000000"))
+      .style("font-weight", (d) => (d === xAxis ? "bold" : "normal"))
       .style("cursor", (d) => (d === yAxis ? "not-allowed" : "pointer"))
       .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
       .on("click", (_, d) => {
@@ -243,7 +246,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     g.append("g")
       .attr("class", "y-axis-labels")
       .selectAll("text")
-      .data(metrics)
+      .data(metrics.slice().reverse())
       .enter()
       .append("text")
       .attr("transform", (_, i) => {
@@ -256,6 +259,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .attr("class", "cursor-pointer")
       .style("text-decoration", (d) => (d === yAxis ? "underline" : "none"))
       .style("fill", (d) => (d === xAxis ? "#9CA3AF" : "#000000"))
+      .style("font-weight", (d) => (d === yAxis ? "bold" : "normal"))
       .style("cursor", (d) => (d === xAxis ? "not-allowed" : "pointer"))
       .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
       .on("click", (_, d) => {
@@ -269,7 +273,15 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .append("g")
       .attr("class", "nodes")
       .selectAll("g")
-      .data(nodes)
+      .data(
+        nodes.sort((a, b) => {
+          // Sort by size (connection count) in descending order
+          // so larger nodes are rendered first (bottom layer)
+          const sizeA = a.children?.length || 0;
+          const sizeB = b.children?.length || 0;
+          return sizeB - sizeA;
+        })
+      )
       .enter()
       .append("g")
       .attr("class", (d) => {
@@ -289,11 +301,17 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     nodeElements
       .append("circle")
       .attr("r", (d) => getNodeSize(d))
-      .attr("fill", (d) => getDecadeColor(d.year || 0))
+      .attr("fill", (d) => {
+        const year = d.year || 0;
+        // Group pre-1940 with 1940s
+        return getDecadeColor(year < 1940 ? 1940 : year);
+      })
       .attr("fill-opacity", (d) => {
-        const nodeDecade = Math.floor((d.year || 0) / 10) * 10;
+        const year = d.year || 0;
+        // Treat pre-1940 as part of 1940s decade for filtering
+        const nodeDecade = year < 1940 ? 1940 : Math.floor(year / 10) * 10;
         if (selectedDecade !== null) {
-          return nodeDecade === selectedDecade ? 1 : 0.1;
+          return nodeDecade === selectedDecade ? 0.9 : 0.1;
         }
         return 0.5;
       })
@@ -363,7 +381,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     <div className="absolute inset-0">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-50/80">
-          Loading Grid...
+          ...
         </div>
       )}
       <svg ref={svgRef} className="w-full h-full bg-gray-50" />
@@ -448,7 +466,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
                         : 0.1,
                   }}
                 >
-                  {decade}s
+                  {`${decade}s`}
                 </span>
               </div>
             ))}
