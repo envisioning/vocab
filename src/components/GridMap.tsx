@@ -34,6 +34,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   const [highlightedDecade, setHighlightedDecade] = useState<number | null>(
     null
   );
+  const [selectedDecade, setSelectedDecade] = useState<number | null>(null);
 
   // Helper function to get node size
   const getNodeSize = (node: Node) => {
@@ -263,17 +264,6 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         }
       });
 
-    // Create zoom behavior
-    const zoom = d3
-      .zoom()
-      .scaleExtent([0.5, 5])
-      .on("zoom", (event) => {
-        g.attr("transform", event.transform);
-      });
-
-    // Apply zoom to svg
-    svg.call(zoom as any);
-
     // Add nodes
     const nodeElements = g
       .append("g")
@@ -282,7 +272,11 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .data(nodes)
       .enter()
       .append("g")
-      .attr("class", "node cursor-pointer")
+      .attr("class", (d) => {
+        const nodeDecade = Math.floor((d.year || 0) / 10) * 10;
+        const isActive = !selectedDecade || nodeDecade === selectedDecade;
+        return `node ${isActive ? "cursor-pointer" : "pointer-events-none"}`;
+      })
       .attr("transform", (d) => {
         const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
         const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
@@ -296,15 +290,26 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .append("circle")
       .attr("r", (d) => getNodeSize(d))
       .attr("fill", (d) => getDecadeColor(d.year || 0))
-      .attr("fill-opacity", 0.6)
+      .attr("fill-opacity", (d) => {
+        const nodeDecade = Math.floor((d.year || 0) / 10) * 10;
+        if (selectedDecade !== null) {
+          return nodeDecade === selectedDecade ? 1 : 0.1;
+        }
+        return 0.5;
+      })
       .attr(
         "class",
         "hover:stroke-white hover:stroke-2 hover:fill-opacity-100 transition-opacity duration-200"
       )
       .style("opacity", (d) => {
-        if (highlightedDecade === null) return 1;
         const nodeDecade = Math.floor((d.year || 0) / 10) * 10;
-        return nodeDecade === highlightedDecade ? 1 : 0.2;
+        if (selectedDecade !== null) {
+          return nodeDecade === selectedDecade ? 1 : 0.2;
+        }
+        if (highlightedDecade !== null) {
+          return nodeDecade === highlightedDecade ? 1 : 0.2;
+        }
+        return 1;
       })
       .on("mouseenter", (event, d) => {
         const [x, y] = d3.pointer(event, svg.node());
@@ -326,14 +331,13 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         router.push(`/${d.slug}`);
       });
 
-    // Apply initial zoom transform
-    const initialScale = 0.8;
-    svg.call(
-      zoom.transform as any,
-      d3.zoomIdentity
-        .translate(width / 2, height / 2)
-        .scale(initialScale)
-        .translate(-width / 2, -height / 2)
+    // Instead of applying zoom transform, apply a fixed transform
+    const scale = 0.8;
+    g.attr(
+      "transform",
+      `translate(${width / 2},${height / 2}) scale(${scale}) translate(${
+        -width / 2
+      },${-height / 2})`
     );
 
     // Add background rect for mouse events
@@ -362,11 +366,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           Loading Grid...
         </div>
       )}
-      <svg
-        ref={svgRef}
-        className="w-full h-full bg-gray-50"
-        style={{ cursor: "grab" }}
-      />
+      <svg ref={svgRef} className="w-full h-full bg-gray-50" />
       {tooltipContent && (
         <div
           className="absolute z-10 max-w-sm p-2 text-sm bg-white border border-gray-200 rounded-lg shadow-lg pointer-events-none"
@@ -393,31 +393,59 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       {/* Bottom controls container */}
       <div className="absolute bottom-0 left-0 right-0 bg-white/80">
         <div className="p-4 flex justify-center items-center">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center">
             {getDecades().map((decade) => (
               <div
                 key={decade}
-                className="flex items-center cursor-pointer transition-opacity duration-200"
-                onMouseEnter={() => setHighlightedDecade(decade)}
-                onMouseLeave={() => setHighlightedDecade(null)}
+                className={`flex items-center cursor-pointer transition-opacity duration-200 
+                  px-2 py-4 -ml-px first:ml-0 hover:bg-gray-50/50 
+                  ${
+                    selectedDecade === decade
+                      ? "ring-2 ring-blue-500 ring-offset-2 rounded-lg relative z-10"
+                      : ""
+                  }`}
+                style={{
+                  marginTop: "-1rem", // Extend hover area up
+                  marginBottom: "-1rem", // Extend hover area down
+                  paddingTop: "1rem", // Maintain visual padding
+                  paddingBottom: "1rem", // Maintain visual padding
+                }}
+                onMouseEnter={() =>
+                  !selectedDecade && setHighlightedDecade(decade)
+                }
+                onMouseLeave={() =>
+                  !selectedDecade && setHighlightedDecade(null)
+                }
+                onClick={() => {
+                  if (selectedDecade === decade) {
+                    setSelectedDecade(null);
+                  } else {
+                    setSelectedDecade(decade);
+                    setHighlightedDecade(null);
+                  }
+                }}
               >
                 <div
                   className="w-4 h-4 rounded-full mr-1"
                   style={{
                     backgroundColor: getDecadeColor(decade),
                     opacity:
-                      highlightedDecade === null || highlightedDecade === decade
+                      selectedDecade === null
                         ? 1
-                        : 0.3,
+                        : selectedDecade === decade
+                        ? 1
+                        : 0.1,
                   }}
                 />
                 <span
                   className="text-sm text-gray-600"
                   style={{
                     opacity:
-                      highlightedDecade === null || highlightedDecade === decade
+                      selectedDecade === null
                         ? 1
-                        : 0.3,
+                        : selectedDecade === decade
+                        ? 1
+                        : 0.1,
                   }}
                 >
                   {decade}s
