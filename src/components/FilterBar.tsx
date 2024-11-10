@@ -310,11 +310,11 @@ function NavLinks() {
         Grid
       </Link>
       <Link
-        href="/map"
+        href="/graph"
         className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="Map"
+        aria-label="Graph"
       >
-        Map
+        Graph
       </Link>
       <Link
         href="/sunflower"
