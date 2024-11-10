@@ -66,7 +66,7 @@ export default function ArticleCard({
           )}
           {typeof article.year === "number" && article.year > 0 && (
             <div className="absolute top-3 left-3">
-              <span className="text-[8px] sm:text-xs text-gray-200">
+              <span className="text-[8px] sm:text-xs text-gray-400">
                 {article.year}
               </span>
             </div>
