@@ -106,6 +106,20 @@ export default function FilterBar({
             const articleIndex = getArticleIndex(selectedIndex);
             handleSelection(filteredArticles[articleIndex]);
           }
+        } else if (totalItems > 0) {
+          // If no item is selected but results exist, select the first item
+          if (filteredAuthors.length > 0) {
+            // First result is an author
+            const author = filteredAuthors[0];
+            router.push(
+              `/contributors/${author.toLowerCase().replace(/\s+/g, "-")}`
+            );
+          } else if (filteredArticles.length > 0) {
+            // First result is an article
+            handleSelection(filteredArticles[0]);
+          }
+          setShowResults(false);
+          setSelectedIndex(-1);
         }
         break;
 

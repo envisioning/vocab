@@ -1,0 +1,12 @@
+---
+title: Geometry-Informed Neural Networks
+
+summary: Models that integrate geometric information into neural network architectures to enhance their ability to learn and represent complex, structured data.
+slug: geometry-informed-neural-networks
+---
+
+Geometry-Informed Neural Networks incorporate principles of geometry to significantly improve the capacity of neural networks to process and understand data that possesses inherent geometric structures, such as 3D shapes, manifolds, or spatial relationships. These models leverage geometric insights to introduce inductive biases that are naturally aligned with the data's structure, thereby increasing efficiency in encoding complex spatial information and facilitating applications in fields like computer graphics, computer vision, and robotics. By integrating geometric constraints directly into the neural network architecture, these models achieve more meaningful representations, allowing for improved performance on tasks involving spatial reasoning and the manipulation of geometric data. The theoretical underpinning of these networks often involves leveraging advances in differential geometry, topology, and group theory to address challenges associated with high-dimensional transformations and invariant feature extraction in data spaces.
+
+The term "Geometry-Informed Neural Networks" began to gain traction in the late 2010s as researchers sought to address the limitations of standard neural networks in handling geometrical data, amid increasing emphasis on geometric deep learning and its applications across various scientific and technological domains. The concept resonated more widely in the academic and industrial arenas as the demand for sophisticated AI models capable of understanding 3D data grew.
+
+Key contributors to the development of Geometry-Informed Neural Networks include researchers from institutions like MIT, Stanford University, and the University of Toronto. Their work collectively advanced the use of geometric priors in deep learning through pioneering studies and innovative applications, laying the groundwork for the broader field of geometric deep learning. Notable figures include Michael Bronstein and his colleagues, who have been instrumental in formalizing many of the foundational ideas and applications that define this domain today.
