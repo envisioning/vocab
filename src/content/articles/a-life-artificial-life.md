@@ -1,7 +1,7 @@
 ---
 slug: a-life-artificial-life
 summary: Studies the simulation of life processes within computers or synthetic systems to gain insights into biological phenomena.
-title: A-Life (Artificial Life)
+title: ALife (Artificial Life)
 ---
 
 Artificial life (A-Life) is an interdisciplinary field that focuses on understanding life through the medium of artificial constructs. It employs computer simulations, robotics, and biochemistry to model and replicate biological processes, aiming to uncover the principles underlying natural life and to explore the potential for life-like behaviors in artificial systems. A-Life encompasses a broad range of studies, including the evolution of digital organisms, the dynamics of ecosystems, the origins of life, and the principles of complex adaptive systems. This field is significant for its contributions to theoretical biology, providing a testbed for hypotheses about natural life, and for its practical applications in software and robotics, where principles derived from natural life are applied to develop more adaptive and robust systems.
