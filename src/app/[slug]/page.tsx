@@ -230,13 +230,6 @@ export default async function ArticlePage({
             </div>
 
             <div className="px-8 py-6">
-              {CustomComponent && (
-                <>
-                  <CustomComponent />
-                  <ComponentFeedback slug={slug} />
-                </>
-              )}
-
               <div
                 className="prose max-w-none 
                   prose-headings:mt-8 prose-headings:mb-4
@@ -248,6 +241,16 @@ export default async function ArticlePage({
                   [&>p+p]:mt-8"
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
+
+              {CustomComponent && (
+                <>
+                  <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                    Explainer
+                  </h3>
+                  <CustomComponent />
+                  <ComponentFeedback slug={slug} />
+                </>
+              )}
 
               <Quiz slug={slug} />
 

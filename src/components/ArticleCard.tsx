@@ -29,10 +29,11 @@ export default function ArticleCard({
   // Calculate average generality with defensive checks
   const avgGenerality =
     Array.isArray(article.generality) && article.generality.length > 0
-      ? (
-          article.generality.reduce((acc, curr) => acc + curr, 0) /
-          article.generality.length
-        ).toFixed(3)
+      ? Math.round(
+          (article.generality.reduce((acc, curr) => acc + curr, 0) /
+            article.generality.length) *
+            1000
+        ).toString()
       : "N/A";
 
   // Determine which metric to show based on metricType prop
@@ -58,6 +59,18 @@ export default function ArticleCard({
             sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0" />
+          {article.component && (
+            <div className="absolute top-2 right-2">
+              <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-white opacity-75" />
+            </div>
+          )}
+          {typeof article.year === "number" && article.year > 0 && (
+            <div className="absolute top-3 left-3">
+              <span className="text-[8px] sm:text-xs text-gray-200">
+                {article.year}
+              </span>
+            </div>
+          )}
           <div className="absolute bottom-0 p-3 w-full">
             <h2
               className="text-sm font-semibold mb-1.5 text-white"
@@ -65,15 +78,9 @@ export default function ArticleCard({
             />
             <p className="text-gray-200 text-xs mb-1.5">{article.summary}</p>
             <div className="flex justify-between items-center">
-              <p className="text-gray-400 text-xs">
-                {metricLabel}: {metricValue} •{" "}
-                {typeof article.year === "number" && article.year > 0
-                  ? article.year
-                  : "Unknown"}
+              <p className="text-gray-400 text-[8px] sm:text-xs">
+                {metricLabel}: {metricValue}
               </p>
-              {article.component && (
-                <Zap className="w-4 h-4 text-white opacity-75" />
-              )}
             </div>
           </div>
         </div>

@@ -84,12 +84,13 @@ export default function RelatedArticles({ slug }: RelatedArticlesProps) {
   return (
     <div className="mt-8 pt-8">
       <h2 className="text-2xl font-bold mb-4">Related</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
         {relatedArticles.map((article) => (
           <ArticleCard
             key={article.slug}
             article={article}
             metricType="similarity"
+            size="compact"
           />
         ))}
       </div>
