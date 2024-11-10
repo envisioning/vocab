@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import type { Article } from "@/types/article";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
 
 interface FilterBarProps {
   searchTerm: string;
@@ -166,12 +167,12 @@ export default function FilterBar({
 
   return (
     <div
-      className="sticky top-0 bg-white shadow-md p-4 z-10 mb-6"
+      className="sticky top-0 bg-white shadow-md p-2 sm:p-4 z-10 mb-6"
       role="search"
       aria-label="Filter articles"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row gap-4">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Link
@@ -181,35 +182,35 @@ export default function FilterBar({
                 <Image
                   src="/vocab/envisioning.svg"
                   alt="Envisioning Logo"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={20}
+                  height={20}
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                 />
-                <span className="font-medium text-gray-900">Envisioning /</span>
+                <span className="font-medium text-gray-900 text-sm sm:text-base">
+                  Envisioning /
+                </span>
               </Link>
 
-              <Link href="/" className="flex items-center gap-2">
-                <span className="font-medium text-gray-900 underline">
+              <Link href="/" className="flex items-center">
+                <span className="font-medium text-gray-900 underline text-sm sm:text-base">
                   Vocab
                 </span>
               </Link>
             </div>
 
-            <div className="flex items-center gap-4 sm:hidden">
-              <NavLinks />
-            </div>
+            <NavLinks isMobile={true} />
           </div>
 
-          <div className="flex items-center gap-4 flex-1">
+          <div className="flex items-center gap-2 sm:gap-4 flex-1">
             <form
-              className="relative flex-1 min-w-[300px]"
+              className="relative flex-1 min-w-0 sm:min-w-[300px]"
               onSubmit={(e) => e.preventDefault()}
             >
               <input
                 ref={inputRef}
                 type="text"
                 placeholder="Search..."
-                className="px-4 py-2 border rounded-lg w-full pr-24"
+                className="px-3 sm:px-4 py-2 border rounded-lg w-full pr-16 sm:pr-24 text-sm sm:text-base"
                 value={searchTerm}
                 onChange={(e) => handleSearchChange(e.target.value)}
                 onKeyDown={handleKeyDown}
@@ -217,7 +218,7 @@ export default function FilterBar({
                 autoComplete="off"
               />
 
-              <div className="absolute right-12 top-1/2 -translate-y-1/2 text-sm text-gray-500">
+              <div className="absolute right-12 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-500">
                 {isFiltered
                   ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
                   : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
@@ -313,38 +314,72 @@ export default function FilterBar({
 }
 
 // Extract navigation links to a separate component
-function NavLinks() {
+function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const links = [
+    { href: "/grid", label: "Grid" },
+    { href: "/graph", label: "Graph" },
+    { href: "/sunflower", label: "Sunflower" },
+    { href: "/about", label: "About" },
+  ];
+
+  if (isMobile) {
+    return (
+      <div className="sm:hidden relative">
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="p-2 text-gray-600 hover:text-gray-900"
+          aria-label="Menu"
+          aria-expanded={isMenuOpen}
+        >
+          <Menu size={24} />
+        </button>
+
+        {isMenuOpen && (
+          <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg py-1 z-50">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${
+                  pathname === link.href ? "bg-gray-50" : ""
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        )}
+
+        {/* Add overlay to close menu when clicking outside */}
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-20 z-40"
+            onClick={() => setIsMenuOpen(false)}
+            aria-hidden="true"
+          />
+        )}
+      </div>
+    );
+  }
+
   return (
     <>
-      <Link
-        href="/grid"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="Grid"
-      >
-        Grid
-      </Link>
-      <Link
-        href="/graph"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="Graph"
-      >
-        Graph
-      </Link>
-      <Link
-        href="/sunflower"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="Sunflower"
-      >
-        Sunflower
-      </Link>
-      &bull;
-      <Link
-        href="/about"
-        className="text-gray-600 hover:text-gray-900 transition-colors"
-        aria-label="About"
-      >
-        About
-      </Link>
+      {links.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          className={`text-gray-600 hover:text-gray-900 transition-colors ${
+            pathname === link.href ? "text-gray-900" : ""
+          }`}
+          aria-label={link.label}
+        >
+          {link.label}
+        </Link>
+      ))}
     </>
   );
 }
