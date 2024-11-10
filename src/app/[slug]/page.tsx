@@ -18,6 +18,7 @@ import ReportErrorButton from "@/components/ReportErrorButton";
 import ComponentFeedback from "@/components/ComponentFeedback";
 import Link from "next/link";
 import { toTitleCase } from "@/lib/formatters";
+import Quiz from "@/components/Quiz";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -247,6 +248,9 @@ export default async function ArticlePage({
                   [&>p+p]:mt-8"
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
+
+              <Quiz slug={slug} />
+
               <div className="text-gray-500">
                 {articleContent.names &&
                   articleContent.names.length > 0 &&
