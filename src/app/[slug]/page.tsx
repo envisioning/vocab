@@ -20,6 +20,8 @@ import Link from "next/link";
 import { toTitleCase } from "@/lib/formatters";
 import Quiz from "@/components/Quiz";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import RelatedPapers from "@/components/RelatedPapers";
+import RelatedVideos from "@/components/RelatedVideos";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -325,6 +327,8 @@ export default async function ArticlePage({
           >
             <div className="max-w-4xl mx-auto">
               <RelatedArticles slug={slug} />
+              <RelatedVideos slug={slug} />
+              <RelatedPapers slug={slug} />
             </div>
           </Suspense>
         </div>
