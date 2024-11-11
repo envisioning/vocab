@@ -103,6 +103,16 @@ export default function Quiz({ slug }: QuizProps) {
       "conclusion",
     ];
     const currentIndex = stages.indexOf(currentStage);
+
+    // Track quiz initiation
+    if (currentStage === "start") {
+      window.plausible?.("Quiz Initiated", {
+        props: {
+          quizSlug: slug,
+        },
+      });
+    }
+
     setCurrentStage(stages[currentIndex + 1]);
   };
 
@@ -111,6 +121,26 @@ export default function Quiz({ slug }: QuizProps) {
       selectedAnswers[questionType] ===
       shuffledAnswers[questionType].correctIndex;
     const currentAttempt = (attempts[questionType] || 0) + 1;
+
+    // Track first question answer
+    if (questionType === "conceptual") {
+      window.plausible?.("Quiz First Question Answered", {
+        props: {
+          quizSlug: slug,
+          correct: isCorrect,
+        },
+      });
+    }
+
+    // Track second question answer
+    if (questionType === "practical") {
+      window.plausible?.("Quiz Second Question Answered", {
+        props: {
+          quizSlug: slug,
+          correct: isCorrect,
+        },
+      });
+    }
 
     setAttempts((prev) => ({
       ...prev,
@@ -188,10 +218,11 @@ export default function Quiz({ slug }: QuizProps) {
       case "start":
         return (
           <div className="py-12">
-            <div className="max-w-[25%] mx-auto">
+            <h2 className="text-2xl font-bold mb-4">Quiz</h2>
+            <div className="max-w-xs mx-auto">
               <button
                 onClick={moveToNextStage}
-                className="w-full p-8 bg-blue-600 text-white rounded-lg text-xl font-semibold hover:bg-blue-700 transition-colors"
+                className="w-full p-4 bg-blue-600 text-white rounded-lg text-md font-semibold hover:bg-blue-700 transition-colors"
               >
                 Start Quiz
               </button>
