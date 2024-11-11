@@ -167,7 +167,7 @@ export default function FilterBar({
 
   return (
     <div
-      className="sticky top-0 bg-white dark:bg-gray-800 shadow-md p-2 sm:p-4 z-10 mb-6"
+      className="sticky top-0 bg-white shadow-md p-2 sm:p-4 z-10 mb-6"
       role="search"
       aria-label="Filter articles"
     >
@@ -184,15 +184,15 @@ export default function FilterBar({
                   alt="Envisioning Logo"
                   width={20}
                   height={20}
-                  className="w-5 h-5 sm:w-6 sm:h-6 dark:invert"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                 />
-                <span className="font-medium text-gray-900 dark:text-white text-sm sm:text-base">
+                <span className="font-medium text-gray-900 text-sm sm:text-base">
                   Envisioning /
                 </span>
               </Link>
 
               <Link href="/" className="flex items-center">
-                <span className="font-medium text-gray-900 dark:text-white underline text-sm sm:text-base">
+                <span className="font-medium text-gray-900 underline text-sm sm:text-base">
                   Vocab
                 </span>
               </Link>
@@ -211,9 +211,7 @@ export default function FilterBar({
                 type="text"
                 placeholder="Search..."
                 className="px-3 sm:px-4 py-2 border rounded-lg w-full pr-16 sm:pr-24 text-sm sm:text-base
-                  bg-white dark:bg-gray-700 text-gray-900 dark:text-white
-                  border-gray-300 dark:border-gray-600
-                  placeholder-gray-500 dark:placeholder-gray-400"
+                  bg-white text-gray-900 border-gray-300 placeholder-gray-500"
                 value={searchTerm}
                 onChange={(e) => handleSearchChange(e.target.value)}
                 onKeyDown={handleKeyDown}
@@ -221,7 +219,7 @@ export default function FilterBar({
                 autoComplete="off"
               />
 
-              <div className="absolute right-12 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+              <div className="absolute right-12 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-500">
                 {isFiltered
                   ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
                   : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
@@ -230,7 +228,7 @@ export default function FilterBar({
               {searchTerm && (
                 <button
                   onClick={handleClear}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 dark:hover:bg-gray-600 rounded-full"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
                   aria-label="Clear filters"
                 >
                   <svg
@@ -243,7 +241,7 @@ export default function FilterBar({
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-gray-400 dark:text-gray-500"
+                    className="text-gray-400"
                   >
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -252,10 +250,10 @@ export default function FilterBar({
               )}
 
               {showResults && searchTerm && (
-                <div className="absolute top-full left-0 right-0 mt-1 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-lg max-h-96 overflow-y-auto">
+                <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
                   {filteredAuthors.length > 0 && (
-                    <div className="border-b dark:border-gray-700">
-                      <div className="px-4 py-2 text-sm text-gray-500 dark:text-gray-400">
+                    <div className="border-b">
+                      <div className="px-4 py-2 text-sm text-gray-500">
                         Authors
                       </div>
                       {filteredAuthors.map((author, index) => (
@@ -264,20 +262,14 @@ export default function FilterBar({
                           href={`/contributors/${author
                             .toLowerCase()
                             .replace(/\s+/g, "-")}`}
-                          className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700
-                            ${
-                              index === selectedIndex
-                                ? "bg-blue-50 dark:bg-blue-900"
-                                : ""
-                            }`}
+                          className={`block px-4 py-2 hover:bg-gray-100
+                            ${index === selectedIndex ? "bg-blue-50" : ""}`}
                           onClick={() => {
                             setShowResults(false);
                             setSelectedIndex(-1);
                           }}
                         >
-                          <span className="text-gray-900 dark:text-white">
-                            {author}
-                          </span>
+                          <span className="text-gray-900">{author}</span>
                         </Link>
                       ))}
                     </div>
@@ -285,17 +277,17 @@ export default function FilterBar({
 
                   {filteredArticles.length > 0 && (
                     <div>
-                      <div className="px-4 py-2 text-sm text-gray-500 dark:text-gray-400">
+                      <div className="px-4 py-2 text-sm text-gray-500">
                         Articles
                       </div>
                       {filteredArticles.map((article, index) => (
                         <Link
                           key={article.slug}
                           href={`/${article.slug}`}
-                          className={`block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700
+                          className={`block px-4 py-2 hover:bg-gray-100
                             ${
                               index + filteredAuthors.length === selectedIndex
-                                ? "bg-blue-50 dark:bg-blue-900"
+                                ? "bg-blue-50"
                                 : ""
                             }`}
                           onClick={(e) => {
@@ -303,9 +295,7 @@ export default function FilterBar({
                             handleSelection(article);
                           }}
                         >
-                          <span className="text-gray-900 dark:text-white">
-                            {article.title}
-                          </span>
+                          <span className="text-gray-900">{article.title}</span>
                         </Link>
                       ))}
                     </div>
@@ -341,7 +331,7 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
       <div className="sm:hidden relative">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+          className="p-2 text-gray-600 hover:text-gray-900"
           aria-label="Menu"
           aria-expanded={isMenuOpen}
         >
@@ -349,16 +339,14 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
         </button>
 
         {isMenuOpen && (
-          <div className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-1 z-50">
+          <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg py-1 z-50">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 
-                  hover:bg-gray-100 dark:hover:bg-gray-700
-                  ${
-                    pathname === link.href ? "bg-gray-50 dark:bg-gray-700" : ""
-                  }`}
+                className={`block px-4 py-2 text-sm text-gray-700 
+                  hover:bg-gray-100
+                  ${pathname === link.href ? "bg-gray-50" : ""}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
@@ -369,7 +357,7 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
 
         {isMenuOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-20 dark:bg-opacity-50 z-40"
+            className="fixed inset-0 bg-black bg-opacity-20 z-40"
             onClick={() => setIsMenuOpen(false)}
             aria-hidden="true"
           />
@@ -384,9 +372,9 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
         <Link
           key={link.href}
           href={link.href}
-          className={`text-gray-600 dark:text-gray-300 
-            hover:text-gray-900 dark:hover:text-white transition-colors
-            ${pathname === link.href ? "text-gray-900 dark:text-white" : ""}`}
+          className={`text-gray-600 
+            hover:text-gray-900 transition-colors
+            ${pathname === link.href ? "text-gray-900" : ""}`}
           aria-label={link.label}
         >
           {link.label}

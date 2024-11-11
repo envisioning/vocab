@@ -7,13 +7,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -27,9 +20,7 @@ body {
 .acronym-description {
   font-size: 0.9em;
   color: #fff;
-  /* text-gray-300 equivalent */
 }
-
 
 @keyframes twinkle {
   0%, 100% { opacity: 0.2; }
