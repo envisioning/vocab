@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useTheme } from "@/contexts/ThemeContext";
 import { Article } from "@/types/article";
 import FilterBar from "./FilterBar";
 
@@ -48,10 +49,16 @@ export default function FilterBarWrapper({
   articles,
   namesData,
 }: FilterBarWrapperProps) {
+  const { theme } = useTheme();
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOption, setSortOption] = useState("zap");
   const pathname = usePathname();
   const isHomeRoute = pathname === "/";
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const frequentAuthors = useMemo(
     () => getFrequentAuthors(namesData),
@@ -129,17 +136,20 @@ export default function FilterBarWrapper({
     return { articles: filteredArticles, authors: filteredAuthors };
   }, [articles, searchTerm, frequentAuthors]);
 
+  // Always render the same structure, just without theme classes before mount
   return (
-    <FilterBar
-      searchTerm={searchTerm}
-      onSearchChange={handleSearch}
-      sortOption={sortOption}
-      onSortChange={handleSort}
-      allArticles={articles}
-      filteredArticles={filteredResults.articles}
-      filteredAuthors={filteredResults.authors}
-      isHomeRoute={isHomeRoute}
-      getSearchPriority={getSearchPriority}
-    />
+    <div className={mounted && theme === "dark" ? "dark" : ""}>
+      <FilterBar
+        searchTerm={searchTerm}
+        onSearchChange={handleSearch}
+        sortOption={sortOption}
+        onSortChange={handleSort}
+        allArticles={articles}
+        filteredArticles={filteredResults.articles}
+        filteredAuthors={filteredResults.authors}
+        isHomeRoute={isHomeRoute}
+        getSearchPriority={getSearchPriority}
+      />
+    </div>
   );
 }
