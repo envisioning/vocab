@@ -186,25 +186,27 @@ export default function Quiz({ slug }: QuizProps) {
         className={`flex items-start gap-3 border rounded-lg p-3 transition-colors ${
           isAttempted
             ? "opacity-50 cursor-not-allowed"
-            : "cursor-pointer hover:bg-gray-50"
+            : "cursor-pointer hover:bg-gray-800 dark:hover:bg-gray-700"
         } ${
           selectedAnswers[questionType] === index
-            ? "border-blue-200 bg-blue-50 hover:bg-blue-50"
-            : "border-gray-200"
+            ? "border-blue-500 bg-blue-900/20 dark:border-blue-400 dark:bg-blue-900/30 hover:bg-blue-900/20 dark:hover:bg-blue-900/30"
+            : "border-gray-700 dark:border-gray-600"
         }`}
       >
         <input
           type="radio"
           name={`${questionType}-answer`}
           id={`${questionType}-answer-${index}`}
-          className="w-4 h-4 mt-1 mr-1"
+          className="w-4 h-4 mt-1 mr-1 accent-blue-500 dark:accent-blue-400"
           onChange={() => handleAnswerSelect(questionType, index)}
           checked={selectedAnswers[questionType] === index}
           disabled={isAttempted || showResults[questionType]}
         />
         <span
           className={`flex-1 ${
-            isAttempted ? "line-through text-gray-500" : ""
+            isAttempted
+              ? "line-through text-gray-400 dark:text-gray-500"
+              : "text-gray-900 dark:text-gray-200"
           }`}
         >
           {answer}
@@ -218,11 +220,13 @@ export default function Quiz({ slug }: QuizProps) {
       case "start":
         return (
           <div className="py-12">
-            <h2 className="text-2xl font-bold mb-4">Quiz</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+              Quiz
+            </h2>
             <div className="max-w-xs mx-auto">
               <button
                 onClick={moveToNextStage}
-                className="w-full p-4 bg-blue-600 text-white rounded-lg text-md font-semibold hover:bg-blue-700 transition-colors"
+                className="w-full p-4 bg-blue-600 text-white rounded-lg text-md font-semibold hover:bg-blue-700 transition-colors dark:bg-blue-500 dark:hover:bg-blue-600"
               >
                 Start Quiz
               </button>
@@ -232,9 +236,11 @@ export default function Quiz({ slug }: QuizProps) {
 
       case "conclusion":
         return (
-          <div className="bg-gray-50 rounded-lg p-6 text-center">
-            <h3 className="text-2xl font-semibold mb-4">Quiz Complete!</h3>
-            <p className="mb-4">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 text-center">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Quiz Complete!
+            </h3>
+            <p className="mb-4 text-gray-700 dark:text-gray-300">
               You got{" "}
               {
                 Object.values(selectedAnswers).filter(
@@ -248,7 +254,7 @@ export default function Quiz({ slug }: QuizProps) {
             </p>
             <button
               onClick={() => window.location.reload()}
-              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
             >
               Try Again
             </button>
@@ -258,8 +264,8 @@ export default function Quiz({ slug }: QuizProps) {
       case "conceptual":
       case "practical":
         return (
-          <div className="bg-gray-50 rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-4">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
               {quizData[currentStage].question}
             </h3>
 
@@ -280,14 +286,14 @@ export default function Quiz({ slug }: QuizProps) {
       return (
         <>
           {attemptedAnswers[questionType]?.length > 0 && (
-            <p className="mt-4 text-red-600 mb-2">
+            <p className="mt-4 text-red-500 dark:text-red-400 mb-2">
               Sorry, that's wrong. Try again!
             </p>
           )}
           {selectedAnswers[questionType] !== undefined && (
             <button
               onClick={() => checkAnswer(questionType)}
-              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+              className="mt-4 px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
             >
               Check Answer
             </button>
@@ -304,27 +310,31 @@ export default function Quiz({ slug }: QuizProps) {
       <div className="mt-4">
         {isCorrect ? (
           <div>
-            <p className="text-green-600 mb-2">Correct! Well done!</p>
+            <p className="text-green-500 dark:text-green-400 mb-2">
+              Correct! Well done!
+            </p>
             <button
               onClick={moveToNextStage}
-              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
             >
               {questionType === "conceptual" ? "Next Question" : "See Results"}
             </button>
           </div>
         ) : (
           <div>
-            <p className="text-red-600 mb-2">
+            <p className="text-red-500 dark:text-red-400 mb-2">
               Sorry, that's wrong. The correct answer was:{" "}
-              {
-                shuffledAnswers[questionType].answers[
-                  shuffledAnswers[questionType].correctIndex
-                ]
-              }
+              <span className="text-gray-900 dark:text-gray-200">
+                {
+                  shuffledAnswers[questionType].answers[
+                    shuffledAnswers[questionType].correctIndex
+                  ]
+                }
+              </span>
             </p>
             <button
               onClick={moveToNextStage}
-              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+              className="px-4 py-2 bg-blue-600 dark:bg-blue-500 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
             >
               {questionType === "conceptual" ? "Next Question" : "See Results"}
             </button>
