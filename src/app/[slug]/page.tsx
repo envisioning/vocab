@@ -19,6 +19,7 @@ import ComponentFeedback from "@/components/ComponentFeedback";
 import Link from "next/link";
 import { toTitleCase } from "@/lib/formatters";
 import Quiz from "@/components/Quiz";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
 
@@ -301,6 +302,12 @@ export default async function ArticlePage({
                   <ReportErrorButton slug={slug} title={frontmatter.title} />
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto mt-8">
+            <div className="bg-white shadow-lg rounded-lg">
+              <NewsletterSignup />
             </div>
           </div>
 
