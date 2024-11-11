@@ -5484,5 +5484,32 @@
     "juergen knoblich",
     "yoshiki sasai",
     "paul t."
+  ],
+  "lemoine-effect": [
+    "unknown"
+  ],
+  "discrete-state-space-model": [
+    "richard bellman",
+    "john von neumann",
+    "claude shannon",
+    "norbert wiener",
+    "david blackwell",
+    "herbert simon",
+    "andrew yao"
+  ],
+  "intruder-dimension": [
+    "unknown"
+  ],
+  "geometry-informed-neural-networks": [
+    "justin solomon",
+    "taco cohen",
+    "max welling",
+    "leonidas j. guibas",
+    "j. andrew bagnell",
+    "david k. duvenaud",
+    "unknown"
+  ],
+  "rgm-renormalizing-generative-model": [
+    "unknown"
   ]
 }

@@ -254,7 +254,7 @@
     },
     {
       "title": "Self-Awareness",
-      "definition": "Nn entity's ability to recognize itself as an individual, distinct from its environment and other entities, often involving introspection and a sense of identity.",
+      "definition": "An entity's ability to recognize itself as an individual, distinct from its environment and other entities, often involving introspection and a sense of identity.",
       "year": 1980,
       "slug": "self-awareness"
     },
@@ -781,6 +781,12 @@
       "slug": "generative"
     },
     {
+      "title": "Prediction Error",
+      "definition": "The discrepancy between predicted outcomes by an AI model and the actual observed results in a dataset.",
+      "year": 1986,
+      "slug": "prediction-error"
+    },
+    {
       "title": "Silent Collapse",
       "definition": "Gradual degradation in the performance of AI models when trained on synthetic data produced by other AIs, leading to a decline in output quality over successive iterations.",
       "year": 2022,
@@ -801,7 +807,7 @@
     {
       "title": "Representation Engineering",
       "definition": "The process of designing and selecting the most effective data representations to improve the performance of AI models.",
-      "year": 0,
+      "year": 2017,
       "slug": "representation-engineering"
     },
     {
@@ -1121,6 +1127,12 @@
       "definition": "Mathematical relationships that describe how the performance of machine learning models, particularly deep learning models, improves as their size, the amount of data, or computational resources increases.",
       "year": 2020,
       "slug": "scaling-laws"
+    },
+    {
+      "title": "Prediction",
+      "definition": "Process of using data-driven algorithms to forecast future outcomes or trends based on historical data.",
+      "year": 1986,
+      "slug": "prediction"
     },
     {
       "title": "Sequence Model",
@@ -2455,6 +2467,12 @@
       "slug": "policy-learning"
     },
     {
+      "title": "Lemoine Effect",
+      "definition": "The Lemoine Effect describes the phenomenon where conversational AI systems are anthropomorphized by users, leading to perceptions that these systems possess attributes akin to human thought or emotion.",
+      "year": 2022,
+      "slug": "lemoine-effect"
+    },
+    {
       "title": "Early Exit Loss",
       "definition": "An optimization technique in AI models that balances overall accuracy and computational efficiency.",
       "year": 2018,
@@ -2533,7 +2551,7 @@
       "slug": "knowledge-graph"
     },
     {
-      "title": "A-Life (Artificial Life)",
+      "title": "ALife (Artificial Life)",
       "definition": "Studies the simulation of life processes within computers or synthetic systems to gain insights into biological phenomena.",
       "year": 1987,
       "slug": "a-life-artificial-life"
@@ -2549,6 +2567,12 @@
       "definition": "Designated person responsible for overseeing and managing interactions between an AI system and its users or other systems.",
       "year": 0,
       "slug": "hpoc-human-point-of-contact"
+    },
+    {
+      "title": "Discrete State-Space Model",
+      "definition": "A mathematical representation of a system with a finite number of states used to describe its dynamics and behavior over discrete time intervals.",
+      "year": 0,
+      "slug": "discrete-state-space-model"
     },
     {
       "title": "Discontinuous Jump",
@@ -2627,6 +2651,12 @@
       "definition": "Early computational model of a biological neuron forming the basis for artificial neural networks.",
       "year": 1958,
       "slug": "mcp-neuron"
+    },
+    {
+      "title": "Intruder Dimension",
+      "definition": "A context or attribute within data that significantly diverges from expected patterns, potentially causing issues in AI model performance or interpretation.",
+      "year": 0,
+      "slug": "intruder-dimension"
     },
     {
       "title": "Process Reward Model",
@@ -3283,6 +3313,12 @@
       "slug": "sample-efficiency"
     },
     {
+      "title": "Torment Nexus",
+      "definition": "A fictional and dystopian representation symbolizing the unintended and often calamitous outcomes of technology, particularly AI, when ethical considerations are overlooked.",
+      "year": 0,
+      "slug": "torment-nexus"
+    },
+    {
       "title": "Lost-in-the-Middle",
       "definition": "Issue in LLMs where they tend to struggle with retaining and processing information from the middle parts of long input sequences.",
       "year": 2023,
@@ -3937,6 +3973,12 @@
       "slug": "neurode"
     },
     {
+      "title": "Gradient noise scale",
+      "definition": "A measure used to assess the noise associated with stochastic gradient descent updates, reflecting the stability and scalability of training neural networks.",
+      "year": 2017,
+      "slug": "gradient-noise-scale"
+    },
+    {
       "title": "Perceptron",
       "definition": "Model in neural networks designed to perform binary classification tasks by mimicking the decision-making process of a single neuron.",
       "year": 1958,
@@ -4177,6 +4219,12 @@
       "slug": "matrix-multiplication"
     },
     {
+      "title": "Emotional Integrity",
+      "definition": "The capability of an AI system to authentically recognize, process, and respond to human emotions while maintaining ethical and moral standards.",
+      "year": 0,
+      "slug": "emotional-integrity"
+    },
+    {
       "title": "VLM (Visual Language Model)",
       "definition": "AI models designed to interpret and generate content by integrating visual and textual information, enabling them to perform tasks like image captioning, visual question answering, and more.",
       "year": 2021,
@@ -4415,6 +4463,12 @@
       "definition": "A practiced approach in AI training where learning direction is strategically changed to optimize model performance and mitigate issues like vanishing gradients.",
       "year": 2022,
       "slug": "reversal-course"
+    },
+    {
+      "title": "Geometry-Informed Neural Networks",
+      "definition": "Models that integrate geometric information into neural network architectures to enhance their ability to learn and represent complex, structured data.",
+      "year": 2020,
+      "slug": "geometry-informed-neural-networks"
     },
     {
       "title": "End-to-End Learning",
@@ -4735,6 +4789,12 @@
       "slug": "policy-guided-diffusion"
     },
     {
+      "title": "Cerebral Organoids",
+      "definition": "Miniature, simplified versions of the brain grown in vitro from stem cells, used to model neurological development, disease, and therapeutics.",
+      "year": 2013,
+      "slug": "cerebral-organoids"
+    },
+    {
       "title": "Local Weight Sharing",
       "definition": "Technique where the same weights are used across different positions in an input, enhancing the network's ability to recognize patterns irrespective of their spatial location.",
       "year": 1980,
@@ -4925,6 +4985,12 @@
       "definition": "A computerized program used to support determinations, judgments, and courses of action in an organization or a business.",
       "year": 1965,
       "slug": "dss-decision-support-system"
+    },
+    {
+      "title": "RGM (Renormalizing Generative Model)",
+      "definition": "A probabilistic framework for learning and generating new data based on the renormalization principles often applied in theoretical physics.",
+      "year": 0,
+      "slug": "rgm-renormalizing-generative-model"
     },
     {
       "title": "Safety Net",
@@ -5443,7 +5509,7 @@
       "slug": "self-attention"
     },
     {
-      "title": "Cross entropy loss",
+      "title": "Cross Entropy Loss",
       "definition": "Loss function used to measure the difference between two probability distributions for a given random variable or set of events.",
       "year": 1991,
       "slug": "cross-entropy-loss"

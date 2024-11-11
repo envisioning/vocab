@@ -180,14 +180,6 @@
       {
         "slug": "equivariance",
         "similarity": 0.3466878736244098
-      },
-      {
-        "slug": "ami-ambient-intelligence",
-        "similarity": 0.35
-      },
-      {
-        "slug": "empathic-ai",
-        "similarity": 0.35
       }
     ]
   },
@@ -568,14 +560,6 @@
       {
         "slug": "emotional-integrity",
         "similarity": 0.4759871914677986
-      },
-      {
-        "slug": "invariance",
-        "similarity": 0.35
-      },
-      {
-        "slug": "speculative-edits",
-        "similarity": 0.35
       }
     ]
   },
@@ -668,14 +652,6 @@
       {
         "slug": "spatial-intelligence",
         "similarity": 0.3452925196624631
-      },
-      {
-        "slug": "rejection-sampling",
-        "similarity": 0.35
-      },
-      {
-        "slug": "data-mining",
-        "similarity": 0.35
       }
     ]
   },
@@ -1384,6 +1360,14 @@
       {
         "slug": "cerebral-organoids",
         "similarity": 0.47882219728667447
+      },
+      {
+        "slug": "consciousness-level",
+        "similarity": 0.35
+      },
+      {
+        "slug": "red-queen-effect",
+        "similarity": 0.35
       }
     ]
   },
@@ -1802,14 +1786,6 @@
       {
         "slug": "red-queen-effect",
         "similarity": 0.28528390885429117
-      },
-      {
-        "slug": "cerebral-organoids",
-        "similarity": 0.35
-      },
-      {
-        "slug": "private-cloud-compute",
-        "similarity": 0.35
       }
     ]
   },
@@ -1828,6 +1804,14 @@
       {
         "slug": "tem-trusted-execution-monitor",
         "similarity": 0.26509813039411
+      },
+      {
+        "slug": "red-queen-effect",
+        "similarity": 0.35
+      },
+      {
+        "slug": "planetary-scale-system",
+        "similarity": 0.35
       }
     ]
   },
@@ -1886,14 +1870,6 @@
       {
         "slug": "preference-model",
         "similarity": 0.3370045054809723
-      },
-      {
-        "slug": "planetary-scale-system",
-        "similarity": 0.35
-      },
-      {
-        "slug": "fab",
-        "similarity": 0.35
       }
     ]
   },
@@ -2112,6 +2088,14 @@
       {
         "slug": "weight-initialization",
         "similarity": 0.577465071165983
+      },
+      {
+        "slug": "fab",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ppml-privacy-preserving-machine-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -2188,6 +2172,14 @@
       {
         "slug": "invariance",
         "similarity": 0.3466878736244098
+      },
+      {
+        "slug": "nowcasting",
+        "similarity": 0.35
+      },
+      {
+        "slug": "valence",
+        "similarity": 0.35
       }
     ]
   },
@@ -2696,6 +2688,14 @@
       {
         "slug": "federated-training",
         "similarity": 0.4111446350507431
+      },
+      {
+        "slug": "xaviers-initialization",
+        "similarity": 0.35
+      },
+      {
+        "slug": "model-drift",
+        "similarity": 0.35
       }
     ]
   },
@@ -2948,6 +2948,14 @@
       {
         "slug": "algorithmic-probability",
         "similarity": 0.5055187728041224
+      },
+      {
+        "slug": "toy-program",
+        "similarity": 0.35
+      },
+      {
+        "slug": "fourier-features",
+        "similarity": 0.35
       }
     ]
   },
@@ -3104,6 +3112,14 @@
       {
         "slug": "fourier-transform",
         "similarity": 0.6440490818945617
+      },
+      {
+        "slug": "ait-algorithmic-information-theory",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ast-abstract-syntax-tree",
+        "similarity": 0.35
       }
     ]
   },
@@ -3386,11 +3402,11 @@
         "similarity": 0.24762871918363566
       },
       {
-        "slug": "private-cloud-compute",
+        "slug": "attestation",
         "similarity": 0.35
       },
       {
-        "slug": "dpo-direct-preference-optimization",
+        "slug": "recommendation-systems",
         "similarity": 0.35
       }
     ]
@@ -3520,11 +3536,11 @@
         "similarity": 0.33557434070030545
       },
       {
-        "slug": "dpo-direct-preference-optimization",
+        "slug": "recommendation-systems",
         "similarity": 0.35
       },
       {
-        "slug": "weight-initialization",
+        "slug": "xaviers-initialization",
         "similarity": 0.35
       }
     ]
@@ -3800,7 +3816,7 @@
     "complexity": 0.5,
     "popularity": 0.429,
     "safety": 0.5,
-    "year": 0,
+    "year": 2017,
     "component": false,
     "children": [
       {
@@ -4096,14 +4112,6 @@
       {
         "slug": "lvlms-large-vision-language-models",
         "similarity": 0.27796433181039204
-      },
-      {
-        "slug": "variational-free-energy",
-        "similarity": 0.35
-      },
-      {
-        "slug": "clustering",
-        "similarity": 0.35
       }
     ]
   },
@@ -4350,6 +4358,14 @@
       {
         "slug": "church-encoding",
         "similarity": 0.6617612516339249
+      },
+      {
+        "slug": "deterministic",
+        "similarity": 0.35
+      },
+      {
+        "slug": "qml-quantum-machine-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -5114,6 +5130,14 @@
       {
         "slug": "feature-extraction",
         "similarity": 0.37763698276519164
+      },
+      {
+        "slug": "sparse-crosscoders",
+        "similarity": 0.35
+      },
+      {
+        "slug": "godel-code",
+        "similarity": 0.35
       }
     ]
   },
@@ -5220,14 +5244,6 @@
       {
         "slug": "tensorflow",
         "similarity": 0.31875410660801956
-      },
-      {
-        "slug": "godel-code",
-        "similarity": 0.35
-      },
-      {
-        "slug": "three-laws-of-robotics",
-        "similarity": 0.35
       }
     ]
   },
@@ -5630,6 +5646,14 @@
       {
         "slug": "preference-model",
         "similarity": 0.41651081068950363
+      },
+      {
+        "slug": "planetary-scale-system",
+        "similarity": 0.35
+      },
+      {
+        "slug": "fab",
+        "similarity": 0.35
       }
     ]
   },
@@ -5752,14 +5776,6 @@
       {
         "slug": "adversarial-attacks",
         "similarity": 0.4748897167120262
-      },
-      {
-        "slug": "perplexity",
-        "similarity": 0.35
-      },
-      {
-        "slug": "zero-shot-capability",
-        "similarity": 0.35
       }
     ]
   },
@@ -6480,7 +6496,7 @@
         "similarity": 0.46729550985882007
       },
       {
-        "slug": "fourier-analysis",
+        "slug": "fourier-features",
         "similarity": 0.35
       },
       {
@@ -6856,7 +6872,7 @@
         "similarity": 0.4217011678063284
       },
       {
-        "slug": "adversarial-instructions",
+        "slug": "targeted-adversarial-examples",
         "similarity": 0.35
       },
       {
@@ -7588,14 +7604,6 @@
       {
         "slug": "qml-quantum-machine-learning",
         "similarity": 0.7469828986173124
-      },
-      {
-        "slug": "church-encoding",
-        "similarity": 0.35
-      },
-      {
-        "slug": "consciousness-level",
-        "similarity": 0.35
       }
     ]
   },
@@ -8252,14 +8260,6 @@
       {
         "slug": "enrichment",
         "similarity": 0.2737232333395844
-      },
-      {
-        "slug": "capsule-networks",
-        "similarity": 0.35
-      },
-      {
-        "slug": "stochastic",
-        "similarity": 0.35
       }
     ]
   },
@@ -9080,14 +9080,6 @@
       {
         "slug": "feature-extraction",
         "similarity": 0.43302616031291535
-      },
-      {
-        "slug": "sparse-crosscoders",
-        "similarity": 0.35
-      },
-      {
-        "slug": "godel-code",
-        "similarity": 0.35
       }
     ]
   },
@@ -9302,6 +9294,14 @@
       {
         "slug": "emotional-integrity",
         "similarity": 0.4021311941460578
+      },
+      {
+        "slug": "equivariance",
+        "similarity": 0.35
+      },
+      {
+        "slug": "speculative-edits",
+        "similarity": 0.35
       }
     ]
   },
@@ -9324,6 +9324,14 @@
       {
         "slug": "emt-extended-mind-transformer",
         "similarity": 0.3433608669935733
+      },
+      {
+        "slug": "variational-free-energy",
+        "similarity": 0.35
+      },
+      {
+        "slug": "clustering",
+        "similarity": 0.35
       }
     ]
   },
@@ -9500,14 +9508,6 @@
       {
         "slug": "church-turing-thesis",
         "similarity": 0.39065214670280823
-      },
-      {
-        "slug": "stochastic",
-        "similarity": 0.35
-      },
-      {
-        "slug": "quantum-computing",
-        "similarity": 0.35
       }
     ]
   },
@@ -9830,14 +9830,6 @@
       {
         "slug": "gabor-function",
         "similarity": 0.24349220389435147
-      },
-      {
-        "slug": "solomonoff-induction",
-        "similarity": 0.35
-      },
-      {
-        "slug": "ast-abstract-syntax-tree",
-        "similarity": 0.35
       }
     ]
   },
@@ -10328,7 +10320,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "residual-connections",
+        "slug": "resnet-residual-network",
         "similarity": 0.35
       }
     ]
@@ -10902,14 +10894,6 @@
       {
         "slug": "resnet-residual-network",
         "similarity": 0.5311679196545039
-      },
-      {
-        "slug": "deepfakes",
-        "similarity": 0.35
-      },
-      {
-        "slug": "automaton",
-        "similarity": 0.35
       }
     ]
   },
@@ -11492,11 +11476,11 @@
         "similarity": 0.4376416903098345
       },
       {
-        "slug": "residual-connections",
+        "slug": "resnet-residual-network",
         "similarity": 0.35
       },
       {
-        "slug": "open-ended-ai",
+        "slug": "open-weights",
         "similarity": 0.35
       }
     ]
@@ -11516,14 +11500,6 @@
       {
         "slug": "confidential-computing",
         "similarity": 0.33204077234649654
-      },
-      {
-        "slug": "red-teaming",
-        "similarity": 0.35
-      },
-      {
-        "slug": "planetary-scale-system",
-        "similarity": 0.35
       }
     ]
   },
@@ -11576,14 +11552,6 @@
       {
         "slug": "open-weights",
         "similarity": 0.35984693033949583
-      },
-      {
-        "slug": "automaton",
-        "similarity": 0.35
-      },
-      {
-        "slug": "a-life-artificial-life",
-        "similarity": 0.35
       }
     ]
   },
@@ -11722,11 +11690,11 @@
     "name": "Lemoine Effect",
     "summary": "The Lemoine Effect describes the phenomenon where conversational AI systems are anthropomorphized by users, leading to perceptions that these systems possess attributes akin to human thought or emotion.",
     "generality": 0.375,
-    "impact": null,
-    "complexity": null,
+    "impact": 0.633,
+    "complexity": 0.354,
     "popularity": null,
     "safety": null,
-    "year": null,
+    "year": 2022,
     "component": false,
     "children": [
       {
@@ -12226,11 +12194,11 @@
         "similarity": 0.4808041411732335
       },
       {
-        "slug": "open-ended-ai",
+        "slug": "open-weights",
         "similarity": 0.35
       },
       {
-        "slug": "imitation-learning",
+        "slug": "gail-generative-adversarial-imitation-learning",
         "similarity": 0.35
       }
     ]
@@ -12250,14 +12218,6 @@
       {
         "slug": "gail-generative-adversarial-imitation-learning",
         "similarity": 0.417595803808808
-      },
-      {
-        "slug": "a-life-artificial-life",
-        "similarity": 0.35
-      },
-      {
-        "slug": "ood-out-of-distribution-behavior",
-        "similarity": 0.35
       }
     ]
   },
@@ -12284,11 +12244,11 @@
     "name": "Discrete State-Space Model",
     "summary": "A mathematical representation of a system with a finite number of states used to describe its dynamics and behavior over discrete time intervals.",
     "generality": 0.675,
-    "impact": null,
-    "complexity": null,
+    "impact": 0.225,
+    "complexity": 0.616,
     "popularity": null,
     "safety": null,
-    "year": null,
+    "year": 0,
     "component": false,
     "children": [
       {
@@ -12680,7 +12640,7 @@
     "complexity": 0.603,
     "popularity": 0.171,
     "safety": 0.5,
-    "year": null,
+    "year": 0,
     "component": false,
     "children": [
       {
@@ -13630,7 +13590,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "solomonoff-induction",
+        "slug": "ait-algorithmic-information-theory",
         "similarity": 0.35
       }
     ]
@@ -13982,7 +13942,7 @@
         "similarity": 0.5039986692105555
       },
       {
-        "slug": "abliteration",
+        "slug": "lvlms-large-vision-language-models",
         "similarity": 0.35
       },
       {
@@ -15018,6 +14978,14 @@
       {
         "slug": "capsule-networks",
         "similarity": 0.3452925196624631
+      },
+      {
+        "slug": "model-compression",
+        "similarity": 0.35
+      },
+      {
+        "slug": "enrichment",
+        "similarity": 0.35
       }
     ]
   },
@@ -15182,6 +15150,14 @@
       {
         "slug": "residual-connections",
         "similarity": 0.5311679196545039
+      },
+      {
+        "slug": "deepfakes",
+        "similarity": 0.35
+      },
+      {
+        "slug": "automaton",
+        "similarity": 0.35
       }
     ]
   },
@@ -15254,6 +15230,10 @@
       {
         "slug": "prediction",
         "similarity": 0.2560649508005811
+      },
+      {
+        "slug": "equivariance",
+        "similarity": 0.35
       }
     ]
   },
@@ -15798,6 +15778,14 @@
       {
         "slug": "deterministic-quoting",
         "similarity": 0.3416077114004894
+      },
+      {
+        "slug": "enrichment",
+        "similarity": 0.35
+      },
+      {
+        "slug": "lambda-calculus",
+        "similarity": 0.35
       }
     ]
   },
@@ -16578,7 +16566,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "acps-access-control-policies",
+        "slug": "fuzzy-logic",
         "similarity": 0.35
       }
     ]
@@ -16732,6 +16720,14 @@
       {
         "slug": "red-teaming",
         "similarity": 0.28528390885429117
+      },
+      {
+        "slug": "brain-organoid-reservoir-computing",
+        "similarity": 0.35
+      },
+      {
+        "slug": "attestation",
+        "similarity": 0.35
       }
     ]
   },
@@ -16958,10 +16954,6 @@
       {
         "slug": "ami-advanced-machine-intelligence",
         "similarity": 0.3629566923531437
-      },
-      {
-        "slug": "invariance",
-        "similarity": 0.35
       }
     ]
   },
@@ -17074,7 +17066,7 @@
         "similarity": 0.5988056826027663
       },
       {
-        "slug": "imitation-learning",
+        "slug": "gail-generative-adversarial-imitation-learning",
         "similarity": 0.35
       },
       {
@@ -17098,6 +17090,14 @@
       {
         "slug": "data-mining",
         "similarity": 0.2737232333395844
+      },
+      {
+        "slug": "spatial-intelligence",
+        "similarity": 0.35
+      },
+      {
+        "slug": "deterministic",
+        "similarity": 0.35
       }
     ]
   },
@@ -17390,6 +17390,14 @@
       {
         "slug": "persuasive-system",
         "similarity": 0.23023479864439345
+      },
+      {
+        "slug": "fuzzy-logic",
+        "similarity": 0.35
+      },
+      {
+        "slug": "observability",
+        "similarity": 0.35
       }
     ]
   },
@@ -17486,6 +17494,14 @@
       {
         "slug": "bgpt-byte-level-transformer",
         "similarity": 0.5510719557186124
+      },
+      {
+        "slug": "saturating-non-linearities",
+        "similarity": 0.35
+      },
+      {
+        "slug": "geometric-deep-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -17528,11 +17544,11 @@
         "similarity": 0.1857789220015045
       },
       {
-        "slug": "quantum-computing",
+        "slug": "qml-quantum-machine-learning",
         "similarity": 0.35
       },
       {
-        "slug": "cerebral-organoids",
+        "slug": "brain-organoid-reservoir-computing",
         "similarity": 0.35
       }
     ]
@@ -17914,14 +17930,6 @@
       {
         "slug": "ppml-privacy-preserving-machine-learning",
         "similarity": 0.551599287990662
-      },
-      {
-        "slug": "weight-initialization",
-        "similarity": 0.35
-      },
-      {
-        "slug": "model-drift",
-        "similarity": 0.35
       }
     ]
   },
@@ -18466,11 +18474,11 @@
         "similarity": 0.14547797998800863
       },
       {
-        "slug": "feature-design",
+        "slug": "feature-importance",
         "similarity": 0.35
       },
       {
-        "slug": "tensor",
+        "slug": "scalar",
         "similarity": 0.35
       }
     ]
@@ -18584,11 +18592,11 @@
         "similarity": 0.27563872734466854
       },
       {
-        "slug": "tensor",
+        "slug": "scalar",
         "similarity": 0.35
       },
       {
-        "slug": "perplexity",
+        "slug": "ngram",
         "similarity": 0.35
       }
     ]
@@ -19518,6 +19526,14 @@
       {
         "slug": "perplexity",
         "similarity": 0.34070377899044724
+      },
+      {
+        "slug": "three-laws-of-robotics",
+        "similarity": 0.35
+      },
+      {
+        "slug": "targeted-adversarial-examples",
+        "similarity": 0.35
       }
     ]
   },
@@ -19562,14 +19578,6 @@
       {
         "slug": "io-influence-operations",
         "similarity": 0.22343611206517816
-      },
-      {
-        "slug": "acps-access-control-policies",
-        "similarity": 0.35
-      },
-      {
-        "slug": "observability",
-        "similarity": 0.35
       }
     ]
   },
@@ -19650,6 +19658,14 @@
       {
         "slug": "speed-of-light-issues",
         "similarity": 0.25874296449360057
+      },
+      {
+        "slug": "lambda-calculus",
+        "similarity": 0.35
+      },
+      {
+        "slug": "consciousness-level",
+        "similarity": 0.35
       }
     ]
   },
@@ -19754,7 +19770,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "abliteration",
+        "slug": "lvlms-large-vision-language-models",
         "similarity": 0.35
       }
     ]
@@ -19782,14 +19798,6 @@
       {
         "slug": "variance-scaling",
         "similarity": 0.5559327109488408
-      },
-      {
-        "slug": "fab",
-        "similarity": 0.35
-      },
-      {
-        "slug": "differential-privacy",
-        "similarity": 0.35
       }
     ]
   },
@@ -19814,7 +19822,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "feature-design",
+        "slug": "feature-importance",
         "similarity": 0.35
       }
     ]
@@ -20150,6 +20158,14 @@
       {
         "slug": "adversarial-attacks",
         "similarity": 0.5167639813797996
+      },
+      {
+        "slug": "ngram",
+        "similarity": 0.35
+      },
+      {
+        "slug": "zero-shot-capability",
+        "similarity": 0.35
       }
     ]
   },
@@ -20908,14 +20924,6 @@
       {
         "slug": "sampling-algorithm",
         "similarity": 0.4378849017147785
-      },
-      {
-        "slug": "speculative-edits",
-        "similarity": 0.35
-      },
-      {
-        "slug": "capsule-networks",
-        "similarity": 0.35
       }
     ]
   },
@@ -21100,7 +21108,7 @@
         "similarity": 0.6923401613268885
       },
       {
-        "slug": "differential-privacy",
+        "slug": "ppml-privacy-preserving-machine-learning",
         "similarity": 0.35
       },
       {
@@ -21132,24 +21140,16 @@
     "name": "Geometry-Informed Neural Networks",
     "summary": "Models that integrate geometric information into neural network architectures to enhance their ability to learn and represent complex, structured data.",
     "generality": 0.5,
-    "impact": null,
-    "complexity": null,
+    "impact": 0.625,
+    "complexity": 0.729,
     "popularity": null,
     "safety": null,
-    "year": null,
+    "year": 2020,
     "component": false,
     "children": [
       {
         "slug": "geometric-deep-learning",
         "similarity": 0.48000641810288946
-      },
-      {
-        "slug": "bgpt-byte-level-transformer",
-        "similarity": 0.35
-      },
-      {
-        "slug": "mechanistic-unlearning",
-        "similarity": 0.35
       }
     ]
   },
@@ -21352,7 +21352,7 @@
         "similarity": 0.34162027014189816
       },
       {
-        "slug": "pds-psychological-depth-scale",
+        "slug": "io-influence-operations",
         "similarity": 0.35
       },
       {
@@ -22060,14 +22060,6 @@
       {
         "slug": "ngram",
         "similarity": 0.34070377899044724
-      },
-      {
-        "slug": "three-laws-of-robotics",
-        "similarity": 0.35
-      },
-      {
-        "slug": "adversarial-instructions",
-        "similarity": 0.35
       }
     ]
   },
@@ -22086,6 +22078,10 @@
       {
         "slug": "mechanistic-unlearning",
         "similarity": 0.5125213095597991
+      },
+      {
+        "slug": "geometric-deep-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -22230,10 +22226,6 @@
       {
         "slug": "machine-unlearning",
         "similarity": 0.5125213095597991
-      },
-      {
-        "slug": "geometry-informed-neural-networks",
-        "similarity": 0.35
       }
     ]
   },
@@ -22478,11 +22470,11 @@
         "similarity": 0.4089572235210766
       },
       {
-        "slug": "empathic-ai",
+        "slug": "valence",
         "similarity": 0.35
       },
       {
-        "slug": "rejection-sampling",
+        "slug": "model-compression",
         "similarity": 0.35
       }
     ]
@@ -22710,14 +22702,6 @@
       {
         "slug": "brain-organoid-reservoir-computing",
         "similarity": 0.47882219728667447
-      },
-      {
-        "slug": "consciousness-level",
-        "similarity": 0.35
-      },
-      {
-        "slug": "red-teaming",
-        "similarity": 0.35
       }
     ]
   },
@@ -23088,14 +23072,6 @@
       {
         "slug": "byte-level-state-space",
         "similarity": 0.5510719557186124
-      },
-      {
-        "slug": "saturating-non-linearities",
-        "similarity": 0.35
-      },
-      {
-        "slug": "geometry-informed-neural-networks",
-        "similarity": 0.35
       }
     ]
   },
@@ -23244,7 +23220,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "bgpt-byte-level-transformer",
+        "slug": "byte-level-state-space",
         "similarity": 0.35
       }
     ]
@@ -23618,11 +23594,11 @@
     "name": "RGM (Renormalizing Generative Model)",
     "summary": "A probabilistic framework for learning and generating new data based on the renormalization principles often applied in theoretical physics.",
     "generality": 0.5,
-    "impact": null,
-    "complexity": null,
+    "impact": 0.551,
+    "complexity": 0.836,
     "popularity": null,
     "safety": null,
-    "year": null,
+    "year": 0,
     "component": false,
     "children": [
       {
@@ -23704,6 +23680,14 @@
       {
         "slug": "open-ended-ai",
         "similarity": 0.35984693033949583
+      },
+      {
+        "slug": "automaton",
+        "similarity": 0.35
+      },
+      {
+        "slug": "a-life-artificial-life",
+        "similarity": 0.35
       }
     ]
   },
@@ -23822,6 +23806,14 @@
       {
         "slug": "control-logic",
         "similarity": 0.31209965064968603
+      },
+      {
+        "slug": "lnn-liquid-neural-network",
+        "similarity": 0.35
+      },
+      {
+        "slug": "io-influence-operations",
+        "similarity": 0.35
       }
     ]
   },
@@ -24420,14 +24412,6 @@
       {
         "slug": "control-logic",
         "similarity": 0.24677739515113442
-      },
-      {
-        "slug": "lnn-liquid-neural-network",
-        "similarity": 0.35
-      },
-      {
-        "slug": "pds-psychological-depth-scale",
-        "similarity": 0.35
       }
     ]
   },
@@ -24446,6 +24430,14 @@
       {
         "slug": "imitation-learning",
         "similarity": 0.417595803808808
+      },
+      {
+        "slug": "a-life-artificial-life",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ood-out-of-distribution-behavior",
+        "similarity": 0.35
       }
     ]
   },
@@ -24774,14 +24766,6 @@
       {
         "slug": "algorithmic-probability",
         "similarity": 0.5197050398554829
-      },
-      {
-        "slug": "toy-program",
-        "similarity": 0.35
-      },
-      {
-        "slug": "fourier-analysis",
-        "similarity": 0.35
       }
     ]
   },
@@ -25368,6 +25352,14 @@
       {
         "slug": "edge-model",
         "similarity": 0.26613916535986
+      },
+      {
+        "slug": "speculative-edits",
+        "similarity": 0.35
+      },
+      {
+        "slug": "spatial-intelligence",
+        "similarity": 0.35
       }
     ]
   },
@@ -25950,14 +25942,6 @@
       {
         "slug": "temperature",
         "similarity": 0.3159305117801233
-      },
-      {
-        "slug": "data-mining",
-        "similarity": 0.35
-      },
-      {
-        "slug": "church-encoding",
-        "similarity": 0.35
       }
     ]
   },
@@ -26184,6 +26168,14 @@
       {
         "slug": "geometry-informed-neural-networks",
         "similarity": 0.48000641810288946
+      },
+      {
+        "slug": "byte-level-state-space",
+        "similarity": 0.35
+      },
+      {
+        "slug": "machine-unlearning",
+        "similarity": 0.35
       }
     ]
   },
@@ -26462,6 +26454,14 @@
       {
         "slug": "tensor",
         "similarity": 0.33949983436789266
+      },
+      {
+        "slug": "godel-code",
+        "similarity": 0.35
+      },
+      {
+        "slug": "three-laws-of-robotics",
+        "similarity": 0.35
       }
     ]
   }
