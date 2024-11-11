@@ -202,9 +202,9 @@ export default async function ArticlePage({
   return (
     <>
       <KeyboardNavigation availableSlugs={slugs} />
-      <div className="min-h-screen bg-gray-100 py-6">
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
+          <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden max-w-3xl mx-auto">
             <div className="relative h-[400px]">
               {hasImage && (
                 <Image
@@ -234,20 +234,20 @@ export default async function ArticlePage({
 
             <div className="px-8 py-6">
               <div
-                className="prose max-w-none 
+                className="prose dark:prose-invert max-w-none 
                   prose-headings:mt-8 prose-headings:mb-4
                   prose-p:my-6 prose-p:leading-7
                   prose-li:my-2 prose-li:leading-7
                   prose-ul:my-4 prose-ol:my-4
                   [&>p]:mb-8 [&>p]:mt-4
-                  [&>p]:text-gray-600
+                  [&>p]:text-gray-600 dark:[&>p]:text-gray-300
                   [&>p+p]:mt-8"
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
 
               {CustomComponent && (
                 <>
-                  <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     Explainer
                   </h3>
                   <CustomComponent />
@@ -257,7 +257,7 @@ export default async function ArticlePage({
 
               <Quiz slug={slug} />
 
-              <div className="text-gray-500">
+              <div className="text-gray-500 dark:text-gray-400">
                 {articleContent.names &&
                   articleContent.names.length > 0 &&
                   (() => {
