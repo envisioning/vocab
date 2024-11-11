@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Article, RelatedArticle } from "@/types/article";
-import { Zap } from "lucide-react";
+import { Zap, File } from "lucide-react";
 
 interface ArticleCardProps {
   article: Article | RelatedArticle;
