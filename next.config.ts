@@ -5,6 +5,15 @@ const nextConfig = {
     serverActions: true,
     runtime: "edge",
   },
+    images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/vi/**',
+      },
+    ],
+  },
   typescript: {
     // !! WARN !!
     // This will allow production builds to complete even if
