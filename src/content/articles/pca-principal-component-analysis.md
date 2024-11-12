@@ -1,0 +1,11 @@
+---
+title: PCA (Principal Component Analysis)  
+summary: A statistical procedure that transforms a dataset into a set of orthogonal components, intended to reduce dimensionality while preserving as much variability as possible.
+slug: pca-principal-component-analysis
+---  
+
+Principal Component Analysis is a dimensionality reduction technique widely used in AI for pre-processing data before deploying other learning algorithms, especially beneficial in handling datasets with a high number of variables. It operates by identifying directions (principal components) in which the variance of the data is maximized, allowing the new, transformed space to capture the most critical features with reduced complexity. PCA is essential in feature selection, noise reduction, and even data visualization in high-dimensional spaces, such as images or text, where identifying the most meaningful structures in the data can enhance the performance of subsequent ML models. Its theoretical underpinnings are grounded in linear algebra and statistics, where eigenvalues and eigenvectors of the covariance matrix play a pivotal role in determining these principal components, effectively identifying axes that convey the greatest variance in the dataset.  
+
+Principal Component Analysis was first formally introduced in 1901 by Karl Pearson but gained significant traction in fields like AI and ML during the late 20th century as data-driven approaches became prominent. The method was particularly popularized due to its utility in decomposing complex datasets into more manageable components, aligning with the growing need for efficient data processing techniques.  
+
+Key contributors to the development of PCA include Karl Pearson, who initially conceptualized the idea in the context of statistics, and Harold Hotelling, who extended the method in 1933 to its modern form, applicable across various scientific disciplines including AI and ML. Their foundational work laid the groundwork for PCA's wide applicability in modern data analysis practices.

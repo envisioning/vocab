@@ -5559,5 +5559,754 @@
   ],
   "accelerator-chip": [
     "unknown"
+  ],
+  "step-size": [
+    "unknown"
+  ],
+  "satisfiability": [
+    "george boole",
+    "john mccarthy",
+    "stephen cook",
+    "richard karp",
+    "martin davis",
+    "hilary putnam",
+    "john franco"
+  ],
+  "naive-semantics": [
+    "unknown"
+  ],
+  "class": [
+    "unknown"
+  ],
+  "out-group-homogeneity-bias": [
+    "henri tajfel",
+    "john turner",
+    "richard l. moreland",
+    "john m. c. smith",
+    "david j. schneider",
+    "susan fiske",
+    "claude steele"
+  ],
+  "automation-bias": [
+    "david dunning",
+    "john d. lee",
+    "barbara tversky",
+    "paul slovic",
+    "gary klein",
+    "don norman",
+    "unknown"
+  ],
+  "active-learning": [
+    "david cohn",
+    "andreas krause",
+    "burr settles",
+    "dan roth",
+    "zoubin ghahramani",
+    "trevor darrell",
+    "unknown"
+  ],
+  "auxiliary-loss": [
+    "unknown"
+  ],
+  "principle-of-rationality": [
+    "daniel kahneman",
+    "amos tversky",
+    "john von neumann",
+    "oskar morgenstern",
+    "herbert simon",
+    "richard thaler",
+    "leonard savage"
+  ],
+  "target": [
+    "unknown"
+  ],
+  "reasoning-system": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "edward feigenbaum",
+    "judea pearl",
+    "stuart russell"
+  ],
+  "hyper-heuristic": [
+    "edelweiss p. m. a. l. c. a. a. m. a. a. a. c. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a. a."
+  ],
+  "temporal-difference-learning": [
+    "richard s. sutton",
+    "andrew g. barto",
+    "david silver",
+    "satinder singh",
+    "michael littman",
+    "john d. williams",
+    "rémi munos"
+  ],
+  "non-response-bias": [
+    "unknown"
+  ],
+  "discrete-system": [
+    "john von neumann",
+    "claude shannon",
+    "alan turing",
+    "donald knuth",
+    "edsger dijkstra",
+    "richard hamming",
+    "michael o. rabin"
+  ],
+  "stochastic-optimization": [
+    "george dantzig",
+    "dimitri bertsekas",
+    "john n. tsitsiklis",
+    "richard s. sutton",
+    "andrew w. lo",
+    "peter w. glynn",
+    "unknown"
+  ],
+  "hinge-loss": [
+    "vladimir vapnik",
+    "alexey chervonenkis",
+    "cortes and vapnik",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "separation-logic": [
+    "john c. reynolds",
+    "peter o'hearn",
+    "hanne riis nielson",
+    "david pym",
+    "roberto m. amadio",
+    "thomas h. jensen",
+    "unknown"
+  ],
+  "participation-bias": [
+    "unknown"
+  ],
+  "type-system": [
+    "haskell curry",
+    "john mccarthy",
+    "peter g. neumark",
+    "william cook",
+    "barbara liskov",
+    "benjamin c. pierce",
+    "martin odersky"
+  ],
+  "step": [
+    "unknown"
+  ],
+  "true-quantified-boolean-formula": [
+    "unknown"
+  ],
+  "input-generator": [
+    "unknown"
+  ],
+  "packed-data": [
+    "unknown"
+  ],
+  "validation-set": [
+    "unknown"
+  ],
+  "empirical-cumulative-distribution-function-ecdf": [
+    "unknown"
+  ],
+  "mean-absolute-error-mae": [
+    "unknown"
+  ],
+  "probability-density-function": [
+    "carl friedrich gauss",
+    "pierre-simon laplace",
+    "andrey kolmogorov",
+    "ronald a. fisher",
+    "jerzy neyman",
+    "david cox",
+    "william feller"
+  ],
+  "aucpr-area-under-the-precision-recall-curve": [
+    "unknown"
+  ],
+  "controller-logic": [
+    "john von neumann",
+    "claude shannon",
+    "alan turing",
+    "herbert simon",
+    "donald knuth",
+    "edsger dijkstra",
+    "john mccarthy"
+  ],
+  "data-warehouse": [
+    "bill inmon",
+    "ralph kimball",
+    "claudia imhoff",
+    "barry devlin",
+    "paul murphy",
+    "dan linstedt",
+    "jim gray"
+  ],
+  "upweighting": [
+    "unknown"
+  ],
+  "similarity-learning": [
+    "yoshua bengio",
+    "yann lecun",
+    "geoffrey hinton",
+    "fei-fei li",
+    "richard socher",
+    "andrej karpathy",
+    "unknown"
+  ],
+  "out-of-bag-evaluation": [
+    "leo breiman",
+    "adele cutler",
+    "unknown"
+  ],
+  "summary-in-tensorflow-context": [
+    "jeffrey dean",
+    "martin abadi",
+    "ashish agarwal",
+    "noam shazeer",
+    "rajat monga",
+    "josh gordon",
+    "danijar hafner"
+  ],
+  "a-search": [
+    "peter hart",
+    "nils nilsson",
+    "bertram raphael"
+  ],
+  "batch-size": [
+    "unknown"
+  ],
+  "in-group-bias": [
+    "henri tajfel",
+    "john turner",
+    "muzafer sherif",
+    "henrietta leavitt",
+    "richard nisbett",
+    "david amodio",
+    "susan fiske"
+  ],
+  "time-series-analysis": [
+    "george e. p. box",
+    "gwilym m. jenkins",
+    "norbert wiener",
+    "harold edwin hurst",
+    "clive granger",
+    "robert engle",
+    "peter j. brockwell"
+  ],
+  "attribute-sampling": [
+    "unknown"
+  ],
+  "historical-bias": [
+    "unknown"
+  ],
+  "systems-neuroscience": [
+    "david marr",
+    "patricia churchland",
+    "christof koch",
+    "read montague",
+    "karl deisseroth",
+    "edvard i. moser",
+    "may-britt moser"
+  ],
+  "numerical-data": [
+    "john von neumann",
+    "claude shannon",
+    "alan turing",
+    "ada lovelace",
+    "george boole",
+    "karl pearson",
+    "ronald fisher"
+  ],
+  "wisdom-of-the-crowd": [
+    "james surowiecki",
+    "francis galton",
+    "robert axelrod",
+    "eric bonabeau",
+    "clay shirky",
+    "david wolman",
+    "unknown"
+  ],
+  "timestep": [
+    "unknown"
+  ],
+  "bayesian-neural-network": [
+    "david barber",
+    "radford neal",
+    "yarin gal",
+    "zoubin ghahramani",
+    "andrew gordon wilson",
+    "hugo larochelle",
+    "unknown"
+  ],
+  "blackboard-system": [
+    "allen newell",
+    "herbert a. simon",
+    "edward a. feigenbaum",
+    "raj reddy",
+    "john l. hennessy",
+    "david c. wilkins",
+    "unknown"
+  ],
+  "incremental-learning": [
+    "rafael c. gonzalez",
+    "richard s. sutton",
+    "andrew g. barto",
+    "sebastian thrun",
+    "yoshua bengio",
+    "geoffrey hinton",
+    "jürgen schmidhuber"
+  ],
+  "radial-basis-function-network": [
+    "david b. parker",
+    "john moody",
+    "steven j. hanson",
+    "berthold k. p. horn",
+    "vladimir n. vapnik",
+    "radha p. k. ghosh",
+    "unknown"
+  ],
+  "asp-answer-set-programming": [
+    "michael gelfond",
+    "vladimir lifschitz",
+    "nicola leone",
+    "gerhard brewka",
+    "chitta baral",
+    "thomas eiter",
+    "wolfgang faber"
+  ],
+  "node": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "jürgen schmidhuber",
+    "david rumelhart",
+    "ronald j. williams",
+    "michael i. jordan"
+  ],
+  "root-in-decision-tree-context": [
+    "unknown"
+  ],
+  "labeled-example": [
+    "unknown"
+  ],
+  "minimax-loss": [
+    "john von neumann",
+    "oskar morgenstern",
+    "leonard j. savage",
+    "richard bellman",
+    "herbert simon",
+    "david blackwell",
+    "ronald a. howard"
+  ],
+  "log-odds": [
+    "john von neumann",
+    "jerzy neyman",
+    "egon pearson",
+    "david cox",
+    "robert tibshirani",
+    "andrew gelman",
+    "unknown"
+  ],
+  "graph-traversal": [
+    "leonhard euler",
+    "john hopcroft",
+    "robert tarjan",
+    "donald knuth",
+    "c. a. r. hoare",
+    "richard karp",
+    "edsger dijkstra"
+  ],
+  "commonsense-reasoning": [
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "marvin minsky",
+    "patrick winston",
+    "ray kurzweil",
+    "judea pearl"
+  ],
+  "classification-threshold": [
+    "unknown"
+  ],
+  "abstract-data-type": [
+    "barbara liskov",
+    "peter g. neumark",
+    "john backus",
+    "william pugh",
+    "david gries",
+    "richard h. bartels",
+    "john mccarthy"
+  ],
+  "accuracy": [
+    "unknown"
+  ],
+  "mean-squared-error": [
+    "carl friedrich gauss",
+    "pierre-simon laplace",
+    "francis galton",
+    "karl pearson",
+    "ronald a. fisher",
+    "george e. p. box",
+    "george w. brown"
+  ],
+  "least-squares-regression": [
+    "carl friedrich gauss",
+    "adrien-marie legendre",
+    "francis galton",
+    "karl pearson",
+    "ronald a. fisher",
+    "george e. p. box",
+    "william s. gosset"
+  ],
+  "test-set": [
+    "unknown"
+  ],
+  "checkpoint": [
+    "unknown"
+  ],
+  "axis-aligned-condition": [
+    "unknown"
+  ],
+  "admissible-heuristic": [
+    "richard e. korf",
+    "peter hart",
+    "nils nilsson",
+    "bertram raphael",
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon"
+  ],
+  "attribute": [
+    "unknown"
+  ],
+  "sampling-bias": [
+    "unknown"
+  ],
+  "early-stopping": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "michael i. jordan",
+    "david barber",
+    "rich caruana",
+    "trevor hastie"
+  ],
+  "forward-chaining": [
+    "edward feigenbaum",
+    "herbert simon",
+    "alan newell",
+    "john mccarthy",
+    "richard fikes",
+    "nils nilsson",
+    "barbara hayes-roth"
+  ],
+  "baseline": [
+    "unknown"
+  ],
+  "pattern-recognition": [
+    "david marr",
+    "kunihiko fukushima",
+    "yann lecun",
+    "geoffrey hinton",
+    "yoshua bengio",
+    "john hopcroft",
+    "richard szeliski"
+  ],
+  "computational-complexity-theory": [
+    "stephen cook",
+    "john nash",
+    "richard karp",
+    "leonid levin",
+    "michael rabin",
+    "john von neumann",
+    "alan turing"
+  ],
+  "feature-spec": [
+    "unknown"
+  ],
+  "minimax": [
+    "john von neumann",
+    "oskar morgenstern",
+    "claude shannon",
+    "john nash",
+    "herbert simon",
+    "allen newell",
+    "richard bellman"
+  ],
+  "root-mean-squared-error-rmse": [
+    "unknown"
+  ],
+  "pca-principal-component-analysis": [
+    "harold hotelling",
+    "i. j. good",
+    "john w. tukey",
+    "david w. scott",
+    "gene h. golub",
+    "robert e. schapire",
+    "trevor hastie"
+  ],
+  "batch-inference": [
+    "unknown"
+  ],
+  "eager-learning": [
+    "unknown"
+  ],
+  "queue": [
+    "unknown"
+  ],
+  "inference-engine": [
+    "edward feigenbaum",
+    "john mccarthy",
+    "allen newell",
+    "herbert a. simon",
+    "raj reddy",
+    "peter jackson",
+    "douglas lenat"
+  ],
+  "statistical-classification": [
+    "ronald a. fisher",
+    "david w. scott",
+    "leo breiman",
+    "trevor hastie",
+    "robert tibshirani",
+    "jerome friedman",
+    "michael e. tipping"
+  ],
+  "transition-system": [
+    "e. m. clarke",
+    "edmund m. clarke",
+    "allen emerson",
+    "joseph sifakis",
+    "leslie lamport",
+    "david harel",
+    "edsger dijkstra"
+  ],
+  "reporting-bias": [
+    "unknown"
+  ],
+  "weighted-sum": [
+    "unknown"
+  ],
+  "situated-approach": [
+    "edwin hutchins",
+    "jean lave",
+    "etienne wenger",
+    "lucy suchman",
+    "donald norman",
+    "herbert simon",
+    "gary klein"
+  ],
+  "production-system": [
+    "allen newell",
+    "herbert a. simon",
+    "john mccarthy",
+    "edward feigenbaum",
+    "richard fikes",
+    "nils j. nilsson",
+    "marvin minsky"
+  ],
+  "knowledge-extraction": [
+    "rakesh agerri",
+    "barbara poblete",
+    "william cohen",
+    "soumen chakrabarti",
+    "chris welty",
+    "oren etzioni",
+    "unknown"
+  ],
+  "reservoir-computing": [
+    "herbert jaeger",
+    "wolfgang maass",
+    "wulfram gerstner",
+    "daniel r. c. d. h. h. w. w. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h"
+  ],
+  "centroid-based-clustering": [
+    "j. macqueen",
+    "hartigan",
+    "k. p. murphy",
+    "a. k. jain",
+    "r. c. dubes",
+    "d. arthur",
+    "s. vassilvitskii"
+  ],
+  "precision-recall-curve": [
+    "david davis",
+    "jesse davis",
+    "robert f. stien",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "query-language": [
+    "e.f. codd",
+    "donald d. knuth",
+    "michael stonebraker",
+    "jim gray",
+    "chris date",
+    "peter chen",
+    "sql standards committee"
+  ],
+  "training-serving-skew": [
+    "unknown"
+  ],
+  "coverage-bias": [
+    "unknown"
+  ],
+  "margin": [
+    "vladimir vapnik",
+    "alexey chervonenkis",
+    "cortes and vapnik",
+    "isabelle guyon",
+    "bernhard schölkopf",
+    "david cohn",
+    "john shawe-taylor"
+  ],
+  "feature-learning": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "andrew ng",
+    "ian goodfellow",
+    "jürgen schmidhuber",
+    "fei-fei li"
+  ],
+  "gradient-clipping": [
+    "yoshua bengio",
+    "geoffrey hinton",
+    "yann lecun",
+    "jürgen schmidhuber",
+    "ilya sutskever",
+    "alex graves",
+    "unknown"
+  ],
+  "convenience-sampling": [
+    "unknown"
+  ],
+  "average-precision": [
+    "hernán a. ponce",
+    "j. richard landis",
+    "david m. blei",
+    "thomas s. huang",
+    "william s. cleveland",
+    "robert f. murphy",
+    "unknown"
+  ],
+  "dense-feature": [
+    "unknown"
+  ],
+  "intersection-over-union-iou": [
+    "unknown"
+  ],
+  "temporal-data": [
+    "jim gray",
+    "c. mohan",
+    "david maier",
+    "michael stonebraker",
+    "peter chen",
+    "edward tufte",
+    "dan s. wallach"
+  ],
+  "data-analysis": [
+    "john tukey",
+    "ronald fisher",
+    "george e. p. box",
+    "edward deming",
+    "claude shannon",
+    "hans rosling",
+    "william s. cleveland"
+  ],
+  "host": [
+    "unknown"
+  ],
+  "golden-dataset": [
+    "unknown"
+  ],
+  "empirical-risk-minimization": [
+    "vladimir vapnik",
+    "alexey chervonenkis",
+    "leon bottou",
+    "shai shalev-shwartz",
+    "robert schapire",
+    "david haussler",
+    "trevor hastie"
+  ],
+  "sensor-fusion": [
+    "rudolf kalman",
+    "simon haykin",
+    "h. vincent poor",
+    "david g. lowe",
+    "thad starner",
+    "john c. mccall",
+    "unknown"
+  ],
+  "inter-rater-agreement": [
+    "jacob cohen",
+    "john l. fleiss",
+    "kappa",
+    "william j. brady",
+    "john a. mchugh",
+    "david a. kenny",
+    "barbara g. tabachnick"
+  ],
+  "data-parallelism": [
+    "michael j. flynn",
+    "john l. hennessy",
+    "david a. patterson",
+    "leslie valiant",
+    "jack dongarra",
+    "thomas sterling",
+    "andrew yao"
+  ],
+  "landmarks": [
+    "david lowe",
+    "fei-fei li",
+    "andrew zisserman",
+    "trevor darrell",
+    "yann lecun",
+    "geoffrey hinton",
+    "jürgen schmidhuber"
+  ],
+  "batch-normalization": [
+    "sergey ioffe",
+    "christian szegedy"
+  ],
+  "srl-statistical-relational-learning": [
+    "judea pearl",
+    "david heckerman",
+    "pedro domingos",
+    "alon halevy",
+    "lise getoor",
+    "daphne koller",
+    "kristen grauman"
+  ],
+  "batch": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ian goodfellow",
+    "jürgen schmidhuber",
+    "andrew ng",
+    "demis hassabis"
+  ],
+  "graph": [
+    "leonhard euler",
+    "claude shannon",
+    "john mccarthy",
+    "donald knuth",
+    "robert tarjan",
+    "andrew yao",
+    "richard karp"
+  ],
+  "categorical-data": [
+    "karl pearson",
+    "ronald a. fisher",
+    "john tukey",
+    "edward c. prescott",
+    "david cox",
+    "leo breiman",
+    "judea pearl"
   ]
 }

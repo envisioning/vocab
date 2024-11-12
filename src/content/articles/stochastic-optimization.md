@@ -1,0 +1,11 @@
+---
+title: Stochastic Optimization  
+summary: A mathematical method for optimization problems that incorporates randomness to find approximate solutions efficiently.
+slug: stochastic-optimization
+---
+
+Stochastic optimization is significant in AI due to its ability to manage uncertainty and variability in complex, non-deterministic environments. These techniques leverage randomness either in the data (stochastic inputs) or the search process (randomized algorithms) to find nearly optimal solutions where deterministic methods may falter, particularly in high-dimensional spaces common in ML. Applications are extensive, spanning areas like neural network training via stochastic gradient descent, where efficient navigation of large parameter spaces is required, or metaheuristic approaches such as genetic algorithms and simulated annealing that explore the solution space more broadly than deterministic tactics. Stochastic optimization stands out in its robustness to noisy data and adaptive capacity in dynamic problem contexts, making it integral to both theoretical advancements and practical implementations in AI.
+
+The term "stochastic optimization" began to take form in the mid-20th century as optimization techniques incorporating randomness were explored, gaining particular traction in the 1970s and 1980s with the rise of computers capable of executing complex stochastic algorithms, and as researchers recognized the limitations of deterministic methods. Its popularity surged alongside the development of computational power and the increasing complexity of real-world optimization problems encountered in AI and ML.
+
+Key contributors to this field include Richard Bellman, known for his work in dynamic programming under uncertainty, and John Holland, who developed genetic algorithms, a form of stochastic optimization. The evolution of stochastic optimization has also been influenced by advances in convex optimization and the broadening of statistical learning theories, shaping tools used today in AI.

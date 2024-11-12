@@ -20832,5 +20832,2535 @@
         "Predicting stock market trends with high accuracy"
       ]
     }
+  },
+  "step-size": {
+    "conceptual": {
+      "question": "In the context of optimization algorithms in AI/ML, what does the 'step size' influence?",
+      "answers": [
+        "The magnitude of each update step towards the optimal solution",
+        "The number of iterations needed to find the optimal solution",
+        "The complexity of the optimization algorithm",
+        "The time complexity of the algorithm",
+        "The size of the data set required for the optimization"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using an appropriate step size in AI/ML?",
+      "answers": [
+        "Adjusting learning rate in gradient descent to improve convergence in training neural networks",
+        "Scaling images to a uniform size before feeding them into a convolutional neural network",
+        "Choosing the number of clusters in k-means clustering",
+        "Determining the depth of a decision tree",
+        "Selecting the number of layers in a neural network"
+      ]
+    }
+  },
+  "satisfiability": {
+    "conceptual": {
+      "question": "What does it mean for a logical formula in the context of satisfiability in AI/ML?",
+      "answers": [
+        "It means finding an assignment of variables that makes the formula true",
+        "It involves calculating the truth value of a formula without variable assignments",
+        "It refers to proving the formula is true in all possible interpretations",
+        "It is about translating the formula into a simpler equivalent",
+        "It involves determining the computational complexity of the formula"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of satisfiability?",
+      "answers": [
+        "Automated theorem proving in computer science",
+        "Predicting stock market trends using historical data",
+        "Generating personalized recommendations in e-commerce",
+        "Optimizing route planning for logistics and delivery services",
+        "Enhancing image recognition accuracy in surveillance systems"
+      ]
+    }
+  },
+  "naive-semantics": {
+    "conceptual": {
+      "question": "What is the primary goal of Naive Semantics in the context of AI/ML?",
+      "answers": [
+        "To simplify the interpretation of logical expressions based on common-sense understanding",
+        "To increase the complexity of logical expressions for machine understanding",
+        "To encode logical expressions in a binary format",
+        "To replace all forms of complex semantic analysis",
+        "To exclusively focus on natural language processing tasks"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Naive Semantics?",
+      "answers": [
+        "Improving chatbot understanding of user queries through simplified logical interpretation",
+        "Developing advanced encryption methods for data security",
+        "Enhancing the speed of quantum computing processes",
+        "Creating more efficient solar panels through materials science",
+        "Optimizing routing algorithms for global logistics and supply chains"
+      ]
+    }
+  },
+  "class": {
+    "conceptual": {
+      "question": "In the context of AI, what does the term 'Class' primarily refer to?",
+      "answers": [
+        "A category or label used in classification problems",
+        "A programming structure that encapsulates data and methods",
+        "A specific algorithm used to process data",
+        "A type of data structure",
+        "A method for optimizing machine learning models"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using 'Class' in AI?",
+      "answers": [
+        "Sorting emails into 'spam' and 'not spam'",
+        "Predicting stock market prices",
+        "Calculating the fastest route in a navigation system",
+        "Enhancing the resolution of an image",
+        "Translating languages in real-time"
+      ]
+    }
+  },
+  "out-group-homogeneity-bias": {
+    "conceptual": {
+      "question": "What does the Out-group Homogeneity Bias imply about an individual's perception of groups?",
+      "answers": [
+        "Individuals perceive out-group members as more alike than in-group members.",
+        "Individuals find it easier to differentiate between members of an out-group than an in-group.",
+        "Out-groups are generally seen as having a wider variety of behaviors than in-groups.",
+        "In-group members are always perceived in a negative light compared to out-group members.",
+        "Out-group members are considered more competent than in-group members."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Out-group Homogeneity Bias?",
+      "answers": [
+        "A marketer assuming a foreign audience has homogeneous preferences and missing out on niche market segments.",
+        "A speech recognition system working equally well for all dialects of a language.",
+        "A company implementing a one-size-fits-all approach in employee benefits for diverse employee groups.",
+        "An AI system that accurately predicts individual health risks based on genetic markers.",
+        "A navigation app that offers the same route recommendations to all users, regardless of their driving habits."
+      ]
+    }
+  },
+  "automation-bias": {
+    "conceptual": {
+      "question": "What is the primary psychological effect of automation bias on human decision-making?",
+      "answers": [
+        "Over-reliance on automated systems at the expense of human judgment",
+        "Increased accuracy in human decision-making due to AI suggestions",
+        "Decreased trust in automated systems leading to less use of technology",
+        "Enhanced cognitive skills due to frequent interaction with AI",
+        "Reduced workload and stress levels for operators of automated systems"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of automation bias?",
+      "answers": [
+        "Ignoring manual navigation skills in favor of GPS directions, even when they are incorrect",
+        "Using AI to enhance personal fitness regimes by providing workout suggestions",
+        "Employing chatbots to improve customer service by handling routine inquiries",
+        "Leveraging machine learning for predictive maintenance in manufacturing",
+        "Applying AI in medical diagnostics to reduce the time doctors spend analyzing results"
+      ]
+    }
+  },
+  "active-learning": {
+    "conceptual": {
+      "question": "What is the primary goal of active learning in the context of machine learning?",
+      "answers": [
+        "To maximize learning efficiency by querying the most informative data points",
+        "To increase the size of the training dataset",
+        "To reduce the computational resources needed for training",
+        "To improve the user interface of machine learning applications",
+        "To enhance the security of machine learning systems"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of active learning?",
+      "answers": [
+        "Improving the accuracy of a spam detection model by selectively labeling the most ambiguous emails",
+        "Creating more engaging video game environments automatically",
+        "Speeding up internet connection speeds",
+        "Automating the process of driving cars in all weather conditions",
+        "Predicting stock market prices with 100% accuracy"
+      ]
+    }
+  },
+  "auxiliary-loss": {
+    "conceptual": {
+      "question": "What is the primary purpose of using an auxiliary loss in AI/ML models?",
+      "answers": [
+        "To improve learning and generalization by addressing secondary tasks or adding regularization",
+        "To reduce the computational complexity of the model",
+        "To increase the speed of model training",
+        "To decrease the size of the model for easier deployment",
+        "To simplify the model's architecture"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Auxiliary Loss?",
+      "answers": [
+        "Improving facial recognition models by using an auxiliary loss to also predict facial landmarks",
+        "Using auxiliary loss to decrease the energy consumption of AI models in mobile devices",
+        "Applying auxiliary loss to automate the tuning of hyperparameters in deep learning models",
+        "Implementing auxiliary loss to enhance the encryption strength of AI-driven security systems",
+        "Leveraging auxiliary loss to directly increase the pixel resolution of images in computer vision tasks"
+      ]
+    }
+  },
+  "principle-of-rationality": {
+    "conceptual": {
+      "question": "What does the Principle of Rationality imply about an AI's behavior?",
+      "answers": [
+        "It will choose actions that it believes will maximize its expected utility",
+        "It will act randomly to explore various outcomes",
+        "It will always take the shortest path to a solution",
+        "It will prioritize human commands over its utility function",
+        "It will avoid taking actions that involve complex calculations"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of the Principle of Rationality?",
+      "answers": [
+        "Self-driving cars choosing routes based on traffic and safety conditions to optimize travel time",
+        "AI composing music purely based on random note generation",
+        "Chatbots responding with pre-defined answers regardless of the user's query",
+        "Robots performing tasks in a sequence that minimizes energy use without considering task priority",
+        "Video game AI that always follows the same strategy, regardless of the player's actions"
+      ]
+    }
+  },
+  "target": {
+    "conceptual": {
+      "question": "What does the 'target' in AI/ML training data represent?",
+      "answers": [
+        "The value that the model is trying to predict based on the input features",
+        "The algorithm used to train the model",
+        "The metric used to evaluate the model's performance",
+        "The process of splitting the dataset into training and testing sets",
+        "The rate at which the model learns from the data"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using a 'target' in AI/ML?",
+      "answers": [
+        "Predicting the price of a house based on its features like size and location",
+        "Creating a new algorithm for data encryption",
+        "Designing a user interface for a mobile application",
+        "Developing a new programming language",
+        "Inventing a device that converts thoughts into text"
+      ]
+    }
+  },
+  "reasoning-system": {
+    "conceptual": {
+      "question": "What is the primary function of a reasoning system in AI?",
+      "answers": [
+        "To draw logical inferences from available data",
+        "To store large amounts of data efficiently",
+        "To create new data from existing datasets",
+        "To visualize complex datasets",
+        "To encrypt sensitive information"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a reasoning system?",
+      "answers": [
+        "Diagnosing diseases based on symptoms and medical history",
+        "Generating realistic images from text descriptions",
+        "Translating languages in real-time",
+        "Predicting stock market trends",
+        "Automating the process of driving a car"
+      ]
+    }
+  },
+  "hyper-heuristic": {
+    "conceptual": {
+      "question": "What is the main purpose of using a hyper-heuristic approach in solving problems?",
+      "answers": [
+        "To efficiently select or generate heuristics to solve complex search problems",
+        "To directly solve computational problems without the need for heuristics",
+        "To enhance the performance of a single heuristic for all problem instances",
+        "To reduce the complexity of problems to polynomial time",
+        "To replace machine learning models in decision-making processes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of hyper-heuristic?",
+      "answers": [
+        "Automating the process of timetabling in universities",
+        "Solving simple arithmetic problems faster",
+        "Direct manipulation of data in database management systems",
+        "Optimizing the layout of elements on a webpage for aesthetic purposes only",
+        "Automatically generating and sending personalized emails to customers"
+      ]
+    }
+  },
+  "temporal-difference-learning": {
+    "conceptual": {
+      "question": "What is the primary mechanism by which Temporal Difference Learning in AI/ML updates predictions?",
+      "answers": [
+        "By the difference between successive predictions",
+        "By comparing predictions to the final outcome",
+        "By backpropagating errors from the output layer",
+        "By adjusting weights after each training epoch",
+        "By minimizing the variance between predictions and actual outcomes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Temporal Difference Learning?",
+      "answers": [
+        "Optimizing strategies in board games like Chess or Go",
+        "Tracking objects in real-time in video streams",
+        "Translating languages in real-time",
+        "Generating realistic images from textual descriptions",
+        "Predicting stock market trends"
+      ]
+    }
+  },
+  "non-response-bias": {
+    "conceptual": {
+      "question": "What does non-response bias primarily affect in survey data analysis?",
+      "answers": [
+        "The validity and representativeness of the survey results",
+        "The number of questions in the survey",
+        "The geographical distribution of the survey",
+        "The age range of respondents",
+        "The duration of the survey"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of mitigating non-response bias?",
+      "answers": [
+        "Adjusting survey results based on demographic data to account for non-respondents",
+        "Increasing the font size of the survey questions for readability",
+        "Translating the survey into multiple languages to increase response rates",
+        "Offering incentives for every answered question instead of completed surveys",
+        "Reducing the number of questions to make the survey shorter"
+      ]
+    }
+  },
+  "discrete-system": {
+    "conceptual": {
+      "question": "What distinguishes a discrete system in AI/ML from a continuous one?",
+      "answers": [
+        "It operates over distinct, separate states rather than a continuous range of values",
+        "It can only process numerical data",
+        "It requires less computational power",
+        "It is not capable of handling real-time data",
+        "It exclusively uses binary data"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a discrete system in AI/ML?",
+      "answers": [
+        "Decision tree algorithms for classification problems",
+        "Analyzing temperature variations as a continuous data stream",
+        "Predicting stock market prices in real-time",
+        "Simulating fluid dynamics for weather forecasting",
+        "Modeling continuous speech for automatic speech recognition"
+      ]
+    }
+  },
+  "stochastic-optimization": {
+    "conceptual": {
+      "question": "What is the primary reason for incorporating randomness into stochastic optimization methods?",
+      "answers": [
+        "To efficiently explore the solution space and avoid local optima",
+        "To guarantee finding the global optimum in a single iteration",
+        "To reduce the computation time by ignoring complex calculations",
+        "To increase the precision of the final solution",
+        "To simplify the optimization problem into a deterministic one"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of stochastic optimization?",
+      "answers": [
+        "Optimizing supply chain logistics to minimize cost under uncertain demand",
+        "Calculating exact solutions for NP-hard problems in polynomial time",
+        "Determining the perfect strategy for deterministic games without randomness",
+        "Generating high-resolution images from low-resolution inputs without any loss",
+        "Creating perfectly secure communication channels immune to all forms of eavesdropping"
+      ]
+    }
+  },
+  "hinge-loss": {
+    "conceptual": {
+      "question": "What is the primary purpose of using the Hinge Loss function in ML classification problems?",
+      "answers": [
+        "To maximize the margin between the classes",
+        "To minimize the distance between data points",
+        "To cluster data points into distinct categories",
+        "To calculate the probability of data points belonging to a class",
+        "To reduce the dimensionality of the feature space"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Hinge Loss?",
+      "answers": [
+        "Improving the accuracy of facial recognition systems in security applications",
+        "Optimizing route planning for delivery drones in urban areas",
+        "Enhancing the performance of voice recognition in virtual assistants",
+        "Predicting stock market trends to inform investment decisions",
+        "Generating personalized content recommendations on streaming platforms"
+      ]
+    }
+  },
+  "separation-logic": {
+    "conceptual": {
+      "question": "What is the primary purpose of using Separation Logic in AI/ML?",
+      "answers": [
+        "To reason about and verify the correctness of algorithms that manipulate shared mutable data structures",
+        "To enhance the performance of machine learning models",
+        "To encrypt data structures for secure AI operations",
+        "To create more efficient data storage mechanisms",
+        "To reduce the computational complexity of AI algorithms"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Separation Logic?",
+      "answers": [
+        "Verifying the correctness of concurrent garbage collectors",
+        "Optimizing neural network architectures automatically",
+        "Designing user interfaces for AI systems",
+        "Improving the resolution of images processed by AI",
+        "Predicting stock market trends using AI"
+      ]
+    }
+  },
+  "participation-bias": {
+    "conceptual": {
+      "question": "What is the primary issue caused by participation bias in AI/ML models?",
+      "answers": [
+        "Skewed outcomes and inaccurate predictions",
+        "Increased computational cost",
+        "Improved model accuracy",
+        "Faster training times",
+        "Enhanced privacy protection"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example where participation bias can significantly impact outcomes?",
+      "answers": [
+        "Healthcare predictive modeling",
+        "Weather forecasting",
+        "Chess playing AI",
+        "Music recommendation algorithms",
+        "Syntax checking software"
+      ]
+    }
+  },
+  "type-system": {
+    "conceptual": {
+      "question": "Why is a type system important in programming languages?",
+      "answers": [
+        "It enhances code reliability and safety by ensuring that operations are performed on compatible types.",
+        "It increases the execution speed of programs.",
+        "It reduces the memory usage of applications.",
+        "It simplifies the syntax of the programming languages.",
+        "It automatically corrects logical errors in code."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Type System?",
+      "answers": [
+        "Preventing the addition of an integer to a string without explicit conversion in strongly typed languages.",
+        "Multiplying two strings together to concatenate them.",
+        "Using any variable type in any operation without considering its type.",
+        "Allowing variables to change types dynamically at runtime with no restrictions.",
+        "Automatically converting all variables to boolean types in conditional statements."
+      ]
+    }
+  },
+  "step": {
+    "conceptual": {
+      "question": "What is the purpose of a 'step' in the context of AI/ML model training?",
+      "answers": [
+        "To iteratively update the model parameters to minimize the loss function",
+        "To increase the size of the dataset for better accuracy",
+        "To validate the model against unseen data",
+        "To categorize the data into different classes",
+        "To encrypt model data for secure transmission"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of 'step'?",
+      "answers": [
+        "Adjusting weights in a neural network to reduce prediction error",
+        "Expanding a dataset through web scraping",
+        "Splitting a dataset into training and test sets",
+        "Implementing two-factor authentication for model access",
+        "Converting a text dataset into a vector space model"
+      ]
+    }
+  },
+  "true-quantified-boolean-formula": {
+    "conceptual": {
+      "question": "What does a True Quantified Boolean Formula imply about the assignment of truth values to its variables?",
+      "answers": [
+        "At least one assignment of truth values exists that satisfies the formula",
+        "No assignment of truth values can satisfy the formula",
+        "Exactly two assignments of truth values satisfy the formula",
+        "The formula is independent of truth values",
+        "All possible assignments of truth values satisfy the formula"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of True Quantified Boolean Formula?",
+      "answers": [
+        "Solving complex scheduling problems",
+        "Improving the resolution of digital images",
+        "Calculating the most efficient route in navigation systems",
+        "Predicting stock market prices",
+        "Enhancing the performance of computer processors"
+      ]
+    }
+  },
+  "input-generator": {
+    "conceptual": {
+      "question": "What is the primary purpose of an Input Generator in the context of AI/ML?",
+      "answers": [
+        "To produce input data for testing, training, or analyzing AI systems",
+        "To generate output predictions from AI models",
+        "To interpret the results of AI predictions",
+        "To enhance the graphical interface of AI applications",
+        "To secure AI systems against external threats"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of an Input Generator?",
+      "answers": [
+        "Generating synthetic datasets for training machine learning models when real data is scarce or sensitive",
+        "Creating visual effects in video games",
+        "Translating languages in real-time during voice calls",
+        "Automating responses to customer service inquiries",
+        "Driving autonomous vehicles in urban environments"
+      ]
+    }
+  },
+  "packed-data": {
+    "conceptual": {
+      "question": "What is the primary benefit of using packed data in AI/ML?",
+      "answers": [
+        "Enhanced processing efficiency and reduced memory usage",
+        "Increased data security",
+        "Simplified data cleaning processes",
+        "Faster internet speeds",
+        "Improved data visualization techniques"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of packed data?",
+      "answers": [
+        "Storing multiple sensor readings in a single data structure for efficient processing in IoT devices",
+        "Encrypting data for secure transmission over the internet",
+        "Creating more engaging user interfaces for mobile apps",
+        "Speeding up website load times",
+        "Automatically generating music playlists based on user activity"
+      ]
+    }
+  },
+  "validation-set": {
+    "conceptual": {
+      "question": "What is the primary purpose of a validation set in the context of training a machine learning model?",
+      "answers": [
+        "To fine-tune the model's hyperparameters without overfitting",
+        "To directly improve the accuracy of the model on unseen data",
+        "To replace the training set when it becomes too large",
+        "To test the final performance of the model",
+        "To increase the size of the training dataset"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using a validation set?",
+      "answers": [
+        "Adjusting the learning rate based on performance metrics obtained from the validation set",
+        "Directly training the model on the validation set to improve accuracy",
+        "Using the validation set as the only source of data for training the model",
+        "Eliminating the need for a test set by combining it with the validation set",
+        "Using the validation set to manually label more data for the training set"
+      ]
+    }
+  },
+  "empirical-cumulative-distribution-function-ecdf": {
+    "conceptual": {
+      "question": "What is the primary purpose of using an Empirical Cumulative Distribution Function (ECDF) in data analysis?",
+      "answers": [
+        "To estimate the cumulative probability distribution of a dataset",
+        "To calculate the mean and standard deviation of a dataset",
+        "To perform linear regression analysis",
+        "To classify data into different categories",
+        "To compute the correlation coefficient between two variables"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Empirical Cumulative Distribution Function (ECDF)?",
+      "answers": [
+        "Comparing the distribution of exam scores between two different classes",
+        "Predicting future stock prices based on historical data",
+        "Detecting anomalies in network traffic data",
+        "Optimizing the layout of components on a circuit board",
+        "Automating the process of answering customer service inquiries"
+      ]
+    }
+  },
+  "mean-absolute-error-mae": {
+    "conceptual": {
+      "question": "What does the Mean Absolute Error (MAE) specifically quantify in the context of model performance?",
+      "answers": [
+        "The average of the absolute differences between predicted and actual values",
+        "The ratio of correctly predicted instances to the total predictions",
+        "The variance between predicted values in a dataset",
+        "The percentage of predictions that exactly match the actual values",
+        "The maximum error between a single predicted value and its actual value"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using Mean Absolute Error (MAE)?",
+      "answers": [
+        "Evaluating the accuracy of a weather forecasting model's temperature predictions",
+        "Determining the number of layers in a neural network",
+        "Calculating the speed of an object using computer vision",
+        "Measuring the frequency of keywords in a text for search engine optimization",
+        "Assessing the graphical quality of video games"
+      ]
+    }
+  },
+  "probability-density-function": {
+    "conceptual": {
+      "question": "What does a Probability Density Function (PDF) primarily represent in the context of continuous random variables?",
+      "answers": [
+        "The likelihood of the variable falling within a specific range",
+        "The exact value a random variable will take",
+        "The sum of probabilities for all possible outcomes",
+        "A discrete distribution of events",
+        "The maximum probability of an event occurring"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Probability Density Function?",
+      "answers": [
+        "Determining the distribution of heights within a population",
+        "Predicting the winner of a football match",
+        "Calculating the exact time a train will arrive",
+        "Counting the number of apples in a basket",
+        "Identifying the most played song on a streaming service"
+      ]
+    }
+  },
+  "aucpr-area-under-the-precision-recall-curve": {
+    "conceptual": {
+      "question": "What does the AUCPR metric primarily evaluate in AI/ML models?",
+      "answers": [
+        "The trade-off between precision and recall across different thresholds",
+        "The ratio of correctly predicted positive observations to the total predicted positives",
+        "The ratio of correctly predicted positive observations to the actual positives",
+        "The percentage of correct predictions made by the model",
+        "The trade-off between true positive rate and false positive rate across different thresholds"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of AUCPR?",
+      "answers": [
+        "Evaluating a spam detection model to balance the identification of spam vs. important emails",
+        "Calculating the speed of an autonomous vehicle in real-time conditions",
+        "Determining the next word in a sequence for text prediction",
+        "Optimizing the route for delivery drones based on weather conditions",
+        "Analyzing soil samples in agriculture to predict crop yields"
+      ]
+    }
+  },
+  "controller-logic": {
+    "conceptual": {
+      "question": "What is the primary function of controller logic in AI/ML systems?",
+      "answers": [
+        "To dictate how systems respond to data and stimuli",
+        "To increase the processing speed of AI models",
+        "To improve the graphical interface of ML applications",
+        "To enhance the storage capacity for data analysis",
+        "To reduce the energy consumption of computational devices"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of controller logic?",
+      "answers": [
+        "Autonomous vehicle navigation systems",
+        "Predicting stock market trends",
+        "Generating personalized content recommendations",
+        "Automated language translation",
+        "Creating digital art through neural networks"
+      ]
+    }
+  },
+  "data-warehouse": {
+    "conceptual": {
+      "question": "What is the primary purpose of a Data Warehouse in the context of AI/ML?",
+      "answers": [
+        "To support complex queries and analysis on aggregated, historical data",
+        "To store unstructured data for real-time processing",
+        "To enhance the performance of transactional databases",
+        "To provide immediate backups for transactional systems",
+        "To serve as a primary database for web applications"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Data Warehouse?",
+      "answers": [
+        "Consolidating customer data from sales, marketing, and support to analyze buying patterns",
+        "Storing real-time social media feeds for immediate sentiment analysis",
+        "Caching web pages for faster load times on high-traffic sites",
+        "Processing and distributing live streaming video content",
+        "Running operational databases for day-to-day transaction processing"
+      ]
+    }
+  },
+  "upweighting": {
+    "conceptual": {
+      "question": "What does the process of upweighting in a ML model primarily aim to achieve?",
+      "answers": [
+        "Adjusting the influence of certain data points or features to improve model performance or address bias",
+        "Increasing the overall amount of data available for training",
+        "Reducing the computational complexity of the model",
+        "Magnifying the output values of the model for clearer interpretation",
+        "Decreasing the time required for model training"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of upweighting?",
+      "answers": [
+        "Enhancing the influence of underrepresented data in health diagnosis predictions to reduce bias",
+        "Boosting the speed of data processing in real-time trading systems",
+        "Increasing the volume of data storage for cloud-based AI services",
+        "Expanding the network bandwidth for autonomous vehicle communications",
+        "Intensifying the color contrast in digital image processing"
+      ]
+    }
+  },
+  "similarity-learning": {
+    "conceptual": {
+      "question": "What is the primary objective of Similarity Learning in AI?",
+      "answers": [
+        "To train models to learn how to measure the similarity between data points in a task-specific manner",
+        "To enhance the accuracy of clustering algorithms by identifying identical data points",
+        "To increase the speed of data processing by grouping similar data points together",
+        "To decrease the computational complexity of AI models by simplifying data points",
+        "To enable AI models to predict future data points based on past similarities"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Similarity Learning?",
+      "answers": [
+        "Recommender systems that suggest products based on similarity to users' past preferences",
+        "Autonomous vehicles adjusting speed based on the color similarity of traffic lights",
+        "Language translation services converting text based on the frequency of similar words",
+        "Weather prediction models adjusting forecasts based on the similarity of cloud shapes",
+        "Stock market analysis tools predicting stock prices based on the similarity of company names"
+      ]
+    }
+  },
+  "out-of-bag-evaluation": {
+    "conceptual": {
+      "question": "What is the primary purpose of using Out-of-Bag evaluation in ensemble models?",
+      "answers": [
+        "To estimate the model's accuracy without needing a separate validation set",
+        "To increase the speed of the model training process",
+        "To reduce the dimensionality of the dataset",
+        "To enhance the security of the model against adversarial attacks",
+        "To directly improve the model's prediction accuracy on the training set"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Out-of-Bag Evaluation?",
+      "answers": [
+        "Evaluating the accuracy of a random forest model in predicting customer churn",
+        "Assessing the color accuracy of images in a deep learning model",
+        "Calculating the trajectory of satellites using genetic algorithms",
+        "Optimizing website layouts using A/B testing",
+        "Detecting network intrusions with a single-layer perceptron"
+      ]
+    }
+  },
+  "summary-in-tensorflow-context": {
+    "conceptual": {
+      "question": "What is the primary purpose of using summaries in the TensorFlow context for ML models?",
+      "answers": [
+        "To log and visualize data during the training phase to enhance model transparency and interpretability",
+        "To increase the speed of model training",
+        "To reduce the amount of data needed for training",
+        "To automatically adjust hyperparameters during training",
+        "To encrypt model data for security purposes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using summaries in TensorFlow?",
+      "answers": [
+        "Visualizing the change in loss over time during model training",
+        "Predicting stock market trends using historical data",
+        "Encrypting data before feeding it into a model",
+        "Automating the process of feature selection",
+        "Reducing the size of the training dataset automatically"
+      ]
+    }
+  },
+  "a-search": {
+    "conceptual": {
+      "question": "What distinguishes A* Search algorithm from Dijkstra\u2019s Algorithm in its approach to finding the shortest path?",
+      "answers": [
+        "It incorporates a heuristic to estimate the cost to reach the goal from each node, in addition to the cost from the start node.",
+        "It only considers the cost from the start node to the current node without any heuristic.",
+        "It uses a depth-first search approach without considering costs.",
+        "It calculates the shortest path based solely on a random search.",
+        "It prioritizes nodes based on their physical distance from the start node."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of A* Search?",
+      "answers": [
+        "Pathfinding in video games to move characters between points",
+        "Sorting database records by their creation date",
+        "Automating decision-making processes in stock trading",
+        "Generating natural language responses in a chatbot",
+        "Optimizing layouts for printed circuit boards (PCBs)"
+      ]
+    }
+  },
+  "batch-size": {
+    "conceptual": {
+      "question": "In the context of training an AI/ML model, why is the concept of batch size important?",
+      "answers": [
+        "It determines how many examples the model sees before it updates its weights, affecting learning speed and stability.",
+        "It specifies the maximum size of the input data.",
+        "It dictates the number of layers in the neural network.",
+        "It sets the upper limit on the number of epochs.",
+        "It defines the total number of training examples in the dataset."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of adjusting batch size?",
+      "answers": [
+        "Improving the performance of a model by finding an optimal batch size that balances training speed and model accuracy.",
+        "Increasing the number of features in the dataset to enhance model complexity.",
+        "Reducing the resolution of images in the dataset to decrease training time.",
+        "Expanding the neural network architecture to include more hidden layers.",
+        "Decreasing the learning rate to avoid overshooting the minimum during optimization."
+      ]
+    }
+  },
+  "in-group-bias": {
+    "conceptual": {
+      "question": "What is a key characteristic of in-group bias in the context of AI/ML decision-making?",
+      "answers": [
+        "It can lead to biased algorithms favoring certain groups based on the data they were trained on",
+        "It increases the accuracy of AI/ML models by providing diverse training datasets",
+        "It ensures fairness in AI/ML outcomes by enforcing equality in treatment across all groups",
+        "It enhances the ability of AI/ML systems to make unbiased decisions in all scenarios",
+        "It decreases the need for human intervention in AI/ML decision-making processes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of in-group bias in AI/ML?",
+      "answers": [
+        "A facial recognition system performing better on faces of the ethnicity it was mainly trained on",
+        "An AI system that predicts weather patterns with greater accuracy over oceans than on land",
+        "A chatbot that can communicate in multiple languages without any performance difference",
+        "A recommendation system suggesting products randomly, without using personal data",
+        "An autonomous vehicle system that operates equally well in all weather conditions"
+      ]
+    }
+  },
+  "time-series-analysis": {
+    "conceptual": {
+      "question": "What is the primary objective of Time Series Analysis in ML?",
+      "answers": [
+        "To analyze data points collected or sequenced over time to identify patterns, trends, and anomalies",
+        "To classify images into predefined categories",
+        "To predict the exact future values of stock prices",
+        "To create new data points based on historical data",
+        "To segment customers into different groups based on their purchasing behavior"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Time Series Analysis?",
+      "answers": [
+        "Forecasting stock market trends based on past performance",
+        "Generating new music that mimics the style of a given composer",
+        "Translating sentences from one language to another",
+        "Identifying objects within an image",
+        "Creating chatbots that can engage in human-like conversation"
+      ]
+    }
+  },
+  "attribute-sampling": {
+    "conceptual": {
+      "question": "What is the primary objective of attribute sampling in the context of AI/ML?",
+      "answers": [
+        "To select a subset of data or features from a dataset to improve model performance and efficiency",
+        "To increase the size of the dataset for better model training",
+        "To randomly shuffle data attributes for enhanced model security",
+        "To categorize attributes into different classes for supervised learning",
+        "To encode attributes into a format that is unreadable to humans for privacy reasons"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of attribute sampling?",
+      "answers": [
+        "Selecting relevant features from patient records to predict disease outcomes more accurately",
+        "Generating synthetic attributes to increase the diversity of data in a dataset",
+        "Using all available attributes in a dataset without any selection to ensure completeness",
+        "Encrypting dataset attributes to secure patient data against unauthorized access",
+        "Randomly deleting attributes from a dataset to test the robustness of the AI model"
+      ]
+    }
+  },
+  "historical-bias": {
+    "conceptual": {
+      "question": "What is the primary cause of historical bias in AI/ML models?",
+      "answers": [
+        "Using training data that reflects past inequalities or societal norms",
+        "Programming errors made by developers",
+        "Insufficient computing power to process the data",
+        "AI systems intentionally creating biased outcomes",
+        "Lack of regulations around AI development"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of historical bias in AI?",
+      "answers": [
+        "A facial recognition system performing poorly on minority ethnic groups",
+        "Self-driving cars failing to recognize stop signs in new locations",
+        "Voice assistants unable to understand accents not represented in their training data",
+        "Robots unable to navigate environments not predefined in their algorithms",
+        "Email filtering AI incorrectly marking important emails as spam due to user's previous inactivity"
+      ]
+    }
+  },
+  "systems-neuroscience": {
+    "conceptual": {
+      "question": "In the context of systems neuroscience, what best describes the process of how neural circuits contribute to behavior and cognition?",
+      "answers": [
+        "Neural circuits process and transmit information through interconnected neurons, influencing behavior and cognition.",
+        "Neural circuits solely provide the energy needed by the brain to perform tasks.",
+        "Neural circuits are static structures that do not influence behavior.",
+        "Neural circuits only affect behavior through the release of hormones.",
+        "Neural circuits function independently of each other, without integrating to produce behavior."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of systems neuroscience?",
+      "answers": [
+        "Developing brain-computer interfaces to restore motor function.",
+        "Creating new computer processors based on brain activity patterns.",
+        "Designing educational programs based on plant neurobiology.",
+        "Implementing traffic systems based on neural processing.",
+        "Building autonomous robots with simple reflex pathways."
+      ]
+    }
+  },
+  "numerical-data": {
+    "conceptual": {
+      "question": "Why is numerical data particularly important in AI/ML models?",
+      "answers": [
+        "It allows for mathematical operations that can model complex patterns.",
+        "It is the only type of data that can be visualized.",
+        "It requires less storage space than other data types.",
+        "It can be directly interpreted by humans without processing.",
+        "It eliminates the need for data preprocessing."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using numerical data in AI/ML?",
+      "answers": [
+        "Predicting stock market trends based on historical price data.",
+        "Understanding emotions from text in social media posts.",
+        "Translating sentences from one language to another.",
+        "Generating realistic human faces.",
+        "Creating music that mimics a certain style."
+      ]
+    }
+  },
+  "wisdom-of-the-crowd": {
+    "conceptual": {
+      "question": "What fundamental principle underpins the 'Wisdom of the Crowd' concept in AI/ML?",
+      "answers": [
+        "The aggregate of diverse independent opinions is more accurate than that of an individual expert",
+        "A single expert can make better predictions than a large group of non-experts",
+        "Crowds need to reach a consensus to solve complex problems",
+        "The accuracy of a crowd's opinion decreases with its size",
+        "Large data sets are less reliable than small, curated ones"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Wisdom of the Crowd?",
+      "answers": [
+        "Predicting election outcomes based on aggregating individual predictions",
+        "Using a single expert to forecast stock market trends",
+        "Solving complex mathematical problems with one algorithm",
+        "Relying solely on a CEO's decision for corporate strategies",
+        "Developing AI models without diverse data inputs"
+      ]
+    }
+  },
+  "timestep": {
+    "conceptual": {
+      "question": "What is the significance of a timestep in the context of reinforcement learning within AI?",
+      "answers": [
+        "It represents a single instance in which the agent takes action and receives feedback from the environment.",
+        "It is the time required for an AI model to learn a new concept.",
+        "It denotes the duration an AI system is operational before needing a reset.",
+        "It measures the computational complexity of an AI algorithm.",
+        "It is the interval at which AI predictions are updated in real-time systems."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using timesteps?",
+      "answers": [
+        "Adjusting the strategy of a trading algorithm based on hourly market data inputs.",
+        "Calibrating the sensitivity of voice recognition systems to background noise.",
+        "Increasing the resolution of images processed by a convolutional neural network.",
+        "Optimizing the battery life of autonomous drones in varying weather conditions.",
+        "Enhancing the accuracy of grammar correction in text editors."
+      ]
+    }
+  },
+  "bayesian-neural-network": {
+    "conceptual": {
+      "question": "What distinctive feature does a Bayesian Neural Network offer compared to traditional neural networks?",
+      "answers": [
+        "It models uncertainty in its predictions",
+        "It uses a higher number of layers",
+        "It requires less data for training",
+        "It uses different types of activation functions",
+        "It solely relies on backpropagation for updates"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a Bayesian Neural Network?",
+      "answers": [
+        "Predicting stock market trends with uncertainty estimation",
+        "Facial recognition in security systems",
+        "Language translation services",
+        "High-speed object detection for autonomous vehicles",
+        "Generating high-resolution video content"
+      ]
+    }
+  },
+  "blackboard-system": {
+    "conceptual": {
+      "question": "What best describes the function of a 'blackboard' in a Blackboard System in the context of AI?",
+      "answers": [
+        "A shared knowledge base for specialized modules to collaborate on problem-solving",
+        "A method for visually representing algorithms",
+        "A programming language designed specifically for AI",
+        "A database management system tailored for AI applications",
+        "A tool for creating interactive AI tutorials"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a Blackboard System?",
+      "answers": [
+        "Coordinating data from various sensors to identify and track objects in autonomous vehicle systems",
+        "Developing a new syntax for machine learning algorithms",
+        "Creating virtual assistants for scheduling meetings",
+        "Automating social media content curation",
+        "Generating personalized learning plans in educational software"
+      ]
+    }
+  },
+  "incremental-learning": {
+    "conceptual": {
+      "question": "What distinguishes Incremental Learning in AI from traditional machine learning methods?",
+      "answers": [
+        "It allows the model to learn from new data without forgetting previously learned information.",
+        "It requires the model to be retrained from scratch each time new data is introduced.",
+        "It relies exclusively on unsupervised learning techniques.",
+        "It uses a fixed dataset for training, without ever updating.",
+        "It focuses solely on reinforcement learning."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Incremental Learning?",
+      "answers": [
+        "Updating a recommendation system with new user interactions without retraining from the entire dataset.",
+        "Deploying static object recognition models in autonomous vehicles.",
+        "Using a fixed algorithm to predict stock market trends without updating the model.",
+        "Applying a single-layer perceptron for complex natural language processing tasks.",
+        "Creating a one-time trained chatbot that cannot learn from user interactions over time."
+      ]
+    }
+  },
+  "radial-basis-function-network": {
+    "conceptual": {
+      "question": "What is the primary role of radial basis functions in a Radial Basis Function Network?",
+      "answers": [
+        "They serve as activation functions that determine the output of neurons based on the input's distance from a center point.",
+        "They linearly separate data points in the input space.",
+        "They reduce the dimensionality of the input data before it is processed by the network.",
+        "They amplify the input signals for faster convergence of the network.",
+        "They encrypt the input data for secure processing within the network."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Radial Basis Function Network?",
+      "answers": [
+        "Function approximation and time series prediction",
+        "Developing encryption algorithms for secure communications",
+        "Generating three-dimensional graphics in video games",
+        "Automating the process of software code generation",
+        "Enhancing the resolution of digital photographs"
+      ]
+    }
+  },
+  "asp-answer-set-programming": {
+    "conceptual": {
+      "question": "What is a key feature of Answer Set Programming (ASP) that distinguishes it from other programming paradigms?",
+      "answers": [
+        "It focuses on describing what the solution should be, rather than how to compute it",
+        "It uses an imperative approach focusing on the step-by-step execution",
+        "It is exclusively used for machine learning model development",
+        "It emphasizes object-oriented principles for problem-solving",
+        "It relies on procedural instructions for solving combinatorial problems"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of ASP?",
+      "answers": [
+        "Solving the scheduling problem for university course timetables",
+        "Developing mobile applications for e-commerce platforms",
+        "Creating high-performance graphics in video games",
+        "Automating social media content generation",
+        "Enhancing real-time translation software for communication apps"
+      ]
+    }
+  },
+  "node": {
+    "conceptual": {
+      "question": "What is the primary function of a node in a neural network?",
+      "answers": [
+        "To process inputs and produce an output",
+        "To increase the network's speed",
+        "To store data permanently",
+        "To connect the network to the internet",
+        "To encrypt data passing through the network"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a node's function within AI or ML models?",
+      "answers": [
+        "Determining the likelihood of an email being spam based on its content",
+        "Powering on a computer when a specific word is spoken",
+        "Connecting multiple computers to form a local network",
+        "Transmitting radio waves for communication",
+        "Acting as a firewall to prevent unauthorized access"
+      ]
+    }
+  },
+  "root-in-decision-tree-context": {
+    "conceptual": {
+      "question": "In the context of decision trees in AI/ML, what does the root node represent?",
+      "answers": [
+        "The initial decision point from which all paths originate",
+        "The most important feature in the dataset",
+        "The final decision or prediction made by the model",
+        "The node with the highest information gain",
+        "The node that splits the dataset into two equal parts"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using the root in decision tree analysis?",
+      "answers": [
+        "Identifying the initial feature to split customers for a marketing campaign",
+        "Calculating the end profit of a financial year directly",
+        "Determining the exact layout of a webpage without user data",
+        "Predicting weather patterns without historical data",
+        "Directly encrypting data for secure transmission"
+      ]
+    }
+  },
+  "labeled-example": {
+    "conceptual": {
+      "question": "What is the primary function of labeled examples in the context of supervised learning in AI/ML?",
+      "answers": [
+        "To provide the model with known data points and their corresponding outcomes for training",
+        "To encrypt data points for secure transmission",
+        "To randomly generate test cases for algorithms",
+        "To label data points for aesthetic visualization purposes",
+        "To classify algorithms into different learning categories"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using labeled examples in AI/ML?",
+      "answers": [
+        "Training a spam detection system to recognize spam emails from non-spam emails",
+        "Generating new music that mimics the style of a given composer without direct examples",
+        "Creating a weather prediction model without historical weather data",
+        "Designing a new font style without prior examples of letter shapes",
+        "Developing a recipe recommendation system based solely on ingredient availability without user preferences"
+      ]
+    }
+  },
+  "minimax-loss": {
+    "conceptual": {
+      "question": "In the context of AI/ML, what does the Minimax Loss strategy aim to achieve?",
+      "answers": [
+        "Minimize the worst-case scenario loss in decision-making or optimization problems",
+        "Maximize the average gain across all possible outcomes",
+        "Minimize the average loss regardless of the scenario",
+        "Ensure a zero loss in all decision-making scenarios",
+        "Maximize the minimum gain in all optimization problems"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Minimax Loss?",
+      "answers": [
+        "Designing a chess AI to make moves that minimize the worst-case loss",
+        "Optimizing delivery routes for a logistics company under all traffic conditions",
+        "Calculating the average customer satisfaction score for a new product",
+        "Maximizing website uptime by distributing server load evenly",
+        "Predicting stock market prices to ensure maximum profit"
+      ]
+    }
+  },
+  "log-odds": {
+    "conceptual": {
+      "question": "What best describes the purpose of using log odds in AI/ML models?",
+      "answers": [
+        "To transform the odds ratio into a linear scale, making it easier to work with in statistical models",
+        "To calculate the probability of an event occurring multiple times",
+        "To directly compute the odds of an event without needing a logarithmic transformation",
+        "To reduce the computational complexity of AI algorithms",
+        "To increase the accuracy of models by directly predicting outcomes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of log odds?",
+      "answers": [
+        "Predicting the probability of a customer making a purchase based on previous shopping history",
+        "Estimating the speed of a car based on engine noise",
+        "Calculating the distance between planets in the solar system",
+        "Determining the age of fossils using carbon dating techniques",
+        "Predicting weather patterns without historical data"
+      ]
+    }
+  },
+  "graph-traversal": {
+    "conceptual": {
+      "question": "What is the primary purpose of graph traversal in the context of AI and network analysis?",
+      "answers": [
+        "To explore relationships and paths between nodes in a graph",
+        "To create graphical interfaces for user interactions",
+        "To optimize storage of data within databases",
+        "To encrypt data passing through the network",
+        "To design the physical layout of network infrastructure"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of graph traversal?",
+      "answers": [
+        "Finding the shortest path in a navigation system",
+        "Generating high-resolution images from low-res inputs",
+        "Automating email responses in customer service",
+        "Optimizing warehouse layout for logistics companies",
+        "Detecting fraud in financial transaction networks"
+      ]
+    }
+  },
+  "commonsense-reasoning": {
+    "conceptual": {
+      "question": "What is the primary challenge in implementing commonsense reasoning in AI/ML systems?",
+      "answers": [
+        "Capturing and encoding the broad and nuanced range of human knowledge",
+        "Increasing the processing speed of AI algorithms",
+        "Improving the graphic rendering capabilities of AI systems",
+        "Enhancing the storage capacity of AI databases",
+        "Developing more sophisticated hardware for AI systems"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of commonsense reasoning in AI/ML?",
+      "answers": [
+        "An AI system that can understand and answer questions about everyday activities",
+        "An AI that creates new chemical compounds",
+        "An AI designed for high-frequency stock trading",
+        "An AI that specializes in rendering 3D video game graphics",
+        "An AI that controls the flight of autonomous drones"
+      ]
+    }
+  },
+  "classification-threshold": {
+    "conceptual": {
+      "question": "In the context of ML, what does adjusting the classification threshold primarily influence?",
+      "answers": [
+        "The trade-off between sensitivity and specificity",
+        "The computational complexity of the model",
+        "The number of features required for the model",
+        "The amount of training data needed",
+        "The choice of algorithm used for the model"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of adjusting the classification threshold?",
+      "answers": [
+        "Improving spam detection in email filtering systems by reducing false positives",
+        "Increasing the resolution of images processed by a convolutional neural network",
+        "Reducing the time it takes for a model to train on a large dataset",
+        "Enhancing the user interface of a mobile application using machine learning",
+        "Optimizing the route calculation in a navigation system for faster results"
+      ]
+    }
+  },
+  "abstract-data-type": {
+    "conceptual": {
+      "question": "What is the primary purpose of an Abstract Data Type (ADT) in software development?",
+      "answers": [
+        "To provide a mathematical model defining operations on data without specifying how the operations are implemented",
+        "To outline explicit steps for algorithm implementation",
+        "To serve as a blueprint for building user interfaces",
+        "To define the specific memory layout of data",
+        "To dictate the programming language used for implementation"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Abstract Data Type?",
+      "answers": [
+        "A Queue ADT used for managing tasks in a printer's spool",
+        "An Encryption algorithm specifying exact bitwise operations",
+        "A specific database management system's file storage format",
+        "A detailed guide for rendering 3D graphics in video games",
+        "A comprehensive list of syntax rules for a programming language"
+      ]
+    }
+  },
+  "accuracy": {
+    "conceptual": {
+      "question": "What does the accuracy metric in AI/ML indicate about a model's performance?",
+      "answers": [
+        "The proportion of correct predictions to total predictions",
+        "The model's ability to avoid false positives",
+        "The speed at which a model makes predictions",
+        "The number of correct predictions a model can make in a sequence",
+        "The ability of a model to generalize from training to unseen data"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using accuracy as a performance metric?",
+      "answers": [
+        "Evaluating an email classification system's ability to correctly identify spam and non-spam emails",
+        "Determining the load time of a website's homepage",
+        "Calculating the maximum number of users an app can support simultaneously",
+        "Measuring the distance a robotic arm can reach",
+        "Assessing the color accuracy of a digital camera's photos"
+      ]
+    }
+  },
+  "mean-squared-error": {
+    "conceptual": {
+      "question": "What does the Mean Squared Error (MSE) primarily measure in the context of AI/ML models?",
+      "answers": [
+        "The average of the squares of the errors between predicted and actual values",
+        "The correlation between features in a dataset",
+        "The number of misclassified examples in a dataset",
+        "The variance of predictions in unsupervised learning models",
+        "The precision of a classification model"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Mean Squared Error?",
+      "answers": [
+        "Evaluating the accuracy of a weather forecasting model's temperature predictions",
+        "Measuring the popularity of products based on customer reviews",
+        "Calculating the total sales of an e-commerce platform",
+        "Assessing the quality of image compression algorithms by visual inspection",
+        "Determining the effectiveness of a new marketing strategy"
+      ]
+    }
+  },
+  "least-squares-regression": {
+    "conceptual": {
+      "question": "What is the primary objective of using Least Squares Regression in data analysis?",
+      "answers": [
+        "To minimize the sum of the square differences between observed and predicted values",
+        "To maximize the correlation between variables",
+        "To classify data points into distinct categories",
+        "To estimate the mean of a given dataset",
+        "To calculate the standard deviation of the dataset"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Least Squares Regression?",
+      "answers": [
+        "Predicting housing prices based on features like size and location",
+        "Translating languages in real-time",
+        "Detecting spam emails based on their content",
+        "Recognizing faces in images",
+        "Generating personalized movie recommendations"
+      ]
+    }
+  },
+  "test-set": {
+    "conceptual": {
+      "question": "What is the primary purpose of a test set in AI or ML?",
+      "answers": [
+        "Evaluating the model's performance on unseen data",
+        "Improving the model's accuracy",
+        "Feeding data into the model during the training phase",
+        "Expanding the dataset for better training",
+        "Reducing overfitting during the model training"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using a test set in AI or ML?",
+      "answers": [
+        "Assessing an image recognition model's ability to classify new images",
+        "Increasing the number of layers in a neural network",
+        "Collecting more data to add to the training set",
+        "Using the test set to train the model for better accuracy",
+        "Manually labeling new data to improve model predictions"
+      ]
+    }
+  },
+  "checkpoint": {
+    "conceptual": {
+      "question": "What is the primary purpose of using a checkpoint in machine learning?",
+      "answers": [
+        "To save the state of a model at a specific point, allowing training to resume or performance evaluation from that point",
+        "To increase the speed of model training exponentially",
+        "To finalize the model training process",
+        "To decrease the need for validation data during training",
+        "To compress the model into a smaller size for deployment"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using a checkpoint in machine learning?",
+      "answers": [
+        "Preventing loss of progress during training due to unexpected interruptions",
+        "Instantly improving model accuracy without further training",
+        "Creating an immutable record of model performance for regulatory compliance",
+        "Reducing the computational resources required for training models",
+        "Automatically generating reports on model biases and fairness"
+      ]
+    }
+  },
+  "axis-aligned-condition": {
+    "conceptual": {
+      "question": "What does the 'Axis-Aligned Condition' primarily simplify in ML algorithms?",
+      "answers": [
+        "Computational processes by aligning constraints with the coordinate system's axes",
+        "Visualization of data by rotating the dataset to a new orientation",
+        "Data storage requirements by compressing the dataset along specific axes",
+        "Network latency by aligning data packets with network protocols",
+        "Algorithmic decision-making by reducing the number of possible outcomes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of the Axis-Aligned Condition?",
+      "answers": [
+        "Improving the efficiency of decision tree algorithms",
+        "Enhancing graphic rendering in video games",
+        "Reducing the energy consumption of data centers",
+        "Optimizing routes in GPS navigation systems",
+        "Streamlining the manufacturing process of electronic components"
+      ]
+    }
+  },
+  "admissible-heuristic": {
+    "conceptual": {
+      "question": "What is the primary characteristic of an admissible heuristic in the context of search algorithms?",
+      "answers": [
+        "It never overestimates the cost to reach the goal.",
+        "It always finds the shortest path in the first attempt.",
+        "It reduces the memory usage of the algorithm.",
+        "It increases the speed of all search algorithms.",
+        "It guarantees the use of least computational resources."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of an admissible heuristic?",
+      "answers": [
+        "Finding the shortest path in GPS navigation systems",
+        "Optimizing stock levels in retail using past sales data",
+        "Detecting fraud in financial transactions",
+        "Automating customer service responses",
+        "Predicting weather patterns for the next month"
+      ]
+    }
+  },
+  "attribute": {
+    "conceptual": {
+      "question": "In the context of AI/ML, what is the significance of an attribute?",
+      "answers": [
+        "It serves as an input feature for models to make predictions or decisions",
+        "It is a type of AI model specialized for text analysis",
+        "It refers to the output or result of a machine learning prediction",
+        "It is the algorithm used for training AI models",
+        "It represents the error rate of a machine learning model"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using attributes in AI/ML?",
+      "answers": [
+        "Determining credit worthiness based on attributes like income, employment history, and credit score",
+        "Creating digital art without any input parameters",
+        "Translating languages in real time without analyzing text",
+        "Generating electricity through AI without any data input",
+        "Driving a car manually without any AI assistance"
+      ]
+    }
+  },
+  "sampling-bias": {
+    "conceptual": {
+      "question": "What is the impact of sampling bias in an AI/ML model's training process?",
+      "answers": [
+        "It can lead to a model that does not generalize well to unseen data.",
+        "It increases the model's accuracy on test data.",
+        "It decreases the computation time for model training.",
+        "It simplifies the feature selection process.",
+        "It enhances the model's ability to handle large datasets."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example where sampling bias can have a significant impact?",
+      "answers": [
+        "Facial recognition systems trained on non-diverse datasets",
+        "Developing new ML algorithms that reduce computational complexity",
+        "Creating databases for storing large volumes of data",
+        "Optimizing the speed of internet connections",
+        "Designing user interfaces for software applications"
+      ]
+    }
+  },
+  "early-stopping": {
+    "conceptual": {
+      "question": "What is the primary goal of using early stopping in ML model training?",
+      "answers": [
+        "To prevent overfitting by halting the training process when performance on a validation set starts to degrade",
+        "To increase the speed of the training process by intentionally skipping parts of the dataset",
+        "To reduce the computational cost by using less data for training",
+        "To enhance the model's ability to generalize by training it on more data",
+        "To improve the accuracy of the model on the training set specifically"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of early stopping?",
+      "answers": [
+        "Halting the training of a neural network when its performance on a held-out validation set worsens, to avoid overfitting",
+        "Automatically selecting features from a dataset to use in model training",
+        "Reducing the resolution of images in computer vision tasks to speed up processing",
+        "Increasing the number of layers in a deep learning model to improve its complexity",
+        "Using a larger dataset to train a model for longer, assuming it will always improve the model's performance"
+      ]
+    }
+  },
+  "forward-chaining": {
+    "conceptual": {
+      "question": "What best describes the process of forward chaining in AI?",
+      "answers": [
+        "An inference method that starts with known facts and applies rules to extract more data until a goal is reached",
+        "A learning algorithm that adjusts its parameters forward in time",
+        "A data structure that organizes information in a forward linear progression",
+        "A programming technique that involves calling functions in a forward sequence",
+        "A debugging method that moves forward through code execution to find errors"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of forward chaining?",
+      "answers": [
+        "Expert systems in medical diagnosis to determine diseases based on symptoms",
+        "Predicting stock market trends using historical data",
+        "Encoding video streams for faster internet transmission",
+        "Translating languages in real time during a live conversation",
+        "Automatically generating code based on high-level requirements"
+      ]
+    }
+  },
+  "baseline": {
+    "conceptual": {
+      "question": "What is the primary purpose of establishing a baseline in AI/ML projects?",
+      "answers": [
+        "To provide a reference point for comparing the performance of new models or techniques",
+        "To determine the maximum achievable accuracy on a given dataset",
+        "To reduce the computational resources needed for training AI models",
+        "To ensure that the AI model can make predictions without any errors",
+        "To identify the best hyperparameters for the AI model without experimentation"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of establishing a baseline in AI projects?",
+      "answers": [
+        "Comparing a simple logistic regression model's accuracy with that of a complex neural network for image classification",
+        "Using a state-of-the-art AI model as the first attempt in a new project",
+        "Allocating the largest dataset available for the initial training phase of the model",
+        "Choosing the most expensive computational resources to ensure model accuracy",
+        "Implementing the newest AI techniques without prior evaluation or comparison"
+      ]
+    }
+  },
+  "pattern-recognition": {
+    "conceptual": {
+      "question": "What is the primary goal of pattern recognition in AI/ML?",
+      "answers": [
+        "To enable machines to interpret, learn from, and make decisions based on complex datasets",
+        "To create visually appealing patterns for digital art",
+        "To enhance the speed of computer processors",
+        "To improve the storage capacity of databases",
+        "To reduce the need for human intervention in data analysis"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of pattern recognition?",
+      "answers": [
+        "Facial recognition systems for security authentication",
+        "Generating new music based on classical compositions",
+        "Translating languages in real-time without any context",
+        "Creating indestructible computer passwords",
+        "Predicting stock prices with absolute certainty"
+      ]
+    }
+  },
+  "computational-complexity-theory": {
+    "conceptual": {
+      "question": "What does Computational Complexity Theory primarily seek to understand?",
+      "answers": [
+        "The inherent difficulty of computational problems and the resources required to solve them",
+        "The speed of various computer processors",
+        "The best programming language for solving complex algorithms",
+        "How to design user interfaces for complex software",
+        "Methods to reduce the cost of computing hardware"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Computational Complexity Theory?",
+      "answers": [
+        "Optimizing algorithms to improve search engine efficiency",
+        "Designing aesthetically pleasing website layouts",
+        "Creating music using AI algorithms",
+        "Developing new social media platforms",
+        "Inventing new types of computer memory"
+      ]
+    }
+  },
+  "feature-spec": {
+    "conceptual": {
+      "question": "What is the primary purpose of a Feature Spec in the context of AI/ML development?",
+      "answers": [
+        "To outline the characteristics and requirements of features in an AI system or model",
+        "To provide a detailed budget for AI/ML projects",
+        "To code the AI/ML algorithms",
+        "To document the user interface design of an AI application",
+        "To serve as a legal contract between AI developers and clients"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a Feature Spec?",
+      "answers": [
+        "Defining input data requirements and expected output for a machine learning model predicting stock prices",
+        "Writing a user manual for an AI-powered virtual assistant",
+        "Sketching the logo design for a new AI startup company",
+        "Creating a marketing plan for an AI-based fitness app",
+        "Drafting a press release for the launch of a new AI feature"
+      ]
+    }
+  },
+  "minimax": {
+    "conceptual": {
+      "question": "What is the primary goal of the Minimax algorithm in AI?",
+      "answers": [
+        "To minimize the maximum possible loss",
+        "To maximize the maximum possible gain",
+        "To find the most efficient path to victory",
+        "To predict the opponent's next move",
+        "To reduce the computational complexity of decision-making"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Minimax?",
+      "answers": [
+        "Determining the next move in a chess game",
+        "Optimizing logistics and supply chain routes",
+        "Automating customer service through chatbots",
+        "Personalizing user recommendations on streaming platforms",
+        "Enhancing image recognition in security systems"
+      ]
+    }
+  },
+  "root-mean-squared-error-rmse": {
+    "conceptual": {
+      "question": "What does the Root Mean Squared Error (RMSE) primarily measure in the context of AI/ML models?",
+      "answers": [
+        "The standard deviation of prediction errors or residuals",
+        "The variance of residuals",
+        "The mean of the residuals",
+        "The maximum error between predicted and actual values",
+        "The correlation between predicted and actual values"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using RMSE to evaluate the performance of a model?",
+      "answers": [
+        "Assessing the accuracy of a machine learning model in predicting housing prices",
+        "Calculating the average likes a social media post will receive",
+        "Determining the number of clusters in a dataset",
+        "Evaluating the runtime efficiency of an algorithm",
+        "Measuring the impact of a marketing campaign on brand awareness"
+      ]
+    }
+  },
+  "pca-principal-component-analysis": {
+    "conceptual": {
+      "question": "What is the primary goal of PCA in data analysis?",
+      "answers": [
+        "To reduce dimensionality while preserving as much variability as possible",
+        "To classify data into distinct categories",
+        "To predict outcomes based on input variables",
+        "To cluster data into similar groups based on their features",
+        "To enhance the resolution of digital images"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of PCA?",
+      "answers": [
+        "Reducing the number of variables in a dataset for stock market prediction",
+        "Improving the efficiency of engines in real-time",
+        "Automatically generating captions for images",
+        "Diagnosing diseases through genetic analysis",
+        "Creating realistic animations for video games"
+      ]
+    }
+  },
+  "batch-inference": {
+    "conceptual": {
+      "question": "What is the primary advantage of using batch inference in AI/ML models?",
+      "answers": [
+        "Increases efficiency by processing large volumes of data at once",
+        "Reduces the complexity of the AI/ML model",
+        "Eliminates the need for data preprocessing",
+        "Enables real-time data processing",
+        "Reduces the accuracy of the model for simpler computation"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of batch inference?",
+      "answers": [
+        "Analyzing daily sales data overnight to forecast inventory needs",
+        "Real-time language translation for live broadcasts",
+        "Facial recognition for unlocking smartphones",
+        "Processing video streams for autonomous vehicles",
+        "Monitoring heart rates in real-time for fitness apps"
+      ]
+    }
+  },
+  "eager-learning": {
+    "conceptual": {
+      "question": "What distinguishes eager learning from its counterpart in ML?",
+      "answers": [
+        "It constructs a comprehensive model before making any predictions",
+        "It makes predictions without a model",
+        "It updates its model incrementally with each new data point",
+        "It relies on lazy evaluation to minimize computation",
+        "It only constructs a model after receiving a prediction query"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of eager learning?",
+      "answers": [
+        "Building a decision tree to classify email as spam or not before receiving new emails",
+        "Indexing database entries for faster query response times",
+        "Calculating the shortest path in a graph for real-time GPS navigation",
+        "Streaming video content based on user's viewing history",
+        "Dynamically pricing airline tickets based on demand"
+      ]
+    }
+  },
+  "queue": {
+    "conceptual": {
+      "question": "In the context of data structures, which principle best describes the operational methodology of a queue?",
+      "answers": [
+        "First-In-First-Out (FIFO)",
+        "Last-In-First-Out (LIFO)",
+        "Random Order Access",
+        "Highest Value First",
+        "Lowest Value First"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a queue?",
+      "answers": [
+        "Managing print jobs in a printer queue",
+        "Sorting data in descending order",
+        "Executing tasks based on their priority",
+        "Storing data for undo operations in software",
+        "Balancing loads across different servers"
+      ]
+    }
+  },
+  "inference-engine": {
+    "conceptual": {
+      "question": "What is the primary function of an inference engine in AI/ML?",
+      "answers": [
+        "To derive new information or conclusions from a set of known facts or data",
+        "To directly input data into a knowledge base",
+        "To encrypt sensitive information in AI applications",
+        "To increase the processing speed of AI algorithms",
+        "To visualize data for analytical purposes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of an inference engine?",
+      "answers": [
+        "Diagnosing diseases based on symptoms and medical history",
+        "Directly interacting with users through a graphical interface",
+        "Speeding up the rendering of 3D graphics in video games",
+        "Automating the process of data entry into spreadsheets",
+        "Enhancing the resolution of images through upscaling"
+      ]
+    }
+  },
+  "statistical-classification": {
+    "conceptual": {
+      "question": "What is the primary goal of statistical classification in AI/ML?",
+      "answers": [
+        "To categorize objects into predefined classes based on their features",
+        "To establish a correlation between different objects",
+        "To predict the numerical value of an object's features",
+        "To find a statistical correlation between classes",
+        "To reduce the dimensionality of the feature space"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of statistical classification?",
+      "answers": [
+        "Email spam detection",
+        "Predicting stock market prices",
+        "Calculating the area of irregular shapes",
+        "Solving algebraic equations",
+        "Generating realistic video game environments"
+      ]
+    }
+  },
+  "transition-system": {
+    "conceptual": {
+      "question": "What is the primary purpose of a transition system in AI/ML?",
+      "answers": [
+        "To represent and analyze the dynamic behavior of systems through states and transitions",
+        "To statically analyze the structure of a neural network",
+        "To encrypt data before processing in AI models",
+        "To increase the speed of computation in ML algorithms",
+        "To visualize data before feeding it into an AI model"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a transition system?",
+      "answers": [
+        "Modeling the behavior of an autonomous vehicle at intersections",
+        "Predicting stock market prices using historical data",
+        "Translating sentences from one language to another",
+        "Detecting objects in images for facial recognition",
+        "Generating music based on user's listening history"
+      ]
+    }
+  },
+  "reporting-bias": {
+    "conceptual": {
+      "question": "What is the primary concern of reporting bias in AI/ML model training?",
+      "answers": [
+        "It can lead to models that do not accurately represent reality, making predictions or decisions based on skewed data",
+        "It increases the computational power needed for model training",
+        "It leads to faster convergence in neural networks",
+        "It eliminates the need for data preprocessing",
+        "It simplifies the feature selection process"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example where reporting bias has significant impact?",
+      "answers": [
+        "In health diagnostics, where data from underrepresented populations may lead to biased disease prediction models",
+        "In online shopping recommendation systems where products are equally popular across all demographics",
+        "In autonomous vehicle navigation systems that only use data from clear weather conditions",
+        "In speech recognition systems trained exclusively on high-quality audio inputs",
+        "In stock market prediction models using only data from bear markets"
+      ]
+    }
+  },
+  "weighted-sum": {
+    "conceptual": {
+      "question": "What is the significance of weighted sum in the context of neural networks?",
+      "answers": [
+        "Determines the combined input signal of a neuron before applying the activation function",
+        "Calculates the error rate of the neural network",
+        "Reduces the dimensionality of the input data",
+        "Normalizes the input data to speed up learning",
+        "Directly calculates the output without needing an activation function"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Weighted Sum?",
+      "answers": [
+        "Calculating the input to an activation function in an artificial neuron",
+        "Adjusting the brightness of pixels in digital image processing",
+        "Balancing audio levels across different tracks in music production",
+        "Optimizing routes in logistic operations",
+        "Determining the ranking of web pages in a search engine"
+      ]
+    }
+  },
+  "situated-approach": {
+    "conceptual": {
+      "question": "What is a key principle of the Situated Approach in AI/ML?",
+      "answers": [
+        "AI systems must be developed with an understanding of their operating environments",
+        "AI systems function identically regardless of their environment",
+        "The physical design of AI systems is irrelevant to their intelligence",
+        "AI systems are primarily influenced by their internal algorithms, not their environment",
+        "AI systems require human-like consciousness to interact with their environment"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of the Situated Approach?",
+      "answers": [
+        "Autonomous vehicles adapting driving strategies based on road conditions",
+        "Chatbots providing the same responses regardless of user input context",
+        "Spreadsheet software performing calculations without user customization",
+        "E-book readers that adjust brightness based solely on battery life",
+        "Smart thermostats that set temperature without considering time of day or occupancy"
+      ]
+    }
+  },
+  "production-system": {
+    "conceptual": {
+      "question": "What is a key characteristic of a production system in AI?",
+      "answers": [
+        "It systematically explores possible actions to achieve a goal state based on rules and data.",
+        "It relies exclusively on random data generation to solve problems.",
+        "It uses only human input to decide the next step in problem-solving.",
+        "It operates without any predefined rules or data.",
+        "It focuses on creating physical products using automated machinery."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a production system in AI?",
+      "answers": [
+        "Automated customer support using a chatbot to solve user queries.",
+        "Generating electricity by predicting and adjusting to consumption patterns.",
+        "Creating art pieces without any input or rules.",
+        "Direct physical interaction with the environment through robot manipulation.",
+        "Predicting stock market prices without any historical data."
+      ]
+    }
+  },
+  "knowledge-extraction": {
+    "conceptual": {
+      "question": "What is the primary outcome of applying Knowledge Extraction in AI/ML?",
+      "answers": [
+        "Transforming unstructured data into structured information",
+        "Creating new data from existing data",
+        "Deleting unnecessary data from databases",
+        "Converting text data into speech",
+        "Encrypting sensitive information in texts"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Knowledge Extraction?",
+      "answers": [
+        "Extracting patient information from unstructured medical notes",
+        "Generating new articles based on keywords",
+        "Translating languages in real-time during conversations",
+        "Creating virtual reality environments from text descriptions",
+        "Automatically generating music based on mood descriptions in text"
+      ]
+    }
+  },
+  "reservoir-computing": {
+    "conceptual": {
+      "question": "What distinguishes Reservoir Computing in the handling of temporal information compared to traditional neural networks?",
+      "answers": [
+        "Its use of a dynamic 'reservoir' layer with fixed random weights to process sequences of data",
+        "The application of backpropagation through time for every input sequence",
+        "The requirement for extensive retraining for each new sequence of data",
+        "The use of convolutional layers to specifically extract temporal features",
+        "Relying solely on feedforward neural networks to predict future steps"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Reservoir Computing?",
+      "answers": [
+        "Predicting the evolution of chaotic systems in weather forecasting",
+        "Real-time language translation using attention mechanisms",
+        "Enhancing the resolution of images through deep learning",
+        "Automating the process of medical diagnosis with convolutional neural networks",
+        "Optimizing supply chain logistics through reinforcement learning"
+      ]
+    }
+  },
+  "centroid-based-clustering": {
+    "conceptual": {
+      "question": "In centroid-based clustering, how is the 'centroid' of a cluster typically defined?",
+      "answers": [
+        "The central point, represented as the average of all points in the cluster",
+        "The point in the cluster with the highest density of nearby points",
+        "The first data point that was added to the cluster",
+        "The data point that is farthest away from all other points in the cluster",
+        "The median point of all points in the cluster"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of centroid-based clustering?",
+      "answers": [
+        "Segmenting customers based on purchasing behavior",
+        "Predicting future stock prices based on historical data",
+        "Identifying new species based on genetic information",
+        "Translating languages in real-time",
+        "Generating personalized movie recommendations"
+      ]
+    }
+  },
+  "precision-recall-curve": {
+    "conceptual": {
+      "question": "What does a point on the Precision-Recall Curve primarily represent for a binary classification model?",
+      "answers": [
+        "The trade-off between precision and recall for a specific threshold",
+        "The accuracy of the model at a specific instance",
+        "The overall accuracy of the model",
+        "The balance between true positive rate and false positive rate",
+        "The error rate of the model at different instances"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of the Precision-Recall Curve?",
+      "answers": [
+        "Evaluating email spam detection systems to optimize the trade-off between filtering spam and not missing important emails",
+        "Assessing the performance of a movie recommendation system",
+        "Measuring the speed of a self-driving car's object detection system",
+        "Calculating the storage space needed for a large-scale AI database",
+        "Determining the best color scheme for a data visualization tool"
+      ]
+    }
+  },
+  "query-language": {
+    "conceptual": {
+      "question": "What is the primary purpose of a query language in data management?",
+      "answers": [
+        "To facilitate retrieval and manipulation of data",
+        "To encrypt data",
+        "To increase data storage capacity",
+        "To improve the physical speed of the database server",
+        "To protect data against unauthorized access"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a query language?",
+      "answers": [
+        "Extracting specific customer data from a CRM database",
+        "Developing the graphical interface of a web application",
+        "Creating a new operating system",
+        "Designing the physical hardware for data storage",
+        "Generating electricity for data centers"
+      ]
+    }
+  },
+  "training-serving-skew": {
+    "conceptual": {
+      "question": "What does 'Training Serving Skew' primarily refer to in the context of AI/ML?",
+      "answers": [
+        "A discrepancy between training data distribution and serving data distribution",
+        "Overfitting of the model to the training data",
+        "The need for more data to train the model effectively",
+        "The difference in performance metrics between training and validation datasets",
+        "A variation in model predictions due to changes in algorithm parameters"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of addressing Training Serving Skew?",
+      "answers": [
+        "Updating an online recommendation system's model with new user interaction data regularly",
+        "Applying gradient descent optimization to minimize loss function",
+        "Increasing the number of layers in a neural network to improve accuracy",
+        "Using a larger dataset to train a spam detection model",
+        "Implementing a more complex algorithm to predict stock market trends"
+      ]
+    }
+  },
+  "coverage-bias": {
+    "conceptual": {
+      "question": "What impact does coverage bias have on AI/ML models?",
+      "answers": [
+        "It leads to models that do not perform equally well across different groups or scenarios due to underrepresentation in the training data.",
+        "It increases the overall accuracy of the model by focusing on the majority class.",
+        "It ensures that the model remains unbiased and fair across all possible inputs.",
+        "It decreases the size of the dataset needed for training the model effectively.",
+        "It enhances the model's ability to generalize to new, unseen data."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of coverage bias?",
+      "answers": [
+        "A facial recognition system performs poorly on certain demographic groups not well-represented in the training set.",
+        "A recommendation system suggesting new music genres equally well to all users irrespective of their historical preferences.",
+        "An email spam filter that effectively blocks all types of spam emails with no false positives.",
+        "A voice assistant that understands commands in all accents and dialects with equal accuracy.",
+        "An autonomous vehicle that navigates rural and urban areas with equal proficiency."
+      ]
+    }
+  },
+  "margin": {
+    "conceptual": {
+      "question": "What does the concept of 'margin' signify in the context of Support Vector Machines (SVM) in AI?",
+      "answers": [
+        "The distance between the decision boundary and the closest data points of the classes",
+        "The maximum distance between data points of the same class",
+        "The average distance between all data points in the dataset",
+        "The distance between the decision boundary and the furthest data points of the classes",
+        "The radius of the smallest circle that can encompass all data points of a class"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of utilizing the concept of margin in SVM?",
+      "answers": [
+        "Improving the accuracy of facial recognition systems by enhancing the separation between distinct individual's features",
+        "Calculating the total number of clusters in a dataset for database segmentation",
+        "Determining the color intensity in pixels for digital image rendering",
+        "Measuring the speed of objects in a video in real-time",
+        "Optimizing the layout of elements in a graphical user interface"
+      ]
+    }
+  },
+  "feature-learning": {
+    "conceptual": {
+      "question": "What is the primary objective of feature learning in AI/ML?",
+      "answers": [
+        "To automatically learn representations or features from raw input data",
+        "To reduce the dimensionality of input data to the lowest possible dimension",
+        "To manually select the most important features for model training",
+        "To increase the size of the dataset by generating new features",
+        "To classify input data into predefined categories"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of feature learning?",
+      "answers": [
+        "Improving face recognition in security systems by automatically identifying relevant facial features",
+        "Manually coding rules for spam detection in emails",
+        "Using fixed templates for object detection in images",
+        "Applying the same set of features across different machine learning tasks without adaptation",
+        "Creating a universal set of features for all types of text analysis tasks"
+      ]
+    }
+  },
+  "gradient-clipping": {
+    "conceptual": {
+      "question": "What is the primary purpose of gradient clipping in AI/ML models?",
+      "answers": [
+        "To prevent the exploding gradient problem by limiting the size of gradients",
+        "To increase the learning rate of models",
+        "To reduce the computational complexity of models",
+        "To enhance the feature selection process",
+        "To eliminate the need for normalization"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of gradient clipping?",
+      "answers": [
+        "Improving the stability of training in deep learning models for speech recognition",
+        "Optimizing search algorithms in database management systems",
+        "Reducing power consumption in embedded AI devices",
+        "Enhancing color accuracy in digital image processing",
+        "Speeding up transaction processing in FinTech applications"
+      ]
+    }
+  },
+  "convenience-sampling": {
+    "conceptual": {
+      "question": "What distinguishes convenience sampling from other sampling techniques in AI/ML research?",
+      "answers": [
+        "It relies on the ease of access to participants rather than random selection.",
+        "It requires a complex algorithm to select participants.",
+        "It always produces results that are representative of the general population.",
+        "It is a type of probability sampling.",
+        "It uses a computer program to randomly select participants from the entire population."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of convenience sampling?",
+      "answers": [
+        "Gathering quick feedback on a new app feature by asking current users.",
+        "Conducting a randomized controlled trial to determine a new drug's efficacy.",
+        "Using census data to understand demographic changes over a decade.",
+        "Deploying a satellite to collect atmospheric data from all over the globe.",
+        "Implementing a blockchain algorithm to secure financial transactions."
+      ]
+    }
+  },
+  "average-precision": {
+    "conceptual": {
+      "question": "What does the average precision (AP) metric primarily evaluate in AI/ML models?",
+      "answers": [
+        "The balance between precision and recall across different thresholds",
+        "The accuracy of a model in classifying binary outcomes",
+        "The number of correct positive predictions divided by the total number of positives",
+        "The proportion of true positive results in a data set",
+        "The consistency of a model's performance across various data sets"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using average precision as an evaluation metric?",
+      "answers": [
+        "Evaluating object detection models in autonomous vehicle systems",
+        "Measuring the speed of response in chatbot interactions",
+        "Calculating the total number of page views on a website",
+        "Assessing the battery life of IoT devices",
+        "Determining the storage capacity needed for big data analytics"
+      ]
+    }
+  },
+  "dense-feature": {
+    "conceptual": {
+      "question": "What characterizes a dense feature in the context of AI/ML models?",
+      "answers": [
+        "All components have significant, non-zero values",
+        "The feature consists solely of zeros",
+        "It is a sparse representation with many zeros",
+        "Only the first component is non-zero",
+        "It refers to features with binary values only"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of utilizing dense features?",
+      "answers": [
+        "Enhancing image recognition accuracy by capturing detailed pixel information",
+        "Compressing images to reduce file size",
+        "Indexing documents for faster search by using keyword counts",
+        "Simplifying datasets by reducing dimensionality",
+        "Encoding user preferences in a recommendation system with a sparse matrix"
+      ]
+    }
+  },
+  "intersection-over-union-iou": {
+    "conceptual": {
+      "question": "What does the Intersection Over Union (IoU) metric primarily measure in the context of object detection in AI/ML?",
+      "answers": [
+        "The overlap between predicted and actual bounding boxes",
+        "The difference between predicted and actual class labels",
+        "The pixel-wise accuracy of the segmentation mask",
+        "The distance between the centers of predicted and actual bounding boxes",
+        "The ratio of correctly predicted pixels to the total number of pixels"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example where Intersection Over Union (IoU) is crucial for evaluating performance?",
+      "answers": [
+        "Assessing the accuracy of vehicle detection systems in autonomous driving",
+        "Evaluating the performance of speech recognition systems",
+        "Measuring the accuracy of weather forecasting models",
+        "Determining the relevance of search engine results",
+        "Calculating the efficiency of power consumption in data centers"
+      ]
+    }
+  },
+  "temporal-data": {
+    "conceptual": {
+      "question": "What distinguishes temporal data from other types of data in AI/ML?",
+      "answers": [
+        "It is specifically associated with time, capturing sequences and timing of events.",
+        "It is exclusively unstructured text data.",
+        "It is primarily used for financial analysis.",
+        "It consists solely of images taken at different times.",
+        "It is characterized by its high volume and velocity, irrespective of time."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of temporal data?",
+      "answers": [
+        "Predictive maintenance in manufacturing, forecasting when equipment will fail.",
+        "Classifying images of animals into different species.",
+        "Real-time speech translation without considering the sequence of words.",
+        "Generating high-resolution video content from static images.",
+        "Identifying fraudulent transactions without analyzing the timing of transactions."
+      ]
+    }
+  },
+  "data-analysis": {
+    "conceptual": {
+      "question": "What is the primary goal of data analysis in the context of business intelligence?",
+      "answers": [
+        "To uncover patterns, trends, and insights that inform decision-making",
+        "To create visually appealing data presentations without interpreting the data",
+        "To collect as much data as possible regardless of its relevance",
+        "To focus solely on the technical aspects of data storage",
+        "To replace human decision-making with automated processes"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of data analysis?",
+      "answers": [
+        "Analyzing customer purchasing behaviors to tailor marketing strategies",
+        "Using data analysis to predict the outcome of sports matches with 100% accuracy",
+        "Interpreting weather data to decide the fashion trends of the next decade",
+        "Applying data analysis techniques to translate languages in real-time without context",
+        "Employing data analysis solely to enhance the graphical interface of websites"
+      ]
+    }
+  },
+  "host": {
+    "conceptual": {
+      "question": "What is the primary role of a host in the context of AI/ML?",
+      "answers": [
+        "Providing the environment for running AI/ML applications and managing data",
+        "Creating AI/ML algorithms from scratch",
+        "Directly interacting with end-users to gather feedback on AI/ML applications",
+        "Designing the user interface for AI/ML applications",
+        "Marketing AI/ML applications to potential users"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a host in AI/ML?",
+      "answers": [
+        "Cloud servers running machine learning models for predictive analytics",
+        "Personal computers used for playing video games",
+        "Smartphones running basic calculator apps",
+        "E-book readers displaying digital books",
+        "GPS devices providing navigation"
+      ]
+    }
+  },
+  "golden-dataset": {
+    "conceptual": {
+      "question": "What is a key characteristic of a Golden Dataset?",
+      "answers": [
+        "High-quality and expertly curated data",
+        "Large quantity of data",
+        "Data collected from a single source",
+        "Data with a lot of missing values",
+        "Unlabeled data"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a Golden Dataset?",
+      "answers": [
+        "Benchmarking the performance of AI models in recognizing speech patterns",
+        "Collecting user feedback on social media platforms",
+        "Storing transaction records for an e-commerce website",
+        "Logging temperature data for weather forecasting",
+        "Tracking daily step counts from a fitness application"
+      ]
+    }
+  },
+  "empirical-risk-minimization": {
+    "conceptual": {
+      "question": "What is the primary goal of Empirical Risk Minimization (ERM) in ML?",
+      "answers": [
+        "To minimize the average loss over the training dataset",
+        "To maximize the model's accuracy on unseen data",
+        "To find the model with the smallest size",
+        "To minimize the model's training time",
+        "To maximize the diversity of the training data"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Empirical Risk Minimization?",
+      "answers": [
+        "Optimizing a spam detection model to reduce false positives and negatives",
+        "Enhancing the graphical quality of video games",
+        "Reducing noise in high-frequency trading algorithms",
+        "Optimizing battery life in electric vehicles",
+        "Improving the aerodynamics of commercial airplanes"
+      ]
+    }
+  },
+  "sensor-fusion": {
+    "conceptual": {
+      "question": "What is the primary goal of Sensor Fusion in the context of AI/ML?",
+      "answers": [
+        "To achieve more accurate, consistent, and comprehensive information",
+        "To reduce the cost of sensors",
+        "To increase the processing power needed for AI/ML tasks",
+        "To simplify the data collection process",
+        "To limit the types of sensors used in a system"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Sensor Fusion?",
+      "answers": [
+        "Enhancing autonomous vehicle navigation and safety systems",
+        "Predicting stock market trends using economic indicators",
+        "Simplifying user interfaces for software applications",
+        "Improving the efficiency of solar panels",
+        "Increasing the speed of internet connections"
+      ]
+    }
+  },
+  "inter-rater-agreement": {
+    "conceptual": {
+      "question": "What does Inter-Rater Agreement primarily measure in the context of AI/ML?",
+      "answers": [
+        "The consistency among different evaluators' assessments",
+        "The accuracy of a single evaluator's assessment",
+        "The precision of the AI/ML model's predictions",
+        "The recall rate of classified data by an AI/ML model",
+        "The efficiency of data processing by an AI/ML algorithm"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Inter-Rater Agreement?",
+      "answers": [
+        "Assessing the consistency of medical diagnosis among different radiologists",
+        "Evaluating the performance of different AI algorithms in stock market predictions",
+        "Comparing the speed of data processing among various computer processors",
+        "Measuring the storage capacity of different cloud storage services",
+        "Benchmarking the accuracy of GPS devices in different smartphones"
+      ]
+    }
+  },
+  "data-parallelism": {
+    "conceptual": {
+      "question": "What is the primary goal of data parallelism in AI/ML computations?",
+      "answers": [
+        "To accelerate large-scale computations by performing the same operation on different pieces of distributed data simultaneously",
+        "To reduce the accuracy of computations for faster processing",
+        "To ensure data privacy by distributing data across different nodes",
+        "To increase the complexity of algorithms to improve their efficiency",
+        "To focus on sequential processing of data for better precision"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of data parallelism?",
+      "answers": [
+        "Training a deep learning model on a dataset distributed across multiple GPUs",
+        "Synchronizing data across different databases in real-time",
+        "Performing sequential financial transactions to ensure data integrity",
+        "Encrypting data piece by piece in a single-threaded environment",
+        "Running a complex query on a single-node database for data analysis"
+      ]
+    }
+  },
+  "landmarks": {
+    "conceptual": {
+      "question": "Why are landmarks important in computer vision and AI?",
+      "answers": [
+        "They help in interpreting and analyzing images by providing reference points.",
+        "They increase the resolution of images automatically.",
+        "They reduce the need for manual image tagging by users.",
+        "They encrypt images for secure transmission.",
+        "They decrease the processing power needed for image analysis."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using landmarks in AI?",
+      "answers": [
+        "Facial recognition systems to identify and verify individual faces.",
+        "Enhancing the flavor of food in cooking recipes.",
+        "Calculating the speed of vehicles in traffic management systems.",
+        "Predicting weather patterns by analyzing cloud images.",
+        "Automating the process of writing novels based on character images."
+      ]
+    }
+  },
+  "batch-normalization": {
+    "conceptual": {
+      "question": "Why is batch normalization important in training neural networks?",
+      "answers": [
+        "It helps in reducing internal covariate shift.",
+        "It increases the learning rate.",
+        "It decreases the number of layers required.",
+        "It simplifies the cost function.",
+        "It enlarges the parameter space."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of batch normalization?",
+      "answers": [
+        "Improving the accuracy of image recognition models.",
+        "Reducing noise in audio recordings.",
+        "Optimizing the route for delivery trucks.",
+        "Enhancing the security of encryption algorithms.",
+        "Boosting the speed of database queries."
+      ]
+    }
+  },
+  "srl-statistical-relational-learning": {
+    "conceptual": {
+      "question": "What distinguishes Statistical Relational Learning (SRL) from traditional machine learning approaches?",
+      "answers": [
+        "Its ability to model complex interactions among interdependent entities within relational data.",
+        "Its exclusive reliance on statistical methods without involving any relational data.",
+        "Its use of deep learning algorithms to process structured data.",
+        "Its application to unstructured data only.",
+        "Its focus on individual data points rather than relationships between data points."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of SRL?",
+      "answers": [
+        "Predicting the side effects of drug combinations in healthcare.",
+        "Enhancing the resolution of images in computer vision.",
+        "Improving the accuracy of speech recognition systems.",
+        "Optimizing route planning for individual vehicles in logistics.",
+        "Automating the process of writing code for new software applications."
+      ]
+    }
+  },
+  "batch": {
+    "conceptual": {
+      "question": "What is the primary benefit of using batches in the training process of neural networks?",
+      "answers": [
+        "Improves computational efficiency by allowing parallel processing",
+        "Increases the accuracy of the model by training on more data at once",
+        "Simplifies the neural network architecture",
+        "Reduces the need for data preprocessing",
+        "Eliminates the possibility of overfitting"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of batch processing in AI/ML?",
+      "answers": [
+        "Training an image recognition model with thousands of labeled images",
+        "Online learning for real-time user recommendation systems",
+        "Single-step prediction in low-latency trading algorithms",
+        "Incremental updating of search engine indexes",
+        "Real-time speech recognition on mobile devices"
+      ]
+    }
+  },
+  "graph": {
+    "conceptual": {
+      "question": "What is the primary purpose of using graphs in AI?",
+      "answers": [
+        "To model relationships and interactions among various entities",
+        "To calculate the fastest computation times for AI algorithms",
+        "To store large datasets for AI training purposes",
+        "To enhance the graphical user interface of AI systems",
+        "To optimize the storage space required by AI applications"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using graphs in AI?",
+      "answers": [
+        "Recommender systems that suggest products based on user relationships and product similarities",
+        "Improving the resolution of images processed by AI",
+        "Speeding up the boot time of AI-powered devices",
+        "Reducing the energy consumption of AI computations",
+        "Automating the process of code generation in software development"
+      ]
+    }
+  },
+  "categorical-data": {
+    "conceptual": {
+      "question": "What distinguishes categorical data from numerical data in the context of AI/ML?",
+      "answers": [
+        "Categorical data represents distinct groups or categories without numerical value, while numerical data represents quantities.",
+        "Categorical data can be directly used for mathematical calculations.",
+        "Categorical data is always ordinal.",
+        "Numerical data cannot be used in classification tasks.",
+        "Categorical data is less significant in AI/ML than numerical data."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of using categorical data in AI/ML?",
+      "answers": [
+        "Predicting customer churn based on subscription types (e.g., monthly, yearly, trial)",
+        "Estimating the age of a person based on their height and weight",
+        "Calculating the average speed of vehicles in a traffic system",
+        "Modeling the trajectory of a spacecraft using physics-based simulations",
+        "Performing complex numerical integration for engineering analysis"
+      ]
+    }
   }
 }
