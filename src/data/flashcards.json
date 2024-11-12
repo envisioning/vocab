@@ -655,6 +655,12 @@
       "slug": "next-token-prediction"
     },
     {
+      "title": "Scaled Supervision Method",
+      "definition": "A technique in AI training that enhances model performance by using a vast amount of labeled data, often accompanied by adaptive processes to balance data quantity and quality.",
+      "year": 0,
+      "slug": "scaled-supervision-method"
+    },
+    {
       "title": "ACO (Ant Colony Optimization)",
       "definition": "Probabilistic technique for solving computational problems which can be reduced to finding good paths through graphs, inspired by the behavior of ants seeking paths between their colony and food sources.",
       "year": 1992,
@@ -3751,6 +3757,12 @@
       "slug": "semantic-segmentation"
     },
     {
+      "title": "Iterated Amplification",
+      "definition": "An AI training technique that enhances task performance by recursively improving a base agent with the help of human supervision and task decomposition.",
+      "year": 2018,
+      "slug": "iterated-amplification"
+    },
+    {
       "title": "Latent Diffusion Backbone",
       "definition": "A framework in AI utilizing latent variable models with diffusion processes to generate high-dimensional data from low-dimensional latent representations.",
       "year": 2021,
@@ -4835,6 +4847,12 @@
       "definition": "Method where a policy, typically learned via RL, guides the diffusion process in generating samples that conform to desired specifications or constraints.",
       "year": 2021,
       "slug": "policy-guided-diffusion"
+    },
+    {
+      "title": "Debate",
+      "definition": "A technique in AI research where models or AI agents engage in debates to arrive at more accurate solutions or to extract truth from conflicting viewpoints.",
+      "year": 2019,
+      "slug": "debate"
     },
     {
       "title": "Cerebral Organoids",
