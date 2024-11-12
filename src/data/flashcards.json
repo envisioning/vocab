@@ -703,6 +703,12 @@
       "slug": "occams-razor"
     },
     {
+      "title": "CBRN Risk",
+      "definition": "Evaluation of potential hazards and vulnerabilities associated with Chemical, Biological, Radiological, and Nuclear agents in AI systems and applications.",
+      "year": 0,
+      "slug": "cbrn-risk"
+    },
+    {
       "title": "Planetary Scale System",
       "definition": "These systems refer to AI-driven platforms that operate on a global scale, integrating vast data sets and computational resources to tackle complex, worldwide challenges.",
       "year": 0,
@@ -1109,6 +1115,12 @@
       "definition": "Approach that integrates multiple specialized teams, each representing a different function, to comprehensively assess and enhance an organization's security posture.",
       "year": 2022,
       "slug": "rainbow-teaming"
+    },
+    {
+      "title": "Catastrophic Risk",
+      "definition": "The potential for AI systems to cause large-scale harm or failure due to unforeseen vulnerabilities, operational errors, or misuse.",
+      "year": 2010,
+      "slug": "catastrophic-risk"
     },
     {
       "title": "Model Drift Minimization",
@@ -2899,6 +2911,12 @@
       "slug": "jest-multimodal-contrastive-learning-with-joint-example-selection"
     },
     {
+      "title": "Autonomy Risk",
+      "definition": "The potential threats or challenges arising from autonomous systems operating beyond intended parameters or human control.",
+      "year": 2016,
+      "slug": "autonomy-risk"
+    },
+    {
       "title": "A-B Testing",
       "definition": "Method used to compare two versions of a variable to determine which one performs better in achieving a specific outcome.",
       "year": 1908,
@@ -4207,6 +4225,12 @@
       "slug": "underfitting"
     },
     {
+      "title": "Bigram Language Model",
+      "definition": "Predicts the probability of a word based on the preceding word within a sequence, enabling simple context-based understanding in natural language processing.",
+      "year": 1980,
+      "slug": "bigram-language-model"
+    },
+    {
       "title": "Fine Tuning",
       "definition": "Method used in ML to adjust the parameters of an already trained model to improve its accuracy on a specific, often smaller, dataset.",
       "year": 2020,
@@ -4609,6 +4633,12 @@
       "slug": "unsupervised-learning"
     },
     {
+      "title": "RSP (Responsible Scaling Policy)",
+      "definition": "A strategic framework for ensuring that AI systems are scaled prudently, focusing on ethical, environmental, and societal implications.",
+      "year": 2021,
+      "slug": "rsp-responsible-scaling-policy"
+    },
+    {
       "title": "Perceptual Hash Algorithm",
       "definition": "Generates a unique hash that reflects the visual or auditory similarity of data, such as an image, rather than its exact content.",
       "year": 2010,
@@ -4775,6 +4805,12 @@
       "definition": "Decline in the efficiency or effectiveness of an AI system over time or under specific conditions, leading to reduced accuracy, speed, or reliability.",
       "year": 1986,
       "slug": "performance-degradation"
+    },
+    {
+      "title": "Induction Head",
+      "definition": "A mechanism used in transformer models to extract and process specific patterns and dependencies from input data.",
+      "year": 0,
+      "slug": "induction-head"
     },
     {
       "title": "Fairness-Aware Machine Learning",
@@ -4989,7 +5025,7 @@
     {
       "title": "RGM (Renormalizing Generative Model)",
       "definition": "A probabilistic framework for learning and generating new data based on the renormalization principles often applied in theoretical physics.",
-      "year": 0,
+      "year": 2021,
       "slug": "rgm-renormalizing-generative-model"
     },
     {
@@ -5169,7 +5205,7 @@
     {
       "title": "Data Augmentation",
       "definition": "Techniques used to increase the size and improve the quality of training datasets for machine learning models without collecting new data.",
-      "year": 0,
+      "year": 2012,
       "slug": "data-augmentation"
     },
     {

@@ -5511,5 +5511,38 @@
   ],
   "rgm-renormalizing-generative-model": [
     "unknown"
+  ],
+  "cbrn-risk": [
+    "unknown"
+  ],
+  "catastrophic-risk": [
+    "nick bostrom",
+    "eliezer yudkowsky",
+    "toby ord",
+    "max tegmark",
+    "stuart russell",
+    "paul slovic",
+    "richard posner"
+  ],
+  "autonomy-risk": [
+    "unknown"
+  ],
+  "bigram-language-model": [
+    "unknown"
+  ],
+  "induction-head": [
+    "unknown"
+  ],
+  "rsp-responsible-scaling-policy": [
+    "unknown"
+  ],
+  "sandbox": [
+    "david p. anderson",
+    "john mccarthy",
+    "peter g. neumark",
+    "alan turing",
+    "john von neumann",
+    "ken thompson",
+    "rob pike"
   ]
 }
