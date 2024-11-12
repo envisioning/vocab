@@ -165,15 +165,16 @@ def assign_ids(hierarchy, terms):
     return id_mapping
 
 def load_additional_data():
-    """Load data from generality.json, years.json, names.json, impact.json, complexity.json, popularity.json, and safety.json"""
+    """Load data from generality.json, years.json, names.json, impact.json, complexity.json, popularity.json, safety.json, and newness.json"""
     data = {
         'generality': {},
         'years': {},
         'names': {},
         'impact': {},
-        'complexity': {},  # Added
-        'popularity': {},  # Added
-        'safety': {}      # Added
+        'complexity': {},
+        'popularity': {},
+        'safety': {},
+        'newness': {}  # Add newness
     }
     
     try:
@@ -225,6 +226,13 @@ def load_additional_data():
         logging.info("Successfully loaded safety.json")
     except Exception as e:
         logging.error(f"Error loading safety.json: {str(e)}")
+
+    try:
+        with open('../data/newness.json', 'r') as f:
+            data['newness'] = json.load(f)
+        logging.info("Successfully loaded newness.json")
+    except Exception as e:
+        logging.error(f"Error loading newness.json: {str(e)}")
     
     return data
 
@@ -279,6 +287,14 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
             else:
                 logging.warning(f"No safety found for term: {term}")
 
+            # Get newness if available
+            newness_avg = None
+            if id_mapping[term] in additional_data['newness']:
+                json_scores = additional_data['newness'][id_mapping[term]]
+                newness_avg = round(sum(json_scores) / len(json_scores), 3)
+            else:
+                logging.warning(f"No newness found for term: {term}")
+
             # Get year if available
             year = additional_data['years'].get(id_mapping[term])
 
@@ -291,10 +307,11 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 "summary": terms[term]['summary'],
                 "generality": generality_avg,
                 "impact": impact_avg,
-                "complexity": complexity_avg,  # Added
-                "popularity": popularity_avg,  # Added
-                "safety": safety_avg,         # Added
+                "complexity": complexity_avg,
+                "popularity": popularity_avg,
+                "safety": safety_avg,
                 "year": year,
+                "newness": newness_avg,
                 "component": has_component,
                 "children": [
                     {
@@ -352,6 +369,14 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 else:
                     logging.warning(f"No safety found for leaf term: {term}")
 
+                # Get newness if available
+                newness_avg = None
+                if id_mapping[term] in additional_data['newness']:
+                    json_scores = additional_data['newness'][id_mapping[term]]
+                    newness_avg = round(sum(json_scores) / len(json_scores), 3)
+                else:
+                    logging.warning(f"No newness found for leaf term: {term}")
+
                 # Get year if available
                 year = additional_data['years'].get(id_mapping[term])
 
@@ -364,10 +389,11 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                     "summary": terms[term]['summary'],
                     "generality": generality_avg,
                     "impact": impact_avg,
-                    "complexity": complexity_avg,  # Added
-                    "popularity": popularity_avg,  # Added
-                    "safety": safety_avg,         # Added
+                    "complexity": complexity_avg,
+                    "popularity": popularity_avg,
+                    "safety": safety_avg,
                     "year": year,
+                    "newness": newness_avg,
                     "component": has_component,
                     "children": []
                 }

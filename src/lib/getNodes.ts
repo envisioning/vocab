@@ -16,7 +16,8 @@ export const getNodes = cache(async (limit?: number): Promise<Node[] | null> => 
       popularity: node.popularity || null,
       safety: node.safety || null,
       generality: node.generality || null,
-      impact: node.impact || null
+      impact: node.impact || null,
+      newness: node.newness || null
     }))
 
     return limit ? nodes.slice(0, limit) : nodes

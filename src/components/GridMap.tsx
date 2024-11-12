@@ -10,7 +10,8 @@ type MetricKey =
   | "complexity"
   | "popularity"
   | "safety"
-  | "year";
+  | "year"
+  | "newness";
 
 interface GridMapProps {
   nodes: Node[];
@@ -117,6 +118,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     "popularity",
     "safety",
     "year",
+    "newness",
   ];
 
   // Initialize SVG only once
