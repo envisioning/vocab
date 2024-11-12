@@ -20546,5 +20546,291 @@
         "Creating a chatbot's response generation mechanism"
       ]
     }
+  },
+  "scaled-supervision-method": {
+    "conceptual": {
+      "question": "What is the primary goal of the Scaled Supervision Method in AI training?",
+      "answers": [
+        "To enhance model performance by balancing data quantity and quality with extensive labeled datasets",
+        "To reduce the need for labeled data in training models",
+        "To increase the computational speed of training models",
+        "To eliminate the need for human supervision in AI training",
+        "To focus solely on the quality of data, ignoring quantity"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of the Scaled Supervision Method?",
+      "answers": [
+        "Improving the accuracy of image recognition systems in self-driving cars",
+        "Creating more efficient battery-saving modes in smartphones",
+        "Speeding up the process of charging electric vehicles",
+        "Enhancing the performance of physical fitness tracking devices",
+        "Reducing the production cost of renewable energy sources"
+      ]
+    }
+  },
+  "cbrn-risk": {
+    "conceptual": {
+      "question": "What is the primary goal of integrating CBRN risk evaluation in AI/ML systems?",
+      "answers": [
+        "To enhance the ability of AI systems to identify, assess, and mitigate potential CBRN threats",
+        "To increase the computational speed of AI systems",
+        "To improve the user interface of AI applications",
+        "To expand the data storage capacity of ML models",
+        "To reduce the energy consumption of AI operations"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of CBRN risk evaluation in AI systems?",
+      "answers": [
+        "Developing predictive models to forecast the spread of biological agents in urban areas",
+        "Automating customer service interactions in online platforms",
+        "Enhancing the graphics of video games",
+        "Optimizing inventory management in retail",
+        "Improving recommendation algorithms on streaming services"
+      ]
+    }
+  },
+  "forcing-function": {
+    "conceptual": {
+      "question": "What is the primary role of a forcing function in AI development?",
+      "answers": [
+        "To create unavoidable pressure that accelerates decision-making or actions",
+        "To reduce the complexity of AI algorithms",
+        "To increase the accuracy of AI predictions",
+        "To decrease the computational power needed for AI tasks",
+        "To simplify the user interface of AI applications"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a forcing function in AI?",
+      "answers": [
+        "Regulatory compliance requiring explainability in AI models for loan approvals",
+        "Using more layers in neural networks to improve accuracy",
+        "Reducing the size of training data to decrease training time",
+        "Implementing faster GPUs to speed up AI computations",
+        "Expanding the dataset to include more variables for analysis"
+      ]
+    }
+  },
+  "sandbox": {
+    "conceptual": {
+      "question": "What is the primary purpose of a sandbox in AI/ML development?",
+      "answers": [
+        "To test and evaluate AI/ML models in an isolated environment without affecting the main system",
+        "To increase the processing power available for AI/ML computations",
+        "To serve as the main deployment environment for AI/ML applications",
+        "To restrict AI/ML models from accessing external data sources",
+        "To permanently store data used for training AI/ML models"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a sandbox?",
+      "answers": [
+        "Testing an AI model's response to novel data without risking the integrity of live systems",
+        "Deploying large-scale AI systems directly into production environments",
+        "Using a sandbox as the primary data storage for an AI model",
+        "Relying on a sandbox to increase the accuracy of AI predictions in real-time",
+        "Employing a sandbox to directly interact with end-users in a production setting"
+      ]
+    }
+  },
+  "catastrophic-risk": {
+    "conceptual": {
+      "question": "What does the concept of 'Catastrophic Risk' in AI/ML primarily concern?",
+      "answers": [
+        "The potential for large-scale harm due to vulnerabilities or misuse",
+        "The risk of AI systems becoming self-aware and rebelling against humans",
+        "The financial losses associated with investing in AI technology",
+        "The data privacy issues arising from AI applications",
+        "The environmental impact of training large AI models"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of understanding and mitigating 'Catastrophic Risk' in AI/ML?",
+      "answers": [
+        "Implementing robust safety and ethical guidelines for AI development",
+        "Using AI to predict stock market trends",
+        "Developing AI characters for video games",
+        "Creating AI-driven social media recommendation algorithms",
+        "Automating customer service with chatbots"
+      ]
+    }
+  },
+  "autonomy-risk": {
+    "conceptual": {
+      "question": "What best describes the significance of autonomy risk in AI/ML systems?",
+      "answers": [
+        "The potential for AI/ML systems to act unpredictably or make decisions outside of human ethical standards.",
+        "The likelihood of AI/ML systems becoming self-aware and rebelling against human commands.",
+        "The risk of AI/ML systems consuming too much computational power.",
+        "The chance of AI/ML algorithms becoming obsolete over time.",
+        "The possibility of AI/ML systems being too expensive to operate and maintain."
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of autonomy risk?",
+      "answers": [
+        "An autonomous vehicle making an unexpected decision that leads to a safety incident.",
+        "A smart home system failing to recognize voice commands.",
+        "An online recommendation engine suggesting products based on incorrect user behavior.",
+        "A facial recognition system with higher accuracy in low light conditions.",
+        "An AI chatbot providing weather updates with 100% accuracy."
+      ]
+    }
+  },
+  "accelerator-chip": {
+    "conceptual": {
+      "question": "What is the primary function of an accelerator chip in the context of AI/ML?",
+      "answers": [
+        "To speed up AI computations by efficiently handling specific data processing tasks",
+        "To increase the storage capacity for AI/ML data",
+        "To enhance the security of AI systems",
+        "To improve the accuracy of AI models without needing more data",
+        "To reduce the power consumption of general-purpose computing systems without improving performance"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of an accelerator chip?",
+      "answers": [
+        "Accelerating deep learning model training times",
+        "Boosting the speed of standard office software",
+        "Enhancing the graphical output of video games",
+        "Increasing the battery life of smartphones without hardware modifications",
+        "Improving the signal strength of wireless networks"
+      ]
+    }
+  },
+  "iterated-amplification": {
+    "conceptual": {
+      "question": "What is the primary goal of Iterated Amplification in AI/ML?",
+      "answers": [
+        "To recursively enhance AI performance by breaking down tasks and incorporating human feedback",
+        "To amplify the computing power required for AI training",
+        "To increase the iteration speed of AI algorithms",
+        "To amplify the data input size for training AI models",
+        "To reduce the need for human supervision in AI training"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Iterated Amplification?",
+      "answers": [
+        "Improving the accuracy of AI-powered medical diagnosis systems by iteratively refining their decision-making skills",
+        "Enhancing the graphics of video games through real-time rendering",
+        "Boosting the speed of internet connections for AI data centers",
+        "Increasing the battery life of AI-powered robots",
+        "Amplifying the signal strength in AI-driven communication devices"
+      ]
+    }
+  },
+  "bigram-language-model": {
+    "conceptual": {
+      "question": "What is the primary function of a Bigram Language Model in AI/ML?",
+      "answers": [
+        "Predicts the probability of a word based on the preceding word",
+        "Translates languages in real-time",
+        "Generates high-resolution images",
+        "Solves complex mathematical equations",
+        "Replicates human emotions in chatbots"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a Bigram Language Model?",
+      "answers": [
+        "Autocomplete suggestions in search engines",
+        "Driving autonomous vehicles",
+        "Diagnosing diseases from medical images",
+        "Winning at board games like Chess or Go",
+        "Creating 3D models from 2D images"
+      ]
+    }
+  },
+  "geometry-informed-neural-networks": {
+    "conceptual": {
+      "question": "How do Geometry-Informed Neural Networks enhance AI/ML models?",
+      "answers": [
+        "By integrating geometric information to improve the model's understanding of structured data",
+        "By increasing the number of layers in the neural network",
+        "By simplifying the geometric shapes in data for faster processing",
+        "By solely focusing on the geometric shapes present in images",
+        "By reducing the dimensionality of the data without considering its structure"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of Geometry-Informed Neural Networks?",
+      "answers": [
+        "Improving 3D object recognition in autonomous vehicle systems",
+        "Enhancing pixel resolution in digital photography",
+        "Speeding up internet browsing speeds",
+        "Automating data entry processes in databases",
+        "Optimizing battery life in mobile devices"
+      ]
+    }
+  },
+  "rsp-responsible-scaling-policy": {
+    "conceptual": {
+      "question": "What is the primary goal of implementing a Responsible Scaling Policy (RSP) in AI systems?",
+      "answers": [
+        "To ensure AI systems are scaled with consideration for ethical, environmental, and societal implications",
+        "To increase the computational power of AI systems as quickly as possible",
+        "To reduce the costs associated with scaling AI systems",
+        "To limit the use of AI in certain industries",
+        "To accelerate the deployment of AI systems regardless of potential consequences"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of a Responsible Scaling Policy (RSP)?",
+      "answers": [
+        "A company conducts an impact assessment before increasing the deployment of its AI-driven recommendation system",
+        "An AI startup rapidly expands its user base without reviewing the AI model's data privacy practices",
+        "A tech giant focuses solely on enhancing AI model accuracy, ignoring energy consumption",
+        "A research lab develops a powerful AI model without considering the implications of its findings on societal norms",
+        "A marketing firm uses AI to target ads without regard for user consent or data protection"
+      ]
+    }
+  },
+  "induction-head": {
+    "conceptual": {
+      "question": "What is the primary function of an Induction Head in AI/ML models?",
+      "answers": [
+        "To extract and process specific patterns and dependencies from input data",
+        "To reduce the dimensionality of the input data",
+        "To directly predict the output without processing the input data",
+        "To encrypt the input data for secure processing",
+        "To compress the input data for faster processing"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of an Induction Head?",
+      "answers": [
+        "Improving the accuracy of language translation models by understanding contextual dependencies",
+        "Enhancing the speed of computer processors",
+        "Improving the resolution of images in digital cameras",
+        "Increasing the storage capacity of hard drives",
+        "Reducing the energy consumption of electric vehicles"
+      ]
+    }
+  },
+  "debate": {
+    "conceptual": {
+      "question": "What is the primary goal of using the debate technique in AI research?",
+      "answers": [
+        "To arrive at more accurate solutions or extract truth from conflicting viewpoints by having models engage in debates",
+        "To improve the processing speed of AI models by reducing computational requirements",
+        "To directly increase the storage capacity of AI databases for better data handling",
+        "To enhance the graphical rendering capabilities of AI-driven applications",
+        "To simplify the programming languages used in AI development"
+      ]
+    },
+    "practical": {
+      "question": "Which of the following is a real-world application/example of the debate technique in AI?",
+      "answers": [
+        "Enhancing natural language understanding models by simulating debates on complex topics",
+        "Automating customer service responses without human intervention",
+        "Driving autonomous vehicles in urban environments",
+        "Optimizing the layout of components on an integrated circuit",
+        "Predicting stock market trends with high accuracy"
+      ]
+    }
   }
 }

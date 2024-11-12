@@ -273,7 +273,7 @@
     {
       "title": "Bias-Variance Trade-off",
       "definition": "In ML, achieving optimal model performance involves balancing bias and variance to minimize overall error.",
-      "year": 0,
+      "year": 1970,
       "slug": "bias-variance-trade-off"
     },
     {
@@ -3737,6 +3737,12 @@
       "definition": "The measurement or assessment of an AI's ability to demonstrate awareness or understanding akin to human consciousness.",
       "year": 0,
       "slug": "consciousness-level"
+    },
+    {
+      "title": "Accelerator Chip",
+      "definition": "Specialized hardware designed to speed up AI computations by efficiently handling specific data processing tasks.",
+      "year": 2016,
+      "slug": "accelerator-chip"
     },
     {
       "title": "Linear Algebra",
