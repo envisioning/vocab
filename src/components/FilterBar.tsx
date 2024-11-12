@@ -20,6 +20,72 @@ interface FilterBarProps {
   filteredAuthors: string[];
 }
 
+// Add this new component above FilterBar
+function TopNavigation() {
+  return (
+    <div className="hidden sm:block bg-white">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-2">
+          <Link
+            href="https://envisioning.io"
+            className="flex items-center gap-2"
+          >
+            <Image
+              src="/vocab/envisioning.svg"
+              alt="Envisioning Logo"
+              width={30}
+              height={30}
+              className="w-8 h-8 sm:w-6 sm:h-6"
+            />
+            <span className="font-medium text-gray-900 text-sm sm:text-base">
+              Envisioning
+            </span>
+          </Link>
+          <div className="flex gap-4 text-sm">
+            <Link
+              href="https://envisioning.io"
+              className="text-gray-900 py-1 hover:text-gray-900"
+            >
+              Home
+            </Link>
+            <Link
+              href="https://envisioning.io/services"
+              className="text-gray-900 py-1 hover:text-gray-900"
+            >
+              Services
+            </Link>
+            <Link
+              href="https://envisioning.io/work"
+              className="text-gray-900 py-1 hover:text-gray-900"
+            >
+              Work
+            </Link>
+            <Link
+              href="https://envisioning.io/signals"
+              className="text-gray-900 py-1 hover:text-gray-900"
+            >
+              Signals
+            </Link>
+
+            <Link
+              href="https://vocab.envisioning.io"
+              className="px-2 py-1 rounded bg-[#D6F248] text-gray-900"
+            >
+              Vocab
+            </Link>
+            <Link
+              href="https://envisioning.io/about"
+              className="text-gray-900 py-1 hover:text-gray-900"
+            >
+              About
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function FilterBar({
   searchTerm,
   onSearchChange,
@@ -166,151 +232,140 @@ export default function FilterBar({
   }, []);
 
   return (
-    <div
-      className="sticky top-0 bg-white shadow-md p-2 sm:p-4 z-10 mb-6"
-      role="search"
-      aria-label="Filter articles"
-    >
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Link
-                href="https://envisioning.io"
-                className="flex items-center gap-2"
-              >
-                <Image
-                  src="/vocab/envisioning.svg"
-                  alt="Envisioning Logo"
-                  width={20}
-                  height={20}
-                  className="w-5 h-5 sm:w-6 sm:h-6"
-                />
-                <span className="font-medium text-gray-900 text-sm sm:text-base">
-                  Envisioning /
-                </span>
-              </Link>
-
-              <Link href="/" className="flex items-center">
-                <span className="font-medium text-gray-900 underline text-sm sm:text-base">
-                  Vocab
-                </span>
-              </Link>
-            </div>
-
-            <NavLinks isMobile={true} />
-          </div>
-
-          <div className="flex items-center gap-2 sm:gap-4 flex-1">
-            <form
-              className="relative flex-1 min-w-0 sm:min-w-[300px]"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <input
-                ref={inputRef}
-                type="text"
-                placeholder="Search..."
-                className="px-3 sm:px-4 py-2 border rounded-lg w-full pr-16 sm:pr-24 text-sm sm:text-base
-                  bg-white text-gray-900 border-gray-300 placeholder-gray-500"
-                value={searchTerm}
-                onChange={(e) => handleSearchChange(e.target.value)}
-                onKeyDown={handleKeyDown}
-                aria-label="Search"
-                autoComplete="off"
-              />
-
-              <div className="absolute right-12 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-500">
-                {isFiltered
-                  ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
-                  : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
+    <>
+      <TopNavigation />
+      <div
+        className="sticky top-0 bg-white shadow-md p-2 sm:p-4 z-10 mb-6"
+        role="search"
+        aria-label="Filter articles"
+      >
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Link href="/" className="flex items-center">
+                  <span className="font-medium text-gray-900 underline text-sm sm:text-base">
+                    Vocab
+                  </span>
+                </Link>
               </div>
 
-              {searchTerm && (
-                <button
-                  onClick={handleClear}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
-                  aria-label="Clear filters"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-gray-400"
-                  >
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                  </svg>
-                </button>
-              )}
+              <NavLinks isMobile={true} />
+            </div>
 
-              {showResults && searchTerm && (
-                <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
-                  {filteredAuthors.length > 0 && (
-                    <div className="border-b">
-                      <div className="px-4 py-2 text-sm text-gray-500">
-                        Authors
-                      </div>
-                      {filteredAuthors.map((author, index) => (
-                        <Link
-                          key={author}
-                          href={`/contributors/${author
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")}`}
-                          className={`block px-4 py-2 hover:bg-gray-100
-                            ${index === selectedIndex ? "bg-blue-50" : ""}`}
-                          onClick={() => {
-                            setShowResults(false);
-                            setSelectedIndex(-1);
-                          }}
-                        >
-                          <span className="text-gray-900">{author}</span>
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+            <div className="flex items-center gap-2 sm:gap-4 flex-1">
+              <form
+                className="relative flex-1 min-w-0 sm:min-w-[300px]"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <input
+                  ref={inputRef}
+                  type="text"
+                  placeholder="Search..."
+                  className="px-3 sm:px-4 py-2 border rounded-lg w-full pr-16 sm:pr-24 text-sm sm:text-base
+                    bg-white text-gray-900 border-gray-300 placeholder-gray-500"
+                  value={searchTerm}
+                  onChange={(e) => handleSearchChange(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  aria-label="Search"
+                  autoComplete="off"
+                />
 
-                  {filteredArticles.length > 0 && (
-                    <div>
-                      <div className="px-4 py-2 text-sm text-gray-500">
-                        Articles
-                      </div>
-                      {filteredArticles.map((article, index) => (
-                        <Link
-                          key={article.slug}
-                          href={`/${article.slug}`}
-                          className={`block px-4 py-2 hover:bg-gray-100
-                            ${
-                              index + filteredAuthors.length === selectedIndex
-                                ? "bg-blue-50"
-                                : ""
-                            }`}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            handleSelection(article);
-                          }}
-                        >
-                          <span className="text-gray-900">{article.title}</span>
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                <div className="absolute right-12 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-gray-500">
+                  {isFiltered
+                    ? `${hitCount} ${hitCount === 1 ? "match" : "matches"}`
+                    : `${totalCount} ${totalCount === 1 ? "entry" : "entries"}`}
                 </div>
-              )}
-            </form>
 
-            <div className="hidden sm:flex items-center gap-4">
-              <NavLinks />
+                {searchTerm && (
+                  <button
+                    onClick={handleClear}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-1 hover:bg-gray-100 rounded-full"
+                    aria-label="Clear filters"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-gray-400"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                )}
+
+                {showResults && searchTerm && (
+                  <div className="absolute top-full left-0 right-0 mt-1 bg-white border rounded-lg shadow-lg max-h-96 overflow-y-auto">
+                    {filteredAuthors.length > 0 && (
+                      <div className="border-b">
+                        <div className="px-4 py-2 text-sm text-gray-500">
+                          Authors
+                        </div>
+                        {filteredAuthors.map((author, index) => (
+                          <Link
+                            key={author}
+                            href={`/contributors/${author
+                              .toLowerCase()
+                              .replace(/\s+/g, "-")}`}
+                            className={`block px-4 py-2 hover:bg-gray-100
+                              ${index === selectedIndex ? "bg-blue-50" : ""}`}
+                            onClick={() => {
+                              setShowResults(false);
+                              setSelectedIndex(-1);
+                            }}
+                          >
+                            <span className="text-gray-900">{author}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+
+                    {filteredArticles.length > 0 && (
+                      <div>
+                        <div className="px-4 py-2 text-sm text-gray-500">
+                          Articles
+                        </div>
+                        {filteredArticles.map((article, index) => (
+                          <Link
+                            key={article.slug}
+                            href={`/${article.slug}`}
+                            className={`block px-4 py-2 hover:bg-gray-100
+                              ${
+                                index + filteredAuthors.length === selectedIndex
+                                  ? "bg-blue-50"
+                                  : ""
+                              }`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleSelection(article);
+                            }}
+                          >
+                            <span className="text-gray-900">
+                              {article.title}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </form>
+
+              <div className="hidden sm:flex items-center gap-4">
+                <NavLinks />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -323,7 +378,7 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
     { href: "/grid", label: "Grid" },
     { href: "/graph", label: "Graph" },
     { href: "/sunflower", label: "Sunflower" },
-    { href: "/about", label: "About" },
+    { href: "/about", label: "Info" },
   ];
 
   if (isMobile) {

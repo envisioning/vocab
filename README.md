@@ -2,7 +2,7 @@
 
 Vocab is a knowledge graph for all [ML (Machine Learning)](/vocab/ml-machine-learning) terms and concepts.
 
-> The best time to get into AI was 20 years ago. The second best time is now.
+> The best time to get into AI was 10 years ago. The second best time is now.
 
 ## This will help you:
 

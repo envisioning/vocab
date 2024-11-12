@@ -781,6 +781,12 @@
       "slug": "teacher-model"
     },
     {
+      "title": "Forcing Function",
+      "definition": "A mechanism or factor that drives or accelerates decision-making, actions, or changes, especially in AI development or application settings, by creating an unavoidable pressure or demand.",
+      "year": 0,
+      "slug": "forcing-function"
+    },
+    {
       "title": "Generative",
       "definition": "Subset of AI technologies capable of generating new content, ideas, or data that mimic human-like outputs.",
       "year": 1980,
@@ -881,6 +887,12 @@
       "definition": "Multiplicative factor used to reduce future values or rewards to their present value in decision-making processes, particularly in reinforcement learning.",
       "year": 1989,
       "slug": "discount-factor"
+    },
+    {
+      "title": "Sandbox",
+      "definition": "A controlled, isolated testing environment used to execute, test, or simulate programs and code without affecting the main system.",
+      "year": 1990,
+      "slug": "sandbox"
     },
     {
       "title": "Wavelet",
