@@ -1,5 +1,5 @@
 ---
-title: target
+title: Target
 summary: In AI and ML, refers to the expected output or the correct answer the model aims to predict or achieve during training.
 slug: target
 ---

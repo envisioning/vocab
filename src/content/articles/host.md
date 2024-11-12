@@ -1,5 +1,5 @@
 ---
-title: host
+title: Host
 
 summary: The machine or server that acts as the environment for running and managing AI applications, processes, and data storage.
 slug: host

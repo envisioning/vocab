@@ -1,5 +1,5 @@
 ---
-title: batch
+title: Batch
 summary: A collection of data samples processed simultaneously in a single step of a neural network's training process.
 slug: batch
 ---

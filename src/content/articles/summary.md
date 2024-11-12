@@ -1,7 +1,7 @@
 ---
-title: summary (in TensorFlow context)  
+title: Summary
 summary: Method to log and visualize data for ML models, especially during the training phase, encompassing scalar values, images, histograms, and more to enhance model transparency and interpretability.
-slug: summary-in-tensorflow-context
+slug: summary
 ---
 
 In TensorFlow, a summary provides a powerful mechanism for logging data that can be visualized and analyzed using TensorBoard, which is crucial for debugging and optimizing neural network models. These summaries allow developers to track various metrics like loss and accuracy by logging scalar data or visualizing complex data types such as images and histograms over model iterations. The significance of summaries extends beyond mere visualization; they help in understanding the inner workings of ML models, facilitating hyperparameter tuning, and identifying potential issues in the training process. TensorBoard, as the visualization tool for these summaries, provides a comprehensive suite to monitor the training process, identify bottlenecks, and effectively communicate results, making it an indispensable part of the TensorFlow ecosystem for both research and production environments.

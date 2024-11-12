@@ -1,8 +1,8 @@
 ---
-title: Root Mean Squared Error (RMSE)  
+title: RMSE (Root Mean Squared Error)
 summary: A statistical measure used to quantify the difference between values predicted by a model and the values actually observed, providing a sense of how accurate the model's predictions are.
-slug: root-mean-squared-error-rmse
----  
+slug: rmse-root-mean-squared-error
+---
 
 Root Mean Squared Error (RMSE) serves as a crucial evaluation metric in AI and ML, particularly for regression models, by providing a single value that summarizes the magnitude of differences between predicted values and observed values. It is calculated as the square root of the average of the squared differences between prediction and actual observations, offering a clear indication of the model's prediction accuracy, with lower RMSE values indicating better fit and precision of the model. RMSE is significant in its ability to penalize larger errors more than smaller ones due to the squaring of differences, making it a preferred metric when understanding how spread out these errors are in a model’s predictions compared to Mean Absolute Error (MAE), which treats all errors equally. In AI, RMSE is extensively used not only in validating models during training but also in comparing the accuracy of different models in domains such as time-series forecasting, image processing, and more.
 

@@ -1,8 +1,8 @@
 ---
-title: Intersection Over Union (IoU)  
+title: IoU (Intersection Over Union)
 summary: A metric used to evaluate the accuracy of an object detector by comparing the overlap between the predicted and ground truth bounding boxes.
-slug: intersection-over-union-iou
----  
+slug: iou-intersection-over-union
+---
 
 Intersection Over Union (IoU) is a critical metric in computer vision, primarily used to assess the performance of object detection algorithms. It quantifies the degree of overlap between two bounding boxes: a predicted one and its corresponding ground truth. Calculated as the ratio of the area of intersection to the area of union of these two rectangles, IoU provides a straightforward, yet effective, measure of detection accuracy. In practice, IoU is instrumental in determining the correct versus incorrect predictions at various thresholds, thereby contributing to performance benchmarks like precision, recall, and the overall mAP (mean Average Precision) in object detection tasks. It functions as a cornerstone in the optimization of models for tasks involving localization and identification of objects within images.
 

@@ -1,8 +1,8 @@
 ---
-title: historical bias  
+title: Historical Bias
 summary: The skewed representation or outcomes in AI systems due to flawed or prejudiced data reflecting past societal norms or inequalities.
 slug: historical-bias
----  
+---
 
 Historical bias in AI occurs when models are trained on data sets that carry forward societal prejudices or imbalances from the past, which can lead to unfair or discriminatory outcomes. It is significant because it can perpetuate systemic inequalities, such as racial or gender biases, in AI applications even when the algorithms themselves are neutral. In practical terms, historical bias can manifest in various domains like hiring algorithms that favor certain demographic groups due to biased historical hiring data. Understanding and mitigating historical bias is essential in advancing ethical AI practices—developers and researchers must critically examine training data and adjust algorithms to account for and correct inherent biases.
 
