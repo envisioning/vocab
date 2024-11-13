@@ -5,7 +5,20 @@ const nextConfig = {
     serverActions: true,
     runtime: "edge",
   },
-    images: {
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "frame-src 'self' newsletter.envisioning.io;",
+          },
+        ],
+      },
+    ];
+  },
+  images: {
     remotePatterns: [
       {
         protocol: 'https',
