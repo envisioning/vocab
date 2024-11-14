@@ -88,7 +88,7 @@ The entire index has been co-created with different AI tools in order to create 
 
 # Visualizations
 
-## [Graph](/vocab/graph/)
+## [Graph](/vocab/node-graph/)
 
 - Generative knowledge graph of all articles. Experimental but fully functional
 - Connections are created based on node similarity, creating a semantic map of the corpus.

@@ -1,0 +1,12 @@
+---
+title: Digital Human
+
+summary: A lifelike virtual representation of a human being created using AI and computer graphics, often used in interactive environments and simulations.
+slug: digital-human
+---
+
+Digital Humans are intricately designed virtual avatars that leverage advancements in AI, ML, and computer graphics to mimic the appearance, movements, and speech of real people with remarkable precision. These digital entities find applications across various domains such as entertainment, customer service, and healthcare, offering a dynamic and interactive user experience. In entertainment and media, they play a significant role in creating realistic characters in films and video games. In customer service, Digital Humans can handle inquiries, provide tech support, and enhance user experience through personalized interactions. The significance of Digital Humans extends to therapeutic and educational settings as well, where they can simulate scenarios or act as conversational agents to support training or therapy sessions. As the technology evolves, the blend of natural language processing, emotion recognition, and facial animation advances, making Digital Humans increasingly indistinguishable from their human counterparts, thus expanding their potential impact across industries.
+
+The term "Digital Human" began appearing in discussions around the late 1990s with initial experimental projects but gained traction in the 2010s when improvements in AI and graphics technology made the creation of lifelike avatars more feasible and practical, particularly highlighted by the advances in facial capture and rendering techniques deployed in blockbuster movies and advanced gaming platforms.
+
+Key contributors to the development of Digital Humans include technology companies such as Epic Games and their Unreal Engine team, who have been pivotal in providing developers with tools for creating high-fidelity digital characters. The involvement of creative visionaries in the film industry, like James Cameron with his work on "Avatar," has also been instrumental in pushing the boundaries of what's possible with Digital Humans in storytelling and beyond. Additionally, researchers in AI, such as those at the MIT Media Lab, have explored the psychological and interactive aspects of Digital Humans, contributing to their ongoing evolution.

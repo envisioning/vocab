@@ -6308,5 +6308,38 @@
     "david cox",
     "leo breiman",
     "judea pearl"
+  ],
+  "mae-mean-absolute-error": [
+    "unknown"
+  ],
+  "summary": [
+    "unknown"
+  ],
+  "iou-intersection-over-union": [
+    "unknown"
+  ],
+  "root": [
+    "unknown"
+  ],
+  "accelerated-computing": [
+    "nvidia corporation",
+    "ian buck",
+    "jensen huang",
+    "andrew ng",
+    "demis hassabis",
+    "john hennessy",
+    "david patterson"
+  ],
+  "rmse-root-mean-squared-error": [
+    "unknown"
+  ],
+  "digital-human": [
+    "ivan sutherland",
+    "michael neff",
+    "hiroshi ishiguro",
+    "rebecca allen",
+    "david hanson",
+    "jaron lanier",
+    "mark sagar"
   ]
 }
