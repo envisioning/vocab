@@ -8,24 +8,21 @@ export default function ComponentFeedback({ slug }: { slug: string }) {
 
   const handleVote = useCallback(
     (isPositive: boolean) => {
-      console.log("Attempting to track feedback...", {
-        slug,
-        feedback: isPositive ? "good" : "bad",
-      });
-
-      if (typeof window !== "undefined") {
-        console.log("Plausible available:", !!(window as any).plausible);
-      }
-
       if (typeof window !== "undefined" && (window as any).plausible) {
         try {
-          (window as any).plausible("Component Vote", {
+          const EVENT_NAME = "Feedback";
+
+          (window as any).plausible(EVENT_NAME, {
             props: {
               slug,
               feedback: isPositive ? "good" : "bad",
             },
           });
-          console.log("Successfully tracked feedback");
+
+          console.log(`Tracking ${EVENT_NAME}:`, {
+            slug,
+            feedback: isPositive ? "good" : "bad",
+          });
         } catch (error) {
           console.error("Error tracking feedback:", error);
         }

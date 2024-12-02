@@ -1,0 +1,11 @@
+---
+title: Optimal Transport Theory  
+summary: A mathematical framework for determining the most efficient way to move and transform distributions of mass or probability from one configuration to another.
+slug: optimal-transport-theory
+---  
+
+Optimal transport theory is a powerful tool in AI, providing a rigorous foundation for comparing probability distributions, which is vital in fields like ML (Machine Learning) and statistics. The theory's origins lie in solving transportation problems, which involve determining the minimum cost to move 'mass' (whether literal or metaphorical, such as probability densities) from one place to another, typically respecting certain constraints and using a cost function measuring the effort or distance involved in this transfer. This concept is formalized through the calculation of the Wasserstein distance, among other metrics, which quantifies the disparity between distributions. In AI, optimal transport offers robust methods for tasks involving generative models, domain adaptation, and even time series analysis, allowing practitioners to measure and minimize the divergence between data distributions, despite complex underlying structures.  
+
+The original problem of optimal transport was posed by Gaspard Monge in 1781, addressing logistical issues of resource distribution. However, the theory gained widespread recognition in mathematics and subsequently in AI during the mid-to-late 20th century, primarily after the introduction of the Kantorovich relaxation in the 1940s, which offered solutions using linear programming techniques. It saw considerable growth in AI applications in the early 21st century with the rise of advanced computational capabilities allowing its integration into ML frameworks.  
+
+Significant contributors to the development of optimal transport theory include Gaspard Monge, who initially conceptualized it, and Leonid Kantorovich, who extended it through the Kantorovich dual formulation. In the realm of AI, notable advancements and implementations have been made by researchers such as Gabriel Peyré and Marco Cuturi, who have played crucial roles in applying the theory to modern computational and AI challenges.

@@ -1,0 +1,11 @@
+---
+title: evaluation-time compute  
+summary: The computational resources used while running an AI model for inference or decision-making, distinct from resources used during training.
+slug: evaluation-time-compute
+---    
+
+Evaluation-time compute refers to the computation required during the inference phase of AI models—when the model is actively in use to make predictions or decisions based on new data, rather than during training. Unlike the training phase, which involves data-intensive operations to tweak and optimize model parameters, evaluation-time compute is often optimized for speed and efficiency, as it directly impacts the responsiveness and deployment feasibility in real-world applications. This aspect is crucial in scenarios where models are deployed on edge devices with limited computational power or where real-time processing is critical, such as autonomous vehicles, facial recognition systems, and recommendation engines. The design of AI systems often involves a careful trade-off between the accuracy provided by complex models and the computational limitations at evaluation time, influencing key architectural choices and optimizations.  
+
+The first substantial discussions about evaluation-time compute in the context of AI emerged in the early 2010s, correlating with the widespread adoption of deep learning architectures and their deployment challenges. As neural network models grew in complexity, understanding and optimizing inference-time performance became a vital area of focus, leading to specialized hardware acceleration and the development of efficient algorithms.  
+
+Key contributors to the discussion and advancement of evaluation-time compute optimizations include leading AI research groups from industry and academia, such as Google Research with their work on TensorFlow Lite and NVIDIA’s innovations in GPU-based inference acceleration. These efforts have collectively shaped how models are efficiently deployed across different platforms, advancing the AI field's real-time application potential.

@@ -125,7 +125,7 @@ def get_definition_from_gpt(term):
     data = {
         "model": "gpt-4o",
         "messages": [
-            {"role": "system", "content": "Your role is to succinctly define AI-related terms. Follow a structured response format when a term is provided."},
+            {"role": "system", "content": "Your role is to succinctly define AI-related terms. Follow a structured response format when a term is provided. Ignore anything in parenthesis for the title, only consider it for context."},
             {"role": "user", "content": f"Here is an AI related term: {term}. Now please define it using the following instructions:"},
             {"role": "user", "content": "1. A one-sentence summary of the term, crafted to give a clear, immediate understanding of the concept."},
             {"role": "user", "content": "2. A detailed paragraph offering an expert-level explanation of the term's significance, applications, or theoretical background. This paragraph targets those with a deep interest or background in AI."},
@@ -231,15 +231,15 @@ def main():
 
         logging.info("Script execution completed")
         
-        # Execute _all.py after completion
-        logging.info("Executing _all.py...")
-        try:
-            script_dir = os.path.dirname(os.path.abspath(__file__))
-            all_script_path = os.path.join(script_dir, '_all.py')
-            os.system(f'python3 "{all_script_path}"')
-            logging.info("_all.py execution completed")
-        except Exception as e:
-            logging.error(f"Error executing _all.py: {e}")
+        # Commenting out the execution of _all.py
+        # logging.info("Executing _all.py...")
+        # try:
+        #     script_dir = os.path.dirname(os.path.abspath(__file__))
+        #     all_script_path = os.path.join(script_dir, '_all.py')
+        #     os.system(f'python3 "{all_script_path}"')
+        #     logging.info("_all.py execution completed")
+        # except Exception as e:
+        #     logging.error(f"Error executing _all.py: {e}")
 
     except KeyboardInterrupt:
         logging.info("Script interrupted by user. Exiting gracefully...")
