@@ -1,7 +1,7 @@
 ---
 slug: pdoom
 summary: Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.
-title: P(Doom)
+title: PDoom
 ---
 
 P(doom) is a theoretical construct used primarily in discussions about global risks, particularly those associated with advanced artificial intelligence. It quantifies the probability of an existential catastrophe, which could either severely curtail Earth-originating intelligent life or drastically curtail its potential. In AI, this term is crucial for researchers focusing on AI alignment and safety, as it frames the importance of developing AI technologies that do not inadvertently cause harm on a global scale. This metric encourages rigorous safety protocols and ethical considerations in AI development, aiming to minimize the probability of catastrophic outcomes as AI systems become more capable.
