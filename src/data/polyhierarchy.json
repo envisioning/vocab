@@ -92,6 +92,14 @@
       {
         "slug": "true-quantified-boolean-formula",
         "similarity": 0.2939674223048156
+      },
+      {
+        "slug": "vae-variational-autoencoders",
+        "similarity": 0.35
+      },
+      {
+        "slug": "invariance",
+        "similarity": 0.35
       }
     ]
   },
@@ -255,6 +263,14 @@
       {
         "slug": "equivariance",
         "similarity": 0.34421194783543996
+      },
+      {
+        "slug": "satisfiability",
+        "similarity": 0.35
+      },
+      {
+        "slug": "emotional-integrity",
+        "similarity": 0.35
       }
     ]
   },
@@ -1388,14 +1404,6 @@
       {
         "slug": "qml-quantum-machine-learning",
         "similarity": 0.585098080853356
-      },
-      {
-        "slug": "turing-test",
-        "similarity": 0.35
-      },
-      {
-        "slug": "chinese-room",
-        "similarity": 0.35
       }
     ]
   },
@@ -1438,6 +1446,14 @@
       {
         "slug": "consciousness-level",
         "similarity": 0.4358109741491811
+      },
+      {
+        "slug": "quantum-computing",
+        "similarity": 0.35
+      },
+      {
+        "slug": "cerebral-organoids",
+        "similarity": 0.35
       }
     ]
   },
@@ -1670,14 +1686,6 @@
       {
         "slug": "cerebral-organoids",
         "similarity": 0.48778148992886816
-      },
-      {
-        "slug": "chinese-room",
-        "similarity": 0.35
-      },
-      {
-        "slug": "a-b-testing",
-        "similarity": 0.35
       }
     ]
   },
@@ -1984,6 +1992,14 @@
       {
         "slug": "hypothesis-testing",
         "similarity": 0.32963278503458127
+      },
+      {
+        "slug": "cerebral-organoids",
+        "similarity": 0.35
+      },
+      {
+        "slug": "red-teaming",
+        "similarity": 0.35
       }
     ]
   },
@@ -2113,6 +2129,14 @@
       {
         "slug": "red-queen-effect",
         "similarity": 0.2853715117719586
+      },
+      {
+        "slug": "kaleidoscope-hypothesis",
+        "similarity": 0.35
+      },
+      {
+        "slug": "private-cloud-compute",
+        "similarity": 0.35
       }
     ]
   },
@@ -2420,7 +2444,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "active-inference",
+        "slug": "active-learning",
         "similarity": 0.35
       }
     ]
@@ -2445,6 +2469,14 @@
       {
         "slug": "data-efficient-learning",
         "similarity": 0.347228690373643
+      },
+      {
+        "slug": "fabless",
+        "similarity": 0.35
+      },
+      {
+        "slug": "variance-scaling",
+        "similarity": 0.35
       }
     ]
   },
@@ -2569,14 +2601,6 @@
       {
         "slug": "invariance",
         "similarity": 0.34421194783543996
-      },
-      {
-        "slug": "boolean",
-        "similarity": 0.35
-      },
-      {
-        "slug": "emotional-integrity",
-        "similarity": 0.35
       }
     ]
   },
@@ -3332,6 +3356,14 @@
       {
         "slug": "federated-training",
         "similarity": 0.4144313818503096
+      },
+      {
+        "slug": "variance-scaling",
+        "similarity": 0.35
+      },
+      {
+        "slug": "criteria-drift",
+        "similarity": 0.35
       }
     ]
   },
@@ -3355,6 +3387,14 @@
       {
         "slug": "model-drift",
         "similarity": 0.58227125551516
+      },
+      {
+        "slug": "ppml-privacy-preserving-machine-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "toy-diagram",
+        "similarity": 0.35
       }
     ]
   },
@@ -3373,7 +3413,7 @@
     "children": [
       {
         "slug": "pdoom",
-        "similarity": 0.26000884821632403
+        "similarity": 0.2673042962607278
       }
     ]
   },
@@ -3496,11 +3536,11 @@
         "similarity": 0.37756288361517076
       },
       {
-        "slug": "model-drift-minimization",
+        "slug": "criteria-drift",
         "similarity": 0.35
       },
       {
-        "slug": "gabor-function",
+        "slug": "fourier-analysis",
         "similarity": 0.35
       }
     ]
@@ -4520,14 +4560,6 @@
       {
         "slug": "text-to-code-model",
         "similarity": 0.34414142867231556
-      },
-      {
-        "slug": "unverifyability",
-        "similarity": 0.35
-      },
-      {
-        "slug": "verifier-theory",
-        "similarity": 0.35
       }
     ]
   },
@@ -5249,6 +5281,14 @@
       {
         "slug": "lvlms-large-vision-language-models",
         "similarity": 0.27797124166610565
+      },
+      {
+        "slug": "verifier-theory",
+        "similarity": 0.35
+      },
+      {
+        "slug": "empirical-cumulative-distribution-function-ecdf",
+        "similarity": 0.35
       }
     ]
   },
@@ -5655,11 +5695,11 @@
         "similarity": 0.33725746724999145
       },
       {
-        "slug": "emt-extended-mind-transformer",
+        "slug": "abliteration",
         "similarity": 0.35
       },
       {
-        "slug": "clustering",
+        "slug": "agglomerative-clustering",
         "similarity": 0.35
       }
     ]
@@ -5947,11 +5987,11 @@
         "similarity": 0.36722560946151744
       },
       {
-        "slug": "speculative-decoding",
+        "slug": "speculative-edits",
         "similarity": 0.35
       },
       {
-        "slug": "shors-algorithm",
+        "slug": "quantum-computing",
         "similarity": 0.35
       }
     ]
@@ -5995,6 +6035,14 @@
       {
         "slug": "centroid-based-clustering",
         "similarity": 0.37909625468854136
+      },
+      {
+        "slug": "empirical-cumulative-distribution-function-ecdf",
+        "similarity": 0.35
+      },
+      {
+        "slug": "sparse-crosscoders",
+        "similarity": 0.35
       }
     ]
   },
@@ -6539,14 +6587,6 @@
       {
         "slug": "output-verifier",
         "similarity": 0.37155354476901636
-      },
-      {
-        "slug": "gabor-function",
-        "similarity": 0.35
-      },
-      {
-        "slug": "on-the-fly-program-synthesis",
-        "similarity": 0.35
       }
     ]
   },
@@ -6681,14 +6721,6 @@
       {
         "slug": "red-teaming",
         "similarity": 0.40188059625333517
-      },
-      {
-        "slug": "a-b-testing",
-        "similarity": 0.35
-      },
-      {
-        "slug": "private-cloud-compute",
-        "similarity": 0.35
       }
     ]
   },
@@ -6711,7 +6743,7 @@
       },
       {
         "slug": "pdoom",
-        "similarity": 0.40228934847478004
+        "similarity": 0.41357696834136626
       },
       {
         "slug": "ai-safety",
@@ -6735,6 +6767,14 @@
       {
         "slug": "control-logic",
         "similarity": 0.5249278112321977
+      },
+      {
+        "slug": "precision-recall-curve",
+        "similarity": 0.35
+      },
+      {
+        "slug": "perplexity",
+        "similarity": 0.35
       }
     ]
   },
@@ -6758,14 +6798,6 @@
       {
         "slug": "model-drift",
         "similarity": 0.6967208616739026
-      },
-      {
-        "slug": "federated-training",
-        "similarity": 0.35
-      },
-      {
-        "slug": "toy-diagram",
-        "similarity": 0.35
       }
     ]
   },
@@ -7118,14 +7150,6 @@
       {
         "slug": "ngram",
         "similarity": 0.3504958385775275
-      },
-      {
-        "slug": "control-logic",
-        "similarity": 0.35
-      },
-      {
-        "slug": "adversarial-attacks",
-        "similarity": 0.35
       }
     ]
   },
@@ -7349,11 +7373,11 @@
         "similarity": 0.35508176766203775
       },
       {
-        "slug": "adversarial-attacks",
+        "slug": "robustness",
         "similarity": 0.35
       },
       {
-        "slug": "one-shot-learning",
+        "slug": "zsl-zero-shot-learning",
         "similarity": 0.35
       }
     ]
@@ -7528,6 +7552,14 @@
       {
         "slug": "separation-logic",
         "similarity": 0.34018894968658575
+      },
+      {
+        "slug": "fourier-analysis",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ast-abstract-syntax-tree",
+        "similarity": 0.35
       }
     ]
   },
@@ -7859,6 +7891,14 @@
       {
         "slug": "few-shot",
         "similarity": 0.39105709467985494
+      },
+      {
+        "slug": "reranking",
+        "similarity": 0.35
+      },
+      {
+        "slug": "situational-models",
+        "similarity": 0.35
       }
     ]
   },
@@ -7928,6 +7968,14 @@
       {
         "slug": "performance-degradation",
         "similarity": 0.3548522188237936
+      },
+      {
+        "slug": "perplexity",
+        "similarity": 0.35
+      },
+      {
+        "slug": "reranking",
+        "similarity": 0.35
       }
     ]
   },
@@ -7978,14 +8026,6 @@
       {
         "slug": "trajectory-generation",
         "similarity": 0.24617295743508918
-      },
-      {
-        "slug": "one-shot-learning",
-        "similarity": 0.35
-      },
-      {
-        "slug": "polymorphism",
-        "similarity": 0.35
       }
     ]
   },
@@ -8344,6 +8384,14 @@
       {
         "slug": "text-to-code-model",
         "similarity": 0.4636133466370489
+      },
+      {
+        "slug": "verification-system",
+        "similarity": 0.35
+      },
+      {
+        "slug": "verifier-theory",
+        "similarity": 0.35
       }
     ]
   },
@@ -8390,14 +8438,6 @@
       {
         "slug": "tensorflow",
         "similarity": 0.30998816937525897
-      },
-      {
-        "slug": "sparse-crosscoders",
-        "similarity": 0.35
-      },
-      {
-        "slug": "average-precision",
-        "similarity": 0.35
       }
     ]
   },
@@ -8732,14 +8772,6 @@
       {
         "slug": "instantiation",
         "similarity": 0.31762554241158386
-      },
-      {
-        "slug": "path-integration",
-        "similarity": 0.35
-      },
-      {
-        "slug": "brainoware",
-        "similarity": 0.35
       }
     ]
   },
@@ -9449,14 +9481,6 @@
       {
         "slug": "consciousness-level",
         "similarity": 0.18514721565397974
-      },
-      {
-        "slug": "shors-algorithm",
-        "similarity": 0.35
-      },
-      {
-        "slug": "brain-organoid-reservoir-computing",
-        "similarity": 0.35
       }
     ]
   },
@@ -9721,6 +9745,14 @@
       {
         "slug": "qml-quantum-machine-learning",
         "similarity": 0.7443059802169665
+      },
+      {
+        "slug": "turing-test",
+        "similarity": 0.35
+      },
+      {
+        "slug": "self-awareness",
+        "similarity": 0.35
       }
     ]
   },
@@ -9865,6 +9897,14 @@
       {
         "slug": "weight-initialization",
         "similarity": 0.5546759248050694
+      },
+      {
+        "slug": "active-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "ppml-privacy-preserving-machine-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -9919,6 +9959,10 @@
       {
         "slug": "capability-control",
         "similarity": 0.42040211468282634
+      },
+      {
+        "slug": "pdoom",
+        "similarity": 0.357468040677385
       },
       {
         "slug": "ai-safety",
@@ -10064,7 +10108,7 @@
         "similarity": 0.4458146942203672
       },
       {
-        "slug": "brainoware",
+        "slug": "bci-brain-computer-interface",
         "similarity": 0.35
       },
       {
@@ -10220,6 +10264,14 @@
       {
         "slug": "polymorphism",
         "similarity": 0.31762554241158386
+      },
+      {
+        "slug": "situational-models",
+        "similarity": 0.35
+      },
+      {
+        "slug": "bci-brain-computer-interface",
+        "similarity": 0.35
       }
     ]
   },
@@ -10971,7 +11023,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "continuous-learning",
+        "slug": "incremental-learning",
         "similarity": 0.35
       }
     ]
@@ -11574,6 +11626,14 @@
       {
         "slug": "continuous-learning",
         "similarity": 0.4130559189529993
+      },
+      {
+        "slug": "rightsizing",
+        "similarity": 0.35
+      },
+      {
+        "slug": "autoregressive",
+        "similarity": 0.35
       }
     ]
   },
@@ -12351,6 +12411,14 @@
       {
         "slug": "gabor-function",
         "similarity": 0.24005120171152722
+      },
+      {
+        "slug": "toy-diagram",
+        "similarity": 0.35
+      },
+      {
+        "slug": "verification-system",
+        "similarity": 0.35
       }
     ]
   },
@@ -12774,6 +12842,14 @@
       {
         "slug": "instrumentation",
         "similarity": 0.335083312073892
+      },
+      {
+        "slug": "pds-psychological-depth-scale",
+        "similarity": 0.35
+      },
+      {
+        "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
+        "similarity": 0.35
       }
     ]
   },
@@ -13012,14 +13088,6 @@
       {
         "slug": "accuracy",
         "similarity": 0.37571599206600026
-      },
-      {
-        "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
-        "similarity": 0.35
-      },
-      {
-        "slug": "resnet-residual-network",
-        "similarity": 0.35
       }
     ]
   },
@@ -13102,14 +13170,6 @@
       {
         "slug": "lvlms-large-vision-language-models",
         "similarity": 0.34686612846783305
-      },
-      {
-        "slug": "verifier-theory",
-        "similarity": 0.35
-      },
-      {
-        "slug": "empirical-cumulative-distribution-function-ecdf",
-        "similarity": 0.35
       }
     ]
   },
@@ -13310,14 +13370,6 @@
       {
         "slug": "few-shot",
         "similarity": 0.5483853433727258
-      },
-      {
-        "slug": "reranking",
-        "similarity": 0.35
-      },
-      {
-        "slug": "path-integration",
-        "similarity": 0.35
       }
     ]
   },
@@ -13693,6 +13745,14 @@
       {
         "slug": "resnet-residual-network",
         "similarity": 0.5305682289136234
+      },
+      {
+        "slug": "accuracy",
+        "similarity": 0.35
+      },
+      {
+        "slug": "automaton",
+        "similarity": 0.35
       }
     ]
   },
@@ -13829,11 +13889,11 @@
         "similarity": 0.3555003329178989
       },
       {
-        "slug": "on-the-fly-program-synthesis",
+        "slug": "ast-abstract-syntax-tree",
         "similarity": 0.35
       },
       {
-        "slug": "emt-extended-mind-transformer",
+        "slug": "abliteration",
         "similarity": 0.35
       }
     ]
@@ -14313,6 +14373,14 @@
       {
         "slug": "fsa-finite-state-automata",
         "similarity": 0.4299594742145723
+      },
+      {
+        "slug": "residual-connections",
+        "similarity": 0.35
+      },
+      {
+        "slug": "open-weights",
+        "similarity": 0.35
       }
     ]
   },
@@ -14334,7 +14402,7 @@
         "similarity": 0.33289798751117117
       },
       {
-        "slug": "rainbow-teaming",
+        "slug": "red-teaming",
         "similarity": 0.35
       },
       {
@@ -14398,14 +14466,6 @@
       {
         "slug": "open-weights",
         "similarity": 0.3568252536180776
-      },
-      {
-        "slug": "fsa-finite-state-automata",
-        "similarity": 0.35
-      },
-      {
-        "slug": "a-life-artificial-life",
-        "similarity": 0.35
       }
     ]
   },
@@ -14704,11 +14764,11 @@
         "similarity": 0.24745056515558503
       },
       {
-        "slug": "instrumentation",
+        "slug": "model-management",
         "similarity": 0.35
       },
       {
-        "slug": "confusion-matrix",
+        "slug": "accuracy",
         "similarity": 0.35
       }
     ]
@@ -15106,14 +15166,6 @@
       {
         "slug": "artefactual-autopoiesis",
         "similarity": 0.48265014026846553
-      },
-      {
-        "slug": "open-ended-ai",
-        "similarity": 0.35
-      },
-      {
-        "slug": "gail-generative-adversarial-imitation-learning",
-        "similarity": 0.35
       }
     ]
   },
@@ -16117,6 +16169,14 @@
       {
         "slug": "confusion-matrix",
         "similarity": 0.37571599206600026
+      },
+      {
+        "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
+        "similarity": 0.35
+      },
+      {
+        "slug": "residual-connections",
+        "similarity": 0.35
       }
     ]
   },
@@ -17196,14 +17256,6 @@
       {
         "slug": "hypothesis-testing",
         "similarity": 0.29828446456451957
-      },
-      {
-        "slug": "brain-organoid-reservoir-computing",
-        "similarity": 0.35
-      },
-      {
-        "slug": "rainbow-teaming",
-        "similarity": 0.35
       }
     ]
   },
@@ -17223,6 +17275,14 @@
       {
         "slug": "frontier-models",
         "similarity": 0.4119248915387426
+      },
+      {
+        "slug": "rank-fusion",
+        "similarity": 0.35
+      },
+      {
+        "slug": "saturating-non-linearities",
+        "similarity": 0.35
       }
     ]
   },
@@ -17334,14 +17394,6 @@
       {
         "slug": "centroid-based-clustering",
         "similarity": 0.4843786479841388
-      },
-      {
-        "slug": "empirical-cumulative-distribution-function-ecdf",
-        "similarity": 0.35
-      },
-      {
-        "slug": "sparse-crosscoders",
-        "similarity": 0.35
       }
     ]
   },
@@ -18744,6 +18796,10 @@
         "similarity": 0.44042636279300473
       },
       {
+        "slug": "pdoom",
+        "similarity": 0.35903024822378
+      },
+      {
         "slug": "ai-safety",
         "similarity": 0.491986510455695
       },
@@ -18777,14 +18833,6 @@
       {
         "slug": "residual-connections",
         "similarity": 0.5305682289136234
-      },
-      {
-        "slug": "confusion-matrix",
-        "similarity": 0.35
-      },
-      {
-        "slug": "fsa-finite-state-automata",
-        "similarity": 0.35
       }
     ]
   },
@@ -18984,7 +19032,7 @@
         "similarity": 0.35
       },
       {
-        "slug": "frontier-models",
+        "slug": "jagged-frontier",
         "similarity": 0.35
       }
     ]
@@ -19117,14 +19165,6 @@
       {
         "slug": "wbe-whole-brain-emulation",
         "similarity": 0.32063679643291465
-      },
-      {
-        "slug": "polymorphism",
-        "similarity": 0.35
-      },
-      {
-        "slug": "source-grounding",
-        "similarity": 0.35
       }
     ]
   },
@@ -19631,6 +19671,14 @@
       {
         "slug": "autopoiesis",
         "similarity": 0.5338568608773078
+      },
+      {
+        "slug": "open-weights",
+        "similarity": 0.35
+      },
+      {
+        "slug": "gail-generative-adversarial-imitation-learning",
+        "similarity": 0.35
       }
     ]
   },
@@ -20945,10 +20993,6 @@
       {
         "slug": "ami-advanced-machine-intelligence",
         "similarity": 0.36851340226909135
-      },
-      {
-        "slug": "boolean",
-        "similarity": 0.35
       }
     ]
   },
@@ -21011,14 +21055,6 @@
       {
         "slug": "epistemic-foraging",
         "similarity": 0.34323803480407167
-      },
-      {
-        "slug": "fabless",
-        "similarity": 0.35
-      },
-      {
-        "slug": "weight-initialization",
-        "similarity": 0.35
       }
     ]
   },
@@ -21038,14 +21074,6 @@
       {
         "slug": "saturating-non-linearities",
         "similarity": 0.38611060208543235
-      },
-      {
-        "slug": "frontier-models",
-        "similarity": 0.35
-      },
-      {
-        "slug": "byte-level-state-space",
-        "similarity": 0.35
       }
     ]
   },
@@ -21456,14 +21484,6 @@
       {
         "slug": "persuasive-system",
         "similarity": 0.22817601492773446
-      },
-      {
-        "slug": "autoregressive-generation",
-        "similarity": 0.35
-      },
-      {
-        "slug": "instrumentation",
-        "similarity": 0.35
       }
     ]
   },
@@ -21589,7 +21609,7 @@
         "similarity": 0.5455583543920224
       },
       {
-        "slug": "relu-rectified-linear-unit",
+        "slug": "saturating-non-linearities",
         "similarity": 0.35
       },
       {
@@ -23409,6 +23429,14 @@
       {
         "slug": "autoregressive-generation",
         "similarity": 0.5246231359516683
+      },
+      {
+        "slug": "incremental-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "pds-psychological-depth-scale",
+        "similarity": 0.35
       }
     ]
   },
@@ -23975,14 +24003,6 @@
       {
         "slug": "mlops-machine-learning-operations",
         "similarity": 0.31367675677184303
-      },
-      {
-        "slug": "io-influence-operations",
-        "similarity": 0.35
-      },
-      {
-        "slug": "c2pa-coalition-for-content-provenance-and-authenticity",
-        "similarity": 0.35
       }
     ]
   },
@@ -24002,6 +24022,14 @@
       {
         "slug": "io-influence-operations",
         "similarity": 0.22027696252444512
+      },
+      {
+        "slug": "autoregressive",
+        "similarity": 0.35
+      },
+      {
+        "slug": "model-management",
+        "similarity": 0.35
       }
     ]
   },
@@ -24147,7 +24175,7 @@
       },
       {
         "slug": "pdoom",
-        "similarity": 0.35998977886876793
+        "similarity": 0.37009053792473845
       },
       {
         "slug": "ai-safety",
@@ -24214,14 +24242,6 @@
       {
         "slug": "variance-scaling",
         "similarity": 0.5546759248050694
-      },
-      {
-        "slug": "active-inference",
-        "similarity": 0.35
-      },
-      {
-        "slug": "federated-training",
-        "similarity": 0.35
       }
     ]
   },
@@ -24243,11 +24263,11 @@
         "similarity": 0.4409293614993534
       },
       {
-        "slug": "clustering",
+        "slug": "agglomerative-clustering",
         "similarity": 0.35
       },
       {
-        "slug": "summary",
+        "slug": "tensorflow",
         "similarity": 0.35
       }
     ]
@@ -24496,11 +24516,11 @@
         "similarity": 0.40366426084739976
       },
       {
-        "slug": "equivariance",
+        "slug": "invariance",
         "similarity": 0.35
       },
       {
-        "slug": "speculative-decoding",
+        "slug": "speculative-edits",
         "similarity": 0.35
       }
     ]
@@ -25300,14 +25320,6 @@
       {
         "slug": "self-speculative-decoding",
         "similarity": 0.45015747653947163
-      },
-      {
-        "slug": "emotional-integrity",
-        "similarity": 0.35
-      },
-      {
-        "slug": "turing-test",
-        "similarity": 0.35
       }
     ]
   },
@@ -25384,14 +25396,6 @@
       {
         "slug": "jagged-frontier",
         "similarity": 0.4119248915387426
-      },
-      {
-        "slug": "rank-fusion",
-        "similarity": 0.35
-      },
-      {
-        "slug": "relu-rectified-linear-unit",
-        "similarity": 0.35
       }
     ]
   },
@@ -25566,14 +25570,6 @@
       {
         "slug": "acps-access-control-policies",
         "similarity": 0.2502592253992281
-      },
-      {
-        "slug": "average-precision",
-        "similarity": 0.35
-      },
-      {
-        "slug": "trigrams",
-        "similarity": 0.35
       }
     ]
   },
@@ -25620,14 +25616,6 @@
       {
         "slug": "fourier-analysis",
         "similarity": 0.24005120171152722
-      },
-      {
-        "slug": "toy-diagram",
-        "similarity": 0.35
-      },
-      {
-        "slug": "unverifyability",
-        "similarity": 0.35
       }
     ]
   },
@@ -25932,14 +25920,6 @@
       {
         "slug": "catastrophic-forgetting",
         "similarity": 0.4815306678580722
-      },
-      {
-        "slug": "rightsizing",
-        "similarity": 0.35
-      },
-      {
-        "slug": "autoregressive-generation",
-        "similarity": 0.35
       }
     ]
   },
@@ -26073,7 +26053,7 @@
   },
   {
     "slug": "pdoom",
-    "name": "P(Doom)",
+    "name": "PDoom",
     "summary": "Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.",
     "generality": 0.55,
     "impact": 0.85,
@@ -26086,19 +26066,27 @@
     "children": [
       {
         "slug": "catastrophic-risk",
-        "similarity": 0.40228934847478004
+        "similarity": 0.41357696834136626
+      },
+      {
+        "slug": "super-alignment",
+        "similarity": 0.357468040677385
+      },
+      {
+        "slug": "alignment",
+        "similarity": 0.35903024822378
       },
       {
         "slug": "capability-control",
-        "similarity": 0.35998977886876793
+        "similarity": 0.37009053792473845
       },
       {
         "slug": "ai-safety",
-        "similarity": 0.4586514634838383
+        "similarity": 0.4715205175383073
       },
       {
         "slug": "moloch",
-        "similarity": 0.26000884821632403
+        "similarity": 0.2673042962607278
       }
     ]
   },
@@ -26508,6 +26496,14 @@
       {
         "slug": "sensor-fusion",
         "similarity": 0.2666338425221458
+      },
+      {
+        "slug": "zsl-zero-shot-learning",
+        "similarity": 0.35
+      },
+      {
+        "slug": "instantiation",
+        "similarity": 0.35
       }
     ]
   },
@@ -26778,6 +26774,14 @@
       {
         "slug": "exocortex",
         "similarity": 0.27547733900260307
+      },
+      {
+        "slug": "instantiation",
+        "similarity": 0.35
+      },
+      {
+        "slug": "source-grounding",
+        "similarity": 0.35
       }
     ]
   },
@@ -27056,6 +27060,14 @@
       {
         "slug": "ngram",
         "similarity": 0.33891870563280607
+      },
+      {
+        "slug": "controller-logic",
+        "similarity": 0.35
+      },
+      {
+        "slug": "robustness",
+        "similarity": 0.35
       }
     ]
   },
@@ -27248,6 +27260,14 @@
       {
         "slug": "average-precision",
         "similarity": 0.5881517044045613
+      },
+      {
+        "slug": "tensorflow",
+        "similarity": 0.35
+      },
+      {
+        "slug": "controller-logic",
+        "similarity": 0.35
       }
     ]
   },
@@ -27271,6 +27291,14 @@
       {
         "slug": "tensor",
         "similarity": 0.3185790904118362
+      },
+      {
+        "slug": "sparse-crosscoders",
+        "similarity": 0.35
+      },
+      {
+        "slug": "precision-recall-curve",
+        "similarity": 0.35
       }
     ]
   },
@@ -27553,6 +27581,14 @@
       {
         "slug": "speculative-decoding",
         "similarity": 0.40345595122777816
+      },
+      {
+        "slug": "emotional-integrity",
+        "similarity": 0.35
+      },
+      {
+        "slug": "turing-test",
+        "similarity": 0.35
       }
     ]
   },
@@ -27660,6 +27696,10 @@
       {
         "slug": "generative-model",
         "similarity": 0.38913866860716195
+      },
+      {
+        "slug": "satisfiability",
+        "similarity": 0.35
       }
     ]
   },
@@ -27880,6 +27920,14 @@
       {
         "slug": "brain-organoid-reservoir-computing",
         "similarity": 0.48778148992886816
+      },
+      {
+        "slug": "self-awareness",
+        "similarity": 0.35
+      },
+      {
+        "slug": "kaleidoscope-hypothesis",
+        "similarity": 0.35
       }
     ]
   },
@@ -28231,14 +28279,6 @@
       {
         "slug": "automaton",
         "similarity": 0.4299594742145723
-      },
-      {
-        "slug": "resnet-residual-network",
-        "similarity": 0.35
-      },
-      {
-        "slug": "open-ended-ai",
-        "similarity": 0.35
       }
     ]
   },
@@ -28338,14 +28378,6 @@
       {
         "slug": "true-quantified-boolean-formula",
         "similarity": 0.3338919521588008
-      },
-      {
-        "slug": "ami-ambient-intelligence",
-        "similarity": 0.35
-      },
-      {
-        "slug": "equivariance",
-        "similarity": 0.35
       }
     ]
   },
@@ -28484,6 +28516,14 @@
       {
         "slug": "relu-rectified-linear-unit",
         "similarity": 0.38611060208543235
+      },
+      {
+        "slug": "jagged-frontier",
+        "similarity": 0.35
+      },
+      {
+        "slug": "byte-level-state-space",
+        "similarity": 0.35
       }
     ]
   },
@@ -28557,7 +28597,7 @@
       },
       {
         "slug": "pdoom",
-        "similarity": 0.4586514634838383
+        "similarity": 0.4715205175383073
       },
       {
         "slug": "safety-net",
@@ -29052,6 +29092,14 @@
       {
         "slug": "open-ended-ai",
         "similarity": 0.3568252536180776
+      },
+      {
+        "slug": "automaton",
+        "similarity": 0.35
+      },
+      {
+        "slug": "artefactual-autopoiesis",
+        "similarity": 0.35
       }
     ]
   },
@@ -29422,14 +29470,6 @@
       {
         "slug": "precision-recall-curve",
         "similarity": 0.5881517044045613
-      },
-      {
-        "slug": "summary",
-        "similarity": 0.35
-      },
-      {
-        "slug": "control-logic",
-        "similarity": 0.35
       }
     ]
   },
@@ -29955,7 +29995,7 @@
         "similarity": 0.4188388821322315
       },
       {
-        "slug": "a-life-artificial-life",
+        "slug": "artefactual-autopoiesis",
         "similarity": 0.35
       },
       {
@@ -30614,14 +30654,6 @@
       {
         "slug": "targeted-adversarial-examples",
         "similarity": 0.519364436962567
-      },
-      {
-        "slug": "trigrams",
-        "similarity": 0.35
-      },
-      {
-        "slug": "reranking",
-        "similarity": 0.35
       }
     ]
   },
@@ -31364,14 +31396,6 @@
       {
         "slug": "autoregressive",
         "similarity": 0.5246231359516683
-      },
-      {
-        "slug": "continuous-learning",
-        "similarity": 0.35
-      },
-      {
-        "slug": "io-influence-operations",
-        "similarity": 0.35
       }
     ]
   },
@@ -31525,14 +31549,6 @@
       {
         "slug": "federated-analytics",
         "similarity": 0.45834526836075795
-      },
-      {
-        "slug": "weight-initialization",
-        "similarity": 0.35
-      },
-      {
-        "slug": "model-drift-minimization",
-        "similarity": 0.35
       }
     ]
   },
