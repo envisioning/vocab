@@ -25,7 +25,6 @@ export default function ArticleCard({
   // Default to generality for backwards compatibility
   metricType = "generality",
 }: ArticleCardProps) {
-  console.log("Full article data:", article); // Add this temporary log
   // Calculate average generality with defensive checks
   const avgGenerality =
     Array.isArray(article.generality) && article.generality.length > 0

@@ -13,8 +13,6 @@ export async function getArticles(
   showComponentsOnly: boolean = false
 ): Promise<Article[] | null> {
   try {
-    console.log('getArticles called with:', { limit, sortBy, sortOrder, showComponentsOnly });
-
     // Convert hierarchy data into article format
     const articles = hierarchyData.map((item) => ({
       slug: item.slug,
@@ -25,17 +23,10 @@ export async function getArticles(
       component: item.component || false,
     }));
 
-    console.log('Articles before filtering:', articles.length);
-    console.log('Component articles:', articles.filter(article => article.component).length);
-
     // Add component filter before sorting
-    let filteredArticles = showComponentsOnly 
+    let filteredArticles = showComponentsOnly
       ? articles.filter(article => article.component === true)
       : articles;
-
-    console.log('Articles after filtering:', filteredArticles.length);
-
-    console.log('Articles before sorting:', filteredArticles.length);
 
     // Sorting logic
     const sortedArticles = filteredArticles.sort((a, b) => {
@@ -79,8 +70,6 @@ export async function getArticles(
       if (compareA > compareB) return sortOrder === "asc" ? 1 : -1;
       return 0;
     });
-
-    console.log('Articles after sorting:', sortedArticles.length);
 
     return limit ? sortedArticles.slice(0, limit) : sortedArticles;
 
