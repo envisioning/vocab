@@ -1,0 +1,10 @@
+---
+title: Echoborg
+summary: Human intermediary who vocalizes an AI system’s real-time outputs in face-to-face interaction, giving the machine a human body and voice while preserving machine agency.
+slug: echoborg
+---
+At its core, this method embodies an AI by routing a conversational model’s text through a hidden earpiece to a human confederate who repeats it verbatim, decoupling human embodiment (body, prosody, nonverbal cues) from computational authorship to study how people attribute agency, mind, and social intent to machine-generated speech in situated interaction. For AI researchers, echoborg setups offer a rigorous tool to probe perception of intelligence beyond screen-based chat, quantify the effects of latency and prosody on turn-taking, test Turing Test variants in ecologically valid settings, and examine socio-cognitive phenomena (e.g., mind attribution, social bias, normative alignment) that emerge when machine policy is presented through a human channel; methodologically, it inverts the Wizard-of-Oz paradigm (human simulating the system) by making the human a conduit for the system, enabling controlled experiments in HCI (Human–Computer Interaction), HRI (Human–Robot Interaction), and social psychology on distributed agency, embodiment, and the ethics of disclosure.
+
+First used in 2013, the term gained traction around 2015–2016 following peer‑reviewed studies and public demos that highlighted how human embodiment can elevate perceived competence and sociality of AI in live conversation.
+
+Key contributors include Kevin Corti and Alex Gillespie (who coined and systematized the method in social psychology), with subsequent extensions by HCI and HRI research groups that adapted echoborg protocols to evaluate embodied conversational agents, latency mitigation strategies, and disclosure/consent practices in human-facing AI studies.

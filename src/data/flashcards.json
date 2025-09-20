@@ -1183,6 +1183,12 @@
       "slug": "bias-variance-curve"
     },
     {
+      "title": "Echoborg",
+      "definition": "Human intermediary who vocalizes an AI system’s real-time outputs in face-to-face interaction, giving the machine a human body and voice while preserving machine agency.",
+      "year": 2017,
+      "slug": "echoborg"
+    },
+    {
       "title": "Monte Carlo Estimation",
       "definition": "A technique used within AI to approximate the probability of an event by running several simulations and observations.",
       "year": 1949,
@@ -2517,7 +2523,7 @@
     {
       "title": "Root",
       "definition": "The topmost node in a decision tree from which all other nodes stem, representing the initial point of decision-making in the model.",
-      "year": 0,
+      "year": 1986,
       "slug": "root"
     },
     {

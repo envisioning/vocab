@@ -6503,5 +6503,14 @@
   ],
   "ntp-next-token-prediction": [
     "unknown"
+  ],
+  "echoborg": [
+    "hiroshi ishiguro",
+    "david levy",
+    "jürgen schmidhuber",
+    "ben goertzel",
+    "rollo carpenter",
+    "steve wozniak",
+    "richard wallace"
   ]
 }

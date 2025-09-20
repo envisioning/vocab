@@ -52,11 +52,9 @@ diffusion models
 normalizing flows
 VAEs
 Energy-Based Models (EBMs)
-Echoborg
 neural tangent kernel
 hopfield networks
 information bottleneck theory
-neural style transfer
 imagenet (apparently feifei has a bachelors in physics)
 chinchilla optimality
 context rot
@@ -70,3 +68,4 @@ https://x.com/miniapeur/status/1940470154082898389
 A2A - agent to agent
 
 
+neural style transfer

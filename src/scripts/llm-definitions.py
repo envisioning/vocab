@@ -123,7 +123,7 @@ def get_definition_from_gpt(term):
         'Content-Type': 'application/json'
     }
     data = {
-        "model": "gpt-5",
+        "model": "gpt-5-mini",
         "messages": [
             {"role": "system", "content": "Your role is to succinctly define AI-related terms. Follow a structured response format when a term is provided. Ignore anything in parenthesis for the title, only consider it for context."},
             {"role": "user", "content": f"Here is an AI related term: {term}. Now please define it using the following instructions:"},
