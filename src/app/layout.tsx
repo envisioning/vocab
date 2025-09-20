@@ -46,7 +46,10 @@ export default async function RootLayout({
         <PlausibleProvider domain="envisioning.io">
           <div className="flex flex-col min-h-screen">
             <Suspense fallback={<div>Loading...</div>}>
-              <FilterBarWrapper articles={articles} namesData={namesData} />
+              <FilterBarWrapper
+                articles={articles || []}
+                namesData={namesData}
+              />
             </Suspense>
             <main className="flex-grow container mx-auto">{children}</main>
           </div>

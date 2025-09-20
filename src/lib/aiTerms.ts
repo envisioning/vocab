@@ -4,7 +4,6 @@ export interface AITerm {
   slug: string;
   name: string;
   summary: string;
-  categories: string[];
   generality: number;
   children: {
     slug: string;

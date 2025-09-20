@@ -14,7 +14,6 @@ interface HierarchyItem {
   slug: string;
   name: string;
   summary: string;
-  categories: string[];
   generality: number | number[];
   year: number;
   children?: HierarchyChild[];
@@ -53,7 +52,6 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
       similarity: child.similarity || 0,
       title: childArticle.name,
       summary: childArticle.summary,
-      category: childArticle.categories,
       year: childArticle.year || 0,
       generality: Array.isArray(childArticle.generality) 
         ? childArticle.generality 
@@ -67,7 +65,6 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
     similarity: number; 
     title: string; 
     summary: string; 
-    category: string[]; 
     year: number;
     generality: number[]; 
   } => child !== null) || [];
@@ -88,7 +85,6 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
         similarity: childWithSimilarity?.similarity || 0,
         title: parentItem.name,
         summary: parentItem.summary,
-        categories: parentItem.categories,
         year: parentItem.year || 0,
         generality: Array.isArray(parentItem.generality)
           ? parentItem.generality
@@ -104,10 +100,7 @@ export async function getRelatedArticles(slug: string): Promise<RelatedArticle[]
   // Add child connections
   childConnections.forEach((conn) => {
     if (conn) {
-      connectionMap.set(conn.slug, {
-        ...conn,
-        categories: conn.category  // Rename category to categories
-      });
+      connectionMap.set(conn.slug, conn);
     }
   });
 

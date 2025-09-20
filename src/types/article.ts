@@ -1,7 +1,6 @@
 export interface Article {
   slug: string;
   title: string;
-  categories: string[];
   generality: number[];
   summary: string;
   year: number | null;
@@ -15,7 +14,6 @@ export interface RelatedArticle {
   slug: string;
   title: string;
   summary: string;
-  categories: string[];
   relationship: 'parent' | 'child' | 'bidirectional';
   similarity?: number;
   generality: number[];

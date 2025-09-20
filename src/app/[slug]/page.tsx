@@ -69,7 +69,6 @@ async function getArticleContent(slug: string): Promise<{
         ? article.generality
         : [article.generality],
       year: article.year || 0,
-      categories: [],
     },
     content,
     hasImage: true,

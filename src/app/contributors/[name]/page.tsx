@@ -43,7 +43,6 @@ async function getArticlesForContributor(name: string): Promise<Article[]> {
             slug,
             title: article.name,
             summary: article.summary,
-            categories: [],
             generality: Array.isArray(article.generality)
               ? article.generality
               : [article.generality],

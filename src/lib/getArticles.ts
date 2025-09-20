@@ -22,8 +22,6 @@ export async function getArticles(
       summary: item.summary,
       generality: Array.isArray(item.generality) ? item.generality : [item.generality],
       year: item.year || 0,
-      categories: [],
-      similarity: 0,
       component: item.component || false,
     }));
 

@@ -375,7 +375,6 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
   const pathname = usePathname();
 
   const links = [
-    { href: "/grid", label: "Grid" },
     { href: "/node-graph", label: "Graph" },
     { href: "/about", label: "Info" },
   ];
