@@ -30,13 +30,13 @@ def run_scripts(script_paths):
 def main():
     # List of scripts to run in order
     scripts_to_run = [
-        'flux-image-generation.py',
-        'local-compress_images.py',
-        'llm-generality.py',
-        'llm-names.py',
-        'llm-years.py',
-        'local-flashcards.py',
-        'local-polyhierarchy.py'
+        'src/scripts/flux-image-generation.py',
+        'src/scripts/local-compress_images.py',
+        'src/scripts/llm-generality.py',
+        'src/scripts/llm-names.py',
+        'src/scripts/llm-years.py',
+        'src/scripts/local-flashcards.py',
+        'src/scripts/local-polyhierarchy.py'
     ]
     
     run_scripts(scripts_to_run)

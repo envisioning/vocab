@@ -1,0 +1,11 @@
+---
+title: Neuralese
+summary: Emergent, task-optimized communication codes learned by neural agents—often discrete symbol systems—that function like a language for coordination but are not designed for human interpretability.
+slug: neuralese
+---
+
+In AI, the term refers to the learned message protocols developed by communicating neural agents in RL (Reinforcement Learning) or MARL (Multi-Agent Reinforcement Learning) settings, where differentiable or discretized channels (e.g., Gumbel-Softmax or straight-through estimators over symbol vocabularies) enable agents to discover signaling schemes that optimize reward; these codes exhibit properties studied in game-theoretic signaling (e.g., Lewis signaling equilibria), information bottleneck trade-offs, and compositionality, and are analyzed via probing, topographic similarity, referential games, and translation models to natural language for interpretability and oversight. Practically, neuralese underpins coordination in multi-robot systems, emergent tool use, and decentralized control, while theoretically it serves as a testbed for understanding how structured communication arises under inductive biases, pressures for generalization, and environmental symmetries; current research targets aligning these emergent languages with human semantics (e.g., via auxiliary supervision, pragmatic reasoning, or translation bridges) and mitigating risks such as covert channels and reward-hacking through uninterpretable codes.
+
+First use is commonly traced to 2017 in work explicitly framing “neuralese” and its translation, with popularity peaking circa 2017–2019 alongside the surge in emergent communication research in MARL (Multi-Agent Reinforcement Learning).
+
+Key contributors include Jacob Andreas, Dan Klein, and Sergey Levine (who formalized and popularized the “Translating Neuralese” framing); Jakob N. Foerster and colleagues (deep differentiable communication in MARL); Igor Mordatch and Pieter Abbeel (emergent communication for embodied agents); and Angeliki Lazaridou and Marco Baroni (referential games and compositionality), with broader contributions from DeepMind and academic groups advancing evaluation metrics, grounding, and natural language alignment.

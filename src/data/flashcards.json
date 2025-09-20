@@ -133,6 +133,12 @@
       "slug": "generalization"
     },
     {
+      "title": "Experience Machine",
+      "definition": "A philosophical thought experiment questioning the value of simulated experiences over real life experiences.",
+      "year": 1988,
+      "slug": "experience-machine"
+    },
+    {
       "title": "Intelligence Explosion",
       "definition": "Hypothetical scenario where an AI system rapidly improves its own capabilities and intelligence, leading to a superintelligent AI far surpassing human intelligence.",
       "year": 1965,
@@ -149,6 +155,12 @@
       "definition": "AI systems designed to recognize, understand, and respond to human emotions in a nuanced and contextually appropriate manner.",
       "year": 2015,
       "slug": "empathic-ai"
+    },
+    {
+      "title": "Diarization",
+      "definition": "An AI-driven process that segments audio into distinct segments based on speaker identity, enabling identification of who spoke when.",
+      "year": 2000,
+      "slug": "diarization"
     },
     {
       "title": "Sampling",
@@ -231,8 +243,14 @@
     {
       "title": "Class",
       "definition": "A category or label used to define specific groups in a classification problem within AI systems.",
-      "year": 0,
+      "year": 1986,
       "slug": "class"
+    },
+    {
+      "title": "Probe",
+      "definition": "An analytical tool or approach used in AI to investigate and understand the internal states and mechanisms of models, often shedding light on how inputs correlate with outputs.",
+      "year": 0,
+      "slug": "probe"
     },
     {
       "title": "Model Level",
@@ -553,7 +571,7 @@
       "slug": "data-efficient-learning"
     },
     {
-      "title": "target",
+      "title": "Target",
       "definition": "In AI and ML, refers to the expected output or the correct answer the model aims to predict or achieve during training.",
       "year": 0,
       "slug": "target"
@@ -735,7 +753,7 @@
     {
       "title": "Stochastic Optimization",
       "definition": "A mathematical method for optimization problems that incorporates randomness to find approximate solutions efficiently.",
-      "year": 0,
+      "year": 1985,
       "slug": "stochastic-optimization"
     },
     {
@@ -755,6 +773,12 @@
       "definition": "A technique in AI training that enhances model performance by using a vast amount of labeled data, often accompanied by adaptive processes to balance data quantity and quality.",
       "year": 0,
       "slug": "scaled-supervision-method"
+    },
+    {
+      "title": "Unigram Entropy",
+      "definition": "A measure of the uncertainty or randomness associated with predicting a single word's occurrence in a text corpus, assuming each word is an independent event.",
+      "year": 0,
+      "slug": "unigram-entropy"
     },
     {
       "title": "ACO (Ant Colony Optimization)",
@@ -811,6 +835,12 @@
       "slug": "occams-razor"
     },
     {
+      "title": "Identity Matrix",
+      "definition": "A square matrix with ones on the diagonal and zeros elsewhere, acting as the multiplicative identity in matrix operations.",
+      "year": 0,
+      "slug": "identity-matrix"
+    },
+    {
       "title": "CBRN Risk",
       "definition": "Evaluation of potential hazards and vulnerabilities associated with Chemical, Biological, Radiological, and Nuclear agents in AI systems and applications.",
       "year": 0,
@@ -833,6 +863,12 @@
       "definition": "Phenomenon where ML models developed on Kaggle competitions perform well on specific datasets but may not generalize as effectively to real-world applications due to the unique constraints and optimizations used in these competitions.",
       "year": 2010,
       "slug": "kaggle-effect"
+    },
+    {
+      "title": "BLT (Byte Latent Transformer)",
+      "definition": "A model architecture that leverages transformer networks to manage and process high-dimensional data in byte-level representations.",
+      "year": 2021,
+      "slug": "blt-byte-latent-transformer"
     },
     {
       "title": "ReAct (Reason+Act)",
@@ -1165,10 +1201,10 @@
       "slug": "natural-language-problem"
     },
     {
-      "title": "Mean Absolute Error (MAE)",
+      "title": "MAE (Mean Absolute Error)",
       "definition": "A metric used to measure the average magnitude of errors between predicted and actual values in a dataset, indicating how closely a model's predictions align with observed data.",
       "year": 0,
-      "slug": "mean-absolute-error-mae"
+      "slug": "mae-mean-absolute-error"
     },
     {
       "title": "LSTM (Long Short-Term Memory)",
@@ -1317,7 +1353,7 @@
     {
       "title": "Controller Logic",
       "definition": "Encompasses the decision-making algorithms within a system, dictating how computational elements respond to incoming data and external stimuli.",
-      "year": 0,
+      "year": 1970,
       "slug": "controller-logic"
     },
     {
@@ -1429,6 +1465,12 @@
       "slug": "cd-contrastive-divergence"
     },
     {
+      "title": "Oversight mechanism",
+      "definition": "A system or process implemented to monitor and regulate the behavior and outcomes of AI systems, ensuring compliance with ethical standards and legal requirements.",
+      "year": 0,
+      "slug": "oversight-mechanism"
+    },
+    {
       "title": "Adversarial Instructions",
       "definition": "Inputs designed to deceive AI models into making incorrect predictions or decisions, highlighting vulnerabilities in their learning algorithms.",
       "year": 2014,
@@ -1489,10 +1531,10 @@
       "slug": "out-of-bag-evaluation"
     },
     {
-      "title": "summary (in TensorFlow context)",
-      "definition": "Method to log and visualize data for ML models, especially during the training phase, encompassing scalar values, images, histograms, and more to enhance model transparency and interpretability.",
-      "year": 2015,
-      "slug": "summary-in-tensorflow-context"
+      "title": "the transition problem",
+      "definition": "Addressing the challenges of shifting from a human-centered economy to one dominated by automation and AI technologies.",
+      "year": 2016,
+      "slug": "the-transition-problem"
     },
     {
       "title": "Similarity Computation",
@@ -1535,6 +1577,12 @@
       "definition": "ML technique where a model learns to recognize objects, tasks, or concepts it has never seen during training.",
       "year": 2009,
       "slug": "zsl-zero-shot-learning"
+    },
+    {
+      "title": "TUO (Technologies of Unknown Origin)",
+      "definition": "Refers to emerging technologies whose fundamental characteristics or origins are not fully understood, often explored for their potential in advancing AI or other fields.",
+      "year": 0,
+      "slug": "tuo-technologies-of-unknown-origin"
     },
     {
       "title": "Markov Blanket",
@@ -1627,6 +1675,12 @@
       "slug": "black-box"
     },
     {
+      "title": "Summary",
+      "definition": "Method to log and visualize data for ML models, especially during the training phase, encompassing scalar values, images, histograms, and more to enhance model transparency and interpretability.",
+      "year": 0,
+      "slug": "summary"
+    },
+    {
       "title": "FHE (Fully Homomorphic Encryption)",
       "definition": "Type of encryption that allows computation on ciphertexts, producing an encrypted result that, when decrypted, matches the result of operations performed on the plaintext.",
       "year": 2009,
@@ -1701,7 +1755,7 @@
     {
       "title": "Time Series Analysis",
       "definition": "Computational techniques for analyzing datasets ordered over time, identifying patterns, trends, and anomalies.",
-      "year": 0,
+      "year": 1970,
       "slug": "time-series-analysis"
     },
     {
@@ -1735,6 +1789,12 @@
       "slug": "function-approximation"
     },
     {
+      "title": "4E Cognition",
+      "definition": "A holistic approach to understanding cognition by focusing on its embodiment, embeddedness, enaction, and extension within an environment.",
+      "year": 2000,
+      "slug": "4e-cognition"
+    },
+    {
       "title": "Categorical Deep Learning",
       "definition": "Application of DL techniques to analyze and predict categorical data, which includes discrete and typically non-numeric values that represent categories or classes.",
       "year": 2020,
@@ -1765,7 +1825,7 @@
       "slug": "attribute-sampling"
     },
     {
-      "title": "historical bias",
+      "title": "Historical Bias",
       "definition": "The skewed representation or outcomes in AI systems due to flawed or prejudiced data reflecting past societal norms or inequalities.",
       "year": 2016,
       "slug": "historical-bias"
@@ -1781,6 +1841,12 @@
       "definition": "Ideology that encourages the rapid advancement of technology, especially AI, to address global challenges and accelerate progress towards a technologically advanced future.",
       "year": 2021,
       "slug": "effective-accelerationism"
+    },
+    {
+      "title": "LLA (Large Language Agent)",
+      "definition": "AI-driven systems designed to engage in complex language-based tasks by leveraging expansive neural network architectures trained on vast datasets.",
+      "year": 2023,
+      "slug": "lla-large-language-agent"
     },
     {
       "title": "Chinese Room",
@@ -1895,6 +1961,12 @@
       "definition": "Strategy in training LLMs that optimizes the ratio of model size to training data size.",
       "year": 2021,
       "slug": "chinchilla-scaling"
+    },
+    {
+      "title": "Source Grounding",
+      "definition": "Ensuring AI models base their responses or decisions on verifiable and credible data sources.",
+      "year": 2021,
+      "slug": "source-grounding"
     },
     {
       "title": "Parallelism",
@@ -2047,6 +2119,12 @@
       "slug": "incidental-polysemanticity"
     },
     {
+      "title": "Autodiff",
+      "definition": "A technique used in automatic differentiation to compute derivatives of functions efficiently and accurately, critical for optimizing AI models.",
+      "year": 0,
+      "slug": "autodiff"
+    },
+    {
       "title": "Discriminative AI",
       "definition": "Algorithms that learn the boundary between classes of data, focusing on distinguishing between different outputs given an input.",
       "year": 2014,
@@ -2083,9 +2161,15 @@
       "slug": "lora-low-rank-adaptation"
     },
     {
+      "title": "Whitening",
+      "definition": "A technique used to enhance the performance of ML models by transforming input data to have zero mean and unit variance, often improving convergence properties during training.",
+      "year": 1986,
+      "slug": "whitening"
+    },
+    {
       "title": "Timestep",
       "definition": "Refers to a discrete time increment used in simulations or models, particularly in reinforcement learning and time-series predictions within AI.",
-      "year": 0,
+      "year": 1986,
       "slug": "timestep"
     },
     {
@@ -2281,6 +2365,12 @@
       "slug": "lfms-liquid-foundation-models"
     },
     {
+      "title": "Kolmogorov Complexity",
+      "definition": "A measure of the computational resources needed to specify a string or dataset, often reflecting its inherent randomness or simplicity.",
+      "year": 1965,
+      "slug": "kolmogorov-complexity"
+    },
+    {
       "title": "Latent Space",
       "definition": "Abstract, multi-dimensional representation of data where similar items are mapped close together, commonly used in ML and AI models.",
       "year": 2013,
@@ -2327,6 +2417,12 @@
       "definition": "Thought experiment proposing that a future all-powerful AI could punish those who did not help bring about its existence.",
       "year": 2010,
       "slug": "rokos-basilisk"
+    },
+    {
+      "title": "IoU (Intersection Over Union)",
+      "definition": "A metric used to evaluate the accuracy of an object detector by comparing the overlap between the predicted and ground truth bounding boxes.",
+      "year": 2014,
+      "slug": "iou-intersection-over-union"
     },
     {
       "title": "Inductive Bias",
@@ -2417,6 +2513,12 @@
       "definition": "Converts written text into spoken voice output, enabling computers to read text aloud.",
       "year": 1968,
       "slug": "tts-text-to-speech"
+    },
+    {
+      "title": "Root",
+      "definition": "The topmost node in a decision tree from which all other nodes stem, representing the initial point of decision-making in the model.",
+      "year": 0,
+      "slug": "root"
     },
     {
       "title": "Adapter Layer",
@@ -2521,6 +2623,12 @@
       "slug": "emt-extended-mind-transformer"
     },
     {
+      "title": "MCP (Model Context Protocol)",
+      "definition": "A framework that defines standardized methods for managing the context in which machine learning models operate and make inferences.",
+      "year": 0,
+      "slug": "mcp-model-context-protocol"
+    },
+    {
       "title": "Decision Tree",
       "definition": "Flowchart-like tree structure where each internal node represents a \"test\" on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).",
       "year": 1966,
@@ -2603,12 +2711,6 @@
       "definition": "Moderates GPU usage by skipping processing of similar consecutive input images, thereby improving computational efficiency in real-time image and video generation tasks.",
       "year": 2021,
       "slug": "ssf-stochastic-similarity-filter"
-    },
-    {
-      "title": "Root (in Decision Tree Context)",
-      "definition": "The topmost node in a decision tree from which all other nodes stem, representing the initial point of decision-making in the model.",
-      "year": 0,
-      "slug": "root-in-decision-tree-context"
     },
     {
       "title": "Labeled Example",
@@ -2913,7 +3015,7 @@
     {
       "title": "Minimax Loss",
       "definition": "A strategy used in optimization and decision-making problems to minimize the maximum possible loss.",
-      "year": 0,
+      "year": 1982,
       "slug": "minimax-loss"
     },
     {
@@ -2927,6 +3029,12 @@
       "definition": "A mathematical representation of a system with a finite number of states used to describe its dynamics and behavior over discrete time intervals.",
       "year": 0,
       "slug": "discrete-state-space-model"
+    },
+    {
+      "title": "Neuralese",
+      "definition": "Emergent, task-optimized communication codes learned by neural agents—often discrete symbol systems—that function like a language for coordination but are not designed for human interpretability.",
+      "year": 2017,
+      "slug": "neuralese"
     },
     {
       "title": "Discontinuous Jump",
@@ -2975,6 +3083,12 @@
       "definition": "Continuous generation and delivery of text in real-time as the model processes input sequentially.",
       "year": 1995,
       "slug": "streaming"
+    },
+    {
+      "title": "Digital Human",
+      "definition": "A lifelike virtual representation of a human being created using AI and computer graphics, often used in interactive environments and simulations.",
+      "year": 2017,
+      "slug": "digital-human"
     },
     {
       "title": "Neurosymbolic AI",
@@ -3085,6 +3199,12 @@
       "slug": "volumetric-ai"
     },
     {
+      "title": "RAFT (Retrieval Augmented Fine Tuning)",
+      "definition": "An advanced approach in AI that improves a model's performance by fine-tuning it with additional context retrieved from large datasets or knowledge bases.",
+      "year": 2021,
+      "slug": "raft-retrieval-augmented-fine-tuning"
+    },
+    {
       "title": "GAN (Generative Adversarial Network)",
       "definition": "Class of AI algorithms used in unsupervised ML, implemented by a system of two neural networks contesting with each other in a game.",
       "year": 2014,
@@ -3151,6 +3271,12 @@
       "slug": "unified-embedding"
     },
     {
+      "title": "Accelerated Computing",
+      "definition": "Use of specialized hardware and software to significantly speed up computation-intensive AI tasks and processes.",
+      "year": 2016,
+      "slug": "accelerated-computing"
+    },
+    {
       "title": "Branching Factor",
       "definition": "Number of possible actions or moves that can be taken from any given point in a decision-making process, such as in game trees or search algorithms.",
       "year": 1956,
@@ -3203,6 +3329,12 @@
       "definition": "Fundamental problem in supervised ML that involves a trade-off between a model’s ability to minimize error due to bias and error due to variance.",
       "year": 1992,
       "slug": "bias-variance-dilemma"
+    },
+    {
+      "title": "ERR (Expected Reciprocal Rank)",
+      "definition": "A performance metric used in information retrieval that considers the rank position of relevant documents, providing a probability-based measure of ranking quality.",
+      "year": 2010,
+      "slug": "err-expected-reciprocal-rank"
     },
     {
       "title": "Test Set",
@@ -3889,6 +4021,12 @@
       "slug": "fsl-few-shot-learning"
     },
     {
+      "title": "Linear Guardedness",
+      "definition": "A concept in AI algorithms and computational models that ensures system behaviors remain constrained within specific linear boundaries, preventing unintended actions or outputs.",
+      "year": 0,
+      "slug": "linear-guardedness"
+    },
+    {
       "title": "Computational Complexity Theory",
       "definition": "A branch of theoretical computer science that focuses on classifying computational problems based on their inherent difficulty and the resources required to solve them.",
       "year": 1971,
@@ -3905,6 +4043,12 @@
       "definition": "Refers to the computational resources and processes required during the evaluation phase of an AI model on new, unseen data.",
       "year": 2020,
       "slug": "test-time-compute"
+    },
+    {
+      "title": "Simplicity Bias",
+      "definition": "The tendency of AI models to favor simpler solutions or representations over more complex ones in their decision-making processes.",
+      "year": 0,
+      "slug": "simplicity-bias"
     },
     {
       "title": "Evolutionary Algorithm",
@@ -3961,6 +4105,12 @@
       "slug": "wbe-whole-brain-emulation"
     },
     {
+      "title": "SPDL (Scalable and Performant Data Loading)",
+      "definition": "A framework or methodology designed to efficiently manage and process large volumes of data, optimizing the speed and scalability of data loading operations.",
+      "year": 0,
+      "slug": "spdl-scalable-and-performant-data-loading"
+    },
+    {
       "title": "TRL (Transfer Reinforcement Learning)",
       "definition": "Subfield of RL focused on leveraging knowledge gained from one or more source tasks to improve learning efficiency and performance in a different, but related, target task.",
       "year": 2019,
@@ -3993,7 +4143,7 @@
     {
       "title": "Minimax",
       "definition": "A decision-making strategy in game theory and AI that aims to minimize the possible losses in worst-case scenarios by maximizing the worst-case outcome.",
-      "year": 0,
+      "year": 1980,
       "slug": "minimax"
     },
     {
@@ -4043,12 +4193,6 @@
       "definition": "Computational mechanism used in AI models to adjust certain characteristics of the model's outputs based on specific parameters or conditions.",
       "year": 1963,
       "slug": "control-vector"
-    },
-    {
-      "title": "Root Mean Squared Error (RMSE)",
-      "definition": "A statistical measure used to quantify the difference between values predicted by a model and the values actually observed, providing a sense of how accurate the model's predictions are.",
-      "year": 0,
-      "slug": "root-mean-squared-error-rmse"
     },
     {
       "title": "Q-Learning",
@@ -4133,6 +4277,12 @@
       "definition": "AI models designed to translate natural language descriptions into executable code snippets, facilitating automation in software development and assisting developers.",
       "year": 2021,
       "slug": "text-to-code-model"
+    },
+    {
+      "title": "Alpha Geometry",
+      "definition": "A framework integrating geometric methods and concepts to improve AI models, particularly in tasks involving spatial understanding and representation.",
+      "year": 0,
+      "slug": "alpha-geometry"
     },
     {
       "title": "Supervised Learning",
@@ -4891,6 +5041,18 @@
       "slug": "dijkstras-algorithm"
     },
     {
+      "title": "Principle of Indifference",
+      "definition": "A classical probability principle suggesting that, in the absence of any known reasons to favor one outcome over others, one should distribute their probabilities equally across all outcomes.",
+      "year": 0,
+      "slug": "principle-of-indifference"
+    },
+    {
+      "title": "evaluation-time compute",
+      "definition": "The computational resources used while running an AI model for inference or decision-making, distinct from resources used during training.",
+      "year": 0,
+      "slug": "evaluation-time-compute"
+    },
+    {
       "title": "Convergent Learning",
       "definition": "Process by which a ML model consistently arrives at the same solution or prediction given the same input data, despite variations in initial conditions or configurations.",
       "year": 2018,
@@ -5011,6 +5173,12 @@
       "slug": "state-space-model"
     },
     {
+      "title": "hillclimb",
+      "definition": "A search algorithm that iteratively moves towards local optima by making incremental changes to a current solution.",
+      "year": 1970,
+      "slug": "hillclimb"
+    },
+    {
       "title": "Foundation Model",
       "definition": "Type of large-scale pre-trained model that can be adapted to a wide range of tasks without needing to be trained from scratch each time.",
       "year": 2021,
@@ -5077,7 +5245,7 @@
       "slug": "abductive-reasoning"
     },
     {
-      "title": "P(Doom)",
+      "title": "PDoom",
       "definition": "Probability of an existential catastrophe, often discussed within the context of AI safety and risk assessment.",
       "year": 2022,
       "slug": "pdoom"
@@ -5101,6 +5269,12 @@
       "slug": "tunable-parameters"
     },
     {
+      "title": "Optimal Transport Theory",
+      "definition": "A mathematical framework for determining the most efficient way to move and transform distributions of mass or probability from one configuration to another.",
+      "year": 2013,
+      "slug": "optimal-transport-theory"
+    },
+    {
       "title": "Capability Ladder",
       "definition": "Conceptual framework used to describe the progression of an AI system's abilities from simple, specific tasks to complex, general tasks.",
       "year": 2021,
@@ -5111,6 +5285,12 @@
       "definition": "The process of automatically retrieving structured information and insights from unstructured data.",
       "year": 1999,
       "slug": "knowledge-extraction"
+    },
+    {
+      "title": "Hyperobject",
+      "definition": "A concept describing entities so massively distributed in time and space that they transcend localization, posing unique challenges and considerations in AI environments.",
+      "year": 2013,
+      "slug": "hyperobject"
     },
     {
       "title": "Perceptual Domain",
@@ -5167,6 +5347,12 @@
       "slug": "reasoning-path"
     },
     {
+      "title": "SVD (Singular Value Decomposition)",
+      "definition": "A mathematical method used to decompose a matrix into three other matrices, revealing important properties and aiding in various computations in AI and ML.",
+      "year": 1970,
+      "slug": "svd-singular-value-decomposition"
+    },
+    {
       "title": "Overparameterized",
       "definition": "ML model that has more parameters than the number of data points available for training.",
       "year": 2014,
@@ -5195,6 +5381,12 @@
       "definition": "A strategic framework for ensuring that AI systems are scaled prudently, focusing on ethical, environmental, and societal implications.",
       "year": 2021,
       "slug": "rsp-responsible-scaling-policy"
+    },
+    {
+      "title": "MoT (Mixture of Transformers)",
+      "definition": "A neural network architecture that combines multiple transformer models to harness diverse representations and enhance learning capacities.",
+      "year": 2021,
+      "slug": "mot-mixture-of-transformers"
     },
     {
       "title": "Perceptual Hash Algorithm",
@@ -5347,6 +5539,12 @@
       "slug": "query-language"
     },
     {
+      "title": "UI (Uploaded Intelligence)",
+      "definition": "Transfer of a human mind or consciousness into a digital environment, enabling operation within a virtual or cybernetic system.",
+      "year": 0,
+      "slug": "ui-uploaded-intelligence"
+    },
+    {
       "title": "Speculative Edits",
       "definition": "Proactive generation of multiple possible edits in a computational process, typically by a system anticipating future states or changes in data before they occur, in order to improve efficiency.",
       "year": 2023,
@@ -5491,6 +5689,12 @@
       "slug": "margin"
     },
     {
+      "title": "Concept Erasure",
+      "definition": "The removal or suppression of specific concepts or features from a model's internal representation, primarily to enhance its interpretability or rectify unwanted biases in its outputs.",
+      "year": 2020,
+      "slug": "concept-erasure"
+    },
+    {
       "title": "Slop",
       "definition": "Colloquial slang referring to responses generated by LLMs that may be overly verbose or repetitive, often observed in AI-generated summaries or answers, and sometimes criticized for lacking conciseness or relevance.",
       "year": 2022,
@@ -5621,6 +5825,12 @@
       "definition": "Methodology designed to assess the ability of AI systems to follow and execute human-given instructions accurately and effectively.",
       "year": 2022,
       "slug": "ifeval-instruction-following-eval"
+    },
+    {
+      "title": "NTP (Next Token Prediction)",
+      "definition": "A core mechanism in language models where the system predicts the next word or token in a sequence, improving coherence and fluency.",
+      "year": 0,
+      "slug": "ntp-next-token-prediction"
     },
     {
       "title": "Flash Attention",
@@ -5767,12 +5977,6 @@
       "slug": "quantization"
     },
     {
-      "title": "Intersection Over Union (IoU)",
-      "definition": "A metric used to evaluate the accuracy of an object detector by comparing the overlap between the predicted and ground truth bounding boxes.",
-      "year": 2014,
-      "slug": "intersection-over-union-iou"
-    },
-    {
       "title": "Temporal Data",
       "definition": "Data that is associated with time, capturing the sequence and timing of events or states.",
       "year": 1980,
@@ -5899,7 +6103,7 @@
       "slug": "jepa-joint-embedding-predictive-architecture"
     },
     {
-      "title": "host",
+      "title": "Host",
       "definition": "The machine or server that acts as the environment for running and managing AI applications, processes, and data storage.",
       "year": 1980,
       "slug": "host"
@@ -6253,9 +6457,9 @@
       "slug": "srl-statistical-relational-learning"
     },
     {
-      "title": "batch",
+      "title": "Batch",
       "definition": "A collection of data samples processed simultaneously in a single step of a neural network's training process.",
-      "year": 0,
+      "year": 1986,
       "slug": "batch"
     },
     {
@@ -6269,6 +6473,12 @@
       "definition": "A data structure consisting of nodes (vertices) and the connections (edges) between them, used extensively in AI for modeling relationships and interactions among various entities.",
       "year": 0,
       "slug": "graph"
+    },
+    {
+      "title": "RMSE (Root Mean Squared Error)",
+      "definition": "A statistical measure used to quantify the difference between values predicted by a model and the values actually observed, providing a sense of how accurate the model's predictions are.",
+      "year": 0,
+      "slug": "rmse-root-mean-squared-error"
     },
     {
       "title": "Dualism",

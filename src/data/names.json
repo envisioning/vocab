@@ -6344,5 +6344,164 @@
   ],
   "technologies-of-unknown-origin-tuo": [
     "unknown"
+  ],
+  "experience-machine": [
+    "robert nozick",
+    "david chalmers",
+    "nick bostrom",
+    "thomas metzinger",
+    "daniel dennett",
+    "john searle",
+    "unknown"
+  ],
+  "diarization": [
+    "unknown"
+  ],
+  "probe": [
+    "unknown"
+  ],
+  "unigram-entropy": [
+    "unknown"
+  ],
+  "identity-matrix": [
+    "unknown"
+  ],
+  "blt-byte-latent-transformer": [
+    "unknown"
+  ],
+  "oversight-mechanism": [
+    "unknown"
+  ],
+  "the-transition-problem": [
+    "unknown"
+  ],
+  "tuo-technologies-of-unknown-origin": [
+    "unknown"
+  ],
+  "4e-cognition": [
+    "edwin hutchins",
+    "francisco varela",
+    "eleanor rosch",
+    "alva noë",
+    "andy clark",
+    "david kirsh",
+    "john dewey"
+  ],
+  "lla-large-language-agent": [
+    "unknown"
+  ],
+  "source-grounding": [
+    "unknown"
+  ],
+  "autodiff": [
+    "geoffrey hinton",
+    "yann lecun",
+    "ian goodfellow",
+    "martin zinkevich",
+    "john d. cook",
+    "andreas griewank",
+    "david p. bertsekas"
+  ],
+  "whitening": [
+    "unknown"
+  ],
+  "kolmogorov-complexity": [
+    "andrey kolmogorov",
+    "gregory chaitin",
+    "manuel blum",
+    "leonard adleman",
+    "charles bennett",
+    "jürgen schmidhuber",
+    "unknown"
+  ],
+  "mcp-model-context-protocol": [
+    "unknown"
+  ],
+  "neuralese": [
+    "unknown"
+  ],
+  "raft-retrieval-augmented-fine-tuning": [
+    "unknown"
+  ],
+  "err-expected-reciprocal-rank": [
+    "j. ben schafer",
+    "emine yilmaz",
+    "mark sanderson",
+    "alistair moffat",
+    "andrew trotman",
+    "unknown",
+    "unknown"
+  ],
+  "linear-guardedness": [
+    "unknown"
+  ],
+  "simplicity-bias": [
+    "unknown"
+  ],
+  "spdl-scalable-and-performant-data-loading": [
+    "unknown"
+  ],
+  "alpha-geometry": [
+    "unknown"
+  ],
+  "principle-of-indifference": [
+    "pierre-simon laplace",
+    "john maynard keynes",
+    "richard von mises",
+    "bruno de finetti",
+    "harold jeffreys",
+    "frank p. ramsey",
+    "carl friedrich gauss"
+  ],
+  "evaluation-time-compute": [
+    "unknown"
+  ],
+  "hillclimb": [
+    "edward a. feigenbaum",
+    "john mccarthy",
+    "richard bellman",
+    "herbert simon",
+    "allen newell",
+    "david e. rumelhart",
+    "geoffrey hinton"
+  ],
+  "optimal-transport-theory": [
+    "gaspard monge",
+    "leonid kantorovich",
+    "l. c. evans",
+    "gabriel peyré",
+    "marco cuturi",
+    "rémi flamary",
+    "unknown"
+  ],
+  "hyperobject": [
+    "timothy morton",
+    "bruno latour",
+    "karen barad",
+    "donna haraway",
+    "graham harman",
+    "jane bennett",
+    "unknown"
+  ],
+  "svd-singular-value-decomposition": [
+    "carl friedrich gauss",
+    "eugenio beltrami",
+    "john von neumann",
+    "gene h. golub",
+    "william kahan",
+    "david s. watkins",
+    "richard o. duda"
+  ],
+  "mot-mixture-of-transformers": [
+    "unknown"
+  ],
+  "ui-uploaded-intelligence": [
+    "unknown"
+  ],
+  "concept-erasure": [
+    "unknown"
+  ],
+  "ntp-next-token-prediction": [
+    "unknown"
   ]
 }
