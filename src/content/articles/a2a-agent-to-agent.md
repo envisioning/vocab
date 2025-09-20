@@ -1,0 +1,13 @@
+---
+title: A2A (Agent to Agent)
+summary: Direct interactions between autonomous software agents that exchange information, negotiate, and coordinate actions to achieve distributed goals without centralized orchestration.
+slug: a2a-agent-to-agent
+---
+
+A2A (Agent-to-Agent) denotes a communication and interaction paradigm in which autonomous software agents directly exchange messages, signals, or actions to coordinate behavior, negotiate resource allocation, form coalitions, or solve distributed tasks—emphasizing peer-to-peer protocols, local decision rules, and emergent coordination rather than centralized control.
+
+In expert terms, A2A sits at the core of MAS (multi-agent systems) theory and practice: it encompasses the languages, protocols, game-theoretic mechanisms, and learning rules that enable agents to discover joint plans, resolve conflicts, and adapt in non-stationary multi-agent environments. Technically this involves agent architectures (e.g., BDI (Belief-Desire-Intention)), communication standards (FIPA ACL and ontologies), incentive and mechanism design to ensure truthful reporting and cooperation, and learning frameworks such as MARL (multi-agent RL) to handle credit assignment and partial observability. A2A interactions are analyzed with tools from distributed systems (consensus, fault tolerance), game theory (Nash equilibria, repeated games), and verification (temporal logic for protocols), and are crucial in domains ranging from robotic swarms and autonomous vehicles to algorithmic markets, IoT coordination, and decentralized simulations. Key practical challenges in A2A include scalability, robustness to adversarial or Byzantine agents, alignment of local incentives with global objectives, communication bandwidth and semantics, and the design of protocols that allow safe emergent behavior in open, heterogeneous agent ecosystems.
+
+First documented uses of explicit "agent-to-agent" phrasing appear in the agent and distributed AI literature of the 1990s; the concept gained broader traction throughout the 2000s with standardization efforts (e.g., FIPA) and again surged in the 2010s–2020s alongside MARL advances and increased interest in decentralized/autonomous systems.
+
+Notable contributors include Michael Wooldridge and Nicholas R. Jennings for foundational MAS theory, Yoav Shoham and Kevin Leyton‑Brown for agent economics and game-theoretic perspectives, Victor Lesser and Katia Sycara for distributed problem solving and negotiation, Munindar P. Singh for agent communication and social semantics, and groups behind FIPA for protocol standardization; more recently, MARL researchers such as Peter Stone, Shimon Whiteson, and M. Leibo have advanced A2A learning methods and practical multi-agent deployments.

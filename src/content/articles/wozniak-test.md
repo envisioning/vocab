@@ -1,0 +1,13 @@
+---
+title: Wozniak test
+summary: A human-centered heuristic for judging an AI system's elegance, reliability, and user delight, emphasizing simplicity, predictable failure modes, and graceful recoverability.
+slug: wozniak-test
+---
+
+An informal, human-centered heuristic for judging an AI system's elegance, reliability, and user delight by focusing on simplicity, predictable behavior under stress, and ease of recovery when errors occur.
+
+The Wozniak test is a practitioner-oriented evaluation concept that prioritizes user-facing qualities of AI systems (notably clarity, minimal surprise, and robust recoverability) over purely capability-centric metrics. Unlike the Turing test, which probes anthropomorphism, the Wozniak test asks whether an AI's design and behavior feel thoughtfully engineered from a user's perspective: are its failure modes understandable, is it easy for users to recover from mistakes, does the system expose the minimum necessary complexity, and does it avoid needless edge-case brittleness that damages trust? In engineering terms this translates into measurable properties such as calibration and uncertainty communication, failure-mode taxonomy and mitigation, latency and feedback loop characteristics, interpretability affordances, and UX metrics (task success, error recovery time, subjective trust). For AI/ML (Machine Learning) systems this heuristic guides model selection, interface design, and acceptance criteria—favoring simpler, better-calibrated models or modular hybrid architectures when those produce more predictable, debuggable behavior for end users, and shaping evaluation suites that combine behavioral tests, adversarial and distribution-shift trials, and human-in-the-loop recovery scenarios.
+
+No formal origin is documented; the phrase has appeared informally in tech and AI/UX discussions since the late 2010s and gained traction among AI product, UX, and safety practitioners around 2020–2024 as concerns about trustworthiness, interpretability, and human-centered design intensified.
+
+There is no single inventor of the concept; it is named by analogy to Steve Wozniak's design ethos (simplicity and user delight) and has been shaped by contributions from the HCI community (e.g., human-centered design advocates such as Don Norman), AI safety and interpretability researchers and teams (academic labs and industry groups such as those at major AI research organizations), and AI product/UX practitioners who operationalize reliability-and-recoverability checklists for deployed systems.

@@ -1,71 +1,51 @@
 Exponential divergence
-Capability elucidation
-TAID (Temporally Adaptive Interpolated Distillation)
-VLA vision-language-action model
-    https://www.figure.ai/news/helix
-Large Language Diffusion Models (LLaDA)
-Neural Metamorphosis (NeuMeta)
-Implicit Neural Representation (INR)
-hypernetworks
-Continuous Latent Space
-Differential Transformer
-Adaptive reasoning
-Direct preference optimization
-Generative Engine Optimization (GEO).
-Wozniak test
-
-fft accelerated convolutions
-Word Co-occurrence modeling
-NARS (Non-Axiomatic Reasoning System)
-Algorithmic Gains
-Circuit
-Mixture of a Million Experts
-autodiff
-L2M
-    Large Memory Model (LM2), a decoder-only Transformer architecture enhanced with an auxiliary memory module that aims to address the limitations of standard Transformers in multi-step reasoning, relational argumentation, and synthesizing information distributed over long contexts
-Visual chain of thought
-Geometry-Informed Neural Networks
 Universality hypothesis
-GRPO (instead of PPO)
-Distributed Agents in a Worldwide Network (DAWN)
 adam optimization algo
-Self-Adaptive LLMs
-neural long term memory module
-Meta Chain-of-Thought
-Unified Factored Representation (UFR)
 1 over x
-Large Concept Models (LCMs)
-    https://old.reddit.com/r/machinelearningnews/comments/1hf77le/meta_ai_proposes_large_concept_models_lcms_a/
-    https://x.com/Yuchenj_UW/status/1871271303493374178
+VGG (Visual Geometry Group)
+hypernetworks
+Algorithmic Gains
+Self-Adaptive LLMs
 collisionless embedding table
+Non-stationary of objectives
 semantic logic gates
 Energy based models
-JAPA (joint embedding predictive architecture)
 Style Transfer
-Non-stationary of objectives
-Moravec’s Paradox
-    things that are easy for humans are difficult for AI and vice versa
-scaling laws 
-alphafold
-RLHF (dario got his phd in biophysics)
-diffusion models
-normalizing flows
-VAEs
-Energy-Based Models (EBMs)
-neural tangent kernel
-hopfield networks
 information bottleneck theory
-imagenet (apparently feifei has a bachelors in physics)
-chinchilla optimality
+Wozniak test
+imagenet
+neural tangent kernel
 context rot
-    https://x.com/simonw/status/1935478180443472340
-digital cousin https://youtu.be/_2NijXqBESI
-digital nomad https://youtu.be/_2NijXqBESI
-normalizing flow
-    https://9to5mac.com/2025/06/23/apple-ai-image-model-research-tarflow-starflow/
-structured noise
-https://x.com/miniapeur/status/1940470154082898389
-A2A - agent to agent
-
-
+hopfield networks
+normalizing flows
+alphafold
 neural style transfer
+chinchilla optimality
+structured noise
+Capability elucidation
+TAID (Temporally Adaptive Interpolated Distillation)
+Large Language Diffusion Models (LLaDA)
+Continuous Latent Space
+Differential Transformer
+Neural Metamorphosis (NeuMeta)
+Adaptive reasoning
+Word Co-occurrence modeling
+Mixture of a Million Experts
+Generative Engine Optimization (GEO).
+NARS (Non-Axiomatic Reasoning System)
+L2M Large Memory Model
+Geometry-Informed Neural Networks
+neural long term memory module
+Distributed Agents in a Worldwide Network (DAWN)
+Unified Factored Representation (UFR)
+A2A - agent to agent
+Circuit
+VLA vision-language-action model
+fft accelerated convolutions
+Meta Chain-of-Thought (Meta-CoT)
+GRPO = Grouped Regularized Policy Optimization.
+Direct preference optimization
+Large Concept Models (LCMs)
+Implicit Neural Representation (INR)
+Byte Latent Transformer
+normalizing flow

@@ -175,6 +175,12 @@
       "slug": "shared-awareness"
     },
     {
+      "title": "GEO (Generative Engine Optimization)",
+      "definition": "A coordinated set of training‑time and inference‑time techniques that optimize generative model behavior for quality, controllability, cost, latency, and safety across deployment contexts.",
+      "year": 0,
+      "slug": "geo-generative-engine-optimization"
+    },
+    {
       "title": "Cosine Similarity",
       "definition": "Measures the cosine of the angle between two vectors in a multidimensional space, often used to determine how similar two items are.",
       "year": 1957,
@@ -185,6 +191,12 @@
       "definition": "Type of artificial neural network designed to improve the processing of spatial hierarchical information by encoding data into small groups of neurons called capsules.",
       "year": 2017,
       "slug": "capsule-networks"
+    },
+    {
+      "title": "GGP (Geometric Gaussian Processes)",
+      "definition": "Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.",
+      "year": 0,
+      "slug": "ggp-geometric-gaussian-processes"
     },
     {
       "title": "Gorilla Program",
@@ -209,6 +221,12 @@
       "definition": "Method in data mining for discovering interesting relationships, patterns, or correlations among a large set of data items.",
       "year": 1993,
       "slug": "association-rule"
+    },
+    {
+      "title": "Non-stationary of objectives",
+      "definition": "An optimization target that shifts over time so the loss or reward a model seeks to minimize or maximize is itself a moving quantity rather than a fixed function of model parameters and data.",
+      "year": 0,
+      "slug": "non-stationary-of-objectives"
     },
     {
       "title": "SSL (Self-Supervised Learning)",
@@ -245,6 +263,12 @@
       "definition": "A category or label used to define specific groups in a classification problem within AI systems.",
       "year": 1986,
       "slug": "class"
+    },
+    {
+      "title": "NTK (Neural Tangent Kernel)",
+      "definition": "A kernel that characterizes the training-time function-space dynamics of wide neural networks by linearizing their parameter-to-function map around initialization.",
+      "year": 2018,
+      "slug": "ntk-neural-tangent-kernel"
     },
     {
       "title": "Probe",
@@ -353,6 +377,12 @@
       "definition": "Challenge of ensuring that highly advanced AI systems act in alignment with human values and intentions.",
       "year": 2000,
       "slug": "control-problem"
+    },
+    {
+      "title": "Adam",
+      "definition": "Adaptive learning-rate optimizer that combines momentum and per-parameter adaptive scaling using running estimates of the first and second moments of the gradients.",
+      "year": 2014,
+      "slug": "adam"
     },
     {
       "title": "Intention",
@@ -631,6 +661,12 @@
       "slug": "llm-large-language-model"
     },
     {
+      "title": "Structured Noise",
+      "definition": "Patterned or correlated perturbations in data or signals that deviate from independent random noise and can induce systematic bias or spurious structure in AI models if not explicitly modeled or mitigated.",
+      "year": 0,
+      "slug": "structured-noise"
+    },
+    {
       "title": "Temporal Difference Learning",
       "definition": "A method in reinforcement learning that updates predictions based on the difference between successive predictions, rather than solely relying on final outcome errors.",
       "year": 1988,
@@ -745,6 +781,12 @@
       "slug": "discrete-system"
     },
     {
+      "title": "NARS (Non-Axiomatic Reasoning System)",
+      "definition": "A resource-bounded, experience-grounded reasoning framework that performs defeasible inference and adaptive belief revision under the Assumption of Insufficient Knowledge and Resources.",
+      "year": 1991,
+      "slug": "nars-non-axiomatic-reasoning-system"
+    },
+    {
       "title": "Hash Table",
       "definition": "Data structure that stores key-value pairs and allows for fast data retrieval by using a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.",
       "year": 1953,
@@ -807,7 +849,7 @@
     {
       "title": "Hinge Loss",
       "definition": "A loss function primarily used in ML classification problems, particularly with \"maximum-margin\" algorithms like support vector machines.",
-      "year": 0,
+      "year": 1995,
       "slug": "hinge-loss"
     },
     {
@@ -841,6 +883,12 @@
       "slug": "identity-matrix"
     },
     {
+      "title": "Style Transfer",
+      "definition": "Transforms the visual appearance of an image to match the texture, color palette, or aesthetic of another while preserving its semantic content and structure.",
+      "year": 2015,
+      "slug": "style-transfer"
+    },
+    {
       "title": "CBRN Risk",
       "definition": "Evaluation of potential hazards and vulnerabilities associated with Chemical, Biological, Radiological, and Nuclear agents in AI systems and applications.",
       "year": 0,
@@ -851,6 +899,12 @@
       "definition": "These systems refer to AI-driven platforms that operate on a global scale, integrating vast data sets and computational resources to tackle complex, worldwide challenges.",
       "year": 0,
       "slug": "planetary-scale-system"
+    },
+    {
+      "title": "UFR (Unified Factored Representation)",
+      "definition": "A structured latent encoding that factorizes a domain's generative factors into modular, interoperable components to enable compositional reasoning, transfer, and efficient structured inference.",
+      "year": 0,
+      "slug": "ufr-unified-factored-representation"
     },
     {
       "title": "PQ (Product Quantization)",
@@ -875,6 +929,12 @@
       "definition": "AI framework for integrating reasoning and acting capabilities, enabling models to make decisions based on both logic and learned actions.",
       "year": 2023,
       "slug": "react-reasonact"
+    },
+    {
+      "title": "collisionless embedding table",
+      "definition": "A serving and storage design for embedding vectors that eliminates hash collisions and contention to ensure accurate, low-latency retrieval at extreme scale.",
+      "year": 2021,
+      "slug": "collisionless-embedding-table"
     },
     {
       "title": "Video-to-Text Model",
@@ -947,6 +1007,12 @@
       "definition": "The discrepancy between predicted outcomes by an AI model and the actual observed results in a dataset.",
       "year": 1986,
       "slug": "prediction-error"
+    },
+    {
+      "title": "Digital Cousin",
+      "definition": "A dynamic, AI-enhanced digital representation that mirrors selected states and behaviors of a physical asset, system, or person to enable simulation, inference, and decision support across operational and design lifecycles.",
+      "year": 0,
+      "slug": "digital-cousin"
     },
     {
       "title": "Silent Collapse",
@@ -1037,6 +1103,12 @@
       "definition": "A meme in AI discourse highlighting the potential uncontrollable, alien nature of advanced AI systems, often embodying concerns about opaque decision processes and unanticipated outcomes.",
       "year": 2010,
       "slug": "shoggoth"
+    },
+    {
+      "title": "Energy-based models",
+      "definition": "A modeling framework that assigns a scalar energy to each configuration of variables and defines preferences, inference, or unnormalized probabilities via energy minimization rather than an explicit normalized likelihood.",
+      "year": 2001,
+      "slug": "energy-based-models"
     },
     {
       "title": "DBN (Deep Belief Network)",
@@ -1187,6 +1259,12 @@
       "definition": "Human intermediary who vocalizes an AI system’s real-time outputs in face-to-face interaction, giving the machine a human body and voice while preserving machine agency.",
       "year": 2017,
       "slug": "echoborg"
+    },
+    {
+      "title": "TAID (Temporally Adaptive Interpolated Distillation)",
+      "definition": "A distillation method for sequence and video models that transfers temporal dynamics by adaptively interpolating teacher signals to match the student's temporal resolution and latency constraints.",
+      "year": 2022,
+      "slug": "taid-temporally-adaptive-interpolated-distillation"
     },
     {
       "title": "Monte Carlo Estimation",
@@ -1489,6 +1567,12 @@
       "slug": "reranking"
     },
     {
+      "title": "Algorithmic Gains",
+      "definition": "Performance or capability improvements achieved through algorithmic innovations—changes to architectures, training procedures, objectives, or optimizers—that reduce reliance on increased compute, data, or parameter count.",
+      "year": 0,
+      "slug": "algorithmic-gains"
+    },
+    {
       "title": "LLE (Locally Linear Embedding)",
       "definition": "Nonlinear dimensionality reduction technique that preserves local neighborhood information to reduce high-dimensional data to a lower-dimensional space.",
       "year": 2000,
@@ -1683,7 +1767,7 @@
     {
       "title": "Summary",
       "definition": "Method to log and visualize data for ML models, especially during the training phase, encompassing scalar values, images, histograms, and more to enhance model transparency and interpretability.",
-      "year": 0,
+      "year": 2015,
       "slug": "summary"
     },
     {
@@ -1939,6 +2023,12 @@
       "slug": "regularization"
     },
     {
+      "title": "Chinchilla optimality",
+      "definition": "A compute-optimal prescription for allocating parameters and training tokens that shows smaller models trained on more data can outperform larger, undertrained models given a fixed compute budget.",
+      "year": 2021,
+      "slug": "chinchilla-optimality"
+    },
+    {
       "title": "Super Alignment",
       "definition": "Theoretical concept in AI, primarily focusing on ensuring that advanced AI systems or AGI align closely with human values and ethics to prevent negative outcomes.",
       "year": 2023,
@@ -1985,6 +2075,12 @@
       "definition": "Probabilistic model that assumes that the data is generated from a mixture of several distributions, each representing a different subpopulation within the overall population.",
       "year": 1980,
       "slug": "mixture-model"
+    },
+    {
+      "title": "Neural Style Transfer",
+      "definition": "A method that synthesizes a new image by combining the content of one image with the visual style (textures, colors, brushstrokes) of another using representations from deep convolutional networks.",
+      "year": 2015,
+      "slug": "neural-style-transfer"
     },
     {
       "title": "FPGA (Field-Programmable Gate Array)",
@@ -2449,6 +2545,12 @@
       "slug": "activation-data"
     },
     {
+      "title": "Semantic Logic Gates",
+      "definition": "Mechanisms that perform logical operations over semantic representations in neural or hybrid AI systems, enabling compositional reasoning and selective information flow based on meaning.",
+      "year": 0,
+      "slug": "semantic-logic-gates"
+    },
+    {
       "title": "Fourier Analysis",
       "definition": "Mathematical method for decomposing functions or signals into their constituent frequencies.",
       "year": 1822,
@@ -2501,6 +2603,12 @@
       "definition": "Desired outcome or objective that an AI system is programmed to achieve.",
       "year": 1960,
       "slug": "goal"
+    },
+    {
+      "title": "Exponential divergence",
+      "definition": "Rapid, multiplicative growth in the separation between two states, outputs, or parameter vectors such that small perturbations amplify exponentially over iterations or time, producing instability or compounding errors in AI systems.",
+      "year": 0,
+      "slug": "exponential-divergence"
     },
     {
       "title": "NeRF (Neural Radiance Fields)",
@@ -2725,6 +2833,12 @@
       "slug": "labeled-example"
     },
     {
+      "title": "Hopfield networks",
+      "definition": "Recurrent, energy-based neural networks that implement content-addressable associative memory by converging to stored pattern attractors.",
+      "year": 1982,
+      "slug": "hopfield-networks"
+    },
+    {
       "title": "Infinite Context Window",
       "definition": "Method in NLP where a model has potential to consider entire available preceding information for predictions.",
       "year": 2023,
@@ -2849,6 +2963,12 @@
       "definition": "Neural network architecture designed specifically for image segmentation tasks, where the goal is to classify each pixel of an image into a category.",
       "year": 2015,
       "slug": "fcn-fully-convolutional-networks"
+    },
+    {
+      "title": "TDL (Topological Deep Learning)",
+      "definition": "Integration of algebraic and computational topology with deep neural networks to encode, preserve, and exploit global shape and connectivity as features, layers, or regularizers.",
+      "year": 2020,
+      "slug": "tdl-topological-deep-learning"
     },
     {
       "title": "Human-Level AI",
@@ -3391,6 +3511,12 @@
       "slug": "controlnet"
     },
     {
+      "title": "FFT Accelerated Convolutions",
+      "definition": "Using frequency-domain multiplication via FFT (Fast Fourier Transform) to compute linear convolutions more efficiently than direct time-domain methods, especially for large kernels or long signals common in ML (Machine Learning) workloads.",
+      "year": 0,
+      "slug": "fft-accelerated-convolutions"
+    },
+    {
       "title": "Parameter Size",
       "definition": "Count of individual weights in a ML model that are learned from data during training.",
       "year": 2018,
@@ -3451,6 +3577,12 @@
       "slug": "vector-database"
     },
     {
+      "title": "Neural Long Term Memory Module",
+      "definition": "A neural architecture component that provides persistent, addressable storage enabling networks to retain and retrieve information across long timescales beyond transient hidden states.",
+      "year": 2016,
+      "slug": "neural-long-term-memory-module"
+    },
+    {
       "title": "JEST (Multimodal Contrastive Learning with Joint Example Selection)",
       "definition": "AI technique that enhances the learning of shared representations across different modalities by jointly selecting and leveraging relevant examples.",
       "year": 2022,
@@ -3485,6 +3617,12 @@
       "definition": "Set of assumptions or biases that a ML model uses to infer patterns from data and make predictions, effectively guiding the learning process based on prior knowledge or expected behavior.",
       "year": 0,
       "slug": "inductive-prior"
+    },
+    {
+      "title": "Wozniak test",
+      "definition": "A human-centered heuristic for judging an AI system's elegance, reliability, and user delight, emphasizing simplicity, predictable failure modes, and graceful recoverability.",
+      "year": 0,
+      "slug": "wozniak-test"
     },
     {
       "title": "HPC (High Performance Compute)",
@@ -3533,6 +3671,12 @@
       "definition": "Distinct operational or behavioral mode in which an AI system functions, characterized by specific patterns or properties of data, parameters, or algorithms.",
       "year": 2018,
       "slug": "regime"
+    },
+    {
+      "title": "Circuit",
+      "definition": "A structured arrangement of computational or logical elements and their connections that implements, represents, or constrains computation in hardware or learned models.",
+      "year": 1970,
+      "slug": "circuit"
     },
     {
       "title": "Convolution",
@@ -3649,6 +3793,12 @@
       "slug": "swarm-intelligence"
     },
     {
+      "title": "DAWN (Distributed Agents in a Worldwide Network)",
+      "definition": "A globally distributed architecture of autonomous AI agents that coordinate across edge, cloud, and peer-to-peer infrastructure to perform collaborative tasks while preserving data locality, scalability, and autonomy.",
+      "year": 0,
+      "slug": "dawn-distributed-agents-in-a-worldwide-network"
+    },
+    {
       "title": "XenoCognition",
       "definition": "Exploration of cognition and intelligence in non-human entities, both biological and artificial, to broaden understanding of varied cognitive processes.",
       "year": 2022,
@@ -3749,6 +3899,12 @@
       "definition": "Ability of a system to understand, reason, and manipulate spatial relationships and properties within its environment.",
       "year": 1973,
       "slug": "spatial-intelligence"
+    },
+    {
+      "title": "AlphaFold",
+      "definition": "A deep learning system that predicts three-dimensional protein structures from amino-acid sequences with near‑experimental accuracy.",
+      "year": 2020,
+      "slug": "alphafold"
     },
     {
       "title": "Frame Problem",
@@ -3889,6 +4045,12 @@
       "slug": "gat-graph-attention-network"
     },
     {
+      "title": "Context Rot",
+      "definition": "Gradual degradation of the effective context used by an AI system—internal state, prompt history, or external knowledge—resulting in stale, contradictory, or less relevant outputs over time.",
+      "year": 2021,
+      "slug": "context-rot"
+    },
+    {
       "title": "Deterministic",
       "definition": "System or process is one that, given a particular initial state, will always produce the same output or result, with no randomness or unpredictability involved.",
       "year": 1937,
@@ -3977,6 +4139,12 @@
       "definition": "Character in a virtual environment that operates under AI control, exhibiting behaviors or responses not directed by human players.",
       "year": 1974,
       "slug": "npc-non-player-character"
+    },
+    {
+      "title": "Adaptive reasoning",
+      "definition": "The ability of a system to construct, adapt, and apply flexible chains of inference that integrate prior knowledge, observations, and meta-level strategies to solve novel or shifting problems.",
+      "year": 0,
+      "slug": "adaptive-reasoning"
     },
     {
       "title": "Baseline",
@@ -4129,6 +4297,12 @@
       "slug": "av-autonomous-vehicles"
     },
     {
+      "title": "GRPO (Grouped Regularized Policy Optimization)",
+      "definition": "A policy optimization framework that imposes structured (grouped) regularization on policy parameters or action/feature groups to stabilize learning, encourage shared structure, and improve generalization in RL settings.",
+      "year": 2020,
+      "slug": "grpo-grouped-regularized-policy-optimization"
+    },
+    {
       "title": "Feature Spec",
       "definition": "A written document that outlines the characteristics and requirements of features in an AI system or model, ensuring alignment with business goals and technical specifications.",
       "year": 0,
@@ -4189,6 +4363,12 @@
       "slug": "validation-metric"
     },
     {
+      "title": "L2M (Large Memory Model)",
+      "definition": "Decoder-only Transformer augmented with an auxiliary, addressable memory that stores and retrieves intermediate representations to enable multi-step reasoning and synthesis over contexts far beyond the native attention window.",
+      "year": 2023,
+      "slug": "l2m-large-memory-model"
+    },
+    {
       "title": "TTT (Test-Time Training)",
       "definition": "ML approach where the model adapts itself during the inference phase using auxiliary tasks and additional training data available at test time to improve performance.",
       "year": 2020,
@@ -4199,6 +4379,12 @@
       "definition": "Computational mechanism used in AI models to adjust certain characteristics of the model's outputs based on specific parameters or conditions.",
       "year": 1963,
       "slug": "control-vector"
+    },
+    {
+      "title": "Universality hypothesis",
+      "definition": "The proposition that a single sufficiently expressive model or computational architecture can represent or learn any target function or optimal policy given enough capacity, data, and suitable training procedures.",
+      "year": 1980,
+      "slug": "universality-hypothesis"
     },
     {
       "title": "Q-Learning",
@@ -4229,6 +4415,12 @@
       "definition": "Activation function commonly used in neural networks which outputs the input directly if it is positive, otherwise, it outputs zero.",
       "year": 2000,
       "slug": "relu-rectified-linear-unit"
+    },
+    {
+      "title": "VGG (Visual Geometry Group)",
+      "definition": "A University of Oxford research group whose 2014 deep convolutional network designs (VGGNet) demonstrated the practical benefits of very deep, uniformly structured CNNs with small convolutional kernels and became a standard backbone for image tasks.",
+      "year": 2014,
+      "slug": "vgg-visual-geometry-group"
     },
     {
       "title": "CSPs (Constraint Satisfaction Problems)",
@@ -4289,6 +4481,12 @@
       "definition": "A framework integrating geometric methods and concepts to improve AI models, particularly in tasks involving spatial understanding and representation.",
       "year": 0,
       "slug": "alpha-geometry"
+    },
+    {
+      "title": "Large Language Diffusion Models",
+      "definition": "A class of generative architectures that adapt diffusion-based stochastic denoising processes to produce and refine natural-language outputs at scale.",
+      "year": 2020,
+      "slug": "large-language-diffusion-models"
     },
     {
       "title": "Supervised Learning",
@@ -4571,6 +4769,12 @@
       "definition": "Method of encoding mathematical and logical statements as unique natural numbers, introduced by Kurt Gödel as part of his proof of the incompleteness theorems.",
       "year": 1931,
       "slug": "godel-code"
+    },
+    {
+      "title": "Hypernetworks",
+      "definition": "Networks that generate the weights or parameter vectors of another neural network, enabling conditional, compact, or adaptive model parameterizations.",
+      "year": 2016,
+      "slug": "hypernetworks"
     },
     {
       "title": "Lump of Task Fallacy",
@@ -4993,6 +5197,12 @@
       "slug": "top-k"
     },
     {
+      "title": "LCMs (Large Concept Models)",
+      "definition": "Models that learn and manipulate abstract, compositional concepts at scale to support robust reasoning, transfer, and multimodal grounding.",
+      "year": 2021,
+      "slug": "lcms-large-concept-models"
+    },
+    {
       "title": "Eval (Evaluation)",
       "definition": "Process of assessing the performance and effectiveness of an AI model or algorithm based on specified criteria and datasets.",
       "year": 1956,
@@ -5087,6 +5297,12 @@
       "definition": "Moravec's Paradox observes that tasks requiring high-level reasoning are easier for computers, while tasks humans find simple, like perception and mobility, are difficult for AI.",
       "year": 1980,
       "slug": "moravec-s-paradox"
+    },
+    {
+      "title": "INR (Implicit Neural Representation)",
+      "definition": "A continuous, coordinate-based neural function that encodes signals (e.g., images, 3D geometry, radiance fields, or audio) by mapping input coordinates to signal values, providing a compact, differentiable alternative to discrete grids.",
+      "year": 2020,
+      "slug": "inr-implicit-neural-representation"
     },
     {
       "title": "Saturation Effect",
@@ -5375,6 +5591,12 @@
       "definition": "A type of AI model designed to process data directly on the device it was collected from, limiting the need for data transfer.",
       "year": 2018,
       "slug": "edge-model"
+    },
+    {
+      "title": "Visual chain of thought",
+      "definition": "A sequence of explicit intermediate visual representations produced by a model that reveal and structure multi-step visual reasoning or planning to improve interpretability, correctness, and trainability.",
+      "year": 2022,
+      "slug": "visual-chain-of-thought"
     },
     {
       "title": "Unsupervised Learning",
@@ -5713,6 +5935,12 @@
       "slug": "bgpt-byte-level-transformer"
     },
     {
+      "title": "Capability elucidation",
+      "definition": "Systematic methods and analyses used to reveal which tasks, behaviors, and latent abilities an AI system possesses, the conditions under which they appear, and the mechanisms or failure modes that enable them.",
+      "year": 0,
+      "slug": "capability-elucidation"
+    },
+    {
       "title": "Boolean",
       "definition": "Based on Boolean algebra, involving binary variables representing true or false, essential for logic operations in AI systems.",
       "year": 1854,
@@ -5747,6 +5975,12 @@
       "definition": "AI field that applies ML techniques to graph-structured data, enabling the analysis and prediction of relationships and behaviors among interconnected nodes.",
       "year": 2017,
       "slug": "graph-machine-learning"
+    },
+    {
+      "title": "Information Bottleneck Theory",
+      "definition": "A principled information‑theoretic framework that seeks compact representations of inputs which retain maximal information about relevant outputs by trading off compression and predictive power.",
+      "year": 1999,
+      "slug": "information-bottleneck-theory"
     },
     {
       "title": "Saturating Non-Linearities",
@@ -5797,6 +6031,12 @@
       "slug": "similarity-search"
     },
     {
+      "title": "Meta Chain-of-Thought",
+      "definition": "A prompting and meta-learning approach that creates or selects higher-level reasoning templates to guide large language models toward producing more accurate, robust step-by-step chains of thought.",
+      "year": 2022,
+      "slug": "meta-chain-of-thought"
+    },
+    {
       "title": "Dimension Returns",
       "definition": "The output shape or size of the dimensions in a dataset, matrix, or tensor after a specific operation is performed, which is critical in ensuring proper alignment and compatibility in machine learning models.",
       "year": 2021,
@@ -5835,7 +6075,7 @@
     {
       "title": "NTP (Next Token Prediction)",
       "definition": "A core mechanism in language models where the system predicts the next word or token in a sequence, improving coherence and fluency.",
-      "year": 0,
+      "year": 2018,
       "slug": "ntp-next-token-prediction"
     },
     {
@@ -5843,6 +6083,12 @@
       "definition": "GPU-optimized attention mechanism designed to efficiently handle extremely large sequences of data in neural networks.",
       "year": 2021,
       "slug": "flash-attention"
+    },
+    {
+      "title": "Mixture of a Million Experts",
+      "definition": "An extreme-scale sparse Mixture-of-Experts design that routes each input to a tiny subset of millions of expert subnetworks, offering very large parameter capacity while keeping per-token computation low through conditional computation and sparse activation.",
+      "year": 2021,
+      "slug": "mixture-of-a-million-experts"
     },
     {
       "title": "Masking",
@@ -6109,6 +6355,12 @@
       "slug": "jepa-joint-embedding-predictive-architecture"
     },
     {
+      "title": "A2A (Agent to Agent)",
+      "definition": "Direct interactions between autonomous software agents that exchange information, negotiate, and coordinate actions to achieve distributed goals without centralized orchestration.",
+      "year": 0,
+      "slug": "a2a-agent-to-agent"
+    },
+    {
       "title": "Host",
       "definition": "The machine or server that acts as the environment for running and managing AI applications, processes, and data storage.",
       "year": 1980,
@@ -6143,6 +6395,12 @@
       "definition": "AI systems designed to provide insights into their behavior and decisions, making them transparent and understandable to humans.",
       "year": 2016,
       "slug": "xai-explainable-ai"
+    },
+    {
+      "title": "NeuMeta (Neural Metamorphosis)",
+      "definition": "A learned set of transformations that enable a neural network to change its internal structure and functional mapping across tasks or domains while preserving performance and transferable knowledge.",
+      "year": 2023,
+      "slug": "neumeta-neural-metamorphosis"
     },
     {
       "title": "Local Pooling",
@@ -6277,6 +6535,12 @@
       "slug": "sensor-fusion"
     },
     {
+      "title": "Differential Transformer",
+      "definition": "A transformer-based architecture that incorporates differential structure (derivatives, continuous-time dynamics, or differential operators) into attention and latent representations to better model continuous processes, sensitivities, and physics-informed tasks.",
+      "year": 2020,
+      "slug": "differential-transformer"
+    },
+    {
       "title": "Thermodynamic Bayesian Inference",
       "definition": "Framework that draws an analogy between thermodynamics and Bayesian probability theory to infer statistical models by treating inference as an energy-minimizing process.",
       "year": 2018,
@@ -6397,6 +6661,12 @@
       "slug": "federated-training"
     },
     {
+      "title": "VLA (Vision-Language-Action model)",
+      "definition": "A multimodal agent architecture that fuses visual perception and natural language understanding with action or control policies so an agent can interpret instructions and carry out tasks in physical or simulated environments.",
+      "year": 2022,
+      "slug": "vla-vision-language-action-model"
+    },
+    {
       "title": "Horizon",
       "definition": "Length of the future over which decisions are considered, with long horizon involving many future steps and short horizon involving only a few.",
       "year": 1980,
@@ -6481,6 +6751,12 @@
       "slug": "graph"
     },
     {
+      "title": "NFs (Normalizing Flows)",
+      "definition": "A family of generative models that construct complex probability densities by composing invertible, differentiable transformations whose Jacobian determinants are tractable for exact-likelihood evaluation.",
+      "year": 2016,
+      "slug": "nfs-normalizing-flows"
+    },
+    {
       "title": "RMSE (Root Mean Squared Error)",
       "definition": "A statistical measure used to quantify the difference between values predicted by a model and the values actually observed, providing a sense of how accurate the model's predictions are.",
       "year": 0,
@@ -6541,6 +6817,12 @@
       "slug": "assistant"
     },
     {
+      "title": "TDA (Topological Data Analysis)",
+      "definition": "Uses concepts from algebraic topology to extract multiscale, shape- and connectivity-based features from high-dimensional data, producing summaries (e.g., persistence diagrams) that are robust to noise and informative for ML tasks.",
+      "year": 2005,
+      "slug": "tda-topological-data-analysis"
+    },
+    {
       "title": "MLOps (Machine Learning Operations)",
       "definition": "Practice of collaboratively combining ML system development and ML system operation, aiming for faster deployment and reliable management.",
       "year": 2018,
@@ -6551,6 +6833,12 @@
       "definition": "Type of ensemble learning method that uses the predictions of several base regression models to train a second-level model to make a final prediction.",
       "year": 1996,
       "slug": "meta-regressor"
+    },
+    {
+      "title": "Self-Adaptive LLMs (Large Language Models)",
+      "definition": "Models that autonomously adjust prompts, parameters, inference strategies, or deployment behavior at runtime to improve task performance, robustness, or efficiency without requiring full offline retraining.",
+      "year": 2023,
+      "slug": "self-adaptive-llms-large-language-models"
     },
     {
       "title": "AI Effect",

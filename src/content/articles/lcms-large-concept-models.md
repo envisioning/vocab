@@ -1,0 +1,13 @@
+---
+title: LCMs (Large Concept Models)
+summary: Models that learn and manipulate abstract, compositional concepts at scale to support robust reasoning, transfer, and multimodal grounding.
+slug: lcms-large-concept-models
+---
+
+Models that learn and manipulate abstract, compositional concepts at scale to support robust reasoning, transfer, and multimodal grounding.
+
+LCMs (Large Concept Models) are large-scale foundation models structured or trained to represent, compose, and reason over high‑level conceptual primitives rather than (or in addition to) raw tokens or pixels. They combine ideas from representation learning, disentangled and symbolic representations, and multimodal alignment to produce latent spaces where semantically meaningful concepts (objects, relations, affordances, procedures, abstract categories) are explicitly encoded, manipulable, and composable. Practically, LCMs aim to improve systematic generalization, causal understanding, interpretability, and sample-efficient transfer across tasks and modalities by exposing concept-level variables or interfaces (e.g., concept vectors, concept bottlenecks, symbolic APIs) that downstream systems or humans can query and modify. Architecturally and algorithmically, LCM work spans contrastive and self‑supervised pretraining, structured latent-variable models, neuro‑symbolic hybrids, and methods for discovering and aligning concepts across languages, vision, and action spaces; evaluation emphasizes compositional generalization, causal interventions, and concept disentanglement, making LCMs relevant to robotics, scientific modeling, human–AI collaboration, and safety‑critical systems.
+
+First used as an explicit label around 2022–2024 in research and workshop discussions about concept‑oriented foundation models; the term gained broader traction in 2024–2025 as interest grew in augmenting large language and multimodal models with explicit concept representations and APIs for compositional reasoning and interpretability.
+
+Key contributors include cognitive-science and concept‑learning researchers (e.g., Joshua Tenenbaum, Brenden Lake, Tomer Ullman) who formalized human concept learning; representation- and disentanglement-focused ML researchers (e.g., Yoshua Bengio and collaborators) who developed structured latent approaches; and major labs (DeepMind, OpenAI, Meta AI and several academic groups) that advanced large-scale multimodal pretraining, neuro‑symbolic methods, and practical concept‑grounding techniques.

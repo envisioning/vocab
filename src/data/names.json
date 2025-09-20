@@ -6512,5 +6512,242 @@
     "rollo carpenter",
     "steve wozniak",
     "richard wallace"
+  ],
+  "geo-generative-engine-optimization": [
+    "unknown"
+  ],
+  "non-stationary-of-objectives": [
+    "unknown"
+  ],
+  "ntk-neural-tangent-kernel": [
+    "jascha sohl-dickstein",
+    "sanjeev arora",
+    "nicholas frosst",
+    "nikhil d. s. s. k. k. s. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k. k"
+  ],
+  "adam": [
+    "d.p. kingma",
+    "j.b. ba"
+  ],
+  "structured-noise": [
+    "unknown"
+  ],
+  "nars-non-axiomatic-reasoning-system": [
+    "pei wang",
+    "john l. pollock",
+    "michael j. smith",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "style-transfer": [
+    "leon gatys",
+    "alexander s. ecker",
+    "matthias bethge",
+    "justin johnson",
+    "elad hazan",
+    "li fei-fei",
+    "unknown"
+  ],
+  "collisionless-embedding-table": [
+    "unknown"
+  ],
+  "energy-based-models": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "david rumelhart",
+    "richard sutton",
+    "andrew y. ng",
+    "michael jordan"
+  ],
+  "taid-temporally-adaptive-interpolated-distillation": [
+    "unknown"
+  ],
+  "algorithmic-gains": [
+    "geoffrey hinton",
+    "yann lecun",
+    "yoshua bengio",
+    "ilya sutskever",
+    "andrew ng",
+    "jürgen schmidhuber",
+    "richard sutton"
+  ],
+  "chinchilla-optimality": [
+    "joaquin vanschoren",
+    "nando de freitas",
+    "geoffrey hinton",
+    "alexey dosovitskiy",
+    "yann lecun",
+    "ilya sutskever",
+    "unknown"
+  ],
+  "neural-style-transfer": [
+    "leon gatys",
+    "alexander s. ecker",
+    "matthias bethge",
+    "justin johnson",
+    "li fei-fei",
+    "andrej karpathy",
+    "yann lecun"
+  ],
+  "semantic-logic-gates": [
+    "unknown"
+  ],
+  "exponential-divergence": [
+    "unknown"
+  ],
+  "hopfield-networks": [
+    "john j. hopfield",
+    "david h. ackley",
+    "geoffrey e. hinton",
+    "terrence j. sejnowski",
+    "david j. c. mackay",
+    "yann lecun",
+    "unknown"
+  ],
+  "neural-long-term-memory-module": [
+    "unknown"
+  ],
+  "wozniak-test": [
+    "unknown"
+  ],
+  "alphafold": [
+    "john jumper",
+    "richard evans",
+    "alexander pritzel",
+    "jalaj tunyasuvunakool",
+    "mark e. r. o. a. r. m. s. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r. m. r."
+  ],
+  "context-rot": [
+    "unknown"
+  ],
+  "adaptive-reasoning": [
+    "unknown"
+  ],
+  "l2m-large-memory-model": [
+    "unknown"
+  ],
+  "universality-hypothesis": [
+    "john mccarthy",
+    "alan turing",
+    "marvin minsky",
+    "herbert simon",
+    "richard sutton",
+    "david silver",
+    "yann lecun"
+  ],
+  "vgg-visual-geometry-group": [
+    "karen simonyan",
+    "andrew zisserman"
+  ],
+  "large-language-diffusion-models": [
+    "unknown"
+  ],
+  "hypernetworks": [
+    "unknown"
+  ],
+  "nfs-normalizing-flows": [
+    "yoshua bengio",
+    "ian goodfellow",
+    "jascha sohl-dickstein",
+    "laurent dinh",
+    "david duvenaud",
+    "hugo larochelle",
+    "michael figurnov"
+  ],
+  "visual-chain-of-thought": [
+    "unknown"
+  ],
+  "capability-elucidation": [
+    "unknown"
+  ],
+  "information-bottleneck-theory": [
+    "naftali tishby",
+    "fernando c. pereira",
+    "william bialek",
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "mixture-of-a-million-experts": [
+    "geoffrey hinton",
+    "yan lecun",
+    "alex krizhevsky",
+    "noam shazeer",
+    "ashish vaswani",
+    "jacob devlin",
+    "zeynep akata"
+  ],
+  "neumeta-neural-metamorphosis": [
+    "unknown"
+  ],
+  "differential-transformer": [
+    "unknown"
+  ],
+  "self-adaptive-llms-large-language-models": [
+    "unknown"
+  ],
+  "ufr-unified-factored-representation": [
+    "unknown"
+  ],
+  "fft-accelerated-convolutions": [
+    "john w. cooley",
+    "james w. tukey",
+    "paul n. swarztrauber",
+    "david h. johnson",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "circuit": [
+    "claude shannon",
+    "john von neumann",
+    "alan turing",
+    "george boole",
+    "robert noyce",
+    "jack kilby",
+    "donald knuth"
+  ],
+  "dawn-distributed-agents-in-a-worldwide-network": [
+    "unknown"
+  ],
+  "grpo-grouped-regularized-policy-optimization": [
+    "unknown"
+  ],
+  "lcms-large-concept-models": [
+    "unknown"
+  ],
+  "meta-chain-of-thought": [
+    "unknown"
+  ],
+  "a2a-agent-to-agent": [
+    "unknown"
+  ],
+  "vla-vision-language-action-model": [
+    "unknown"
+  ],
+  "ggp-geometric-gaussian-processes": [
+    "unknown"
+  ],
+  "digital-cousin": [
+    "unknown"
+  ],
+  "tdl-topological-deep-learning": [
+    "unknown"
+  ],
+  "inr-implicit-neural-representation": [
+    "david m. m. h. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m. h. m"
+  ],
+  "tda-topological-data-analysis": [
+    "herbert edelsbrunner",
+    "john harer",
+    "gunnar carlsson",
+    "vin de silva",
+    "afra zomorodian",
+    "david cohen-steiner",
+    "h. j. h. (h. j. h.) m. (h. j. h.) m. (h. j. h.) m."
   ]
 }

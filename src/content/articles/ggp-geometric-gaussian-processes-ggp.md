@@ -1,0 +1,13 @@
+---
+title: GGP (Geometric Gaussian Processes)
+summary: Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.
+slug: ggp-geometric-gaussian-processes
+---
+
+A Bayesian nonparametric approach that extends Gaussian processes to data defined on curved domains or structured spaces by encoding the domain's geometry (manifold, graph, or mesh) into covariance kernels and spectral priors.
+
+Geometric Gaussian Processes (GGPs) generalize standard Gaussian processes (GPs) by constructing priors and kernels that respect intrinsic geometric structure — for example using heat kernels, diffusion kernels, Laplace–Beltrami eigenfunctions, or SPDE (stochastic partial differential equation) representations on manifolds and graphs. This permits principled uncertainty-aware regression, interpolation and latent-function modeling on non-Euclidean domains such as surfaces, point clouds, sensor networks, and state spaces in robotics, while preserving invariances and distances dictated by the geometry. Theoretical links connect GGPs to Matérn and diffusion-based covariance families, spectral decompositions of graph or manifold Laplacians, and to Gaussian Markov random fields via SPDE discretizations, enabling scalable approximations (sparse/inducing methods, reduced-rank eigenbases) and numerical implementations on meshes. In practice GGPs are used in spatial statistics, medical imaging and brain-surface analysis, geometric ML (Machine Learning) pipelines, physics-informed modeling on curved domains, and anywhere respecting non-Euclidean structure improves extrapolation and calibrated uncertainty quantification; they also interface closely with geometric deep learning and kernel learning on manifolds.
+
+First appearances of concepts combining GPs with explicit manifold/graph geometry trace to research in the 2000s–early 2010s, with noticeable popularity and broader adoption from the mid-to-late 2010s as SPDE/spectral methods and geometric ML tools matured.
+
+Key contributors include foundational GP authors Carl E. Rasmussen and Christopher K. I. Williams (GP theory), Lindgren, Rue and Lindström (SPDE link between Matérn fields and GMRFs), Simo Särkkä and coauthors (spectral and Hilbert-space GP methods on manifolds), Mark Girolami (Riemannian approaches and geometry-aware inference), researchers in geometric ML and graph-based methods (e.g., Michael Bronstein and collaborators), and broader spatial-statistics and GP communities that developed pragmatic and scalable implementations for meshes, graphs and manifold domains.

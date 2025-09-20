@@ -1,0 +1,13 @@
+---
+title: Adam
+summary: Adaptive learning-rate optimizer that combines momentum and per-parameter adaptive scaling using running estimates of the first and second moments of the gradients.
+slug: adam
+---
+
+Adam is a stochastic optimization algorithm that maintains exponentially decaying averages of past gradients (first moment) and past squared gradients (second moment), applies bias correction to those estimates, and uses their ratio to adaptively scale parameter updates, yielding stable and often fast convergence for deep models.
+
+At an expert level, Adam computes m_t = β1 m_{t-1} + (1−β1) g_t and v_t = β2 v_{t-1} + (1−β2) g_t^2 for gradient g_t, applies bias corrections m̂_t = m_t/(1−β1^t), v̂_t = v_t/(1−β2^t), and updates parameters with θ_{t+1} = θ_t − α · m̂_t / (√(v̂_t) + ε). This combination merges ideas from momentum and RMSprop: momentum smooths and accelerates along consistent gradient directions, while per-parameter second-moment scaling normalizes steps by recent gradient variance. Default hyperparameters (α ≈ 1e−3, β1 = 0.9, β2 = 0.999, ε = 1e−8) have proven robust across architectures, making Adam a common default in ML (Machine Learning) workflows for CNNs, RNNs and Transformers. Practical considerations include the doubled memory footprint (storing m and v), sensitivity to hyperparameter tuning (especially learning rate and weight decay), and known theoretical pitfalls (non-convergence in some convex settings and occasional worse generalization compared to SGD with momentum). These issues motivated variants and fixes—AdamW (decoupled weight decay), AMSGrad (convergence guarantees), Adamax and Nadam (Nesterov-style variant)—and best practices such as learning-rate warmup and decoupled regularization when training large-scale deep models.
+
+First published in 2014 and rapidly adopted within 2014–2016 as deep learning frameworks standardized training pipelines, Adam became a default optimizer in many ML projects and libraries.
+
+Key contributors include Diederik P. Kingma and Jimmy Ba (originators, "Adam: A Method for Stochastic Optimization"); subsequent important work addressing theory and practical fixes by Sashank J. Reddi, Satyen Kale, and Sanjiv Kumar (AMSGrad); Ilya Loshchilov and Frank Hutter (AdamW and related empirical insights); and contributors of variants such as Nadam (incorporating Nesterov momentum). Major ML framework teams (TensorFlow, PyTorch) and the broader deep learning community were instrumental in popularizing and iterating on Adam in practice.

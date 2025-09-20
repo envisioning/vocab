@@ -1,0 +1,13 @@
+---
+title: AlphaFold
+summary: A deep learning system that predicts three-dimensional protein structures from amino-acid sequences with near‑experimental accuracy.
+slug: alphafold
+---
+
+AlphaFold is a family of deep learning models that map amino‑acid sequences to high‑accuracy 3D protein structures by integrating evolutionary information, multiple-sequence alignments and learned geometric reasoning into an end‑to‑end differentiable architecture; it produces per‑residue confidence scores and atomic coordinates that often approach experimental resolution for many single‑chain proteins.
+
+From an AI and ML (Machine Learning) perspective AlphaFold represents a synthesis of modern sequence‑based representation learning and geometric deep learning: later versions (notably AlphaFold2) use an "Evoformer" block to exchange information between a multiple‑sequence alignment (MSA) representation and a pairwise residue representation, attention mechanisms and an invariant point attention (IPA) structure module to produce backbone and side‑chain coordinates directly. Training relied on supervised learning from the Protein Data Bank (PDB) and self‑consistency via recycling of predictions; losses combine atomic coordinate agreement and confidence metrics (e.g., pLDDT). The approach displaces decades of hand‑crafted coevolutionary scoring and energy‑based folding heuristics by learning implicit physical and evolutionary constraints, enabling rapid, large‑scale structure prediction that has immediate applications in structural biology, drug discovery, enzyme engineering and interpretation of genetic variants—while retaining known limitations for multi‑chain assemblies, dynamics, ligand and post‑translational modifications that often require experimental follow‑up.
+
+First used in 2018 (AlphaFold v1 at CASP13); it achieved widespread prominence after the AlphaFold2/CASP14 breakthrough in 2020 and the detailed Nature publication in 2021 that demonstrated its broad practical impact.
+
+Key contributors include DeepMind (the research group that developed AlphaFold), lead authors such as John Jumper and senior leadership including Demis Hassabis, plus the broader AlphaFold/structural‑biology teams responsible for AlphaFold and AlphaFold2; the method also builds on and was validated by the CASP (Critical Assessment of protein Structure Prediction) community and public resources like the Protein Data Bank, and is influenced by prior work in coevolutionary analysis and ML (Machine Learning) architectures (e.g., attention/transformer advances and geometric learning approaches).

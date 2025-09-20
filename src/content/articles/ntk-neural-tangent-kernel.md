@@ -1,0 +1,13 @@
+---
+title: NTK (Neural Tangent Kernel)
+summary: A kernel that characterizes the training-time function-space dynamics of wide neural networks by linearizing their parameter-to-function map around initialization.
+slug: ntk-neural-tangent-kernel
+---
+
+A kernel describing the linearized training dynamics of wide neural networks, which makes gradient-descent evolution equivalent to kernel regression in function space.
+
+The Neural Tangent Kernel (NTK) is derived by taking the Jacobian of a network’s outputs with respect to its parameters and forming the Gram matrix of these Jacobians; in the infinite-width limit this Gram matrix converges to a deterministic kernel, and gradient-based training of the network corresponds to closed-form kernel regression with that kernel. The NTK framework provides analytic predictions for convergence rates, generalization behavior, and the evolution of outputs during training, linking deep networks to classical kernel methods and to the Neural Network Gaussian Process (NNGP) perspective at initialization. It highlights the “lazy” or linearized-training regime—where features do not change substantially during training—and so clarifies when feature learning matters (finite-width or non-NTK regimes) versus when network behavior is well-approximated by a fixed kernel. Variants include convolutional NTKs (CNTK) and extensions that incorporate depth, architecture, and parameterization choices; NTK arguments have been used to study scaling laws, optimization stability, and to guide initialization and architectural design in ML (Machine Learning) research.
+
+First used/introduced in 2018 (Jacot, Gabriel & Hongler); it gained broad attention from 2018–2020 as a central tool for theoretical analysis of wide networks and to connect deep learning with kernel methods.
+
+Key contributors include Arthur Jacot, Franck Gabriel, and Clément Hongler (original NTK formulation); Radford M. Neal (earlier NNGP/GP connections for infinite-width networks); Jaehoon Lee, Yasaman Bahri, Sam S. Schoenholz and collaborators (rigorous wide-network linearization results and empirical studies); Greg Yang and the Tensor Programs group (formal scaling-limit machinery and rigorous derivations); and Novak, Bahri et al. for convolutional and architecture-specific extensions. These groups collectively developed the theoretical foundations, rigorous limits, and applied variants used in contemporary ML theory.

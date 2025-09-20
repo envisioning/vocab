@@ -1,0 +1,13 @@
+---
+title: collisionless embedding table
+summary: A serving and storage design for embedding vectors that eliminates hash collisions and contention to ensure accurate, low-latency retrieval at extreme scale.
+slug: collisionless-embedding-table
+---
+
+An embedding table design and lookup strategy that guarantees unique, non-conflicting addressing of embedding vectors so lookups and updates avoid collision-induced errors and tail-latency spikes.
+
+Collisionless embedding tables address a core operational weakness in large-scale embedding systems used by recommendation, retrieval, and representation-learning pipelines: many conventional designs rely on hashed, bucketed, or quantized indices that can produce collisions, eviction-based artifacts, or contention under heavy load, degrading model quality and incurring unpredictable latency. A collisionless approach uses deterministic, conflict-free addressing (for example via minimal perfect hashing, direct-address offsets, partitioned keyspaces, or object-store semantics) combined with storage and serving techniques—sharding aligned with hot-key distributions, persistent sparse formats on NVMe/NVM, and hardware-aware placement—to provide exact lookups, consistent training-serving semantics, and easier gradient synchronization. This is particularly important in ML (Machine Learning) systems where embeddings represent unique categorical identities or learned representations and where even rare mis-associations can bias recommendations or retrieval results; collisionless designs thus reduce error sources, simplify correctness reasoning, and improve tail-latency and throughput predictability in production embedding-serving stacks.
+
+First used in engineering discussions and technical reports around the late 2010s (circa 2018), the idea gained broader attention and adoption from roughly 2020–2023 as industry-scale recommender and retrieval systems pushed embedding cardinalities into the billions and required more predictable, accurate serving.
+
+Key contributors include industry engineering teams and research groups focused on large-scale recommender and retrieval infrastructure at Meta (Facebook), Google (including work around ScaNN and TFX-serving patterns), Amazon (AWS and advertising systems), and Microsoft (research and DeepSpeed-related efforts), alongside academic and systems-research work on perfect/minimal hashing and conflict-free data structures (e.g., research on minimal perfect hash functions and cuckoo hashing by the algorithms community) and open-source tooling such as FAISS and related vector-serving projects that influenced practical implementations.

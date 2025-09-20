@@ -1,0 +1,13 @@
+---
+title: Chinchilla optimality
+summary: A compute-optimal prescription for allocating parameters and training tokens that shows smaller models trained on more data can outperform larger, undertrained models given a fixed compute budget.
+slug: chinchilla-optimality
+---
+
+A concise characterization: for a fixed training compute budget, the optimal trade-off between model size and dataset size is achieved when model parameter count and number of training tokens scale together so that models are smaller but trained on substantially more tokens than prior practice, yielding lower loss for the same compute.
+
+Chinchilla optimality refers to the empirical and theoretical result introduced by DeepMind that revises earlier scaling-law prescriptions for large language models: given a fixed compute C, the training loss is minimized not by making N (parameter count) arbitrarily large, but by choosing N and the number of training tokens T so that T is proportional to N (empirically ≈20 tokens per parameter for decoder-only transformer-style LLMs), which implies N and T should both scale approximately as the square root of compute (N ∝ C^0.5 and T ∝ C^0.5). This finding follows from re-estimated scaling exponents and extensive experiments (e.g., the Chinchilla paper’s 70B-parameter model trained on ~1.4T tokens) and has practical consequences for ML (Machine Learning) practitioners: it alters compute-optimal model design, dataset sizing, and cost-effective allocation of compute for pretraining, and it explains why many larger models were undertrained relative to the compute they consumed. The concept informs model-development decisions (choice of N vs. T for a target compute budget), dataset collection strategies, and benchmarks for evaluating whether a model is compute- or data-limited.
+
+First use: 2022 (DeepMind’s "Chinchilla" paper introduced the term/idea); it gained wide popularity in 2022–2023 as researchers and practitioners re-evaluated training budgets and model-sizing choices for large language models.
+
+Key contributors: the Chinchilla analysis and experiments were introduced by DeepMind researchers (Hoffmann et al., 2022); the concept is built on prior scaling-law work such as Kaplan et al. (2020) from OpenAI, and has been further examined and applied by groups across the community including OpenAI, EleutherAI, and other academic and industry teams that study scaling laws and compute-optimal training strategies.
