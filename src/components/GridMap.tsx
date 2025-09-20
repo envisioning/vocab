@@ -4,15 +4,6 @@ import * as d3 from "d3";
 import { Node } from "@/types/article";
 import { useRouter } from "next/navigation";
 
-type MetricKey =
-  | "generality"
-  | "impact"
-  | "complexity"
-  | "popularity"
-  | "safety"
-  | "year"
-  | "newness";
-
 interface GridMapProps {
   nodes: Node[];
 }
@@ -21,14 +12,12 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
   const router = useRouter();
   const svgRef = useRef<SVGSVGElement>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [xAxis, setXAxis] = useState<MetricKey>("year");
-  const [yAxis, setYAxis] = useState<MetricKey>("generality");
+  // Fixed axes: X = year, Y = generality
   const [tooltipContent, setTooltipContent] = useState<{
     title: string;
     content: string;
     year: number | null;
     generality: number | null;
-    impact: number | null;
     x: number;
     y: number;
   } | null>(null);
@@ -81,11 +70,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     () =>
       rawNodes
         .filter((node) => {
-          const xValue =
-            xAxis === "year" ? node.year : node[xAxis as keyof Node];
-          const yValue =
-            yAxis === "year" ? node.year : node[yAxis as keyof Node];
-          return xValue != null && yValue != null;
+          return node.year != null && node.generality != null;
         })
         .map((node) => ({
           ...node,
@@ -96,7 +81,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           const bConnections = b.children?.length || 0;
           return bConnections - aConnections || (a.year || 0) - (b.year || 0);
         }),
-    [rawNodes, xAxis, yAxis]
+    [rawNodes]
   );
 
   // Helper function to get decades for the legend
@@ -109,17 +94,6 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     }
     return decades;
   };
-
-  // Array of metrics
-  const metrics: MetricKey[] = [
-    "generality",
-    "impact",
-    "complexity",
-    "popularity",
-    "safety",
-    "year",
-    "newness",
-  ];
 
   // Initialize SVG only once
   useEffect(() => {
@@ -135,16 +109,16 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     // Create the main group element
     const g = svg.append("g").attr("class", "main-group");
 
-    // Create scales
+    // Create scales - X axis for year, Y axis for generality
     const xScale = d3
       .scaleLinear()
-      .domain([0, 1])
+      .domain([0, 1]) // normalized year
       .range([margin.left, width - margin.right])
       .nice();
 
     const yScale = d3
       .scaleLinear()
-      .domain([0, 1])
+      .domain([0, 1]) // generality
       .range([height - margin.bottom, margin.top])
       .nice();
 
@@ -164,61 +138,29 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .attr("transform", `translate(${margin.left},0)`)
       .call(yAxisGen);
 
-    // **Append Axis Labels (Ordering Options)**
+    // **Append Fixed Axis Labels**
 
-    // X-Axis Labels
-    g.append("g")
-      .attr("class", "x-axis-labels")
-      .selectAll("text")
-      .data(metrics)
-      .enter()
-      .append("text")
-      .attr("transform", (_, i) => {
-        const xPos =
-          margin.left +
-          ((width - margin.left - margin.right) / metrics.length) * (i + 0.5);
-        return `translate(${xPos},${height - margin.bottom + 40})`;
-      })
-      .attr("text-anchor", "middle")
-      .attr("class", (d) =>
-        d === yAxis
-          ? "cursor-not-allowed text-gray-300"
-          : "cursor-pointer transition-colors duration-200"
+    // X-Axis Label (Year)
+    g.append("text")
+      .attr("class", "x-axis-label")
+      .attr(
+        "transform",
+        `translate(${width / 2},${height - margin.bottom + 40})`
       )
-      .style("fill", (d) => (d === xAxis ? "#000000" : "#6B7280")) // Black when selected, gray otherwise
-      .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
-      .on("click", (_, d) => {
-        if (d !== yAxis && d !== xAxis) {
-          setXAxis(d);
-        }
-      });
+      .attr("text-anchor", "middle")
+      .style("fill", "#000000")
+      .text("Year");
 
-    // Y-Axis Labels
-    g.append("g")
-      .attr("class", "y-axis-labels")
-      .selectAll("text")
-      .data(metrics.slice().reverse())
-      .enter()
-      .append("text")
-      .attr("transform", (_, i) => {
-        const yPos =
-          margin.top +
-          ((height - margin.top - margin.bottom) / metrics.length) * (i + 0.5);
-        return `translate(${margin.left - 40},${yPos}) rotate(-90)`;
-      })
-      .attr("text-anchor", "middle")
-      .attr("class", (d) =>
-        d === xAxis
-          ? "cursor-not-allowed text-gray-300"
-          : "cursor-pointer transition-colors duration-200"
+    // Y-Axis Label (Generality)
+    g.append("text")
+      .attr("class", "y-axis-label")
+      .attr(
+        "transform",
+        `translate(${margin.left - 40},${height / 2}) rotate(-90)`
       )
-      .style("fill", (d) => (d === yAxis ? "#000000" : "#6B7280")) // Black when selected, gray otherwise
-      .text((d) => d.charAt(0).toUpperCase() + d.slice(1))
-      .on("click", (_, d) => {
-        if (d !== xAxis && d !== yAxis) {
-          setYAxis(d);
-        }
-      });
+      .attr("text-anchor", "middle")
+      .style("fill", "#000000")
+      .text("Generality");
 
     // **Append Nodes Group After Gridlines and Labels**
 
@@ -264,32 +206,21 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
 
       g.select<SVGGElement>(".y-axis").call(yAxisGen);
 
-      // Update axis labels positions
-      // X-Axis Labels
-      g.selectAll("g.x-axis-labels text").attr("transform", (_, i) => {
-        const xPos =
-          margin.left +
-          ((newWidth - margin.left - margin.right) / metrics.length) *
-            (i + 0.5);
-        return `translate(${xPos},${newHeight - margin.bottom + 40})`;
-      });
-
-      // Y-Axis Labels
-      g.selectAll("g.y-axis-labels text").attr("transform", (_, i) => {
-        const yPos =
-          margin.top +
-          ((newHeight - margin.top - margin.bottom) / metrics.length) *
-            (i + 0.5);
-        return `translate(${margin.left - 40},${yPos}) rotate(-90)`;
-      });
+      // Update axis label positions
+      g.select(".x-axis-label").attr(
+        "transform",
+        `translate(${newWidth / 2},${newHeight - margin.bottom + 40})`
+      );
+      g.select(".y-axis-label").attr(
+        "transform",
+        `translate(${margin.left - 40},${newHeight / 2}) rotate(-90)`
+      );
 
       // Update nodes transition scales
       g.selectAll("g.nodes g.node").each(function (d: any) {
         const node = d3.select(this);
-        const xValue = xAxis === "year" ? d.normalizedYear : d[xAxis];
-        const yValue = yAxis === "year" ? d.normalizedYear : d[yAxis];
-        const x = xScale(xValue as number);
-        const y = yScale(yValue as number);
+        const x = xScale(d.normalizedYear as number);
+        const y = yScale(d.generality as number);
         node
           .transition()
           .duration(1000)
@@ -305,7 +236,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [xAxis, yAxis, metrics]);
+  }, []);
 
   // Update nodes when data or axes change
   useEffect(() => {
@@ -345,12 +276,8 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
         return `node ${isActive ? "cursor-pointer" : "pointer-events-none"}`;
       })
       .attr("transform", (d: Node) => {
-        const xValue =
-          xAxis === "year" ? d.normalizedYear : d[xAxis as keyof Node];
-        const yValue =
-          yAxis === "year" ? d.normalizedYear : d[yAxis as keyof Node];
-        const x = xScale(xValue as number);
-        const y = yScale(yValue as number);
+        const x = xScale(d.normalizedYear as number);
+        const y = yScale(d.generality as number);
         return `translate(${x},${y})`;
       });
 
@@ -389,8 +316,7 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           title: d.title || "",
           content: d.summary || "",
           year: d.year,
-          generality: d[xAxis as keyof Node] as number | null,
-          impact: d[yAxis as keyof Node] as number | null,
+          generality: d.generality,
           x,
           y,
         });
@@ -409,12 +335,8 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
       .transition()
       .duration(1000)
       .attr("transform", (d: Node) => {
-        const xValue =
-          xAxis === "year" ? d.normalizedYear : d[xAxis as keyof Node];
-        const yValue =
-          yAxis === "year" ? d.normalizedYear : d[yAxis as keyof Node];
-        const x = xScale(xValue as number);
-        const y = yScale(yValue as number);
+        const x = xScale(d.normalizedYear as number);
+        const y = yScale(d.generality as number);
         return `translate(${x},${y})`;
       });
 
@@ -495,15 +417,11 @@ export default function GridMap({ nodes: rawNodes }: GridMapProps) {
           }}
         >
           <div className="font-bold mb-1">{tooltipContent.title}</div>
-          {tooltipContent.year && (
-            <div className="text-gray-600 mb-1">
-              Year: {Math.floor(tooltipContent.year)}
-            </div>
-          )}
           <div className="text-gray-600 mb-1">
-            {xAxis}: {tooltipContent.generality?.toFixed(3)}
+            Year:{" "}
+            {tooltipContent.year ? Math.floor(tooltipContent.year) : "N/A"}
             <br />
-            {yAxis}: {tooltipContent.impact?.toFixed(3)}
+            Generality: {tooltipContent.generality?.toFixed(3)}
           </div>
           {tooltipContent.content && <div>{tooltipContent.content}</div>}
         </div>

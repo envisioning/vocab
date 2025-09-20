@@ -165,16 +165,11 @@ def assign_ids(hierarchy, terms):
     return id_mapping
 
 def load_additional_data():
-    """Load data from generality.json, years.json, names.json, impact.json, complexity.json, popularity.json, safety.json, and newness.json"""
+    """Load data from generality.json, years.json, and names.json"""
     data = {
         'generality': {},
         'years': {},
-        'names': {},
-        'impact': {},
-        'complexity': {},
-        'popularity': {},
-        'safety': {},
-        'newness': {}  # Add newness
+        'names': {}
     }
     
     try:
@@ -198,41 +193,7 @@ def load_additional_data():
     except Exception as e:
         logging.error(f"Error loading names.json: {str(e)}")
 
-    try:
-        with open('../data/impact.json', 'r') as f:
-            data['impact'] = json.load(f)
-        logging.info("Successfully loaded impact.json")
-    except Exception as e:
-        logging.error(f"Error loading impact.json: {str(e)}")
 
-    # Add new data files
-    try:
-        with open('../data/complexity.json', 'r') as f:
-            data['complexity'] = json.load(f)
-        logging.info("Successfully loaded complexity.json")
-    except Exception as e:
-        logging.error(f"Error loading complexity.json: {str(e)}")
-
-    try:
-        with open('../data/popularity.json', 'r') as f:
-            data['popularity'] = json.load(f)
-        logging.info("Successfully loaded popularity.json")
-    except Exception as e:
-        logging.error(f"Error loading popularity.json: {str(e)}")
-
-    try:
-        with open('../data/safety.json', 'r') as f:
-            data['safety'] = json.load(f)
-        logging.info("Successfully loaded safety.json")
-    except Exception as e:
-        logging.error(f"Error loading safety.json: {str(e)}")
-
-    try:
-        with open('../data/newness.json', 'r') as f:
-            data['newness'] = json.load(f)
-        logging.info("Successfully loaded newness.json")
-    except Exception as e:
-        logging.error(f"Error loading newness.json: {str(e)}")
     
     return data
 
@@ -255,45 +216,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
             else:
                 logging.warning(f"No generality found for term: {term}")
 
-            # Get impact if available
-            impact_avg = None
-            if id_mapping[term] in additional_data['impact']:
-                json_scores = additional_data['impact'][id_mapping[term]]
-                impact_avg = round(sum(json_scores) / len(json_scores), 3)
-            else:
-                logging.warning(f"No impact found for term: {term}")
 
-            # Get complexity if available
-            complexity_avg = None
-            if id_mapping[term] in additional_data['complexity']:
-                json_scores = additional_data['complexity'][id_mapping[term]]
-                complexity_avg = round(sum(json_scores) / len(json_scores), 3)
-            else:
-                logging.warning(f"No complexity found for term: {term}")
-
-            # Get popularity if available
-            popularity_avg = None
-            if id_mapping[term] in additional_data['popularity']:
-                json_scores = additional_data['popularity'][id_mapping[term]]
-                popularity_avg = round(sum(json_scores) / len(json_scores), 3)
-            else:
-                logging.warning(f"No popularity found for term: {term}")
-
-            # Get safety if available
-            safety_avg = None
-            if id_mapping[term] in additional_data['safety']:
-                json_scores = additional_data['safety'][id_mapping[term]]
-                safety_avg = round(sum(json_scores) / len(json_scores), 3)
-            else:
-                logging.warning(f"No safety found for term: {term}")
-
-            # Get newness if available
-            newness_avg = None
-            if id_mapping[term] in additional_data['newness']:
-                json_scores = additional_data['newness'][id_mapping[term]]
-                newness_avg = round(sum(json_scores) / len(json_scores), 3)
-            else:
-                logging.warning(f"No newness found for term: {term}")
 
             # Get year if available
             year = additional_data['years'].get(id_mapping[term])
@@ -306,12 +229,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 "name": term,
                 "summary": terms[term]['summary'],
                 "generality": generality_avg,
-                "impact": impact_avg,
-                "complexity": complexity_avg,
-                "popularity": popularity_avg,
-                "safety": safety_avg,
                 "year": year,
-                "newness": newness_avg,
                 "component": has_component,
                 "children": [
                     {
@@ -337,45 +255,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                 else:
                     logging.warning(f"No generality found for leaf term: {term}")
 
-                # Get impact if available
-                impact_avg = None
-                if id_mapping[term] in additional_data['impact']:
-                    json_scores = additional_data['impact'][id_mapping[term]]
-                    impact_avg = round(sum(json_scores) / len(json_scores), 3)
-                else:
-                    logging.warning(f"No impact found for leaf term: {term}")
 
-                # Get complexity if available
-                complexity_avg = None
-                if id_mapping[term] in additional_data['complexity']:
-                    json_scores = additional_data['complexity'][id_mapping[term]]
-                    complexity_avg = round(sum(json_scores) / len(json_scores), 3)
-                else:
-                    logging.warning(f"No complexity found for leaf term: {term}")
-
-                # Get popularity if available
-                popularity_avg = None
-                if id_mapping[term] in additional_data['popularity']:
-                    json_scores = additional_data['popularity'][id_mapping[term]]
-                    popularity_avg = round(sum(json_scores) / len(json_scores), 3)
-                else:
-                    logging.warning(f"No popularity found for leaf term: {term}")
-
-                # Get safety if available
-                safety_avg = None
-                if id_mapping[term] in additional_data['safety']:
-                    json_scores = additional_data['safety'][id_mapping[term]]
-                    safety_avg = round(sum(json_scores) / len(json_scores), 3)
-                else:
-                    logging.warning(f"No safety found for leaf term: {term}")
-
-                # Get newness if available
-                newness_avg = None
-                if id_mapping[term] in additional_data['newness']:
-                    json_scores = additional_data['newness'][id_mapping[term]]
-                    newness_avg = round(sum(json_scores) / len(json_scores), 3)
-                else:
-                    logging.warning(f"No newness found for leaf term: {term}")
 
                 # Get year if available
                 year = additional_data['years'].get(id_mapping[term])
@@ -388,12 +268,7 @@ def create_polyhierarchy(hierarchy, id_mapping, terms):
                     "name": term,
                     "summary": terms[term]['summary'],
                     "generality": generality_avg,
-                    "impact": impact_avg,
-                    "complexity": complexity_avg,
-                    "popularity": popularity_avg,
-                    "safety": safety_avg,
                     "year": year,
-                    "newness": newness_avg,
                     "component": has_component,
                     "children": []
                 }

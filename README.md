@@ -38,30 +38,6 @@ The entire index has been co-created with different AI tools in order to create 
 - We estimate the first citation or reference of each article with `GPT-4o-mini` and sometimes `Claude 3.5`.
 - These are manually compared against the time range indicated by article definitions.
 
-## Impact
-
-- Assessed by `GPT-4o-mini` to evaluate each concept's potential societal impact. Scores consider economic impact, social changes, ethical implications, and potential risks/benefits to society.
-- Higher scores (near 1.0) indicate concepts with massive potential societal impact (like AGI), while lower scores suggest minimal direct societal influence.
-- [Prompt](https://github.com/envisioning/vocab/blob/main/src/scripts/llm-impact.py).
-
-## Complexity
-
-- Assessed by `GPT-4o-mini` to measure technical and conceptual difficulty. Scores consider mathematical complexity, prerequisite knowledge needed, implementation difficulty, conceptual depth, and abstraction levels.
-- Higher scores indicate advanced concepts requiring deep expertise, while lower scores represent more accessible foundational concepts.
-- [Prompt](https://github.com/envisioning/vocab/blob/main/src/scripts/llm-complexity.py).
-
-## Popularity
-
-- Assessed by `GPT-4o-mini` to gauge current relevance and adoption. Scores factor in mainstream adoption, media coverage, industry usage, search volume, academic citations, and practical applications.
-- Higher scores indicate widely recognized concepts with significant public interest, while lower scores represent more specialized or emerging topics.
-- [Prompt](https://github.com/envisioning/vocab/blob/main/src/scripts/llm-popularity.py).
-
-## Safety
-
-- Assessed by `GPT-4o-mini` to evaluate AI safety implications. Scores consider potential misuse, robustness concerns, alignment challenges, safety research relevance, and catastrophic risk potential.
-- Higher scores indicate concepts crucial to AI safety (like AI Alignment), while lower scores suggest minimal direct safety implications.
-- [Prompt](https://github.com/envisioning/vocab/blob/main/src/scripts/llm-safety.py).
-
 ## Intersimilarity
 
 - The degree of similarity between each article pair is estimated in order to identify relationships between different concepts.

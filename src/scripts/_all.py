@@ -32,13 +32,9 @@ def main():
     scripts_to_run = [
         'flux-image-generation.py',
         'local-compress_images.py',
-        'llm-complexity.py',
         'llm-generality.py',
-        'llm-impact.py',
         'llm-names.py',
         'llm-years.py',
-        'llm-popularity.py',
-        'llm-safety.py',
         'local-flashcards.py',
         'local-polyhierarchy.py'
     ]
