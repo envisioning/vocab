@@ -377,7 +377,6 @@ function NavLinks({ isMobile = false }: { isMobile?: boolean }) {
   const links = [
     { href: "/grid", label: "Grid" },
     { href: "/node-graph", label: "Graph" },
-    { href: "/sunflower", label: "Sunflower" },
     { href: "/about", label: "Info" },
   ];
 

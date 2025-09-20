@@ -93,10 +93,6 @@ The entire index has been co-created with different AI tools in order to create 
 - Generative knowledge graph of all articles. Experimental but fully functional
 - Connections are created based on node similarity, creating a semantic map of the corpus.
 
-## [Sunflower](/vocab/sunflower/)
-
-- Experimentental view in the shape of a Fibonacci spiral.
-
 ## [Grid](/vocab/grid/)
 
 - Experimentental quadrant view of metadata.
