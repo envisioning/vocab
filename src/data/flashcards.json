@@ -499,6 +499,12 @@
       "slug": "slapa-self-learning-agent-for-performing-apis"
     },
     {
+      "title": "SPDE (Stochastic Partial Differential Equation)",
+      "definition": "A class of differential equations that model the evolution of spatially distributed systems under random forcing, combining partial differential operators with stochastic processes to represent spatiotemporal uncertainty.",
+      "year": 0,
+      "slug": "spde"
+    },
+    {
       "title": "MDL (Minimum Description Length)",
       "definition": "Principle formalization of Occam's Razor in information theory, advocating that the best hypothesis for a given set of data is the one that leads to the shortest total description of the data and the hypothesis.",
       "year": 1978,
@@ -5937,7 +5943,7 @@
     {
       "title": "Capability elucidation",
       "definition": "Systematic methods and analyses used to reveal which tasks, behaviors, and latent abilities an AI system possesses, the conditions under which they appear, and the mechanisms or failure modes that enable them.",
-      "year": 0,
+      "year": 2021,
       "slug": "capability-elucidation"
     },
     {
