@@ -38,7 +38,6 @@ def main():
         'llm-names.py',
         'llm-years.py',
         'llm-popularity.py',
-        'llm-quiz.py',
         'llm-safety.py',
         'local-flashcards.py',
         'local-polyhierarchy.py'

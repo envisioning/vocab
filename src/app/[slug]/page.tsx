@@ -3,9 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { Metadata } from "next";
-import { existsSync } from "fs";
 import { Suspense } from "react";
 import { Article } from "@/types/article";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -15,10 +13,8 @@ import { redirect } from "next/navigation";
 import KeyboardNavigation from "@/components/KeyboardNavigation";
 import hierarchyData from "@/data/polyhierarchy.json";
 import ReportErrorButton from "@/components/ReportErrorButton";
-import ComponentFeedback from "@/components/ComponentFeedback";
 import Link from "next/link";
 import { toTitleCase } from "@/lib/formatters";
-import Quiz from "@/components/Quiz";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import RelatedPapers from "@/components/RelatedPapers";
 import RelatedVideos from "@/components/RelatedVideos";
@@ -154,41 +150,6 @@ export default async function ArticlePage({
 
   const { frontmatter, content, hasImage } = articleContent;
 
-  const possiblePaths = [
-    path.join(process.cwd(), "src/components/articles", `${slug}.tsx`),
-    ...fs
-      .readdirSync(path.join(process.cwd(), "src/components/articles"))
-      .filter(
-        (dir) =>
-          (dir.startsWith("0") || dir.startsWith("1") || dir.startsWith("2")) &&
-          fs
-            .statSync(path.join(process.cwd(), "src/components/articles", dir))
-            .isDirectory()
-      )
-      .map((dir) =>
-        path.join(process.cwd(), "src/components/articles", dir, `${slug}.tsx`)
-      ),
-  ];
-
-  const customComponentPath = possiblePaths.find((path) => existsSync(path));
-  const hasCustomComponent = !!customComponentPath;
-
-  const CustomComponent = hasCustomComponent
-    ? dynamic(
-        () => {
-          const relativePath = customComponentPath!.split(
-            "src/components/articles/"
-          )[1];
-          return import(
-            `../../components/articles/${relativePath.replace(/\.tsx$/, "")}`
-          );
-        },
-        {
-          ssr: true,
-        }
-      )
-    : null;
-
   const generality =
     Array.isArray(frontmatter.generality) && frontmatter.generality.length > 0
       ? Number(
@@ -244,18 +205,6 @@ export default async function ArticlePage({
                   [&>p+p]:mt-8"
                 dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
               />
-
-              {CustomComponent && (
-                <>
-                  <h3 className="text-lg font-semibold text-gray-700 mb-2">
-                    Explainer
-                  </h3>
-                  <CustomComponent />
-                  <ComponentFeedback slug={slug} />
-                </>
-              )}
-
-              <Quiz slug={slug} />
 
               <div className="text-gray-500">
                 {articleContent.names &&
