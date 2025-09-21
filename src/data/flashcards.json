@@ -45,7 +45,7 @@
     {
       "title": "Naive Semantics",
       "definition": "An approach to interpreting logical expressions based on straightforward and intuitive understandings without leveraging more complex or computational interpretations.",
-      "year": 0,
+      "year": 1988,
       "slug": "naive-semantics"
     },
     {
@@ -177,7 +177,7 @@
     {
       "title": "GEO (Generative Engine Optimization)",
       "definition": "A coordinated set of training‑time and inference‑time techniques that optimize generative model behavior for quality, controllability, cost, latency, and safety across deployment contexts.",
-      "year": 0,
+      "year": 2023,
       "slug": "geo-generative-engine-optimization"
     },
     {
@@ -191,12 +191,6 @@
       "definition": "Type of artificial neural network designed to improve the processing of spatial hierarchical information by encoding data into small groups of neurons called capsules.",
       "year": 2017,
       "slug": "capsule-networks"
-    },
-    {
-      "title": "GGP (Geometric Gaussian Processes)",
-      "definition": "Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.",
-      "year": 0,
-      "slug": "ggp-geometric-gaussian-processes"
     },
     {
       "title": "Gorilla Program",
@@ -1675,12 +1669,6 @@
       "slug": "zsl-zero-shot-learning"
     },
     {
-      "title": "TUO (Technologies of Unknown Origin)",
-      "definition": "Refers to emerging technologies whose fundamental characteristics or origins are not fully understood, often explored for their potential in advancing AI or other fields.",
-      "year": 0,
-      "slug": "tuo-technologies-of-unknown-origin"
-    },
-    {
       "title": "Markov Blanket",
       "definition": "A concept in probabilistic graphical models representing a node's minimal set of dependencies, crucial for inferring the node's behavior in a network.",
       "year": 1988,
@@ -1691,6 +1679,12 @@
       "definition": "Ability of an algorithm or model to deliver consistent and accurate results under varying operating conditions and input perturbations.",
       "year": 2015,
       "slug": "robustness"
+    },
+    {
+      "title": "TUO (Technologies of Unknown Origin)",
+      "definition": "Refers to emerging technologies whose fundamental characteristics or origins are not fully understood, often explored for their potential in advancing AI or other fields.",
+      "year": 0,
+      "slug": "tuo-technologies-of-unknown-origin"
     },
     {
       "title": "Batch Size",
@@ -3971,6 +3965,12 @@
       "definition": "Representations of items, like words, sentences, or objects, in a continuous vector space, facilitating their quantitative comparison and manipulation by AI models.",
       "year": 2013,
       "slug": "embedding"
+    },
+    {
+      "title": "GGP (Geometric Gaussian Processes)",
+      "definition": "Development of algorithms and statistical models that enable computers to perform tasks without being explicitly programmed for each one.",
+      "year": 0,
+      "slug": "ggp-geometric-gaussian-processes"
     },
     {
       "title": "Rank Fusion",
