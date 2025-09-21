@@ -2,8 +2,8 @@
 const nextConfig = {
   basePath: '/vocab',
   experimental: {
-    serverActions: true,
-    runtime: "edge",
+    // Server Actions are enabled by default in Next.js 15
+    // serverActions: {},
   },
   async headers() {
     return [

@@ -3,7 +3,7 @@ import ArticleCard from "@/components/ArticleCard";
 import namesData from "@/data/names.json";
 import hierarchyData from "@/data/polyhierarchy.json";
 import { notFound } from "next/navigation";
-import { toTitleCase } from "@/lib/formatters";
+import { toTitleCase, generateSafeSlug } from "@/lib/formatters";
 
 interface PageProps {
   params: Promise<{
@@ -18,7 +18,9 @@ export function generateStaticParams() {
   Object.values(namesData).forEach((names) => {
     names.forEach((name) => {
       if (name !== "unknown") {
-        uniqueNames.add(name.toLowerCase().replace(/\s+/g, "-"));
+        // Use safe slug generation to prevent ENAMETOOLONG errors
+        const safeSlug = generateSafeSlug(name);
+        uniqueNames.add(safeSlug);
       }
     });
   });
@@ -30,11 +32,19 @@ export function generateStaticParams() {
 
 // Get all articles for a specific contributor
 async function getArticlesForContributor(name: string): Promise<Article[]> {
-  const originalName = name.replace(/-/g, " ");
   const articles: Article[] = [];
 
   Object.entries(namesData).forEach(([slug, contributors]) => {
-    if (contributors.includes(originalName)) {
+    // Check if any of the contributors has a safe slug that matches our current name
+    const matchingContributor = contributors.find((contributor) => {
+      if (contributor !== "unknown") {
+        const safeSlug = generateSafeSlug(contributor);
+        return safeSlug === name;
+      }
+      return false;
+    });
+
+    if (matchingContributor) {
       const article = hierarchyData.find((item) => item.slug === slug);
       if (article) {
         // Only add articles with known years (year !== 0)
@@ -62,11 +72,27 @@ async function getArticlesForContributor(name: string): Promise<Article[]> {
 
 export default async function ContributorPage({ params }: PageProps) {
   const { name } = await params;
-  const decodedName = name.replace(/-/g, " ");
   const articles = await getArticlesForContributor(name);
 
   if (articles.length === 0) {
     notFound();
+  }
+
+  // Find the actual contributor name for display
+  let displayName = name.replace(/-/g, " ");
+
+  // Look up the actual name from the data
+  for (const contributors of Object.values(namesData)) {
+    const matchingContributor = contributors.find((contributor) => {
+      if (contributor !== "unknown") {
+        return generateSafeSlug(contributor) === name;
+      }
+      return false;
+    });
+    if (matchingContributor) {
+      displayName = matchingContributor;
+      break;
+    }
   }
 
   return (
@@ -76,7 +102,7 @@ export default async function ContributorPage({ params }: PageProps) {
           <div className="px-8 py-6">
             <div className="flex items-baseline gap-3">
               <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                {toTitleCase(decodedName)}
+                {toTitleCase(displayName)}
               </h1>
               <span className="text-lg text-gray-500 dark:text-gray-400">
                 ({articles.length} article{articles.length !== 1 ? "s" : ""})
