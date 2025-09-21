@@ -1,0 +1,13 @@
+---
+title: AIMC (Analog In-Memory Computing)
+summary: Performs computation inside memory arrays by storing weights as analog conductances and exploiting physical laws to execute massively parallel matrix–vector multiplications, reducing data movement and energy for AI workloads.
+slug: aimc-analog-in-memory-computing
+---
+
+Performs computation inside memory arrays by storing weights as analog conductances and exploiting Ohm’s and Kirchhoff’s laws to execute massively parallel matrix–vector multiplies for AI workloads.
+
+Analog In‑Memory Computing (AIMC) is a mixed‑signal hardware paradigm that implements key linear algebra operations—primarily dense matrix–vector multiplications—directly in memory arrays by encoding weights as analog conductances (e.g., resistive memory, phase‑change memory) and applying input voltages to produce summed currents on bitlines. This eliminates frequent, energy‑hungry transfers between separate memory and processing units and therefore offers orders‑of‑magnitude improvements in energy efficiency and throughput for inference and certain training tasks in AI and ML. Realizing these gains requires careful co‑design across device physics, circuit peripherals (DACs/ADCs, integrators, selectors), architecture (crossbar tiling, mapping, sparsity exploitation) and algorithms (noise‑aware training, quantization, calibration, mixed‑precision schemes) to mitigate device non‑idealities such as variability, drift, nonlinearity, limited conductance states, thermal noise and ADC/DAC overhead. AIMC is especially attractive for large DNN inference (CNNs, transformer layers, embedding lookups) and emerging in‑situ or hybrid training methods, but it remains constrained by precision, programmability and integration challenges that dictate where hybrid digital‑analog flows are most effective.
+
+First used in the early 2010s; gained broad research and industry popularity from ~2016 through the early 2020s as deep learning scale, and advances in resistive memories (RRAM, PCM, memristors) and mixed‑signal design renewed focus on energy‑efficient DNN accelerators.
+
+Key contributors include device and memristor pioneers at HP Labs (Stanley Williams) and collaborators (Dmitri Strukov), researchers working on resistive and phase‑change memories (e.g., H.‑S. Philip Wong), neuromorphic and in‑memory computing groups at IBM Research and various universities (UC Santa Barbara, Stanford, MIT, ETH Zurich, CEA‑Leti), and startups/commercial efforts translating AIMC concepts to products (e.g., Crossbar, Mythic). Progress has been highly interdisciplinary, driven by a combination of memory‑device physicists, mixed‑signal circuit designers, computer architects and ML algorithm researchers.

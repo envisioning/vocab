@@ -2119,6 +2119,12 @@
       "slug": "numerical-data"
     },
     {
+      "title": "AFMs (Analog Foundation Models)",
+      "definition": "Large-scale pretrained models architected or deployed to run primarily on analog computation substrates (e.g., memristive crossbars, photonic processors, or neuromorphic circuits) to exploit orders-of-magnitude improvements in energy and latency compared with conventional digital accelerators.",
+      "year": 0,
+      "slug": "afms-analog-foundation-models"
+    },
+    {
       "title": "Task Environment",
       "definition": "Setting or context within which an intelligent agent operates and attempts to achieve its objectives.",
       "year": 1956,
@@ -6677,6 +6683,12 @@
       "definition": "Length of the future over which decisions are considered, with long horizon involving many future steps and short horizon involving only a few.",
       "year": 1980,
       "slug": "horizon"
+    },
+    {
+      "title": "AIMC (Analog In-Memory Computing)",
+      "definition": "Performs computation inside memory arrays by storing weights as analog conductances and exploiting physical laws to execute massively parallel matrix–vector multiplications, reducing data movement and energy for AI workloads.",
+      "year": 0,
+      "slug": "aimc-analog-in-memory-computing"
     },
     {
       "title": "Spatial Autoencoder",
