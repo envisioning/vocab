@@ -1,0 +1,11 @@
+---
+title: Universal Approximation Theorem
+summary: A feedforward neural network with a single sufficiently large hidden layer and an appropriate activation can approximate any continuous function on a compact domain arbitrarily well.
+slug: universal-approximation-theorem
+---
+
+The universal approximation theorem states that, under mild conditions on the activation function, a feedforward NN (neural networks) with one hidden layer is dense in the space of continuous functions on a compact subset of R^n, meaning for any continuous target and any ε>0 there exist network weights that make the sup-norm error smaller than ε. In AI and ML theory this result provides a basic existential guarantee of representational capacity: it shows that shallow architectures can approximate arbitrary continuous mappings given enough neurons and appropriate nonlinearities (classically sigmoidal or any nonpolynomial activation), but it is silent about the number of neurons required, the tractability of finding the weights (training), generalization from finite data, or computational efficiency. Modern work extends and refines the theorem to different activations (e.g., ReLU), to measures of approximation complexity (rates, width–depth tradeoffs), and to function classes beyond continuous functions, informing why deep architectures often offer much greater parameter efficiency and why depth vs. width matters in practice.
+
+First formal proofs appeared in the late 1980s (Hecht‑Nielsen 1987; Cybenko 1989; Hornik et al. 1989), with the theorem becoming established in the ML community through the 1990s; interest resurged in the 2010s as researchers examined depth–width tradeoffs and practical implications for deep learning.
+
+Key contributors include George Cybenko (1989) and Kurt Hornik (with Stinchcombe & White, 1989–1991) for the foundational proofs, K. Hecht‑Nielsen for earlier related work, and historically the Kolmogorov–Arnold representation results that motivated decomposition perspectives; more recent contributors analyzing depth, width, rates, and ReLU behavior include Telgarsky, Mhaskar & Poggio, Hanin & Sellke, Lu et al., and others who developed the modern refinements and limits of universality.

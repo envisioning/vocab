@@ -6758,5 +6758,14 @@
   ],
   "aimc-analog-in-memory-computing": [
     "unknown"
+  ],
+  "universal-approximation-theorem": [
+    "george cybenko",
+    "kurt hornik",
+    "maxwell rosenblatt",
+    "paul werbos",
+    "vladimir vapnik",
+    "yoshua bengio",
+    "geoffrey hinton"
   ]
 }
