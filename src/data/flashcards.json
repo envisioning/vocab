@@ -2121,7 +2121,7 @@
     {
       "title": "AFMs (Analog Foundation Models)",
       "definition": "Large-scale pretrained models architected or deployed to run primarily on analog computation substrates (e.g., memristive crossbars, photonic processors, or neuromorphic circuits) to exploit orders-of-magnitude improvements in energy and latency compared with conventional digital accelerators.",
-      "year": 0,
+      "year": 2023,
       "slug": "afms-analog-foundation-models"
     },
     {
@@ -3519,7 +3519,7 @@
     {
       "title": "FFT Accelerated Convolutions",
       "definition": "Using frequency-domain multiplication via FFT (Fast Fourier Transform) to compute linear convolutions more efficiently than direct time-domain methods, especially for large kernels or long signals common in ML (Machine Learning) workloads.",
-      "year": 0,
+      "year": 1980,
       "slug": "fft-accelerated-convolutions"
     },
     {
@@ -4491,7 +4491,7 @@
     {
       "title": "Alpha Geometry",
       "definition": "A framework integrating geometric methods and concepts to improve AI models, particularly in tasks involving spatial understanding and representation.",
-      "year": 0,
+      "year": 2021,
       "slug": "alpha-geometry"
     },
     {
@@ -5957,6 +5957,12 @@
       "definition": "Based on Boolean algebra, involving binary variables representing true or false, essential for logic operations in AI systems.",
       "year": 1854,
       "slug": "boolean"
+    },
+    {
+      "title": "Universal Approximation Theorem",
+      "definition": "A feedforward neural network with a single sufficiently large hidden layer and an appropriate activation can approximate any continuous function on a compact domain arbitrarily well.",
+      "year": 1989,
+      "slug": "universal-approximation-theorem"
     },
     {
       "title": "Scaffolding",

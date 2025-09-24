@@ -34807,3 +34807,25 @@
 2025-09-24 16:41:49,091 - INFO - Output of llm-names.py:
 2025-09-24 16:41:49,091 - INFO -   Found 1150 Markdown files to process
 2025-09-24 16:41:49,091 - INFO - [5/7] Starting execution of: llm-years.py
+2025-09-24 16:43:11,835 - INFO - [5/7] ✓ llm-years.py completed successfully in 82.74s
+2025-09-24 16:43:11,835 - INFO - Output of llm-years.py:
+2025-09-24 16:43:11,835 - INFO -   Error processing ggp-geometric-gaussian-processes-ggp: 
+2025-09-24 16:43:11,835 - INFO -   Error processing root-in-decision-tree-context: 
+2025-09-24 16:43:11,835 - INFO -   Error processing root-mean-squared-error-rmse: 
+2025-09-24 16:43:11,835 - INFO -   Error processing technologies-of-unknown-origin-tuo:
+2025-09-24 16:43:11,835 - INFO - [6/7] Starting execution of: local-flashcards.py
+2025-09-24 16:43:11,912 - INFO - [6/7] ✓ local-flashcards.py completed successfully in 0.08s
+2025-09-24 16:43:11,912 - INFO - Output of local-flashcards.py:
+2025-09-24 16:43:11,912 - INFO -   Processing Summary:
+2025-09-24 16:43:11,912 - INFO -   Total files found: 1150
+2025-09-24 16:43:11,912 - INFO -   Successfully processed: 1150
+2025-09-24 16:43:11,912 - INFO -   Skipped files (no frontmatter/title): 0
+2025-09-24 16:43:11,912 - INFO -   Files with errors: 0
+2025-09-24 16:43:11,912 - INFO - [7/7] Starting execution of: local-polyhierarchy.py
+2025-09-24 16:43:15,981 - INFO - [7/7] ✓ local-polyhierarchy.py completed successfully in 4.07s
+2025-09-24 16:43:15,982 - INFO - No stdout output from local-polyhierarchy.py
+2025-09-24 16:43:15,982 - INFO - ============================================================
+2025-09-24 16:43:15,982 - INFO - ✓ All scripts completed successfully!
+2025-09-24 16:43:15,982 - INFO - Total execution time: 110.05 seconds
+2025-09-24 16:43:15,982 - INFO - Average time per script: 15.72 seconds
+2025-09-24 16:43:15,982 - INFO - ============================================================
