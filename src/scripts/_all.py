@@ -86,7 +86,6 @@ def main():
         'flux-image-generation.py',
         'local-compress_images.py',
         'llm-generality.py',
-        'llm-names.py',
         'llm-years.py',
         'local-flashcards.py',
         'local-polyhierarchy.py'

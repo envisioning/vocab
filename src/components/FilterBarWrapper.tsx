@@ -5,49 +5,11 @@ import { usePathname } from "next/navigation";
 import { Article } from "@/types/article";
 import FilterBar from "./FilterBar";
 
-// Add title case helper at the top of the file
-const toTitleCase = (str: string) => {
-  return str
-    .split(" ")
-    .map((word) => {
-      // Handle special cases like "v." in names like "Quoc V. Le"
-      if (word.toLowerCase() === "v.") return "V.";
-      // Capitalize first letter of each word
-      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    })
-    .join(" ");
-};
-
-// Helper function to get authors cited in multiple articles
-const getFrequentAuthors = (namesData: Record<string, string[]>) => {
-  const authorFrequency: Record<string, number> = {};
-
-  // Count appearances of each author
-  Object.values(namesData).forEach((authors) => {
-    authors.forEach((author) => {
-      // Skip 'Unknown' authors
-      if (author.toLowerCase() !== "unknown") {
-        authorFrequency[author] = (authorFrequency[author] || 0) + 1;
-      }
-    });
-  });
-
-  // Filter authors with more than 2 citations and sort alphabetically
-  return Object.entries(authorFrequency)
-    .filter(([_, count]) => count > 2)
-    .map(([author]) => toTitleCase(author))
-    .sort((a, b) => a.localeCompare(b));
-};
-
 interface FilterBarWrapperProps {
   articles: Article[];
-  namesData: Record<string, string[]>;
 }
 
-export default function FilterBarWrapper({
-  articles,
-  namesData,
-}: FilterBarWrapperProps) {
+export default function FilterBarWrapper({ articles }: FilterBarWrapperProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOption, setSortOption] = useState("zap");
   const pathname = usePathname();
@@ -57,11 +19,6 @@ export default function FilterBarWrapper({
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  const frequentAuthors = useMemo(
-    () => getFrequentAuthors(namesData),
-    [namesData]
-  );
 
   const handleSearch = (value: string) => {
     setSearchTerm(value);
@@ -100,7 +57,7 @@ export default function FilterBarWrapper({
   };
 
   const filteredResults = useMemo(() => {
-    if (!searchTerm) return { articles, authors: frequentAuthors };
+    if (!searchTerm) return { articles };
 
     const searchLower = searchTerm.toLowerCase();
 
@@ -119,20 +76,8 @@ export default function FilterBarWrapper({
         return a.title.localeCompare(b.title);
       });
 
-    // Filter authors
-    const filteredAuthors = frequentAuthors
-      .filter((author) => author.toLowerCase().includes(searchLower))
-      .sort((a, b) => {
-        const priorityA = getSearchPriority(a, searchTerm);
-        const priorityB = getSearchPriority(b, searchTerm);
-        if (priorityB !== priorityA) {
-          return priorityB - priorityA;
-        }
-        return a.localeCompare(b);
-      });
-
-    return { articles: filteredArticles, authors: filteredAuthors };
-  }, [articles, searchTerm, frequentAuthors]);
+    return { articles: filteredArticles };
+  }, [articles, searchTerm]);
 
   // Always render the same structure, just without theme classes before mount
   return (
@@ -143,7 +88,6 @@ export default function FilterBarWrapper({
       onSortChange={handleSort}
       allArticles={articles}
       filteredArticles={filteredResults.articles}
-      filteredAuthors={filteredResults.authors}
       isHomeRoute={isHomeRoute}
       getSearchPriority={getSearchPriority}
     />

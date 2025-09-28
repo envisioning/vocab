@@ -165,11 +165,10 @@ def assign_ids(hierarchy, terms):
     return id_mapping
 
 def load_additional_data():
-    """Load data from generality.json, years.json, and names.json"""
+    """Load data from generality.json and years.json"""
     data = {
         'generality': {},
-        'years': {},
-        'names': {}
+        'years': {}
     }
     
     try:
@@ -186,12 +185,6 @@ def load_additional_data():
     except Exception as e:
         logging.error(f"Error loading years.json: {str(e)}")
         
-    try:
-        with open('../data/names.json', 'r') as f:
-            data['names'] = json.load(f)
-        logging.info("Successfully loaded names.json")
-    except Exception as e:
-        logging.error(f"Error loading names.json: {str(e)}")
 
 
     

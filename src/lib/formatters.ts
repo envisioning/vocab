@@ -7,7 +7,7 @@ export function toTitleCase(str: string): string {
 
 /**
  * Generate a safe slug for file paths with a maximum length
- * @param name - The contributor name
+ * @param name - The name to convert to slug
  * @param maxLength - Maximum length for the slug (default: 50)
  * @returns A slug-safe string
  */

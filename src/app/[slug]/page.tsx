@@ -13,8 +13,6 @@ import { redirect } from "next/navigation";
 import KeyboardNavigation from "@/components/KeyboardNavigation";
 import hierarchyData from "@/data/polyhierarchy.json";
 import ReportErrorButton from "@/components/ReportErrorButton";
-import Link from "next/link";
-import { toTitleCase } from "@/lib/formatters";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://envisioning.io";
@@ -38,15 +36,11 @@ async function getArticleContent(slug: string): Promise<{
   content: string;
   hasImage: boolean;
   slug: string;
-  names?: string[];
 } | null> {
   const article = hierarchyData.find((item) => item.slug === slug);
   if (!article) {
     return null;
   }
-
-  const namesData = require("@/data/names.json");
-  const names = namesData[slug] || [];
 
   const filePath = path.join(
     process.cwd(),
@@ -73,7 +67,6 @@ async function getArticleContent(slug: string): Promise<{
     content,
     hasImage: true,
     slug,
-    names,
   };
 }
 
@@ -204,35 +197,6 @@ export default async function ArticlePage({
               />
 
               <div className="text-gray-500">
-                {articleContent.names &&
-                  articleContent.names.length > 0 &&
-                  (() => {
-                    const visibleContributors = articleContent.names.filter(
-                      (name) => name.toLowerCase() !== "unknown"
-                    );
-
-                    return visibleContributors.length > 0 ? (
-                      <div className="mb-4">
-                        <h3 className="text-lg font-semibold text-gray-700 mb-2">
-                          Key Contributors
-                        </h3>
-                        <div className="flex flex-wrap gap-2">
-                          {visibleContributors.map((name, index) => (
-                            <Link
-                              key={index}
-                              href={`/contributors/${name
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")}`}
-                              className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-                            >
-                              {toTitleCase(name)}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    ) : null;
-                  })()}
-
                 <div className="block">
                   <a
                     href="/vocab/about/#generality"
