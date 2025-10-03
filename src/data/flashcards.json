@@ -1687,6 +1687,12 @@
       "slug": "tuo-technologies-of-unknown-origin"
     },
     {
+      "title": "Bag of Words (text representation)",
+      "definition": "A document representation that encodes text as an unordered multiset of token counts, ignoring word order and grammar while capturing term presence and frequency.",
+      "year": 0,
+      "slug": "bag-of-words-text-representation"
+    },
+    {
       "title": "Batch Size",
       "definition": "Refers to the number of training examples processed before the model's internal parameters are updated.",
       "year": 0,
@@ -5793,7 +5799,7 @@
     {
       "title": "Training Serving Skew",
       "definition": "A discrepancy that occurs when the data distributions used during the training of a model differ from those encountered during its serving or inference phase.",
-      "year": 0,
+      "year": 2019,
       "slug": "training-serving-skew"
     },
     {
