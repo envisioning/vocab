@@ -1,11 +1,13 @@
 ---
+title: BOW (Bag of Words)
+summary: A document representation that encodes text as an unordered multiset of token counts, ignoring word order and grammar while capturing term presence and frequency.
 slug: bow-bag-of-words
-summary: Text representation technique used in NLP to simplify text content by treating it as an unordered set of words.
-title: BoW (Bag-of-Words)
 ---
 
-The bag-of-words (BoW) model is a foundational technique in natural language processing that converts text into a fixed-length vector, representing the frequency of words appearing in a document while disregarding grammar and word order. This simplicity allows for the efficient analysis of large text corpora and is particularly useful in tasks like document classification, spam detection, and sentiment analysis. BoW treats each document as a 'bag' containing some number of words without any information about sequences, which simplifies computation but also limits the ability to understand context or semantics beyond single words.
+A document representation that encodes text as an unordered multiset of token counts, ignoring word order and grammar while capturing term presence and frequency.
 
-The concept of the bag-of-words model has been around since the 1950s, with its use in machine learning and text analysis becoming prominent in the 1990s as part of the growth of statistical methods in NLP.
+The bag-of-words model is a simple but powerful vector-space representation that maps a document to a high-dimensional sparse vector whose dimensions correspond to vocabulary tokens and whose values are typically raw counts, term-frequency (TF), or weighted scores such as TF–IDF; it embodies an exchangeability assumption (words are independent of order) and underpins many classical ML (Machine Learning) pipelines—enabling efficient application of linear classifiers (e.g., logistic regression, SVM), generative models (e.g., multinomial Naive Bayes), and statistical retrieval methods. Its significance lies in computational simplicity, interpretability, and compatibility with sparse linear algebra (and techniques like hashing/truncated SVD for dimensionality reduction), making it a robust baseline for text classification, information retrieval, topic modeling (as an input to LSA/PLSA), and feature engineering; however, it discards syntactic structure and sequence information, motivating n-gram extensions and ultimately the shift toward context-aware dense representations (embeddings and Transformer-based models) when capture of semantics and order is required.
 
-The development of the BoW model is attributed to the broader field of linguistics and computer science without a single key contributor. Its evolution has been influenced significantly by the work in statistical language modeling and the rise of machine learning approaches in NLP.
+First use: concepts trace to the 1950s (term‑frequency indexing by H. P. Luhn); the representation was popularized with vector-space and TF–IDF work in the 1960s–1970s (Gerard Salton) and became a standard NLP/ML baseline through the 1990s with widespread adoption in text classification and IR.
+
+Key contributors: Hans Peter Luhn (early term‑frequency ideas), Gerard Salton (vector space model and term weighting), Karen Spärck Jones (IDF and IR foundations), and later ML/NLP practitioners such as McCallum & Nigam (text classification with multinomial models) and educators/researchers like Christopher D. Manning and Hinrich Schütze who formalized and taught its use and limitations.

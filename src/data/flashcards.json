@@ -1551,7 +1551,7 @@
     {
       "title": "Oversight mechanism",
       "definition": "A system or process implemented to monitor and regulate the behavior and outcomes of AI systems, ensuring compliance with ethical standards and legal requirements.",
-      "year": 0,
+      "year": 2021,
       "slug": "oversight-mechanism"
     },
     {
@@ -1685,12 +1685,6 @@
       "definition": "Refers to emerging technologies whose fundamental characteristics or origins are not fully understood, often explored for their potential in advancing AI or other fields.",
       "year": 0,
       "slug": "tuo-technologies-of-unknown-origin"
-    },
-    {
-      "title": "Bag of Words (text representation)",
-      "definition": "A document representation that encodes text as an unordered multiset of token counts, ignoring word order and grammar while capturing term presence and frequency.",
-      "year": 0,
-      "slug": "bag-of-words-text-representation"
     },
     {
       "title": "Batch Size",
@@ -3763,8 +3757,8 @@
       "slug": "memory-extender"
     },
     {
-      "title": "BoW (Bag-of-Words)",
-      "definition": "Text representation technique used in NLP to simplify text content by treating it as an unordered set of words.",
+      "title": "BOW (Bag of Words)",
+      "definition": "A document representation that encodes text as an unordered multiset of token counts, ignoring word order and grammar while capturing term presence and frequency.",
       "year": 1954,
       "slug": "bow-bag-of-words"
     },
