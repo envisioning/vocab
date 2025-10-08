@@ -1,0 +1,11 @@
+---
+title: TRM (Tiny Recursive Models)
+summary: Compact, parameter-efficient models designed to be applied iteratively or composed recursively to perform complex reasoning or algorithmic tasks while enabling tractable analysis and deployment in constrained environments.
+slug: trm-tiny-recursive-models
+---
+
+TRM (Tiny Recursive Models) denotes a class of deliberately small, resource-efficient neural or algorithmic models structured to be invoked repeatedly—either by feeding a model’s outputs back as inputs or by composing multiple copies in a recursion-like topology—so that complex computation emerges from repeated, simple modules rather than from a single large model. In practice TRMs prioritize parameter efficiency (quantization, pruning, distilled architectures) and controlled interfaces that make their internal state and stepwise behavior more amenable to interpretability, verification, and constrained deployment (edge devices, secure enclaves). The recursive application can implement iterative refinement, fixed-point solvers, algorithmic routines (search, planning, symbolic manipulation), or hierarchical decomposition of tasks: a TRM need only learn a reliable local transition or update rule, and global competence arises from its repeated application.
+
+This design is attractive in ML for reducing training/inference cost, enabling modular verification techniques (proof-carrying computation, stepwise audits), and supporting safe-by-design engineering where amplification of capability is easier to analyze than in monolithic large models. However, recursion introduces dynamics (error accumulation, attractor states, capability amplification under composition) that require formal analysis (convergence bounds, robustness to distribution shift) and careful training regimes (unrolled or meta-learned objectives, curriculum for depth), as well as operational safeguards to prevent unintended emergent behaviors when TRMs are chained or looped in production.
+
+First widely discussed around 2023 in ML/safety forums and workshops; the concept gained broader attention in 2024 as researchers explored small-model deployment, compositional architectures, and verification-friendly alternatives to ever-larger models.

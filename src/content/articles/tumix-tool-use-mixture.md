@@ -1,0 +1,11 @@
+---
+title: TUMIX (Tool-Use Mixture)
+summary: A probabilistic and modular framework for representing how an agent selects, composes, and interpolates between external tools and internal policies to solve tasks.
+slug: tumix-tool-use-mixture
+---
+
+TUMIX (Tool-Use Mixture) formalizes an agent's decision process as a mixture over tool-specific and intrinsic policy primitives, where a gating mechanism (learned or inferred) assigns context-dependent weights to candidate tools, subroutines, or internal reasoning modes so that the agent can flexibly blend, switch, or compose capabilities to accomplish complex goals.
+
+At an expert level, TUMIX frames tool use as a latent-variable / mixture-of-experts problem: observations and task context condition a gating distribution over a set of tool experts (which may be external APIs, symbolic subroutines, or neural policy modules) and over internal reasoning kernels; the agent's resultant action distribution is the weighted combination or sequential composition induced by that gating. This formalization supports principled training (EM, variational inference, gradient-based gating), efficient credit assignment across tool calls, and modular transfer — for example, enabling an ML (Machine Learning) agent to reuse a calibrated tool expert in new contexts without relearning core reasoning. TUMIX also clarifies evaluation and safety levers: disentangling tool-selection probabilities makes it easier to audit why and when an external capability was invoked, to impose constraints on dangerous tools, and to measure compositional generalization when tools are recombined. Implementations typically combine differentiable gating or discrete selection with interfaces that make tool calls differentiable or learn surrogate estimators; theoretical connections tie TUMIX to hierarchical RL, mixture-of-experts architectures, and latent-slot models for program synthesis and controller design.
+
+First used: 2024; gained popularity: 2025 as work on tool-augmented LLMs and modular agent architectures demonstrated practical gains from explicit tool-selection and composition models.

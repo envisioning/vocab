@@ -553,6 +553,12 @@
       "slug": "equivariance"
     },
     {
+      "title": "TRM (Tiny Recursive Models)",
+      "definition": "Compact, parameter-efficient models designed to be applied iteratively or composed recursively to perform complex reasoning or algorithmic tasks while enabling tractable analysis and deployment in constrained environments.",
+      "year": 2023,
+      "slug": "trm-tiny-recursive-models"
+    },
+    {
       "title": "Irreducibility",
       "definition": "A characteristic of certain complex systems or models where they cannot be simplified further without losing essential properties or predictive power.",
       "year": 1936,
@@ -3173,6 +3179,12 @@
       "definition": "Sudden, significant leap in the performance or capability of an AI system, deviating sharply from its previous trajectory of incremental improvements.",
       "year": 0,
       "slug": "discontinuous-jump"
+    },
+    {
+      "title": "TUMIX (Tool-Use Mixture)",
+      "definition": "A probabilistic and modular framework for representing how an agent selects, composes, and interpolates between external tools and internal policies to solve tasks.",
+      "year": 2020,
+      "slug": "tumix-tool-use-mixture"
     },
     {
       "title": "Solution Space",
