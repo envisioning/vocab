@@ -3451,6 +3451,12 @@
       "slug": "hierarchical-planning"
     },
     {
+      "title": "ACE (Agentic Context Engineering)",
+      "definition": "Designing and arranging prompts, system messages, tool interfaces, memory/state, and environmental signals to elicit, structure, and constrain autonomous, goal-directed behavior from AI models and multi-component agent systems.",
+      "year": 2022,
+      "slug": "ace-agentic-context-engineering"
+    },
+    {
       "title": "Precomputed Policy",
       "definition": "A strategy computed in advance for decision-making processes in AI systems, particularly within reinforcement learning, to optimize future actions.",
       "year": 2018,
@@ -6387,7 +6393,7 @@
     {
       "title": "A2A (Agent to Agent)",
       "definition": "Direct interactions between autonomous software agents that exchange information, negotiate, and coordinate actions to achieve distributed goals without centralized orchestration.",
-      "year": 0,
+      "year": 1995,
       "slug": "a2a-agent-to-agent"
     },
     {
