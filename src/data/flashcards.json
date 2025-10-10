@@ -4333,6 +4333,12 @@
       "slug": "grpo-grouped-regularized-policy-optimization"
     },
     {
+      "title": "WMC (Working Memory Capacity)",
+      "definition": "A quantitative measure of the limited amount of information that an agent can actively hold and manipulate for ongoing cognitive computations, shaping reasoning, attention, and learning performance in AI systems.",
+      "year": 0,
+      "slug": "wmc-working-memory-capacity"
+    },
+    {
       "title": "Feature Spec",
       "definition": "A written document that outlines the characteristics and requirements of features in an AI system or model, ensuring alignment with business goals and technical specifications.",
       "year": 0,
@@ -4555,6 +4561,12 @@
       "slug": "neuromorphic-chips"
     },
     {
+      "title": "ANI (Artificial Narrow Intelligence)",
+      "definition": "Systems specialized to perform a specific task or a narrow set of tasks at high proficiency within a constrained domain, rather than exhibiting general reasoning across domains.",
+      "year": 2014,
+      "slug": "ani-artificial-narrow-intelligence"
+    },
+    {
       "title": "PCA (Principal Component Analysis)",
       "definition": "A statistical procedure that transforms a dataset into a set of orthogonal components, intended to reduce dimensionality while preserving as much variability as possible.",
       "year": 1901,
@@ -4577,6 +4589,12 @@
       "definition": "Invariances in data or models where certain transformations do not affect the outcomes or predictions.",
       "year": 1936,
       "slug": "symmetry"
+    },
+    {
+      "title": "LTM (Long Term Memory)",
+      "definition": "Persistent storage and retrieval of learned information, experiences, or model state across extended time horizons to support recall, transfer, personalization, and continual learning.",
+      "year": 1983,
+      "slug": "ltm-long-term-memory"
     },
     {
       "title": "Consciousness Level",
@@ -6401,6 +6419,12 @@
       "definition": "The machine or server that acts as the environment for running and managing AI applications, processes, and data storage.",
       "year": 1980,
       "slug": "host"
+    },
+    {
+      "title": "DDN (Discrete Distribution Networks)",
+      "definition": "Probabilistic neural architectures that explicitly model and transform discrete probability distributions for structured generative modeling, inference, and decision-making over categorical or count data.",
+      "year": 2018,
+      "slug": "ddn-discrete-distribution-networks"
     },
     {
       "title": "Overparameterization Regime",

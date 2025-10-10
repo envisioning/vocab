@@ -1,0 +1,11 @@
+---
+title: LTM (Long Term Memory)
+summary: Persistent storage and retrieval of learned information, experiences, or model state across extended time horizons to support recall, transfer, personalization, and continual learning.
+slug: ltm-long-term-memory
+---
+
+Persistent external or parameterized storage of learned representations, episodic traces, or model state that can be retrieved across sessions and long time horizons to enable recall, adaptation, and knowledge grounding.
+
+LTM (Long Term Memory) in AI denotes mechanisms—either encoded in model parameters or held in explicit external stores—that preserve information beyond a single forward pass or short context window so systems can accumulate knowledge, remember past interactions, and perform transfer or lifelong learning. Architecturally this spans parameterized memory (weights that consolidate knowledge), activation-based short-term state, and explicit memory modules such as Neural Turing Machines, Differentiable Neural Computers, Memory Networks, and modern vector-backed retrieval stores used in retrieval-augmented generation (RAG). LTM is central to continual learning and personalization: it enables replay and rehearsal, mitigates catastrophic forgetting via consolidation or regularization, supports episodic recall for planning in reinforcement learning (experience replay), and grounds large models with updatable factual stores (embeddings + vector DBs) for up-to-date responses. Key challenges include representation and indexing of memories, read/write and retention policies, scalability and latency of retrieval, staleness and consistency of stored knowledge, privacy and deletion requirements, and alignment between retrieved memory and model reasoning. Design choices—hybridizing parametric and non-parametric memory, using sparse or learned addressing, and applying compression or summaries—determine trade-offs between capacity, fidelity, and adaptivity for real-world AI systems.
+
+First used: the phrase originates in mid-20th‑century cognitive psychology; in AI literature explicit long-term memory mechanisms appeared by the 1980s and became widely prominent from around 2014 (Neural Turing Machines, Memory Networks) with mass practical adoption accelerating in 2020–2023 through RAG methods and vector-database-backed retrieval.

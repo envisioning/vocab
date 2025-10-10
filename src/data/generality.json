@@ -10438,5 +10438,41 @@
     0.5,
     0.5,
     0.5
+  ],
+  "wmc-working-memory-capacity": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "ani-artificial-narrow-intelligence": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "ltm-long-term-memory": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "ddn-discrete-distribution-networks": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
   ]
 }

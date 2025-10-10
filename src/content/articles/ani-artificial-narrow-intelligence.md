@@ -1,0 +1,11 @@
+---
+title: ANI (Artificial Narrow Intelligence)
+summary: Systems specialized to perform a specific task or a narrow set of tasks at high proficiency within a constrained domain, rather than exhibiting general reasoning across domains.
+slug: ani-artificial-narrow-intelligence
+---
+
+Specialized systems engineered to solve a single task or a narrowly defined set of tasks at high proficiency within constrained environments, contrasted with systems designed for broad, cross-domain reasoning.
+
+Artificial Narrow Intelligence (ANI) denotes architectures, algorithms and deployments that optimize performance on narrowly scoped objectives—e.g., image classification, speech recognition, recommendation, or strategic gameplay—typically using ML (Machine Learning) paradigms such as supervised learning, reinforcement learning, or specialized architectures (CNNs, Transformers, etc.). ANI systems are characterized by strong task-specific inductive biases, reliance on curated training distributions, and brittle generalization under distributional shift; they excel on benchmarks (ImageNet, GLUE, RL environments) but require careful specification of reward/loss functions and constraints to avoid unintended behavior. From a theoretical perspective, ANI highlights limits of scaling in the absence of representational or algorithmic mechanisms for cross-domain abstraction and transfer; practically, it underpins almost all current industrial AI deployments and raises operational concerns (adversarial vulnerability, dataset bias, specification gaming, and safe integration with human workflows). Distinguishing ANI from AGI informs research priorities (transfer, continual learning, modularity) and governance approaches that differ from those needed for broadly capable systems.
+
+First use context: the distinction traces to the "weak/strong AI" debate (John Searle, 1980); the explicit label "narrow AI" / "artificial narrow intelligence" became widespread in technical and policy discourse during the 2010s, accelerating after deep‑learning breakthroughs around 2012–2015 to distinguish deployed task‑specialized systems from hypothetical AGI.
