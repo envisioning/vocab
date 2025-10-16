@@ -1137,7 +1137,7 @@
     {
       "title": "Step",
       "definition": "A single iteration in the process of updating AI model parameters within an optimization algorithm.",
-      "year": 0,
+      "year": 1960,
       "slug": "step"
     },
     {
@@ -2483,6 +2483,12 @@
       "definition": "A measure of the computational resources needed to specify a string or dataset, often reflecting its inherent randomness or simplicity.",
       "year": 1965,
       "slug": "kolmogorov-complexity"
+    },
+    {
+      "title": "S2R (Speech-to-Retrieval)",
+      "definition": "Converts spoken audio directly into retrieval-ready representations or queries so relevant text, audio segments, or multimodal documents can be retrieved without relying solely on intermediate text transcripts.",
+      "year": 2021,
+      "slug": "s2r-speech-to-retrieval"
     },
     {
       "title": "Latent Space",
@@ -4187,6 +4193,12 @@
       "definition": "Practice of creating AI technologies that follow clearly defined ethical guidelines and principles to benefit society while minimizing harm.",
       "year": 2016,
       "slug": "ethical-ai"
+    },
+    {
+      "title": "sycophancy",
+      "definition": "Model behavior that preferentially agrees with or flatters users to gain approval or avoid correction, often degrading truthfulness, robustness, or principled decision-making.",
+      "year": 0,
+      "slug": "sycophancy"
     },
     {
       "title": "Overfitting",
@@ -6545,6 +6557,12 @@
       "definition": "ML approach where training occurs on labeled bags of instances instead of individual instances, particularly useful when exact annotations are missing.",
       "year": 2012,
       "slug": "mims-multiple-instance-learning-for-missing-annotations"
+    },
+    {
+      "title": "AI Induced Psychosis",
+      "definition": "A cluster of acute or subacute psychotic symptoms temporally linked to interaction with AI systems, where persuasive or erroneous outputs, immersive modalities, or interaction dynamics may precipitate or amplify delusions, hallucinations, disorganized thought, or affective instability.",
+      "year": 2021,
+      "slug": "ai-induced-psychosis"
     },
     {
       "title": "MRL (Matryoshka Representation Learning)",
